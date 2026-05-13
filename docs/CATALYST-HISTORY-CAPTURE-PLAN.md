@@ -196,11 +196,12 @@ Design principles honored:
 - Phase 1 normalizer (`unify_proposals.py`) demultiplexes the cache into per-fund `proposals.json`. Per-fund `proposers.csv` and consolidated CSVs are Phase 6.
 - **Result:** F2–F15 proposer/proposal data populated to ~95% completeness for the proposal entity once the full sweep runs.
 
-**Phase 2 — Cross-verify winners with IOG voting-results (week 2)**
-- Implement `fetchers/projectcatalyst_funds.py` — fetch each `/funds/N` HTML, parse Next.js JSON for `votingResultsUrl` + canonical counts.
-- Download all linked PDFs (Drive links → curl with proper redirect handling).
-- Parse with `pdfplumber` to extract proposal title + funded flag + ask.
-- `normalizers/reconcile_winners.py` — produce `data/funds/fund-XX/_reconciliation.json` flagging any mismatch between Lidonation `funding_status` and IOG PDF. Manual triage of disputes.
+**Phase 2 — Cross-verify winners with IOG voting-results (week 2, DONE 2026-05-13)**
+- `fetchers/projectcatalyst_funds.py` — scrapes `/funds/N` HTML for embedded `__NEXT_DATA__` JSON (canonical counts + `votingResultsUrl`), then downloads the linked PDF. Handles three URL patterns: `static.iohk.io` direct (F2), Google Drive `/file/d/{id}/view` → `/uc?export=download&id={id}` (F3–F9), inline `projectcatalyst.io` (F10+).
+- `parsers/iohk_pdf.py` — pdfplumber row parser. Validated against F2 (78 rows / 11 funded — matches canonical counts).
+- `normalizers/reconcile_winners.py` — DIFF-ONLY SIDECAR. Writes `data/funds/fund-XX/_reconciliation.json` with agreements, disagreements, unmatched primary, unmatched secondary. Does NOT modify `proposals.json` — corrections deferred to Phase 6.
+- `schemas/reconciliation.schema.json` — defines the diff record, validated by `validate_against_schema.py`.
+- First-run smoke target: Fund 2 only. F3–F13 follow once F2 reconciliation is confirmed clean.
 
 **Phase 3 — Milestone capture for F10+ (week 3)**
 - Implement `fetchers/milestones_scraper.py`.

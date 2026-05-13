@@ -22,6 +22,13 @@ See [ADR-2026-05-13 Implementation Notes](../../docs/adr/ADR-2026-05-13-source-s
 - `lidonation/fund-titles.json` - canonical fund UUID -> title map.
 - `lidonation/page-NNNN.json.gz` - one gzipped Laravel-paginator response per
   page of `/api/proposals?p=N`. NNNN is the page number, zero-padded to 4.
+- `projectcatalyst_io/funds-NN.html.gz` - raw HTML capture of
+  `https://projectcatalyst.io/funds/N`. NN is the fund number, zero-padded.
+- `projectcatalyst_io/funds-NN.summary.json` - distilled summary extracted
+  from the `__NEXT_DATA__` blob (fund name, counts, votingResultsUrl).
+- `iohk-pdfs/fund-NN.pdf` - the canonical IOG voting-results PDF for each
+  fund where one exists (F2-F13). Downloaded from static.iohk.io,
+  Google Drive, or projectcatalyst.io inline depending on the fund.
 
 ## Replay
 

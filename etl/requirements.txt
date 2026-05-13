@@ -11,9 +11,9 @@ httpx==0.27.2
 tenacity==9.0.0
 python-slugify==8.0.4
 
-# --- Phase 2 (deferred): PDF parsing for IOG voting-results ---
-# pdfplumber==0.11.4
-# pypdf==5.0.1
+# --- Phase 2: PDF parsing for IOG voting-results ---
+pdfplumber==0.11.4
+pypdf==5.0.1
 
 # --- Phase 3 (deferred): Milestone Module scraping ---
 # selectolax==0.3.27
