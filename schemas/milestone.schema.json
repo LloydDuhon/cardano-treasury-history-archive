@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lloydduhon/catalyst-history-archive/schemas/milestone.schema.json",
+  "title": "Catalyst Milestone",
+  "description": "A single milestone in a funded Project Catalyst proposal. Authoritative for Fund 10+ (Milestone Module mandatory). Partial coverage for Fund 9 (pilot, large projects). Not applicable for Funds 1-8.",
+  "type": "object",
+  "required": [
+    "milestone_id",
+    "proposal_id",
+    "milestone_number",
+    "status",
+    "sources",
+    "confidence"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "milestone_id": {
+      "type": "string",
+      "description": "Canonical key. Format: '{proposal_id}-m{milestone_number:02d}'.",
+      "pattern": "^f[0-9]{2}-[a-z0-9-]+-m[0-9]{2}$",
+      "examples": ["f10-decentralize-impact-m01", "f13-cardano-tutorials-m05"]
+    },
+    "proposal_id": {
+      "type": "string",
+      "description": "Foreign key to proposal.schema.json#proposal_id.",
+      "pattern": "^f[0-9]{2}-[a-z0-9-]+$"
+    },
+    "external_ids": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "milestones_projectcatalyst_io_id": {
+          "type": ["string", "null"],
+          "description": "Internal ID from the Milestone Module, e.g. the URL segment in '/projects/{id}/milestones/{n}'."
+        },
+        "lidonation_schedule_id": { "type": ["string", "null"] }
+      }
+    },
+    "milestone_number": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Position within the proposal's Statement of Milestones (1-based)."
+    },
+    "title": { "type": ["string", "null"] },
+    "description": { "type": ["string", "null"] },
+    "budget": {
+      "type": ["number", "null"],
+      "description": "Allocated budget for this milestone in the proposal's currency.",
+      "minimum": 0
+    },
+    "currency": {
+      "type": "string",
+      "enum": ["ADA", "USD", "USDM", "UNKNOWN"],
+      "default": "ADA"
+    },
+    "delivery_target_date": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "Originally planned delivery date from the SoM."
+    },
+    "delivered_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "When the milestone's PoA was accepted by reviewers."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "not_started",
+        "in_progress",
+        "submitted",
+        "under_review",
+        "accepted",
+        "rejected",
+        "stalled",
+        "withdrawn",
+        "unknown"
+      ]
+    },
+    "acceptance_criteria": {
+      "type": ["string", "null"],
+      "description": "From the SoM."
+    },
+    "is_closeout": {
+      "type": "boolean",
+      "default": false,
+      "description": "True for the final milestone, which carries the Project Close-out Report (PCR) and Project Close-out Video (PCV)."
+    },
+    "evidence": {
+      "type": "array",
+      "description": "Proof of Achievement (PoA) artifacts submitted by the proposer.",
+      "items": {
+        "type": "object",
+        "required": ["url"],
+        "additionalProperties": false,
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "kind": {
+            "type": "string",
+            "enum": ["pdf", "github_repo", "github_pr", "video", "demo", "blog_post", "website", "other"],
+            "default": "other"
+          },
+          "description": { "type": ["string", "null"] }
+        }
+      },
+      "default": []
+    },
+    "reviewer_signoffs": {
+      "type": "array",
+      "description": "Reviewer acceptance/rejection records.",
+      "items": {
+        "type": "object",
+        "required": ["decision"],
+        "additionalProperties": false,
+        "properties": {
+          "reviewer_id": { "type": ["string", "null"] },
+          "decision": {
+            "type": "string",
+            "enum": ["accepted", "rejected", "needs_revision"]
+          },
+          "decided_at": { "type": ["string", "null"], "format": "date-time" },
+          "comment": { "type": ["string", "null"] }
+        }
+      },
+      "default": []
+    },
+    "closeout_report_url": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "description": "PCR — set when is_closeout=true and report has been published."
+    },
+    "closeout_video_url": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "description": "PCV — set when is_closeout=true and video has been published."
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["source", "fetched_at"],
+        "additionalProperties": false,
+        "properties": {
+          "source": {
+            "type": "string",
+            "enum": [
+              "milestones_projectcatalyst_io",
+              "lidonation_api",
+              "catalyst_voices_gateway",
+              "manual_curation"
+            ]
+          },
+          "url": { "type": ["string", "null"], "format": "uri" },
+          "fetched_at": { "type": "string", "format": "date-time" },
+          "provenance_path": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "notes": { "type": ["string", "null"] }
+  }
+}

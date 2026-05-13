@@ -1,0 +1,39 @@
+# Phase 7 — scheduled monthly refresh that opens a PR.
+#
+# DISABLED in Phase 0 because the fetchers it would invoke are not yet
+# implemented. Re-enable by uncommenting the `schedule` trigger once
+# Phase 1 (Lidonation fetcher) has landed.
+
+name: refresh-data
+
+on:
+  workflow_dispatch: {}
+  # schedule:
+  #   - cron: "0 6 1 * *"   # 06:00 UTC on the 1st of every month
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    name: refresh dataset and open PR
+    runs-on: ubuntu-latest
+    if: false   # disabled until Phase 1 fetchers exist
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r etl/requirements.txt
+
+      - name: Run fetchers (placeholder)
+        run: |
+          echo "Fetchers not yet implemented — see docs/CATALYST-HISTORY-CAPTURE-PLAN.md"
+          exit 1

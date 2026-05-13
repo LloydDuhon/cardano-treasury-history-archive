@@ -1,0 +1,52 @@
+[project]
+name = "catalyst-history-etl"
+version = "0.1.0"
+description = "ETL pipeline for the catalyst-history-archive dataset"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { file = "../LICENSE-CODE" }
+authors = [
+  { name = "Lloyd Duhon", email = "lloydduhon@gmail.com" }
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["../data/**/_provenance/**"]
+
+[tool.ruff.lint]
+# Follow mellod-infra DEVELOPMENT_STANDARDS.md: PEP 8 strict, imports sorted.
+select = [
+  "E",      # pycodestyle errors
+  "W",      # pycodestyle warnings
+  "F",      # pyflakes
+  "I",      # isort
+  "B",      # flake8-bugbear
+  "UP",     # pyupgrade
+  "N",      # pep8-naming
+  "ANN",    # flake8-annotations (type hints required)
+  "S",      # flake8-bandit (security)
+  "RUF",    # ruff-specific
+]
+ignore = [
+  "ANN101",  # missing type hint for self
+  "ANN102",  # missing type hint for cls
+  "S101",    # allow `assert` (used in tests/validators)
+]
+
+[tool.ruff.lint.per-file-ignores]
+"validators/*.py" = ["S603", "S607"]  # validator runs structured subprocesses; OK
+"__init__.py" = ["F401"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_return_any = true
+warn_unused_ignores = true
+ignore_missing_imports = true
+exclude = ["build/", "dist/"]

@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lloydduhon/catalyst-history-archive/schemas/proposer.schema.json",
+  "title": "Catalyst Proposer",
+  "description": "A proposer entity (individual or team) referenced by one or more Catalyst proposals. Identity is reconciled across funds via known external IDs; near-duplicates are intentionally NOT auto-merged.",
+  "type": "object",
+  "required": ["proposer_id", "display_name", "sources", "confidence"],
+  "additionalProperties": false,
+  "properties": {
+    "proposer_id": {
+      "type": "string",
+      "description": "Canonical identifier minted by this archive. Format: 'p-{slug}-{short_hash}'. Stable across refreshes once minted; never reused.",
+      "pattern": "^p-[a-z0-9-]+-[a-z0-9]{6,12}$",
+      "examples": ["p-lidonation-a1b2c3", "p-cardano-meetups-mx-9d8e7f"]
+    },
+    "display_name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "entity_type": {
+      "type": "string",
+      "enum": ["individual", "team", "organization", "unknown"],
+      "default": "unknown"
+    },
+    "team_members": {
+      "type": "array",
+      "description": "Listed team members (free-text names; not separate proposer entities unless they also propose independently).",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "role": { "type": ["string", "null"] }
+        }
+      },
+      "default": []
+    },
+    "external_ids": {
+      "type": "object",
+      "description": "Identity anchors from upstream systems. Presence of any one of these is the basis for cross-fund proposer reconciliation.",
+      "additionalProperties": false,
+      "properties": {
+        "ideascale_profile_id": { "type": ["string", "null"] },
+        "lidonation_profile_uuid": { "type": ["string", "null"], "format": "uuid" },
+        "catalyst_voices_profile_id": { "type": ["string", "null"] },
+        "catalyst_voices_stake_address": {
+          "type": ["string", "null"],
+          "description": "Bech32 stake address (stake1...) from Catalyst Voices proposer registration, where available."
+        }
+      }
+    },
+    "socials": {
+      "type": "object",
+      "description": "Social handles, where the proposer disclosed them. All optional; never inferred.",
+      "additionalProperties": false,
+      "properties": {
+        "twitter": { "type": ["string", "null"] },
+        "x": { "type": ["string", "null"] },
+        "github": { "type": ["string", "null"] },
+        "discord": { "type": ["string", "null"] },
+        "telegram": { "type": ["string", "null"] },
+        "linkedin": { "type": ["string", "null"] },
+        "website": { "type": ["string", "null"], "format": "uri" }
+      }
+    },
+    "proposal_ids": {
+      "type": "array",
+      "description": "All proposals attributed to this proposer, across all funds.",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "rollups": {
+      "type": "object",
+      "description": "Aggregate counts computed from proposal_ids at normalization time. Refreshed on every snapshot.",
+      "additionalProperties": false,
+      "properties": {
+        "total_proposals": { "type": "integer", "minimum": 0 },
+        "total_funded": { "type": "integer", "minimum": 0 },
+        "total_completed": { "type": "integer", "minimum": 0 },
+        "total_cancelled": { "type": "integer", "minimum": 0 },
+        "total_in_progress": { "type": "integer", "minimum": 0 },
+        "total_requested_ada": { "type": "number", "minimum": 0 },
+        "total_received_ada": { "type": "number", "minimum": 0 },
+        "first_fund": { "type": ["integer", "null"], "minimum": 1 },
+        "last_fund": { "type": ["integer", "null"], "minimum": 1 }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["source", "fetched_at"],
+        "additionalProperties": false,
+        "properties": {
+          "source": {
+            "type": "string",
+            "enum": [
+              "lidonation_api",
+              "projectcatalyst_io",
+              "milestones_projectcatalyst_io",
+              "catalyst_voices_gateway",
+              "ideascale_wayback",
+              "ideascale_live",
+              "manual_curation"
+            ]
+          },
+          "url": { "type": ["string", "null"], "format": "uri" },
+          "fetched_at": { "type": "string", "format": "date-time" },
+          "provenance_path": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"],
+      "description": "How confident we are that this entity is correctly identified and not a duplicate. 'low' is acceptable; we do not silently merge near-duplicates."
+    },
+    "duplicate_candidates": {
+      "type": "array",
+      "description": "Other proposer_ids that may refer to the same entity. Recorded for human review, never auto-merged.",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "notes": { "type": ["string", "null"] }
+  }
+}

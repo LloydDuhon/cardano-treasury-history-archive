@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "catalyst-history-archive: A historical record of Project Catalyst on Cardano"
+abstract: >-
+  An open historical dataset of Project Catalyst proposals, proposers,
+  win/loss outcomes, and completion status from Fund 1 (2020) through
+  the current active fund, normalized across all source systems with
+  provenance preserved and confidence labeled per record.
+authors:
+  - family-names: "Duhon"
+    given-names: "Lloyd"
+    email: "lloydduhon@gmail.com"
+type: dataset
+license: CC-BY-4.0
+repository-code: "https://github.com/lloydduhon/catalyst-history-archive"
+keywords:
+  - cardano
+  - project-catalyst
+  - governance
+  - blockchain
+  - open-data
+  - decentralized-funding
+references:
+  - type: software
+    title: "Catalyst Explorer (Lidonation)"
+    repository-code: "https://github.com/lidonation/catalystexplorer"
+    authors:
+      - name: "Lidonation Foundation Inc."
+    license: Apache-2.0
+  - type: software
+    title: "Catalyst Voices (Cardano Foundation)"
+    repository-code: "https://github.com/cardano-foundation/catalyst-voices"
+    authors:
+      - name: "Cardano Foundation"

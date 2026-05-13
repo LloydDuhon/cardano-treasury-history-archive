@@ -1,0 +1,218 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lloydduhon/catalyst-history-archive/schemas/proposal.schema.json",
+  "title": "Catalyst Proposal",
+  "description": "A single proposal submitted to Project Catalyst, normalized across all funds (F1-F15) and all source systems (Lidonation, IOG voting-results, Catalyst Voices, IdeaScale/Wayback).",
+  "type": "object",
+  "required": [
+    "proposal_id",
+    "fund",
+    "title",
+    "proposer_ids",
+    "funding_status",
+    "project_status",
+    "sources",
+    "confidence"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "proposal_id": {
+      "type": "string",
+      "description": "Canonical identifier minted by this archive. Format: 'f{fund:02d}-{slug}' where slug is the URL-safe proposal slug from the primary source. Stable across refreshes.",
+      "pattern": "^f[0-9]{2}-[a-z0-9-]+$",
+      "examples": ["f10-decentralize-impact", "f02-cardano-meetups-mexico"]
+    },
+    "external_ids": {
+      "type": "object",
+      "description": "IDs from upstream source systems for cross-reference.",
+      "additionalProperties": false,
+      "properties": {
+        "lidonation_uuid": { "type": "string", "format": "uuid" },
+        "lidonation_numeric_id": { "type": "integer" },
+        "ideascale_id": { "type": "string" },
+        "catalyst_voices_document_id": { "type": "string" },
+        "projectcatalyst_io_id": { "type": "string" }
+      }
+    },
+    "fund": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 99,
+      "description": "Fund number (1-15 at time of writing)."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500
+    },
+    "slug": {
+      "type": ["string", "null"],
+      "description": "URL-safe slug from primary source."
+    },
+    "challenge": {
+      "type": ["string", "null"],
+      "description": "Challenge / category / campaign within the fund (e.g., 'Open Source Development', 'F10 Cardano DApps Mass Adoption')."
+    },
+    "campaign_id": {
+      "type": ["string", "null"],
+      "description": "Source-system identifier for the challenge/campaign."
+    },
+    "proposer_ids": {
+      "type": "array",
+      "description": "Canonical proposer IDs from proposer.schema.json. Multiple entries when the proposal had a team.",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "amount_requested": {
+      "type": ["number", "null"],
+      "description": "Requested funding amount in the proposal's currency (typically ADA, but USD or USDM in later funds).",
+      "minimum": 0
+    },
+    "amount_received": {
+      "type": ["number", "null"],
+      "description": "Amount actually awarded. 0 for not-funded; null when unknown.",
+      "minimum": 0
+    },
+    "currency": {
+      "type": "string",
+      "enum": ["ADA", "USD", "USDM", "UNKNOWN"],
+      "default": "ADA"
+    },
+    "yes_votes": {
+      "type": ["number", "null"],
+      "description": "Yes votes (raw lovelace for older funds, normalized count for newer). Units documented in sources entry."
+    },
+    "no_votes": { "type": ["number", "null"] },
+    "abstain_votes": { "type": ["number", "null"] },
+    "scores": {
+      "type": ["object", "null"],
+      "description": "Reviewer scores where available.",
+      "additionalProperties": false,
+      "properties": {
+        "alignment": { "type": ["number", "null"] },
+        "feasibility": { "type": ["number", "null"] },
+        "auditability": { "type": ["number", "null"] },
+        "overall": { "type": ["number", "null"] }
+      }
+    },
+    "ranking_total": {
+      "type": ["integer", "null"],
+      "description": "Position within fund/challenge if published."
+    },
+    "funding_status": {
+      "type": "string",
+      "enum": ["approved", "not_approved", "over_budget", "leftover", "withdrawn", "unknown"],
+      "description": "Did this proposal pass the vote and receive funding? 'approved' = funded; 'not_approved' = lost vote; 'over_budget' = passed vote but ran out of budget; 'leftover' = funded from leftover budget; 'withdrawn' = pulled before vote."
+    },
+    "project_status": {
+      "type": "string",
+      "enum": ["unfunded", "funded", "in_progress", "complete", "cancelled", "stalled", "unknown"],
+      "description": "Delivery state for funded proposals. 'unfunded' for proposals that did not pass."
+    },
+    "funded_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "Timestamp when funding was confirmed/disbursed (where known)."
+    },
+    "completed_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "Timestamp when final milestone / closeout was accepted (F10+ via Milestone Module)."
+    },
+    "links": {
+      "type": "object",
+      "description": "Canonical URLs for this proposal on each source system.",
+      "additionalProperties": false,
+      "properties": {
+        "lidonation_url": { "type": ["string", "null"], "format": "uri" },
+        "ideascale_url": { "type": ["string", "null"], "format": "uri" },
+        "projectcatalyst_io_url": { "type": ["string", "null"], "format": "uri" },
+        "milestones_url": { "type": ["string", "null"], "format": "uri" },
+        "catalyst_voices_url": { "type": ["string", "null"], "format": "uri" },
+        "proposer_website": { "type": ["string", "null"], "format": "uri" },
+        "github_repo": { "type": ["string", "null"], "format": "uri" }
+      }
+    },
+    "summary": {
+      "type": ["string", "null"],
+      "description": "Short proposer-authored summary / pitch / excerpt. May be markdown."
+    },
+    "problem": { "type": ["string", "null"] },
+    "solution": { "type": ["string", "null"] },
+    "definition_of_success": { "type": ["string", "null"] },
+    "ai_summary": {
+      "type": ["string", "null"],
+      "description": "AI-generated summary. When present, must be attributed in sources (typically Lidonation)."
+    },
+    "milestone_count": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "Number of milestones in the SoM (Statement of Milestones). Null when not applicable / unknown."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "is_opensource": {
+      "type": ["boolean", "null"]
+    },
+    "sources": {
+      "type": "array",
+      "description": "Provenance for every field in this record. At minimum, the source that established the proposal's existence.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["source", "fetched_at"],
+        "additionalProperties": false,
+        "properties": {
+          "source": {
+            "type": "string",
+            "enum": [
+              "lidonation_api",
+              "projectcatalyst_io",
+              "iohk_voting_results_pdf",
+              "milestones_projectcatalyst_io",
+              "catalyst_voices_gateway",
+              "ideascale_wayback",
+              "ideascale_live",
+              "cardano_forum",
+              "iog_blog",
+              "catalyst_swarm_gitbook",
+              "google_sheet_funded_reporting",
+              "manual_curation"
+            ]
+          },
+          "url": { "type": ["string", "null"], "format": "uri" },
+          "fetched_at": { "type": "string", "format": "date-time" },
+          "provenance_path": {
+            "type": ["string", "null"],
+            "description": "Relative path within this repo to the raw captured artifact, e.g. '_provenance/lidonation/page-127.json.gz'."
+          },
+          "fields_provided": {
+            "type": "array",
+            "description": "Which proposal fields this source contributed to (for field-level provenance auditing).",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"],
+      "description": "Aggregate record confidence. See docs/DATA_QUALITY.md for criteria."
+    },
+    "field_confidence": {
+      "type": ["object", "null"],
+      "description": "Optional per-field confidence overrides for fields whose confidence differs from the aggregate. Keys are field names from this schema; values are confidence levels.",
+      "additionalProperties": {
+        "type": "string",
+        "enum": ["high", "medium", "low"]
+      }
+    },
+    "notes": {
+      "type": ["string", "null"],
+      "description": "Free-form curator notes. Used for edge cases (cancellations, disputes, reconciliation comments)."
+    }
+  }
+}
