@@ -57,3 +57,6 @@ scratch/
 
 # Notebooks (allow checking in but ignore output/checkpoints)
 .ipynb_checkpoints/
+
+# pytest cache (sometimes spilled by WSL mount oddities)
+pytest-cache-files-*/

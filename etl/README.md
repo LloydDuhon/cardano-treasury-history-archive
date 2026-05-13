@@ -24,9 +24,21 @@ etl/
     └── validate_against_schema.py
 ```
 
-## Current status (Phase 0)
+## Current status (Phase 1)
 
-Only the validator is implemented. All fetchers and normalizers are stubs that raise `NotImplementedError`. This is intentional — Phase 0 is scaffolding only; Phase 1+ implementations follow ADR-approved per-source plans.
+**Implemented:**
+
+- `fetchers/lidonation_api.py` — Lidonation Catalyst Explorer API ingestion.
+- `normalizers/unify_proposals.py` — per-fund demultiplex of the Lidonation cache.
+- `validators/validate_against_schema.py` — JSON Schema gate.
+- `tests/` — 14 unit tests (respx-mocked HTTP, fixture-driven normalizer checks).
+
+**Still stubbed** (raise `NotImplementedError`):
+
+- `fetchers/projectcatalyst_funds.py` (Phase 2)
+- `fetchers/milestones_scraper.py` (Phase 3)
+- `fetchers/ideascale_wayback.py` (Phase 4)
+- `normalizers/reconcile_winners.py` (Phase 2)
 
 ## Setup
 
@@ -68,3 +80,44 @@ Each fetcher must:
 - Emit structured JSON logs to stdout (per DEVELOPMENT_STANDARDS § 3.1)
 - Be idempotent — re-runs produce the same output for the same input
 - Never delete prior captures
+
+## Run the Phase 1 sweep
+
+The smoke test (10 pages, ~10 seconds at 1.5 rps, ~240 proposals across ~8 funds):
+
+```bash
+cd etl
+python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+python -m fetchers.lidonation_api --max-pages 10
+python -m normalizers.unify_proposals
+ls ../data/funds/
+```
+
+Full sweep (~6 minutes wall, all 475 pages, ~11,385 proposals):
+
+```bash
+python -m fetchers.lidonation_api
+python -m normalizers.unify_proposals
+```
+
+Resume an interrupted sweep:
+
+```bash
+python -m fetchers.lidonation_api --start-page 312
+```
+
+Re-fetch a specific cached page (e.g., after upstream correction):
+
+```bash
+python -m fetchers.lidonation_api --start-page 47 --max-pages 1 --force
+python -m normalizers.unify_proposals    # re-derive per-fund output
+```
+
+## Run the test suite
+
+```bash
+pip install -r requirements-dev.txt
+python -m pytest
+python -m mypy fetchers normalizers validators
+```

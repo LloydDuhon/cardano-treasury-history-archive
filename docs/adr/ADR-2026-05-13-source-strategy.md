@@ -137,3 +137,56 @@ Default confidence by fund and field family:
 
 - Initial author review: Lloyd, 2026-05-13.
 - Next review: at the close of Phase 6 (initial release) or when Catalyst Voices Gateway becomes publicly stable, whichever is first.
+
+---
+
+## Implementation Notes (Phase 1)
+
+Added 2026-05-13 after probing the live Lidonation API. These are operational
+specifics that do not change the source-strategy decision above but affect how
+Layer 1 is implemented.
+
+**Server-side fund filter is unavailable.** Live probes showed that
+`?f[]={fund_uuid}` returns HTTP 500. Other variants (`fund=`, `fund_id=`,
+`funds[]=`, `fund[]=`) return 200 but silently ignore the parameter (verified
+by `total` remaining 11,385). `?per_page=` is rejected (HTML 500); page size is
+locked at 24. The `?sort=` parameter is silently ignored. Pages are
+mixed-fund - every page sampled contained proposals from ~8 different funds.
+
+**Consequence: we do a flat sweep.** The Phase 1 fetcher walks
+`/api/proposals?p=1..last_page` linearly without filter and caches each page to
+a CENTRAL location:
+
+    data/_raw/lidonation/fund-titles.json
+    data/_raw/lidonation/page-NNNN.json.gz
+
+The per-fund split happens in the normalizer
+(`etl/normalizers/unify_proposals.py`), keyed off each record's
+`record.fund.title` ("Fund 10" -> fund_number=10).
+
+**Authoritative fund linkage is `record.fund.id` (UUID) and
+`record.fund.title`** ("Fund 10"). The originally documented
+`record.campaign.fund_id` is null in current responses; do not rely on it.
+
+**Schema-vs-API surface notes:**
+- `record.id` is a UUID (stored as `external_ids.lidonation_uuid`).
+- `record.funding_status` matches our enum directly (`approved` /
+  `not_approved`); we also map legacy `funded` / `unfunded`.
+- `record.status` is the project status; we map `in-progress` -> `in_progress`
+  and `completed` -> `complete` to match the schema enum.
+- `record.currency` may be `USD`, `ADA`, or other; we normalize unknown values
+  to `UNKNOWN` rather than silently dropping.
+- `yes_votes_count` is raw lovelace for older funds; units vary by fund. We
+  preserve the raw value and document the units caveat in `DATA_QUALITY.md`
+  rather than convert.
+
+**Politeness defaults baked into the fetcher:** 1.5 rps, identifiable
+User-Agent with repo URL, exponential backoff (base 1.5, max 30s, 5 attempts),
+atomic-write with fsync, idempotent re-runs (cached pages skipped unless
+`--force`). All settings tunable via `.env`.
+
+**Performance:** Full sweep at 1.5 rps is ~6 minutes wall, ~7 MB gzipped on
+disk for 475 pages.
+
+If the Lidonation API ever fixes the fund filter, this implementation note
+should be revisited - per-fund snapshots would be cleaner.
