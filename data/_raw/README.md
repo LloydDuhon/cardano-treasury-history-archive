@@ -30,6 +30,10 @@ See [ADR-2026-05-13 Implementation Notes](../../docs/adr/ADR-2026-05-13-source-s
   fund where one exists (F2-F13). Downloaded from static.iohk.io,
   Google Drive, or projectcatalyst.io inline depending on the fund.
 
+The Milestone Module's raw captures live PER-FUND (not in this central
+`_raw/`) because the Supabase queries naturally scope by fund_id:
+`data/funds/fund-XX/_provenance/milestones_supabase/`.
+
 ## Replay
 
 These captures can be replayed through the normalizer without re-hitting any

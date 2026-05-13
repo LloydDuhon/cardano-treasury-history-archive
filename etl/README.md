@@ -8,81 +8,62 @@ This directory follows [`mellod-infra/docs/DEVELOPMENT_STANDARDS.md`](https://gi
 
 ```
 etl/
-├── pyproject.toml          # ruff + mypy configuration
-├── requirements.txt        # pinned runtime dependencies
-├── requirements-dev.txt    # pytest, respx, mypy, ruff
-├── .env.example            # environment template
-├── pytest.ini              # test discovery config
-├── README.md               # you are here
-├── fetchers/               # fetch raw data from each upstream
-│   ├── lidonation_api.py
-│   ├── projectcatalyst_funds.py
-│   ├── milestones_scraper.py   (stub, Phase 3)
-│   └── ideascale_wayback.py    (stub, Phase 4)
-├── parsers/                # convert third-party formats to structured rows
-│   └── iohk_pdf.py
-├── normalizers/            # canonical schema producers
-│   ├── unify_proposals.py
-│   └── reconcile_winners.py
-├── validators/             # quality gates
+├── pyproject.toml           # ruff + mypy configuration
+├── requirements.txt         # pinned runtime deps
+├── requirements-dev.txt     # pytest, respx, mypy, ruff
+├── .env.example
+├── pytest.ini
+├── README.md                # you are here
+├── fetchers/
+│   ├── lidonation_api.py            # Phase 1
+│   ├── projectcatalyst_funds.py     # Phase 2
+│   ├── milestones_scraper.py        # Phase 3 (Supabase REST)
+│   └── ideascale_wayback.py         # Phase 4 stub
+├── parsers/
+│   └── iohk_pdf.py                  # Phase 2
+├── normalizers/
+│   ├── unify_proposals.py           # Phase 1
+│   ├── reconcile_winners.py         # Phase 2
+│   └── derive_milestones.py         # Phase 3
+├── validators/
 │   └── validate_against_schema.py
-└── tests/                  # 33 tests across all of the above
-    ├── conftest.py
-    ├── fixtures/
-    ├── test_lidonation_api.py
-    ├── test_unify_proposals.py
-    ├── test_projectcatalyst_funds.py
-    ├── test_iohk_pdf_parser.py
-    └── test_reconcile_winners.py
+└── tests/                           # 51 tests
 ```
 
-## Current status (Phase 2)
+## Current status (Phase 3)
 
 **Implemented:**
 
-- `fetchers/lidonation_api.py` — Lidonation Catalyst Explorer API ingestion (Phase 1).
-- `fetchers/projectcatalyst_funds.py` — projectcatalyst.io HTML + IOG voting-results PDF fetcher (Phase 2).
-- `parsers/iohk_pdf.py` — pdfplumber-based voting-results PDF parser (Phase 2).
-- `normalizers/unify_proposals.py` — per-fund demultiplex of the Lidonation cache (Phase 1).
-- `normalizers/reconcile_winners.py` — diff-only sidecar against IOG PDFs (Phase 2).
-- `validators/validate_against_schema.py` — JSON Schema gate over proposals, proposers, milestones, and `_reconciliation` files.
-- `tests/` — 33 unit tests.
+- `fetchers/lidonation_api.py` (Phase 1).
+- `fetchers/projectcatalyst_funds.py` + `parsers/iohk_pdf.py` (Phase 2).
+- `fetchers/milestones_scraper.py` (Phase 3, Supabase REST).
+- `normalizers/unify_proposals.py` (Phase 1).
+- `normalizers/reconcile_winners.py` (Phase 2).
+- `normalizers/derive_milestones.py` (Phase 3).
+- `validators/validate_against_schema.py` covers `proposals`, `proposers`, `milestones`, and `_reconciliation` files.
+- 51 unit tests across the suite.
 
-**Still stubbed** (raise `NotImplementedError`):
+**Still stubbed:**
 
-- `fetchers/milestones_scraper.py` (Phase 3)
-- `fetchers/ideascale_wayback.py` (Phase 4)
+- `fetchers/ideascale_wayback.py` (Phase 4).
 
 ## Setup
 
 ```bash
 cd etl
 python -m venv .venv
-source .venv/bin/activate    # Windows: .venv\Scripts\activate
+source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-cp .env.example .env         # then edit .env as needed
+cp .env.example .env               # then edit as needed
 ```
-
-## Phased implementation plan
-
-See [`../docs/CATALYST-HISTORY-CAPTURE-PLAN.md`](../docs/CATALYST-HISTORY-CAPTURE-PLAN.md). At a glance:
-
-| Phase | Component | What |
-|---|---|---|
-| 1 | `fetchers/lidonation_api.py` + `normalizers/unify_proposals.py` | Paginated `/api/proposals` ingestion for F2–F15 |
-| 2 | `fetchers/projectcatalyst_funds.py` + `parsers/iohk_pdf.py` + `normalizers/reconcile_winners.py` | Cross-verify winners against IOG PDFs |
-| 3 | `fetchers/milestones_scraper.py` | F10–F15 milestone capture |
-| 4 | `fetchers/ideascale_wayback.py` | F1 backfill from Internet Archive |
-| 6 | `normalizers/*` | Apply reconciliations into canonical files; emit consolidated CSVs |
 
 ## Conventions every fetcher must honor
 
 - Identify itself with `HTTP_USER_AGENT` from `.env`.
 - Respect per-host rate limits from `.env`.
-- Snapshot raw responses to `../data/_raw/<source>/` (centralized) or `../data/funds/fund-XX/_provenance/<source>/` (per-fund where the upstream supports fund scoping).
-- Emit structured JSON logs to stdout (per `mellod-infra` DEVELOPMENT_STANDARDS § 3.1).
+- Cache raw responses; never delete prior captures.
+- Emit structured JSON logs to stdout.
 - Be idempotent — re-runs produce the same output for the same input.
-- Never delete prior captures.
 
 ## Validate the dataset against schemas
 
@@ -90,47 +71,30 @@ See [`../docs/CATALYST-HISTORY-CAPTURE-PLAN.md`](../docs/CATALYST-HISTORY-CAPTUR
 python validators/validate_against_schema.py
 ```
 
-Walks `../data/funds/*/{proposals,proposers,milestones,_reconciliation}.json` and validates every record. Exits non-zero on any failure. Always-on; safe with an empty dataset.
+Always-on; safe with an empty dataset.
 
-## Run the Phase 1 sweep
+## Phase 1 — Lidonation Catalyst Explorer API
 
-Smoke test (10 pages, ~10 seconds at 1.5 rps, ~240 proposals across ~8 funds):
+Smoke (10 pages, ~10 s):
 
 ```bash
-cd etl
 python -m fetchers.lidonation_api --max-pages 10
 python -m normalizers.unify_proposals
-ls ../data/funds/
 ```
 
-Full sweep (~6 minutes wall, all 475 pages, ~11,385 proposals):
+Full sweep (~6 min):
 
 ```bash
 python -m fetchers.lidonation_api
 python -m normalizers.unify_proposals
 ```
 
-Resume an interrupted sweep:
+## Phase 2 — IOG voting-results PDF cross-check
+
+Smoke against Fund 2:
 
 ```bash
-python -m fetchers.lidonation_api --start-page 312
-```
-
-Re-fetch a specific cached page (e.g., after upstream correction):
-
-```bash
-python -m fetchers.lidonation_api --start-page 47 --max-pages 1 --force
-python -m normalizers.unify_proposals    # re-derive per-fund output
-```
-
-## Run the Phase 2 cross-check
-
-Smoke against Fund 2 (downloads ~1.8 MB PDF, ~10 seconds total):
-
-```bash
-cd etl
 python -m fetchers.projectcatalyst_funds --fund 2
-# Parse the PDF into _intermediate/iohk_winners.json:
 python -c "
 from pathlib import Path
 from datetime import datetime, timezone
@@ -146,23 +110,30 @@ write_intermediate(
 )
 "
 python -m normalizers.reconcile_winners --fund 2
-cat ../data/funds/fund-02/_reconciliation.json
 ```
 
-Full Phase 2 sweep (F2–F13, ~15 minutes wall once the parser is wired to a CLI runner):
+## Phase 3 — Milestone Module (Supabase REST)
+
+Smoke against Fund 9 (66 proposals, ~7 endpoint calls):
 
 ```bash
-python -m fetchers.projectcatalyst_funds        # downloads all PDFs + summaries
-# Per-fund parse + reconcile (loop the one-liner above per fund), then:
-python -m normalizers.reconcile_winners         # any fund with both inputs
+python -m fetchers.milestones_scraper --fund 9
+python -m normalizers.derive_milestones --fund 9
+type ..\data\funds\fund-09\milestones.json | python -m json.tool | head -50
+python validators\validate_against_schema.py --fund 9
 ```
 
-A first-class `python -m parsers.iohk_pdf <fund>` CLI runner is a deliberate follow-up (see `docs/PR_NOTES_PHASE2.md`).
+Full sweep (Funds 9–14):
+
+```bash
+python -m fetchers.milestones_scraper
+python -m normalizers.derive_milestones
+```
 
 ## Run the test suite
 
 ```bash
 pip install -r requirements-dev.txt
-python -m pytest                                    # 33 passed
+python -m pytest                                  # 51 passed
 python -m mypy fetchers normalizers parsers validators
 ```

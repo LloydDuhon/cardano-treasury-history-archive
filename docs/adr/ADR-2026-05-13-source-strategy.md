@@ -190,3 +190,42 @@ disk for 475 pages.
 
 If the Lidonation API ever fixes the fund filter, this implementation note
 should be revisited - per-fund snapshots would be cleaner.
+
+## Implementation Notes (Phase 3)
+
+Added 2026-05-13 after probing the Milestone Module.
+
+**Layer 3 source is Supabase, not HTML.** The `milestones.projectcatalyst.io`
+site is a Vite-built SPA (the served HTML is a 546-byte shell containing
+only `<div id="app"></div>` plus script tags). All data is fetched from
+a public Supabase project: `https://hutbpqoulajxnzwykvrf.supabase.co`.
+The anon key is exposed in `/env.js` and is intended for client-side use.
+We respect the same key from server-side (read-only) and identify our
+client via a polite User-Agent.
+
+**Tables we read (read-only via PostgREST):**
+- `funds` (id 1..6 -> Fund 9..14)
+- `challenges` (id, title, fund_id)
+- `proposals` (one row per funded project)
+- `soms` Statement of Milestones; **`current=true` filter required** to
+  drop revision history from the normalized output
+- `poas` Proof of Achievement (markdown content + active_reviews counter)
+- `signoffs` (linking som_id <-> poa_id with reviewer user_id)
+
+**Derived per-milestone status mapping:**
+- `accepted` <- at least one row in `signoffs` for this som_id
+- `under_review` <- a current PoA exists with `active_reviews > 0`
+- `submitted` <- a current PoA exists with `active_reviews == 0`
+- `not_started` <- no current PoA
+
+`rejected`/`stalled`/`withdrawn` cannot be derived from the visible tables;
+records in those states are left as the closest enum value or `unknown`,
+to be corrected by hand if/when needed.
+
+**Performance:** Full sweep is ~36 endpoint calls (6 tables x 6 funds),
+under one minute at 1.0 rps. Versus the originally planned per-proposal
+HTML scrape (would have been ~1,146 page fetches), this is a ~30x
+reduction in upstream load.
+
+If the Milestone Module ever migrates off Supabase, we revisit this
+section. Provenance is preserved via gzipped JSON of every table response.

@@ -8,6 +8,27 @@ and SemVer for pipeline code.
 
 ## [Unreleased]
 
+### Added (Phase 3 - Milestone Module Supabase ingestion)
+- `etl/fetchers/milestones_scraper.py` - REWRITTEN. The Milestone Module
+  is a Vite SPA backed by Supabase, not an HTML site; the SPA's public
+  anon key is exposed in `/env.js`. We query Supabase REST directly
+  against tables: funds, challenges, proposals, soms, poas, signoffs.
+  No headless-browser / HTML scrape dep. Covers Funds 9-14
+  (1,146 funded proposals at survey time).
+- `etl/normalizers/derive_milestones.py` - reads the cached Supabase
+  tables, filters `soms.current=true` for the normalized output (raw
+  cache keeps all revisions), derives per-milestone `status` from
+  PoA + signoff state, extracts evidence URLs from PoA markdown
+  content, flags the final milestone as `is_closeout`. Writes
+  `data/funds/fund-XX/milestones.json` matching
+  `schemas/milestone.schema.json`.
+- Test fixtures: trimmed real F9 Supabase responses for 2 proposals
+  (~70 KB total across 6 tables).
+- 18 new tests across `test_milestones_supabase.py` and
+  `test_derive_milestones.py`; suite total now 51.
+- ADR-2026-05-13 Implementation Notes appendix extended to record
+  the Supabase-backed nature of the Milestone Module.
+
 ### Added (Phase 2 - IOG voting-results cross-check)
 - `etl/parsers/iohk_pdf.py` - pdfplumber-based parser for the canonical
   IOG voting-results PDFs. Validated against Fund 2 (78 rows / 11 funded).
