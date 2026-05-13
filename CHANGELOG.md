@@ -8,6 +8,23 @@ and SemVer for pipeline code.
 
 ## [Unreleased]
 
+### Added (Phase 2 - IOG voting-results cross-check)
+- `etl/parsers/iohk_pdf.py` - pdfplumber-based parser for the canonical
+  IOG voting-results PDFs. Validated against Fund 2 (78 rows / 11 funded).
+- `etl/fetchers/projectcatalyst_funds.py` - HTML scrape of /funds/N for
+  the embedded `__NEXT_DATA__` JSON + PDF downloader handling
+  static.iohk.io / Google Drive / inline patterns.
+- `etl/normalizers/reconcile_winners.py` - diff-only sidecar that writes
+  `data/funds/fund-XX/_reconciliation.json` listing per-record
+  disagreements, unmatched primary, unmatched secondary. Never modifies
+  `proposals.json` (corrections deferred to Phase 6).
+- `schemas/reconciliation.schema.json` - canonical schema for the diff
+  record. Now validated by `validate_against_schema.py`.
+- Test fixtures: `etl/tests/fixtures/funds-2.html.gz` (45 KB) and
+  `etl/tests/fixtures/iohk-pdfs/fund-02.pdf` (1.8 MB).
+- 13 new tests across 3 modules; total suite now 33 tests.
+- `pdfplumber 0.11.4` and `pypdf 5.0.1` pinned in `requirements.txt`.
+
 ### Added (Phase 1 - Lidonation ingestion)
 - `etl/fetchers/lidonation_api.py` - polite paginated fetcher for the
   Catalyst Explorer API. 1.5 rps default, exponential backoff, identifiable

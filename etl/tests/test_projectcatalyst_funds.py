@@ -1,0 +1,126 @@
+"""Tests for fetchers/projectcatalyst_funds.py."""
+
+from __future__ import annotations
+
+import gzip
+import json
+from pathlib import Path
+
+import httpx
+import pytest
+import respx
+
+from fetchers.projectcatalyst_funds import (
+    BASE_URL,
+    FundFetcherConfig,
+    FundPageClient,
+    NextDataError,
+    download_voting_results_pdf,
+    extract_fund_summary,
+    extract_next_data,
+    fetch_fund_landing,
+    gdrive_direct_url,
+)
+
+FIXTURE_HTML = Path(__file__).resolve().parent / "fixtures" / "funds-2.html.gz"
+
+
+def _make_client(tmp_path: Path) -> FundPageClient:
+    cfg = FundFetcherConfig(user_agent="test/1.0", rps=1000.0, data_root=tmp_path / "data")
+    return FundPageClient(cfg)
+
+
+def test_extract_next_data_from_fixture() -> None:
+    html = gzip.decompress(FIXTURE_HTML.read_bytes())
+    blob = extract_next_data(html)
+    assert "props" in blob
+
+
+def test_extract_fund_summary_from_fixture() -> None:
+    html = gzip.decompress(FIXTURE_HTML.read_bytes())
+    summary = extract_fund_summary(html)
+    assert summary["fund"] == 2
+    assert summary["fund_name"] == "Fund2"
+    assert summary["funded_count"] == 11
+    assert summary["voting_results_url"] == (
+        "https://static.iohk.io/docs/catalyst/catalyst-voting-results-fund2.pdf"
+    )
+
+
+def test_extract_next_data_missing_script() -> None:
+    with pytest.raises(NextDataError):
+        extract_next_data(b"<html><body>no next data here</body></html>")
+
+
+def test_extract_next_data_unparseable() -> None:
+    with pytest.raises(NextDataError):
+        extract_next_data(b'<script id="__NEXT_DATA__" type="application/json">{not json}</script>')
+
+
+def test_gdrive_direct_url_translation() -> None:
+    view = "https://drive.google.com/file/d/13h5JFtwqyylMUNMoRGXQZ-FJEM4bznOJ/view"
+    direct = gdrive_direct_url(view)
+    assert direct == (
+        "https://drive.google.com/uc?export=download&id=" "13h5JFtwqyylMUNMoRGXQZ-FJEM4bznOJ"
+    )
+
+
+def test_gdrive_direct_url_non_gdrive_returns_none() -> None:
+    assert gdrive_direct_url("https://static.iohk.io/x.pdf") is None
+    assert gdrive_direct_url("") is None
+
+
+@respx.mock
+def test_fetch_fund_landing_caches_atomically(tmp_path: Path) -> None:
+    html_bytes = gzip.decompress(FIXTURE_HTML.read_bytes())
+    respx.get(f"{BASE_URL}/funds/2").mock(return_value=httpx.Response(200, content=html_bytes))
+    with _make_client(tmp_path) as client:
+        summary = fetch_fund_landing(2, output_root=tmp_path / "data", client=client)
+    assert summary["fund"] == 2
+    assert summary["funded_count"] == 11
+
+    cached_html = tmp_path / "data" / "_raw" / "projectcatalyst_io" / "funds-02.html.gz"
+    cached_summary = tmp_path / "data" / "_raw" / "projectcatalyst_io" / "funds-02.summary.json"
+    assert cached_html.exists()
+    assert cached_summary.exists()
+    parsed = json.loads(cached_summary.read_text())
+    assert parsed["fund"] == 2
+    assert "raw_fund_object" not in parsed  # stripped from on-disk summary
+
+
+@respx.mock
+def test_fetch_fund_landing_skips_when_cached(tmp_path: Path) -> None:
+    html_bytes = gzip.decompress(FIXTURE_HTML.read_bytes())
+    cached = tmp_path / "data" / "_raw" / "projectcatalyst_io" / "funds-02.html.gz"
+    cached.parent.mkdir(parents=True)
+    cached.write_bytes(gzip.compress(html_bytes))
+
+    route = respx.get(f"{BASE_URL}/funds/2").mock(
+        return_value=httpx.Response(200, content=b"SHOULD NOT BE CALLED")
+    )
+    with _make_client(tmp_path) as client:
+        fetch_fund_landing(2, output_root=tmp_path / "data", client=client)
+    assert route.call_count == 0
+
+
+@respx.mock
+def test_download_voting_results_pdf_static_iohk(tmp_path: Path) -> None:
+    pdf_bytes = b"%PDF-1.7\n" + b"\x00" * 100
+    url = "https://static.iohk.io/docs/catalyst/catalyst-voting-results-fund2.pdf"
+    respx.get(url).mock(return_value=httpx.Response(200, content=pdf_bytes))
+    with _make_client(tmp_path) as client:
+        path = download_voting_results_pdf(2, url, output_root=tmp_path / "data", client=client)
+    assert path.exists()
+    assert path.read_bytes() == pdf_bytes
+
+
+@respx.mock
+def test_download_voting_results_pdf_rejects_non_pdf(tmp_path: Path) -> None:
+    """Google Drive confirm-pages return HTML; we must refuse it."""
+    url = "https://drive.google.com/file/d/abcdef/view"
+    direct = "https://drive.google.com/uc?export=download&id=abcdef"
+    respx.get(direct).mock(
+        return_value=httpx.Response(200, content=b"<html>confirm download?</html>")
+    )
+    with _make_client(tmp_path) as client, pytest.raises(RuntimeError):
+        download_voting_results_pdf(99, url, output_root=tmp_path / "data", client=client)

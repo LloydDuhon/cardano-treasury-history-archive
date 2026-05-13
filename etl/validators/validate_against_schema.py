@@ -37,6 +37,7 @@ SCHEMA_FILES: dict[str, str] = {
     "proposals.json": "proposal.schema.json",
     "proposers.json": "proposer.schema.json",
     "milestones.json": "milestone.schema.json",
+    "_reconciliation.json": "reconciliation.schema.json",
 }
 
 
@@ -60,14 +61,20 @@ def load_schema(schema_path: Path) -> Draft202012Validator:
 
 
 def iter_records(data_path: Path) -> Iterable[tuple[int, dict[str, object]]]:
-    """Yield (index, record) pairs from a JSON array file.
+    """Yield (index, record) pairs from a JSON file.
 
-    Tolerates an empty file or a file containing `[]`.
+    Tolerates an array (one record per element) or a single-object file
+    (yielded as index 0). Tolerates an empty array.
     """
     with data_path.open(encoding="utf-8") as fh:
         payload = json.load(fh)
+    if isinstance(payload, dict):
+        yield 0, payload
+        return
     if not isinstance(payload, list):
-        raise ValueError(f"{data_path} must contain a JSON array, got {type(payload).__name__}")
+        raise ValueError(
+            f"{data_path} must contain a JSON array or object, " f"got {type(payload).__name__}"
+        )
     for idx, record in enumerate(payload):
         if not isinstance(record, dict):
             raise ValueError(f"{data_path}[{idx}] is not an object")
@@ -103,6 +110,7 @@ def id_field_for(filename: str) -> str:
         "proposals.json": "proposal_id",
         "proposers.json": "proposer_id",
         "milestones.json": "milestone_id",
+        "_reconciliation.json": "fund",
     }[filename]
 
 

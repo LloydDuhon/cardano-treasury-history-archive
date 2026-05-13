@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lloydduhon/catalyst-history-archive/schemas/reconciliation.schema.json",
+  "title": "Catalyst Cross-Source Reconciliation",
+  "description": "A per-fund record of disagreements between two sources of truth (typically Lidonation API vs IOG voting-results PDF). Passive sidecar; reading this file never modifies proposals.json. Corrections are applied in Phase 6 after maintainer review.",
+  "type": "object",
+  "required": [
+    "fund",
+    "reconciled_at",
+    "sources",
+    "agreement_count",
+    "disagreements",
+    "unmatched_in_primary",
+    "unmatched_in_secondary"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "fund": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 99
+    },
+    "reconciled_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primary", "secondary"],
+      "properties": {
+        "primary": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["label", "path"],
+          "properties": {
+            "label": { "type": "string", "enum": ["lidonation_api"] },
+            "path": { "type": "string" }
+          }
+        },
+        "secondary": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["label", "path"],
+          "properties": {
+            "label": {
+              "type": "string",
+              "enum": ["iohk_voting_results_pdf", "projectcatalyst_io"]
+            },
+            "path": { "type": "string" }
+          }
+        }
+      }
+    },
+    "agreement_count": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of proposals where both sources agreed on funded/not-funded."
+    },
+    "disagreements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "primary_proposal_id",
+          "matched_secondary_title",
+          "primary_funding_status",
+          "secondary_funded_flag",
+          "verdict"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "primary_proposal_id": { "type": "string" },
+          "matched_secondary_title": { "type": "string" },
+          "primary_funding_status": {
+            "type": "string",
+            "enum": [
+              "approved",
+              "not_approved",
+              "over_budget",
+              "leftover",
+              "withdrawn",
+              "unknown"
+            ]
+          },
+          "secondary_funded_flag": { "type": "boolean" },
+          "verdict": {
+            "type": "string",
+            "enum": ["secondary_wins", "needs_human_review"],
+            "description": "Per ADR-2026-05-13, IOG/CF artifacts win automatically over Lidonation; some cases require human review."
+          },
+          "note": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "unmatched_in_primary": {
+      "type": "array",
+      "description": "Records present in the secondary source (e.g., IOG PDF) that we could not match to any primary (Lidonation) record by title.",
+      "items": {
+        "type": "object",
+        "required": ["title"],
+        "additionalProperties": false,
+        "properties": {
+          "title": { "type": "string" },
+          "funded_flag": { "type": "boolean" },
+          "note": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "unmatched_in_secondary": {
+      "type": "array",
+      "description": "Records present in the primary source that we could not match to any secondary record by title. Common cause: secondary source only lists funded proposals.",
+      "items": {
+        "type": "object",
+        "required": ["primary_proposal_id"],
+        "additionalProperties": false,
+        "properties": {
+          "primary_proposal_id": { "type": "string" },
+          "title": { "type": "string" },
+          "primary_funding_status": { "type": "string" }
+        }
+      }
+    },
+    "notes": { "type": ["string", "null"] }
+  }
+}
