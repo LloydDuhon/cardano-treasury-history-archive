@@ -1,30 +1,26 @@
-# catalyst-history-etl — pinned runtime dependencies.
+# catalyst-history-etl - pinned runtime dependencies.
 # Per mellod-infra DEVELOPMENT_STANDARDS.md: exact versions in deploy artifact.
-#
-# Phase 0: only validation deps are pinned. Fetcher/parser deps are committed
-# but commented until their fetchers are implemented (Phase 1+).
 
-# --- Always required (Phase 0) ---
+# --- Always required ---
 jsonschema==4.23.0
 referencing==0.35.1
 rpds-py==0.20.0
 
-# --- Phase 1 (Lidonation API) ---
-# httpx==0.27.2
-# tenacity==9.0.0
-# orjson==3.10.7
+# --- Phase 1: Lidonation API fetcher + minimal normalizer ---
+httpx==0.27.2
+tenacity==9.0.0
+python-slugify==8.0.4
 
-# --- Phase 2 (PDF parsing for IOG voting-results) ---
+# --- Phase 2 (deferred): PDF parsing for IOG voting-results ---
 # pdfplumber==0.11.4
 # pypdf==5.0.1
 
-# --- Phase 3 (Milestone Module scraping) ---
+# --- Phase 3 (deferred): Milestone Module scraping ---
 # selectolax==0.3.27
 # beautifulsoup4==4.12.3
 
-# --- Phase 4 (Wayback CDX scrape for Fund 1) ---
+# --- Phase 4 (deferred): Wayback CDX scrape for Fund 1 ---
 # wayback==0.4.5
 
-# --- Normalization + output (Phase 6) ---
+# --- Phase 6 (deferred): consolidated CSV output ---
 # pandas==2.2.3
-# python-slugify==8.0.4

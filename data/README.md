@@ -2,10 +2,14 @@
 
 This directory holds the captured dataset. Currently empty — Phase 0 of the project has only set up the scaffolding.
 
-## Planned layout
+## Layout
 
 ```
 data/
+├── _raw/                                # centralized raw captures (see _raw/README.md)
+│   └── lidonation/
+│       ├── fund-titles.json             # fund UUID -> title map
+│       └── page-NNNN.json.gz            # one Laravel paginator response per page
 ├── funds/
 │   ├── fund-01/
 │   │   ├── proposals.json          # normalized array of proposal records

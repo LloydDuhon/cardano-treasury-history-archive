@@ -189,12 +189,12 @@ Design principles honored:
 - **Soft outreach:** email Lidonation introducing the project + proposing attribution + asking about rate limit guidance. (They explicitly call the API "free to the entire community" — but courtesy buys goodwill and possibly a higher rate-limit token.)
 
 **Phase 1 — Lidonation ingestion (weeks 1–2)** — **biggest single ROI**
-- Implement `fetchers/lidonation_api.py`.
-- Polite client: 1–2 req/sec, exponential backoff on 429/5xx, identifiable `User-Agent: mellod-catalyst-archive/0.1 (lloydduhon@gmail.com)`.
-- Endpoints: `/api/proposals` (475 pages × 24), `/api/fund-titles`, `/api/campaigns`, `/api/ideascale-profiles`, `/api/catalyst-profiles`, `/api/groups`, `/api/tags`, `/api/reviews`.
-- Cache raw page JSON under `_provenance/lidonation/`.
-- Normalize into per-fund `proposals.json` + `proposals.csv` + `proposers.csv`.
-- **Result:** F2–F15 proposer/proposal data populated to ~95% completeness for the proposal entity.
+- Implement `fetchers/lidonation_api.py` (DONE 2026-05-13).
+- Polite client: 1.5 req/sec default, exponential backoff on 429/5xx, identifiable `User-Agent: catalyst-history-archive/0.1 (+https://github.com/lloydduhon/catalyst-history-archive)`.
+- Endpoints initially consumed: `/api/proposals` (475 pages × 24), `/api/fund-titles`. Other endpoints (`/api/campaigns`, `/api/ideascale-profiles`, `/api/catalyst-profiles`, `/api/groups`, `/api/tags`, `/api/reviews`) deferred until first sweep is ingested and validated.
+- Cache raw page JSON CENTRALLY at `data/_raw/lidonation/page-NNNN.json.gz` (the server-side fund filter is broken; pages mix funds — see ADR-2026-05-13 Implementation Notes).
+- Phase 1 normalizer (`unify_proposals.py`) demultiplexes the cache into per-fund `proposals.json`. Per-fund `proposers.csv` and consolidated CSVs are Phase 6.
+- **Result:** F2–F15 proposer/proposal data populated to ~95% completeness for the proposal entity once the full sweep runs.
 
 **Phase 2 — Cross-verify winners with IOG voting-results (week 2)**
 - Implement `fetchers/projectcatalyst_funds.py` — fetch each `/funds/N` HTML, parse Next.js JSON for `votingResultsUrl` + canonical counts.
