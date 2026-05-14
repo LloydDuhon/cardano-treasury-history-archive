@@ -128,14 +128,16 @@ def _first_text(*candidates: object) -> str | None:
         if isinstance(c, tuple) and len(c) == 2:
             tag, attr = c
             if tag is not None and hasattr(tag, "get"):
-                val = tag.get(attr)
+                val: Any = tag.get(attr)
                 if val:
-                    return str(val)
+                    text: str = str(val).strip()
+                    if text:
+                        return text
             continue
         if hasattr(c, "get_text"):
-            text = c.get_text(strip=True)
-            if text:
-                return text
+            got: Any = c.get_text(strip=True)
+            if got:
+                return str(got)
     return None
 
 
