@@ -1,0 +1,6 @@
+[
+  ["urlkey", "timestamp", "original", "mimetype", "statuscode", "digest", "length"],
+  ["com,ideascale,cardano)/a/dtd/100001-1", "20201015120000", "https://cardano.ideascale.com/a/dtd/100001-1", "text/html", "200", "AAAAAAAAAAAAAAAA", "12345"],
+  ["com,ideascale,cardano)/a/dtd/100002-1", "20201020120000", "https://cardano.ideascale.com/a/dtd/100002-1", "text/html", "200", "BBBBBBBBBBBBBBBB", "23456"],
+  ["com,ideascale,cardano)/a/dtd/100003-1", "20201101120000", "https://cardano.ideascale.com/a/dtd/100003-1", "text/html", "200", "CCCCCCCCCCCCCCCC", "34567"]
+]
