@@ -8,6 +8,24 @@ and SemVer for pipeline code.
 
 ## [Unreleased]
 
+### Added (Phase 4 - Fund 1 Wayback recovery)
+- `etl/fetchers/ideascale_wayback.py` - REWRITTEN. Two-stage fetcher:
+  Wayback CDX query for `cardano.ideascale.com/a/dtd/*` in the F1
+  window (Sept 2020 - Jan 2021), then per-URL snapshot download via
+  `web.archive.org/web/<ts>id_/<url>`. Conservative 0.5 rps, big
+  backoff on 429, identifiable UA. Cache under
+  `data/funds/fund-01/_provenance/ideascale_wayback/`.
+- `etl/normalizers/derive_fund_one.py` - BeautifulSoup4 parser for
+  archived IdeaScale HTML. Recovers title / proposer / description /
+  ask. Emits `data/funds/fund-01/proposals.json` matching
+  `proposal.schema.json` with `funding_status: "unknown"` (F1 was the
+  pilot, no formal voting occurred), `project_status: "unfunded"`,
+  `confidence: "low"`.
+- Test fixtures: handcrafted CDX response + rich/bare HTML samples.
+- 16 new tests across `test_ideascale_wayback.py` and
+  `test_derive_fund_one.py`; suite total now 67.
+- `beautifulsoup4 4.12.3` + `soupsieve 2.6` pinned.
+
 ### Added (Phase 3 - Milestone Module Supabase ingestion)
 - `etl/fetchers/milestones_scraper.py` - REWRITTEN. The Milestone Module
   is a Vite SPA backed by Supabase, not an HTML site; the SPA's public

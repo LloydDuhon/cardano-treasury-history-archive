@@ -18,34 +18,35 @@ etl/
 │   ├── lidonation_api.py            # Phase 1
 │   ├── projectcatalyst_funds.py     # Phase 2
 │   ├── milestones_scraper.py        # Phase 3 (Supabase REST)
-│   └── ideascale_wayback.py         # Phase 4 stub
+│   └── ideascale_wayback.py         # Phase 4 (Wayback CDX)
 ├── parsers/
 │   └── iohk_pdf.py                  # Phase 2
 ├── normalizers/
 │   ├── unify_proposals.py           # Phase 1
 │   ├── reconcile_winners.py         # Phase 2
-│   └── derive_milestones.py         # Phase 3
+│   ├── derive_milestones.py         # Phase 3
+│   └── derive_fund_one.py           # Phase 4
 ├── validators/
 │   └── validate_against_schema.py
-└── tests/                           # 51 tests
+└── tests/                           # 67 tests
 ```
 
-## Current status (Phase 3)
+## Current status (Phase 4)
 
 **Implemented:**
 
 - `fetchers/lidonation_api.py` (Phase 1).
 - `fetchers/projectcatalyst_funds.py` + `parsers/iohk_pdf.py` (Phase 2).
 - `fetchers/milestones_scraper.py` (Phase 3, Supabase REST).
+- `fetchers/ideascale_wayback.py` (Phase 4, Wayback CDX + snapshot fetch).
 - `normalizers/unify_proposals.py` (Phase 1).
 - `normalizers/reconcile_winners.py` (Phase 2).
 - `normalizers/derive_milestones.py` (Phase 3).
-- `validators/validate_against_schema.py` covers `proposals`, `proposers`, `milestones`, and `_reconciliation` files.
-- 51 unit tests across the suite.
+- `normalizers/derive_fund_one.py` (Phase 4, BS4-parsed IdeaScale snapshots).
+- `validators/validate_against_schema.py` covers `proposals`, `proposers`, `milestones`, and `_reconciliation`.
+- **67 unit tests** across the suite.
 
-**Still stubbed:**
-
-- `fetchers/ideascale_wayback.py` (Phase 4).
+**Still stubbed:** none. All four fetchers and four normalizers are real.
 
 ## Setup
 
@@ -134,6 +135,30 @@ python -m normalizers.derive_milestones
 
 ```bash
 pip install -r requirements-dev.txt
-python -m pytest                                  # 51 passed
+python -m pytest                                  # 67 passed
 python -m mypy fetchers normalizers parsers validators
 ```
+
+## Phase 4 — Fund 1 Wayback recovery
+
+The Catalyst pilot's only paper trail is the Internet Archive. Wayback is
+rate-sensitive; if you hit 429, wait and re-run (cache makes it idempotent).
+
+Smoke (5 snapshots, ~1 min):
+
+```bash
+python -m fetchers.ideascale_wayback --max-snapshots 5
+python -m normalizers.derive_fund_one
+type ..\data\funds\fund-01\proposals.json | python -m json.tool | Select-Object -First 50
+python validators\validate_against_schema.py --fund 1
+```
+
+Full F1 sweep (~56 unique URLs at 0.5 rps = ~3 minutes wall):
+
+```bash
+python -m fetchers.ideascale_wayback           # CDX index + all snapshots
+python -m normalizers.derive_fund_one          # emits proposals.json
+```
+
+Expect imperfect recovery. Every record carries `confidence: low` and
+`funding_status: "unknown"` (F1 was the pilot — no formal vote).

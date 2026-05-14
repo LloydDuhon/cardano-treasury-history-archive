@@ -19,8 +19,9 @@ pypdf==5.0.1
 # selectolax==0.3.27
 # beautifulsoup4==4.12.3
 
-# --- Phase 4 (deferred): Wayback CDX scrape for Fund 1 ---
-# wayback==0.4.5
+# --- Phase 4: Wayback CDX scrape for Fund 1 ---
+beautifulsoup4==4.12.3
+soupsieve==2.6
 
 # --- Phase 6 (deferred): consolidated CSV output ---
 # pandas==2.2.3
