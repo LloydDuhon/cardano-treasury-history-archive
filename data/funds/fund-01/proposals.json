@@ -1,1 +1,2972 @@
-[]
+[
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 18000000.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 50000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-abcd",
+    "proposer_ids": [
+      "p-f01-unknown-abcd"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "abcd",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "ABCD",
+    "yes_votes": 110000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 100000.0,
+    "amount_requested": 100000.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 20000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "funded",
+    "proposal_id": "f01-ada-makerspace",
+    "proposer_ids": [
+      "p-f01-unknown-ada-makerspace"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "ada-makerspace",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "ADA MakerSpace",
+    "yes_votes": 110000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 110000.0,
+    "amount_requested": 110000.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 30000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "funded",
+    "proposal_id": "f01-afrofinlab-podcast",
+    "proposer_ids": [
+      "p-f01-unknown-afrofinlab-podcast"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "afrofinlab-podcast",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "AfroFinLab Podcast",
+    "yes_votes": 120000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 0.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 50000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-bicameralism-voting-mechanism",
+    "proposer_ids": [
+      "p-f01-unknown-bicameralism-voting-mechanism"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "bicameralism-voting-mechanism",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Bicameralism Voting Mechanism",
+    "yes_votes": 20000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 166666.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 40000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-blockdapps-weekly-podcast",
+    "proposer_ids": [
+      "p-f01-unknown-blockdapps-weekly-podcast"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "blockdapps-weekly-podcast",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "BlockDApps weekly PODCAST",
+    "yes_votes": 40000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 0.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 70000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-cardano-governance-multiverse",
+    "proposer_ids": [
+      "p-f01-unknown-cardano-governance-multiverse"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "cardano-governance-multiverse",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Cardano Governance Multiverse",
+    "yes_votes": 0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 888888.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 60000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-cardano-hub",
+    "proposer_ids": [
+      "p-f01-unknown-cardano-hub"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "cardano-hub",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Cardano Hub",
+    "yes_votes": 60000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 105839.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 30000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-cardano-media-projects",
+    "proposer_ids": [
+      "p-f01-unknown-cardano-media-projects"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "cardano-media-projects",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Cardano Media Projects",
+    "yes_votes": 60000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 0.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 40000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-cardano-onboarding-consultants",
+    "proposer_ids": [
+      "p-f01-unknown-cardano-onboarding-consultants"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "cardano-onboarding-consultants",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Cardano Onboarding Consultants",
+    "yes_votes": 30000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 0.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 50000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-cardano-voter-media",
+    "proposer_ids": [
+      "p-f01-unknown-cardano-voter-media"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "cardano-voter-media",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Cardano Voter Media",
+    "yes_votes": 30000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 166666.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 40000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-crypto-finance-podcast",
+    "proposer_ids": [
+      "p-f01-unknown-crypto-finance-podcast"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "crypto-finance-podcast",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Crypto Finance Podcast",
+    "yes_votes": 60000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 0.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 50000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-decentralised-clinical-trials",
+    "proposer_ids": [
+      "p-f01-unknown-decentralised-clinical-trials"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "decentralised-clinical-trials",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Decentralised Clinical Trials",
+    "yes_votes": 20000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 0.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 50000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-decentralized-event-tickets",
+    "proposer_ids": [
+      "p-f01-unknown-decentralized-event-tickets"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "decentralized-event-tickets",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Decentralized event tickets",
+    "yes_votes": 40000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 550000.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 60000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-decentralized-gov-community-group",
+    "proposer_ids": [
+      "p-f01-unknown-decentralized-gov-community-group"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "decentralized-gov-community-group",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Decentralized Gov. Community Group",
+    "yes_votes": 10000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 0.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 60000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-decentralized-tiny-home-community",
+    "proposer_ids": [
+      "p-f01-unknown-decentralized-tiny-home-community"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "decentralized-tiny-home-community",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Decentralized Tiny Home Community",
+    "yes_votes": 10000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 0.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 50000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-decentralized-transcripts",
+    "proposer_ids": [
+      "p-f01-unknown-decentralized-transcripts"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "decentralized-transcripts",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Decentralized Transcripts",
+    "yes_votes": 20000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 0.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 60000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-direct-debit-contract-for-ada",
+    "proposer_ids": [
+      "p-f01-unknown-direct-debit-contract-for-ada"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "direct-debit-contract-for-ada",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Direct Debit Contract for ADA",
+    "yes_votes": 20000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 0.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 50000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-dream-weaver-thebusinessvalueofada",
+    "proposer_ids": [
+      "p-f01-unknown-dream-weaver-thebusinessvalueofada"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "dream-weaver-thebusinessvalueofada",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Dream Weaver: TheBusinessValueofADA",
+    "yes_votes": 30000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 100000.0,
+    "amount_requested": 100000.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 40000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "funded",
+    "proposal_id": "f01-epoch-women",
+    "proposer_ids": [
+      "p-f01-unknown-epoch-women"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "epoch-women",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Epoch Women",
+    "yes_votes": 100000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 0.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 60000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-family-connect",
+    "proposer_ids": [
+      "p-f01-unknown-family-connect"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "family-connect",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Family Connect",
+    "yes_votes": 10000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 250000.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 70000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-fork-fund1-250k-fake-ada-into-real",
+    "proposer_ids": [
+      "p-f01-unknown-fork-fund1-250k-fake-ada-into-real"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "fork-fund1-250k-fake-ada-into-real",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "FORK fund1 $250k FAKE ADA into REAL",
+    "yes_votes": 0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 250000.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 70000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-fox-gifts-fund-raising",
+    "proposer_ids": [
+      "p-f01-unknown-fox-gifts-fund-raising"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "fox-gifts-fund-raising",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "FOX Gifts & Fund Raising",
+    "yes_votes": 80000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 250000.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 90000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-fox-rewards",
+    "proposer_ids": [
+      "p-f01-unknown-fox-rewards"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "fox-rewards",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "FOX Rewards",
+    "yes_votes": 10000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 17235584.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 90000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-from-dscience-to-dtech",
+    "proposer_ids": [
+      "p-f01-unknown-from-dscience-to-dtech"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "from-dscience-to-dtech",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "From Dscience to Dtech",
+    "yes_votes": 40000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 2000000.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 80000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-house-of-ada-senate-of-cardanians",
+    "proposer_ids": [
+      "p-f01-unknown-house-of-ada-senate-of-cardanians"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "house-of-ada-senate-of-cardanians",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "House of ADA & Senate of Cardanians",
+    "yes_votes": 0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 250000.0,
+    "amount_requested": 250000.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 30000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "funded",
+    "proposal_id": "f01-identify-dano-defi-building-blocks",
+    "proposer_ids": [
+      "p-f01-unknown-identify-dano-defi-building-blocks"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "identify-dano-defi-building-blocks",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Identify Dano DeFi Building Blocks",
+    "yes_votes": 60000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 3000000.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 100000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-investment-group-properties",
+    "proposer_ids": [
+      "p-f01-unknown-investment-group-properties"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "investment-group-properties",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Investment Group Properties",
+    "yes_votes": 30000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 100000.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 50000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-keep-cardano-decentralized",
+    "proposer_ids": [
+      "p-f01-unknown-keep-cardano-decentralized"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "keep-cardano-decentralized",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Keep Cardano Decentralized",
+    "yes_votes": 30000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 250000.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 90000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-music-video",
+    "proposer_ids": [
+      "p-f01-unknown-music-video"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "music-video",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Music video",
+    "yes_votes": 10000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 111111.0,
+    "amount_requested": 111111.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 10000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "funded",
+    "proposal_id": "f01-open-source-experiential-learning",
+    "proposer_ids": [
+      "p-f01-unknown-open-source-experiential-learning"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "open-source-experiential-learning",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Open Source Experiential Learning",
+    "yes_votes": 150000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 0.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 40000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-political-parties",
+    "proposer_ids": [
+      "p-f01-unknown-political-parties"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "political-parties",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Political Parties",
+    "yes_votes": 30000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 0.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 50000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-project-cattlebole",
+    "proposer_ids": [
+      "p-f01-unknown-project-cattlebole"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "project-cattlebole",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Project Cattlebole",
+    "yes_votes": 20000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 0.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 40000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-project-pavia-cardano-s-vr-world",
+    "proposer_ids": [
+      "p-f01-unknown-project-pavia-cardano-s-vr-world"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "project-pavia-cardano-s-vr-world",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Project Pavia | Cardano's VR World",
+    "yes_votes": 40000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 0.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 40000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-project-skoowls",
+    "proposer_ids": [
+      "p-f01-unknown-project-skoowls"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "project-skoowls",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Project Skoowls",
+    "yes_votes": 40000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 0.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 40000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-proposal-creator-role",
+    "proposer_ids": [
+      "p-f01-unknown-proposal-creator-role"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "proposal-creator-role",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Proposal creator role",
+    "yes_votes": 30000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 0.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 40000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-proposal-education-channel-s",
+    "proposer_ids": [
+      "p-f01-unknown-proposal-education-channel-s"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "proposal-education-channel-s",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Proposal education channel/s",
+    "yes_votes": 30000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 250000.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 70000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-stakepool-governance-incubation",
+    "proposer_ids": [
+      "p-f01-unknown-stakepool-governance-incubation"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "stakepool-governance-incubation",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Stakepool governance & Incubation",
+    "yes_votes": 0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 0.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 60000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-staking-lottery",
+    "proposer_ids": [
+      "p-f01-unknown-staking-lottery"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "staking-lottery",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Staking Lottery",
+    "yes_votes": 20000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0.0,
+    "amount_requested": 0.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 40000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "funded",
+    "proposal_id": "f01-streamline-cardano-dev-onboard-proc",
+    "proposer_ids": [
+      "p-f01-unknown-streamline-cardano-dev-onboard-proc"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "streamline-cardano-dev-onboard-proc",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Streamline Cardano Dev onboard proc",
+    "yes_votes": 60000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 2000000.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 60000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-the-developer-marketplace-rebrand",
+    "proposer_ids": [
+      "p-f01-unknown-the-developer-marketplace-rebrand"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "the-developer-marketplace-rebrand",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "The Developer Marketplace (Rebrand)",
+    "yes_votes": 90000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 71400.0,
+    "amount_requested": 71400.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 40000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "funded",
+    "proposal_id": "f01-the-woman-effect",
+    "proposer_ids": [
+      "p-f01-unknown-the-woman-effect"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "the-woman-effect",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "The woman effect",
+    "yes_votes": 100000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 1600000.0,
+    "amount_requested": 1600000.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 40000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "funded",
+    "proposal_id": "f01-torus-governance-for-os-projects",
+    "proposer_ids": [
+      "p-f01-unknown-torus-governance-for-os-projects"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "torus-governance-for-os-projects",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Torus: Governance for OS Projects",
+    "yes_votes": 90000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 250000.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 60000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-trade-block",
+    "proposer_ids": [
+      "p-f01-unknown-trade-block"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "trade-block",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Trade Block",
+    "yes_votes": 40000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 4000000.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 50000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-west-africa-decentralized-alliance",
+    "proposer_ids": [
+      "p-f01-unknown-west-africa-decentralized-alliance"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "west-africa-decentralized-alliance",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "West Africa Decentralized Alliance",
+    "yes_votes": 100000
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 0,
+    "amount_requested": 1000000.0,
+    "campaign_id": null,
+    "challenge": null,
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {},
+    "field_confidence": {
+      "amount_requested": "medium",
+      "funding_status": "high",
+      "no_votes": "medium",
+      "yes_votes": "medium"
+    },
+    "fund": 1,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": null,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": null,
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 90000,
+    "notes": "Fund 1 record derived from the staff-provided one-page voting-results PDF. The PDF is authoritative for result status but has limited proposal-detail fields.",
+    "problem": null,
+    "project_status": "unfunded",
+    "proposal_id": "f01-wethinkitmatters-r",
+    "proposer_ids": [
+      "p-f01-unknown-wethinkitmatters-r"
+    ],
+    "ranking_total": null,
+    "scores": null,
+    "slug": "wethinkitmatters-r",
+    "solution": null,
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T18:38:42Z",
+        "fields_provided": [
+          "title",
+          "amount_requested",
+          "currency",
+          "yes_votes",
+          "no_votes",
+          "funding_status",
+          "project_status"
+        ],
+        "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+        "source": "iohk_voting_results_pdf",
+        "url": null
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "WeThinkItMatters®",
+    "yes_votes": 30000
+  }
+]

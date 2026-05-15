@@ -1,0 +1,5069 @@
+{
+  "fund": 8,
+  "reconciled_at": "2026-05-15T18:43:28Z",
+  "sources": {
+    "primary": {
+      "label": "lidonation_api",
+      "path": "data/funds/fund-08/proposals.json"
+    },
+    "secondary": {
+      "label": "projectcatalyst_io",
+      "path": "data/funds/fund-08/_intermediate/iohk_winners.json"
+    }
+  },
+  "agreement_count": 37,
+  "disagreements": [
+    {
+      "primary_proposal_id": "f08-rootswallet-beta-backuprecovery-f8",
+      "matched_secondary_title": "RootsWallet beta - Backup/Recovery",
+      "primary_funding_status": "approved",
+      "secondary_funded_flag": false,
+      "verdict": "secondary_wins",
+      "note": "Auto-applied per ADR-2026-05-13. Human review optional."
+    }
+  ],
+  "unmatched_in_primary": [],
+  "unmatched_in_secondary": [
+    {
+      "primary_proposal_id": "f08-100-plutus-trained-women-f8",
+      "title": "100+ Plutus Trained Women",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-1000-projects-on-interactive-map-f8",
+      "title": "1,000+ projects on Interactive Map",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-15-min-hello-world-journey-f8",
+      "title": "15 min Hello World Journey",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-21st-century-agri-supply-chain-f8",
+      "title": "21st century Agri supply chain",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-272bn-carbon-credits-on-cardano-f8",
+      "title": "$272Bn Carbon Credits on Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-2min-review-by-japanese-voices-f8",
+      "title": "2Min Review by Japanese Voices",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-2min-review-by-vietnamese-voices-f8",
+      "title": "2Min Review by Vietnamese Voices",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-2min-review-by-voice-for-busy-voter-f8",
+      "title": "2Min Review by Voice for Busy Voter",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-360-development-launchpad-f8",
+      "title": "360 Development Launchpad",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-5-loaves-2-fish-feed-the-hungry-app-f8",
+      "title": "5 Loaves 2 Fish Feed The Hungry App",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-a-cardano-impact-ecosystem-f8",
+      "title": "A Cardano Impact Ecosystem",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-a-film-of-cardano-mission-in-africa-f8",
+      "title": "A Film of Cardano Mission in Africa",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-a-library-facility-at-medie-f8",
+      "title": "A LIBRARY FACILITY AT MEDIE",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-a-more-robust-nft-standard-f8",
+      "title": "A More Robust NFT standard",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-a-peoples-cadastre-in-mozambique-f8",
+      "title": "A People's Cadastre in Mozambique ✊",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-a-region-based-sharded-network-f8",
+      "title": "A region-based sharded network",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-a-scalable-service-for-nft-utility-f8",
+      "title": "A Scalable Service For NFT Utility",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-a2t-5th-gen-info-war-simulator-f8",
+      "title": "A2T: 5th Gen Info War Simulator",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-a2t-alternative-to-tyranny-f8",
+      "title": "A2T: Alternative to Tyranny",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-abc-of-governance-f8",
+      "title": "ABC of Governance",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-accel-train-the-trainer-africa-mvp-f8",
+      "title": "Accel. Train the Trainer Africa MVP",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-account-authentication-f8",
+      "title": "Account authentication",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-ada-deso-templates-to-test-dapps-f8",
+      "title": "ADA-DESO Templates to Test dApps",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-ada-deso-templates-to-test-projects-f8",
+      "title": "ADA-DESO Templates to Test Projects",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-ada-funded-stem-themed-indie-film-f8",
+      "title": "ADA funded STEM themed indie film",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-ada-nft-marketplace-for-the-unsung-f8",
+      "title": "Ada NFT Marketplace for the unsung",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-ada-pay-plugin-wordpresslaravel-f8",
+      "title": "ADA Pay Plugin - Wordpress/Laravel",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-ada-scam-alert-info-protection-f8",
+      "title": "ADA Scam Alert - Info & Protection",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-ada-to-mobile-money-app-f8",
+      "title": "ADA to Mobile Money App",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-ada-water-solutions-in-africa-f8",
+      "title": "ADA water solutions in Africa",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-adabet-betting-site-for-everything-f8",
+      "title": "ADABet: Betting Site for Everything",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-adaglass-data-intelligence-platform-f8",
+      "title": "Adaglass Data Intelligence Platform",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-adamint-fractionalized-nft-exchange-f8",
+      "title": "ADAmint Fractionalized NFT Exchange",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adao-education-marketing-content-f8",
+      "title": "ADAO Education & Marketing Content",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adao-multi-sig-wallet-web-interface-f8",
+      "title": "ADAO-Multi-sig Wallet Web Interface",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-adao-summon-dao-incubator-f8",
+      "title": "ADAO Summon: DAO Incubator",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-adaquest-arena-finalize-f8",
+      "title": "AdaQuest ARENA - Finalize",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adaquest-concept-phase-2-f8",
+      "title": "AdaQuest - Concept Phase 2",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-adaquest-enhanced-arena-visual-mode-f8",
+      "title": "AdaQuest ENHANCED ARENA Visual Mode",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adaquest-goblinverse-cross-spring-f8",
+      "title": "AdaQuest GOBLINVERSE Cross Spring",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adaquest-marketing-campaign-f8",
+      "title": "AdaQuest MARKETING campaign",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adaquest-prototype-phase-2-f8",
+      "title": "AdaQuest PROTOTYPE Phase 2",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-adaquest-pve-quests-stories-f8",
+      "title": "AdaQuest PVE Quests & Stories",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-adaquest-sfx-library-for-rpg-games-f8",
+      "title": "AdaQuest SFX Library for RPG games ",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adas-place-a-medium-publication-f8",
+      "title": "Ada's Place - A Medium Publication",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-adasign-f8",
+      "title": "AdaSign",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-address-book-f8",
+      "title": "Adatar.me Address Book",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-for-algo-f8",
+      "title": "Adatar.me for ALGO",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-for-atom-f8",
+      "title": "Adatar.me for ATOM",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-for-avax-f8",
+      "title": "Adatar.me for AVAX",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-for-btc-f8",
+      "title": "Adatar.me for BTC",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-for-doge-f8",
+      "title": "Adatar.me for DOGE",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-for-dot-f8",
+      "title": "Adatar.me for DOT",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-for-egld-f8",
+      "title": "Adatar.me for EGLD",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-for-etc-f8",
+      "title": "Adatar.me for ETC",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-for-eth-f8",
+      "title": "Adatar.me for ETH",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-for-ftm-f8",
+      "title": "Adatar.me for FTM",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-for-iota-f8",
+      "title": "Adatar.me for IOTA",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-for-link-f8",
+      "title": "Adatar.me for LINK",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-for-ltc-f8",
+      "title": "Adatar.me for LTC",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-for-mana-f8",
+      "title": "Adatar.me for MANA",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-for-shib-f8",
+      "title": "Adatar.me for SHIB",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-for-sol-f8",
+      "title": "Adatar.me for SOL",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-for-xrp-f8",
+      "title": "Adatar.me for XRP",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-for-xtz-f8",
+      "title": "Adatar.me for XTZ",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-growth-acceleration-f8",
+      "title": "Adatar.me - Growth Acceleration",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-to-nft-f8",
+      "title": "Adatar.me to NFT",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adatarme-website-widget-f8",
+      "title": "Adatar.me Website Widget",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-adatickr-track-your-adacrypto-price-f8",
+      "title": "AdaTickr-Track Your ADAcrypto Price",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adatoms-hq-science-defi-dec-ed-f8",
+      "title": "ADATOMS HQ Science & DeFi Dec. Ed.",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adaview-simplifying-cardano-f8",
+      "title": "ADAView - Simplifying Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adaxie-eternity-in-africa-f8",
+      "title": "ADAxie Eternity in Africa",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-adiuvat-find-your-place-f8",
+      "title": "ADIUVAT: Find your place.",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-adulis-digital-asset-exchange-f8",
+      "title": "Adulis Digital Asset Exchange",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-aedou-learn-languages-together-2-f8",
+      "title": "Aedou, Learn Languages Together (2)",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-aedou-realm-of-languages-f8",
+      "title": "Aedou - Realm of Languages",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-aeros-airmiles-wallet-integration-f8",
+      "title": "Aeros - Airmiles Wallet integration",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-affordable-real-estate-investments-f8",
+      "title": "Affordable Real Estate Investments",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-africa-anti-counterfeit-marketplace-f8",
+      "title": "Africa Anti-counterfeit Marketplace",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-african-p2p-energy-sharing-dapp-f8",
+      "title": "African P2P Energy Sharing Dapp",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-after-town-hall-by-catalyst-swarm-f8",
+      "title": "After Town Hall by Catalyst Swarm",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-agora-plutus-governance-module-f8",
+      "title": "Agora: Plutus governance module",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-ai-career-mentor-dapp-f8",
+      "title": "AI Career Mentor DApp",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-ai-mentor-matching-software-f8",
+      "title": "AI Mentor matching software",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-aida-decentralized-ai-on-cardano-f8",
+      "title": "AIDA: Decentralized AI on Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-allin-betting-dao-f8",
+      "title": "ALLIN Betting DAO",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-allin-oracle-data-ai-f8",
+      "title": "ALLIN Oracle Data AI",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-almagua-every-ada-trap-co2-f8",
+      "title": "ALMAGUA - Every ADA trap CO2",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-alternative-payment-for-merchants-f8",
+      "title": "Alternative Payment for Merchants",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-ambassadors-guild-operations-f8",
+      "title": "Ambassadors Guild Operations",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-american-usdc-think-tank-f8",
+      "title": "American USDC think tank",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-amy-music-dao-decentralize-economy-f8",
+      "title": "AMY Music DAO- Decentralize Economy",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-analytics-data-hub-f8",
+      "title": "Analytics Data Hub",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-android-sdk-f8",
+      "title": "Android SDK",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-animated-explainers-for-the-world-f8",
+      "title": "Animated Explainers for the world",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-anime-nft-game-east-asian-centric-f8",
+      "title": "Anime NFT Game - East Asian centric",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-anonymitydata-control-zkt-part-2-f8",
+      "title": "Anonymity/data control ZKT (part 2)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-app-store-for-milkomeda-f8",
+      "title": "App store for Milkomeda",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-aragov-timelines-and-treasury-data-f8",
+      "title": "₳GOV: Timelines and Treasury Data ",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-arizona-for-cardano-lobby-f8",
+      "title": "Arizona for Cardano Lobby",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-artem-nfttoken-gallery-extension-f8",
+      "title": "ARTEM: NFT/Token Gallery Extension",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-artificial-intelligenceml-api-dapp-f8",
+      "title": "Artificial Intelligence/ML API DApp",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-artverse-social-media-metaverse-f8",
+      "title": "Artverse - Social Media Metaverse",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-assembly-of-state-blockchain-pacs-f8",
+      "title": "Assembly of State Blockchain PAC's",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-at-energiasocial-powered-by-cardano-f8",
+      "title": "@energiasocial powered by cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-attract-eth-nft-projects-talent-f8",
+      "title": "Attract ETH NFT Projects & Talent",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-audit-tokens-for-catalyst-winners-f8",
+      "title": "Audit Tokens For Catalyst Winners",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-auditability-through-film-and-media-f8",
+      "title": "Auditability through film and media",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-auditing-african-proposals-by-wada-f8",
+      "title": "Auditing African Proposals, By Wada",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-auditing-project-mgmt-via-kanban-f8",
+      "title": "Auditing & Project Mgmt. via Kanban",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-auditing-south-american-proposals-f8",
+      "title": "Auditing South American Proposals.",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-australian-university-cardano-talks-f8",
+      "title": "Australian University Cardano Talks",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-authentication-protocol-work-group-f8",
+      "title": "Authentication Protocol Work Group",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-automate-educate-communicate-f8",
+      "title": "Automate, Educate, Communicate",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-automated-funding-catalyst-projects-f8",
+      "title": "Automated funding catalyst projects",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-automated-mentor-matching-tool-f8",
+      "title": "Automated mentor-matching tool",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-automated-multilingual-tool-f8",
+      "title": "Automated Multilingual Tool",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-avatarada-f8",
+      "title": "Avatarada",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-aventuras-zooplanktasticas-comic-f8",
+      "title": "Aventuras Zooplanktasticas: Comic",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-b2b-dinner-series-by-mikebettscook0-f8",
+      "title": "B2B Dinner Series by MikeBettsCook0",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-b2b-food-recipes-nft-marketplace-f8",
+      "title": "B2B Food Recipes NFT Marketplace",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-b2c-trade-for-life-f8",
+      "title": "B2C Trade for Life ❤",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-barter-exchange-on-cardano-f8",
+      "title": "Barter exchange on Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-basis-cost-block-reward-accounting-f8",
+      "title": "Basis Cost Block Reward Accounting",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-basketo-finance-f8",
+      "title": "Basketo Finance",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-batch-tx-generator-for-cardano-cli-f8",
+      "title": "Batch tx generator for cardano-cli",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-bayes-spam-filter-for-vcas-f8",
+      "title": "Bayes Spam filter for vCAs",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-beacon-of-cardano-gamefi-f8",
+      "title": "Beacon of Cardano GameFi",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-beedao-f8",
+      "title": "beeDAO",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-beerhouseio-f8",
+      "title": "BeerHouse.io",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-beyond-create-teaming-agreements-f8",
+      "title": "Beyond Create Teaming Agreements",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-bilingual-web3-tech-arts-space-f8",
+      "title": "Bilingual Web3 Tech + Arts Space",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-blaceio-marketplace-creator-f8",
+      "title": "Blace.io: Marketplace Creator ⚡",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-blockchain-and-cardano-library-f8",
+      "title": "Blockchain and Cardano Library",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-blockchain-battle-royale-hackathon-f8",
+      "title": "Blockchain Battle Royale Hackathon",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-blockchain-class-by-adatruthcom-f8",
+      "title": "Blockchain Class by adatruth.com",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-blockchain-innovation-hub-finland-f8",
+      "title": "Blockchain Innovation Hub Finland",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-blockchain-learning-center-coffee-f8",
+      "title": "Blockchain Learning Center + Coffee",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-blockchaindiary-education-hub-f8",
+      "title": "Blockchaindiary Education Hub",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-bonfire-scheduling-dapp-f8",
+      "title": "Bonfire - Scheduling dApp 🔥",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-book-nft-marketplace-on-cardano-f8",
+      "title": "Book NFT Marketplace On Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-book-nfts-transforming-publishing-f8",
+      "title": "Book NFTs - Transforming Publishing",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-boosting-cardano-in-south-africa-f8",
+      "title": "Boosting Cardano In South Africa",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-bridge-atala-and-sovrin-indyaries-f8",
+      "title": "Bridge Atala and Sovrin -Indy/Aries",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-bridge-builders-operations-f8",
+      "title": "Bridge Builders Operations",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-bridge-liquidity-for-top-protocols-f8",
+      "title": "Bridge liquidity for top protocols",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-bridging-nfts-remint-on-cardano-f8",
+      "title": "Bridging NFTs -> remint on Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-bridging-the-food-security-gap-f8",
+      "title": "Bridging the Food Security gap",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-bring-bored-apes-to-cardano-f8",
+      "title": "Bring Bored Apes* to Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-bring-cardano-to-the-web-with-vite-f8",
+      "title": "Bring Cardano to the web with Vite",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-bring-ethereum-nft-users-to-cardano-f8",
+      "title": "Bring Ethereum NFT users to Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-bringing-ea-investors-to-cardano-f8",
+      "title": "Bringing E.A Investors to Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-broaden-open-source-wallet-options-f8",
+      "title": "Broaden open source wallet options",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-build-out-ergo-pool-infrastructure-f8",
+      "title": "Build out ERGO Pool Infrastructure",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-business-on-the-blockchain-in-miami-f8",
+      "title": "Business on the Blockchain in MIAMI",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-bworks-pay-as-done-works-platform-f8",
+      "title": "BWORKs - Pay As Done Works Platform",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-bworks-right-dev-in-right-work-f8",
+      "title": "BWORKs - Right Dev in Right Work",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-bworks-smart-contract-hr-platform-f8",
+      "title": "BWORKs - Smart contract HR platform",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-c4c-community-hub-operations-f8",
+      "title": "C4C Community Hub Operations",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-c4s-cardano-for-seniors-hubs-f8",
+      "title": "C4S - Cardano for Seniors Hubs",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-c64-extension-wallet-f8",
+      "title": "C64 Extension Wallet",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-ca-academy-certification-f8",
+      "title": "CA Academy Certification",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-ca-guidelines-joint-drafting-f8",
+      "title": "CA Guidelines Joint Drafting",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-ca-improvement-mechanism-f8",
+      "title": "CA Improvement Mechanism",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-ca-tool-dev-maintenance-aim-f8",
+      "title": "CA-tool Dev & Maintenance - AIM",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cadano-une-brazil-branded-marketing-f8",
+      "title": "Cadano UNE Brazil Branded Marketing",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-caga-a-card-game-app-framework-f8",
+      "title": "CAGA, a Card Game App Framework",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-captain-haiti-on-fifa22-miami-fc-f8",
+      "title": "Captain Haiti on FIFA22, Miami FC",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-carbon-erc-20-converter-to-cardano-f8",
+      "title": "Carbon ERC-20 Converter to Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-carbon-marketplace-and-exchange-f8",
+      "title": "Carbon Marketplace and Exchange",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-carbon-neutral-hemp-supply-chain-f8",
+      "title": "Carbon Neutral Hemp Supply-Chain",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-carbonno-carbon-exchange-dapp-f8",
+      "title": "Carbonno - Carbon Exchange dApp",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardahub-one-stop-shop-for-cnft-f8",
+      "title": "Cardahub-One Stop Shop for CNFT",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-accelerator-for-india-f8",
+      "title": "Cardano Accelerator for India",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-and-smart-city-awareness-f8",
+      "title": "Cardano and Smart City Awareness",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-annual-market-report-f8",
+      "title": "Cardano Annual Market Report",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-atlas-project-f8",
+      "title": "Cardano Atlas Project",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-baltic-startup-hub-f8",
+      "title": "Cardano Baltic Startup Hub",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-based-data-collection-tool-f8",
+      "title": "Cardano based data collection tool",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-beam-gps-based-assets-f8",
+      "title": "Cardano Beam - GPS based Assets",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-blockchain-brazil-meetuphub-f8",
+      "title": "Cardano Blockchain Brazil MeetupHub",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-blockchain-buenos-aires-hub-f8",
+      "title": "Cardano Blockchain Buenos Aires Hub",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-blockchain-insights-update-f8",
+      "title": "Cardano Blockchain Insights update",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-builders-hub-local-chapters-f8",
+      "title": "Cardano Builders Hub-Local chapters",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-candy-pop-cnft-giveaway-f8",
+      "title": "Cardano Candy-Pop CNFT Giveaway",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-capacity-building-program-f8",
+      "title": "Cardano Capacity Building Program",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-caribbean-f8",
+      "title": "Cardano Caribbean",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-casino-f8",
+      "title": "Cardano Casino",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-center-poland-live-f8",
+      "title": "Cardano Center Poland Live",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-center-poland-stage-2-spo-f8",
+      "title": "Cardano Center Poland stage 2 - SPO",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-centric-youtube-style-site-f8",
+      "title": "Cardano-centric YouTube-style site",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-chinese-tutorial-f8",
+      "title": "Cardano Chinese Tutorial",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-coffee-lounge-in-vietnam-f8",
+      "title": "Cardano Coffee lounge in Vietnam",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-coffee-regional-languages-f8",
+      "title": "Cardano coffee - Regional languages",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-community-hubs-in-taiwan-f8",
+      "title": "Cardano Community Hubs in Taiwan",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-community-in-geneva-f8",
+      "title": "Cardano Community in Geneva",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-community-podcasts-yt-f8",
+      "title": "Cardano Community Podcasts & YT",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-dapp-for-rent-f8",
+      "title": "Cardano DApp for Rent",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-development-library-in-c-f8",
+      "title": "Cardano development library in C++",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-erp-cerp-f8",
+      "title": "Cardano ERP (CERP)",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-food-forest-permaculture-f8",
+      "title": "Cardano Food Forest - Permaculture.",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-for-african-impact-ventures-f8",
+      "title": "Cardano for African impact ventures",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-for-asian-impact-ventures-f8",
+      "title": "Cardano for Asian impact ventures",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-for-corporate-aractivation-f8",
+      "title": "Cardano for Corporate ₳ctivation",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-for-ugandan-universities-f8",
+      "title": "Cardano For Ugandan Universities",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-for-women-in-africa-f8",
+      "title": "Cardano for Women in Africa",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-forest-in-vietnam-f8",
+      "title": "Cardano Forest In Vietnam",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-french-community-in-drc-f8",
+      "title": "CARDANO FRENCH COMMUNITY IN DRC",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-green-initiative-india-f8",
+      "title": "Cardano Green Initiative - India",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-hackathon-in-argentina-f8",
+      "title": "Cardano Hackathon in Argentina",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-hub-caracas-f8",
+      "title": "Cardano Hub Caracas",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-hub-complex-setup-f8",
+      "title": "Cardano Hub-Complex Setup",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-hub-in-guam-usa-f8",
+      "title": "Cardano Hub in Guam, USA",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-hub-indonesia-video-series-f8",
+      "title": "Cardano Hub Indonesia-Video Series",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-hub-taiwan-f8",
+      "title": "Cardano Hub TAIWAN",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-hubs-directory-f8",
+      "title": "Cardano Hubs Directory",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-icons-for-consistent-design-f8",
+      "title": "Cardano Icons for consistent design",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-impact-project-directory-f8",
+      "title": "Cardano impact project directory",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-in-assamese-f8",
+      "title": "Cardano in Assamese",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-in-bengali-f8",
+      "title": "Cardano in Bengali",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-in-bhojpuri-f8",
+      "title": "Cardano in Bhojpuri",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-in-burmese-f8",
+      "title": "Cardano in Burmese",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-in-gujarati-f8",
+      "title": "Cardano in Gujarati",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-in-hindi-f8",
+      "title": "Cardano in Hindi",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-in-kannada-f8",
+      "title": "Cardano in Kannada",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-in-khmer-cambodian-f8",
+      "title": "Cardano in Khmer (Cambodian)",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-in-laotian-f8",
+      "title": "Cardano in Laotian",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-in-malayalam-f8",
+      "title": "Cardano in Malayalam",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-in-marathi-f8",
+      "title": "Cardano in Marathi",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-in-nepali-f8",
+      "title": "Cardano in Nepali",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-in-odia-f8",
+      "title": "Cardano in Odia",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-in-punjabi-f8",
+      "title": "Cardano in Punjabi",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-in-sinhala-f8",
+      "title": "Cardano in SInhala",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-in-tamil-f8",
+      "title": "Cardano in Tamil",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-in-telugu-f8",
+      "title": "Cardano in Telugu",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-in-thai-f8",
+      "title": "Cardano in Thai",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-in-urdu-f8",
+      "title": "Cardano in Urdu",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-incredible-race-2022-f8",
+      "title": "Cardano Incredible Race - 2022",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-india-community-meetups-f8",
+      "title": "Cardano India Community Meetups",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-india-tribe-konmahood-f8",
+      "title": "Cardano India Tribe - Konmahood",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-information-centre-f8",
+      "title": "Cardano Information Centre",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-ipfs-chronicles-2022-f8",
+      "title": "Cardano IPFS chronicles 2022",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-kids-educational-comicbook-f8",
+      "title": "Cardano Kids Educational ComicBook",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-kiosk-hub-in-a-box-f8",
+      "title": "Cardano Kiosk | Hub-in-a-box",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-kombat-education-alliance-f8",
+      "title": "Cardano Kombat Education Alliance",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-l-earn-for-developers-f8",
+      "title": "Cardano L-EARN (for Developers)",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-lawyer-advocacy-dlt360-f8",
+      "title": "Cardano Lawyer / Advocacy (DLT360)",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-learning-conversations-f8",
+      "title": "Cardano Learning Conversations",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-learning-needs-assessment-f8",
+      "title": "Cardano learning needs assessment",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-malaysia-community-f8",
+      "title": "Cardano Malaysia Community",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-network-expansion-in-brazil-f8",
+      "title": "Cardano Network Expansion in Brazil",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-on-pbs-project-development-f8",
+      "title": "Cardano on PBS, Project Development",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-playground-fun-tutorials-f8",
+      "title": "Cardano Playground - Fun Tutorials",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-pr-initiative-japan-f8",
+      "title": "Cardano PR Initiative Japan",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-recycling-dapp-f8",
+      "title": "Cardano Recycling DApp",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-reuse-plastic-india-hub-f8",
+      "title": "Cardano Reuse Plastic India Hub",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-reuse-plastic-india-program-f8",
+      "title": "Cardano Reuse Plastic India Program",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-rewards-program-f8",
+      "title": "Cardano Rewards Program",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-rust-sdk-babbage-f8",
+      "title": "Cardano Rust SDK Babbage",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-say-no-plastic-straws-c4o-f8",
+      "title": "Cardano SAY NO Plastic Straws | C4O",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-science-on-networks-f8",
+      "title": "❖ Cardano Science on Networks",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-smart-students-dapp-f8",
+      "title": "Cardano Smart Students DApp",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-solutions-for-cannabis-f8",
+      "title": "Cardano: Solutions for Cannabis",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-solutions-for-impact-f8",
+      "title": "Cardano Solutions for Impact",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-ssi-standards-contributors-f8",
+      "title": "Cardano SSI standards contributors",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-stonerz-club-community-hub-f8",
+      "title": "Cardano Stonerz Club Community Hub!",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-tech-training-in-malawi-f8",
+      "title": "Cardano Tech Training in Malawi",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-to-portuguese-speak-africa-f8",
+      "title": "Cardano to Portuguese-speak Africa",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-tokens-in-loyalty-programs-f8",
+      "title": "Cardano tokens in loyalty programs",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-tools-python-library-f8",
+      "title": "Cardano-Tools Python Library",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-tools-software-for-arm-f8",
+      "title": "Cardano Tools & Software for ARM",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-university-seminar-f8",
+      "title": "Cardano University Seminar",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-wallet-recovery-cli-f8",
+      "title": "Cardano wallet recovery CLI",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardano-white-board-videos-telugu-f8",
+      "title": "Cardano White Board videos (Telugu)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardanobeach-adas-city-in-miami-f8",
+      "title": "#CardanoBeach; ADA's city in Miami",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardanobiio-f8",
+      "title": "Cardanobi.io",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardanocommunityhubscom-worldwide-f8",
+      "title": "CardanoCommunityHubs.com Worldwide",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardanoethereum-lifesaving-nfts-f8",
+      "title": "Cardano+Ethereum Lifesaving NFT's",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardanofeel-cardano-real-world-f8",
+      "title": "CardanoFeel (Cardano -> Real World)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardanoland-f8",
+      "title": "CardanoLAND",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardanolokole-network-integration-f8",
+      "title": "Cardano/Lokole Network integration",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardanooutreach-africa-focus-f8",
+      "title": "CardanoOutreach - Africa Focus",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardanooutreach-fund467-winner-f8",
+      "title": "CardanoOutreach-fund4/6/7 winner",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardanooutreach-india-focus-f8",
+      "title": "CardanoOutreach - India Focus",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardanoplusplus-a-c-library-f8",
+      "title": "CardanoPlusPlus, a C++ Library",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardanos-1st-food-nft-marketplace-f8",
+      "title": "Cardano's 1st Food NFT Marketplace",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardanos-footprint-in-ethiopia-f8",
+      "title": "Cardano's Footprint in Ethiopia",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardanoscanio-upgrade-f8",
+      "title": "Cardanoscan.io Upgrade",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cardapper-yt-channel-for-c-devs-f8",
+      "title": "Cardapper - YT Channel For C-Devs",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cardax-dex-plutarch-code-audit-f8",
+      "title": "Cardax DEX Plutarch Code Audit",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-caricatorada-caricatureada-f8",
+      "title": "CaricatorADA (CaricatureADA)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-caricature-for-migration-f8",
+      "title": "Caricature for Migration",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-carnivilla-market-space-f8",
+      "title": "Carnivilla Market Space",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-carpool-educationonboarding-system-f8",
+      "title": "CarPool Education/Onboarding System",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-catalyst-africa-town-hall-cath-f8",
+      "title": "Catalyst Africa Town Hall (CATH)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-catalyst-audit-circle-f8",
+      "title": "Catalyst Audit Circle",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-catalyst-circle-funding-mechanism-f8",
+      "title": "Catalyst Circle - Funding Mechanism",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-catalyst-community-accelerator-f8",
+      "title": "Catalyst Community Accelerator",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-catalyst-facilitators-collective-f8",
+      "title": "Catalyst Facilitators’ Collective",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-catalyst-gps-f8",
+      "title": "Catalyst GPS",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-catalyst-heartbeat-f8",
+      "title": "Catalyst HeartBeat",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-catalyst-resource-in-swahili-f8",
+      "title": "CATALYST RESOURCE IN SWAHILI",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-catalyst-streaming-guild-f8",
+      "title": "Catalyst Streaming Guild",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-catalyst-swarm-mediamarketing-lab-f8",
+      "title": "Catalyst Swarm Media&Marketing Lab",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-catalyst-swarm-operations-f8",
+      "title": "Catalyst Swarm Operations",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-catalyst-swarmlabs-f8",
+      "title": "Catalyst SwarmLabs",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-catalyst-treasury-guild-f8",
+      "title": "Catalyst Treasury Guild",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-catalystcon-2022-f8",
+      "title": "CatalystCon 2022",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cats-community-advisor-triage-sys-f8",
+      "title": "CATS Community Advisor Triage Sys.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cauth-ssi-oauth-by-aim-f8",
+      "title": "cAuth (SSI & oAuth) by AIM",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cavca-treasury-for-rapid-funding-f8",
+      "title": "CA/VCA Treasury for Rapid Funding",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cbilling-cardano-billing-dapp-f8",
+      "title": "cBilling - Cardano Billing DApp",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-ccv3-members-are-professionals-too-f8",
+      "title": "CCv3 members are professionals too",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-chains-nft-development-f8",
+      "title": "CHAINS NFT DEVELOPMENT",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-chamber-of-digital-commerce-for-f8",
+      "title": "Chamber of Digital Commerce for ...",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-charity-dao-f8",
+      "title": "Charity DAO",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-chatting-dapp-using-blockchain-f8",
+      "title": "Chatting Dapp using Blockchain",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-checkpoint-blockchain-editorial-f8",
+      "title": "Checkpoint: Blockchain Editorial",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-checkpoint-content-hub-f8",
+      "title": "Checkpoint Content Hub",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-checkpoint-learning-and-media-f8",
+      "title": "Checkpoint Learning and Media",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-checkpoint-metaverse-f8",
+      "title": "Checkpoint Metaverse",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-children-write-african-stories-f8",
+      "title": "Children write African Stories",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-china-info-hub-continued-dumpling-f8",
+      "title": "China Info Hub Continued- Dumpling",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cip-editor-time-sebastien-for-1year-f8",
+      "title": "CIP Editor time Sebastien for 1year",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-circle-governance-administration-f8",
+      "title": "Circle Governance & Administration",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-citizen-assemblies-f8",
+      "title": "Citizen Assemblies",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-clarity-dao-incubator-f8",
+      "title": "Clarity DAO Incubator",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-clean-water-helping-carbon-neutral-f8",
+      "title": "Clean Water helping, carbon neutral",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-clinical-trials-patient-recruitment-f8",
+      "title": "Clinical trials patient recruitment",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cnft-festival-japan-meets-the-west-f8",
+      "title": "CNFT Festival Japan Meets the West",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cnft-taco-tuesday-food-truck-f8",
+      "title": "CNFT Taco Tuesday Food Truck",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cnftfolio-cnfts-portfolio-tracker-f8",
+      "title": "CNFTfolio #CNFTs Portfolio Tracker",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cnfts-for-afforestation-in-india-f8",
+      "title": "CNFTs for afforestation in India",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-co-regulation-not-red-flag-laws-f8",
+      "title": "Co-regulation, not Red-Flag laws",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-codesign-blockchain4good-principles-f8",
+      "title": "Codesign blockchain4good Principles",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-collective-wellbeing-via-cardano-f8",
+      "title": "Collective Wellbeing via Cardano 🍄",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-colombian-congress-cardano-f8",
+      "title": "Colombian Congress Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-commonwealthunescapcatalystimpact-f8",
+      "title": "Commonwealth+UNESCAP+CatalystImpact",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-communal-marketing-spaces-f8",
+      "title": "Communal Marketing Spaces",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-community-advisors-marketing-blitz-f8",
+      "title": "Community Advisors Marketing Blitz",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-community-and-content-accessibilty-f8",
+      "title": "Community and Content Accessibilty",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-community-berlin-as-a-franchise-f8",
+      "title": "Community Berlin as a franchise",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-community-collaboration-standards-f8",
+      "title": "Community collaboration standards",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-community-driven-volunteering-f8",
+      "title": "Community Driven Volunteering",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-community-governance-oversight-f8",
+      "title": "Community Governance Oversight",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-community-hubs-impact-accelerator-f8",
+      "title": "Community Hubs Impact Accelerator",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-community-lead-generation-f8",
+      "title": "Community Lead Generation",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-communitygrowthacceleratordao-f8",
+      "title": "CommunityGrowthAcceleratorDAO",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-company-privacy-ledger-gdpr-ccpa-f8",
+      "title": "Company privacy ledger (GDPR, CCPA)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-connect-projects-with-developers-f8",
+      "title": "Connect projects with developers",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-connect-the-unconnected-through-art-f8",
+      "title": "Connect the unconnected through art",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-connecting-asian-voter-and-proposer-f8",
+      "title": "Connecting Asian Voter and Proposer",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-connecting-tabletop-games-cardano-f8",
+      "title": "Connecting Tabletop Games & Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-consenz-legislation-co-creation-f8",
+      "title": "Consenz: Legislation Co-Creation",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-content-insights-multi-channel-f8",
+      "title": "Content & Insights: Multi-Channel",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-contracts-as-a-service-f8",
+      "title": "Contracts as a Service",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-contributor-infrastructure-analysis-f8",
+      "title": "Contributor Infrastructure Analysis",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-control-your-data-prism-profila-f8",
+      "title": "Control your data - PRISM (Profila)",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-control-your-data-w-profila-part-2-f8",
+      "title": "Control your data w Profila part 2",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-coopercrypto-f8",
+      "title": "Coopercrypto",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cost-of-listing-on-an-exchange-f8",
+      "title": "Cost of listing on an exchange.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cotalker-integration-f8",
+      "title": "Cotalker integration",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-coupon-application-couponiumio-f8",
+      "title": "Coupon Application \"Couponium.io\"",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-courses-education-crypto-mktplace-f8",
+      "title": "Courses & Education Crypto MKTPLACE",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-create-cardano-app-f8",
+      "title": "Create Cardano App",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-credential-based-token-eg-kyc-f8",
+      "title": "Credential-based token, e.g. KYC",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-credwise-f8",
+      "title": "Credwise",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-creport-catalyst-analyzer-kpis-f8",
+      "title": "cReport - Catalyst analyzer & KPIs",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cross-chain-ambassadors-v-10-f8",
+      "title": "Cross-Chain Ambassadors (v 1.0)",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cross-chain-connectorsearch-engine-f8",
+      "title": "Cross-Chain Connector|Search Engine",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cross-chain-impact-lead-generator-f8",
+      "title": "Cross-Chain Impact Lead Generator",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-cross-chain-multiverse-travel-f8",
+      "title": "Cross Chain Multiverse Travel",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-cross-chain-networking-events-ext-f8",
+      "title": "Cross-Chain Networking Events EXT",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cross-chain-nft-conference-oxbat-f8",
+      "title": "Cross-Chain NFT Conference OxBAT",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-crowd-funding-platform-with-ada-f8",
+      "title": "Crowd funding platform with ADA.",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-crowdfunding-with-inbuilt-mediation-f8",
+      "title": "Crowdfunding with inbuilt mediation",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-crypto-banking-f8",
+      "title": "Crypto banking",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-crypto-talent-marketplace-f8",
+      "title": "Crypto Talent Marketplace",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-cultural-tourism-beyond-borders-f8",
+      "title": "Cultural Tourism - Beyond Borders",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-curb-crime-by-capturing-data-f8",
+      "title": "Curb Crime by capturing Data",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-d-bet-decentralized-betting-dapp-f8",
+      "title": "d-BET: Decentralized betting Dapp",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-d-cargo-decentralized-cargo-dapp-f8",
+      "title": "d-Cargo: Decentralized Cargo Dapp",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-d-edtech-platform-dapp-for-latam-f8",
+      "title": "d-edTech Platform dApp for LatAm",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-dao-displays-for-public-spaces-f8",
+      "title": "DAO Displays for Public Spaces",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-dao-net-a2t-marketing-f8",
+      "title": "DAO-NET & A2T Marketing",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-dao-net-a2t-sidechain-design-f8",
+      "title": "DAO-NET & A2T Sidechain Design",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-dao-net-dao-token-market-f8",
+      "title": "DAO-NET: DAO Token Market",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-dao-net-development-funder-f8",
+      "title": "DAO-NET: Development Funder",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-dao-net-sybil-defense-by-zkp-f8",
+      "title": "DAO-NET: Sybil Defense by ZKP",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-dao-net-voting-dapp-f8",
+      "title": "DAO-NET: Voting Dapp",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-dapp-for-tech-repairers-f8",
+      "title": "DApp for Tech Repairers",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-dapp-market-for-tickets-and-events-f8",
+      "title": "dApp Market for Tickets and Events",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-dapp-water-quality-platform-f8",
+      "title": "Dapp: Water Quality Platform",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-data-marketplace-exchange-dapp-f8",
+      "title": "Data Marketplace & Exchange Dapp",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-db-sync-replacement-in-oura-f8",
+      "title": "db-sync replacement in Oura",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-dcorps-digital-company-registry-f8",
+      "title": "DCorps - Digital company registry",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-de-application-and-tender-filing-f8",
+      "title": "De. Application and Tender filing",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-decentralize-impact-f8",
+      "title": "Decentralize Impact",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-decentralized-ai-drug-development-f8",
+      "title": "Decentralized AI Drug Development",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-decentralized-auction-platform-f8",
+      "title": "Decentralized Auction Platform",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-decentralized-cinema-festival-f8",
+      "title": "Decentralized Cinema Festival",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-decentralized-community-chat-server-f8",
+      "title": "Decentralized Community Chat Server",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-decentralized-linkedin-link-start-f8",
+      "title": "Decentralized LinkedIn, Link Start",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-decentralized-metaverse-mall-dmm-f8",
+      "title": "Decentralized Metaverse Mall - DMM",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-decentralized-music-platform-f8",
+      "title": "Decentralized Music Platform",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-decentralized-physics-simulations-f8",
+      "title": "Decentralized Physics Simulations",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-decentralized-physics-tokenomics-f8",
+      "title": "Decentralized Physics Tokenomics",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-decentralized-redis-state-channels-f8",
+      "title": "Decentralized REDIS state channels",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-decentralized-social-network-f8",
+      "title": "Decentralized Social Network",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-decentralized-token-distribution-f8",
+      "title": "Decentralized Token Distribution",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-decentralized-trading-and-finance-f8",
+      "title": "Decentralized Trading and Finance",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-decentralizing-government-f8",
+      "title": "Decentralizing Government",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-decriminalize-decentralize-f8",
+      "title": "Decriminalize & Decentralize 🍄🌺☮️",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-defi-hackathon-f8",
+      "title": "DeFi hackathon",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-defi-should-be-more-fun-on-scaling-f8",
+      "title": "DEFI SHOULD BE MORE FUN ON SCALING",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-destination-cardano-f8",
+      "title": "Destination CARDANO",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-developer-conferences-in-s-africa-f8",
+      "title": "Developer Conferences in S Africa",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-developers-open-sourced-licensing-f8",
+      "title": "Developers Open Sourced Licensing",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-did-business-ideas-hackathon-f8",
+      "title": "DID Business Ideas Hackathon",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-did-community-trust-registry-f8",
+      "title": "DID Community Trust Registry",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-didcomm-v2-mediator-f8",
+      "title": "DIDComm v2 Mediator",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-digital-hub-for-ngos-charities-f8",
+      "title": "Digital hub for NGOs & charities",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-directed-donations-dapp-f8",
+      "title": "DirectEd - Donations dApp",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-directed-student-scholarship-portal-f8",
+      "title": "DirectEd-Student Scholarship Portal",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-disability-accessibility-equity-f8",
+      "title": "Disability, Accessibility & Equity",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-disruptive-produce-ecosystem-f8",
+      "title": "Disruptive Produce Ecosystem",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-distributed-idea-mapping-system-f8",
+      "title": "Distributed Idea Mapping System",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-distributed-storage-infrastructure-f8",
+      "title": "Distributed storage Infrastructure",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-divine-blockchain-phase-i-f8",
+      "title": "Divine Blockchain - Phase I",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-dlt-based-student-credential-system-f8",
+      "title": "DLT based student credential system",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-dlt360-agriculture-and-metaverse-f8",
+      "title": "DLT360: Agriculture and Metaverse",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-dlt360-business-radar-team-f8",
+      "title": "DLT360: Business RADAR Team",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-dlt360-china-industry-applications-f8",
+      "title": "DLT360: China Industry Applications",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-dlt360-cpg-brands-and-metaverse-f8",
+      "title": "DLT360: CPG Brands and Metaverse",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-dlt360-environment-radar-team-f8",
+      "title": "DLT360: Environment RADAR Team",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-dlt360-eu-regulation-lobbying-f8",
+      "title": "DLT360: EU-Regulation Lobbying",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-dlt360-governance-radar-team-f8",
+      "title": "DLT360: Governance RADAR Team",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-dlt360-industry-onboarding-videos-f8",
+      "title": "DLT360: Industry Onboarding Videos",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-dlt360-machines-and-the-metaverse-f8",
+      "title": "DLT360: Machines and the Metaverse",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-dlt360-metaverse-and-governance-f8",
+      "title": "DLT360: Metaverse and Governance",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-dlt360-metaverse-and-taxonomy-f8",
+      "title": "DLT360: Metaverse and Taxonomy",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-dlt360-metaverse-interoperability-f8",
+      "title": "DLT360: Metaverse Interoperability",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-dlt360-metaverse-requirements-f8",
+      "title": "DLT360: Metaverse - Requirements",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-dlt360-regulatory-radar-team-f8",
+      "title": "DLT360: Regulatory RADAR Team",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-dlt360-review-catalyst-funnel-f8",
+      "title": "DLT360: Review Catalyst Funnel",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-dlt360-smart-internship-6-months-f8",
+      "title": "DLT360: Smart Internship (6 months)",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-dlt360-technology-radar-team-f8",
+      "title": "DLT360: Technology RADAR Team",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-dlt360-website-video-next-step-f8",
+      "title": "DLT360: WEBSITE & Video - Next Step",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-documentary-south-america-f8",
+      "title": "Documentary: South America",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-dodaoio-onboarding-platform-f8",
+      "title": "DoDAO.io - Onboarding Platform",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-done-collectively-bounty-aggreg8r-f8",
+      "title": "Done Collectively: Bounty Aggreg8r",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-done-collectively-discord-integrati-f8",
+      "title": "Done Collectively Discord Integrati",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-done-collectively-gitbook-integrati-f8",
+      "title": "Done Collectively Gitbook Integrati",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-dreps-code-of-ethicsbridges-asia-f8",
+      "title": "dRep's Code of Ethics+Bridges Asia",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-drive-secure-community-chat-servers-f8",
+      "title": "Drive Secure Community Chat Servers",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-drop-creative-nft-solution-b2b-f8",
+      "title": "DROP: Creative NFT solution (B2B)",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-dteach-building-a-donor-pool-f8",
+      "title": "dTeach - building a donor pool",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-dub-popular-ada-video-for-the-world-f8",
+      "title": "DUB popular ADA Video for the World",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-dubai-cardano-meetup-f8",
+      "title": "Dubai Cardano Meetup",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-duo-afrikaans-gameplay-f8",
+      "title": "Duo - Afrikaans Gameplay",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-duo-alpha-mobile-app-f8",
+      "title": "Duo - (Alpha) - Mobile App",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-duo-alpha-web-app-f8",
+      "title": "Duo - (Alpha) - Web App",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-duo-brazilian-portuguese-gameplay-f8",
+      "title": "Duo - Brazilian Portuguese Gameplay",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-duo-filipino-gameplay-f8",
+      "title": "Duo - Filipino Gameplay",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-duo-german-gameplay-f8",
+      "title": "Duo - German Gameplay",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-duo-spanish-gameplay-f8",
+      "title": "Duo - Spanish Gameplay",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-dyor-tool-f8",
+      "title": "DYOR Tool",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-earn-incentives-by-contributing-f8",
+      "title": "Earn incentives by contributing",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-east-africa-cardano-innovation-hub-f8",
+      "title": "East Africa Cardano Innovation Hub",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-east-african-catalyst-developers-f8",
+      "title": "East African Catalyst developers",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-eastern-catalyst-school-f8",
+      "title": "Eastern Catalyst School",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-eastern-town-hall-team-operation-f8",
+      "title": "Eastern Town Hall Team Operation",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-ecoseed-f8",
+      "title": "EcoSeed",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-education-material-for-workshops-f8",
+      "title": "Education Material for Workshops",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-educational-platform-cardano-cube-f8",
+      "title": "Educational Platform - Cardano Cube",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-educational-tool-kit-f-legislators-f8",
+      "title": "Educational tool kit f/ legislators",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-employment-credentials-in-zanzibar-f8",
+      "title": "Employment Credentials in Zanzibar",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-employment-credentials-on-prism-f8",
+      "title": "Employment Credentials on PRISM",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-empower-400-marginalized-girls-f8",
+      "title": "Empower 400 marginalized girls",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-empower-thru-project-based-learning-f8",
+      "title": "Empower thru Project Based Learning",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-enable-cardano-dao-for-new-users-f8",
+      "title": "Enable Cardano DAO for new users",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-enable-educated-ca-decisions-f8",
+      "title": "Enable educated CA decisions",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-enterprise-operating-system-f8",
+      "title": "Enterprise Operating System",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-erc721-erc-1155-for-milkomeda-f8",
+      "title": "ERC721 & ERC-1155 for Milkomeda",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-erdstall-instant-txs-l2-nft-mints-f8",
+      "title": "Erdstall: instant TXs, L2 NFT mints",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-escrow-smart-contract-for-dapps-f8",
+      "title": "Escrow Smart Contract for dApps 🔥",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-esg-compliant-enterprise-staking-f8",
+      "title": "ESG-Compliant Enterprise Staking",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-esports-aegis-platform-f8",
+      "title": "Esports Aegis Platform",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-establish-center-for-coin-liberty-f8",
+      "title": "Establish Center for Coin Liberty",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-estati-real-estate-investments-f8",
+      "title": "ESTATI - real estate investments",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-eternalswap-perpetual-contract-dex-f8",
+      "title": "EternalSwap: Perpetual contract DEX",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-eth-gas-to-fuel-the-ada-fire-f8",
+      "title": "Eth Gas to Fuel the ADA Fire",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-eth-rehab-recovery-with-cardano-f8",
+      "title": "Eth Rehab - Recovery with Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-evangelizing-catalyst-to-academics-f8",
+      "title": "Evangelizing Catalyst to Academics",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-exhibit-largest-blockchain-latam-br-f8",
+      "title": "Exhibit Largest Blockchain LATAM BR",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-exhibit-largest-blockchainexpojp-f8",
+      "title": "Exhibit Largest BlockChainEXPO(JP)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-expands-to-1000cities-in-jpapp-f8",
+      "title": "Expands to 1000cities in JP[APP]",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-expands-to-1000cities-jppointsyst-f8",
+      "title": "Expands to 1000cities JP[PointSyst]",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-fair-stake-pool-economy-f8",
+      "title": "Fair Stake Pool Economy",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-farming-incentive-to-move-liquidity-f8",
+      "title": "Farming incentive to move liquidity",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-favorable-legislation-in-argentina-f8",
+      "title": "Favorable legislation in Argentina",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-ferrum-infinityswap-milestone-1-2-f8",
+      "title": "Ferrum: InfinitySwap-Milestone 1-2",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-ferrum-infinityswap-milestone-3-4-f8",
+      "title": "Ferrum: InfinitySwap-Milestone 3-4",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-ferrum-infinityswap-milestone-5-f8",
+      "title": "Ferrum: InfinitySwap-Milestone 5",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-ferrums-staking-as-a-service-ms12-f8",
+      "title": "Ferrum's Staking as a Service MS1&2",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-ferrums-staking-as-a-service-ms34-f8",
+      "title": "Ferrum's Staking as a Service MS3&4",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-fetachain-iiot-cardano-framework-f8",
+      "title": "Fetachain - IIoT Cardano Framework",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-fiat-1st-hot-wallet-method-f8",
+      "title": "FIAT 1ST HOT WALLET Method",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-fiat-payments-for-nfts-revelar-f8",
+      "title": "Fiat Payments for NFTs - Revelar",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-fimi-vietnamese-cardano-talk-f8",
+      "title": "FIMI-Vietnamese Cardano Talk",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-finance-dao-dapp-stakepool-web3-f8",
+      "title": "Finance DAO dApp + Stakepool Web3",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-find-organize-esports-tournaments-f8",
+      "title": "Find & organize eSports tournaments",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-find-your-way-route-optimizer-app-f8",
+      "title": "Find your Way Route Optimizer App",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-finish-the-filecoin-bridge-f8",
+      "title": "Finish the Filecoin Bridge!",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-fiverr-clone-on-cardano-f8",
+      "title": "Fiverr Clone on Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-flood-africa-with-cardano-f8",
+      "title": "Flood Africa with Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-flooftopia-social-cnft-mmo-game-f8",
+      "title": "Flooftopia: Social CNFT MMO Game!",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-flutter-sdk-f8",
+      "title": "Flutter SDK",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-format-of-evaluated-project-process-f8",
+      "title": "Format Of Evaluated Project Process",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-foss-funding-mechanism-to-save-f8",
+      "title": "FOSS funding mechanism to save 🌍",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-fps3rdps-battle-royale-on-cardano-f8",
+      "title": "FPS/3rdPS Battle Royale on Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-free-cnft-giveaway-bonanza-get-in-f8",
+      "title": "Free CNFT Giveaway Bonanza - Get In",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-free-off-chain-data-feeds-pt-2-f8",
+      "title": "Free off-chain data feeds pt. 2",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-freeloaderz-load-balancer-f8",
+      "title": "FreeLoaderz: Load Balancer",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-freeloaderz-token-nft-distributor-f8",
+      "title": "FreeLoaderz Token & NFT Distributor",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-french-haskell-plutus-curriculum-f8",
+      "title": "French Haskell + Plutus Curriculum",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-french-west-africa-outreach-2-f8",
+      "title": "French West Africa Outreach",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-fund8proposals-sdgs-cardano-aim-f8",
+      "title": "Fund8Proposals + SDGs - Cardano AIM",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-funded-proposer-sub-circle-f8",
+      "title": "Funded Proposer Sub-Circle",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-funding-categories-analysis-f8",
+      "title": "Funding Categories Analysis",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-funding-the-growth-of-adapulse-f8",
+      "title": "Funding the Growth of Adapulse",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-fundraising-platform-for-ngos-f8",
+      "title": "Fundraising platform for NGO's",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-fundraising-the-lv-arts-district-f8",
+      "title": "Fundraising the LV Arts District",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-future-of-cardano-is-in-east-asia-f8",
+      "title": "Future of Cardano is in East Asia",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-gamechanger-most-wanted-features-f8",
+      "title": "GameChanger: Most Wanted Features ❤",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-gamified-education-play-to-learn-f8",
+      "title": "Gamified Education -Play to (L)EARN",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-gamifying-littercoin-take-2-f8",
+      "title": "Gamifying Littercoin (Take 2)",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-gender-unicorns-cnft-card-game-f8",
+      "title": "Gender Unicorns CNFT card game",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-genealogy-registry-in-goma-drcongo-f8",
+      "title": "Genealogy registry in Goma, DRCongo",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-ghana-youth-onboarding-outreach-f8",
+      "title": "Ghana Youth Onboarding Outreach",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-give-businesses-the-tools-needed-f8",
+      "title": "GIVE BUSINESSES THE TOOLS NEEDED!",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-give-maasai-pastoralists-did-f8",
+      "title": "Give Maasai Pastoralists DiD",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-gnosis-safe-ui-f8",
+      "title": "Gnosis Safe UI",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-go-peds-go-cardano-f8",
+      "title": "Go-Peds Go-Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-green-energy-decentralisation-f8",
+      "title": "Green Energy Decentralisation",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-green-yoma-ssi-sdg-marketplace-f8",
+      "title": "Green Yoma - SSI SDG Marketplace",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-grow-ethiopian-cardano-community-f8",
+      "title": "Grow Ethiopian cardano community",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-grow-rural-business-f8",
+      "title": "Grow Rural Business",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-grow-sa-cardano-community-f8",
+      "title": "Grow SA Cardano Community",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-grow-wada-grow-cardano-f8",
+      "title": "Grow Wada, Grow Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-grow-your-own-adventure-mobile-f8",
+      "title": "Grow Your Own Adventure Mobile",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-growing-ca-community-via-hubs-f8",
+      "title": "Growing CA community via Hubs",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-growing-cardanos-ecosystem-f8",
+      "title": "Growing Cardano’s Ecosystem",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-growing-cardanos-small-businesses-f8",
+      "title": "Growing Cardano’s Small Businesses",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-growing-the-us-blockchain-community-f8",
+      "title": "Growing the US Blockchain Community",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-hackathon-and-internship-program-f8",
+      "title": "Hackathon and Internship Program",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-haitian-economic-growth-initiative-f8",
+      "title": "Haitian Economic Growth Initiative",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-haskell-book-japanese-translation-f8",
+      "title": "Haskell Book Japanese Translation",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-haskell-book-vietnamese-translation-f8",
+      "title": "Haskell Book Vietnamese Translation",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-haskell-course-for-beginner-f8",
+      "title": "Haskell Course For Beginner",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-haskell-course-for-vietnamese-f8",
+      "title": "Haskell Course for Vietnamese",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-haskellplutus-course-in-spanish-f8",
+      "title": "Haskell/Plutus Course in Spanish",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-healthcare-developers-onboarding-f8",
+      "title": "Healthcare Developers Onboarding",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-healthcare-wellness-marketplace-f8",
+      "title": "Healthcare & Wellness Marketplace",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-hello-future-digital-time-capsule-f8",
+      "title": "Hello Future - Digital Time Capsule",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-help2health-cardano-citaldoc-f8",
+      "title": "Help2Health: Cardano + Citaldoc",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-honeybees-on-blockchain-f8",
+      "title": "Honeybees on Blockchain",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-horrocubes-f8",
+      "title": "Horrocubes",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-how-did-sony-take-on-nintendo-f8",
+      "title": "How did Sony take on Nintendo?!",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-how-often-can-a-brand-contact-you-f8",
+      "title": "How often can a brand contact you?",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-how-to-podcasts-filipino-english-f8",
+      "title": "How to-podcasts Filipino & English",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-hq-graphic-for-miverse-metaverse-f8",
+      "title": "HQ GRAPHIC FOR MIVERSE METAVERSE",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-hub-support-services-for-proposers-f8",
+      "title": "Hub Support Services for Proposers",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-humble-records-ubi-music-collective-f8",
+      "title": "Humble Records UBI Music Collective",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-hydra-for-mashup-co-authors-and-f8",
+      "title": "HYDRA for mashup, co-authors and ©️",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-ideafest-challengefest-by-swarm-f8",
+      "title": "IdeaFest & ChallengeFest by Swarm",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-ideation-protocol-work-group-f8",
+      "title": "Ideation Protocol Work Group",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-immigration-documents-on-chain-f8",
+      "title": "Immigration Documents On Chain",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-impact-accelerator-rollout-f8",
+      "title": "Impact Accelerator Rollout",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-impact-creating-nfts-for-causes-f8",
+      "title": "Impact Creating NFTs for Causes",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-impact-finance-regulatory-sandbox-f8",
+      "title": "Impact Finance Regulatory Sandbox",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-imperative-smart-contracts-f8",
+      "title": "Imperative Smart Contracts",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-improve-catalyst-search-ability-f8",
+      "title": "Improve Catalyst Search-ability",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-improving-integrity-of-ca-processes-f8",
+      "title": "Improving Integrity of CA Processes",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-inc-train-the-trainer-africa-mvp-f8",
+      "title": "Inc. Train the Trainer Africa MVP",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-incentivized-learning-to-move-users-f8",
+      "title": "Incentivized learning to move users",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-increase-projects-investor-appeal-f8",
+      "title": "Increase Project's Investor Appeal",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-incremental-ca-assessments-f8",
+      "title": "Incremental CA assessments",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-indian-spo-support-and-education-f8",
+      "title": "Indian SPO Support and Education",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-indigenous-land-rematriation-f8",
+      "title": "Indigenous Land Rematriation",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-indigo-africa-future-fashion-f8",
+      "title": "INDIGO, AFRICA & FUTURE FASHION",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-indigo-metacademy-f8",
+      "title": "Indigo MetAcademy",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-industry-40-on-chain-platform-f8",
+      "title": "Industry 4.0 On-chain Platform",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-innovatio-digital-hub-f8",
+      "title": "Innovatio Digital HUB",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-innovatio-web-app-investigation-f8",
+      "title": "Innovatio Web-App Investigation",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-innovation-fund-research-roles-f8",
+      "title": "Innovation Fund Research - Roles",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-innovatios-digital-user-onboarding-f8",
+      "title": "Innovatio's Digital User Onboarding",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-insight-sharing-workshops-tcs-f8",
+      "title": "Insight Sharing Workshops - TCS",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-integrate-assets-debt-into-ada-f8",
+      "title": "Integrate Assets & Debt into ADA",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-integrating-python-nft-usability-f8",
+      "title": "Integrating Python & NFT usability",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-integrations-and-utilities-f8",
+      "title": "Integrations and utilities",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-interest-free-stablecoin-protocol-f8",
+      "title": "Interest free stablecoin protocol",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-investor-network-community-platform-f8",
+      "title": "Investor Network Community Platform",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-invoice-finance-defi-platform-cr2-f8",
+      "title": "Invoice Finance DeFi Platform - CR2",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-iri-cardano-urbit-hackathon-f8",
+      "title": "IRI: Cardano & Urbit Hackathon",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-iri-champaign-cardano-meetups-f8",
+      "title": "IRI: Champaign Cardano Meetups",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-iri-educating-crypto-regulators-f8",
+      "title": "IRI: Educating Crypto Regulators",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-ironsky-nft-game-play2earn-4launch-f8",
+      "title": "IRONSKY NFT GAME Play2Earn |4Launch",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-isig-goma-cardano-hub-f8",
+      "title": "ISIG-GOMA Cardano Hub",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-japanese-cardano-master-class-f8",
+      "title": "Japanese Cardano Master Class",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-jobfair-platform-on-cardano-f8",
+      "title": "JobFair platform on Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-json-api-service-for-developers-f8",
+      "title": "JSON API service for developers",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-k-sprout-leveraging-indian-startups-f8",
+      "title": "K SPROUT-Leveraging Indian Startups",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-kandy-community-hub-f8",
+      "title": "Kandy Community Hub",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-keeping-up-with-cardano-100-videos-f8",
+      "title": "Keeping Up with Cardano: 100 videos",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-keyword-coin-price-widget-for-sites-f8",
+      "title": "Keyword Coin Price Widget for Sites",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-kilt-cardano-f8",
+      "title": "KILT & Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-knowcardaknow-a-marketplace-f8",
+      "title": "knowcardaknow, a marketplace",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-knowledge-hub-for-vietnam-and-japan-f8",
+      "title": "Knowledge hub for Vietnam and Japan",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-kodeklash-hackathons-f8",
+      "title": "KodeKlash Hackathons",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-konma-a-web3-marketplace-f8",
+      "title": "KONMA- A Web3 Marketplace",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-konma-chain-l2-zk-roll-up-for-ada-f8",
+      "title": "KONMA Chain : L2 ZK Roll up for ADA",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-konma-openlib-f8",
+      "title": "Konma OpenLib",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-kyc-credentials-poc-f8",
+      "title": "KYC Credentials PoC",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-latam-cardano-community-operations-f8",
+      "title": "LATAM Cardano Community Operations",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-layer-2-advanced-architecture-f8",
+      "title": "Layer 2 Advanced Architecture",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-layer-3-scalability-using-zkrollups-f8",
+      "title": "Layer 3 scalability using zkRollups",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-leadership-academy-operations-f8",
+      "title": "Leadership Academy Operations",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-leapfrogging-industrialization-f8",
+      "title": "Leapfrogging Industrialization",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-learn-2-earn-ca-can-be-a-good-job-f8",
+      "title": "Learn 2 Earn, CA Can Be a Good Job!",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-learn-earn-for-refugees-f8",
+      "title": "Learn & Earn for Refugees",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-learn-token-engineeringelements-f8",
+      "title": "Learn token engineering🥕elements",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-legislation-in-pa-and-beyond-f8",
+      "title": "Legislation in PA and Beyond",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-leveling-up-cardano-indonesia-ig-f8",
+      "title": "Leveling Up Cardano Indonesia IG",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-leveraging-networks-in-africa-f8",
+      "title": "LEVERAGING NETWORKS IN AFRICA",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-liberated-global-education-f8",
+      "title": "Liberated Global Education",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-licensing-remixed-music-on-chain-f8",
+      "title": "Licensing Remixed Music On-Chain",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-link-start-the-new-social-media-f8",
+      "title": "Link Start, the new social media",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-liquidity-aggregator-for-cardano-f8",
+      "title": "Liquidity Aggregator for Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-littlecube-valley-game-project-f8",
+      "title": "Littlecube Valley (game project)",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-littlefish-coordinating-action-f8",
+      "title": "Littlefish - Coordinating Action",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-live-streaming-music-nftmarketplace-f8",
+      "title": "Live streaming Music NFTMarketplace",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-liverpool-cardano-philosophy-hub-f8",
+      "title": "Liverpool Cardano Philosophy Hub",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-living-waters-costa-rica-f8",
+      "title": "Living Waters Costa Rica",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-lobby-international-sa-bank-regs-f8",
+      "title": "Lobby International & SA Bank Regs",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-localize-iohkio-for-vietnamese-f8",
+      "title": "Localize iohk.io for vietnamese",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-logyq-protocol-blockchain-tracking-f8",
+      "title": "Logyq Protocol: blockchain tracking",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-lokolecardano-community-networks-f8",
+      "title": "Lokole/Cardano community Networks",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-loozr-f8",
+      "title": "LOOZR",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-los-angeles-cardano-community-f8",
+      "title": "Los Ángeles Cardano Community",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-low-cost-node-hardware-revelar-f8",
+      "title": "Low Cost Node Hardware - Revelar",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-loxe-inc-plutus-internship-cont-f8",
+      "title": "Loxe Inc. Plutus Internship Cont.",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-loxe-inc-web-dev-internship-f8",
+      "title": "Loxe Inc. Web Dev Internship",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-loxe-inc-web-hr-internship-f8",
+      "title": "Loxe Inc. Web HR Internship",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-loyalty-point-for-developers-f8",
+      "title": "Loyalty Point for Developers",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-madao-mutual-aid-dao-user-client-f8",
+      "title": "MADAO: Mutual Aid DAO User Client",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-madao-new-mexico-ambassador-program-f8",
+      "title": "MADAO New Mexico Ambassador program",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-make-content-more-fun-to-learn-easy-f8",
+      "title": "MAKE CONTENT MORE FUN TO LEARN EASY",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-make-learn-cardano-easier-f8",
+      "title": "Make learn Cardano easier",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-marketplace-for-artists-f8",
+      "title": "Marketplace for artists",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-marlowe-for-financial-markets-f8",
+      "title": "Marlowe for Financial Markets",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-mass-cardano-education-for-students-f8",
+      "title": "Mass Cardano Education for Students",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-matrix-development-integrations-f8",
+      "title": "Matrix Development Integrations",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-medical-research-based-ada-f8",
+      "title": "Medical Research based ADA",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-medusa-wallet-f8",
+      "title": "Medusa Wallet",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-member-onboarding-gamer-recruitment-f8",
+      "title": "member onboarding gamer recruitment",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-mentalyse-learn-through-fun-f8",
+      "title": "Mentalyse: Learn through fun",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-mentor-mentee-bounties-elearning-f8",
+      "title": "Mentor-mentee Bounties & eLearning",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-mentoring-africa-to-success-f8",
+      "title": "Mentoring Africa to Success",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-mentorship-incentivization-dao-f8",
+      "title": "Mentorship Incentivization DAO",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-merchandise-store-pricing-in-ada-f8",
+      "title": "Merchandise Store pricing in ADA",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-mesh-network-konma-xperience-center-f8",
+      "title": "Mesh Network-Konma Xperience Center",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-metacarwars-p2e-staking-nft-f8",
+      "title": "METACARWARS, P2E Staking NFT",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-metadata-dictionary-f8",
+      "title": "Metadata Dictionary",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-metahagane-nft-trading-card-game-f8",
+      "title": "Metahagane - NFT Trading Card Game.",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-metavers-of-play-to-entertain-gamer-f8",
+      "title": "METAVERS OF PLAY-TO-ENTERTAIN GAMER",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-metaverse-builder-with-nft-boosting-f8",
+      "title": "Metaverse Builder with NFT Boosting",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-microfinance-on-chain-30-f8",
+      "title": "Microfinance on chain 3.0",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-migrate-nano-credits-to-cardano-f8",
+      "title": "Migrate nano-credits to Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-migrating-from-eth-newcomer-setup-f8",
+      "title": "Migrating from ETH: Newcomer Setup",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-migration-of-mobile-ar-mmorpg-f8",
+      "title": "Migration of Mobile AR MMORPG",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-milkomeda-accelerator-batch-2-f8",
+      "title": "Milkomeda accelerator batch #2",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-milkomeda-docker-fullnode-setup-f8",
+      "title": "Milkomeda docker fullnode setup",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-milkomeda-for-cardano-unity-assets-f8",
+      "title": "Milkomeda for Cardano unity assets",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-milkomeda-game-f8",
+      "title": "Milkomeda Game",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-milkomeda-hackathon-f8",
+      "title": "Milkomeda Hackathon",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-milkomeda-mobile-f8",
+      "title": "Milkomeda Mobile",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-milkomeda-token-bridge-explorer-f8",
+      "title": "Milkomeda token bridge explorer",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-minconnect-f8",
+      "title": "MinConnect",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-mini-proposal-workshops-f8",
+      "title": "Mini Proposal Workshops",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-mining-educative-board-game-f8",
+      "title": "\"MINING\" educative board game",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-mining-traceability-in-a-war-zone-f8",
+      "title": "Mining traceability in a war zone",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-mlabs-cardano-tx-lib-for-web3-f8",
+      "title": "MLabs - Cardano-Tx-Lib for web3",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-mlabs-spec-dsl-for-dapp-security-f8",
+      "title": "MLabs - Spec DSL for dApp Security",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-mlabs-the-universal-joint-f8",
+      "title": "MLabs - \"The Universal Joint\"",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-mobile-cardano-based-crafting-game-f8",
+      "title": "Mobile Cardano based crafting game",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-mobile-in-app-wallet-rn-f8",
+      "title": "Mobile In-App Wallet (RN) 🔥",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-mobilize-grass-root-activism-f8",
+      "title": "Mobilize : Grass-root activism",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-model-ict-hub-for-deprived-students-f8",
+      "title": "Model ICT Hub for Deprived Students",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-modern-hospital-management-system-f8",
+      "title": "Modern Hospital Management System",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-monaco-streaming-film-festival-2022-f8",
+      "title": "Monaco Streaming Film Festival 2022",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-money-remittance-and-lending-f8",
+      "title": "Money Remittance and Lending",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-multipurpose-cadastre-blockchain-f8",
+      "title": "Multipurpose Cadastre Blockchain",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-museverse-music-into-the-metaverse-f8",
+      "title": "MUSEVERSE: Music into the Metaverse",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-music-live-nft-platform-f8",
+      "title": "Music live NFT platform",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-native-tokens-integration-f8",
+      "title": "Native Tokens Integration",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-net-blazor-web-wallet-support-f8",
+      "title": ".NET Blazor Web wallet Support",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-net-cardanosharp-deserialization-f8",
+      "title": ".NET CardanoSharp – Deserialization",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-networking-events-africa-extended-f8",
+      "title": "Networking Events Africa Extended",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-networking-events-bombay-india-f8",
+      "title": "Networking Events Bombay, India",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-networking-events-latam-ext-f8",
+      "title": "Networking Events LatAm EXT",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-networkingpromotional-events-japan-f8",
+      "title": "Networking/promotional events Japan",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-neuralprint-neural-ids-nfts-f8",
+      "title": "NEURALPRINT: Neural ID's & NFT's",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-neuro-tools-for-teams-growth-f8",
+      "title": "Neuro tools for teams & growth",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-new-catalyst-operation-pattern-f8",
+      "title": "New Catalyst operation pattern",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-new-members-engagement-2-aim-f8",
+      "title": "New Members Engagement 2- AIM",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-nfc-play-to-earn-cloths-battle-game-f8",
+      "title": "NFC Play to earn cloths battle game",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-nft-as-an-event-ticket-f8",
+      "title": "NFT as an event ticket",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-nft-battle-royale-game-for-cardano-f8",
+      "title": "NFT Battle Royale Game for Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-nft-bids-powered-by-balou-f8",
+      "title": "NFT Bids - Powered by Balou",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-nft-content-delivery-as-a-service-f8",
+      "title": "NFT Content Delivery as a Service",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-nft-devs-bridge-to-project-catalyst-f8",
+      "title": "NFT Devs Bridge to Project Catalyst",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-nft-exhibition-space-in-cardano-f8",
+      "title": "NFT exhibition space in Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-nft-fighters-cross-chain-gaming-f8",
+      "title": "NFT Fighters: Cross-Chain Gaming",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-nft-guild-cardano-nft-reports-f8",
+      "title": "NFT Guild: Cardano NFT Reports",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-nft-guild-nft-royalty-standards-f8",
+      "title": "NFT-Guild: NFT Royalty Standards",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-nft-marketplace-builder-platform-f8",
+      "title": "NFT marketplace builder platform",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-nft-marketplace-enabling-p2p-defi-f8",
+      "title": "NFT marketplace enabling P2P DeFI",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-nft-multiverse-marketplace-f8",
+      "title": "NFT Multiverse Marketplace",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-nft-platform-for-business-cases-f8",
+      "title": "NFT Platform for business cases",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-nft-proof-of-authenticity-f8",
+      "title": "NFT - Proof of Authenticity",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-nft-search-engine-on-cardano-f8",
+      "title": "NFT Search Engine on Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-nft-speakeazy-hospitality-growth-f8",
+      "title": "NFT Speakeazy Hospitality Growth",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-nft-speakeazy-onboarding-bar-f8",
+      "title": "NFT Speakeazy Onboarding Bar",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-nft-swap-infrastructure-templates-1-f8",
+      "title": "NFT Swap Infrastructure Templates 1",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-nft-verification-tool-f8",
+      "title": "NFT Verification Tool",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-nft-vinyls-paying-musicians-forever-f8",
+      "title": "NFT Vinyls paying musicians forever",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-nft3d-live-3d-interactive-metaverse-f8",
+      "title": "NFT3D Live 3D Interactive Metaverse",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-nftpass-nft-ticketing-solution-f8",
+      "title": "NFTPass: NFT Ticketing Solution",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-ngo-transparency-f8",
+      "title": "NGO transparency",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-niti-a-new-design-for-exchanges-f8",
+      "title": "NITI: a new design for exchanges",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-no-code-nft-minting-revelar-f8",
+      "title": "No-code NFT minting - Revelar",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-no-more-rug-pull-f8",
+      "title": "No more rug pull",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-nocode-ada-blockchain-as-a-service-f8",
+      "title": "NoCode ADA Blockchain as a Service",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-nonprofits-to-jumpstart-adoptionnew-f8",
+      "title": "Nonprofits to Jumpstart adoptionNEW",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-nunet-decentralized-gpu-ml-cloud-f8",
+      "title": "NuNet: Decentralized GPU ML Cloud",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-offchain-typescript-library-f8",
+      "title": "Offchain Typescript library",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-okos-monetizing-your-intellect-f8",
+      "title": "Okos: Monetizing your Intellect",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-omimimo-the-pure-water-game-f8",
+      "title": "OMIMIMO The Pure Water Game",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-on-boarding-all-stakeholders-f8",
+      "title": "🛫 On-Boarding ALL stakeholders",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-on-boarding-french-developers-f8",
+      "title": "On-boarding French Developers",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-on-chain-tilemaps-for-game-worlds-f8",
+      "title": "On-Chain Tilemaps for Game Worlds",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-onboard-freelancers-to-any-projects-f8",
+      "title": "Onboard Freelancers to any projects",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-onboard-impact-driven-businesses-f8",
+      "title": "Onboard Impact Driven Businesses",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-onboard-new-eastern-african-members-f8",
+      "title": "Onboard New Eastern African Members",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-onboarding-east-asia-today-f8",
+      "title": "Onboarding East Asia Today",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-onboarding-manual-for-dummies-f8",
+      "title": "Onboarding Manual for Dummies",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-onboarding-through-events-f8",
+      "title": "Onboarding through events",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-onboarding-under-represented-youth-f8",
+      "title": "Onboarding Under-represented Youth",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-onchainuniversity-free-education-f8",
+      "title": "OnChainUniversity - Free Education",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-one-vote-f8",
+      "title": "One Vote",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-online-makerspace-f8",
+      "title": "Online Makerspace",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-open-api-for-adatarme-f8",
+      "title": "Open API for Adatar.me",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-open-by-default-stock-market-f8",
+      "title": "Open by default stock market",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-open-certification-and-traceability-2-f8",
+      "title": "Open Certification and Traceability",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-open-data-lake-blueprint-f8",
+      "title": "Open Data Lake Blueprint",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-open-ispo-f8",
+      "title": "Open ISPO",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-open-ledger-for-agricultural-land-f8",
+      "title": "Open ledger for agricultural land",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-open-smart-contract-library-f8",
+      "title": "Open Smart Contract Library",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-open-source-collaboration-platform-f8",
+      "title": "Open Source Collaboration Platform",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-open-source-d-edtech-for-latam-f8",
+      "title": "Open Source d-edTech For LatAm",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-open-source-fungify-f8",
+      "title": "Open Source Fungify",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-open-source-play-to-earn-revelar-f8",
+      "title": "Open Source Play-To-Earn - Revelar",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-open-source-translate-2-earn-webapp-f8",
+      "title": "Open Source Translate 2 Earn Webapp",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-open-standards-design-patterns-f8",
+      "title": "Open Standards & Design Patterns",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-openscience-marketplace-scale-up-f8",
+      "title": "OpenScience Marketplace Scale-up",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-opensource-quadratic-voting-funding-f8",
+      "title": "OpenSource Quadratic Voting Funding",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-operation-clean-you-frontage-f8",
+      "title": "Operation Clean you Frontage .",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-operationalizing-human-security-f8",
+      "title": "Operationalizing Human Security",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-oracle-developer-portal-f8",
+      "title": "Oracle Developer Portal",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-orbis-layer-2-zk-rollup-f8",
+      "title": "Orbis: Layer 2 ZK Rollup",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-organised-linkedin-of-professionals-f8",
+      "title": "Organised Linkedin of professionals",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-organization-membership-mgmt-f8",
+      "title": "Organization membership mgmt",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-ouroboros-mini-query-specification-f8",
+      "title": "Ouroboros-mini query specification",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-oxford-student-hub-f8",
+      "title": "Oxford Student Hub",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-p2p-fiat-exchange-cardwayfinance-f8",
+      "title": "P2P Fiat Exchange [cardway.finance]",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-p2p-smart-contract-interaction-f8",
+      "title": "P2P Smart Contract Interaction",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-pandao-focus-on-ddatastorage-f8",
+      "title": "PanDAO: Focus on dDataStorage",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-pandao-focus-on-treasury-management-f8",
+      "title": "PanDAO Focus on Treasury Management",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-pcdiscord-social-media-automation-f8",
+      "title": "PCDiscord - Social Media Automation",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-pdf-proud-dirt-farmers-a-dao-f8",
+      "title": "PDF - Proud Dirt Farmers - a DAO",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-peakchain-carsharing-platform-f8",
+      "title": "PeakChain Carsharing Platform",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-peakchain-fleet-management-platform-f8",
+      "title": "PeakChain Fleet Management Platform",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-perma-music-rmnft-marketplace-f8",
+      "title": "Perma-music rmNFT Marketplace",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-permaculture-blockchain-youtube-f8",
+      "title": "Permaculture & Blockchain: YouTube",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-perun-channels-for-cardano-f8",
+      "title": "Perun Channels for Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-petri-nets-a-model-to-define-dapps-f8",
+      "title": "Petri Nets: a model to define dApps",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-php-sdk-for-blockfrostio-f8",
+      "title": "PHP SDK for Blockfrost.io",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-phygital-market-for-spiritual-art-f8",
+      "title": "Phygital Market for Spiritual Art",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-pie-for-community-dev-sector-f8",
+      "title": "P.I.E for Community Dev. Sector",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-pie-for-gamers-on-chained-f8",
+      "title": "P.I.E for Gamers-On-Chained",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-pie-for-miscellaneous-challenge-f8",
+      "title": "P.I.E for Miscellaneous-Challenge",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-play-to-earn-marketplace-f8",
+      "title": "Play To Earn Marketplace",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-playcardanocom-ada-prediction-game-f8",
+      "title": "PlayCardano.com ADA Prediction Game",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-playermint-play-to-earn-marketplace-f8",
+      "title": "PlayerMint Play-to-Earn Marketplace",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-plutarch-typed-edsl-in-haskell-f8",
+      "title": "Plutarch: typed eDSL in Haskell",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-plutus-extra-plutus-helper-library-f8",
+      "title": "Plutus-extra: Plutus helper library",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-plutus-for-devs-in-spanish-f8",
+      "title": "PLUTUS FOR DEVS IN SPANISH",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-plutus-for-nigerian-universities-f8",
+      "title": "Plutus for Nigerian Universities",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-plutus-pioneers-upgraded-f8",
+      "title": "Plutus Pioneers Upgraded",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-plutus-project-based-learning-f8",
+      "title": "Plutus Project-Based Learning",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-pool-topology-and-block-propagation-f8",
+      "title": "Pool Topology and Block Propagation",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-poplar-programming-language-f8",
+      "title": "Poplar Programming Language",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-prevent-attacks-on-cardano-f8",
+      "title": "Prevent Attacks on Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-prism-vc-schemacred-definition-f8",
+      "title": "PRISM VC Schema/Cred Definition",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-private-gated-nfts-revelar-f8",
+      "title": "Private Gated NFTs - Revelar",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-procedural-3d-assets-generator-f8",
+      "title": "Procedural 3D assets generator",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-product-tracing-on-cardano-f8",
+      "title": "Product Tracing on Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-profila-launches-demar-part-1-f8",
+      "title": "Profila launches DeMar (Part 1)",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-project-catalyst-closing-made-easy-f8",
+      "title": "Project Catalyst Closing Made Easy",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-project-catalyst-onboarding-hub-f8",
+      "title": "Project Catalyst Onboarding Hub",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-project-evaluation-website-ver-11-f8",
+      "title": "Project Evaluation Website Ver 1.1",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-project-management-cardano-cube-f8",
+      "title": "Project Management - Cardano Cube",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-project-managment-track-directory-f8",
+      "title": "Project Managment & Track Directory",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-project-monarch-goingup-f8",
+      "title": "Project Monarch - GoingUP",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-project-support-stake-pool-in-japan-f8",
+      "title": "Project Support Stake pool in Japan",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-promote-prism-in-switzerland-f8",
+      "title": "Promote PRISM in Switzerland",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-proof-of-accomplishment-on-catalyst-f8",
+      "title": "Proof of Accomplishment on Catalyst",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-proof-of-article-big-ask-f8",
+      "title": "Proof of Article (BIG ASK)",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-proof-of-article-small-ask-f8",
+      "title": "Proof of Article (SMALL ASK)",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-proof-of-provenance-whitepaper-f8",
+      "title": "Proof of provenance whitepaper",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-property-registration-for-housing-f8",
+      "title": "Property Registration for Housing",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-proposal-framework-tool-aim-f8",
+      "title": "Proposal Framework Tool - AIM",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-proposal-translation-with-human-qa-f8",
+      "title": "Proposal Translation with Human QA",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-proposer-tool-on-chain-aim-f8",
+      "title": "Proposer-tool on chain - AIM",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-propx-property-exchange-f8",
+      "title": "PropX :- Property Exchange",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-protecting-wildlife-maasai-kenya-f8",
+      "title": "Protecting wildlife & Maasai, Kenya",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-pubweave-an-academic-ecosystem-f8",
+      "title": "PubWeave: An academic ecosystem",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-purpose-entities-aoa-gameb-f8",
+      "title": "Purpose Entities AoA (Game~B!)",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-pycardano-build-dapps-in-python-f8",
+      "title": "PyCardano - Build dApps in Python",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-qa-dao-oversight-of-catalyst-circle-f8",
+      "title": "QA-DAO Oversight of Catalyst Circle",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-raretyio-multi-sig-nft-launchpad-f8",
+      "title": "Rarety.io : Multi-Sig NFT Launchpad",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-rd-for-mental-health-credentials-f8",
+      "title": "R&D for mental health credentials",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-real-journalism-cardano-insights-f8",
+      "title": "Real Journalism = Cardano Insights",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-real-world-smart-contract-use-case-f8",
+      "title": "Real world smart contract use case",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-realworld-business-process-use-case-f8",
+      "title": "Realworld business process use case",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-reference-inputs-sdk-mlabsorcfax-f8",
+      "title": "Reference Inputs SDK ▶ MLabs+Orcfax",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-refi-cross-chain-climate-action-f8",
+      "title": "ReFi - Cross-chain Climate Action",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-regulation-as-code-for-dapps-f8",
+      "title": "🔥Regulation-as-code for DApps",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-regulation-in-colombia-f8",
+      "title": "REGULATION IN COLOMBIA",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-regulation-in-sri-lanka-f8",
+      "title": "Regulation in Sri Lanka",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-renovate-catalyst-funding-mechanism-f8",
+      "title": "Renovate Catalyst funding mechanism",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-rental-marketplace-on-cardano-f8",
+      "title": "Rental Marketplace on Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-research-guild-business-report-f8",
+      "title": "Research Guild: Business Report",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-research-guild-cross-chain-report-f8",
+      "title": "Research Guild: Cross-Chain Report",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-research-guild-dapp-snapshot-f8",
+      "title": "Research Guild: DApp Snapshot",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-research-guild-ecosystem-report-f8",
+      "title": "Research Guild: Ecosystem Report",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-research-guild-outlier-report-f8",
+      "title": "Research Guild: Outlier Report",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-research-guild-scalability-report-f8",
+      "title": "Research Guild: Scalability Report",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-restorative-workplace-environment-f8",
+      "title": "Restorative Workplace Environment",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-revelar-game-engine-operations-f8",
+      "title": "Revelar Game Engine - Operations",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-reward-creators-for-feed-activity-f8",
+      "title": "Reward creators for feed activity",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-road-to-royals-card-game-f8",
+      "title": "Road To Royals Card game",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-rondevoo-f8",
+      "title": "Rondevoo",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-rootswallet-support-for-sidetree-f8",
+      "title": "RootsWallet - Support for sidetree",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-rythmeetp2p-music-network-platform-f8",
+      "title": "Rythmeet:P2P music network platform",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-saf-simple-application-framework-f8",
+      "title": "SAF Simple Application Framework",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-salmonnation-decentralized-alliance-f8",
+      "title": "SalmonNation Decentralized Alliance",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-scale-nationwide-innovation-hubs-f8",
+      "title": "Scale: Nationwide Innovation Hubs",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-scaling-cnfts-minus-the-eth-mess-f8",
+      "title": "Scaling CNFTs, minus the ETH mess",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-science-hub-in-argentina-f8",
+      "title": "Science Hub in Argentina",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-self-hosted-pricefeed-for-wallets-f8",
+      "title": "Self-hosted pricefeed for wallets",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-self-sovereign-health-records-f8",
+      "title": "Self-Sovereign Health Records",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-service-marketplace-f8",
+      "title": "Service Marketplace",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-shacai-shared-housing-cardano-f8",
+      "title": "shac.ai - Shared Housing & Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-shadowrealms-play-to-earn-card-game-f8",
+      "title": "Shadowrealms play to earn card game",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-shimmy-safe-purposeful-social-f8",
+      "title": "Shimmy - Safe, Purposeful Social",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-short-educational-series-f8",
+      "title": "Short educational series",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-sign-in-with-cardano-f8",
+      "title": "Sign-in with Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-simplify-spo-rollups-in-vietnam-f8",
+      "title": "Simplify SPO rollups in Vietnam",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-skrypt-labs-innovation-adoption-f8",
+      "title": "Skrypt Labs - Innovation & Adoption",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-smart-contract-library-phase-1-f8",
+      "title": "Smart Contract Library - Phase 1",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-smart-contracts-royalty-payments-f8",
+      "title": "Smart Contracts: Royalty Payments",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-smart-mint-diy-evolving-nfts-f8",
+      "title": "smART Mint: DIY evolving NFTs",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-smartex-f8",
+      "title": "Smartex",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-soil-carbon-sequestration-audit-f8",
+      "title": "Soil Carbon Sequestration Audit",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-solar-powered-stakepool-sri-lanka-f8",
+      "title": "Solar powered Stakepool Sri Lanka",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-spo-dashboard-for-delegators-f8",
+      "title": "SPO Dashboard for Delegators",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-spo-delegators-communal-cnft-f8",
+      "title": "SPO Delegators Communal CNFT",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-spo-incubator-rollout-f8",
+      "title": "SPO Incubator Rollout",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-spring-water-solutions-for-africa-f8",
+      "title": "Spring water solutions for Africa",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-ssi-for-coffee-in-east-africa-f8",
+      "title": "SSI for Coffee in East Africa",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-ssi-through-ancestral-africa-lenses-f8",
+      "title": "SSI through ancestral Africa lenses",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-stakingdao-dao-contract-audit-f8",
+      "title": "StakingDAO: DAO & Contract Audit",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-stakingdao-dao-tools-scripts-f8",
+      "title": "StakingDAO: DAO Tools & Scripts",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-stakingdao-supporting-small-pools-f8",
+      "title": "StakingDAO: Supporting Small Pools",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-stakingdao-sustainable-ispo-tool-f8",
+      "title": "StakingDAO: Sustainable ISPO Tool",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-standard-for-verification-of-nfts-f8",
+      "title": "Standard for verification of NFTs",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-standard-ssi-templates-library-f8",
+      "title": "Standard SSI templates library",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-stor-token-white-paper-f8",
+      "title": "STOR Token White Paper",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-storytelling-using-mighty-cardano-f8",
+      "title": "Storytelling using Mighty Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-streamcardano-serverless-infra-f8",
+      "title": "StreamCardano: serverless infra",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-streaming-cardano-based-games-f8",
+      "title": "Streaming Cardano based games",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-structured-questionnaire-for-cas-f8",
+      "title": "Structured Questionnaire for CAs",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-suan-early-carbon-removal-market-f8",
+      "title": "SUAN Early carbon removal market",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-sustainable-apparel-trace-demo-f8",
+      "title": "Sustainable Apparel Trace demo",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-sustainable-business-standards-f8",
+      "title": "Sustainable Business Standards",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-sustainable-energy-for-all-africa-f8",
+      "title": "Sustainable Energy For All Africa",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-sustainable-forestry-hub-cambodia-f8",
+      "title": "Sustainable forestry Hub Cambodia",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-sustainable-solution-hub-f8",
+      "title": "Sustainable Solution Hub",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-tadatek-insights-f8",
+      "title": "TADATek Insights",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-tangopay-merchant-payments-f8",
+      "title": "Tangopay (Merchant Payments)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-tarax-a-news-and-media-dao-f8",
+      "title": "Tarax: a news and media DAO",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-tech-talent-bring-devs-to-cardano-f8",
+      "title": "Tech Talent – Bring Devs to Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-tenant-profile-f8",
+      "title": "Tenant Profile",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-termlimitsdao-f8",
+      "title": "TermLimitsDAO",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-the-ada-cafe-grows-cardano-f8",
+      "title": "The ADA Cafe Grows Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-the-africa-catalyst-school-f8",
+      "title": "The Africa Catalyst School",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-the-alexandra-project-web3-library-f8",
+      "title": "The Alexandra Project WEB3 Library",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-the-catalyst-school-fund9-operation-f8",
+      "title": "The Catalyst School Fund9 Operation",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-the-creators-story-nfts-f8",
+      "title": "The Creators Story NFTs",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-the-crypt-game-f8",
+      "title": "The Crypt Game",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-the-future-of-cardano-is-african-f8",
+      "title": "The Future of Cardano is African",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-the-future-of-cardano-is-indian-f8",
+      "title": "The future of Cardano is Indian",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-the-impact-migration-f8",
+      "title": "The Impact Migration",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-the-impact-onboarding-f8",
+      "title": "The Impact Onboarding",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-the-next-generation-tower-defense-g-f8",
+      "title": "The next generation Tower Defense G",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-the-nft-gaming-podcast-season-2-f8",
+      "title": "The NFT Gaming Podcast - Season 2",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-the-power-of-sovereignty-at-birth-f8",
+      "title": "The Power of Sovereignty at Birth",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-the-workers-protocol-wp-f8",
+      "title": "The Workers Protocol (WP)",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-theatre-for-change-f8",
+      "title": "Theatre For Change",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-thegraph-in-milkomeda-f8",
+      "title": "TheGraph in Milkomeda",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-threejs-for-3d-webaverse-games-f8",
+      "title": "Three.js for 3D-Webaverse games",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-thrift-mobile-defi-connector-f8",
+      "title": "Thrift Mobile - DeFi Connector",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-thrift-mobile-f8",
+      "title": "Thrift Mobile",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-tinypesa-f8",
+      "title": "Tinypesa",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-token-staking-platform-f8",
+      "title": "Token Staking Platform",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-tokenized-security-exchange-f8",
+      "title": "Tokenized Security Exchange",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-tokyo-cardano-summit-episode-2-f8",
+      "title": "Tokyo Cardano Summit: Episode 2",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-townhall-channel-in-vietnamese-f8",
+      "title": "Townhall Channel in Vietnamese",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-traceable-reward-currency-floras-f8",
+      "title": "Traceable Reward currency (FLORAS)",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-train-100-math-teachers-in-africa-f8",
+      "title": "Train 100 Math Teachers in Africa",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-transaction-monitoring-as-a-service-f8",
+      "title": "Transaction monitoring as a service",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-transaction-resubmitter-daemon-f8",
+      "title": "Transaction resubmitter daemon",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-transforming-the-economic-system-f8",
+      "title": "Transforming the economic system.",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-translate-no-code-ssi-to-japanese-f8",
+      "title": "Translate no-code SSI to Japanese",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-translate-no-code-ssi-to-spanish-f8",
+      "title": "Translate no-code SSI to Spanish",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-translate-no-code-ssi-to-swahili-f8",
+      "title": "Translate no-code SSI to Swahili",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-translate-pool-peek-mob-vietnamese-f8",
+      "title": "Translate Pool Peek Mob: Vietnamese",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-translate-pool-peek-mobile-burmese-f8",
+      "title": "Translate Pool Peek Mobile: Burmese",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-translate-pool-peek-mobile-french-f8",
+      "title": "Translate Pool Peek mobile: French",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-translate-pool-peek-mobile-korean-f8",
+      "title": "Translate Pool Peek Mobile: Korean",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-translate-pool-peek-mobile-swahili-f8",
+      "title": "Translate Pool Peek Mobile: Swahili",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-translate-pool-peek-mobile-thai-f8",
+      "title": "Translate Pool Peek Mobile: Thai",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-transparancy-in-campaign-financing-f8",
+      "title": "Transparancy in Campaign Financing",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-traveller-id-ecosystem-f8",
+      "title": "Traveller ID Ecosystem",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-treedano-regenerative-nftrees-f8",
+      "title": "TREEdano: Regenerative NFTrees",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-trust-registry-with-smart-contract-f8",
+      "title": "Trust Registry with Smart Contract",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-trusted-endorsements-for-the-web-f8",
+      "title": "Trusted endorsements for the web",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-trustworthy-news-f8",
+      "title": "Trustworthy News",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-trybblesblockchain-enabled-ar-pets-f8",
+      "title": "Trybbles:Blockchain-Enabled AR Pets",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-tunisian-video-creation-for-n-a-f8",
+      "title": "Tunisian Video Creation for N-A",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-uber-of-3d-printing-manufacturing-f8",
+      "title": "Uber of 3D Printing Manufacturing",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-ubuntu-one-small-town-ecosystem-f8",
+      "title": "Ubuntu - One Small Town Ecosystem",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-uganda-business-technical-hub-f8",
+      "title": "Uganda Business & Technical Hub",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-uncle-harmony-f8",
+      "title": "Uncle Harmony",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-unified-transport-payment-gateway-f8",
+      "title": "Unified Transport Payment Gateway",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-united-caricature-f8",
+      "title": "United Caricature",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-universal-basic-income-dao-f8",
+      "title": "Universal Basic Income DAO",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-universitycollege-outreach-f8",
+      "title": "University/College Outreach ",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-upcoming-events-cardano-cube-f8",
+      "title": "Upcoming Events - Cardano Cube",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-urban-farmer-dapp-f8",
+      "title": "Urban Farmer dApp",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-usa-east-coast-cardano-communityhub-f8",
+      "title": "USA East Coast Cardano CommunityHub",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-user-friendly-nft-minting-feature-f8",
+      "title": "User friendly NFT minting feature",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-using-games-to-scale-audience-f8",
+      "title": "using games to scale audience",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-vca-tool-dev-maitain-aim-f8",
+      "title": "vCA-tool Dev & Maitain - AIM",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-visualized-cardano-structure-f8",
+      "title": "Visualized Cardano Structure",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-wada-documentary-f8",
+      "title": "Wada documentary",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-wada-qualitative-audit-pilot-f8",
+      "title": "WADA Qualitative Audit Pilot",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-wadadexfacilitating-capital-access-f8",
+      "title": "WadaDex|Facilitating Capital Access",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-wal-cli-communication-f8",
+      "title": "WAL-CLI Communication",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-washing-machines-powered-by-wastes-f8",
+      "title": "Washing Machines powered by Wastes",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-watts-social-network-of-trust-mvp-f8",
+      "title": "Watts->Social network of Trust MVP",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-web3-commerce-and-finance-dapp-f8",
+      "title": "Web3 Commerce and Finance dApp",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-web3-school-for-india-f8",
+      "title": "Web3 school for India",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-web3-x-cardano-ada-cafe-in-japan-f8",
+      "title": "Web3 x Cardano ADA Cafe in Japan",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-web3domainsauction-f8",
+      "title": "Web3Domains.Auction",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-who-owns-the-blockchain-f8",
+      "title": "Who owns the blockchain?",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-wifi-infrastructure-paraguay-f8",
+      "title": "Wifi Infrastructure Paraguay",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f08-wildlife-conservation-nfts-f8",
+      "title": "Wildlife Conservation NFTs",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-wildlife-conservation-pool-dapp-f8",
+      "title": "Wildlife Conservation Pool DApp",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-win-win-india-expansion-f8",
+      "title": "Win-Win India Expansion",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-win-win-japan-expansion-f8",
+      "title": "Win-Win Japan Expansion",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-win-win-platform-auditing-f8",
+      "title": "Win-Win Platform Auditing",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-win-win-south-africa-expansion-f8",
+      "title": "Win-Win South Africa Expansion",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-wolfram-catalyst-impact-dashboard-f8",
+      "title": "Wolfram Catalyst Impact Dashboard",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-wolfram-cross-chain-framework-f8",
+      "title": "Wolfram Cross-Chain Framework",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-wolfram-governance-analytics-f8",
+      "title": "Wolfram Governance Analytics",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-wolfram-reimagining-defi-as-realfi-f8",
+      "title": "Wolfram Reimagining DeFi as RealFi",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f08-world-of-pirates-f8",
+      "title": "World of Pirates",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-world-of-pirates-potm-campaign-3-f8",
+      "title": "World of Pirates - POTM Campaign #3",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-yearastbrothers-sc-based-game-f8",
+      "title": "Ye₳stBrothers- SC based game",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-young-cardano-entrepreneurs-f8",
+      "title": "Young Cardano Entrepreneurs",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-youth-block-open-source-education-f8",
+      "title": "Youth Block Open Source Education",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-youth-user-generated-content-f8",
+      "title": "Youth user generated content",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-youthwomen-cardano-nft4good-party-f8",
+      "title": "Youth+Women Cardano NFT4Good Party",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-zero-knowledge-api-for-cardano-f8",
+      "title": "Zero Knowledge API for Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f08-ziberbugs-nft-autobattler-game-f8",
+      "title": "ZiberBugs NFT Autobattler game",
+      "primary_funding_status": "not_approved"
+    }
+  ],
+  "notes": null
+}

@@ -11630,10 +11630,12 @@
     "external_ids": {
       "lidonation_uuid": "1526279b-acd4-42b9-b94f-8df4fe331356"
     },
-    "field_confidence": null,
+    "field_confidence": {
+      "funding_status": "high"
+    },
     "fund": 4,
     "funded_at": "2021-07-22T11:00:00.000000Z",
-    "funding_status": "approved",
+    "funding_status": "not_approved",
     "is_opensource": false,
     "links": {
       "catalyst_voices_url": null,
@@ -11646,7 +11648,7 @@
     },
     "milestone_count": null,
     "no_votes": 45029164.0,
-    "notes": null,
+    "notes": "RECONCILIATION 2026-05-15T18:44:33Z: funding_status changed from 'approved' (Lidonation) to 'not_approved' (projectcatalyst_io).",
     "problem": "NFT use cases have varied metadata needs and schemas. We lack standards for alike NFTs to avoid complex, fragile systems & chaos at scale.",
     "project_status": "complete",
     "proposal_id": "f04-nft-dao-nft-metadata-standards-f4",
@@ -11687,6 +11689,15 @@
         "provenance_path": "data/_raw/lidonation/page-0159.json.gz",
         "source": "lidonation_api",
         "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      },
+      {
+        "fetched_at": "2026-05-15T18:44:33Z",
+        "fields_provided": [
+          "funding_status"
+        ],
+        "provenance_path": "data/funds/fund-04/_intermediate/iohk_winners.json",
+        "source": "projectcatalyst_io",
+        "url": null
       }
     ],
     "summary": null,

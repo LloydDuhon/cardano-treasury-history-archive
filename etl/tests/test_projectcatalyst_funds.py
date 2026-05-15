@@ -15,11 +15,16 @@ from fetchers.projectcatalyst_funds import (
     FundFetcherConfig,
     FundPageClient,
     NextDataError,
+    download_voting_results_csv,
     download_voting_results_pdf,
     extract_fund_summary,
     extract_next_data,
+    extract_voting_results_sheet_url,
+    fetch_fund_csv,
     fetch_fund_landing,
+    fetch_voting_results_page,
     gdrive_direct_url,
+    google_sheet_csv_url,
 )
 
 FIXTURE_HTML = Path(__file__).resolve().parent / "fixtures" / "funds-2.html.gz"
@@ -68,6 +73,38 @@ def test_gdrive_direct_url_translation() -> None:
 def test_gdrive_direct_url_non_gdrive_returns_none() -> None:
     assert gdrive_direct_url("https://static.iohk.io/x.pdf") is None
     assert gdrive_direct_url("") is None
+
+
+def test_google_sheet_csv_url_translation() -> None:
+    url = "https://docs.google.com/spreadsheets/d/abc_123/edit?gid=987#gid=987"
+    assert google_sheet_csv_url(url) == (
+        "https://docs.google.com/spreadsheets/d/abc_123/gviz/tq?tqx=out:csv&gid=987"
+    )
+
+
+def test_google_sheet_csv_url_uses_fragment_gid() -> None:
+    url = "https://docs.google.com/spreadsheets/d/abc_123/edit#gid=654"
+    assert google_sheet_csv_url(url) == (
+        "https://docs.google.com/spreadsheets/d/abc_123/gviz/tq?tqx=out:csv&gid=654"
+    )
+
+
+def test_google_sheet_csv_url_defaults_to_gid_zero() -> None:
+    url = "https://docs.google.com/spreadsheets/d/abc_123/edit"
+    assert google_sheet_csv_url(url) == (
+        "https://docs.google.com/spreadsheets/d/abc_123/gviz/tq?tqx=out:csv&gid=0"
+    )
+
+
+def test_extract_voting_results_sheet_url() -> None:
+    html = b"""
+    <html>
+      <a href="https://docs.google.com/spreadsheets/d/abc_123/edit?gid=987">CSV file here</a>
+    </html>
+    """
+    assert extract_voting_results_sheet_url(html) == (
+        "https://docs.google.com/spreadsheets/d/abc_123/edit?gid=987"
+    )
 
 
 @respx.mock
@@ -179,3 +216,59 @@ def test_download_voting_results_pdf_rejects_non_pdf(tmp_path: Path) -> None:
     )
     with _make_client(tmp_path) as client, pytest.raises(RuntimeError):
         download_voting_results_pdf(99, url, output_root=tmp_path / "data", client=client)
+
+
+@respx.mock
+def test_fetch_voting_results_page_discovers_sheet(tmp_path: Path) -> None:
+    html = b"""
+    <html>
+      <a href="https://docs.google.com/spreadsheets/d/abc_123/edit#gid=654">CSV file here</a>
+    </html>
+    """
+    respx.get(f"{BASE_URL}/funds/2/voting-results").mock(
+        return_value=httpx.Response(200, content=html)
+    )
+
+    with _make_client(tmp_path) as client:
+        summary = fetch_voting_results_page(2, output_root=tmp_path / "data", client=client)
+
+    assert summary["sheet_url"] == "https://docs.google.com/spreadsheets/d/abc_123/edit#gid=654"
+    assert summary["csv_url"] == (
+        "https://docs.google.com/spreadsheets/d/abc_123/gviz/tq?tqx=out:csv&gid=654"
+    )
+    assert (tmp_path / "data" / "_raw" / "projectcatalyst_io" / "results-02.html.gz").exists()
+    assert (tmp_path / "data" / "_raw" / "projectcatalyst_io" / "results-02.summary.json").exists()
+
+
+@respx.mock
+def test_download_voting_results_csv(tmp_path: Path) -> None:
+    csv_bytes = b"Proposal,Yes,No\nExample,1,0\n"
+    url = "https://docs.google.com/spreadsheets/d/abc_123/gviz/tq?tqx=out:csv&gid=654"
+    respx.get(url).mock(return_value=httpx.Response(200, content=csv_bytes))
+
+    with _make_client(tmp_path) as client:
+        path = download_voting_results_csv(2, url, output_root=tmp_path / "data", client=client)
+
+    assert path.exists()
+    assert path.read_bytes() == csv_bytes
+
+
+@respx.mock
+def test_fetch_fund_csv_fetches_page_and_csv(tmp_path: Path) -> None:
+    html = b"""
+    <html>
+      <a href="https://docs.google.com/spreadsheets/d/abc_123/edit?gid=654">CSV file here</a>
+    </html>
+    """
+    csv_bytes = b"Proposal,Yes,No\nExample,1,0\n"
+    csv_url = "https://docs.google.com/spreadsheets/d/abc_123/gviz/tq?tqx=out:csv&gid=654"
+    respx.get(f"{BASE_URL}/funds/2/voting-results").mock(
+        return_value=httpx.Response(200, content=html)
+    )
+    respx.get(csv_url).mock(return_value=httpx.Response(200, content=csv_bytes))
+
+    with _make_client(tmp_path) as client:
+        summary = fetch_fund_csv(2, output_root=tmp_path / "data", client=client)
+
+    assert summary["csv_path"].endswith("data/_raw/iohk-results/fund-02.csv")
+    assert (tmp_path / "data" / "_raw" / "iohk-results" / "fund-02.csv").exists()

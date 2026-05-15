@@ -1,4 +1,4 @@
-"""Cross-check Lidonation funding_status against IOG voting-results PDFs.
+"""Cross-check Lidonation funding_status against official voting-results artifacts.
 
 Diff-only sidecar: this module never modifies proposals.json. It writes
 data/funds/fund-XX/_reconciliation.json listing per-record disagreements,
@@ -102,6 +102,8 @@ def reconcile_fund(
     proposals = _load_proposals(proposals_path)
     iohk = _load_iohk_intermediate(iohk_path)
     iohk_rows: list[dict[str, Any]] = iohk.get("rows") or []
+    secondary_source = iohk.get("source") or {}
+    secondary_label = secondary_source.get("label") or "iohk_voting_results_pdf"
 
     # Build lookup tables. Use _match_key to bridge title variation.
     primary_by_key: dict[str, dict[str, Any]] = {}
@@ -172,7 +174,7 @@ def reconcile_fund(
                 "path": _rel_to(proposals_path, data_root.parent),
             },
             "secondary": {
-                "label": "iohk_voting_results_pdf",
+                "label": secondary_label,
                 "path": _rel_to(iohk_path, data_root.parent),
             },
         },

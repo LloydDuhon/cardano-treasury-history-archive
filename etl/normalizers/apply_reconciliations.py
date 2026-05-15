@@ -3,11 +3,11 @@
 Per ADR-2026-05-13 section "Reconciliation policy":
   - On disagreement, the IOG/CF artifact wins.
   - The Lidonation value is preserved in the proposal's `notes` field.
-  - A new `sources[]` entry with `source: iohk_voting_results_pdf` and
+  - A new `sources[]` entry with the official result source and
     `fields_provided: ["funding_status"]` records the override.
 
 This applier is IDEMPOTENT: it detects when a reconciliation has already
-been applied (by inspecting `sources[]` for the IOG-PDF marker) and skips
+been applied (by inspecting `sources[]` for an official result marker) and skips
 duplicates. Safe to re-run.
 
 CLI:
@@ -28,7 +28,7 @@ from typing import Any
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_DATA_ROOT = REPO_ROOT / "data"
 
-_SECONDARY_LABEL = "iohk_voting_results_pdf"
+_SECONDARY_LABELS = {"iohk_voting_results_pdf", "projectcatalyst_io"}
 _APPLIED_FIELD = "funding_status"
 
 
@@ -38,9 +38,9 @@ def _utcnow_iso() -> str:
 
 
 def _is_already_applied(proposal: dict[str, Any]) -> bool:
-    """Return True iff a prior run already wrote the IOG-PDF override marker."""
+    """Return True iff a prior run already wrote an official result override marker."""
     for src in proposal.get("sources") or []:
-        if src.get("source") != _SECONDARY_LABEL:
+        if src.get("source") not in _SECONDARY_LABELS:
             continue
         fields = src.get("fields_provided") or []
         if _APPLIED_FIELD in fields:
@@ -49,7 +49,11 @@ def _is_already_applied(proposal: dict[str, Any]) -> bool:
 
 
 def _apply_disagreement(
-    proposal: dict[str, Any], disagreement: dict[str, Any], applied_at: str
+    proposal: dict[str, Any],
+    disagreement: dict[str, Any],
+    applied_at: str,
+    secondary_label: str,
+    secondary_path: str | None,
 ) -> bool:
     """Apply one disagreement to the proposal in place. Returns True if applied."""
     if _is_already_applied(proposal):
@@ -64,7 +68,7 @@ def _apply_disagreement(
 
     note_prefix = (
         f"RECONCILIATION {applied_at}: funding_status changed from "
-        f"'{prior_status}' (Lidonation) to '{new_status}' (IOG PDF). "
+        f"'{prior_status}' (Lidonation) to '{new_status}' ({secondary_label}). "
     )
     existing_notes = proposal.get("notes") or ""
     proposal["notes"] = (note_prefix + existing_notes).strip()
@@ -73,17 +77,17 @@ def _apply_disagreement(
     sources = list(proposal.get("sources") or [])
     sources.append(
         {
-            "source": _SECONDARY_LABEL,
+            "source": secondary_label,
             "url": None,
             "fetched_at": applied_at,
-            "provenance_path": None,
+            "provenance_path": secondary_path,
             "fields_provided": [_APPLIED_FIELD],
         }
     )
     proposal["sources"] = sources
 
     # Aggregate confidence: still "high" or "medium" overall, but flag this
-    # specific field as "high" since IOG PDF is the canonical source.
+    # specific field as "high" since the official result artifact is canonical.
     field_conf = dict(proposal.get("field_confidence") or {})
     field_conf["funding_status"] = "high"
     proposal["field_confidence"] = field_conf
@@ -124,6 +128,10 @@ def apply_fund(
         p["proposal_id"]: p for p in proposals if "proposal_id" in p
     }
     applied_at = _utcnow_iso()
+    secondary_label = ((reconciliation.get("sources") or {}).get("secondary") or {}).get(
+        "label"
+    ) or "iohk_voting_results_pdf"
+    secondary_path = ((reconciliation.get("sources") or {}).get("secondary") or {}).get("path")
 
     for d in reconciliation.get("disagreements") or []:
         if d.get("verdict") != "secondary_wins":
@@ -137,7 +145,7 @@ def apply_fund(
         if _is_already_applied(proposal):
             counters["skipped_already_applied"] += 1
             continue
-        applied = _apply_disagreement(proposal, d, applied_at)
+        applied = _apply_disagreement(proposal, d, applied_at, secondary_label, secondary_path)
         if applied:
             counters["applied"] += 1
 

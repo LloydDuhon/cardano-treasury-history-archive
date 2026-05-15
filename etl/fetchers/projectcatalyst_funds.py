@@ -1,25 +1,33 @@
-"""projectcatalyst.io fund pages and IOG voting-results PDF fetcher.
+"""projectcatalyst.io fund pages and IOG voting-results artifact fetcher.
 
 Source:        https://projectcatalyst.io/funds/{N}
-Coverage:      Funds 2-13 PDFs are the canonical IOG winner artifact;
-               F10-F15 also have inline voting-results pages.
+Coverage:      Funds 2-14 have official projectcatalyst.io voting-results
+               pages. Those pages link to Google Sheets result CSVs where
+               available. Older PDF artifacts are still fetchable for
+               continuity with the original Phase 2 parser.
 
 Probed live on 2026-05-13:
   - HTML pages embed a <script id="__NEXT_DATA__"> JSON blob with the
     authoritative `votingResultsUrl`, `numProposalsFunded`, `fundName`,
     `challenges[]`, and other counts at `props.pageProps.data.fund`.
+  - Voting-results pages at /funds/{N}/voting-results include a Google Sheets
+    link labelled as the CSV source. The regular Sheets export endpoint may
+    require login, but the gviz CSV endpoint is publicly readable.
   - F2 PDF lives at static.iohk.io; F3-F9 at Google Drive
     (/file/d/{id}/view); F10+ inline at projectcatalyst.io.
 
 Outputs:
   data/_raw/projectcatalyst_io/funds-NN.html.gz   (raw HTML)
   data/_raw/projectcatalyst_io/funds-NN.json      (extracted next.js summary)
+  data/_raw/projectcatalyst_io/results-NN.html.gz (raw voting-results HTML)
+  data/_raw/iohk-results/fund-NN.csv              (official result CSV)
   data/_raw/iohk-pdfs/fund-NN.pdf                 (downloaded artifact)
 
 CLI:
     python -m fetchers.projectcatalyst_funds --fund 2
     python -m fetchers.projectcatalyst_funds                  # all funds
     python -m fetchers.projectcatalyst_funds --metadata-only  # skip PDFs
+    python -m fetchers.projectcatalyst_funds --csv-only       # official CSVs
 """
 
 from __future__ import annotations
@@ -62,11 +70,29 @@ DEFAULT_TIMEOUT = httpx.Timeout(connect=10.0, read=60.0, write=10.0, pool=10.0)
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_DATA_ROOT = REPO_ROOT / "data"
 
-# Funds for which a voting-results artifact is expected.
-KNOWN_FUNDS_WITH_RESULTS: tuple[int, ...] = (2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13)
+# Funds for which a voting-results artifact is expected. Fund 15 is active as
+# of 2026-05-15, so it does not yet have final voting results.
+KNOWN_FUNDS_WITH_RESULTS: tuple[int, ...] = (2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14)
 
 # Google Drive file URL pattern: https://drive.google.com/file/d/<ID>/view
 _GDRIVE_FILE_RE = re.compile(r"drive\.google\.com/file/d/([A-Za-z0-9_\-]+)")
+_GSHEET_RE = re.compile(r"docs\.google\.com/spreadsheets/d/([A-Za-z0-9_\-]+)")
+
+
+class _SheetLinkParser(HTMLParser):
+    """Collect Google Sheets links from voting-results pages."""
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.hrefs: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag != "a":
+            return
+        attr_map = {k.lower(): v for k, v in attrs if v is not None}
+        href = attr_map.get("href")
+        if href and _GSHEET_RE.search(href):
+            self.hrefs.append(unescape(href))
 
 
 class _DriveConfirmParser(HTMLParser):
@@ -236,6 +262,33 @@ def gdrive_direct_url(view_url: str) -> str | None:
     return f"https://drive.google.com/uc?export=download&id={file_id}"
 
 
+def google_sheet_csv_url(sheet_url: str) -> str | None:
+    """Convert a public Google Sheets URL to the gviz CSV export endpoint.
+
+    The standard `/export?format=csv` endpoint can redirect to Google login
+    even when the sheet is visible in a browser. The gviz endpoint is the
+    stable unauthenticated CSV path for public sheets.
+    """
+    m = _GSHEET_RE.search(sheet_url)
+    if not m:
+        return None
+
+    parsed = urlparse(sheet_url)
+    query = dict(parse_qsl(parsed.query, keep_blank_values=True))
+    fragment_query = dict(parse_qsl(parsed.fragment, keep_blank_values=True))
+    gid = query.get("gid") or fragment_query.get("gid") or "0"
+    sheet_id = m.group(1)
+    return f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&gid={gid}"
+
+
+def extract_voting_results_sheet_url(html: bytes | str) -> str | None:
+    """Return the first Google Sheets link from a voting-results page."""
+    text = html.decode("utf-8", errors="replace") if isinstance(html, bytes) else html
+    parser = _SheetLinkParser()
+    parser.feed(text)
+    return parser.hrefs[0] if parser.hrefs else None
+
+
 def _with_query_params(url: str, params: list[tuple[str, str]]) -> str:
     parsed = urlparse(url)
     query = parse_qsl(parsed.query, keep_blank_values=True)
@@ -279,8 +332,20 @@ def _funds_summary_path(data_root: Path, fund: int) -> Path:
     return data_root / "_raw" / "projectcatalyst_io" / f"funds-{fund:02d}.summary.json"
 
 
+def _results_html_path(data_root: Path, fund: int) -> Path:
+    return data_root / "_raw" / "projectcatalyst_io" / f"results-{fund:02d}.html.gz"
+
+
+def _results_summary_path(data_root: Path, fund: int) -> Path:
+    return data_root / "_raw" / "projectcatalyst_io" / f"results-{fund:02d}.summary.json"
+
+
 def _pdf_path(data_root: Path, fund: int) -> Path:
     return data_root / "_raw" / "iohk-pdfs" / f"fund-{fund:02d}.pdf"
+
+
+def _csv_path(data_root: Path, fund: int) -> Path:
+    return data_root / "_raw" / "iohk-results" / f"fund-{fund:02d}.csv"
 
 
 def _ensure_dir(p: Path) -> None:
@@ -484,11 +549,124 @@ def download_voting_results_pdf(
     return pdf_path
 
 
+def fetch_voting_results_page(
+    fund: int,
+    *,
+    output_root: Path | None = None,
+    force: bool = False,
+    client: FundPageClient | None = None,
+) -> dict[str, Any]:
+    """Fetch /funds/{N}/voting-results and record the official sheet link."""
+    cfg = FundFetcherConfig.from_env()
+    root = output_root if output_root is not None else cfg.data_root
+    html_path = _results_html_path(root, fund)
+    summary_path = _results_summary_path(root, fund)
+
+    owns = client is None
+    cli = client or FundPageClient(cfg)
+    try:
+        if html_path.exists() and not force:
+            log.info("results_html.cached", extra={"fund": fund, "path": str(html_path)})
+            with gzip.open(html_path, "rb") as fh:
+                html_bytes = fh.read()
+        else:
+            url = f"{BASE_URL}/funds/{fund}/voting-results"
+            html_bytes = cli.get_bytes(url)
+            _atomic_write(html_path, html_bytes, gzip_compress=True)
+            log.info(
+                "results_html.fetched",
+                extra={"fund": fund, "url": url, "bytes": len(html_bytes)},
+            )
+    finally:
+        if owns:
+            cli.close()
+
+    sheet_url = extract_voting_results_sheet_url(html_bytes)
+    csv_url = google_sheet_csv_url(sheet_url) if sheet_url else None
+    summary = {
+        "fund": fund,
+        "voting_results_page_url": f"{BASE_URL}/funds/{fund}/voting-results",
+        "sheet_url": sheet_url,
+        "csv_url": csv_url,
+    }
+    _ensure_dir(summary_path.parent)
+    with summary_path.open("w", encoding="utf-8") as fh:
+        json.dump(summary, fh, indent=2, ensure_ascii=False)
+        fh.write("\n")
+    log.info("results_summary.written", extra={"fund": fund, "path": str(summary_path)})
+    return summary
+
+
+def download_voting_results_csv(
+    fund: int,
+    csv_url: str,
+    *,
+    output_root: Path | None = None,
+    force: bool = False,
+    client: FundPageClient | None = None,
+) -> Path:
+    """Download the official voting-results CSV for one fund."""
+    cfg = FundFetcherConfig.from_env()
+    root = output_root if output_root is not None else cfg.data_root
+    csv_path = _csv_path(root, fund)
+    if csv_path.exists() and not force:
+        log.info("csv.cached", extra={"fund": fund, "path": str(csv_path)})
+        return csv_path
+
+    owns = client is None
+    cli = client or FundPageClient(cfg)
+    try:
+        payload = cli.get_bytes(csv_url)
+        first_line = payload.splitlines()[0].decode("utf-8-sig", errors="replace")
+        if "," not in first_line:
+            preview = payload[:200].decode("utf-8", errors="replace")
+            raise RuntimeError(f"fund {fund}: response is not CSV (first 200 bytes: {preview!r})")
+        _atomic_write(csv_path, payload)
+        log.info(
+            "csv.fetched",
+            extra={"fund": fund, "url": csv_url, "bytes": len(payload), "header": first_line},
+        )
+    finally:
+        if owns:
+            cli.close()
+    return csv_path
+
+
+def fetch_fund_csv(
+    fund: int,
+    *,
+    output_root: Path | None = None,
+    force: bool = False,
+    client: FundPageClient | None = None,
+) -> dict[str, Any]:
+    """Fetch voting-results page metadata and the linked official CSV."""
+    summary = fetch_voting_results_page(
+        fund,
+        output_root=output_root,
+        force=force,
+        client=client,
+    )
+    csv_url = summary.get("csv_url")
+    if not csv_url:
+        log.info("csv.skipped.no_url", extra={"fund": fund})
+        return summary
+    csv_path = download_voting_results_csv(
+        fund,
+        csv_url,
+        output_root=output_root,
+        force=force,
+        client=client,
+    )
+    summary["csv_path"] = str(csv_path)
+    return summary
+
+
 def fetch_fund(
     fund: int,
     *,
     output_root: Path | None = None,
     metadata_only: bool = False,
+    include_csv: bool = False,
     force: bool = False,
     client: FundPageClient | None = None,
 ) -> dict[str, Any]:
@@ -498,6 +676,14 @@ def fetch_fund(
     downloaded).
     """
     summary = fetch_fund_landing(fund, output_root=output_root, force=force, client=client)
+    if include_csv:
+        csv_summary = fetch_fund_csv(
+            fund,
+            output_root=output_root,
+            force=force,
+            client=client,
+        )
+        summary["csv_results"] = csv_summary
     if metadata_only:
         return summary
     voting_url = summary.get("voting_results_url")
@@ -533,6 +719,16 @@ def main(argv: list[str] | None = None) -> int:
         help="Fetch only the HTML and summary; skip PDF downloads.",
     )
     parser.add_argument(
+        "--include-csv",
+        action="store_true",
+        help="Also fetch official CSV links from /funds/N/voting-results.",
+    )
+    parser.add_argument(
+        "--csv-only",
+        action="store_true",
+        help="Fetch only official CSVs from /funds/N/voting-results.",
+    )
+    parser.add_argument(
         "--force",
         action="store_true",
         help="Re-fetch even if a cached copy exists.",
@@ -544,13 +740,22 @@ def main(argv: list[str] | None = None) -> int:
     try:
         with FundPageClient(cfg) as client:
             for n in funds:
-                fetch_fund(
-                    n,
-                    output_root=args.data_root,
-                    metadata_only=args.metadata_only,
-                    force=args.force,
-                    client=client,
-                )
+                if args.csv_only:
+                    fetch_fund_csv(
+                        n,
+                        output_root=args.data_root,
+                        force=args.force,
+                        client=client,
+                    )
+                else:
+                    fetch_fund(
+                        n,
+                        output_root=args.data_root,
+                        metadata_only=args.metadata_only,
+                        include_csv=args.include_csv,
+                        force=args.force,
+                        client=client,
+                    )
     except (httpx.HTTPError, RuntimeError, OSError) as exc:
         log.error("fatal", extra={"error": str(exc), "type": type(exc).__name__})
         return 1
@@ -568,10 +773,15 @@ __all__ = [
     "KNOWN_FUNDS_WITH_RESULTS",
     "NextDataError",
     "download_voting_results_pdf",
+    "download_voting_results_csv",
     "extract_fund_summary",
     "extract_next_data",
+    "extract_voting_results_sheet_url",
     "fetch_fund",
+    "fetch_fund_csv",
     "fetch_fund_landing",
+    "fetch_voting_results_page",
     "gdrive_direct_url",
+    "google_sheet_csv_url",
     "main",
 ]

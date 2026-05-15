@@ -10,6 +10,7 @@ from typing import Any
 import pytest
 from jsonschema import Draft202012Validator
 
+import normalizers.derive_fund_one as derive_fund_one_module
 from fetchers.ideascale_wayback import _snapshot_path
 from normalizers.derive_fund_one import _extract_dtd_ids, derive, parse_snapshot
 
@@ -106,6 +107,56 @@ def test_derive_emits_meta_with_phase4_notes(tmp_path: Path) -> None:
     assert meta["phase"] == "phase-4"
     assert "ideascale_wayback" in meta["sources_used"]
     assert "low" in meta["phase_notes"].lower() or "low" in str(meta).lower()
+
+
+def test_derive_uses_fund_one_pdf_when_wayback_has_no_snapshots(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, proposal_validator: Draft202012Validator
+) -> None:
+    data_root = tmp_path / "data"
+    (data_root / "funds" / "fund-01" / "_provenance" / "ideascale_wayback").mkdir(parents=True)
+    pdf_path = data_root / "_raw" / "iohk-pdfs" / "fund-01.pdf"
+    pdf_path.parent.mkdir(parents=True)
+    pdf_path.write_bytes(b"%PDF-1.7\n")
+
+    def fake_parse_fund_one_pdf(_pdf_path: Path) -> tuple[list[dict[str, Any]], Any]:
+        summary = type("Summary", (), {"rows_matched": 2, "funded_count": 1})()
+        return (
+            [
+                {
+                    "title": "Alpha",
+                    "funded": True,
+                    "amount_requested": 10.0,
+                    "currency": "USD",
+                    "yes_votes_ada": 100,
+                    "no_votes_ada": 1,
+                    "source_row": 1,
+                },
+                {
+                    "title": "Beta",
+                    "funded": False,
+                    "amount_requested": 20.0,
+                    "currency": "USD",
+                    "yes_votes_ada": 10,
+                    "no_votes_ada": 50,
+                    "source_row": 2,
+                },
+            ],
+            summary,
+        )
+
+    monkeypatch.setattr(derive_fund_one_module, "parse_fund_one_pdf", fake_parse_fund_one_pdf)
+
+    count = derive(data_root=data_root)
+
+    assert count == 2
+    records: list[dict[str, Any]] = json.loads(
+        (data_root / "funds" / "fund-01" / "proposals.json").read_text()
+    )
+    assert {record["funding_status"] for record in records} == {"approved", "not_approved"}
+    assert all(record["sources"][0]["source"] == "iohk_voting_results_pdf" for record in records)
+    for record in records:
+        errors = list(proposal_validator.iter_errors(record))
+        assert not errors, [(list(e.absolute_path), e.message) for e in errors]
 
 
 def test_derive_missing_cache_raises(tmp_path: Path) -> None:

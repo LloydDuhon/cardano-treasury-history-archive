@@ -64,8 +64,8 @@ and `notes` are in `all_proposals.json` but not the CSV.
 
 ## Caveats
 
-- F1 proposals carry `confidence: low` with `funding_status: unknown`
-  (Catalyst pilot had no formal vote).
+- F1 proposal result rows come from the staff-provided voting-results PDF.
+  Funding status is high confidence; proposal-detail fields are limited.
 - F2-F5 completion data is best-effort; expect `project_status: unknown` for
   many records.
 - Vote-count units vary per fund (raw lovelace vs normalized count). See

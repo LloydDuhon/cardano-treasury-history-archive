@@ -1,4 +1,4 @@
-"""Parse archived IdeaScale snapshots into Fund 1 proposals.json.
+"""Parse Fund 1 source artifacts into proposals.json.
 
 Inputs (from etl/fetchers/ideascale_wayback.py):
     data/funds/fund-01/_provenance/ideascale_wayback/cdx.json.gz
@@ -8,11 +8,10 @@ Output:
     data/funds/fund-01/proposals.json     (schema-conformant, confidence: low)
     data/funds/fund-01/_meta.json
 
-F1 was the Catalyst pilot. No proposals received funding
-(`numProposalsFunded: 0` per projectcatalyst.io). We record every recovered
-proposal with `funding_status: "unknown"` (no vote was actually held) and
-`confidence: low`. Fields that the archived HTML doesn't expose (votes,
-amounts, scores) are left null.
+Fund 1 is a special case. When the staff-provided voting-results PDF is
+available, it is the source of truth for outcome fields. Archived IdeaScale
+snapshots remain useful for proposal detail recovery, but the PDF is the more
+authoritative source for funded/not-funded status.
 
 CLI:
     python -m normalizers.derive_fund_one
@@ -32,6 +31,8 @@ from typing import Any
 
 from bs4 import BeautifulSoup
 from slugify import slugify
+
+from parsers.projectcatalyst_results import CatalystResultRow, parse_fund_one_pdf
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_DATA_ROOT = REPO_ROOT / "data"
@@ -155,6 +156,120 @@ def _snapshot_paths(prov_dir: Path) -> Iterator[Path]:
     yield from sorted(snap_dir.glob("*.html.gz"))
 
 
+def _pdf_source_record(row: CatalystResultRow, snapshot_at: str) -> dict[str, Any]:
+    title = row["title"]
+    slug = slugify(title)[:80] or f"row-{row['source_row']}"
+    funded = bool(row["funded"])
+    return {
+        "proposal_id": f"f01-{slug}",
+        "external_ids": {},
+        "fund": 1,
+        "title": title,
+        "slug": slug,
+        "challenge": None,
+        "campaign_id": None,
+        "proposer_ids": [f"p-f01-unknown-{slug}"],
+        "amount_requested": row.get("amount_requested"),
+        "amount_received": row.get("amount_requested") if funded else 0,
+        "currency": row.get("currency") or "UNKNOWN",
+        "yes_votes": row.get("yes_votes_ada"),
+        "no_votes": row.get("no_votes_ada"),
+        "abstain_votes": None,
+        "scores": None,
+        "ranking_total": None,
+        "funding_status": "approved" if funded else "not_approved",
+        "project_status": "funded" if funded else "unfunded",
+        "funded_at": None,
+        "completed_at": None,
+        "links": {
+            "lidonation_url": None,
+            "ideascale_url": None,
+            "projectcatalyst_io_url": None,
+            "milestones_url": None,
+            "catalyst_voices_url": None,
+            "proposer_website": None,
+            "github_repo": None,
+        },
+        "summary": None,
+        "problem": None,
+        "solution": None,
+        "definition_of_success": None,
+        "ai_summary": None,
+        "milestone_count": None,
+        "tags": [],
+        "is_opensource": None,
+        "sources": [
+            {
+                "source": "iohk_voting_results_pdf",
+                "url": None,
+                "fetched_at": snapshot_at,
+                "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+                "fields_provided": [
+                    "title",
+                    "amount_requested",
+                    "currency",
+                    "yes_votes",
+                    "no_votes",
+                    "funding_status",
+                    "project_status",
+                ],
+            }
+        ],
+        "confidence": "medium",
+        "field_confidence": {
+            "funding_status": "high",
+            "amount_requested": "medium",
+            "yes_votes": "medium",
+            "no_votes": "medium",
+        },
+        "notes": (
+            "Fund 1 record derived from the staff-provided one-page voting-results "
+            "PDF. The PDF is authoritative for result status but has limited "
+            "proposal-detail fields."
+        ),
+    }
+
+
+def _write_fund_one_pdf_records(root: Path, pdf_path: Path, normalized_at: str) -> int:
+    rows, summary = parse_fund_one_pdf(pdf_path)
+    out = [_pdf_source_record(row, normalized_at) for row in rows]
+    out.sort(key=lambda r: r["proposal_id"])
+
+    fund_dir = root / "funds" / "fund-01"
+    fund_dir.mkdir(parents=True, exist_ok=True)
+    with (fund_dir / "proposals.json").open("w", encoding="utf-8") as fh:
+        json.dump(out, fh, indent=2, ensure_ascii=False, sort_keys=True)
+        fh.write("\n")
+
+    meta = {
+        "fund": 1,
+        "normalized_at": normalized_at,
+        "record_count": len(out),
+        "sources_used": ["iohk_voting_results_pdf"],
+        "phase": "phase-4",
+        "phase_notes": (
+            "Fund 1 records are derived from the staff-provided voting-results PDF. "
+            "The PDF is source of truth for funded/not-funded status, but it is "
+            "limited to table fields and does not include full proposal narratives."
+        ),
+        "coverage_warnings": [
+            "Proposal detail fields are null unless recovered from another source.",
+            (
+                "The PDF table text extraction is reviewed but compact; "
+                "amount/vote columns are medium confidence."
+            ),
+        ],
+        "result_summary": {
+            "rows_matched": summary.rows_matched,
+            "funded_count": summary.funded_count,
+        },
+    }
+    with (fund_dir / "_meta.json").open("w", encoding="utf-8") as fh:
+        json.dump(meta, fh, indent=2, ensure_ascii=False)
+        fh.write("\n")
+    return len(out)
+
+
 def derive(*, data_root: Path | None = None) -> int:
     """Build data/funds/fund-01/proposals.json from cached Wayback snapshots.
 
@@ -162,7 +277,22 @@ def derive(*, data_root: Path | None = None) -> int:
     """
     root = data_root if data_root is not None else DEFAULT_DATA_ROOT
     prov = root / "funds" / "fund-01" / "_provenance" / "ideascale_wayback"
+    pdf_path = root / "_raw" / "iohk-pdfs" / "fund-01.pdf"
     if not prov.exists():
+        if pdf_path.exists():
+            normalized_at = _utcnow_iso()
+            count = _write_fund_one_pdf_records(root, pdf_path, normalized_at)
+            print(
+                json.dumps(
+                    {
+                        "fund": 1,
+                        "records": count,
+                        "source": "iohk_voting_results_pdf",
+                    },
+                    indent=2,
+                )
+            )
+            return count
         raise FileNotFoundError(
             f"No Wayback cache at {prov}. Run " "`python -m fetchers.ideascale_wayback` first."
         )
@@ -174,7 +304,24 @@ def derive(*, data_root: Path | None = None) -> int:
     out: list[dict[str, Any]] = []
     seen_proposal_ids: set[str] = set()
 
-    for snap_path in _snapshot_paths(prov):
+    snap_paths = list(_snapshot_paths(prov))
+    if not snap_paths and pdf_path.exists():
+        count = _write_fund_one_pdf_records(root, pdf_path, snapshot_at)
+        print(
+            json.dumps(
+                {
+                    "fund": 1,
+                    "records": count,
+                    "source": "iohk_voting_results_pdf",
+                    "snapshots_seen": 0,
+                    "cdx_rows_known": len(by_urlkey),
+                },
+                indent=2,
+            )
+        )
+        return count
+
+    for snap_path in snap_paths:
         html = _read_snapshot(snap_path)
         parsed = parse_snapshot(html)
 
@@ -270,7 +417,8 @@ def derive(*, data_root: Path | None = None) -> int:
             "field_confidence": None,
             "notes": (
                 "Fund 1 pilot. No formal voting took place; funding_status "
-                "recorded as 'unknown'. Title and proposer recovered from "
+                "recorded as 'unknown' because only Wayback proposal snapshots "
+                "were used. Title and proposer recovered from "
                 "Internet Archive snapshot; expect imperfect coverage."
             ),
         }
@@ -314,7 +462,7 @@ def derive(*, data_root: Path | None = None) -> int:
             {
                 "fund": 1,
                 "records": len(out),
-                "snapshots_seen": len(list(_snapshot_paths(prov))),
+                "snapshots_seen": len(snap_paths),
                 "cdx_rows_known": len(by_urlkey),
             },
             indent=2,

@@ -1,0 +1,3071 @@
+{
+  "fund": 11,
+  "reconciled_at": "2026-05-15T18:43:29Z",
+  "sources": {
+    "primary": {
+      "label": "lidonation_api",
+      "path": "data/funds/fund-11/proposals.json"
+    },
+    "secondary": {
+      "label": "projectcatalyst_io",
+      "path": "data/funds/fund-11/_intermediate/iohk_winners.json"
+    }
+  },
+  "agreement_count": 311,
+  "disagreements": [],
+  "unmatched_in_primary": [
+    {
+      "title": "Gateway To Blockchain -- Student Learning Hub",
+      "funded_flag": false,
+      "note": "Present in IOG PDF, no title match in Lidonation."
+    }
+  ],
+  "unmatched_in_secondary": [
+    {
+      "primary_proposal_id": "f11-10-marlowe-contract-templates-the-real-life-use-cases-f11",
+      "title": "10 Marlowe contract templates - the real life use cases",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-2000-nfts-to-inspire-global-peace-in-ada-ecosystem-f11",
+      "title": "2000 NFTs to Inspire Global Peace in ADA Ecosystem",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-2b3d-stormriders-home-of-action-sports-game-design-f11",
+      "title": "2B3D StormRiders - Home of Action Sports - Game Design",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-360-daily-newsletters-web3-cardano-digest-about-ada-ecosystem-projects-catalyst-funds-f11",
+      "title": "360+ Daily Newsletters Web3 Cardano Digest about ADA Ecosystem, Projects & Catalyst Funds",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-45b-free-cardano-accounting-extracts-core-f11",
+      "title": "45B - Free Cardano Accounting Extracts Core",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-a-comprehensive-tool-for-streamlining-insights-for-simplifying-taxation-reporting-for-cardano-transactions-and-assets-f11",
+      "title": "A comprehensive tool for streamlining insights for simplifying taxation reporting for Cardano transactions and assets.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-a-dapp-for-business-lead-generation-f11",
+      "title": "A dApp for Business Lead Generation",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-a-game-hub-of-traditional-mini-game-to-educate-gamers-and-help-investor-make-profit-f11",
+      "title": "A game hub of traditional mini-game to educate gamers and help investor make profit",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-a-new-cardano-learning-management-system-with-an-ai-helper-f11",
+      "title": "A new Cardano Learning Management System with an AI helper",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-a-perl-module-for-the-cardano-blockchain-koios-api-using-perl-objects-f11",
+      "title": "A Perl module for the Cardano Blockchain Koios API using Perl objects",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-a-task-market-on-cardano-to-facilitate-the-block-chain-economy-f11",
+      "title": "A Task-Market on Cardano to facilitate the block-chain economy",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-account-nft-smart-contract-mint-verifiably-unique-user-accounts-that-store-data-on-chain-f11",
+      "title": "Account NFT Smart-contract - Mint Verifiably Unique User Accounts that store data on-chain",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-accountingreporting-for-projects-built-by-incorporated-entities-f11",
+      "title": "Accounting/reporting for projects built by incorporated entities",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-ada-to-mobile-money-unlocking-financial-access-in-africa-f11",
+      "title": "Ada to Mobile Money: Unlocking Financial Access in Africa",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-adabetio-cardano-betting-dapp-platform-phase-2-expand-build-to-product-f11",
+      "title": "ADABET.iO | Cardano Betting DApp Platform | Phase 2 Expand build to product.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-adahold-decentralized-price-can-only-go-up-token-solution-for-true-ada-hodlers-smart-contract-f11",
+      "title": "AdaHold: Decentralized Price-Can-Only-Go-Up Token, Solution For TRUE Ada Hodlers - Smart Contract",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-adalink-affiliate-network-for-spo-growth-f11",
+      "title": "AdaLink: Affiliate Network for SPO Growth",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-adalink-frenchie-dex-f11",
+      "title": "AdaLink: Frenchie Dex",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-adaquest-dungeon-crawler-vertical-slice-10-f11",
+      "title": "AdaQuest - Dungeon Crawler - Vertical Slice 1.0",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-adaquest-mobile-tournaments-f11",
+      "title": "AdaQuest Mobile - Tournaments",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-adastat-cardano-explorer-open-source-improved-reboot-towards-a-first-class-community-blockchain-explorer-f11",
+      "title": "AdaStat Cardano Explorer - Open Source Improved Reboot towards a first-class community blockchain explorer",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-adastream-decentralized-file-hosting-incentivised-via-ada-payments-f11",
+      "title": "AdaStream - Decentralized File Hosting Incentivised via Ada Payments",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-adaxon-bluetick-privacy-first-cardano-based-instant-messaging-solution-f11",
+      "title": "[ADAXON] BlueTick: Privacy-First Cardano-based Instant Messaging Solution",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-adaxon-cardanovision-empowering-users-with-decentralized-facial-authentication-f11",
+      "title": "[ADAXON] CardanoVision: Empowering Users with Decentralized Facial Authentication",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-adaxon-harmonyai-mental-health-for-cardano-defi-f11",
+      "title": "[ADAXON] HarmonyAI: Mental Health for Cardano DeFi",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-add-catalyst-voting-function-inside-mantium-wallet-f11",
+      "title": "Add Catalyst voting function inside Mantium Wallet",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-add-social-connectivity-for-stakepool-operators-and-delegators-to-hazelnet-f11",
+      "title": "Add social connectivity for Stakepool Operators and Delegators to HAZELnet",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-add-support-for-marlowe-on-cardanoscan-f11",
+      "title": "Add support for Marlowe on Cardanoscan",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-adding-dapps-functionality-to-the-mobile-version-of-yoroi-light-wallet-f11",
+      "title": "Adding DApps functionality to the mobile version of Yoroi Light Wallet",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-advancing-remostart-fund-9-job-shadowing-platform-poc-into-a-cardano-powered-mvp-dapp-f11",
+      "title": "Advancing Remostart Fund 9 Job Shadowing Platform POC into a Cardano powered MVP Dapp",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-aerion-network-state-of-being-operating-system-malta-palau-bali-f11",
+      "title": "AERION : Network State of BEING Operating System - Malta , Palau , Bali",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-african-fashion-nft-on-cardano-f11",
+      "title": "African Fashion NFT on Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-african-games-reward-f11",
+      "title": "African games Reward",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-afrocharts-web3-artist-portal-awen-f11",
+      "title": "Afrocharts | Web3 Artist Portal (Awen)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-agro-technology-cardano-iot-sensors-real-time-monitoring-app-f11",
+      "title": "Agro Technology Cardano: IoT Sensors + Real time monitoring app",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-agrotechnology-cardano-f11",
+      "title": "AgroTechnology Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-ai-driven-interactive-platform-for-cardano-smart-contracts-f11",
+      "title": "AI-Driven Interactive Platform for Cardano Smart Contracts",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-ai-powered-job-seeking-and-talent-scouting-through-tokenized-and-authenticated-credentials-f11",
+      "title": "AI-powered Job Seeking and Talent Scouting Through Tokenized and Authenticated Credentials",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-ai4m-predicting-malaria-outbreaks-through-cardano-and-ai-f11",
+      "title": "AI4M: Predicting Malaria outbreaks through Cardano and AI",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-aibis-all-market-in-touch-f11",
+      "title": "AIBIS -ALL MARKET IN TOUCH",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-aiken-open-source-smart-contract-library-by-meshjs-trustlevel-f11",
+      "title": "Aiken Open-Source Smart Contract Library [by MeshJS & TrustLevel]",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-alternative-catalyst-voting-schemes-with-new-crypto-protocols-by-iog-research-photrek-and-the-catalyst-team-f11",
+      "title": "Alternative Catalyst voting schemes with new crypto protocols by IOG Research, Photrek, and the Catalyst Team",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-amharicchain-academy-app-f11",
+      "title": "AmharicChain Academy App",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-ampd-unlock-sustainable-creativity-f11",
+      "title": "AMPD: Unlock Sustainable Creativity",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-ampdid-effortless-web3-authentication-f11",
+      "title": "AMPDid: Effortless Web3 Authentication",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-ampdsub-smart-subscription-made-easy-f11",
+      "title": "AMPDSub: Smart-Subscription made easy",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-anastasia-labs-lucid-evolution-redefining-off-chain-transactions-in-cardano-f11",
+      "title": "Anastasia Labs - Lucid Evolution: Redefining Off-Chain Transactions in Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-anastasia-labs-x-maestro-plug-n-play-20-f11",
+      "title": "Anastasia Labs X Maestro - Plug ‘n Play 2.0",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-anastasia-labs-x-moneykit-transaction-manifests-fintech-platform-integration-for-cardano-f11",
+      "title": "Anastasia Labs X MoneyKit - Transaction Manifests & FinTech Platform Integration for Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-andamio-core-team-learning-contribution-platform-f11",
+      "title": "Andamio (Core Team): Learning & Contribution Platform",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-android-native-version-of-mantium-wallet-f11",
+      "title": "Android native version of Mantium Wallet",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-anetabtc-v2-decentralized-wrapping-protocol-f11",
+      "title": "AnetaBTC V2 - Decentralized Wrapping Protocol",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-anti-research-fraud-dapp-qualtrics-cardano-integration-f11",
+      "title": "Anti Research Fraud dApp: Qualtrics-Cardano Integration",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-anvil-open-source-metadata-validator-f11",
+      "title": "Anvil - Open Source - Metadata Validator",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-anvil-open-source-universal-wallet-connector-f11",
+      "title": "Anvil - Open Source - Universal Wallet Connector",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-anywall-and-cur8-optimized-display-hardware-and-software-f11",
+      "title": "Anywall and Cur8 Optimized Display Hardware and Software",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-art-beyond-borders-nft-global-youth-art-competition-marketplace-leveraging-nmkr-f11",
+      "title": "Art Beyond Borders: NFT Global Youth Art Competition & Marketplace leveraging NMKR",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-artificial-intelligence-tool-for-developers-on-cardano-blockchain-f11",
+      "title": "Artificial intelligence tool for developers on Cardano Blockchain",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-astarter-enhanced-concurrency-on-cardano-f11",
+      "title": "Astarter Enhanced Concurrency on Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-asteria-by-txpipe-a-bot-challenge-to-showcase-the-capabilities-of-the-utxo-model-f11",
+      "title": "Asteria by TxPipe: A bot challenge to showcase the capabilities of the UTxO model",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-astraeus-collectable-card-game-f11",
+      "title": "Astraeus - Collectable Card Game",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-atala-prism-modular-kyc-solution-by-iamx-f11",
+      "title": "Atala PRISM Modular KYC Solution by IAMX",
+      "primary_funding_status": "leftover"
+    },
+    {
+      "primary_proposal_id": "f11-bacc-banking-app-like-reporting-and-accounting-f11",
+      "title": "BACC: banking app-like reporting and accounting",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-bafin-audited-cardano-smart-contract-for-compliant-real-world-asset-tokenization-by-nmkr-fluidtokens-iamx-f11",
+      "title": "BaFin Audited Cardano Smart Contract for compliant Real World Asset Tokenization by NMKR, FluidTokens & IAMX",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-bamboo-smart-support-app-for-cardano-ecosystem-users-f11",
+      "title": "Bamboo - Smart Support App for Cardano Ecosystem Users",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-betadeals-marketplace-building-cardano-e-commerce-for-africa-f11",
+      "title": "Betadeals Marketplace: Building Cardano E-Commerce for Africa",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-better-cardano-blockchain-insights-f11",
+      "title": "Better Cardano Blockchain Insights",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-bind-friendly-c-library-for-cardano-f11",
+      "title": "Bind-friendly C Library for Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-binocular-trustless-bitcoin-transaction-oracle-f11",
+      "title": "Binocular – Trustless Bitcoin Transaction Oracle",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-birtchart-nfts-as-a-service-integrating-cardano-into-new-age-spirituality-f11",
+      "title": "Birtchart NFTs as a Service: Integrating Cardano into New Age Spirituality",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-blockchain-integration-of-trustlevels-reputation-protocol-f11",
+      "title": "Blockchain Integration of TRUSTLEVEL's Reputation Protocol",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-blockchain-powered-inclusive-philanthropy-movementkultures-decentralized-fundraising-revolution-f11",
+      "title": "Blockchain-Powered Inclusive Philanthropy: MovementKulture's Decentralized Fundraising Revolution",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-blockchain-voting-system-f11",
+      "title": "Blockchain voting system",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-blockmargin-interest-rate-futures-on-cardano-f11",
+      "title": "BlockMargin - Interest Rate Futures on Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-blocktrust-credential-workflow-platform-f11",
+      "title": "BLOCKTRUST Credential workflow platform",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-blocktrust-production-ready-didcomm-mediator-f11",
+      "title": "BLOCKTRUST production-ready DIDComm Mediator",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-blott-transparency-onchain-self-govern-lottery-system-players-mode-mvp-f11",
+      "title": "[bLott] - Transparency OnChain Self-Govern Lottery System || Players mode MVP",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-bootstrapping-prism-adoption-with-a-tool-to-build-educational-credentials-f11",
+      "title": "Bootstrapping PRISM adoption with a tool to build Educational Credentials",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-bridgingspace-therapyai-for-cardano-catalyst-community-f11",
+      "title": "BridgingSpace therapy.ai for Cardano Catalyst community",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-broclan-safe-deployment-support-f11",
+      "title": "BroClan Safe Deployment Support",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-bug-bounty-platform-cardano-community-led-security-f11",
+      "title": "Bug Bounty Platform - Cardano Community-Led Security",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-build-an-nft-minting-functionality-f11",
+      "title": "Build-an-NFT Minting Functionality!",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-buy-or-sell-ada-on-whatsapp-telegram-by-ai-chatbot-on-ramp-off-ramp-crypto-brl-fiatada-f11",
+      "title": "Buy or Sell ADA On WhatsApp & Telegram by AI ChatBot / On-Ramp & Off-Ramp Crypto BRL Fiat/ADA",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardamedia-blockchain-application-catalog-for-business-and-industry-f11",
+      "title": "cardamedia: Blockchain Application Catalog for Business and Industry",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-ai-sentiment-tracker-f11",
+      "title": "Cardano AI Sentiment Tracker",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-and-the-real-world-a-blockchain-meets-the-internet-of-things-starterkit-f11",
+      "title": "Cardano and the real world: A Blockchain-meets-the-Internet-of-Things-Starterkit",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-asset-link-unifying-physical-and-digital-commerce-product-bound-standard-creation-rather-than-native-asset-or-soul-bound-f11",
+      "title": "Cardano Asset Link: Unifying Physical and Digital Commerce, Product-Bound Standard Creation rather than Native Asset or Soul-Bound",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-autonomous-agent-testing-cip-1694-voltaire-testing-f11",
+      "title": "Cardano Autonomous Agent Testing: CIP-1694 Voltaire Testing",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-based-smart-contracts-platform-for-auctioning-tangible-assets-f11",
+      "title": "Cardano based smart contracts platform for auctioning tangible assets",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-beam-gps-based-assets-f11",
+      "title": "Cardano Beam - GPS based Assets",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-blockchain-tooling-for-transparency-accountability-and-financial-inclusion-in-esusu-groups-f11",
+      "title": "Cardano Blockchain Tooling For Transparency, Accountability and Financial Inclusion in Esusu Groups",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-career-gateway-bridging-recruiters-and-web3-talent-in-community-platform-splash-f11",
+      "title": "Cardano Career Gateway: Bridging Recruiters and Web3 Talent In Community Platform Splash",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-developer-studio-f11",
+      "title": "Cardano Developer Studio",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-ebook-marketplace-f11",
+      "title": "Cardano ebook marketplace",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-flyer-science-and-technology-commnity-f11",
+      "title": "CARDANO FLYER; SCIENCE AND TECHNOLOGY COMMNITY",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-for-good-a-dapp-fundraising-platform-for-social-good-projects-f11",
+      "title": "Cardano for Good - a dApp Fundraising Platform for Social Good Projects",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-forest-blocktreeasia-foster-trust-trackability-in-reforestation-f11",
+      "title": "Cardano Forest [blocktree.asia] - Foster Trust & Trackability in Reforestation",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-gaming-did-f11",
+      "title": "Cardano Gaming DiD",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-impact-tracking-hub-f11",
+      "title": "Cardano Impact Tracking Hub",
+      "primary_funding_status": "leftover"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-in-metamask-f11",
+      "title": "Cardano in MetaMask",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-integration-with-klaatoo-a-multicurrency-wallet-f11",
+      "title": "Cardano Integration with Klaatoo, a Multicurrency Wallet",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-localized-resource-directory-for-the-ecosystem-architecture-f11",
+      "title": "Cardano Localized Resource Directory for the Ecosystem Architecture",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-mendix-plug-in-by-the-landano-team-f11",
+      "title": "Cardano Mendix plug-in by the Landano team",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-native-token-extension-programmable-tokens-f11",
+      "title": "Cardano Native Token Extension: Programmable Tokens",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-nft-licenses-first-part-deployed-licenses-to-arweave-f11",
+      "title": "Cardano NFT Licenses: First part, deployed licenses to Arweave",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-node-api-a-cardano-node-companion-written-in-go-f11",
+      "title": "Cardano Node API: a Cardano Node companion written in Go",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-offline-raspberry-pi-multi-user-network-node-f11",
+      "title": "Cardano Offline Raspberry pi Multi-User Network Node",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-on-apple-vision-pro-with-wallet-nfts-gallery-3d-moments-f11",
+      "title": "Cardano on Apple Vision Pro with Wallet, NFTs Gallery, 3D moments",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-on-bigquery-scalably-querying-cardanos-authenticated-blockchain-data-on-bigquery-f11",
+      "title": "Cardano on BigQuery: scalably querying Cardano’s authenticated blockchain data on BigQuery",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-powered-hotel-guest-loyalty-system-f11",
+      "title": "Cardano Powered Hotel Guest Loyalty System",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-privacy-layer-zero-knowledge-proof-based-membership-verification-and-anonymous-voting-signaling-poc-f11",
+      "title": "Cardano Privacy Layer: Zero-Knowledge Proof-Based Membership Verification and Anonymous Voting & Signaling PoC.",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-racers-algorithmic-racing-nft-dapp-f11",
+      "title": "🚥🏎️🏁 Cardano Racers: Algorithmic Racing NFT DApp 🏁🏎️🚥",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-real-world-asset-launch-pad-f11",
+      "title": "Cardano Real World Asset Launch Pad",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-search-the-intuitive-explorer-f11",
+      "title": "Cardano Search - The Intuitive Explorer",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-smart-ai-assistant-for-documentation-and-on-chainoff-chain-development-f11",
+      "title": "Cardano Smart: A.I. assistant for documentation and on-chain/off-chain development",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-solutions-to-property-industry-problems-f11",
+      "title": "Cardano Solutions to Property Industry Problems",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-standardized-supply-chains-library-f11",
+      "title": "Cardano Standardized Supply Chains Library",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-synergy-hub-cultivating-innovative-concepts-for-the-future-f11",
+      "title": "Cardano Synergy Hub: Cultivating Innovative Concepts for the Future",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-techmarket-care-an-eco-friendly-e-waste-management-f11",
+      "title": "Cardano Techmarket Care – an Eco Friendly E-waste management",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-token-engineering-lab-understanding-and-leveraging-token-design-to-grow-cardano-f11",
+      "title": "Cardano Token Engineering Lab - Understanding and leveraging token design to grow Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-totem-v2-onboarding-the-world-f11",
+      "title": "Cardano Totem V2: Onboarding the world",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-utxo-db-abstraction-f11",
+      "title": "Cardano UTXO DB Abstraction",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-warriors-adventure-early-access-launch-in-epic-games-store-and-gamified-p2p-multisig-f11",
+      "title": "Cardano Warriors Adventure: Early Access Launch in Epic Games Store And Gamified P2P (Multisig)",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-cardano-xcard-digital-business-card-integrated-nft-exclusively-for-cardano-fans-f11",
+      "title": "Cardano Xcard - Digital Business Card integrated NFT exclusively for Cardano Fans",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardanogpt-and-plugin-the-cardano-developer-co-pilot-tool-for-effective-development-and-efficient-debugging-f11",
+      "title": "CardanoGPT and Plugin: The Cardano developer Co-Pilot tool for effective development and efficient debugging",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardanoj-build-dapps-in-java-f11",
+      "title": "CardanoJ - Build dApps in Java",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardanonews-f11",
+      "title": "CARDANONews",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardanopress-security-audits-improvements-optimisations-f11",
+      "title": "CardanoPress: Security Audits, Improvements & Optimisations",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardanos-dao-incubator-matching-dapps-of-our-ecosystem-with-companies-and-organizations-that-struggle-with-inefficient-structures-and-entry-barriers-t-f11",
+      "title": "Cardano's DAO Incubator matching Dapps of our ecosystem with companies and organizations that struggle with inefficient structures and entry barriers to suitable Cardano solutions.",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardanos-first-inheritance-protocol-genwealth-f11",
+      "title": "Cardano's First Inheritance Protocol - GenWealth",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-cardanos-impact-on-the-immutability-of-biomedical-data-in-the-healthcare-world-f11",
+      "title": "Cardano's impact on the immutability of biomedical data in the healthcare world",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardanos-market-fit-saas-for-decentralized-event-producing-ticketing-and-trendy-brand-experiences-scaling-our-fund8-backed-multi-chain-network-for-the-f11",
+      "title": "Cardano's Market-fit SaaS for decentralized event producing, ticketing and trendy brand experiences; scaling our Fund8-backed multi-chain network for the entertainment industries.",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-cardanoscan-analytics-charts-f11",
+      "title": "Cardanoscan Analytics Charts",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardanoscan-api-javascript-sdk-f11",
+      "title": "Cardanoscan API Javascript SDK",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardanotrading-f11",
+      "title": "CARDANOTrading",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardanowiki-bot-encyclopedia-of-the-cardano-ecosystem-f11",
+      "title": "CARDANOwiki_bot : Encyclopedia of the Cardano ecosystem.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cardanoxchange-next-gen-cardano-exchange-platform-f11",
+      "title": "CardanoXChange: Next-Gen Cardano Exchange Platform",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-careblock-empowering-secure-healthcare-transactions-by-cardano-f11",
+      "title": "CareBlock: Empowering secure healthcare transactions by Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-careerprism-harnessing-atala-prism-for-next-gen-recruitment-solutions-f11",
+      "title": "CareerPRISM: Harnessing Atala PRISM for Next-Gen Recruitment Solutions",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-catalyst-competitor-study-discover-other-daos-and-voting-mechanisms-with-the-focus-on-improvements-f11",
+      "title": "Catalyst \"competitor\" study: discover other DAOs and voting mechanisms with the focus on improvements",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-catalyst-dyor-tool-f11",
+      "title": "Catalyst DYOR Tool",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-catalyst-improvement-workshop-and-improvement-recommendations-f11",
+      "title": "Catalyst Improvement Workshop and improvement recommendations",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-catalyst-working-groups-research-scoping-analysis-by-iog-catalyst-team-rare-evo-and-sustainable-ada-f11",
+      "title": "Catalyst Working Groups Research & Scoping Analysis by IOG Catalyst Team, Rare Evo, and Sustainable ADA",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cbia-add-developer-tool-compatibility-matrix-to-cardano-developers-portal-f11",
+      "title": "CBIA - Add Developer Tool Compatibility Matrix to Cardano Developers Portal",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cbor-validator-website-for-cardano-development-f11",
+      "title": "CBOR Validator Website for Cardano Development",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-ceropapelada-it-aims-to-transform-the-way-the-ada-community-handles-informationby-leveraging-blockchain-technology-and-ada-this-project-seeks-to-elimi-f11",
+      "title": "CEROPAPELADA, It aims to transform the way the ADA community handles information.By leveraging blockchain technology and ADA, this project seeks to eliminate the use of paper in favor of efficient digital solutions.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-certifycdno-cardano-blockchain-certifications-for-education-beyond-f11",
+      "title": "CertifyCDNO: Cardano Blockchain Certifications for Education & Beyond",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-charli3-cardano-integrated-side-chain-oracle-built-on-substrate-f11",
+      "title": "CHARLI3 - Cardano integrated Side-Chain Oracle built on Substrate",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-charli3-off-chain-cnt-price-feeds-community-feed-expansion-f11",
+      "title": "CHARLI3 - Off-Chain & CNT Price Feeds (Community feed expansion)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-charli3-open-source-multi-dex-sdk-a-pythonic-gateway-to-decentralized-exchanges-on-cardano-f11",
+      "title": "CHARLI3 - Open Source Multi-DEX SDK: A Pythonic Gateway to Decentralized Exchanges on Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-charli3-pull-oracle-real-time-price-feeds-on-request-on-demand-validation-service-mvp-f11",
+      "title": "CHARLI3 - \"pull oracle\" real-time price feeds on request (On Demand Validation service MVP)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-charli3-v3-architecture-audit-f11",
+      "title": "CHARLi3 - V3 Architecture Audit",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cip-102-v2-new-royalty-functionality-f11",
+      "title": "CIP 102 v2 - New Royalty Functionality",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-citaldoc-help2health-continuation-of-the-completed-project-at-fund8-health-token-ai-multilingual-f11",
+      "title": "Citaldoc Help2Health. Continuation of the completed project at Fund8. Health Token + A.I. + Multilingual.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-classified-smart-contracts-for-distinct-use-case-dapps-f11",
+      "title": "Classified Smart Contracts for Distinct Use Case dApps",
+      "primary_funding_status": "leftover"
+    },
+    {
+      "primary_proposal_id": "f11-cns-open-source-plutus-personalized-name-nft-minting-f11",
+      "title": "CNS Open Source - Plutus Personalized Name NFT Minting",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-collectibles-exchange-an-innovative-dex-for-nfts-f11",
+      "title": "Collectibles Exchange: An Innovative DEX for NFTs",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-community-governance-oversight-cgo-parameters-platform-f11",
+      "title": "Community Governance Oversight (CGO) Parameters Platform",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-connect-a-simple-and-useful-communication-dapp-f11",
+      "title": "Connect: a simple and useful communication Dapp",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-conserving-gorillas-through-nft-sales-a-campaign-for-wildlife-preservation-f11",
+      "title": "Conserving Gorillas through NFT Sales: A Campaign for Wildlife Preservation",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-continue-the-expansion-of-tangent-protocol-f11",
+      "title": "Continue the Expansion of Tangent Protocol",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cosmex-level-2-speed-cardano-order-book-exchange-f11",
+      "title": "Cosmex– Level 2 ⚡-speed Cardano Order Book Exchange",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cpoker-development-f11",
+      "title": "cPoker Development",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-create-a-cnt-marketplace-on-norwegian-block-exchange-nbxcom-f11",
+      "title": "Create a CNT marketplace on Norwegian Block Exchange (NBX.COM)",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-create-a-template-for-test-driven-development-in-helios-f11",
+      "title": "Create a template for Test Driven Development in Helios",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-creating-worlds-first-digital-identity-for-farmers-using-satellite-imagery-and-ai-f11",
+      "title": "Creating world's first digital identity for farmers using satellite imagery and AI",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-credit-card-gateway-f11",
+      "title": "Credit Card Gateway",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-crimson-a-fan-owned-and-operated-entertainment-platform-powered-by-cardano-making-cutting-edge-genre-films-f11",
+      "title": "Crimson - A fan-owned and operated entertainment platform, powered by Cardano, making cutting-edge genre films",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-crm-sidechain-empowering-decentralized-business-transactions-on-cardano-f11",
+      "title": "CRM Sidechain: Empowering Decentralized Business Transactions on Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-crowdfunding-platform-f11",
+      "title": "Crowdfunding Platform",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-crypto-crows-soblokscom-social-media-platform-on-cardano-f11",
+      "title": "Crypto Crow's SoBloks.com - Social Media Platform on Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-crypto-wallets-for-signup-login-and-2fa-f11",
+      "title": "Crypto wallets for signup, login, and 2FA",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-cryptomentor-f11",
+      "title": "CryptoMentor",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-cryptowedding-crowd-immutable-memories-f11",
+      "title": "CryptoWedding - Crowd immutable memories",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-crystallum-blockchain-recycling-for-sustainability-f11",
+      "title": "Crystallum: Blockchain Recycling for Sustainability",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-custom-proof-of-attendance-systems-creator-for-zoom-f11",
+      "title": "Custom Proof-of-Attendance Systems Creator for Zoom",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-dandelion-postgrest-gui-for-developers-and-students-f11",
+      "title": "Dandelion PostgREST GUI for developers and students",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-dao-controlled-staking-baskets-multi-delegation-smart-contract-governed-by-dao-holders-f11",
+      "title": "DAO Controlled Staking Baskets - Multi-delegation Smart-contract governed by DAO holders",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-dao-for-fundraising-a-system-that-be-a-transparent-banking-clockwork-f11",
+      "title": "DAO for Fundraising \"a system that be a transparent banking clockwork\"",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-daosign-smart-signature-workflow-automation-platform-f11",
+      "title": "DAOsign: Smart Signature & Workflow Automation Platform",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-dapp-web3-freelancer-service-marketplace-on-cardano-pro39-f11",
+      "title": "dApp Web3 Freelancer Service Marketplace on Cardano - PRO39",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-data-driven-catalyst-toolkit-for-on-chain-and-off-chain-data-analytics-insight-optimize-governance-and-prevent-gaming-and-abuse-f11",
+      "title": "“Data-Driven Catalyst”: Toolkit for on-chain and off-chain data analytics & insight, optimize governance and prevent gaming and abuse",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-data-infra-with-an-analytics-tool-and-data-apis-for-cardano-ecosystem-f11",
+      "title": "Data Infra with an analytics tool and data APIs for Cardano ecosystem",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-data-market-aggregator-from-dubai-to-the-cardano-world-f11",
+      "title": "Data Market Aggregator - From Dubai to the Cardano World.",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-data-platform-on-cardano-f11",
+      "title": "Data Platform On Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-db-sync-enterprise-high-availability-setup-of-cardanos-db-sync-to-run-queries-and-access-on-chain-data-as-a-service-f11",
+      "title": "Db-Sync Enterprise: high-availability setup of Cardano’s Db-Sync to run queries and access on-chain data as a service",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-dcone-crypto-cardano-query-layer-api-for-developers-f11",
+      "title": "DCOne Crypto - Cardano Query Layer API for Developers",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-dcone-crypto-improved-open-source-code-v2-real-time-asset-analysis-f11",
+      "title": "DCOne Crypto - Improved open source code V2 - Real-Time Asset Analysis",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-dcorps-digital-companies-registry-registering-your-catalyst-project-on-chain-f11",
+      "title": "DCorps - Digital Companies Registry - Registering your Catalyst project on-chain",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-dead-man-switch-permission-based-wallet-f11",
+      "title": "(Dead-man-switch) Permission based Wallet",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-decentralization-safety-hub-make-safety-and-decentralization-data-easily-acessible-f11",
+      "title": "Decentralization & Safety Hub: Make Safety and Decentralization Data Easily Acessible",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-decentralized-agricultural-supply-chain-on-the-cardano-blockchain-f11",
+      "title": "Decentralized Agricultural Supply Chain on the Cardano Blockchain",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-decentralized-betting-platform-on-cardano-revolutionizing-wagering-with-transparency-and-security-f11",
+      "title": "Decentralized Betting Platform on Cardano : Revolutionizing Wagering with Transparency and Security",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-decentralized-escrow-and-dispute-resolution-f11",
+      "title": "Decentralized Escrow and Dispute Resolution",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-decentralized-lead-capturing-service-with-ai-powered-lead-scoring-f11",
+      "title": "Decentralized lead capturing service with AI-powered lead scoring",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-decentralized-machine-learning-model-hosting-on-cardano-interface-f11",
+      "title": "Decentralized Machine Learning Model Hosting on Cardano - Interface",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-decentralized-public-key-infrastructure-dpki-project-sefirot-f11",
+      "title": "Decentralized Public Key Infrastructure - DPKI - Project \"Sefirot\"",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-defi-evolution-pioneering-high-frequency-trading-on-cardano-f11",
+      "title": "DeFi Evolution: Pioneering High-Frequency Trading on Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-defi-savings-with-cardano-stablecoins-f11",
+      "title": "DEFI-Savings with Cardano Stablecoins",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-delana-the-cardano-factoring-platform-f11",
+      "title": "Delana, The Cardano Factoring Platform",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-demu-jukebox-be-your-own-music-platform-shopify-for-music-f11",
+      "title": "DEMU Jukebox: Be Your Own Music Platform (Shopify For Music)",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-demu-protocol-updating-musics-global-financial-system-f11",
+      "title": "DEMU Protocol - Updating Music's Global Financial System",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-devadaxyz-cardano-developer-discovery-platform-f11-f11",
+      "title": "devada.xyz - Cardano Developer Discovery Platform (F11)",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-devdao-grassroots-developer-services-portal-for-freelance-smart-contract-developers-audit-and-testing-experts-f11",
+      "title": "“DevDAO”: grassroots developer services portal for freelance smart contract developers, audit and testing experts.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-developing-a-cross-chain-gamification-platform-that-enables-all-nft-projects-to-provide-utility-to-holders-for-0-costs-f11",
+      "title": "Developing a cross-chain gamification platform that enables all NFT projects to provide utility to holders for 0 costs",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-development-of-a-user-friendly-liquidity-locking-platform-f11",
+      "title": "Development of a User-Friendly Liquidity Locking Platform",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-development-of-cardano-index-api-f11",
+      "title": "Development of Cardano Index API",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-dex-aggregator-api-to-support-ft-asset-utility-wherever-ada-is-accepted-f11",
+      "title": "Dex-aggregator API to support FT asset utility wherever ADA is accepted.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-digital-advertising-media-kit-dapp-by-blisteringio-f11",
+      "title": "Digital Advertising Media Kit DApp by Blistering.io",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-djed-osiris-decentralized-stablecoin-on-cardanos-evm-sidechain-milkomeda-f11",
+      "title": "Djed Osiris Decentralized Stablecoin on Cardano's EVM Sidechain Milkomeda",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-dlt360-auditshare-a-powerful-audit-sharing-platform-f11",
+      "title": "DLT360: auditSHARE - A Powerful Audit Sharing Platform",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-dlt360-cardaban-blockchain-based-industrial-kanban-system-f11",
+      "title": "DLT360: cardaBAN - Blockchain-based Industrial KANBAN System",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-dlt360-twinshare-digital-twin-iiot-and-iot-manager-f11",
+      "title": "DLT360: twinSHARE – Digital-Twin, IIoT and IoT Manager",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-dlt360-web-30-business-development-sandbox-f11",
+      "title": "DLT360: Web 3.0 Business Development Sandbox",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-docq-mint-a-secure-option-for-onchain-document-storage-and-sharing-f11",
+      "title": "DocQ-mint: A secure option for onchain document storage and sharing",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-docufi3d-a-web3-based-esigning-and-verification-platform-by-iamx-f11",
+      "title": "Docufi3d - A Web3-based eSigning and Verification Platform by IAMX",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-documents-authentication-and-signings-f11",
+      "title": "Documents Authentication and signings",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-dred-cpoker-integration-f11",
+      "title": "DRED cPoker integration",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-dred-decentralized-api-f11",
+      "title": "DRED Decentralized API",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-dripdropz-cardanos-reward-layer-improved-tooling-f11",
+      "title": "DripDropz - Cardano’s Reward Layer - Improved Tooling",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-dripdropz-mainstreet-suite-licensing-f11",
+      "title": "DripDropz - Mainstreet Suite Licensing",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-drivepadi-building-decentralized-car-rentals-platform-on-cardano-f11",
+      "title": "Drivepadi: Building Decentralized car rentals platform on Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-dropspot-scale-marketplace-drive-adoption-and-continue-to-deliver-innovation-to-nft-trading-f11",
+      "title": "Dropspot: Scale marketplace, drive adoption and continue to deliver innovation to NFT trading.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-dualtarget-for-ada-holders-staking-and-increasing-assets-with-a-decentralized-automated-trading-bot-f11",
+      "title": "Dualtarget for ADA-Holders (Staking and increasing assets) with a decentralized automated trading bot",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-dynamic-nft-minting-portal-opensource-powered-by-cip68-f11",
+      "title": "Dynamic NFT Minting Portal (OpenSource powered by CIP68)",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-easily-recoverable-identity-wallets-for-atala-prism-ssi-threshold-wallets-f11",
+      "title": "Easily recoverable Identity Wallets for Atala Prism (SSI Threshold Wallets)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-east-africa-implementing-real-world-asset-tokenization-and-verifiable-credentials-f11",
+      "title": "East Africa: Implementing Real World Asset Tokenization and Verifiable Credentials",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-easy-speak-a-language-learning-app-with-payments-in-ada-f11",
+      "title": "Easy Speak - a Language Learning App With Payments in ADA",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-ecosystem-marketplace-open-source-audit-f11",
+      "title": "Ecosystem Marketplace - Open Source & Audit",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-ekival-pioneering-decentralized-p2p-crypto-fiat-exchange-f11",
+      "title": "Ekival: Pioneering Decentralized P2P Crypto-Fiat Exchange",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-electing-roles-for-terms-dao-agora-effect-f11",
+      "title": "Electing Roles for Terms DAO Agora Effect",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-elevating-reign-of-titans-empowering-cardano-gaming-excellence-through-comprehensive-staffing-and-marketing-f11",
+      "title": "Elevating Reign Of Titans: Empowering Cardano Gaming Excellence Through Comprehensive Staffing and Marketing",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-elm-cardano-elm-offchain-framework-for-cardano-f11",
+      "title": "elm-cardano: Elm offchain framework for Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-embeddable-nft-auction-widget-high-speed-low-cost-no-code-nft-auctions-f11",
+      "title": "Embeddable NFT Auction Widget: High-speed, Low-cost, No-code NFT Auctions",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-empowering-communities-social-features-forums-integration-in-a-cardano-marketplace-f11",
+      "title": "Empowering Communities: Social Features & Forums Integration in a Cardano Marketplace",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-empowering-tomorrows-innovators-birble-ais-global-student-intern-training-initiative-in-web3-development-f11",
+      "title": "Empowering Tomorrow's Innovators: Birble AI's Global Student Intern Training Initiative in Web3 Development",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-encoins-v2-f11",
+      "title": "ENCOINS v2",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-encoins-x-anastasia-labs-zero-knowledge-proof-trustless-p2p-fiat-to-crypto-on-ramp-for-cardano-f11",
+      "title": "ENCOINS x Anastasia Labs: Zero-Knowledge Proof Trustless P2P Fiat-to-Crypto On-Ramp for Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-endubis-messenger-wallet-f11",
+      "title": "Endubis Messenger Wallet",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-enhancing-cardano-developer-ecosystem-with-open-source-tooling-f11",
+      "title": "Enhancing Cardano Developer Ecosystem with Open Source Tooling",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-enhancing-cardano-postcards-automation-and-artist-expansion-f11",
+      "title": "Enhancing Cardano Postcards: Automation and Artist Expansion",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-enhancing-customer-loyalty-through-nfc-blockchain-integration-in-merchandising-f11",
+      "title": "Enhancing Customer Loyalty through NFC-Blockchain Integration in Merchandising",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-enhancing-defi-research-and-community-engagement-through-crcis-interactive-web-application-and-api-f11",
+      "title": "Enhancing DeFi Research and Community Engagement through CRCI's Interactive Web Application and API",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-enhancing-marketplaces-aiken-language-optimization-and-potential-novel-uses-f11",
+      "title": "Enhancing Marketplaces: Aiken Language Optimization and Potential Novel Uses",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-enhancing-treasury-guild-system-with-midnight-f11",
+      "title": "Enhancing Treasury Guild System with Midnight",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-enigmi-live-gamified-multiplayer-nft-platform-mvp-f11",
+      "title": "enigmi - Live, Gamified, Multiplayer NFT Platform MVP",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-eon-cross-chain-decentralized-data-feeds-from-oracles-f11",
+      "title": "EON - Cross-chain Decentralized Data Feeds from Oracles",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-estate-ledger-bridging-the-gap-between-real-estate-and-blockchain-f11",
+      "title": "Estate Ledger: Bridging the Gap between Real Estate and Blockchain",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-ethic-code-for-catalyst-f11",
+      "title": "Ethic Code for Catalyst",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-ethioglobe-nft-market-hub-f11",
+      "title": "EthioGlobe NFT Market Hub",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-every-cardano-nft-85m-in-one-web-page-deep-zoom-viewer-f11",
+      "title": "Every Cardano NFT (8.5m+) in one web page (Deep Zoom Viewer)",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-expanding-the-cardano-nft-ecosystem-through-shopify-f11",
+      "title": "Expanding the Cardano NFT ecosystem through Shopify",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-extended-quadratic-funding-for-open-source-projects-f11",
+      "title": "Extended Quadratic Funding for Open Source Projects",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-feasibility-study-on-creating-a-blockchain-based-information-platform-for-ngos-f11",
+      "title": "Feasibility Study on Creating a Blockchain Based Information Platform for NGOs",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-fida-decentralized-risk-transfer-protocol-f11",
+      "title": "FiDa - Decentralized Risk Transfer Protocol",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-flooftopia-cardanos-first-non-combat-based-mmorpg-f11",
+      "title": "Flooftopia - Cardano's First Non-Combat Based MMORPG",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-fluidtokens-feeless-transactions-and-automatic-smart-contracts-f11",
+      "title": "FluidTokens: Feeless transactions and automatic Smart Contracts",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-food-traceabiliy-by-cardano-f11",
+      "title": "Food Traceabiliy by Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-footprints-on-the-blockchain-pioneering-a-dance-nft-platform-for-choreographed-masterpieces-f11",
+      "title": "Footprints on the Blockchain: Pioneering a Dance NFT Platform for Choreographed Masterpieces",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-fork-it-begin-prototyping-local-project-catalyst-instance-by-preparing-an-appropriate-legal-entity-to-host-it-f11",
+      "title": "Fork it! Begin prototyping local Project Catalyst instance by preparing an appropriate legal entity to host it",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-fraction-estate-rwas-real-estate-minting-and-listing-platform-for-businesses-f11",
+      "title": "FRACTION ESTATE [RWAs]: Real Estate minting and listing platform for Businesses",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-friendly-swift-library-for-cardano-apps-f11",
+      "title": "Friendly SWIFT library for Cardano Apps",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-future-fest-scaling-the-evolution-of-live-streaming-f11",
+      "title": "Future Fest: Scaling the Evolution of Live-streaming",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-fyiclothing-translating-nft-ip-into-tangible-fashion-statements-f11",
+      "title": "FYI.clothing - Translating NFT IP into Tangible Fashion Statements",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-galaxy-of-art-enhancing-social-experience-of-nfts-f11",
+      "title": "Galaxy of Art - Enhancing social experience of NFTs",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-galaxy-of-x-nft-aggregator-f11",
+      "title": "Galaxy of X - NFT aggregator",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-gamechanger-open-sourcing-now-to-help-cip30-spec-upgrade-f11",
+      "title": "GameChanger: open-sourcing now to help CIP30 spec upgrade",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-gamechanger-open-sourcing-unimatrix-to-democratize-multisig-f11",
+      "title": "GameChanger: open-sourcing Unimatrix to democratize multisig",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-gamify-marketplace-for-enhanced-cardano-ecosystem-engagement-f11",
+      "title": "Gamify Marketplace for Enhanced Cardano Ecosystem Engagement",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-gatekeeper-20-evolution-f11",
+      "title": "GateKeeper 2.0: Evolution",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-gateway-to-blockchain-a-student-learning-hub-f11",
+      "title": "Gateway To Blockchain ––A Student Learning Hub",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-general-purpose-crowdfunding-and-milestones-based-distribution-smart-contract-framework-f11",
+      "title": "General Purpose Crowdfunding and Milestones-based Distribution Smart Contract Framework",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-gimbalabs-genius-x-hong-kong-cardano-developer-series-f11",
+      "title": "Gimbalabs | Genius X - Hong Kong Cardano Developer Series",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-githoney-by-txpipe-dev-bounty-system-using-marlowe-contracts-deep-integration-with-github-f11",
+      "title": "Githoney by TxPipe: Dev bounty system using Marlowe contracts, deep integration with Github",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-give-and-gain-platform-where-great-values-are-delivered-to-those-who-need-them-the-most-f11",
+      "title": "Give and Gain platform - Where great values are delivered to those who need them the most",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-gleif-network-super-watcher-on-cardano-by-rootsid-f11",
+      "title": "GLEIF Network Super-Watcher on Cardano by RootsID",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-goodwallet-ada-global-payments-for-youth-creating-impact-integrated-with-a-cardano-compatible-wallet-f11",
+      "title": "Goodwallet - ADA global payments for youth creating impact integrated with a Cardano-compatible Wallet",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-google-wallet-web3-single-sign-on-by-nufi-f11",
+      "title": "Google wallet - Web3 Single Sign-on by NuFi",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-gouroboros-cardano-ouroboros-protocol-server-support-in-golang-f11",
+      "title": "gOuroboros: Cardano Ouroboros protocol server support in Golang",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-governance-hackathon-cardano-drep-teams-f11",
+      "title": "Governance Hackathon: Cardano DRep Teams",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-grant-protocol-self-sovereign-humanitarian-aid-distribution-f11",
+      "title": "Grant Protocol: Self Sovereign Humanitarian Aid Distribution",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-group-onboarding-solution-for-community-registrations-membership-identity-f11",
+      "title": "Group onboarding: Solution for community registrations, membership + identity",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-grow-atalaprism-holder-connection-requests-f11",
+      "title": "Grow AtalaPrism: Holder connection requests",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-grow-atalaprism-sdk-adaptable-identity-storage-module-atalaprism-sdk-id-f11",
+      "title": "Grow AtalaPrism SDK: Adaptable identity storage module || AtalaPrism SDK の成長: 適応可能な ID ストレージ モジュールを開発する",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-growing-atala-prism-100x-faster-with-self-issued-credentials-f11",
+      "title": "Growing Atala Prism 100X faster with self-issued credentials",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-grpc-cardano-a-streaming-api-for-cardano-using-dolos-by-txpipe-f11",
+      "title": "gRPC ❤️ Cardano: A streaming API for Cardano using Dolos by TxPipe",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-handlechat-by-ada-handle-handle-f11",
+      "title": "HandleChat by ADA Handle | $handle",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-hardware-secured-hot-wallets-for-live-services-dexes-bridges-side-chains-dapps-f11",
+      "title": "Hardware-Secured Hot Wallets for Live Services (Dexes, Bridges, Side-Chains & Dapps)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-haskledger-an-edsl-for-scalable-cardano-sidechains-f11",
+      "title": "HaskLedger, An EDSL for Scalable Cardano Sidechains",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-helios-debugger-plugin-for-vscode-f11",
+      "title": "Helios debugger plugin for VSCode",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-helios-unit-testing-framework-with-code-coverage-statistics-f11",
+      "title": "Helios unit testing framework with code-coverage statistics",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-hetzerk-decentralized-materials-discovery-platform-f11",
+      "title": "Hetzerk: Decentralized Materials Discovery Platform",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-hiesmedic-an-e-health-platform-that-leverages-on-blockchain-technology-to-promote-access-to-quality-healthcare-f11",
+      "title": "HIESMEDIC: An E--health platform that leverages on blockchain technology to promote access to quality healthcare",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-hike2nft-nft-hiking-scavenger-hunt-f11",
+      "title": "Hike2NFT - NFT Hiking Scavenger Hunt",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-hlabs-plu-ts-ts-framework-for-cardano-smart-contracts-f11",
+      "title": "HLabs: plu-ts - ts framework for Cardano smart contracts",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-hlabs-typescript-cardano-node-consensus-node-prototype-nodejs-target-runtime-relay-node-f11",
+      "title": "HLabs: typescript cardano-node / consensus (node prototype) - NodeJS target runtime relay node",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-hlabs-typescript-cardano-node-ledger-cardano-ledger-ts-and-cbor-multi-ledger-support-f11",
+      "title": "HLabs: typescript cardano-node / ledger - cardano-ledger-ts and cbor multi ledger support",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-hlabs-typescript-cardano-node-network-layer-runtime-independent-server-and-client-implementations-of-the-ouroboros-miniprotocols-f11",
+      "title": "HLabs: typescript cardano-node / network layer - *runtime independent* server and client implementations of the ouroboros miniprotocols",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-hollow-by-txpipe-headless-dapp-framework-a-friendly-sdk-for-off-chain-development-f11",
+      "title": "Hollow by TxPipe: Headless dApp Framework, a friendly SDK for off-chain development",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-holokd-warriors-and-gym-mobile-rpg-move-to-earn-game-f11",
+      "title": "HoloKD Warriors and Gym – Mobile RPG Move-to-Earn Game",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-hotel-guest-identity-verification-and-check-in-f11",
+      "title": "Hotel Guest Identity Verification and Check-in",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-hotel-room-id-and-room-booking-sdk-f11",
+      "title": "Hotel Room ID and Room Booking SDK",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-hunger-heroes-cardano-f11",
+      "title": "Hunger Heroes CARDANO",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-hungry-app-food-ordering-service-with-low-takeout-fees-and-high-driver-pay-f11",
+      "title": "Hungry App: food ordering service with low takeout fees and high driver pay",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-hydra-for-collaborative-copyright-management-at-scale-f11",
+      "title": "Hydra for collaborative copyright management, at scale",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-hypha-dao-on-cardano-f11",
+      "title": "Hypha DAO on Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-hyphas-open-source-dao-protocols-based-on-open-architecture-for-dapps-f11",
+      "title": "Hypha's “Open-Source DAO Protocols based on Open Architecture\" for dApps",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-iagon-fluxion-a-visualization-tool-for-cardano-blockchain-f11",
+      "title": "Iagon : Fluxion - A Visualization tool for cardano blockchain.",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-iagon-statur-reputation-model-for-web3-ecosystem-that-encourages-positive-behaviour-f11",
+      "title": "Iagon : Statur - Reputation Model for Web3 Ecosystem that encourages positive behaviour",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-identity-solution-for-autonomous-ais-living-on-cardano-f11",
+      "title": "Identity solution for Autonomous AIs living on Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-immersive-3d-nft-launchpad-for-independent-artists-within-carda-station-metaverse-f11",
+      "title": "Immersive 3D NFT launchpad for independent artists within Carda Station Metaverse",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-impact-accounting-project-based-learning-f11",
+      "title": "Impact Accounting Project-Based Learning",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-impact-web3-ecosystem-bridging-cardano4good-to-the-wider-impact-world-f11",
+      "title": "Impact Web3 Ecosystem - Bridging Cardano4Good to the wider impact world",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-indigo-iris-dex-api-indexer-f11",
+      "title": "Indigo Iris: DEX API & Indexer",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-indigo-protocol-v2-audit-f11",
+      "title": "Indigo Protocol V2 Audit",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-infinitypools-a-ux-friendly-nft-and-ft-staking-platform-with-a-rewards-management-distribution-system-f11",
+      "title": "InfinityPools - A UX friendly NFT and FT Staking Platform with a Rewards Management & Distribution System",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-innovate-education-decentral-eduverse-on-cardano-learn-freely-and-earn-f11",
+      "title": "Innovate Education: Decentral Eduverse On Cardano Learn Freely and Earn",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-integrate-keystone-hardware-wallet-into-typhon-f11",
+      "title": "Integrate Keystone Hardware Wallet into Typhon",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-integrating-upi-payments-into-nftmaking-solution-unlocking-india-as-nft-market-f11",
+      "title": "Integrating UPI Payments into NFTMaking Solution - Unlocking India as NFT Market",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-integration-of-cardano-in-the-infinity-wallet-one-stop-super-app-f11",
+      "title": "Integration of Cardano in the Infinity Wallet One-stop Super App",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-interactive-cardano-onboarder-for-dapps-f11",
+      "title": "Interactive Cardano Onboarder for dApps",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-interoperability-and-cross-chain-communication-for-cardano-vista-verified-interchain-secure-transfer-architecture-f11",
+      "title": "Interoperability and Cross-chain communication for Cardano: VISTA (Verified Interchain Secure Transfer Architecture)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-interoperability-between-cardano-and-other-blockchains-f11",
+      "title": "Interoperability between Cardano and other Blockchains",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-jambhala-suite-haskell-dev-nirvana-f11",
+      "title": "Jambhala Suite: Haskell Dev Nirvana",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-jamonbreads-auctions-nft-smart-contract-with-revenue-sharing-mechanism-for-whole-cardano-nft-space-to-use-f11",
+      "title": "JamOnBread‘s Auctions NFT Smart Contract with revenue sharing mechanism for whole Cardano NFT space to use!",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-jamonbreads-nft-smart-contract-with-revenue-sharing-mechanism-for-whole-cardano-nft-space-to-use-f11",
+      "title": "JamOnBread‘s NFT Smart Contract with revenue sharing mechanism for whole Cardano NFT space to use!",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-kaizen-crypto-cardano-calendar-mobile-app-for-ios-android-f11",
+      "title": "Kaizen Crypto | Cardano Calendar Mobile App For iOS & Android",
+      "primary_funding_status": "leftover"
+    },
+    {
+      "primary_proposal_id": "f11-kaizen-crypto-cardano-calendar-web-3-integrations-feature-development-f11",
+      "title": "Kaizen Crypto | Cardano Calendar Web 3 Integrations & Feature Development",
+      "primary_funding_status": "leftover"
+    },
+    {
+      "primary_proposal_id": "f11-kaizen-crypto-custom-cardano-nft-jewelry-verifiable-ownership-of-real-world-assets-f11",
+      "title": "Kaizen Crypto | Custom Cardano NFT Jewelry - Verifiable Ownership Of Real World Assets",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-karbon-ledger-bridging-the-gap-to-carbon-neutrality-f11",
+      "title": "Karbon Ledger: Bridging the Gap to Carbon Neutrality",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-karbonity-making-carbon-compensation-a-reality-for-everyone-f11",
+      "title": "Karbonity: Making Carbon Compensation a Reality for Everyone",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-keri-based-authentication-and-authorization-browser-extension-by-blocktrust-f11",
+      "title": "KERI-based Authentication and Authorization Browser Extension by BLOCKTRUST",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-knowledge-ledger-revolutionizing-learning-development-on-cardano-f11",
+      "title": "Knowledge Ledger: Revolutionizing Learning & Development on Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-kuberide-support-for-aiken-f11",
+      "title": "KuberIDE: Support for Aiken",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-kwarxs-fracturizing-revolutionize-evolve-f11",
+      "title": "KWARXS - \"Fracturizing: Revolutionize, Evolve\"",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-landholdingsada-innovative-realfi-on-cardano-f11",
+      "title": "LandholdingsADA 🌏Innovative RealFi on Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-larissahealth-kyc-to-protect-users-from-fraud-f11",
+      "title": "Larissa.Health - KYC to protect users from fraud",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-launching-drmz-academy-next-gen-gamified-learning-on-workeddev-f11",
+      "title": "\"Launching DRMZ Academy: Next-Gen Gamified Learning on Worked.Dev\"",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-launching-landano-on-cardano-mainnet-f11",
+      "title": "Launching Landano on Cardano Mainnet",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-legendary-humanitya-platform-for-reserving-on-physical-fashion-collections-to-the-future-f11",
+      "title": "Legendary Humanity：A Platform for reserving on physical fashion collections to the future",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-lendex-cardano-evm-token-lending-protocol-f11",
+      "title": "LENDEX Cardano <-> EVM Token Lending Protocol",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-liquidity-4-virtual-assets-l4va-protocol-instantly-sell-nfts-for-the-floor-price-in-l4va-f11",
+      "title": "Liquidity 4 Virtual Assets (L4VA ) Protocol: Instantly Sell NFTs for the Floor Price in $L4VA",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-lovelace-academy-learn-platform-f11",
+      "title": "Lovelace Academy: Learn Platform",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-lovelace-academy-plutus-experience-20-f11",
+      "title": "Lovelace Academy: Plutus Experience 2.0",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-mafoc-chain-indexer-with-integrated-ouroboros-networking-integrated-cardano-node-f11",
+      "title": "Mafoc Chain Indexer with integrated Ouroboros networking (\"integrated cardano-node\")",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-make-farming-secure-profitable-cooler-again-aka-ocfug-other-comestibles-for-uplifting-gourmands-f11",
+      "title": "Make Farming Secure, Profitable & Cooler Again: aka: OCFUG; Other Comestibles For Uplifting Gourmands",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-make-waste-not-wasted-impact2earn-nft-marketplace-for-carbon-credits-and-rewards-web23-f11",
+      "title": "Make Waste not Wasted! impact2earn NFT Marketplace for Carbon Credits and Rewards $/Web2/3.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-mapping-realfi-did-requirements-to-cardano-based-solutions-f11",
+      "title": "Mapping RealFi DID requirements to Cardano-based solutions",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-margin-pool-enhanced-liquidity-for-margin-trading-on-sundaeswap-f11",
+      "title": "Margin Pool: Enhanced Liquidity for Margin Trading on SundaeSwap",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-marlowe-enhanced-tailored-contracts-with-intuitive-design-f11",
+      "title": "Marlowe Enhanced: Tailored Contracts with Intuitive Design",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-marlowehub-unifying-platform-for-marlowe-smart-contracts-phase-1-smart-contracts-f11",
+      "title": "MarloweHub: Unifying Platform for Marlowe Smart Contracts - Phase 1 - Smart Contracts",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-masked-nftresearch-on-privacy-data-management-by-nft-f11",
+      "title": "Masked NFT：Research on privacy data management by NFT",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-maya-protocol-cardano-unleash-native-cross-chain-swaps-between-ada-btc-eth-usdc-f11",
+      "title": "Maya Protocol <> Cardano: Unleash native cross-chain swaps between ADA, BTC, ETH, USDC,...",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-maya-protocol-supercharge-cardano-with-decentralized-native-cross-chain-swaps-f11",
+      "title": "Maya Protocol - Supercharge Cardano with decentralized native cross-chain swaps",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-mayz-protocol-audit-mainnet-launch-f11",
+      "title": "MAYZ Protocol Audit & Mainnet Launch",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-mercury-invoice-f11",
+      "title": "Mercury: Invoice",
+      "primary_funding_status": "leftover"
+    },
+    {
+      "primary_proposal_id": "f11-meta-science-web3-enlightenment-initiative-f11",
+      "title": "Meta-Science Web3 Enlightenment Initiative",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-metamosaic-building-the-single-source-of-truth-ssot-with-reference-data-for-cardano-f11",
+      "title": "MetaMosaic - Building the Single Source of Truth (SSoT) with Reference Data for Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-metera-protocol-aiken-test-net-development-f11",
+      "title": "Metera Protocol | Aiken Test-net Development",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-mgcoin-a-platform-that-connects-every-coin-f11",
+      "title": "MgCoin: A Platform That Connects Every Coin",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-mimesa-the-first-restaurant-booking-system-with-smart-contracts-f11",
+      "title": "MiMesa: The first restaurant booking system with smart contracts",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-mithr-pop-rewarding-planet-care-for-latam-our-planet-f11",
+      "title": "MITHR PoP - Rewarding Planet Care for LATAM & our Planet",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-mithr-reforestation-and-help-for-terrestrial-ecosystem-f11",
+      "title": "MITHR - Reforestation and Help for Terrestrial Ecosystem",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-mixtape-is-where-we-find-new-and-underrepresented-artists-in-web3-and-beyond-f11",
+      "title": "Mixtape is where we find new and underrepresented artists in web3 and beyond.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-mlabs-cardano-transaction-library-footprint-reduction-f11",
+      "title": "MLabs – Cardano Transaction Library Footprint Reduction",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-mobile-app-to-track-spo-performance-f11",
+      "title": "Mobile App to track SPO performance",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-mobility-and-transportation-sidechain-f11",
+      "title": "Mobility and Transportation Sidechain",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-move-education-into-a-new-level-with-cexplorerio-f11",
+      "title": "Move education into a new level with Cexplorer.io",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-multi-ai-agent-for-saf-asean-energy-transition-initiative-f11",
+      "title": "Multi AI-agent for SAF, ASEAN energy transition initiative",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-multi-chain-nft-marketplace-launchpad-with-staking-milestone-based-funding-for-ino-projects-f11",
+      "title": "Multi-chain NFT Marketplace & Launchpad with Staking & MileStone Based Funding for INO projects",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-multi-currency-crowd-funding-dapp-empowering-projects-to-raise-funds-in-eth-sol-usd-and-ada-while-facilitating-seamless-receipt-of-ada-contributions-f11",
+      "title": "Multi-Currency Crowd Funding DApp: Empowering Projects to Raise Funds in ETH, SOL, USD, and ADA while Facilitating Seamless Receipt of ADA Contributions",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-multiplatform-plutus-script-cost-evaluation-library-jsjvmllvm-f11",
+      "title": "Multiplatform Plutus Script Cost & Evaluation Library (JS/JVM/LLVM)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-mumak-by-txpipe-a-postgresql-custom-extension-to-process-raw-cardano-cbor-f11",
+      "title": "Mumak by TxPipe: A PostgreSQL custom extension to process raw Cardano CBOR",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-mycardanotravelguide-engaging-cardano-community-for-enhanced-travel-experience-f11",
+      "title": "MyCardanoTravelGuide - Engaging Cardano Community for Enhanced Travel Experience",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-myretroverse-is-a-multi-chain-arcade-dapp-at-the-intersection-of-music-gaming-and-web3-intersection-aiming-to-onboard-genx-millennials-and-future-dege-f11",
+      "title": "MyRetroverse is a Multi-Chain Arcade dApp at the intersection of Music, Gaming and Web3 Intersection. Aiming to Onboard GenX, Millennials and Future Degens of the Metaverse.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-nanopublications-dashboard-a-searchable-natural-language-tool-for-atomic-knowledge-sharing-f11",
+      "title": "Nanopublications Dashboard: a searchable natural language tool for atomic knowledge-sharing",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-native-script-editor-with-multisig-script-wallet-f11",
+      "title": "Native Script editor with Multisig & Script wallet",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-neuralprint-brain-eeg-data-on-cardano-blockchain-for-many-use-cases-f11",
+      "title": "Neuralprint: Brain EEG Data on Cardano Blockchain for Many Use-Cases",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-new-football-ecosystem-bitsphera-f11",
+      "title": "New Football Ecosystem: BitSphera",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-newm-academy-learn-to-earn-education-platform-part-i-platform-development-f11",
+      "title": "NEWM Academy - Learn-to-Earn Education Platform [Part I: Platform Development]",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-newm-cross-chain-music-streaming-app-mobile-integration-part-i-f11",
+      "title": "NEWM - Cross Chain Music Streaming App - Mobile Integration [Part I]",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-newm-stream-token-analytics-integration-in-cooperation-with-xerberus-f11",
+      "title": "NEWM - Stream Token Analytics Integration in cooperation with Xerberus.",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-nft-checkout-on-cardano-f11",
+      "title": "NFT Checkout on Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-nft-guild-multi-marketplace-nft-listings-a-new-open-standard-for-cardano-f11",
+      "title": "NFT Guild: Multi-Marketplace NFT Listings - A New Open-Standard for Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-nft-guild-open-source-nft-swap-templates-phase-2-f11",
+      "title": "NFT Guild: Open-Source NFT Swap Templates (Phase 2)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-nft-mobile-wallet-app-for-ticketing-onboarding-nftpass-f11",
+      "title": "NFT Mobile Wallet App For Ticketing & Onboarding | NFTPass",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-nft-sdk-for-revenue-sharing-smart-contract-denojs-that-will-finally-make-the-cardano-nft-space-decentralized-and-steepens-the-adoption-curve-for-new-b-f11",
+      "title": "NFT SDK for revenue-sharing Smart Contract (deno/js) that will finally make the Cardano NFT space decentralized and steepens the adoption curve for new businesses!",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-nft-ticket-management-suite-nftpass-f11",
+      "title": "NFT Ticket Management Suite | NFTPass",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-nft-ticket-platform-mvp-suitable-for-mass-adoption-including-non-crypto-ticketholders-f11",
+      "title": "NFT Ticket Platform MVP Suitable for Mass Adoption - including non-crypto ticketholders",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-nft-ticketing-solution-20-by-nmkr-f11",
+      "title": "NFT Ticketing Solution 2.0 by NMKR",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-nft-vending-machine-an-open-source-faucet-for-complex-nft-mints-f11",
+      "title": "NFT Vending Machine – An Open-Source Faucet for Complex NFT Mints",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-nftcdnio-nsfw-nft-detection-for-marketplaces-wallets-explorers-f11",
+      "title": "[nftcdn.io] NSFW NFT Detection for Marketplaces, Wallets & Explorers",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-nftcdnio-universal-nft-viewer-api-musicvideoweb3d-f11",
+      "title": "[nftcdn.io] Universal NFT Viewer API (Music+Video+Web+3D+…)",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-notiboy-web3-notifications-and-web3-chat-app-f11",
+      "title": "Notiboy : web3 notifications and web3 chat app",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-novel-brain-biometrics-based-crypto-tokenomic-architecture-for-cardano-f11",
+      "title": "Novel Brain Biometrics-based Crypto Tokenomic Architecture for Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-nucast-advancing-invoice-factoring-on-the-cardano-blockchain-transforming-a-274-trillion-industry-open-source-f11",
+      "title": "Nucast: Advancing Invoice Factoring on the Cardano Blockchain, Transforming a $2.74 Trillion Industry - Open Source",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-nucast-live-streaming-protocol-revolutionizes-the-streaming-space-f11",
+      "title": "Nucast: Live-streaming Protocol Revolutionizes The Streaming Space",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-nucast-subscriptions-unlocking-access-to-secure-automated-subscription-services-via-smart-contracts-f11",
+      "title": "Nucast Subscriptions - Unlocking access to secure, automated Subscription Services via Smart Contracts",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-nurturing-innovation-in-artificial-intelligence-on-cardano-f11",
+      "title": "Nurturing Innovation in Artificial Intelligence on Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-octowars-online-trading-card-game-core-card-combat-system-f11",
+      "title": "OctoWars - Online Trading Card Game, Core Card Combat System",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-okapi-aiken-open-source-library-for-smart-contracts-f11",
+      "title": "Okapi Aiken - Open Source Library For Smart Contracts",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-old-keg-dao-a-community-led-investment-fund-backed-by-rare-spirits-as-real-world-assets-f11",
+      "title": "Old Keg DAO a community-led investment fund backed by rare spirits as Real-World Assets.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-on-chain-certifications-secure-smart-contract-upgrade-mechanism-f11",
+      "title": "On-chain Certifications & Secure Smart Contract Upgrade Mechanism",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-onboarding-ethereum-evm-ecosystems-to-cardano-via-rosen-bridge-f11",
+      "title": "Onboarding Ethereum & EVM Ecosystems to Cardano via Rosen Bridge",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-onboarding-non-cardano-devs-a-developer-tools-and-resources-hub-f11",
+      "title": "Onboarding non-Cardano devs: a developer tools and resources hub",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-onboarding-solution-via-bank-transfer-rampy-f11",
+      "title": "Onboarding solution via bank transfer - Rampy",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-one-click-to-own-your-marketplace-solution-f11",
+      "title": "One-Click to Own Your Marketplace Solution",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-one-vote-f11",
+      "title": "One Vote",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-online-makerspace-idea-sharing-and-collaboration-around-diy-projects-f11",
+      "title": "Online Makerspace ✨ Idea sharing and collaboration around DIY projects",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-open-multisig-synchronization-service-f11",
+      "title": "Open Multisig Synchronization Service.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-open-source-api-for-generating-nft-collections-via-ai-f11",
+      "title": "Open-Source API for generating NFT collections via AI",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-open-source-audited-framework-to-raise-funds-for-documentary-production-f11",
+      "title": "Open-Source Audited Framework to Raise Funds for Documentary Production",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-open-source-automation-f11",
+      "title": "Open Source Automation",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-open-source-cardano-go-libraries-docs-andamio-cli-f11",
+      "title": "Open-Source Cardano Go Libraries + Docs + Andamio CLI",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-open-source-cardano-nft-display-gallery-framework-f11",
+      "title": "Open-Source Cardano NFT Display & Gallery Framework",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-open-source-decentralized-organization-treasury-effect-hackathon-f11",
+      "title": "Open Source Decentralized Organization Treasury Effect Hackathon",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-open-source-identity-wallet-for-atala-prism-20-and-academic-certificates-f11",
+      "title": "Open Source Identity Wallet for Atala PRISM 2.0 and Academic Certificates",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-open-source-integration-of-hummingbot-with-cardano-for-enhanced-defi-liquidity-f11",
+      "title": "Open Source Integration of Hummingbot with Cardano for Enhanced DeFi Liquidity",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-open-source-ledger-nano-x-flutter-sdk-vespr-wallet-integration-f11",
+      "title": "Open-Source Ledger Nano X Flutter SDK & VESPR Wallet Integration",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-open-source-nft-wallet-auth-framework-for-cardano-f11",
+      "title": "Open Source NFT & Wallet Auth Framework for Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-open-source-prism-node-f11",
+      "title": "Open source PRISM Node",
+      "primary_funding_status": "leftover"
+    },
+    {
+      "primary_proposal_id": "f11-open-source-python-tool-for-linkage-finance-smart-contract-interaction-f11",
+      "title": "Open Source Python Tool for Linkage Finance Smart Contract Interaction",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-open-source-smart-contracts-for-ai-facilitating-model-inference-payments-on-cardano-f11",
+      "title": "Open-Source Smart Contracts for AI: Facilitating Model Inference Payments on Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-open-source-token-gating-template-and-developer-sdk-f11",
+      "title": "(Open Source) Token Gating Template and Developer-SDK",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-open-world-lunar-exploration-massive-multiplayer-online-game-in-carda-station-metaverse-f11",
+      "title": "Open world lunar exploration Massive Multiplayer Online game in Carda Station Metaverse",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-opshin-bug-bountys-squashing-bugs-in-python-smart-contracts-f11",
+      "title": "OpShin Bug Bountys - Squashing Bugs in Python Smart Contracts",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-optim-account-cardano-l2-virtual-ledger-layer-for-account-model-based-txs-f11",
+      "title": "Optim-Account: Cardano L2. Virtual ledger layer for account-model-based txs",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-optim-account-unleashing-dapp-innovation-with-a-composable-account-based-virtual-ledger-layer-f11",
+      "title": "Optim-Account: Unleashing dApp innovation with a composable account-based virtual ledger layer",
+      "primary_funding_status": "leftover"
+    },
+    {
+      "primary_proposal_id": "f11-optim-finance-oada-innovative-ada-synthetic-supercharge-defi-with-better-ada-liquidity-boosted-yield-f11",
+      "title": "- Optim Finance OADA - Innovative ADA Synthetic . Supercharge DeFi with better ADA liquidity + Boosted yield",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-optim-finance-ousd-us-dollar-synthetic-stablecoin-f11",
+      "title": "Optim Finance OUSD - US Dollar Synthetic Stablecoin",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-optim-finance-vaults-defi-building-blocks-for-cardano-f11",
+      "title": "Optim Finance Vaults - DeFi Building Blocks for Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-optimized-smart-contracts-and-infrastructure-for-interoperable-protocols-on-cardano-vista-f11",
+      "title": "Optimized Smart Contracts and Infrastructure for interoperable protocols on Cardano: VISTA",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-optn-advanced-transaction-setup-for-better-end-user-experieces-starting-with-realfi-proptech-f11",
+      "title": "OPTN - Advanced Transaction Setup for Better End User Experieces, Starting with RealFi / PropTech",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-p2p-defi-protocols-cardano-loans-f11",
+      "title": "P2P-DeFi Protocols: Cardano-Loans",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-p2p-defi-protocols-continued-development-f11",
+      "title": "P2P-DeFi Protocols: Continued Development",
+      "primary_funding_status": "leftover"
+    },
+    {
+      "primary_proposal_id": "f11-p2s-dapp-the-plastic-to-school-app-on-the-cardano-blockchain-f11",
+      "title": "P2S DAPP: The Plastic to School app on the Cardano Blockchain",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-padiwash-on-demand-mobile-car-care-subscription-service-using-ai-and-cardano-blockchain-technology-f11",
+      "title": "PadiWash: On-demand mobile car care subscription service using AI and Cardano blockchain technology.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-paideia-building-blocks-for-dao-management-f11",
+      "title": "Paideia - Building Blocks for DAO Management",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-paideia-complex-dao-management-contracts-f11",
+      "title": "Paideia - Complex DAO Management Contracts",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-paideia-dao-management-open-source-app-f11",
+      "title": "Paideia DAO Management Open Source App",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-pairfy-a-p2p-e-commerce-protocol-based-on-trust-rating-and-blind-mediators-f11",
+      "title": "Pairfy: A P2P e-commerce protocol based on trust rating and blind mediators",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-partner-domains-for-cardanobi-f11",
+      "title": "Partner Domains for CardanoBI",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-passkeys-for-decentralized-iam-f11",
+      "title": "Passkeys for decentralized IAM",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-pathform-consciousness-development-for-the-age-of-blockchain-and-ai-minting-brainbiometric-data-on-cardano-f11",
+      "title": "PATHFORM: Consciousness Development for the Age of Blockchain and AI, Minting Brain/Biometric Data on Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-pcconsole-fps-ue5-gaming-on-cardano-tieronecombat-with-new-custom-infra-tools-cip45-ue5-implementations-haskpidb-etc-f11",
+      "title": "PC/Console - FPS UE5 Gaming on Cardano - TierOneCombat - With new custom infra tools (CIP45 UE5 implementations, HaskpiDB, etc)",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-peakchain-decentralized-car-sharing-on-cardano-f11",
+      "title": "PeakChain: Decentralized Car-Sharing on Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-peer-to-peer-betting-on-cardano-a-proof-of-concept-f11",
+      "title": "Peer to peer betting on Cardano: a Proof of Concept",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-perpetual-protocol-by-dexhunter-f11",
+      "title": "Perpetual Protocol by DexHunter",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-pillsy-managing-medication-easier-than-ever-reminder-pills-app-f11",
+      "title": "PILLSY: “Managing Medication, Easier Than Ever” (Reminder pills app)",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-plats-a-comprehensive-cardano-event-platform-increase-cardano-use-cases-by-nft-distribution-ada-depositing-and-rewarding-f11",
+      "title": "Plats - A Comprehensive Cardano Event Platform - Increase Cardano Use Cases by NFT distribution & ADA Depositing and Rewarding",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-plutus-bench-test-measure-inspect-smart-contracts-f11",
+      "title": "Plutus Bench - Test, Measure, Inspect Smart Contracts",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-plutus-wallet-connector-cip-30-expansion-f11",
+      "title": "Plutus Wallet Connector (CIP-30 expansion)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-poap-in-cardano-f11",
+      "title": "POAP in Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-political-affiliation-systems-in-cardano-with-integration-of-atala-prism-f11",
+      "title": "Political Affiliation Systems in Cardano with Integration of Atala Prism",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-pop-up-world-connector-space-copyright-digital-ownership-f11",
+      "title": "Pop Up World & Connector Space – Copyright & Digital Ownership.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-pop-up-world-investor-connector-launchpad-f11",
+      "title": "Pop Up World & Investor Connector Launchpad",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-prediction-markets-a-futures-model-demo-f11",
+      "title": "Prediction Markets: A Futures Model Demo",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-preparing-for-the-bull-run-the-foundation-for-fast-cheap-and-composable-defi-f11",
+      "title": "Preparing for the bull run: The foundation for fast, cheap and composable DeFi",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-prism-verifiable-credential-badges-f11",
+      "title": "PRISM Verifiable Credential badges",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-profiler-real-time-asset-analysis-market-intelligence-platform-f11",
+      "title": "Profiler - Real-Time Asset Analysis & Market Intelligence Platform",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-project-based-comprehensive-education-community-engagement-and-university-collaboration-f11",
+      "title": "Project-based Comprehensive Education, Community Engagement, and University Collaboration",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-proof-of-co-creation-democratizing-and-decentralizing-education-processes-f11",
+      "title": "Proof-of-Co-Creation: Democratizing and Decentralizing Education Processes",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-psychdao-psychology-dao-for-mental-health-p2p-learning-f11",
+      "title": "PsychDAO: Psychology DAO for mental health & P2P Learning",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-psyworkshop-a-portal-for-mental-health-with-payments-in-ada-and-cna-f11",
+      "title": "PsyWORKshop - a portal for Mental Health with payments in ADA and CNA",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-public-list-of-spo-groups-jsoncsv-f11",
+      "title": "Public list of SPO groups (json,csv)",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-put-cnfts-into-public-circulation-as-admission-tickets-nft-f11",
+      "title": "Put cNFTs into public circulation as admission tickets. カルダノNFTを入場チケットとして流通させる。",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-python-based-open-source-permissionless-marketplace-and-documentation-f11",
+      "title": "Python Based Open Source Permissionless Marketplace and Documentation",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-python-sdk-for-cardanobi-api-f11",
+      "title": "Python SDK for CardanoBI API",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-ragdoc-open-source-and-decentralized-ai-analysis-of-catalyst-proposals-f11",
+      "title": "RAGDoC: Open Source and Decentralized AI Analysis of Catalyst Proposals",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-range-sustain-tech-dao-llc-engineering-ways-to-incorporate-heat-generated-from-bitcoin-mining-into-farms-and-ranchs-using-renewable-energy-sources-f11",
+      "title": "Range Sustain Tech DAO LLC: Engineering ways to incorporate heat generated from Bitcoin Mining into Farms and Ranch's using renewable energy sources.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-react-component-decentralized-wallet-f11",
+      "title": "React Component Decentralized Wallet",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-real-world-asset-tokenization-minting-capabilities-in-nmkr-studio-f11",
+      "title": "Real World Asset Tokenization Minting Capabilities in NMKR Studio",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-real-world-assets-tokenization-launchpad-by-nmkr-fluidtokens-iamx-f11",
+      "title": "Real World Assets Tokenization Launchpad by NMKR, FluidTokens & IAMX",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-recycle-earn-and-enjoy-chatbot-proof-of-recycle-por-for-mass-recycling-and-cardano-adoption-f11",
+      "title": "Recycle, Earn, and Enjoy! ChatBot \"Proof-of-recycle\" (PoR) for Mass Recycling and Cardano Adoption.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-regulated-and-permissioned-defi-with-sundae-and-kora-labs-f11",
+      "title": "Regulated and Permissioned DeFi with Sundae and Kora Labs",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-reitcircles-creation-of-the-backend-for-decentralized-verification-marketplace-for-real-estate-transactions-globally-f11",
+      "title": "REITCIRCLES: Creation of the backend for decentralized verification marketplace for real estate transactions globally.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-remostart-artificial-intelligent-hiring-agent-using-cardano-f11",
+      "title": "Remostart: Artificial Intelligent Hiring Agent Using Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-reputano-is-building-the-future-of-defi-scoring-reputation-on-cardano-f11",
+      "title": "Reputano is building the future of DeFi scoring & reputation on Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-reputation-based-news-and-research-platform-by-trustlevel-f11",
+      "title": "Reputation-based News and Research Platform [by TrustLevel]",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-reputation-scores-for-catalyst-proposers-reviewers-by-lidonation-trustlevel-f11",
+      "title": "Reputation Scores for Catalyst Proposers & Reviewers [by Lidonation & TrustLevel]",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-research-guild-blockchain-governance-report-f11",
+      "title": "Research Guild: Blockchain Governance Report",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-research-guild-cardano-ai-tools-and-applications-review-f11",
+      "title": "Research Guild: Cardano AI Tools and Applications Review",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-researching-and-manufacturing-a-point-of-care-real-time-lamp-prototype-with-iot-and-blockchain-integration-for-rapid-disease-analysis-f11",
+      "title": "Researching and manufacturing a Point-of-Care Real-time LAMP prototype with IoT and Blockchain integration for rapid disease analysis",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-researching-zero-knowledge-proofs-in-blockchain-ecosystems-for-enhanced-voting-transparency-in-catalyst-voting-process-a-potential-application-f11",
+      "title": "Researching Zero-Knowledge Proofs in Blockchain Ecosystems for Enhanced Voting Transparency in Catalyst Voting Process: A Potential Application",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-revolutionising-decentralized-governance-empowering-communities-through-the-catalyst-council-system-praxis-of-social-sciences-f11",
+      "title": "Revolutionising Decentralized Governance: Empowering Communities Through the Catalyst Council System Praxis of Social Sciences,",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-revolutionize-and-empower-sports-and-esports-with-blockchain-be-a-game-changer-f11",
+      "title": "REVOLUTIONIZE AND EMPOWER SPORTS AND ESPORTS WITH BLOCKCHAIN! BE A GAME CHANGER",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-revolutionizing-the-used-car-market-eliminating-fraud-and-adding-trusted-vehicle-history-with-dnfts-f11",
+      "title": "Revolutionizing the Used Car Market: Eliminating Fraud and Adding Trusted Vehicle History with dNFTs",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-reward-2-learn-revolutionise-african-universities-we-are-the-airbnb-for-all-african-universities-f11",
+      "title": "Reward 2 learn (Revolutionise African Universities) We are the Airbnb for all African Universities",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-rewards-without-borders-a-web2-compatible-cross-chain-digital-collectibles-loyalty-program-on-cardano-f11",
+      "title": "Rewards Without Borders: A Web2 Compatible, Cross-Chain Digital Collectibles Loyalty Program on Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-rookiez-decentralized-motorcycle-racing-manager-game-f11",
+      "title": "Rookiez - Decentralized Motorcycle Racing Manager game",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-rootsid-production-ready-gleif-witness-on-cardano-f11",
+      "title": "RootsID production-ready GLEIF witness on Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-rust-library-for-easy-off-chain-transaction-building-f11",
+      "title": "Rust library for easy off-chain transaction building",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-rust-sdk-for-cardanobi-api-f11",
+      "title": "Rust SDK for CardanoBI API",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-rythmeet-a-complete-p2p-music-platform-for-networking-practicing-and-learning-music-f11",
+      "title": "Rythmeet: A complete P2P music platform for networking, practicing and learning music",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-safe-tracking-ensuring-access-to-prescription-medications-f11",
+      "title": "Safe Tracking: Ensuring Access to Prescription Medications.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-saferoute-securing-supply-routes-with-cardano-digital-identity-f11",
+      "title": "SafeRoute: Securing Supply Routes with Cardano Digital Identity",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-scalus-multiplatform-scala-implementation-of-cardano-plutus-f11",
+      "title": "Scalus – multiplatform Scala implementation of Cardano Plutus",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-secure-wallet-decentralized-seed-phrase-recovery-manager-f11",
+      "title": "Secure Wallet Decentralized Seed Phrase Recovery Manager.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-security-oracles-a-new-approach-to-active-smart-contracts-security-f11",
+      "title": "Security Oracles - a new approach to active Smart Contracts security",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-seed-phrase-backup-using-yubikeys-f11",
+      "title": "Seed phrase backup using Yubikeys",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-segurasafeswap-pioneering-defi-on-cardano-f11",
+      "title": "\"SeguraSafeSwap: Pioneering DeFi on Cardano\"",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-self-service-nft-ticketing-gamification-and-event-analytics-f11",
+      "title": "Self-Service NFT Ticketing, Gamification and Event Analytics",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-selfdriven2-upgrade-the-selfdriven-apps-to-support-ssi-xapi-standards-and-dao-functionality-open-source-f11",
+      "title": "[selfdriven|2] Upgrade the selfdriven Apps to support SSI & xAPI Standards, and DAO Functionality (Open-Source)",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-selfdriven4-a-methodology-for-enabling-self-driven-communitydaos-f11",
+      "title": "[selfdriven|4] A Methodology for Enabling Self-Driven CommunityDAOs",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-serpentine-a-dapp-friendly-alternative-to-hydra-f11",
+      "title": "Serpentine: A dApp Friendly Alternative To Hydra",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-shrine-stamp-nft-with-sustainable-system-in-tokushima-japan-f11",
+      "title": "Shrine Stamp NFT with sustainable system in Tokushima Japan",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-simple-web3-monetization-of-web2-media-f11",
+      "title": "Simple Web3 Monetization of Web2 Media",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-skybrain-neurotech-revolutionizing-human-experience-with-advanced-neurotechnology-f11",
+      "title": "SkyBrain Neurotech: Revolutionizing Human Experience with Advanced Neurotechnology",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-slapventures-cardano-based-gaming-saloon-f11",
+      "title": "SlapVentures: Cardano-based Gaming Saloon",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-smart-contract-based-on-chain-random-number-generation-rng-library-f11",
+      "title": "Smart Contract based On-chain Random Number Generation (RNG) Library",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-smart-pack-parcels-damage-verification-system-on-cardano-f11",
+      "title": "Smart Pack: parcels damage verification system on Cardano.",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-smartcontract-custodian-for-junk-native-tokens-freeing-your-wallets-locked-utxo-f11",
+      "title": "SmartContract Custodian for Junk Native Tokens - Freeing your wallet's locked UTXO",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-smash-house-onboarding-to-cardano-through-creative-anger-relief-f11",
+      "title": "Smash House – Onboarding to Cardano through Creative Anger Relief",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-smat-bridging-the-gap-between-wealth-management-and-crypto-f11",
+      "title": "Smat - Bridging the gap between wealth management and crypto",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-soulbound-tokens-f11",
+      "title": "Soulbound Tokens",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-soundrig-is-an-innovative-music-experience-platform-onboarding-and-empowering-global-music-artists-f11",
+      "title": "SoundRig is an Innovative Music Experience Platform - Onboarding and Empowering Global Music Artists",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-speedthrone-pioneering-cardano-adoption-through-free-accessible-e-sport-gaming-f11",
+      "title": "SpeedThrone - pioneering Cardano adoption through free accessible E-sport gaming",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-spo-4-life-f11",
+      "title": "SPO 4 Life",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-spo-health-monitor-f11",
+      "title": "SPO Health Monitor",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-stake-ada-agora-effect-f11",
+      "title": "Stake ADA Agora Effect",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-stakepool-uptime-monitoring-and-health-check-portal-f11",
+      "title": "Stakepool Uptime Monitoring and Health-Check Portal",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-staking-basket-ecosystem-explorer-for-multi-delegation-portfolios-f11",
+      "title": "Staking Basket Ecosystem - Explorer for multi-delegation portfolios",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-staking-basket-multi-delegation-contract-open-source-f11",
+      "title": "Staking Basket Multi-Delegation Contract Open-Source",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-stargazer-defi-yield-optimizer-for-cardano-f11",
+      "title": "Stargazer: DeFi Yield Optimizer for Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-start-building-a-browser-based-web3-rhythm-game-f11",
+      "title": "Start Building a Browser-based Web3 Rhythm Game",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-state-of-mind-as-a-service-somaas-ledgered-neuro-profiles-on-cardanov-f11",
+      "title": "State-of-mind as a service (SoMaaS): Ledgered Neuro-profiles on Cardanov",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-stellar-hood-educational-game-improved-accessibility-f11",
+      "title": "STELLAR HOOD Educational Game | Improved Accessibility",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-step-into-the-future-with-walkers-pioneering-gamefi-walk2earn-app-on-cardano-2nd-phase-gamification-and-drive-mass-adoption-experience-the-next-level-f11",
+      "title": "Step into the Future with WALKERS: Pioneering GameFi ‘Walk2Earn’ app on Cardano (2nd phase) - gamification and drive mass adoption! Experience the Next Level!",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-streaming-api-for-cardanobi-f11",
+      "title": "Streaming API for CardanoBI",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-study-control-system-for-universities-diplomaradara-f11",
+      "title": "Study Control System for Universities: Diplom₳D₳",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-summon-platform-expansion-free-services-for-spos-dreps-f11",
+      "title": "Summon Platform Expansion: Free Services for SPOs, DReps",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-summon-platform-v2-redesign-open-source-front-end-f11",
+      "title": "Summon Platform V2 Redesign & Open Source Front-end",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-summon-web3auth-open-source-code-for-easy-login-to-cardano-dapps-f11",
+      "title": "Summon: Web3Auth open-source code for easy login to Cardano DApps",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-sundae-labs-comprehensive-specification-development-for-gummiworm-protocol-on-cardano-f11",
+      "title": "Sundae Labs Comprehensive Specification Development for Gummiworm Protocol on Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-sundae-labs-next-gen-uplc-debugger-with-aiken-integration-f11",
+      "title": "Sundae Labs Next-Gen UPLC Debugger with Aiken Integration",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-supply-chain-tracking-storage-monitoring-system-f11",
+      "title": "Supply Chain Tracking & Storage Monitoring System",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-supporting-cardano-ecosystem-with-an-ai-and-data-perspective-rd-effort-f11",
+      "title": "Supporting Cardano Ecosystem with an AI and Data Perspective (R&D effort)",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-sustain-maintain-meshjs-f11",
+      "title": "Sustain & Maintain MeshJS",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-sustainability-for-crypto-funding-esg-f11",
+      "title": "Sustainability for Crypto: funding ESG",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-swap-nfts-for-initial-token-distributions-f11",
+      "title": "Swap NFTs for Initial Token Distributions",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-swapaire-nft-swap-dapp-instant-and-secure-nft-swaps-f11",
+      "title": "[Swapaire] NFT Swap dApp: instant and secure NFT swaps",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-syncland-metaverse-video-game-music-licensing-awen-f11",
+      "title": "Sync.Land | Metaverse & Video Game Music Licensing (Awen)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-tamper-proof-certificate-system-f11",
+      "title": "Tamper-proof Certificate System",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-tangocrypto-open-source-cardano-api-and-webhooks-f11",
+      "title": "TangoCrypto: Open Source Cardano API and Webhooks",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-tangocrypto-open-source-minting-platform-for-fts-and-nfts-with-payment-gateway-and-wallet-integration-f11",
+      "title": "TangoCrypto: Open Source Minting Platform for FTs and NFTs - With Payment Gateway and Wallet integration",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-tekmirio-nft-staking-20-f11",
+      "title": "Tekmirio NFT Staking 2.0",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-teuro-a-transparent-stablecoin-for-social-good-f11",
+      "title": "TEuro: A Transparent Stablecoin for Social Good",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-the-african-image-archive-f11",
+      "title": "The African Image Archive",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-the-aurora-initiative-character-centric-web3-space-opera-gaming-f11",
+      "title": "The Aurora Initiative: Character-Centric Web3 Space-Opera Gaming",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-the-cardano-health-innovation-ecosystem-revolutionizing-drug-development-through-transparency-and-collaboration-f11",
+      "title": "The Cardano Health Innovation Ecosystem: Revolutionizing drug development through Transparency and Collaboration",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-the-decentralized-e-commerce-platform-utilizes-smart-contracts-on-cardano-to-address-current-e-commerce-challenges-without-the-need-for-third-party-in-f11",
+      "title": "The decentralized e-commerce platform utilizes Smart Contracts on Cardano to address current e-commerce challenges without the need for third-party intermediaries",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-the-ultimate-cardano-assets-data-portal-clean-data-backtesting-price-models-for-native-tokens-f11",
+      "title": "The Ultimate Cardano Assets Data Portal: Clean Data, Backtesting & Price Models for Native Tokens",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-threshold-signatures-for-cardano-wallets-f11",
+      "title": "Threshold Signatures for Cardano Wallets",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-tikitlive-ticketing-smart-contract-platform-awen-f11",
+      "title": "Tikit.Live | Ticketing Smart Contract & Platform (Awen)",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-token-allies-the-first-decentralized-vc-in-cardano-2nd-phase-f11",
+      "title": "Token Allies the First Decentralized VC in Cardano - 2nd phase",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-token-engineering-on-cardano-modelling-simulation-of-token-economic-systems-f11",
+      "title": "Token Engineering on Cardano: Modelling & simulation of token economic systems",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-token-launchpad-for-cardano-f11",
+      "title": "Token Launchpad for Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-tokenization-approach-for-accessible-medical-services-in-rural-communities-using-blockchain-f11",
+      "title": "Tokenization Approach for Accessible Medical Services in Rural Communities using Blockchain",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-tokenization-of-dtetis-assets-enhancing-transparency-and-efficiency-through-cardano-blockchain-f11",
+      "title": "Tokenization of DTETI's Assets: Enhancing Transparency and Efficiency through Cardano Blockchain",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-truly-decentralized-large-language-model-with-cardano-spos-f11",
+      "title": "Truly Decentralized Large Language Model with Cardano SPOs",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-uber-for-tutoring-decentralised-tutors-marketplace-directed-f11",
+      "title": "Uber for Tutoring - Decentralised Tutor’s Marketplace (DirectEd)",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-ucheckin-flight-bookinghotel-reservation-system-with-ada-as-mode-of-payment-f11",
+      "title": "Ucheckin - Flight booking/Hotel Reservation System with ada as mode of payment",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-unbox-enabling-rust-based-cardano-dapps-f11",
+      "title": "Unbox: Enabling Rust-based Cardano dApps",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-universal-devtools-for-real-time-tracking-for-45-of-global-websites-support-f11",
+      "title": "Universal DevTools for Real-time Tracking for 45%+ of Global Websites Support",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-universal-liquidity-composition-and-mev-resistance-framework-for-defi-f11",
+      "title": "Universal Liquidity Composition and MEV resistance framework for DeFi",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-unleashing-cardanos-gaming-revolution-for-mass-adoption-and-blockchain-powered-entertainment-with-wildsnake-studios-and-fgl-f11",
+      "title": "Unleashing Cardano's Gaming Revolution for Mass Adoption and Blockchain-Powered Entertainment with Wildsnake Studios and FGL",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-update-protocol-parameter-agora-effect-f11",
+      "title": "Update Protocol Parameter Agora Effect",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-urban-farmer-grow-to-launch-f11",
+      "title": "Urban Farmer - Grow to Launch",
+      "primary_funding_status": "leftover"
+    },
+    {
+      "primary_proposal_id": "f11-v2target-dual-target-for-ada-holder-f11",
+      "title": "[V2target-Dual target for ADA holder]",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-vault3-admin-dashboard-to-manage-token-gated-content-f11",
+      "title": "VAULT3 - Admin dashboard to manage token-gated content",
+      "primary_funding_status": "leftover"
+    },
+    {
+      "primary_proposal_id": "f11-vault3-open-source-sdk-to-easily-add-token-gated-content-to-any-cardano-dapp-or-project-f11",
+      "title": "VAULT3 - Open source SDK to easily add token-gated content to any Cardano dapp or project",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-veralidity-aiken-gift-cards-integration-with-adobe-commerce-redeem-your-gift-cards-on-250k-magento-storefronts-f11",
+      "title": "VERALIDITY 🔥 Aiken Gift Cards 🔥 Integration with Adobe Commerce: Redeem Your Gift Cards On 250K+ Magento Storefronts 🚀",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-veralidity-single-sign-on-shop-anonymously-on-250k-adobe-commerce-magento-shops-using-encrypted-data-f11",
+      "title": "VERALIDITY 🔥 Single-Sign-On 🔥 Shop Anonymously on 250K+ Adobe Commerce Magento Shops Using Encrypted Data 🚀",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-vespr-wallet-advanced-native-token-dashboard-and-token-transactions-filter-f11",
+      "title": "VESPR Wallet: Advanced Native Token Dashboard and Token Transactions Filter",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-vespr-wallet-security-audit-penetration-test-f11",
+      "title": "VESPR Wallet: Security Audit / Penetration Test",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-vitaxone-invoice-management-and-tax-risk-analysis-system-for-businesses-utilizes-the-cardano-blockchain-to-enhance-transparency-in-data-processing-and-f11",
+      "title": "Vitax.one - invoice management and tax risk analysis system for businesses, utilizes the Cardano blockchain to enhance transparency in data processing and secure the tax information of enterprises.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-vyfinance-auto-harvester-f11",
+      "title": "VyFinance - Auto-Harvester ",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-walletd-f11",
+      "title": "WalletD",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-wanchain-cardano-from-metamask-buy-cnts-from-ethereum-f11",
+      "title": "Wanchain - Cardano From Metamask: Buy CNTs from Ethereum!",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-wave-plans-to-launch-ai-and-blockchain-focused-decentralized-tech-clusters-in-impoverished-areas-aiming-to-alleviate-poverty-create-opportunities-and-f11",
+      "title": "Wave plans to launch AI and blockchain-focused Decentralized Tech Clusters in impoverished areas, aiming to alleviate poverty, create opportunities, and generate broader economic benefits for underserved communities.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-we-propose-to-research-the-viability-of-an-open-sourced-decentralized-did-backed-peer-review-and-publication-solution-built-on-cardano-f11",
+      "title": "We propose to research the viability of an open-sourced, decentralized, DID-backed peer review and publication solution built on Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-web3-directory-mvp-to-boost-social-reach-for-cardano-projects-f11",
+      "title": "Web3 Directory MVP To Boost Social Reach For Cardano Projects",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-web3-gamers-guild-for-students-f11",
+      "title": "Web3 Gamers Guild for Students",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-webcomixhub-a-new-spotify-for-the-webcomic-industry-transforming-your-comic-experience-f11",
+      "title": "WebcomixHub: A New 'Spotify' for the Webcomic Industry - Transforming Your Comic Experience",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-wellness-as-a-service-marketplace-f11",
+      "title": "Wellness as a Service Marketplace",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-wellness-stations-in-3-major-istanbul-blockchain-summits-to-promote-cardano-as-the-wellness-chain-f11",
+      "title": "Wellness Stations in 3 Major Istanbul Blockchain Summits to Promote Cardano as the Wellness Chain",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-wider-accessibility-of-automatic-borrowing-lenfi-software-development-kit-sdk-f11",
+      "title": "Wider accessibility of automatic borrowing - Lenfi Software Development Kit (SDK)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-widget-open-source-nocode-keyword-coins-real-time-prices-for-cardano-tokens-embedded-in-newscontent-for-websites-f11",
+      "title": "Widget Open Source & NoCode \"Keyword Coins Real Time Prices\" for Cardano Tokens Embedded in News/Content for Websites",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-win-to-earn-uppercut-f11",
+      "title": "Win to Earn - Uppercut",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-wingriders-chained-turborequests-for-swaps-and-more-f11",
+      "title": "WingRiders: Chained TurboRequests for Swaps and More",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-wingriders-decentralized-batching-agent-free-for-all-f11",
+      "title": "WingRiders: Decentralized Batching Agent [F(r)ee For All]",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-wingriders-on-chain-launchpad-v2-including-pro-rata-vesting-and-more-f11",
+      "title": "WingRiders: On-Chain Launchpad V2 Including Pro-Rata, Vesting and More",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-wingriders-stableswap-contracts-available-for-all-ecosystem-to-use-f11",
+      "title": "WingRiders: Stableswap Contracts available for all ecosystem to use",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-wmt-explorercom-stake-pool-operators-partnerships-with-earthnode-operators-f11",
+      "title": "WMT-Explorer.com - Stake Pool Operators Partnerships with EarthNode Operators",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-wolfram-ai-llm-distributed-inference-services-f11",
+      "title": "Wolfram: AI - LLM Distributed Inference Services",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-wolfram-dashboard-social-finance-governance-and-ecosystem-f11",
+      "title": "Wolfram Dashboard: Social, Finance, Governance and Ecosystem",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f11-wolfram-marlowe-smart-contract-execution-f11",
+      "title": "Wolfram Marlowe Smart Contract Execution",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-wolfram-price-feed-infrastructure-f11",
+      "title": "Wolfram Price Feed Infrastructure",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-workshops-at-our-southern-california-retreat-wellness-space-designed-to-educate-incubate-onboard-creatives-to-cardano-f11",
+      "title": "Workshops at our Southern California retreat & wellness space designed to educate, incubate & onboard creatives to Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-worlds-first-open-ledger-for-in-field-agricultural-data-based-on-open-source-sateo-f11",
+      "title": "World's first open ledger for in-field agricultural data based on open source SatEO",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-wowtalkies-revolutionizing-fan-engagement-on-the-cardano-blockchain-f11",
+      "title": "wowTalkies - Revolutionizing Fan Engagement on the Cardano Blockchain",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-write-documentation-on-secure-dapp-development-f11",
+      "title": "Write documentation on secure dApp development",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-xerberus-nodes-a-decentralized-risk-rating-agency-on-cardano-for-the-world-f11",
+      "title": "Xerberus Nodes: A Decentralized Risk Rating Agency on Cardano for the World",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-xerberus-scam-investigation-registry-engine-siren-in-cooperation-with-iagon-f11",
+      "title": "Xerberus: Scam Investigation Registry Engine (SIREN) in cooperation with Iagon",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-xforge-building-the-most-cost-effective-and-comprehensive-minting-platform-on-cardano-f11",
+      "title": "XFORGE: Building the most cost-effective and comprehensive minting platform on Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-yadex-an-open-eutxo-fit-efficient-versatile-and-novel-dex-f11",
+      "title": "Yadex: an open, eutxo-fit, efficient, versatile and novel DEX",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f11-zkfold-symbolic-a-zero-knowledge-smart-contract-language-f11",
+      "title": "ZKFold Symbolic: a Zero-Knowledge Smart Contract Language",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-zkfold-zero-knowledge-prover-backend-f11",
+      "title": "ZKFold: Zero-Knowledge Prover Backend",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f11-zoda-synthetic-data-protocol-f11",
+      "title": "Zoda, Synthetic Data Protocol",
+      "primary_funding_status": "not_approved"
+    }
+  ],
+  "notes": null
+}

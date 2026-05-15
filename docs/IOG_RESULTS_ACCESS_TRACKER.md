@@ -3,9 +3,9 @@
 Last updated: 2026-05-15
 
 This tracker records the authoritative Project Catalyst voting-results artifacts
-needed for Phase 2 reconciliation. The archive can publish Lidonation v1
-proposal data and Milestone Module data before this table is complete, but the
-first "full snapshot" should wait until these artifacts are available and parsed.
+needed for Phase 2 reconciliation. Project Catalyst staff recommended using the
+CSV files linked from `https://projectcatalyst.io/funds`; those links now serve
+as the preferred voting-results source for F2-F14.
 
 ## Local Import Contract
 
@@ -25,31 +25,36 @@ python -m scripts.parse_iohk_pdfs
 python -m normalizers.reconcile_winners
 ```
 
-If Catalyst provides CSV or XLSX files for F11-F13, add a parser path before
-running reconciliation. The current parser only reads PDF artifacts.
+The current parser only reads PDF artifacts. The CSVs below are cached raw
+source files and still need a parser path before running reconciliation.
 
 ## Artifact Status
 
 | Fund | Source URL | Current status | Expected local file |
 |---|---|---|---|
-| F2 | `https://static.iohk.io/docs/catalyst/catalyst-voting-results-fund2.pdf` | Downloaded and parsed | `data/_raw/iohk-pdfs/fund-02.pdf` |
-| F3 | `https://drive.google.com/file/d/1X6BnuFBvNO8yF2DeUgBqA3yyYSvqeKvg/view` | Drive permission blocked from CLI | `data/_raw/iohk-pdfs/fund-03.pdf` |
-| F4 | `https://drive.google.com/file/d/19VMTYn_sv5Xsp2mC5VUN_-z_aXYHL_Dd/view` | Drive permission blocked from CLI | `data/_raw/iohk-pdfs/fund-04.pdf` |
-| F5 | `https://drive.google.com/file/d/1HKmqyPebE87BUrPtE4AT5E2V4_yIZtT-/view` | Drive permission blocked from CLI | `data/_raw/iohk-pdfs/fund-05.pdf` |
-| F6 | `https://drive.google.com/file/d/13h5JFtwqyylMUNMoRGXQZ-FJEM4bznOJ/view?usp=sharing` | Drive permission blocked from CLI | `data/_raw/iohk-pdfs/fund-06.pdf` |
-| F7 | `https://bit.ly/3HJNhuX` | Redirected artifact blocked from CLI | `data/_raw/iohk-pdfs/fund-07.pdf` |
-| F8 | `https://drive.google.com/file/d/1s3jCE7pmoUujy3ASMia-UhFl2KLi_hnf/view` | Drive permission blocked from CLI | `data/_raw/iohk-pdfs/fund-08.pdf` |
-| F9 | `https://bit.ly/Fund9_Results` | Redirected artifact blocked from CLI | `data/_raw/iohk-pdfs/fund-09.pdf` |
-| F10 | `https://projectcatalyst.io/fund10-voting-results.pdf` | Downloaded; parser returns 0 rows because layout differs from F2 | `data/_raw/iohk-pdfs/fund-10.pdf` |
-| F11 | `https://docs.google.com/spreadsheets/d/18mDkdQn8fufBr7Ab9oSlV14UvBTMoUHeS43KAJiYPgQ/edit#gid=896673639` | Google Sheets CSV export returns 401 from CLI | `data/_raw/iohk-results/fund-11.csv` or `.xlsx` |
-| F12 | `https://docs.google.com/spreadsheets/d/1Wq1XdPCJuiBDjDECSrpm7RvIfpNMEHitsbveqVaPWnk/edit?gid=837754658#gid=837754658` | Google Sheets CSV export returns 401 from CLI | `data/_raw/iohk-results/fund-12.csv` or `.xlsx` |
-| F13 | `https://docs.google.com/spreadsheets/d/1Jesjo5hoLvBJfWF4E6_516urm_lfvtSW0fhkZhCMUmQ/edit?gid=1185817058#gid=1185817058` | Google Sheets CSV export returns 401 from CLI | `data/_raw/iohk-results/fund-13.csv` or `.xlsx` |
+| F1 | Local staff-provided PDF `Fund1_voting_results.pdf` | PDF cached and parsed; 45 result rows / 8 funded; drives `data/funds/fund-01/proposals.json`. | `data/_raw/iohk-pdfs/fund-01.pdf` |
+| F2 | `https://projectcatalyst.io/funds/2/voting-results` -> Google Sheet `1beHJPUoLvOoSmqN69NIxGmZSWEUJOeI4Lf2TwTfRRVs`, gid `1751929066` | CSV cached and parsed; 78 rows / 11 funded; one status correction applied. | `data/_raw/iohk-results/fund-02.csv` |
+| F3 | `https://projectcatalyst.io/funds/3/voting-results` -> Google Sheet `1ibl-9qpLRQiFhJQfcvIeSdfJr9LjGpU6WqHce6VIUnE`, gid `1538672709` | CSV cached and parsed; 76 rows / 8 funded; no status disagreements. | `data/_raw/iohk-results/fund-03.csv` |
+| F4 | `https://projectcatalyst.io/funds/4/voting-results` -> Google Sheet `13NC6SZ5MzQsYb-ufbuQHakxvLvPtZWv_02Aq17PFErI`, gid `1538672709` | CSV cached and parsed; 104 rows / 7 funded; one status correction applied. | `data/_raw/iohk-results/fund-04.csv` |
+| F5 | `https://projectcatalyst.io/funds/5/voting-results` -> Google Sheet `156SdqPYOBkC5iQQeOOZc9yXSYoNHb-J-wJrem-xax78`, gid `1848314097` | CSV cached and parsed; 43 rows / 24 funded; no status disagreements. | `data/_raw/iohk-results/fund-05.csv` |
+| F6 | `https://projectcatalyst.io/funds/6/voting-results` -> Google Sheet `1y-7U88FRvsEEzm98KbEswUGuy4q-eTeoFTV3EFrc6b4`, gid `1183771745` | CSV cached and parsed; 102 rows / 20 funded; no status disagreements. | `data/_raw/iohk-results/fund-06.csv` |
+| F7 | `https://projectcatalyst.io/funds/7/voting-results` -> Google Sheet `19_TEovS_Gemwvz2qlc6jGPizqAY8ZeDrzbH3DSeXyto`, gid `309291557` | CSV cached and parsed; 38 rows / 9 funded; no status disagreements. Verify whether additional workbook tabs are needed. | `data/_raw/iohk-results/fund-07.csv` |
+| F8 | `https://projectcatalyst.io/funds/8/voting-results` -> Google Sheet `15ELXp81NfvXHgrerTbuIofZOXBsdjocN1YgBK0gPP3E`, gid `2111315347` | CSV cached and parsed; 38 rows / 12 funded; one status correction applied. Verify whether additional workbook tabs are needed. | `data/_raw/iohk-results/fund-08.csv` |
+| F9 | `https://projectcatalyst.io/funds/9/voting-results` -> Google Sheet `1MycQL-dkqf1xEW8xcr7vqcfHY6D7MHnG9ylDKNLSnAA`, default gid `0` | CSV cached and parsed; 9 rows / 1 funded; no status disagreements. This workbook appears multi-tab; extract relevant gids before treating coverage as complete. | `data/_raw/iohk-results/fund-09.csv` |
+| F10 | `https://projectcatalyst.io/funds/10/voting-results` -> Google Sheet `1NxtUdvC-BRSh2kIczpV1rLuxJKkJfbxnRwxUsYJ9O8Y`, gid `885359704` | CSV cached and parsed; 187 rows / 28 funded; no status disagreements. | `data/_raw/iohk-results/fund-10.csv` |
+| F11 | `https://projectcatalyst.io/funds/11/voting-results` -> Google Sheet `18mDkdQn8fufBr7Ab9oSlV14UvBTMoUHeS43KAJiYPgQ`, gid `896673639` | CSV cached and parsed; 312 rows / 78 funded; no status disagreements. | `data/_raw/iohk-results/fund-11.csv` |
+| F12 | `https://projectcatalyst.io/funds/12/voting-results` -> Google Sheet `1Wq1XdPCJuiBDjDECSrpm7RvIfpNMEHitsbveqVaPWnk`, gid `837754658` | CSV cached and parsed; 189 rows / 63 funded; no status disagreements. | `data/_raw/iohk-results/fund-12.csv` |
+| F13 | `https://projectcatalyst.io/funds/13/voting-results` -> Google Sheet `1Jesjo5hoLvBJfWF4E6_516urm_lfvtSW0fhkZhCMUmQ`, gid `1185817058` | CSV cached and parsed; 357 rows / 53 funded; no status disagreements. | `data/_raw/iohk-results/fund-13.csv` |
+| F14 | `https://projectcatalyst.io/funds/14/voting-results` -> Google Sheet `1C_zftHxwGN__vxFscZosv_qynnhOd-zJl_bMezs7joo`, default gid `0` | CSV cached, but parser gets 0 result rows because the export contains formula/reference rows; identify correct tab/export before reconciliation. | `data/_raw/iohk-results/fund-14.csv` |
 
 ## Remaining Engineering Work
 
-- Add a newer-layout PDF parser for F10 and any other matching PDF artifacts.
-- Add CSV/XLSX parser support for F11-F13 if Catalyst provides sheet exports.
-- Re-run `normalizers.reconcile_winners` after artifacts are available.
+- Identify the correct F14 tab/export path; the currently cached default export
+  is not parseable result data.
+- For F7-F9, inspect the linked workbooks for additional tabs/gids before
+  treating the cached parsed rows as complete.
+- Add a newer-layout PDF parser for F10 only if we still need PDF parity after
+  CSV reconciliation.
 - Re-run `normalizers.apply_reconciliations`, `dedupe_proposers`, and
   `consolidate` after reconciliation changes.
 - Update `docs/DATA_QUALITY.md` with final row counts and per-fund reconciliation

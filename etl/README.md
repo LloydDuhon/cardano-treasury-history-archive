@@ -97,9 +97,46 @@ python -m fetchers.lidonation_api
 python -m normalizers.unify_proposals
 ```
 
-## Phase 2 — IOG voting-results PDF cross-check
+## Phase 2 — Official voting-results cross-check
 
-Smoke against Fund 2:
+Fetch official Project Catalyst voting-results CSVs:
+
+```bash
+python -m fetchers.projectcatalyst_funds --csv-only
+```
+
+This writes:
+
+- `../data/_raw/projectcatalyst_io/results-NN.html.gz`
+- `../data/_raw/projectcatalyst_io/results-NN.summary.json`
+- `../data/_raw/iohk-results/fund-NN.csv`
+
+Fund 1 is a local staff-provided PDF at
+`../data/_raw/iohk-pdfs/fund-01.pdf`.
+
+Parse the cached official artifacts into per-fund intermediates:
+
+```bash
+python -m scripts.parse_projectcatalyst_results
+```
+
+This writes `../data/funds/fund-XX/_intermediate/iohk_winners.json` for F1-F13.
+F14 is skipped until the correct result tab/export is identified.
+
+Derive Fund 1 from the staff-provided PDF when Wayback snapshots are absent:
+
+```bash
+python -m normalizers.derive_fund_one
+```
+
+Reconcile the parsed CSV-backed results against canonical proposal records:
+
+```bash
+python -m normalizers.reconcile_winners --fund 2 --fund 3 --fund 4 --fund 5 --fund 6 --fund 7 --fund 8 --fund 9 --fund 10 --fund 11 --fund 12 --fund 13
+python -m normalizers.apply_reconciliations --fund 2 --fund 4 --fund 8
+```
+
+Legacy PDF smoke against Fund 2:
 
 ```bash
 python -m fetchers.projectcatalyst_funds --fund 2

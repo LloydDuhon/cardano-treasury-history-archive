@@ -1,15 +1,18 @@
 {
   "fund": 1,
-  "normalized_at": "2026-05-14T22:49:04Z",
-  "record_count": 0,
+  "normalized_at": "2026-05-15T18:38:42Z",
+  "record_count": 45,
   "sources_used": [
-    "ideascale_wayback"
+    "iohk_voting_results_pdf"
   ],
   "phase": "phase-4",
-  "phase_notes": "Fund 1 was the Catalyst pilot. No formal voting outcome existed; funding_status is 'unknown' for every record. Titles and proposers are best-effort recovery from Internet Archive snapshots. Records carry confidence: low. There is no canonical complete list - expect 10-20% records to be missing or have incomplete fields.",
+  "phase_notes": "Fund 1 records are derived from the staff-provided voting-results PDF. The PDF is source of truth for funded/not-funded status, but it is limited to table fields and does not include full proposal narratives.",
   "coverage_warnings": [
-    "Vote counts and ask amounts are usually null (not in archived HTML).",
-    "Proposer name may be 'anonymous' when the archived page hid it.",
-    "Description may include Wayback Machine UI fragments if snapshot is wrapped."
-  ]
+    "Proposal detail fields are null unless recovered from another source.",
+    "The PDF table text extraction is reviewed but compact; amount/vote columns are medium confidence."
+  ],
+  "result_summary": {
+    "rows_matched": 45,
+    "funded_count": 8
+  }
 }

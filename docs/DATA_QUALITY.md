@@ -15,8 +15,9 @@ Per-field overrides live in each record's optional `field_confidence` object.
 ## What this dataset is good for
 
 - Counting proposals per fund, per challenge, per proposer
-- Identifying funded vs not-funded outcomes from Lidonation v1 for Funds 2–15,
-  with IOG/CF voting-results reconciliation still pending for several funds
+- Identifying funded vs not-funded outcomes from Lidonation v1 for Funds 2–15.
+  Official Project Catalyst voting-results CSVs are now cached for F2-F14, but
+  CSV parser/reconciliation integration is still pending.
 - Tracking milestone completion for Funds 10–15
 - Analyzing proposer behavior across funds (with caveats about duplicate identity — see below)
 - Reviewing AI summaries, scores, and votes where Lidonation has them
@@ -29,10 +30,10 @@ Per-field overrides live in each record's optional `field_confidence` object.
 - **On-chain voting-power analysis.** Deferred to a future sibling repository. CIP-15/36 registrations are not in this schema.
 - **Real-time data.** Snapshots are taken on a monthly cadence; expect lag of up to ~30 days for in-flight funds.
 - **Catalyst Voices native data.** Until `api.projectcatalyst.io/api/v1/health/ready` returns 200, F14+ data comes from Lidonation's mirror, not the upstream system of record.
-- **Final IOG/CF voting-results reconciliation.** The interim dataset includes
-  Lidonation v1 funding outcomes for F2-F15, but the independent IOG/CF
-  voting-results artifacts are not fully available yet. See
-  `docs/IOG_RESULTS_ACCESS_TRACKER.md`.
+- **Final Project Catalyst voting-results reconciliation.** The interim dataset
+  includes Lidonation v1 funding outcomes for F2-F15. Official Project Catalyst
+  CSV artifacts for F2-F14 are cached, but they are not yet normalized into the
+  canonical dataset. See `docs/IOG_RESULTS_ACCESS_TRACKER.md`.
 
 ## Known systematic limitations
 
@@ -57,16 +58,24 @@ F2-F15 fund covered by Catalyst Explorer.
 ### Fund 1
 ~56 pilot proposals, no funded winners. Recovered from Internet Archive Wayback snapshots of `cardano.ideascale.com`. Coverage may be incomplete. All F1 records carry `confidence: low` by default; some fields may be missing entirely.
 
-The current Wayback CDX query returned an empty result, so the interim generated
-dataset has no recovered Fund 1 proposal records. Fund 1 remains a separate
-low-confidence recovery task.
+The current Wayback CDX query returned an empty result, so Fund 1 proposal
+records are derived from the staff-provided voting-results PDF. Those records
+carry authoritative funded/not-funded status but limited proposal detail.
 
-### IOG/CF voting-results artifacts
-Phase 2 is only partially complete. `fund-02.pdf` is downloaded and parsed.
-`fund-10.pdf` is downloaded, but the current parser returns 0 rows because the
-layout differs from the Fund 2 PDF. F3-F9 Drive/bit.ly artifacts are permission
-blocked from CLI, and F11-F13 Google Sheets exports return 401 from CLI. These
-blocked artifacts are tracked in `docs/IOG_RESULTS_ACCESS_TRACKER.md`.
+### Project Catalyst voting-results artifacts
+The staff-provided Fund 1 voting-results PDF is cached at
+`data/_raw/iohk-pdfs/fund-01.pdf` and is treated as the source of truth for
+Fund 1 result status despite its limited one-page layout. Project Catalyst
+staff recommended the official CSVs linked from `https://projectcatalyst.io/funds`;
+those CSV-linked Google Sheets are cached for F2-F14 under
+`data/_raw/iohk-results/`.
+
+The CSV/PDF parser writes reviewed intermediates under each fund's
+`_intermediate/iohk_winners.json`. F2-F13 reconciliation sidecars have been
+generated from those intermediates, and three official-result disagreements
+have been applied to canonical records: one each in F2, F4, and F8. F14 is
+cached but not parsed yet because the default exported sheet currently contains
+formula/reference rows rather than result rows.
 
 ### Funds 2–5 completion data
 There was no canonical close-out tracker for these funds. The IOG-published count of "Completed" proposals exists in aggregate (e.g., F2 reports 9 of 11 completed), but per-proposal evidence is scattered across:

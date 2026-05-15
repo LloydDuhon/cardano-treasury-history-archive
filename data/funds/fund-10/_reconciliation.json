@@ -1,19 +1,45 @@
 {
   "fund": 10,
-  "reconciled_at": "2026-05-14T22:44:38Z",
+  "reconciled_at": "2026-05-15T18:43:29Z",
   "sources": {
     "primary": {
       "label": "lidonation_api",
       "path": "data/funds/fund-10/proposals.json"
     },
     "secondary": {
-      "label": "iohk_voting_results_pdf",
+      "label": "projectcatalyst_io",
       "path": "data/funds/fund-10/_intermediate/iohk_winners.json"
     }
   },
-  "agreement_count": 0,
+  "agreement_count": 182,
   "disagreements": [],
-  "unmatched_in_primary": [],
+  "unmatched_in_primary": [
+    {
+      "title": "Staking Baskets Platform - Incentivizing Cardano's Decentralization",
+      "funded_flag": false,
+      "note": "Present in IOG PDF, no title match in Lidonation."
+    },
+    {
+      "title": "Db-Sync Enterprise: high-availability setup of Cardano's Db-Sync to run queries and access on-chain data as a service",
+      "funded_flag": false,
+      "note": "Present in IOG PDF, no title match in Lidonation."
+    },
+    {
+      "title": "[Fimi] IOG's Research Paper for Vietnamese Developer",
+      "funded_flag": false,
+      "note": "Present in IOG PDF, no title match in Lidonation."
+    },
+    {
+      "title": "Future Quest: the next-gen platform for X-prize style impact funding. We're a match-making incubator for high impact projects leveraging web3, community and science.",
+      "funded_flag": false,
+      "note": "Present in IOG PDF, no title match in Lidonation."
+    },
+    {
+      "title": "We're a one-stop high integrity carbon data platform for companies, project developers and investors, leveraging 7-year blockchain supply chain traceability leadership and global clients",
+      "funded_flag": false,
+      "note": "Present in IOG PDF, no title match in Lidonation."
+    }
+  ],
   "unmatched_in_secondary": [
     {
       "primary_proposal_id": "f10-1-atala-prism-learning-communities-empowering-education-by-integrating-ssi-did-and-soulbound-tokens-for-transformative-credentialing-in-the-atala-pris-f10",
@@ -111,11 +137,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-a-dedicated-nft-cip-editor-accelerating-nft-standards-developer-success-f10",
-      "title": "A Dedicated NFT CIP Editor: Accelerating NFT Standards & Developer Success",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-a-fun-free-to-play-aaa-quality-hyper-casual-mobile-game-ready-for-mass-adoption-f10",
       "title": "A fun free to play AAA quality hyper casual mobile game ready for mass adoption",
       "primary_funding_status": "not_approved"
@@ -159,11 +180,6 @@
       "primary_proposal_id": "f10-a-web-based-survival-game-that-gives-nft-project-creators-the-ability-to-bring-gaming-utility-to-their-communities-f10",
       "title": "A Web-Based Survival Game That Gives NFT Project Creators the Ability to Bring Gaming Utility to Their Communities.",
       "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-a-zero-knowledge-proof-framework-for-cardano-based-on-hydra-and-zk-snarks-f10",
-      "title": "A Zero Knowledge Proof framework for Cardano based on Hydra and ZK-SNARKS",
-      "primary_funding_status": "approved"
     },
     {
       "primary_proposal_id": "f10-abjadao-glossary-translating-blockchain-to-arabic-f10",
@@ -271,11 +287,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-adapix-buy-sell-ada-with-r-brazilian-reais-pay-bills-at-millions-of-merchants-and-withdraw-ada-fiat-on-thousand-of-bank-atms-f10",
-      "title": "ADAPIX - Buy & Sell ADA with R$ (Brazilian Reais), pay bills at millions of merchants and withdraw $ADA <-> Fiat on thousand of bank ATMs",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-adaquest-dungeon-crawler-early-access-f10",
       "title": "AdaQuest - Dungeon Crawler - Early Access",
       "primary_funding_status": "not_approved"
@@ -289,11 +300,6 @@
       "primary_proposal_id": "f10-adaquest-mobile-tournaments-f10",
       "title": "AdaQuest Mobile - Tournaments",
       "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-adastat-cardano-explorer-for-pre-prod-and-preview-test-networks-f10",
-      "title": "AdaStat Cardano Explorer for Pre-prod and Preview test networks",
-      "primary_funding_status": "over_budget"
     },
     {
       "primary_proposal_id": "f10-adastatnet-open-source-cardano-blockchain-explorer-f10",
@@ -466,21 +472,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-all-currencies-exchange-f10",
-      "title": "All currencies exchange ",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-allow-cardano-users-to-call-sidechain-smart-contracts-directly-from-their-cardano-mainnet-wallet-f10",
-      "title": "Allow Cardano users to call Sidechain smart contracts directly from their Cardano mainnet wallet",
-      "primary_funding_status": "approved"
-    },
-    {
-      "primary_proposal_id": "f10-allow-using-nfts-from-cardano-and-other-ecosystem-in-onchain-games-hosted-in-the-cardano-ecosystem-f10",
-      "title": "Allow using NFTs from Cardano and other ecosystem in onchain games hosted in the Cardano ecosystem",
-      "primary_funding_status": "approved"
-    },
-    {
       "primary_proposal_id": "f10-alternative-assessment-process-rd-and-experimental-implementation-f10",
       "title": "Alternative Assessment Process R&D and Experimental Implementation",
       "primary_funding_status": "withdrawn"
@@ -531,11 +522,6 @@
       "primary_funding_status": "approved"
     },
     {
-      "primary_proposal_id": "f10-anastasia-labs-streamlining-development-a-user-friendly-smart-contract-library-for-plutarch-and-aiken-design-patterns-efficiency-f10",
-      "title": "Anastasia Labs - Streamlining Development: A User-Friendly Smart Contract Library for Plutarch and Aiken Design Patterns & Efficiency",
-      "primary_funding_status": "approved"
-    },
-    {
       "primary_proposal_id": "f10-anastasia-labs-the-trifecta-of-data-structures-merkle-trees-tries-and-linked-lists-for-cutting-edge-contracts-f10",
       "title": "Anastasia Labs - The Trifecta of Data Structures: Merkle Trees, Tries, and Linked Lists for Cutting-Edge Contracts",
       "primary_funding_status": "approved"
@@ -571,11 +557,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-argus-ai-zero-subscription-saas-model-for-nft-counterfeit-protection-f10",
-      "title": "Argus AI: Zero-Subscription SaaS Model For NFT Counterfeit Protection",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-art-as-activism-artivism-f10",
       "title": "Art as Activism = Artivism",
       "primary_funding_status": "not_approved"
@@ -606,11 +587,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-arweave-gateway-api-f10",
-      "title": "Arweave Gateway API",
-      "primary_funding_status": "over_budget"
-    },
-    {
       "primary_proposal_id": "f10-asia-stakepool-alliance-f10",
       "title": "Asia Stakepool Alliance",
       "primary_funding_status": "not_approved"
@@ -634,16 +610,6 @@
       "primary_proposal_id": "f10-atala-prism-world-tour-onboarding-stakeholders-through-in-person-web3-meetups-workshops-and-events-aiding-digital-identifier-comprehension-fostering-a-f10",
       "title": "Atala PRISM World Tour: Onboarding stakeholders through in person Web3 meetups, workshops, and events, aiding Digital Identifier comprehension, fostering adoption, and facilitating exploration of complex concepts",
       "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-atlas-20-pab-improvements-and-advanced-features-better-leveraging-utxos-to-build-next-generation-dapps-f10",
-      "title": "Atlas 2.0 - PAB improvements and advanced features better leveraging UTxOs to build next-generation dApps",
-      "primary_funding_status": "over_budget"
-    },
-    {
-      "primary_proposal_id": "f10-atrium-dashboard-the-heart-of-cardano-f10",
-      "title": "Atrium Dashboard - The Heart of Cardano",
-      "primary_funding_status": "over_budget"
     },
     {
       "primary_proposal_id": "f10-atrium-profile-minting-customizing-user-account-nft-f10",
@@ -671,16 +637,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-automated-rewards-mechanisms-for-projects-on-cardano-f10",
-      "title": "Automated Rewards mechanisms for projects on Cardano",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-automated-smart-contract-auditing-tool-f10",
-      "title": "Automated Smart Contract Auditing Tool",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-automatic-bookkeeping-and-automatic-yearly-statements-with-smart-contracts-f10",
       "title": "Automatic bookkeeping and automatic Yearly Statements with smart contracts",
       "primary_funding_status": "not_approved"
@@ -698,11 +654,6 @@
     {
       "primary_proposal_id": "f10-b-learn-cardano-learn-and-verify-yourself-through-mcqs-f10",
       "title": "B-Learn Cardano: Learn and Verify Yourself through MCQs.",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-babel-fees-and-sponsored-transactions-now-f10",
-      "title": "Babel Fees and Sponsored Transactions: NOW!",
       "primary_funding_status": "not_approved"
     },
     {
@@ -771,38 +722,8 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-blockchain-4-good-research-f10",
-      "title": "Blockchain 4 Good Research",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-blockchain-and-spirituality-integrating-blockchain-into-the-human-experience-f10",
       "title": "Blockchain and Spirituality - Integrating blockchain into the human experience.",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-blockchain-based-car-insurance-platform-f10",
-      "title": "Blockchain-Based Car Insurance Platform",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-blockchain-based-carbon-credit-solutions-in-transportation-f10",
-      "title": "Blockchain-based Carbon Credit Solutions in Transportation",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-blockchain-based-vehicle-to-everything-v2x-communication-f10",
-      "title": "Blockchain-based Vehicle-to-Everything (V2X) Communication",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-blockchain-driven-carbon-credit-system-for-sustainable-mobility-f10",
-      "title": "Blockchain-Driven Carbon Credit System for Sustainable Mobility",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-blockchain-education-alpha-program-for-vietnamese-f10",
-      "title": "Blockchain Education Alpha Program for Vietnamese",
       "primary_funding_status": "not_approved"
     },
     {
@@ -826,11 +747,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-blockchain-servitization-hub-empowering-african-startups-f10",
-      "title": "Blockchain-Servitization Hub: Empowering African Startups",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-blockchain-student-community-f10",
       "title": "Blockchain Student community",
       "primary_funding_status": "not_approved"
@@ -841,19 +757,9 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-blockfrost-bootstrap-f10",
-      "title": "Blockfrost bootstrap",
-      "primary_funding_status": "approved"
-    },
-    {
       "primary_proposal_id": "f10-blockfrost-multi-provider-transaction-submit-plugin-f10",
       "title": "Blockfrost multi-provider transaction submit plugin",
       "primary_funding_status": "over_budget"
-    },
-    {
-      "primary_proposal_id": "f10-blockfrost-sdks-refresh-f10",
-      "title": "Blockfrost SDKs refresh",
-      "primary_funding_status": "approved"
     },
     {
       "primary_proposal_id": "f10-blockhome-cardano-sustainable-modular-housing-eco-habitat-revolution-powered-by-at-energiasocial-f10",
@@ -878,11 +784,6 @@
     {
       "primary_proposal_id": "f10-blocktrust-identity-wallet-prism-v10-for-browser-with-shared-features-f10",
       "title": "BLOCKTRUST Identity Wallet (PRISM) v1.0 for Browser, with Shared Features",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-blocktrust-production-ready-didcomm-mediator-f10",
-      "title": "BLOCKTRUST production-ready DIDComm Mediator",
       "primary_funding_status": "not_approved"
     },
     {
@@ -926,11 +827,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-breaking-language-barriers-a-proposal-for-expanding-global-accessibility-through-comprehensive-language-support-f10",
-      "title": "Breaking Language Barriers: A Proposal for Expanding Global Accessibility through Comprehensive Language Support",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-breaking-the-language-barrier-english-training-4-on-boarded-french-speaker-students-in-goma-f10",
       "title": "Breaking the language barrier: English training 4 on-boarded French speaker students in Goma",
       "primary_funding_status": "not_approved"
@@ -938,21 +834,6 @@
     {
       "primary_proposal_id": "f10-bridge-between-real-estate-and-cardano-blockchain-f10",
       "title": "Bridge Between Real Estate and Cardano Blockchain ",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-bridgeless-cross-chain-swaps-in-1-click-for-cardano-f10",
-      "title": "Bridgeless Cross-Chain Swaps in 1 click for Cardano",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-bridging-blockchain-worlds-bitcoin-ordinals-on-cardano-for-enhanced-liquidity-f10",
-      "title": "Bridging Blockchain Worlds: Bitcoin Ordinals on Cardano for Enhanced Liquidity",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-bridging-cardano-and-automobile-oems-f10",
-      "title": "Bridging Cardano and Automobile OEMs",
       "primary_funding_status": "not_approved"
     },
     {
@@ -1001,11 +882,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-building-a-financial-ecosystem-through-digital-identity-and-stablecoin-for-maximal-social-impact-f10",
-      "title": "Building a financial ecosystem through digital identity and stablecoin for maximal social impact",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-building-a-learning-verification-and-job-placement-platform-that-will-will-enhance-verification-of-identities-by-different-independent-entities-such-a-f10",
       "title": "Building a Learning, Verification and Job Placement Platform that will will enhance verification of identities by different independent entities such as corporates, 3rd party organizations and learning institutions.",
       "primary_funding_status": "not_approved"
@@ -1041,11 +917,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-buy-or-sell-ada-on-whatsapp-telegram-by-automated-chatbot-on-ramp-and-off-ramp-crypto-fiatada-brl-ada-f10",
-      "title": "Buy or Sell $ADA On WhatsApp & Telegram by Automated ChatBot / On-Ramp and Off-Ramp Crypto Fiat/ADA ($BRL <-> $ADA)",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-buying-cnfts-from-other-platforms-can-be-easy-and-convenient-no-matter-the-buyers-blockchain-or-token-f10",
       "title": "Buying CNFTs from other platforms can be easy and convenient no matter the buyers blockchain or token",
       "primary_funding_status": "not_approved"
@@ -1076,11 +947,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-c2vn-hydra-course-for-non-native-english-community-developers-f10",
-      "title": "[C2VN]: Hydra Course for Non-Native English Community Developers",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-c2vn-marlowe-everyone-can-code-smart-contract-f10",
       "title": "[C2VN]: Marlowe- Everyone can code smart contract",
       "primary_funding_status": "not_approved"
@@ -1103,16 +969,6 @@
     {
       "primary_proposal_id": "f10-c2vn-together-learning-haskellplutus-in-native-language-club-f10",
       "title": "[C2VN]: \"Together Learning Haskell/Plutus in native language\" Club",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-caas-coin-as-a-service-for-smartdev3-copyright-coding-and-web3-development-tokenization-f10",
-      "title": "(CaaS) Coin as a Service for SmartDev3: Copyright, coding, and web3 development tokenization",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-callisto-cardano-mobile-sdks-for-ios-android-platforms-f10",
-      "title": "Callisto - Cardano Mobile SDKs for iOS & Android platforms",
       "primary_funding_status": "not_approved"
     },
     {
@@ -1181,11 +1037,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-cardano-advancement-f10",
-      "title": "Cardano Advancement",
-      "primary_funding_status": "over_budget"
-    },
-    {
       "primary_proposal_id": "f10-cardano-africa-french-community-f10",
       "title": "Cardano-Africa French Community",
       "primary_funding_status": "not_approved"
@@ -1224,11 +1075,6 @@
       "primary_proposal_id": "f10-cardano-based-smart-contracts-plaftorm-for-auctioning-vietnam-state-own-assets-f10",
       "title": "Cardano based smart contracts plaftorm for auctioning Vietnam state-own assets",
       "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-cardano-based-web3-blockchain-center-in-tokushima-yoshinogawa-japan-f10",
-      "title": "Cardano Based Web3 Blockchain Center in Tokushima-Yoshinogawa Japan",
-      "primary_funding_status": "approved"
     },
     {
       "primary_proposal_id": "f10-cardano-beam-gps-based-assets-f10",
@@ -1313,11 +1159,6 @@
     {
       "primary_proposal_id": "f10-cardano-daily-digest-newsletter-send-240-daily-newsletter-posts-over-1-year-about-the-cardano-ecosystem-f10",
       "title": "Cardano Daily Digest Newsletter - Send 240+ daily newsletter posts over 1 year about the Cardano Ecosystem",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-cardano-developer-training-program-f10",
-      "title": "Cardano Developer Training Program",
       "primary_funding_status": "not_approved"
     },
     {
@@ -1406,11 +1247,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-cardano-fuds-cip-implementation-f10",
-      "title": "Cardano FUDS CIP & Implementation",
-      "primary_funding_status": "over_budget"
-    },
-    {
       "primary_proposal_id": "f10-cardano-ghana-community-f10",
       "title": "Cardano Ghana Community.",
       "primary_funding_status": "approved"
@@ -1496,11 +1332,6 @@
       "primary_funding_status": "approved"
     },
     {
-      "primary_proposal_id": "f10-cardano-mendix-plugin-by-the-landano-team-f10",
-      "title": "Cardano-Mendix plugin by the Landano team",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-cardano-middle-east-north-africa-f10",
       "title": "Cardano Middle East & North Africa",
       "primary_funding_status": "not_approved"
@@ -1541,18 +1372,8 @@
       "primary_funding_status": "over_budget"
     },
     {
-      "primary_proposal_id": "f10-cardano-nft-licenses-f10",
-      "title": "Cardano NFT Licenses",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-cardano-nft-support-hub-building-a-comprehensive-help-desk-for-nft-creators-and-developers-f10",
       "title": "Cardano NFT Support Hub: Building a Comprehensive Help Desk for NFT Creators and Developers",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-cardano-node-api-a-multiple-protocol-query-interface-f10",
-      "title": "Cardano Node API: a multiple protocol query interface",
       "primary_funding_status": "not_approved"
     },
     {
@@ -1561,23 +1382,8 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-cardano-node-on-aws-quick-start-f10",
-      "title": "Cardano Node on AWS - Quick Start",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-cardano-node-on-microsoft-azure-marketplace-f10",
-      "title": "Cardano Node on Microsoft Azure Marketplace",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-cardano-node-pre-built-aws-machine-image-ami-f10",
       "title": "Cardano Node Pre-Built AWS Machine Image (AMI)",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-cardano-node-typescript-implementation-f10",
-      "title": "cardano-node typescript implementation",
       "primary_funding_status": "not_approved"
     },
     {
@@ -1613,11 +1419,6 @@
     {
       "primary_proposal_id": "f10-cardano-realfi-consortium-coordinator-role-streamlining-synergies-for-real-world-blockchain-solutions-f10",
       "title": "Cardano RealFi Consortium - Coordinator Role: Streamlining Synergies for Real World Blockchain Solutions",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-cardano-research-and-education-center-with-utn-and-government-agreement-f10",
-      "title": "Cardano Research and Education Center with UTN and Government agreement",
       "primary_funding_status": "not_approved"
     },
     {
@@ -1661,11 +1462,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-cardano-staking-api-development-proposal-precise-insights-and-analysis-f10",
-      "title": "Cardano Staking API Development Proposal – Precise Insights and Analysis",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-cardano-student-blockchain-ambassador-program-f10",
       "title": "Cardano Student Blockchain Ambassador Program",
       "primary_funding_status": "approved"
@@ -1703,11 +1499,6 @@
     {
       "primary_proposal_id": "f10-cardano-ubuntu-informal-business-registry-accounting-dapp-a-blockchain-based-solution-for-informal-businesses-in-africa-f10",
       "title": "Cardano Ubuntu Informal Business Registry & Accounting dApp - a blockchain-based solution for informal businesses in Africa",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-cardano-users-onboarding-guide-f10",
-      "title": "Cardano Users Onboarding Guide",
       "primary_funding_status": "not_approved"
     },
     {
@@ -1756,11 +1547,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-cardanopress-starter-themes-and-templates-f10",
-      "title": "CardanoPress Starter Themes and Templates",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-cardanopress-the-missing-documentation-f10",
       "title": "CardanoPress: The Missing Documentation",
       "primary_funding_status": "not_approved"
@@ -1789,16 +1575,6 @@
       "primary_proposal_id": "f10-cardanos-transactions-for-bank-credits-score-f10",
       "title": "Cardano's Transactions for Bank credits score",
       "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-cardanoscanio-maintenance-f10",
-      "title": "Cardanoscan.io Maintenance",
-      "primary_funding_status": "approved"
-    },
-    {
-      "primary_proposal_id": "f10-cardanoshield-protecting-cardano-wallet-users-f10",
-      "title": "CardanoShield: Protecting Cardano Wallet Users",
-      "primary_funding_status": "approved"
     },
     {
       "primary_proposal_id": "f10-cardanosub-wordpress-content-subscription-powered-by-cardano-blockchain-f10",
@@ -1833,11 +1609,6 @@
     {
       "primary_proposal_id": "f10-catalyst-after-town-hall-entrepreneurship-series-f10",
       "title": "Catalyst After Town Hall Entrepreneurship Series",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-catalyst-brasil-driving-innovation-in-the-cardano-community-project-catalyst-cardano-essentials-in-sao-paulo-brazil-f10",
-      "title": "Catalyst Brasil: Driving innovation in the Cardano Community [Project Catalyst + Cardano Essentials in Sao Paulo, Brazil]",
       "primary_funding_status": "not_approved"
     },
     {
@@ -1956,11 +1727,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-cbia-augmenting-cardano-developer-portal-with-ecosystem-compatibility-dependency-visualizations-for-dev-tools-f10",
-      "title": "CBIA - Augmenting Cardano Developer Portal with ecosystem compatibility & dependency visualizations for dev tools",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-ccc-cardano-conquers-copenhagen-f10",
       "title": "CCC: CARDANO CONQUERS COPENHAGEN",
       "primary_funding_status": "not_approved"
@@ -1983,11 +1749,6 @@
     {
       "primary_proposal_id": "f10-certificates-for-custom-jewellery-f10",
       "title": "Certificates for Custom Jewellery",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-cfd-cardano-fast-deployment-tool-setup-and-manage-your-infrastracture-like-a-charm-f10",
-      "title": "[CFD] - Cardano Fast Deployment tool. Setup and manage your infrastracture like a charm!",
       "primary_funding_status": "not_approved"
     },
     {
@@ -2041,11 +1802,6 @@
       "primary_funding_status": "approved"
     },
     {
-      "primary_proposal_id": "f10-cip-88-refinements-tooling-f10",
-      "title": "CIP-88 Refinements & Tooling",
-      "primary_funding_status": "approved"
-    },
-    {
       "primary_proposal_id": "f10-cip68-nft-project-minting-and-management-tools-f10",
       "title": "CIP68 NFT Project minting and management tools",
       "primary_funding_status": "not_approved"
@@ -2091,18 +1847,8 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-cns-cardano-name-service-f10",
-      "title": "[CNS] Cardano Name Service",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-coderunner4cardano-f10",
       "title": "CodeRunner4Cardano.",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-codi-community-owned-data-insights-powered-by-cardano-f10",
-      "title": "CODI: Community-Owned Data Insights; Powered by Cardano",
       "primary_funding_status": "not_approved"
     },
     {
@@ -2136,11 +1882,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-community-cip-editor-1-year-budget-continued-f10",
-      "title": "Community CIP Editor: 1 year budget (continued)",
-      "primary_funding_status": "approved"
-    },
-    {
       "primary_proposal_id": "f10-community-decentralisation-index-measuring-the-decentralisation-gaps-of-daos-f10",
       "title": "Community Decentralisation Index - Measuring the Decentralisation Gaps of DAOs",
       "primary_funding_status": "not_approved"
@@ -2168,11 +1909,6 @@
     {
       "primary_proposal_id": "f10-community-outreach-program-on-cardano-blockchain-technology-education-in-nigeria-f10",
       "title": "Community outreach program on Cardano blockchain technology education in Nigeria",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-complex-network-tools-for-cardano-funding-a-university-research-group-f10",
-      "title": "Complex Network Tools for Cardano: Funding a University Research Group",
       "primary_funding_status": "not_approved"
     },
     {
@@ -2233,11 +1969,6 @@
     {
       "primary_proposal_id": "f10-cosmex-level-2-speed-cardano-native-assets-order-book-exchange-f10",
       "title": "Cosmex– Level 2 ⚡-speed Cardano Native Assets Order Book Exchange",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-cost-effective-amazonian-solar-powered-servers-empowering-cardano-community-as-global-blockchain-nodes-f10",
-      "title": "Cost-Effective Amazonian Solar-Powered Servers: Empowering Cardano Community as Global Blockchain Nodes",
       "primary_funding_status": "not_approved"
     },
     {
@@ -2313,11 +2044,6 @@
     {
       "primary_proposal_id": "f10-cross-dex-order-aggregator-trades-seamlessly-across-dexes-and-liquidity-pools-on-cardano-f10",
       "title": "Cross-DEX order aggregator - Trades seamlessly across DEXes and liquidity pools on Cardano",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-crypto-jobs-blockchain-talents-recruiting-platform-with-a-job-aggregator-from-multiple-tech-sites-and-sources-f10",
-      "title": "Crypto Jobs, Blockchain Talents & Recruiting Platform With a Job Aggregator from Multiple Tech Sites and Sources",
       "primary_funding_status": "not_approved"
     },
     {
@@ -2441,11 +2167,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-dcone-crypto-api-for-open-source-developers-f10",
-      "title": "DCOne Crypto API for Open Source Developers",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-dcone-crypto-upgrade-v2-f10",
       "title": "DCOne Crypto Upgrade V2",
       "primary_funding_status": "not_approved"
@@ -2474,11 +2195,6 @@
       "primary_proposal_id": "f10-decentralized-index-funds-native-assets-on-cardano-f10",
       "title": "Decentralized (Index) Funds: Native Assets on Cardano",
       "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-decentralized-minting-ada-handle-f10",
-      "title": "Decentralized Minting | ADA Handle",
-      "primary_funding_status": "approved"
     },
     {
       "primary_proposal_id": "f10-decentralized-prediction-market-on-cardano-gaming-f10",
@@ -2621,11 +2337,6 @@
       "primary_funding_status": "approved"
     },
     {
-      "primary_proposal_id": "f10-development-of-a-haskell-edsl-optimized-for-open-source-hardware-for-scalable-sidechains-on-the-cardano-blockchain-f10",
-      "title": "Development of a Haskell-EDSL Optimized for Open-Source Hardware for Scalable Sidechains on the Cardano Blockchain",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-development-of-a-video-game-leveraging-stakepools-for-its-players-competitors-f10",
       "title": "Development of a video game leveraging stakepools for its players / competitors",
       "primary_funding_status": "not_approved"
@@ -2691,11 +2402,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-digital-transformation-of-car-insurance-via-blockchain-f10",
-      "title": "Digital Transformation of Car Insurance via Blockchain",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-dims-distributed-idea-management-system-f10",
       "title": "Dims: Distributed Idea Management System",
       "primary_funding_status": "not_approved"
@@ -2738,11 +2444,6 @@
     {
       "primary_proposal_id": "f10-dlt360-cardaban-a-blockchain-based-open-use-industrial-kanban-system-f10",
       "title": "DLT360: cardaBAN - A blockchain-based, open-use industrial KANBAN system",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-dlt360-cardalabs-business-application-sandbox-powerful-web-30-infrastructure-playground-and-expert-services-for-commercial-clients-f10",
-      "title": "DLT360: cardaLABS Business Application Sandbox - Powerful Web 3.0 Infrastructure, Playground and Expert Services for Commercial Clients",
       "primary_funding_status": "not_approved"
     },
     {
@@ -2818,21 +2519,6 @@
     {
       "primary_proposal_id": "f10-doon-network-web3-publishing-platform-for-independent-journalism-f10",
       "title": "DOON Network: Web3 publishing platform for independent journalism",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-dpay-api-payment-gateway-f10",
-      "title": "DPAY - API PAYMENT GATEWAY",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-dred-cpoker-integration-f10",
-      "title": "DRED cPoker integration",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-dred-decentralized-api-f10",
-      "title": "DRED decentralized API",
       "primary_funding_status": "not_approved"
     },
     {
@@ -3001,11 +2687,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-efficient-atomic-cross-chain-swaps-between-cardano-and-other-blockchains-f10",
-      "title": "Efficient atomic cross chain swaps between Cardano and other blockchains",
-      "primary_funding_status": "over_budget"
-    },
-    {
       "primary_proposal_id": "f10-eidas-20-eu-regulation-guideline-f10",
       "title": "eIDAS 2.0 EU Regulation Guideline",
       "primary_funding_status": "not_approved"
@@ -3013,11 +2694,6 @@
     {
       "primary_proposal_id": "f10-ekival-empowering-decentralized-non-custodial-peer-to-peer-p2p-crypto-fiat-exchange-for-financial-inclusion-f10",
       "title": "Ekival: Empowering Decentralized Non-Custodial Peer-to-Peer (P2P) Crypto-Fiat Exchange for Financial Inclusion",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-electric-vehicle-charging-blockchain-based-efficient-solutions-f10",
-      "title": "Electric Vehicle Charging: Blockchain-Based Efficient Solutions",
       "primary_funding_status": "not_approved"
     },
     {
@@ -3101,26 +2777,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-enable-apps-and-games-built-in-the-cardano-ecosystem-to-leverage-zk-cryptography-for-privacy-and-scalability-f10",
-      "title": "Enable apps and games built in the Cardano ecosystem to leverage ZK cryptography for privacy and scalability",
-      "primary_funding_status": "approved"
-    },
-    {
-      "primary_proposal_id": "f10-enable-apps-and-games-that-require-large-amounts-of-data-to-function-cheaply-while-still-maximizing-availability-and-safety-f10",
-      "title": "Enable apps and games that require large amounts of data to function cheaply while still maximizing availability and safety",
-      "primary_funding_status": "approved"
-    },
-    {
-      "primary_proposal_id": "f10-enable-eternl-f10-f10",
-      "title": "Enable Eternl - F10",
-      "primary_funding_status": "approved"
-    },
-    {
-      "primary_proposal_id": "f10-enable-use-cases-that-require-frequent-message-signing-by-introducing-a-safe-standard-for-message-signing-without-wallet-prompts-f10",
-      "title": "Enable use-cases that require frequent message signing by introducing a safe standard for message signing without wallet prompts",
-      "primary_funding_status": "approved"
-    },
-    {
       "primary_proposal_id": "f10-enabling-caribbean-creativity-building-the-creator-economy-with-cardano-f10",
       "title": "Enabling Caribbean Creativity: Building the Creator Economy with Cardano",
       "primary_funding_status": "not_approved"
@@ -3171,16 +2827,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-enhanced-catalyst-proposals-proposal-deposits-and-bad-actor-penalties-f10",
-      "title": "Enhanced Catalyst Proposals: Proposal Deposits and Bad Actor Penalties",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-enhancing-access-to-token-and-nft-analytics-proposal-for-upgrading-wallet-analytics-functionality-f10",
-      "title": "Enhancing Access to Token and NFT Analytics: Proposal for Upgrading Wallet Analytics Functionality",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-enhancing-cardano-adoption-through-targeted-industry-conferences-and-speaking-engagements-f10",
       "title": "Enhancing Cardano Adoption Through Targeted Industry Conferences and Speaking Engagements",
       "primary_funding_status": "not_approved"
@@ -3211,11 +2857,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-eon-cross-chain-decentralized-data-feeds-from-oracles-f10",
-      "title": "EON - Cross-chain Decentralized Data Feeds from Oracles",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-epoch-news-youtube-video-series-f10",
       "title": "Epoch news Youtube video series",
       "primary_funding_status": "not_approved"
@@ -3229,11 +2870,6 @@
       "primary_proposal_id": "f10-erdos-platform-an-airbnb-competitor-f10",
       "title": "Erdős Platform (An AirBnB Competitor)",
       "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-erlang-sdk-for-blockfrost-api-f10",
-      "title": "Erlang SDK for Blockfrost API",
-      "primary_funding_status": "approved"
     },
     {
       "primary_proposal_id": "f10-establish-coin-media-f10",
@@ -3253,11 +2889,6 @@
     {
       "primary_proposal_id": "f10-establishing-a-blockchain-research-laboratory-for-technical-education-and-innovation-at-thakur-college-of-engineering-technology-tcet-f10",
       "title": "Establishing a Blockchain Research Laboratory for Technical Education and Innovation at Thakur College of Engineering & Technology (TCET)",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-establishment-of-a-blockchain-research-and-innovation-laboratory-at-kcg-college-of-technology-f10",
-      "title": "Establishment of a Blockchain Research and Innovation Laboratory at KCG College of Technology",
       "primary_funding_status": "not_approved"
     },
     {
@@ -3283,11 +2914,6 @@
     {
       "primary_proposal_id": "f10-ethereum2cardano-on-chain-developer-dictionary-f10",
       "title": "Ethereum2Cardano On-Chain Developer Dictionary",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-ethereum2cardano-university-f10",
-      "title": "Ethereum2Cardano University",
       "primary_funding_status": "not_approved"
     },
     {
@@ -3406,11 +3032,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-fida-obtain-class-iigb-regulatory-status-in-the-bermuda-monetary-authority-f10",
-      "title": "FiDa - Obtain Class IIGB regulatory status in the Bermuda Monetary Authority.",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-fida-oracle-integration-for-parametric-insurance-contracts-f10",
       "title": "FiDa - Oracle integration for Parametric Insurance Contracts",
       "primary_funding_status": "not_approved"
@@ -3431,11 +3052,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-fimi-cardano-podcast-for-vietnamese-f10",
-      "title": "[Fimi] Cardano Podcast for Vietnamese",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-fimi-cardanotalk-for-vietnamese-f10",
       "title": "[Fimi] Cardanotalk for Vietnamese",
       "primary_funding_status": "approved"
@@ -3444,11 +3060,6 @@
       "primary_proposal_id": "f10-fimi-catalysttalk-for-vietnamese-f10",
       "title": "[Fimi] CatalystTalk for Vietnamese",
       "primary_funding_status": "approved"
-    },
-    {
-      "primary_proposal_id": "f10-fimi-comprehensive-information-portal-about-cardano-for-the-vietnamese-community-f10",
-      "title": "[Fimi] Comprehensive information portal about Cardano for the Vietnamese community",
-      "primary_funding_status": "not_approved"
     },
     {
       "primary_proposal_id": "f10-fimi-iogs-research-paper-for-vietnamese-developer-f10",
@@ -3511,21 +3122,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-fluxusnetwork-european-investment-security-for-cardano-f10",
-      "title": "FluxusNetwork European investment security for Cardano",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-fluxusnetwork-x-machinations-f10",
-      "title": "FluxusNetwork x Machinations",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-fluxusnetwork-x-scaleway-f10",
-      "title": "FluxusNetwork x Scaleway",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-for-the-community-by-the-community-optimizing-the-roi-of-catalyst-through-listening-to-builders-expert-analysis-and-assessment-of-cardanos-community-g-f10",
       "title": "For the community, by the community: Optimizing the ROI of Catalyst through listening to builders, expert analysis and assessment of Cardano’s Community Grants Fund. Brought to you by Catalyst and Intersect MBO Architects.",
       "primary_funding_status": "leftover"
@@ -3573,16 +3169,6 @@
     {
       "primary_proposal_id": "f10-french-business-and-tech-students-for-catalyst-f10",
       "title": "French business and tech students for Catalyst",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-from-argentina-to-the-world-building-trust-in-the-authenticity-of-academic-documents-with-the-power-of-cardano-a-systematic-literature-mapping-f10",
-      "title": "From Argentina to the world. Building trust in the authenticity of academic documents with the power of Cardano: A systematic literature mapping",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-from-chaos-to-clarity-streamlining-legal-and-infrastructure-challenges-in-the-dao-ecosystem-research-toolkit-product-on-off-chain-co-education-f10",
-      "title": "From Chaos to Clarity: Streamlining Legal and Infrastructure Challenges in the DAO Ecosystem. Research, Toolkit, Product \"On-Off-Chain Co\" & Education.",
       "primary_funding_status": "not_approved"
     },
     {
@@ -3646,11 +3232,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-gamechanger-file-storage-protocol-over-cardano-enhancements-and-http-api-servers-f10",
-      "title": "GameChanger: File Storage Protocol over Cardano - Enhancements and HTTP API Servers",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-gatekeeper-reports-multi-event-support-uxui-refinement-f10",
       "title": "GateKeeper: Reports, Multi-Event Support, & UX/UI Refinement",
       "primary_funding_status": "approved"
@@ -3661,11 +3242,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-gdpr-compliance-guide-f10",
-      "title": "GDPR Compliance Guide",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-genesis-web-30-engineers-excellence-space-f10",
       "title": "Genesis web 3.0_Engineers Excellence space",
       "primary_funding_status": "not_approved"
@@ -3673,11 +3249,6 @@
     {
       "primary_proposal_id": "f10-gero-integrated-farm-management-software-powered-by-cardano-upgrading-to-web3-and-creating-a-new-use-case-on-the-cardano-blockchain-f10",
       "title": "Gero – integrated farm management software powered by Cardano. Upgrading to web3 and creating a new use case on the Cardano Blockchain",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-getting-down-to-business-building-the-professional-decentralised-business-development-network-f10",
-      "title": "Getting down to business! Building the Professional Decentralised Business Development Network",
       "primary_funding_status": "not_approved"
     },
     {
@@ -3716,11 +3287,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-gouroboros-cardano-ouroboros-protocol-server-support-in-golang-f10",
-      "title": "gOuroboros: Cardano Ouroboros protocol server support in Golang",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-graphic-novel-nft-f10",
       "title": "Graphic novel NFT",
       "primary_funding_status": "not_approved"
@@ -3746,11 +3312,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-greencycle-cardano-smart-waste-and-recycling-management-solution-powered-by-at-energiasocial-f10",
-      "title": "GreenCycle // Cardano Smart Waste and Recycling Management Solution powered by @energiasocial",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-greenpulse-cardano-carbon-footprint-calculator-measure-act-make-an-impact-powered-by-at-energiasocial-f10",
       "title": "GreenPulse // Cardano Carbon Footprint Calculator // Measure. Act. Make an Impact powered by @energiasocial",
       "primary_funding_status": "not_approved"
@@ -3768,11 +3329,6 @@
     {
       "primary_proposal_id": "f10-hands-on-training-on-cardano-cli-and-the-eutxo-model-f10",
       "title": "Hands-on training on cardano-cli and the EUTXO model",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-hardware-secured-hot-wallets-for-live-services-dexes-bridges-side-chains-dapps-more-f10",
-      "title": "Hardware-Secured Hot Wallets for Live Services (Dexes, Bridges, Side-Chains, Dapps, & more)",
       "primary_funding_status": "not_approved"
     },
     {
@@ -3861,11 +3417,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-hydrozoa-lightweight-and-scalable-hydra-heads-f10",
-      "title": "Hydrozoa: Lightweight and scalable Hydra Heads",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-iagon-as-a-storage-backend-for-permanentum-f10",
       "title": "Iagon as a storage backend for Permanentum",
       "primary_funding_status": "not_approved"
@@ -3911,11 +3462,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-impact-web3-the-ecosystem-where-impact-measurement-investing-and-verification-collide-and-empower-positive-change-through-the-cardano-blockchain-f10",
-      "title": "Impact Web3 - The Ecosystem where Impact Measurement, Investing, and Verification collide and empower positive change through the Cardano Blockchain",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-impact2earn-cleantech-chat-bot-with-built-in-social-fi-and-game-fi-elements-cardano-based-turn-in-recycling-e-waste-get-a-reward-in-form-of-nfts-f10",
       "title": "impact2earn CleanTech Chat Bot with built-in Social-Fi and Game-Fi elements (Cardano based). Turn in Recycling E-waste & Get a reward in form of NFTs.",
       "primary_funding_status": "not_approved"
@@ -3939,11 +3485,6 @@
       "primary_proposal_id": "f10-in-person-mobile-token-verification-f10",
       "title": "In-Person Mobile Token Verification",
       "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-incentivized-on-chain-project-engagement-platform-f10",
-      "title": "Incentivized On-chain Project Engagement platform",
-      "primary_funding_status": "over_budget"
     },
     {
       "primary_proposal_id": "f10-incentivized-onboarding-identity-in-africa-leveraging-atala-prism-f10",
@@ -4006,16 +3547,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-integrate-cardano-blockchain-to-pitchtalk-platform-for-communication-between-projects-investors-and-communities-f10",
-      "title": "Integrate Cardano blockchain to PitchTalk - platform for communication between projects, investors, and communities",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-integrated-wallet-media-player-enhancing-accessibility-and-convenience-f10",
-      "title": "Integrated Wallet Media Player: Enhancing Accessibility and Convenience",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-integrating-ada-into-multichain-crowdfunding-platform-charity-impact-f10",
       "title": "Integrating ADA into multichain crowdfunding platform [Charity Impact]",
       "primary_funding_status": "not_approved"
@@ -4046,11 +3577,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-intergrate-bitbox02-hardware-wallet-into-cardano-wallets-and-dapps-f10",
-      "title": "Intergrate BitBox02 Hardware wallet into Cardano Wallets and Dapps",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-introducing-cardano-laboratory-a-development-and-testing-environment-for-cardano-f10",
       "title": "Introducing Cardano Laboratory: A Development and Testing Environment for Cardano",
       "primary_funding_status": "over_budget"
@@ -4058,11 +3584,6 @@
     {
       "primary_proposal_id": "f10-investor-tech-conference-connect-investors-with-cardano-start-ups-as-well-as-connect-cardano-tech-with-successful-web2-startups-f10",
       "title": "Investor & Tech conference: Connect investors with Cardano start-ups as well as connect Cardano tech with successful Web2 startups.",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-invoicing-sdk-f10",
-      "title": "Invoicing SDK",
       "primary_funding_status": "not_approved"
     },
     {
@@ -4126,11 +3647,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-koios-evolution-enhancements-infra-support-maintenance-f10",
-      "title": "Koios Evolution: Enhancements, Infra Support & Maintenance",
-      "primary_funding_status": "approved"
-    },
-    {
       "primary_proposal_id": "f10-koios-spo-tools-development-cntools-gliveview-topologyupdater-f10",
       "title": "Koios SPO Tools development (CNTools, gLiveView, topologyUpdater)",
       "primary_funding_status": "approved"
@@ -4148,11 +3664,6 @@
     {
       "primary_proposal_id": "f10-kreate-vibrant-community-marketplace-for-millions-of-art-lovers-f10",
       "title": "Kreate - Vibrant Community & Marketplace for Millions of Art Lovers",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-kuberide-20-a-complete-ide-for-plutus-smart-contracts-development-f10",
-      "title": "KuberIDE 2.0: A complete IDE for Plutus Smart Contracts development",
       "primary_funding_status": "not_approved"
     },
     {
@@ -4203,11 +3714,6 @@
     {
       "primary_proposal_id": "f10-leafai-lets-you-grow-more-sustainably-and-efficiently-fights-resource-scarcity-while-creating-access-to-economic-identity-and-knowledge-for-small-farm-f10",
       "title": "LeafAI lets you grow more sustainably and efficiently, fights resource scarcity, while creating access to economic identity and knowledge for small farmers all over the world.",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-learn-and-earn-web3-education-platform-powered-by-an-ai-co-pilot-for-course-creators-and-learners-f10",
-      "title": "Learn and Earn Web3 Education Platform Powered by an AI co-pilot for course creators and learners",
       "primary_funding_status": "not_approved"
     },
     {
@@ -4316,11 +3822,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-maestro-sdks-ecosystem-integrations-enabling-interoperability-with-scalable-blockchain-infrastructure-f10",
-      "title": "Maestro SDKs & ecosystem integrations - Enabling interoperability with scalable blockchain infrastructure",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-mafoc-a-composable-chain-indexer-framework-f10",
       "title": "Mafoc: a composable chain indexer framework",
       "primary_funding_status": "not_approved"
@@ -4359,11 +3860,6 @@
       "primary_proposal_id": "f10-marlowe-decentralized-oracle-integration-f10",
       "title": "Marlowe - Decentralized Oracle Integration",
       "primary_funding_status": "approved"
-    },
-    {
-      "primary_proposal_id": "f10-marlowe-hub-unifying-platform-for-marlowe-smart-contracts-oracles-and-mediators-auditors-and-developers-f10",
-      "title": "Marlowe Hub: Unifying Platform for Marlowe Smart Contracts, Oracles, and Mediators, Auditors and Developers",
-      "primary_funding_status": "over_budget"
     },
     {
       "primary_proposal_id": "f10-marlowe-runtime-sdks-f10",
@@ -4486,18 +3982,8 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-mica-eu-crypto-regulation-guideline-f10",
-      "title": "MiCA EU Crypto Regulation Guideline",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-migrate-our-full-value-business-valuation-tool-onto-the-cardano-blockchain-f10",
       "title": "Migrate our Full Value Business Valuation Tool onto the Cardano Blockchain",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-milkomeda-smart-contract-indexing-f10",
-      "title": "Milkomeda Smart Contract Indexing",
       "primary_funding_status": "not_approved"
     },
     {
@@ -4508,11 +3994,6 @@
     {
       "primary_proposal_id": "f10-mindtradeai-biometric-insight-for-crypto-trading-f10",
       "title": "Mindtrade.ai : Biometric insight for crypto trading",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-minefreeukraine-coordination-and-defi-platform-for-large-scale-humanitarian-demining-and-socio-economic-recovery-of-ukraine-f10",
-      "title": "MineFreeUkraine: Coordination and DeFi Platform for Large-Scale Humanitarian Demining and Socio-Economic Recovery of Ukraine",
       "primary_funding_status": "not_approved"
     },
     {
@@ -4596,21 +4077,6 @@
       "primary_funding_status": "approved"
     },
     {
-      "primary_proposal_id": "f10-mlabs-cemscript-sdk-get-your-dapp-implementation-from-annotated-on-chain-logic-state-machine-f10",
-      "title": "MLabs – CEMScript SDK: get your DApp implementation from annotated on-chain logic state-machine",
-      "primary_funding_status": "approved"
-    },
-    {
-      "primary_proposal_id": "f10-mlabs-congested-testnet-f10",
-      "title": "MLabs – Congested Testnet",
-      "primary_funding_status": "approved"
-    },
-    {
-      "primary_proposal_id": "f10-mlabs-dens-decentralized-name-system-phase-i-f10",
-      "title": "MLabs - DeNS (Decentralized Name System): Phase I",
-      "primary_funding_status": "approved"
-    },
-    {
       "primary_proposal_id": "f10-mlabs-enhancing-and-evolving-the-plutus-simple-model-psm-test-library-f10",
       "title": "MLabs – Enhancing and Evolving the Plutus Simple Model (PSM) Test Library",
       "primary_funding_status": "approved"
@@ -4623,11 +4089,6 @@
     {
       "primary_proposal_id": "f10-mlabs-purus-purescript-to-plutus-core-compiler-f10",
       "title": "MLabs - Purus: PureScript to Plutus Core compiler",
-      "primary_funding_status": "approved"
-    },
-    {
-      "primary_proposal_id": "f10-mlabs-re-think-cip-30-wallet-interface-standard-f10",
-      "title": "MLabs - Re-think CIP-30 wallet interface standard",
       "primary_funding_status": "approved"
     },
     {
@@ -4711,11 +4172,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-nanopublications-dashboard-a-searchable-natural-language-tool-for-atomic-knowledge-sharing-f10",
-      "title": "Nanopublications Dashboard: a searchable natural language tool for atomic knowledge-sharing",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-native-token-data-market-aggregator-sustainable-investing-opinion-on-cardano-by-yallacap-f10",
       "title": "Native Token Data Market Aggregator: Sustainable Investing Opinion on Cardano by YallaCap",
       "primary_funding_status": "not_approved"
@@ -4724,11 +4180,6 @@
       "primary_proposal_id": "f10-naturopura-a-natural-farming-market-place-and-assistance-f10",
       "title": "Naturopura A natural Farming Market Place and Assistance",
       "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-naumachia-rust-smart-contract-development-toolkit-f10",
-      "title": "Naumachia: Rust Smart Contract Development Toolkit",
-      "primary_funding_status": "over_budget"
     },
     {
       "primary_proposal_id": "f10-need-cash-a-solution-to-ease-financial-transactions-in-africa-f10",
@@ -4761,19 +4212,9 @@
       "primary_funding_status": "approved"
     },
     {
-      "primary_proposal_id": "f10-newm-academy-learn-to-earn-education-platform-f10",
-      "title": "NEWM Academy - Learn-to-Earn Education Platform",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-newm-community-cardano-is-not-a-ghost-chain-worldwide-marketing-push-for-cardano-f10",
       "title": "NEWM Community - Cardano Is Not a Ghost Chain - Worldwide Marketing Push for Cardano",
       "primary_funding_status": "approved"
-    },
-    {
-      "primary_proposal_id": "f10-newm-community-onboard-android-devs-to-cardano-with-plutok-plutus-virtual-machine-for-kotlin-f10",
-      "title": "NEWM Community - Onboard Android Devs to Cardano with PlutoK - Plutus Virtual Machine for Kotlin",
-      "primary_funding_status": "not_approved"
     },
     {
       "primary_proposal_id": "f10-newm-community-proof-of-human-poh-system-enhance-security-for-smart-contracts-f10",
@@ -4788,11 +4229,6 @@
     {
       "primary_proposal_id": "f10-newm-music-streaming-app-mobile-integration-f10",
       "title": "NEWM - Music Streaming App - Mobile Integration",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-newm-stream-token-analytics-integration-f10",
-      "title": "NEWM - Stream Token Analytics Integration",
       "primary_funding_status": "not_approved"
     },
     {
@@ -4851,11 +4287,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-nft-staking-smart-contracts-audit-f10",
-      "title": "NFT Staking Smart Contracts Audit",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-nft-staking-smart-contracts-f10",
       "title": "NFT Staking Smart Contracts",
       "primary_funding_status": "not_approved"
@@ -4888,11 +4319,6 @@
     {
       "primary_proposal_id": "f10-no-code-shopify-plugin-to-accept-ada-and-other-native-cardano-tokens-f10",
       "title": "No-Code Shopify plugin to accept $ADA and other native Cardano tokens",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-nomos-side-chain-cross-chain-bridge-for-cardano-f10",
-      "title": "Nomos: Side-Chain & Cross-Chain Bridge for Cardano",
       "primary_funding_status": "not_approved"
     },
     {
@@ -4966,11 +4392,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-nunet-enabling-elasticsearch-clusters-on-decentralized-hardware-elasticsearch-is-a-fast-and-scalable-search-and-analytics-engine-providing-powerful-an-f10",
-      "title": "NuNet: Enabling Elasticsearch Clusters on decentralized hardware // Elasticsearch is a fast and scalable search and analytics engine, providing powerful analytics and visualization tools. NuNet will enable running it on its decentralized network.",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-nunet-running-oss-chatgpt-alternatives-on-decentralized-network-enabling-cheap-and-reliable-open-source-chatbots-alternatives-on-decentralized-hardwar-f10",
       "title": "NuNet: Running OSS ChatGPT alternatives on decentralized network // Enabling cheap and reliable Open Source chatbots alternatives on decentralized hardware supporting independence from big tech solutions.",
       "primary_funding_status": "not_approved"
@@ -4988,11 +4409,6 @@
     {
       "primary_proposal_id": "f10-octowars-online-trading-card-game-core-card-combat-system-f10",
       "title": "OctoWars - Online Trading Card Game, Core Card Combat System",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-official-partnership-with-a-top-german-car-manufacturer-f10",
-      "title": "Official Partnership with a Top German Car Manufacturer",
       "primary_funding_status": "not_approved"
     },
     {
@@ -5111,11 +4527,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-open-multisig-synchronization-service-f10",
-      "title": "Open Multisig Synchronization Service",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-open-source-automation-f10",
       "title": "Open Source Automation",
       "primary_funding_status": "not_approved"
@@ -5129,16 +4540,6 @@
       "primary_proposal_id": "f10-open-source-car-connect-f10",
       "title": "Open Source Car-Connect",
       "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-open-source-cardano-api-and-webhooks-f10",
-      "title": "Open Source Cardano API and Webhooks",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-open-source-database-synchronization-sdk-f10",
-      "title": "Open-Source database synchronization SDK",
-      "primary_funding_status": "over_budget"
     },
     {
       "primary_proposal_id": "f10-open-source-distributed-key-signing-sdk-for-cardano-wallet-f10",
@@ -5166,16 +4567,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-open-source-ledger-nano-x-flutter-sdk-and-vespr-wallet-integration-f10",
-      "title": "Open-Source Ledger Nano X Flutter SDK and VESPR Wallet Integration",
-      "primary_funding_status": "over_budget"
-    },
-    {
-      "primary_proposal_id": "f10-open-source-marketplace-opensea-like-for-milkomeda-usecases-and-seedstars-galaxy-f10",
-      "title": "Open source Marketplace “Opensea-like” for MIlkomeda usecases and Seedstars Galaxy",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-open-source-minting-platform-for-fts-and-nfts-with-payment-gateway-and-wallet-integration-f10",
       "title": "Open Source Minting Platform for FTs and NFTs - With Payment Gateway and Wallet integration",
       "primary_funding_status": "not_approved"
@@ -5183,11 +4574,6 @@
     {
       "primary_proposal_id": "f10-open-source-mobility-and-transportation-wallet-f10",
       "title": "Open Source Mobility and Transportation Wallet",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-open-source-nft-display-and-gallery-f10",
-      "title": "Open Source NFT Display and Gallery",
       "primary_funding_status": "not_approved"
     },
     {
@@ -5211,18 +4597,8 @@
       "primary_funding_status": "approved"
     },
     {
-      "primary_proposal_id": "f10-open-source-prism-node-f10",
-      "title": "Open source PRISM Node",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-open-source-python-tool-for-linkage-finance-smart-contract-interaction-f10",
       "title": "Open Source Python Tool for Linkage Finance Smart Contract Interaction",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-open-source-sidechain-launcher-toolkit-f10",
-      "title": "Open Source Sidechain Launcher Toolkit",
       "primary_funding_status": "not_approved"
     },
     {
@@ -5233,11 +4609,6 @@
     {
       "primary_proposal_id": "f10-open-source-smart-contract-library-f10",
       "title": "Open Source Smart Contract Library",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-open-source-snapshotter-f10",
-      "title": "Open Source Snapshotter",
       "primary_funding_status": "not_approved"
     },
     {
@@ -5256,11 +4627,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-open-source-widget-nocode-keyword-coins-real-time-prices-for-tokens-on-cardano-ecosystem-embedded-in-content-for-websites-portals-blogs-f10",
-      "title": "Open Source Widget NoCode \"Keyword Coins Real Time Prices\" for Tokens on Cardano Ecosystem Embedded in Content for Websites, Portals & Blogs",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-open-source-yield-optimizer-on-cardano-f10",
       "title": "Open Source Yield Optimizer on Cardano",
       "primary_funding_status": "not_approved"
@@ -5271,18 +4637,8 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-open-sourced-licensing-agreement-legal-standard-for-cardano-digital-collectibles-f10",
-      "title": "Open Sourced Licensing Agreement & Legal Standard for Cardano Digital Collectibles",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-open-standard-for-cross-game-achievement-system-to-gamify-onchain-participation-f10",
       "title": "Open standard for cross-game achievement system to gamify onchain participation",
-      "primary_funding_status": "approved"
-    },
-    {
-      "primary_proposal_id": "f10-open-transaction-chaining-tooling-to-speed-up-cardano-dapps-by-muesliswap-f10",
-      "title": "Open Transaction Chaining tooling to speed up Cardano dApps - By MuesliSwap",
       "primary_funding_status": "approved"
     },
     {
@@ -5331,11 +4687,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-optimizing-display-technologies-f10",
-      "title": "Optimizing Display Technologies",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-optimmaestro-ispo-integration-and-education-initiative-f10",
       "title": "Optim+Maestro ISPO Integration and Education Initiative",
       "primary_funding_status": "not_approved"
@@ -5371,11 +4722,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-paas-smart-contract-as-a-service-a-quick-and-low-cost-approach-to-build-dapps-f10",
-      "title": "PAAS - Smart Contract As a Service. A Quick and Low Cost Approach to Build dApps.",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-packaging-cardano-node-for-guix-a-functional-package-manger-f10",
       "title": "Packaging Cardano-Node for Guix, A Functional Package Manger",
       "primary_funding_status": "not_approved"
@@ -5384,11 +4730,6 @@
       "primary_proposal_id": "f10-paideia-dao-management-software-suite-f10",
       "title": "Paideia DAO Management Software Suite",
       "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-paima-onchain-game-integration-of-frontend-game-engines-novel-technology-f10",
-      "title": "Paima onchain game integration of Frontend Game Engines & Novel Technology",
-      "primary_funding_status": "approved"
     },
     {
       "primary_proposal_id": "f10-pallas-open-source-maintainer-f10",
@@ -5408,11 +4749,6 @@
     {
       "primary_proposal_id": "f10-parallel-implementation-of-uiux-to-replace-ideascale-crafted-by-community-using-serverless-and-edge-computing-f10",
       "title": "Parallel implementation of UI/UX to replace IDEASCALE, Crafted by Community, using Serverless and Edge Computing",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-passkeys-as-read-only-wallets-f10",
-      "title": "Passkeys as Read Only Wallets",
       "primary_funding_status": "not_approved"
     },
     {
@@ -5438,11 +4774,6 @@
     {
       "primary_proposal_id": "f10-peerhive-empowering-smes-with-real-world-asset-financing-rwa-f10",
       "title": "Peerhive : Empowering SMEs with Real-World Asset Financing (RWA)",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-perun-virtual-channels-as-payment-infrastructure-f10",
-      "title": "Perun Virtual Channels as Payment Infrastructure",
       "primary_funding_status": "not_approved"
     },
     {
@@ -5523,11 +4854,6 @@
     {
       "primary_proposal_id": "f10-pos-capital-venture-capital-approach-for-the-catalyst-fund-to-nurturing-growth-in-the-cardano-ecosystem-in-an-ongoing-manner-innovation-is-not-happeni-f10",
       "title": "PoS Capital - Venture Capital approach for the Catalyst Fund, to nurturing Growth in the Cardano Ecosystem in an ongoing manner - Innovation is not happening once a year!",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-post-quantum-security-for-cardano-accounts-f10",
-      "title": "Post-quantum security for Cardano accounts 🛡",
       "primary_funding_status": "not_approved"
     },
     {
@@ -5621,11 +4947,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-project-catalyst-funded-project-playbook-revamp-and-marketingcommunity-project-support-smarthubs-f10",
-      "title": "Project Catalyst Funded Project PlayBook Revamp and Marketing/Community Project Support - SmartHubs",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-project-catalyst-learning-management-system-for-skill-acquisition-and-contribution-tracking-f10",
       "title": "Project Catalyst Learning management system for skill-acquisition and contribution tracking.",
       "primary_funding_status": "not_approved"
@@ -5633,11 +4954,6 @@
     {
       "primary_proposal_id": "f10-project-community-verification-nftpass-f10",
       "title": "Project Community Verification - NFTPass",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-promoting-cardano-in-mainland-china-f10",
-      "title": "Promoting Cardano in Mainland China",
       "primary_funding_status": "not_approved"
     },
     {
@@ -5699,11 +5015,6 @@
       "primary_proposal_id": "f10-provide-multiple-templates-on-how-to-write-apps-and-games-for-the-cardano-ecosystem-using-paima-f10",
       "title": "Provide multiple templates on how to write apps and games for the Cardano ecosystem using Paima",
       "primary_funding_status": "approved"
-    },
-    {
-      "primary_proposal_id": "f10-providing-equal-access-to-technology-and-web-30-through-resources-and-education-f10",
-      "title": "Providing Equal Access to Technology and Web 3.0 Through Resources and Education",
-      "primary_funding_status": "not_approved"
     },
     {
       "primary_proposal_id": "f10-psychdao-psychology-dao-for-mental-health-p2p-learning-f10",
@@ -5851,11 +5162,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-research-paper-on-impact-in-cardano-f10",
-      "title": "Research Paper on Impact in Cardano",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-research-strategically-competing-with-mobile-money-markets-in-malawi-f10",
       "title": "Research: Strategically Competing with Mobile Money Markets in Malawi",
       "primary_funding_status": "not_approved"
@@ -5886,16 +5192,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-revolutionary-nft-sdk-software-development-kit-for-smart-contract-denojs-that-will-finally-make-the-cardano-nft-space-decentralized-and-steepens-the-a-f10",
-      "title": "Revolutionary NFT SDK (Software Development Kit) for Smart Contract (deno/js) that will finally make the Cardano NFT space decentralized and steepens the adoption curve for new businesses!",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-revolutionary-pro-community-nft-smart-contract-splitting-service-fee-between-multiple-parties-on-chain-affiliate-precision-in-lovelaces-without-any-ro-f10",
-      "title": "Revolutionary pro-community NFT Smart Contract. Splitting service fee between multiple parties, on-chain affiliate, precision in lovelaces without any rounding up to the detriment of creators or users.",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-revolutionizing-cardano-rewards-contracts-aiken-language-upgrade-for-efficiency-and-functionality-f10",
       "title": "Revolutionizing Cardano Rewards Contracts: Aiken Language Upgrade for Efficiency and Functionality",
       "primary_funding_status": "not_approved"
@@ -5903,11 +5199,6 @@
     {
       "primary_proposal_id": "f10-revolutionizing-cardanos-marketing-the-fairy-show-unleashed-disruptive-innovation-and-social-engagement-f10",
       "title": "Revolutionizing Cardano's Marketing: The Fairy Show Unleashed - Disruptive Innovation and Social Engagement",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-rewards-without-borders-a-web2-compatible-cross-chain-digital-collectibles-loyalty-program-on-cardano-f10",
-      "title": "Rewards Without Borders: A Web2 Compatible, Cross-Chain Digital Collectibles Loyalty Program on Cardano",
       "primary_funding_status": "not_approved"
     },
     {
@@ -5991,11 +5282,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-satellite-oracle-cardano-based-measurement-reporting-and-verification-mrv-platform-for-environmental-protection-and-restoration-f10",
-      "title": "Satellite Oracle: Cardano-based Measurement, Reporting and Verification (MRV) Platform for Environmental Protection and Restoration",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-scalable-high-assurance-nft-creator-verification-f10",
       "title": "Scalable, High-Assurance, NFT Creator Verification",
       "primary_funding_status": "not_approved"
@@ -6008,16 +5294,6 @@
     {
       "primary_proposal_id": "f10-scaling-taptools-f10",
       "title": "Scaling TapTools",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-scalus-multiplatform-scala-implementation-of-cardano-plutus-f10",
-      "title": "Scalus – multiplatform Scala implementation of Cardano Plutus",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-scarab-a-cardano-node-client-implementation-in-functional-scala-f10",
-      "title": "Scarab - a cardano-node client implementation in functional Scala",
       "primary_funding_status": "not_approved"
     },
     {
@@ -6071,11 +5347,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-self-sovereign-identity-ssi-integration-into-crypto-wallets-f10",
-      "title": "Self sovereign identity (SSI) integration into crypto wallets",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-self-sustainable-cardano-student-incubator-sri-lanka-f10",
       "title": "Self Sustainable Cardano Student Incubator Sri Lanka",
       "primary_funding_status": "not_approved"
@@ -6098,11 +5369,6 @@
     {
       "primary_proposal_id": "f10-sequential-squares-open-source-decentralized-music-publishing-tools-built-for-adao-f10",
       "title": "Sequential Squares - Open Source Decentralized Music Publishing Tools Built for ADAO",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-servitization-blockchain-accelerator-revolutionizing-business-models-f10",
-      "title": "Servitization-Blockchain Accelerator: Revolutionizing Business Models",
       "primary_funding_status": "not_approved"
     },
     {
@@ -6131,18 +5397,8 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-simple-node-sharing-on-cardano-f10",
-      "title": "Simple Node Sharing on Cardano",
-      "primary_funding_status": "approved"
-    },
-    {
       "primary_proposal_id": "f10-singular-mobile-centric-defi-app-f10",
       "title": "Singular-Mobile Centric DeFi App",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-sisu-bridge-explorer-a-cross-chain-bridge-explorer-for-ada-and-evm-chains-to-enable-seamless-token-transfers-f10",
-      "title": "Sisu Bridge Explorer: A Cross-Chain Bridge Explorer for ADA and EVM Chains to enable seamless Token Transfers",
       "primary_funding_status": "not_approved"
     },
     {
@@ -6226,11 +5482,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-solarwise-cardano-renewable-energy-oracle-unleash-the-power-of-users-and-communities-powered-by-at-energiasocial-f10",
-      "title": "SolarWise // Cardano Renewable Energy Oracle // Unleash the Power of Users and Communities powered by @energiasocial",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-solve-property-industry-problems-utilize-cardano-for-water-and-electricity-meter-locations-and-secure-long-term-storage-of-essential-property-informat-f10",
       "title": "Solve Property Industry Problems : Utilize Cardano for Water and Electricity Meter Locations and Secure Long-term Storage of Essential Property Information",
       "primary_funding_status": "not_approved"
@@ -6256,11 +5507,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-space-trains-and-metadata-scaling-our-communities-of-trust-f10",
-      "title": "Space Trains and Metadata: Scaling our Communities of Trust",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-spaciom-an-immersive-home-for-daos-f10",
       "title": "SPACIOM: An Immersive Home For DAOs",
       "primary_funding_status": "not_approved"
@@ -6269,11 +5515,6 @@
       "primary_proposal_id": "f10-spaciom-creating-stronger-connections-through-3d-interaction-digital-ownership-f10",
       "title": "SPACIOM: Creating Stronger Connections Through 3D Interaction & Digital Ownership",
       "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-spectrum-network-cross-chain-messaging-protocol-f10",
-      "title": "Spectrum Network | Cross-chain Messaging Protocol",
-      "primary_funding_status": "approved"
     },
     {
       "primary_proposal_id": "f10-spectrum-network-security-audit-f10",
@@ -6361,11 +5602,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-spot-converter-buy-cardano-nfts-with-any-crypto-f10",
-      "title": "Spot Converter: Buy Cardano NFTs with Any Crypto",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-spouse-open-and-self-hosted-spo-security-evaluation-tool-f10",
       "title": "SPOUSE: Open and Self-hosted SPO Security Evaluation Tool",
       "primary_funding_status": "not_approved"
@@ -6421,11 +5657,6 @@
       "primary_funding_status": "over_budget"
     },
     {
-      "primary_proposal_id": "f10-staking-basket-ecosystem-contract-audit-incentivizing-cardanos-decentralization-f10",
-      "title": "Staking Basket Ecosystem Contract + Audit - Incentivizing Cardano's Decentralization",
-      "primary_funding_status": "over_budget"
-    },
-    {
       "primary_proposal_id": "f10-staking-baskets-platform-incentivizing-cardanos-decentralization-f10",
       "title": "Staking Baskets Platform - Incentivizing Cardano’s Decentralization",
       "primary_funding_status": "over_budget"
@@ -6436,11 +5667,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-standardizing-seamless-blockchain-integration-for-unity-game-engine-f10",
-      "title": "Standardizing Seamless Blockchain Integration for Unity Game Engine",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-stargazer-defi-yield-optimizer-for-cardano-f10",
       "title": "Stargazer: DeFi Yield Optimizer for Cardano",
       "primary_funding_status": "not_approved"
@@ -6448,16 +5674,6 @@
     {
       "primary_proposal_id": "f10-state-of-mind-as-a-service-somaas-f10",
       "title": "State-of-mind-as-a-service (SoMaaS)",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-statur-reputation-model-for-web3-ecosystem-that-encourages-positive-behaviour-f10",
-      "title": "Statur: Reputation Model for Web3 Ecosystem that encourages positive behaviour",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-stellar-contracts-open-source-next-generation-library-for-great-contract-architecture-f10",
-      "title": "Stellar Contracts: Open-source next-generation library for great contract architecture",
       "primary_funding_status": "not_approved"
     },
     {
@@ -6523,16 +5739,6 @@
     {
       "primary_proposal_id": "f10-sundae-labs-automated-price-discovery-f10",
       "title": "Sundae Labs Automated Price Discovery",
-      "primary_funding_status": "approved"
-    },
-    {
-      "primary_proposal_id": "f10-sundae-labs-hydra-ledger-only-mode-f10",
-      "title": "Sundae Labs Hydra Ledger-only Mode",
-      "primary_funding_status": "approved"
-    },
-    {
-      "primary_proposal_id": "f10-sundae-labs-hydra-transaction-stream-plugin-f10",
-      "title": "Sundae Labs Hydra Transaction Stream Plugin",
       "primary_funding_status": "approved"
     },
     {
@@ -6636,24 +5842,9 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-teaching-turks-cardano-through-online-workshops-youtube-videos-and-community-building-f10",
-      "title": "Teaching Turks Cardano Through Online Workshops, Youtube videos, and Community Building",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-tekmirio-non-custodial-nft-staking-platform-f10",
       "title": "Tekmirio Non-Custodial NFT Staking Platform",
       "primary_funding_status": "over_budget"
-    },
-    {
-      "primary_proposal_id": "f10-templatized-cardano-node-hosted-on-decentralized-compute-infrastructure-f10",
-      "title": "Templatized Cardano Node Hosted on Decentralized Compute Infrastructure",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-terraform-support-for-blockfrostio-f10",
-      "title": "Terraform support for Blockfrost.io",
-      "primary_funding_status": "not_approved"
     },
     {
       "primary_proposal_id": "f10-terrarock-bringing-dao-structure-and-revolutionizing-real-estate-investments-with-cryptoblockchain-integration-f10",
@@ -6661,18 +5852,8 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-texting-through-wallets-f10",
-      "title": "Texting through wallets",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-the-adaworkhub-initiative-catalyzing-student-job-markets-f10",
       "title": "The AdaWorkHub Initiative: Catalyzing Student Job Markets",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-the-beam-network-decentralized-asset-protocol-f10",
-      "title": "The Beam Network: Decentralized Asset Protocol",
       "primary_funding_status": "not_approved"
     },
     {
@@ -6703,11 +5884,6 @@
     {
       "primary_proposal_id": "f10-the-funintecs-student-hubs-the-cascade-effect-in-the-project-catalyst-and-cardano-f10",
       "title": "The FUNINTEC's student Hubs: The cascade effect in the Project Catalyst and Cardano",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-the-goal-mechanism-and-dynamics-of-incentivized-compliance-for-task-and-goal-achievement-f10",
-      "title": "The Goal Mechanism and Dynamics of Incentivized Compliance for Task and Goal Achievement",
       "primary_funding_status": "not_approved"
     },
     {
@@ -6786,11 +5962,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-to-develop-the-means-to-introduce-blockchain-technology-to-the-construction-trades-workforce-using-blockchain-to-create-efficiencies-in-purchasing-and-f10",
-      "title": "To develop the means to introduce blockchain technology to the construction trades workforce. Using blockchain to create efficiencies in purchasing and scheduling. ",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-token-allies-the-first-decentralized-vc-in-cardano-2nd-phase-f10",
       "title": "Token Allies the First Decentralized VC in Cardano - 2nd phase",
       "primary_funding_status": "not_approved"
@@ -6818,11 +5989,6 @@
     {
       "primary_proposal_id": "f10-token-reward-system-inside-adam-app-f10",
       "title": "Token reward system inside ADAM app",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-token-verification-alliance-f10",
-      "title": "Token Verification Alliance",
       "primary_funding_status": "not_approved"
     },
     {
@@ -6931,11 +6097,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-typhon-wallet-mobile-app-f10",
-      "title": "Typhon Wallet Mobile App",
-      "primary_funding_status": "over_budget"
-    },
-    {
       "primary_proposal_id": "f10-uctalentio-cardano-web3-talent-platform-where-users-build-profile-grow-network-own-future-f10",
       "title": "UCTalent.io - Cardano Web3 Talent Platform, where users build profile, grow network, own future! ",
       "primary_funding_status": "not_approved"
@@ -7001,11 +6162,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-unlocking-privacy-on-cardano-implementing-an-anonymous-donationtransaction-system-f10",
-      "title": "Unlocking Privacy on Cardano: Implementing an Anonymous Donation/Transaction System",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-unlocking-the-power-of-cnfts-with-charity-f10",
       "title": "Unlocking the Power of cNFTs with Charity",
       "primary_funding_status": "not_approved"
@@ -7026,29 +6182,14 @@
       "primary_funding_status": "approved"
     },
     {
-      "primary_proposal_id": "f10-upgrade-cardanosharp-library-cross-platform-compatibility-optimized-coin-selection-f10",
-      "title": "Upgrade CardanoSharp Library: Cross-Platform Compatibility & Optimized Coin Selection",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-urban-farmer-education-series-f10",
       "title": "Urban Farmer Education Series",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-us-legal-database-and-compliance-assistant-f10",
-      "title": "U.S. Legal Database and Compliance Assistant",
       "primary_funding_status": "not_approved"
     },
     {
       "primary_proposal_id": "f10-usdm-fiat-backed-stablecoin-by-mehen-cardanos-premiere-fiat-backed-stablecoin-f10",
       "title": "USDM: Fiat-Backed STABLECOIN - by Mehen: Cardano's Premiere Fiat-backed Stablecoin",
       "primary_funding_status": "approved"
-    },
-    {
-      "primary_proposal_id": "f10-use-cardano-native-token-to-solve-software-development-and-usability-problems-f10",
-      "title": "Use Cardano-native token to solve software development and usability problems",
-      "primary_funding_status": "not_approved"
     },
     {
       "primary_proposal_id": "f10-user-friendly-plug-and-play-evm-node-for-streamlined-cardano-ecosystem-interactions-f10",
@@ -7156,11 +6297,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-wallet-hunter-leveraging-blockchain-data-for-targeted-web3-growth-f10",
-      "title": "Wallet Hunter: Leveraging Blockchain Data for Targeted Web3 Growth",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-watch-wallet-for-cardano-f10",
       "title": "Watch Wallet for Cardano",
       "primary_funding_status": "not_approved"
@@ -7246,11 +6382,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-wolfram-cardano-exchange-data-infrastructure-f10",
-      "title": "Wolfram Cardano Exchange Data Infrastructure",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-wolfram-elevating-cardano-dashboard-with-enhanced-features-f10",
       "title": "Wolfram Elevating Cardano Dashboard with Enhanced Features",
       "primary_funding_status": "not_approved"
@@ -7286,16 +6417,6 @@
       "primary_funding_status": "not_approved"
     },
     {
-      "primary_proposal_id": "f10-writers-safe-on-cardano-f10",
-      "title": "Writers' Safe on Cardano",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-xerberus-powered-catalyst-analytics-dashboard-f10",
-      "title": "Xerberus Powered Catalyst Analytics Dashboard",
-      "primary_funding_status": "not_approved"
-    },
-    {
       "primary_proposal_id": "f10-xerberus-risk-ratings-for-all-fungible-assets-on-cardano-f10",
       "title": "Xerberus: Risk Ratings for all Fungible Assets on Cardano",
       "primary_funding_status": "approved"
@@ -7328,11 +6449,6 @@
     {
       "primary_proposal_id": "f10-zero-knowledge-proof-of-competence-f10",
       "title": "Zero Knowledge Proof Of Competence",
-      "primary_funding_status": "not_approved"
-    },
-    {
-      "primary_proposal_id": "f10-zkfold-zk-rollups-on-cardano-phase-1-zkwrapper-f10",
-      "title": "zkFold: zk-rollups on Cardano. Phase 1: zkWrapper",
       "primary_funding_status": "not_approved"
     }
   ],

@@ -66627,10 +66627,12 @@
     "external_ids": {
       "lidonation_uuid": "ac494e03-f091-483e-b597-c3c63454d519"
     },
-    "field_confidence": null,
+    "field_confidence": {
+      "funding_status": "high"
+    },
     "fund": 8,
     "funded_at": "2022-05-13T11:00:00.000000Z",
-    "funding_status": "approved",
+    "funding_status": "not_approved",
     "is_opensource": false,
     "links": {
       "catalyst_voices_url": null,
@@ -66643,7 +66645,7 @@
     },
     "milestone_count": null,
     "no_votes": 2818657.0,
-    "notes": null,
+    "notes": "RECONCILIATION 2026-05-15T18:44:33Z: funding_status changed from 'approved' (Lidonation) to 'not_approved' (projectcatalyst_io).",
     "problem": "There is no Cardano/Prism open source identity/credential wallet providing secure and familiar backup/recovery/pluggable/encrypted storage.",
     "project_status": "complete",
     "proposal_id": "f08-rootswallet-beta-backuprecovery-f8",
@@ -66679,6 +66681,15 @@
         "provenance_path": "data/_raw/lidonation/page-0151.json.gz",
         "source": "lidonation_api",
         "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      },
+      {
+        "fetched_at": "2026-05-15T18:44:33Z",
+        "fields_provided": [
+          "funding_status"
+        ],
+        "provenance_path": "data/funds/fund-08/_intermediate/iohk_winners.json",
+        "source": "projectcatalyst_io",
+        "url": null
       }
     ],
     "summary": null,

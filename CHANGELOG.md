@@ -8,6 +8,23 @@ and SemVer for pipeline code.
 
 ## [Unreleased]
 
+### Added (Official Catalyst result artifacts)
+- Cached Project Catalyst voting-results pages and official Google Sheets CSV
+  exports for Funds 2-14 under `data/_raw/projectcatalyst_io/` and
+  `data/_raw/iohk-results/`.
+- Added `data/_raw/iohk-pdfs/fund-01.pdf` from the staff-provided
+  `Fund1_voting_results.pdf`, plus provenance metadata in
+  `data/_raw/iohk-pdfs/fund-01.source.json`.
+- Extended `etl/fetchers/projectcatalyst_funds.py` with CSV discovery from
+  `/funds/{N}/voting-results` and Google Sheets `gviz` CSV download support.
+- Added `etl/parsers/projectcatalyst_results.py` and
+  `etl/scripts/parse_projectcatalyst_results.py` to parse the Fund 1 PDF and
+  official F2-F13 CSVs into `_intermediate/iohk_winners.json`.
+- Regenerated Fund 1 canonical proposal records from the staff-provided PDF
+  and applied three official CSV-backed funding-status corrections in F2, F4,
+  and F8. F14 remains cached but not parsed because the default export contains
+  formula/reference rows.
+
 ### Added (TF2 static viewer)
 - `site/` - static Treasury Fund 2 history explorer with graph, ledger, flow,
   proposal detail, and proposer detail views over the current archive data.

@@ -1,0 +1,255 @@
+{
+  "fund": 3,
+  "reconciled_at": "2026-05-15T18:43:28Z",
+  "sources": {
+    "primary": {
+      "label": "lidonation_api",
+      "path": "data/funds/fund-03/proposals.json"
+    },
+    "secondary": {
+      "label": "projectcatalyst_io",
+      "path": "data/funds/fund-03/_intermediate/iohk_winners.json"
+    }
+  },
+  "agreement_count": 76,
+  "disagreements": [],
+  "unmatched_in_primary": [],
+  "unmatched_in_secondary": [
+    {
+      "primary_proposal_id": "f03-abcd-f3",
+      "title": "ABCD",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f03-ada-in-4000-crypto-atms-globally-f3",
+      "title": "ADA in 4000 Crypto ATMs Globally!",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-ada-makerspace-dev-lessons-f3",
+      "title": "ADA MakerSpace - DEV lessons",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f03-adapools-kit-for-developers-apis-f3",
+      "title": "ADApools kit for developers, APIs",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-automation-platform-integration-f3",
+      "title": "Automation platform integration",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f03-better-ideascale-but-open-source-f3",
+      "title": "Better Ideascale But Open-Source",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-cardano-dapps-listing-website-f3",
+      "title": "Cardano Dapps Listing Website",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-cardano-developer-resource-portal-f3",
+      "title": "Cardano Developer resource portal",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-cardano-etl-public-bigquery-data-f3",
+      "title": "Cardano ETL: Public BigQuery Data",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f03-cardano-for-drupal-developers-f3",
+      "title": "Cardano for Drupal developers",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f03-cardano-intellij-idea-plugin-mvp-f3",
+      "title": "Cardano IntelliJ IDEA Plugin (MVP)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f03-cardano-on-the-rocks-f3",
+      "title": "Cardano on the Rocks",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-cardano-role-based-access-control-f3",
+      "title": "Cardano Role-based Access Control",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-cardano-serialization-library-in-go-f3",
+      "title": "Cardano serialization library in Go",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f03-cardano-tv-sports-led-advertising-f3",
+      "title": "Cardano TV - Sports LED Advertising",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-cardano-widgets-to-embed-in-dapps-f3",
+      "title": "Cardano Widgets to embed in DAPPs",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f03-cardanosharp-net-library-f3",
+      "title": "CardanoSharp - .NET Library",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f03-complete-cardano-training-center-f3",
+      "title": "Complete Cardano Training Center",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-conversational-uxui-toolkit-f3",
+      "title": "Conversational UX/UI Toolkit",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-customizable-defi-data-streams-f3",
+      "title": "Customizable DeFi Data Streams",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-darp-cardanos-address-name-servce-f3",
+      "title": "DARP: Cardano's Address Name Servce",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f03-decentralised-funding-report-f3",
+      "title": "Decentralised Funding Report",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-developer-spo-tools-cntools-f3",
+      "title": "Developer & SPO Tools [CNTools]",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f03-educational-materials-about-cardano-f3",
+      "title": "Educational materials about Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-free-commerce-sell-online-with-ada-f3",
+      "title": "Free-Commerce: sell online with ADA",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-goguen-launch-global-hackathon-f3",
+      "title": "Goguen Launch Global Hackathon",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-implement-cip12-to-yoroi-backends-f3",
+      "title": "Implement CIP12 to Yoroi backends",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f03-infura-like-cardano-api-iaas-f3",
+      "title": "Infura-like Cardano API IaaS",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-legitimatize-blockchain-solutions-f3",
+      "title": "Legitimatize blockchain solutions",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-lightweight-kevm-emulator-f3",
+      "title": "Lightweight KEVM Emulator",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-liqwid-developer-portalcardano-sdk-f3",
+      "title": "Liqwid Developer Portal:Cardano SDK",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f03-localize-yoroi-for-czech-market-f3",
+      "title": "Localize Yoroi for Czech market",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-localize-yoroi-for-slovak-market-f3",
+      "title": "Localize Yoroi for Slovak market",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-marlowe-and-plutus-mobile-f3",
+      "title": "Marlowe and Plutus Mobile",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-metadata-oracle-endpoint-in-yoroi-f3",
+      "title": "Metadata oracle endpoint in Yoroi",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-metadata-oracle-node-f3",
+      "title": "Metadata oracle node",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f03-metadata-oracles-explorer-f3",
+      "title": "Metadata oracles explorer",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f03-orphic-cli-connector-to-bigcommerce-f3",
+      "title": "Orphic CLI Connector to BigCommerce",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f03-ouroboros-networking-rust-crate-f3",
+      "title": "Ouroboros Networking Rust Crate",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-python-module-f3",
+      "title": "Python module",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f03-stakesync-db-sync-smash-add-on-f3",
+      "title": "StakeSync - DB Sync & Smash Add-on",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-tatumio-cardano-integration-f3",
+      "title": "Tatum.io - Cardano integration",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-visual-studio-smart-contract-plugin-f3",
+      "title": "Visual Studio Smart Contract Plugin",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f03-wallet-name-system-wns-f3",
+      "title": "Wallet Name System (WNS)",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-welcome-to-cardano-developer-f3",
+      "title": "Welcome to Cardano, developer!",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-west-africa-decentralized-alliance-f3",
+      "title": "West Africa Decentralized Alliance",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f03-write-dapps-as-continuous-workflows-f3",
+      "title": "Write Dapps as continuous workflows",
+      "primary_funding_status": "approved"
+    }
+  ],
+  "notes": null
+}

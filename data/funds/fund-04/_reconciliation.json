@@ -1,0 +1,735 @@
+{
+  "fund": 4,
+  "reconciled_at": "2026-05-15T18:43:28Z",
+  "sources": {
+    "primary": {
+      "label": "lidonation_api",
+      "path": "data/funds/fund-04/proposals.json"
+    },
+    "secondary": {
+      "label": "projectcatalyst_io",
+      "path": "data/funds/fund-04/_intermediate/iohk_winners.json"
+    }
+  },
+  "agreement_count": 101,
+  "disagreements": [
+    {
+      "primary_proposal_id": "f04-nft-dao-nft-metadata-standards-f4",
+      "matched_secondary_title": "NFT-DAO NFT metadata standards",
+      "primary_funding_status": "approved",
+      "secondary_funded_flag": false,
+      "verdict": "secondary_wins",
+      "note": "Auto-applied per ADR-2026-05-13. Human review optional."
+    }
+  ],
+  "unmatched_in_primary": [
+    {
+      "title": "Cardano with Ă‘ / Cardano in Spanish",
+      "funded_flag": false,
+      "note": "Present in IOG PDF, no title match in Lidonation."
+    }
+  ],
+  "unmatched_in_secondary": [
+    {
+      "primary_proposal_id": "f04-a-cardano-editorial-news-website",
+      "title": "A Cardano editorial news website",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-a-platform-for-ordering-drugs-onlin",
+      "title": "A platform for ordering drugs onlin",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-ada-in-cis-exchangersonline-stores",
+      "title": "ADA in CIS exchangers/online stores",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-ada-makerspace-hackathon",
+      "title": "ADA MakerSpace Hackathon",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-ada-visual-scripting-vscode-ext",
+      "title": "\"ADA\" Visual Scripting VSCode Ext.",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-adagovorg-co-creation",
+      "title": "Adagov.org (Co-creation)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-adaption-and-integration-of-cardano",
+      "title": "Adaption and integration of Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-adastatnet-platform-upgrade",
+      "title": "AdaStat.net Platform Upgrade",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-adriatic-eu-community-center",
+      "title": "Adriatic EU Community Center",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f04-ai-proposal-evaluation-and-guidance",
+      "title": "AI Proposal Evaluation and Guidance",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-al-baari-the-creator",
+      "title": "Al-Baari. The Creator. ",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-aldea-the-latin-america-dao",
+      "title": "ALDEA, the Latin America DAO",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f04-api-for-decentralized-application",
+      "title": "API for decentralized application",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-arduino-sdk-for-blockfrost-api",
+      "title": "Arduino SDK for Blockfrost API",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-arming-cardano",
+      "title": "ARMing Cardano ",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f04-beautiful-and-clear-results-pages",
+      "title": "Beautiful and clear results page(s)",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-behavioural-based-governance",
+      "title": "Behavioural based governance",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-build-user-centric-apps-on-cardano",
+      "title": "Build user-centric apps on Cardano",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f04-calling-all-deadheads",
+      "title": "Calling All Deadheads!",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-cardano-adoption-in-dr-of-congo",
+      "title": "Cardano Adoption in D.R. of Congo",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-cardano-center-in-europe",
+      "title": "Cardano Center in Europe",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-cardano-china-info-hub",
+      "title": "Cardano China Info Hub",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-cardano-hackathon",
+      "title": "Cardano Hackathon",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-cardano-katas",
+      "title": "Cardano Katas",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-cardano-lcc-community-outreach-dk",
+      "title": "Cardano LCC - Community Outreach DK",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-cardano-mobile-app",
+      "title": "Cardano Mobile App",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-cardano-podcast-interviews-wteams",
+      "title": "Cardano Podcast  Interviews w/Teams",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-cardano-school-education-platform",
+      "title": "Cardano School: Education Platform",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-cardano-spanish-training-programs",
+      "title": "Cardano spanish training programs",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-cardano-vision-website-germany",
+      "title": "Cardano Vision Website Germany",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-cardano-with-n-cardano-in-spanish",
+      "title": "Cardano with Ñ / Cardano in Spanish",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-cardanotes",
+      "title": "Cardanotes",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-cardaworkcom-work-marketplace",
+      "title": "CardaWork.com - Work Marketplace",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-catalyst-legal-fund",
+      "title": "Catalyst Legal Fund",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-catalystwinnerscom",
+      "title": "Catalystwinners.com",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f04-charity-casino",
+      "title": "Charity Casino",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-create-social-network-in-catalyst",
+      "title": "Create Social Network in Catalyst",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-crowdfunding-platform",
+      "title": "Crowdfunding Platform",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-crypto-blog-cardano-podcast",
+      "title": "Crypto Blog & Cardano Podcast",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-dao-for-creating-governance-tools",
+      "title": "DAO for creating governance tools",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-darp-cardano-address-name-service",
+      "title": "DARP: Cardano Address Name Service",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f04-decentralized-exchange-vyfinance",
+      "title": "Decentralized exchange - VyFinance",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-decentralized-studio-on-cardano",
+      "title": "Decentralized Studio on Cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-deep-data-management-solution",
+      "title": "Deep Data Management Solution",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-delegation-tracker",
+      "title": "Delegation Tracker",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-dev-incentives-in-cameroon",
+      "title": "+ Dev incentives in Cameroon",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-developer-library",
+      "title": "Developer Library",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-development-journey-documentation",
+      "title": "Development Journey Documentation",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-direct-funding-medusa-adawallet",
+      "title": "Direct funding: Medusa AdaWallet",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-diversify-voting-influence",
+      "title": "Diversify Voting Influence",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-documentation-alignment",
+      "title": "Documentation Alignment",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-educationdeveloper-center-sweden",
+      "title": "Education/Developer center - Sweden",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-elixir-sdk-for-blockfrost-api",
+      "title": "Elixir SDK for Blockfrost API",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-encourage-proposals",
+      "title": "Encourage proposals",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-experimental-educational-videos",
+      "title": "Experimental Educational Videos",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-free-online-course-about-catalyst",
+      "title": "Free Online Course about Catalyst",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-fund-matching-from-c-foundation",
+      "title": "Fund Matching from C-Foundation",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-gauntlets-of-catalyst-courts",
+      "title": "Gauntlets of Catalyst Courts",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-geographic-centers-of-expertise",
+      "title": "Geographic centers of expertise",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-gimbalabs-building-network-capacity",
+      "title": "Gimbalabs Building Network Capacity",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f04-golang-sdk-for-blockfrost-api",
+      "title": "Golang SDK for Blockfrost API",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-governance-tools-to-boost-collabs",
+      "title": "Governance tools to boost collabs",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-guided-onboarding-experience-f4",
+      "title": "Guided Onboarding Experience",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-guides-to-project-catalyst-success",
+      "title": "Guides to project Catalyst success",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-haskell-defi-sdk-for-plutus-devs",
+      "title": "Haskell DeFi SDK for Plutus Devs",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-haskell-sdk-for-blockfrost-api",
+      "title": "Haskell SDK for Blockfrost API",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-help-universityhacker-association",
+      "title": "Help University/hacker association",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-hub-for-javascript-entrepreneurs",
+      "title": "Hub for Javascript Entrepreneurs",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-hw-wallet-passphrase-recovery-tool",
+      "title": "HW wallet passphrase recovery tool",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-idea-decentralized-hierarchies",
+      "title": "Idea: decentralized hierarchies",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-idea-to-team-connection-support",
+      "title": "Idea to Team Connection Support",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-incentivizing-interaction",
+      "title": "Incentivizing interaction",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-indie-cardano-node",
+      "title": "Indie Cardano Node",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-infographics-series-1",
+      "title": "Infographics - Series 1",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-java-sdk-for-blockfrost-api",
+      "title": "Java SDK for Blockfrost API",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-javascript-sdk-for-blockfrost-api",
+      "title": "JavaScript SDK for Blockfrost API",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-kotlin-sdk-for-blockfrost-api",
+      "title": "Kotlin SDK for Blockfrost API",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-l10n-localisation",
+      "title": "L10N - localisation",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-large-example-projects-for-devs",
+      "title": "Large Example Projects for Devs",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-layer-2-advanced-architecture",
+      "title": "Layer 2 Advanced Architecture ",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-lcc-in-brazil-for-growth-and-adopt",
+      "title": "LCC in Brazil for Growth and Adopt.",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f04-live-coding-mentor-marketplace",
+      "title": "Live Coding Mentor Marketplace",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-local-centers-in-west-africa",
+      "title": "Local Centers in West Africa",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-local-support-hub-to-assit-devs",
+      "title": "Local support hub to assit devs",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-local-venture-activation-centres",
+      "title": "Local Venture Activation Centres",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f04-meta-memory-fmrly-fed-debate",
+      "title": "Meta-Memory (Fmrly Fed. Debate)",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-nada-nodes-as-a-service",
+      "title": "Nada: Nodes-as-a-Service",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f04-native-sdks-for-ios-and-android",
+      "title": "Native SDKs for iOS and Android",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-net-sdk-for-blockfrost-api",
+      "title": ".NET SDK for Blockfrost API",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-new-compensation-plan",
+      "title": "New Compensation Plan",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-nft-dao-ez-on-f4",
+      "title": "NFT-DAO EZ-on",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-nodeless-command-line-interface",
+      "title": "Nodeless command line interface",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-open-source-governance-ui",
+      "title": "Open Source Governance UI",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-ouroboros-networking-lib-in-js",
+      "title": "Ouroboros Networking Lib in JS",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-petercoin",
+      "title": "Petercoin",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-php-sdk-for-blockfrost-api",
+      "title": "PHP SDK for Blockfrost API",
+      "primary_funding_status": "over_budget"
+    },
+    {
+      "primary_proposal_id": "f04-plutus-certification-program",
+      "title": "Plutus Certification Program",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-poolpeekcom-upgrades",
+      "title": "PoolPeek.com Upgrades",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-pooltool-testnet-support",
+      "title": "PoolTool-Testnet Support",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-poor-energy-supplyinfrastructures",
+      "title": "Poor energy supply/infrastructures",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-project-catalyst-landing-page",
+      "title": "Project Catalyst Landing Page",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-proposer-to-producer-demo",
+      "title": "Proposer to Producer Demo",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-prufio-media-rich-nfts-on-cardano",
+      "title": "pruf.io: Media-rich NFTs on Cardano",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-python-sdk-for-blockfrost-api",
+      "title": "Python SDK for Blockfrost API",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-ruby-sdk-for-blockfrost-api",
+      "title": "Ruby SDK for Blockfrost API",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-ruggedized-defi",
+      "title": "Ruggedized DeFi",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-rust-sdk-for-blockfrost-api",
+      "title": "Rust SDK for Blockfrost API",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-rust-version-of-cardano",
+      "title": "Rust version of cardano",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-save-farmers-in-india-initiative",
+      "title": "Save Farmers in India Initiative!",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-scala-sdk-for-blockfrost-api",
+      "title": "Scala SDK for Blockfrost API",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-smart-contract-development-campaign",
+      "title": "Smart Contract Development Campaign",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-smart-contracts-tutorials",
+      "title": "Smart Contracts Tutorials",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-social-physics-balloon-challenge",
+      "title": "Social Physics-Balloon Challenge",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-stake-pool-operations-dashboard",
+      "title": "Stake Pool Operations Dashboard",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-strengthen-local-communities",
+      "title": "Strengthen local communities",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-sustainable-ada",
+      "title": "Sustainable ADA",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-swift-sdk-for-blockfrost-api",
+      "title": "Swift SDK for Blockfrost API",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-teaming-to-integrate-multiple-ideas",
+      "title": "Teaming to integrate multiple ideas",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-telecom-infrastructure-tokenization",
+      "title": "Telecom infrastructure tokenization",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-the-cardano-global-treasure-hunt",
+      "title": "The Cardano Global Treasure Hunt",
+      "primary_funding_status": "withdrawn"
+    },
+    {
+      "primary_proposal_id": "f04-the-great-filter",
+      "title": "The Great Filter ❌✅",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-these-walled-gardens-devthemepark",
+      "title": "These Walled Gardens - DevThemePark",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-they-desire-a-better-country",
+      "title": "\"They desire a better country.\"",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-tool-to-setup-and-run-local-testnet",
+      "title": "Tool to setup and run local testnet",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-training-program-noa-nea-argentina",
+      "title": "Training program NOA-NEA Argentina.",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-translator",
+      "title": "Translator ",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-university-cardano-research-program",
+      "title": "University Cardano Research Program",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-universitycollege-outreach-f4",
+      "title": "University/College Outreach",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-updev-community-et-cardano-catalyst",
+      "title": "Updev Community et Cardano Catalyst",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-viral-media-campaign",
+      "title": "Viral Media Campaign",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-visual-studio-code-market-plugin",
+      "title": "Visual Studio Code Market Plugin",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-voltaire-assistant-swarm-sessions",
+      "title": "Voltaire Assistant (Swarm Sessions)",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-vyfinance-defi-protocol",
+      "title": "Vy.Finance DeFi Protocol",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-wada-outreachsmart-catalyst-users",
+      "title": "+WADA Outreach=Smart Catalyst Users",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-west-africa-catalyst-onboarding",
+      "title": "West Africa Catalyst Onboarding",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-west-africa-dev-tools-events",
+      "title": "West Africa: Dev Tools & Events",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-west-africa-proposer-outreach",
+      "title": "West Africa Proposer Outreach",
+      "primary_funding_status": "approved"
+    },
+    {
+      "primary_proposal_id": "f04-working-groups",
+      "title": "Working Groups",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-worldwide-adalocal-fiat-possible",
+      "title": "WorldWide ADA/local fiat possible",
+      "primary_funding_status": "not_approved"
+    },
+    {
+      "primary_proposal_id": "f04-yoroi-blockfrost-bridge",
+      "title": "Yoroi ⇄ Blockfrost bridge",
+      "primary_funding_status": "approved"
+    }
+  ],
+  "notes": null
+}

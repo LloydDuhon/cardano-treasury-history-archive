@@ -1,0 +1,19 @@
+{
+  "fund": 1,
+  "local_path": "data/_raw/iohk-pdfs/fund-01.pdf",
+  "original_filename": "Fund1_voting_results.pdf",
+  "original_location": "C:\\Users\\lloyd\\Downloads\\Fund1_voting_results.pdf",
+  "sha256": "b833f5677f95d09062b5f42c0dec338f975a2f95e59df08eb34742910b1ac9df",
+  "bytes": 786407,
+  "pages": 1,
+  "pdf_metadata": {
+    "Producer": "www.ilovepdf.com",
+    "ModDate": "D:20200925210258Z"
+  },
+  "captured_at": "2026-05-15",
+  "notes": [
+    "Added after Project Catalyst staff recommended using official fund artifacts as source material.",
+    "The PDF is treated as the Fund 1 source of truth, as limited as the artifact is.",
+    "Automated text extraction flattens the table layout; parser integration should be reviewed manually before changing normalized Fund 1 proposal rows."
+  ]
+}

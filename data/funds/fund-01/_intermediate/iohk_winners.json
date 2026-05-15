@@ -1,0 +1,826 @@
+{
+  "fund": 1,
+  "parsed_at": "2026-05-15T18:38:41Z",
+  "source": {
+    "label": "iohk_voting_results_pdf",
+    "url": null,
+    "provenance_path": "data/_raw/iohk-pdfs/fund-01.pdf"
+  },
+  "summary": {
+    "rows_matched": 45,
+    "funded_count": 8,
+    "source_kind": "fund1_voting_results_pdf"
+  },
+  "rows": [
+    {
+      "title": "Open Source Experiential Learning",
+      "funded": true,
+      "status": "FUNDED",
+      "amount_requested": 111111.0,
+      "currency": "USD",
+      "yes_votes_ada": 150000,
+      "no_votes_ada": 10000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 1,
+      "raw": {
+        "line": "Open Source Experiential Learning 111,111 150,000 10,000 $ 190,889 FUNDE D",
+        "funds_remaining_usd": "190,889"
+      }
+    },
+    {
+      "title": "AfroFinLab Podcast",
+      "funded": true,
+      "status": "FUNDED",
+      "amount_requested": 110000.0,
+      "currency": "USD",
+      "yes_votes_ada": 120000,
+      "no_votes_ada": 30000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 2,
+      "raw": {
+        "line": "AfroFinLab Podcast 110,000 120,000 30,000 $ 181,869 FUNDE D",
+        "funds_remaining_usd": "181,869"
+      }
+    },
+    {
+      "title": "ADA MakerSpace",
+      "funded": true,
+      "status": "FUNDED",
+      "amount_requested": 100000.0,
+      "currency": "USD",
+      "yes_votes_ada": 110000,
+      "no_votes_ada": 20000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 3,
+      "raw": {
+        "line": "ADA MakerSpace 100,000 110,000 20,000 $ 173,669 FUNDE D",
+        "funds_remaining_usd": "173,669"
+      }
+    },
+    {
+      "title": "ABCD",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 18000000.0,
+      "currency": "USD",
+      "yes_votes_ada": 110000,
+      "no_votes_ada": 50000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 4,
+      "raw": {
+        "line": "ABCD 18,000,000 110,000 50,000 $ 173,669 NOT FUNDE D",
+        "funds_remaining_usd": "173,669"
+      }
+    },
+    {
+      "title": "Epoch Women",
+      "funded": true,
+      "status": "FUNDED",
+      "amount_requested": 100000.0,
+      "currency": "USD",
+      "yes_votes_ada": 100000,
+      "no_votes_ada": 40000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 5,
+      "raw": {
+        "line": "Epoch Women 100,000 100,000 40,000 $ 165,469 FUNDE D",
+        "funds_remaining_usd": "165,469"
+      }
+    },
+    {
+      "title": "The woman effect",
+      "funded": true,
+      "status": "FUNDED",
+      "amount_requested": 71400.0,
+      "currency": "USD",
+      "yes_votes_ada": 100000,
+      "no_votes_ada": 40000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 6,
+      "raw": {
+        "line": "The woman effect 71,400 100,000 40,000 $ 159,614 FUNDE D",
+        "funds_remaining_usd": "159,614"
+      }
+    },
+    {
+      "title": "West Africa Decentralized Alliance",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 4000000.0,
+      "currency": "USD",
+      "yes_votes_ada": 100000,
+      "no_votes_ada": 50000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 7,
+      "raw": {
+        "line": "West Africa Decentralized Alliance 4,000,000 100,000 50,000 $ 159,614 NOT FUNDE D",
+        "funds_remaining_usd": "159,614"
+      }
+    },
+    {
+      "title": "Torus: Governance for OS Projects",
+      "funded": true,
+      "status": "FUNDED",
+      "amount_requested": 1600000.0,
+      "currency": "USD",
+      "yes_votes_ada": 90000,
+      "no_votes_ada": 40000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 8,
+      "raw": {
+        "line": "Torus: Governance for OS Projects 1,600,000 90,000 40,000 $ 28,414 FUNDE D",
+        "funds_remaining_usd": "28,414"
+      }
+    },
+    {
+      "title": "The Developer Marketplace (Rebrand)",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 2000000.0,
+      "currency": "USD",
+      "yes_votes_ada": 90000,
+      "no_votes_ada": 60000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 9,
+      "raw": {
+        "line": "The Developer Marketplace 2,000,000 90,000 60,000 $ 28,414 NOT FUNDE D",
+        "funds_remaining_usd": "28,414"
+      }
+    },
+    {
+      "title": "Identify Dano DeFi Building Blocks",
+      "funded": true,
+      "status": "FUNDED",
+      "amount_requested": 250000.0,
+      "currency": "USD",
+      "yes_votes_ada": 60000,
+      "no_votes_ada": 30000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 10,
+      "raw": {
+        "line": "Identify Dano DeFi Building Blocks 250,000 60,000 30,000 $ 7,914 FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Cardano Media Projects",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 105839.0,
+      "currency": "USD",
+      "yes_votes_ada": 60000,
+      "no_votes_ada": 30000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 11,
+      "raw": {
+        "line": "Cardano Media Projects 105,839 60,000 30,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Crypto Finance Podcast",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 166666.0,
+      "currency": "USD",
+      "yes_votes_ada": 60000,
+      "no_votes_ada": 40000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 12,
+      "raw": {
+        "line": "Crypto Finance Podcast 166,666 60,000 40,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Streamline Cardano Dev onboard proc",
+      "funded": true,
+      "status": "FUNDED",
+      "amount_requested": 0.0,
+      "currency": "USD",
+      "yes_votes_ada": 60000,
+      "no_votes_ada": 40000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 13,
+      "raw": {
+        "line": "Streamline Cardano Dev onboard proc 0 60,000 40,000 $ 7,914 FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "FOX Gifts & Fund Raising",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 250000.0,
+      "currency": "USD",
+      "yes_votes_ada": 80000,
+      "no_votes_ada": 70000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 14,
+      "raw": {
+        "line": "FOX Gifts & Fund Raising 250,000 80,000 70,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Cardano Hub",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 888888.0,
+      "currency": "USD",
+      "yes_votes_ada": 60000,
+      "no_votes_ada": 60000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 15,
+      "raw": {
+        "line": "Cardano Hub 888,888 60,000 60,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "BlockDApps weekly PODCAST",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 166666.0,
+      "currency": "USD",
+      "yes_votes_ada": 40000,
+      "no_votes_ada": 40000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 16,
+      "raw": {
+        "line": "BlockDApps weekly PODCAST 166,666 40,000 40,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Project Skoowls",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 0.0,
+      "currency": "USD",
+      "yes_votes_ada": 40000,
+      "no_votes_ada": 40000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 17,
+      "raw": {
+        "line": "Project Skoowls 0 40,000 40,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Project Pavia | Cardano's VR World",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 0.0,
+      "currency": "USD",
+      "yes_votes_ada": 40000,
+      "no_votes_ada": 40000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 18,
+      "raw": {
+        "line": "Project Pavia | Cardano's VR World 0 40,000 40,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Proposal education channel/s",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 0.0,
+      "currency": "USD",
+      "yes_votes_ada": 30000,
+      "no_votes_ada": 40000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 19,
+      "raw": {
+        "line": "Proposal education channel/s 0 30,000 40,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Proposal creator role",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 0.0,
+      "currency": "USD",
+      "yes_votes_ada": 30000,
+      "no_votes_ada": 40000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 20,
+      "raw": {
+        "line": "Proposal creator role 0 30,000 40,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Cardano Onboarding Consultants",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 0.0,
+      "currency": "USD",
+      "yes_votes_ada": 30000,
+      "no_votes_ada": 40000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 21,
+      "raw": {
+        "line": "Cardano Onboarding Consultants 0 30,000 40,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Political Parties",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 0.0,
+      "currency": "USD",
+      "yes_votes_ada": 30000,
+      "no_votes_ada": 40000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 22,
+      "raw": {
+        "line": "Political Parties 0 30,000 40,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Decentralized event tickets",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 0.0,
+      "currency": "USD",
+      "yes_votes_ada": 40000,
+      "no_votes_ada": 50000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 23,
+      "raw": {
+        "line": "Decentralized event tickets 0 40,000 50,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Trade Block",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 250000.0,
+      "currency": "USD",
+      "yes_votes_ada": 40000,
+      "no_votes_ada": 60000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 24,
+      "raw": {
+        "line": "Trade Block 250,000 40,000 60,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Keep Cardano Decentralized",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 100000.0,
+      "currency": "USD",
+      "yes_votes_ada": 30000,
+      "no_votes_ada": 50000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 25,
+      "raw": {
+        "line": "Keep Cardano Decentralized 100,000 30,000 50,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Dream Weaver: TheBusinessValueofADA",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 0.0,
+      "currency": "USD",
+      "yes_votes_ada": 30000,
+      "no_votes_ada": 50000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 26,
+      "raw": {
+        "line": "Dream Weaver: TheBusinessValueofADA 0 30,000 50,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Cardano Voter Media",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 0.0,
+      "currency": "USD",
+      "yes_votes_ada": 30000,
+      "no_votes_ada": 50000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 27,
+      "raw": {
+        "line": "Cardano Voter Media 0 30,000 50,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Decentralized Transcripts",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 0.0,
+      "currency": "USD",
+      "yes_votes_ada": 20000,
+      "no_votes_ada": 50000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 28,
+      "raw": {
+        "line": "Decentralized Transcripts 0 20,000 50,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Project Cattlebole",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 0.0,
+      "currency": "USD",
+      "yes_votes_ada": 20000,
+      "no_votes_ada": 50000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 29,
+      "raw": {
+        "line": "Project Cattlebole 0 20,000 50,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Bicameralism Voting Mechanism",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 0.0,
+      "currency": "USD",
+      "yes_votes_ada": 20000,
+      "no_votes_ada": 50000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 30,
+      "raw": {
+        "line": "Bicameralism Voting Mechanism 0 20,000 50,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Decentralised Clinical Trials",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 0.0,
+      "currency": "USD",
+      "yes_votes_ada": 20000,
+      "no_votes_ada": 50000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 31,
+      "raw": {
+        "line": "Decentralised Clinical Trials 0 20,000 50,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Direct Debit Contract for ADA",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 0.0,
+      "currency": "USD",
+      "yes_votes_ada": 20000,
+      "no_votes_ada": 60000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 32,
+      "raw": {
+        "line": "Direct Debit Contract for ADA 0 20,000 60,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Staking Lottery",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 0.0,
+      "currency": "USD",
+      "yes_votes_ada": 20000,
+      "no_votes_ada": 60000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 33,
+      "raw": {
+        "line": "Staking Lottery 0 20,000 60,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "From Dscience to Dtech",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 17235584.0,
+      "currency": "USD",
+      "yes_votes_ada": 40000,
+      "no_votes_ada": 90000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 34,
+      "raw": {
+        "line": "From Dscience to Dtech 17,235,584 40,000 90,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Decentralized Gov. Community Group",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 550000.0,
+      "currency": "USD",
+      "yes_votes_ada": 10000,
+      "no_votes_ada": 60000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 35,
+      "raw": {
+        "line": "Decentralized Gov. Community Group 550,000 10,000 60,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Family Connect",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 0.0,
+      "currency": "USD",
+      "yes_votes_ada": 10000,
+      "no_votes_ada": 60000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 36,
+      "raw": {
+        "line": "Family Connect 0 10,000 60,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Decentralized Tiny Home Community",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 0.0,
+      "currency": "USD",
+      "yes_votes_ada": 10000,
+      "no_votes_ada": 60000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 37,
+      "raw": {
+        "line": "Decentralized Tiny Home Community 0 10,000 60,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "WeThinkItMatters®",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 1000000.0,
+      "currency": "USD",
+      "yes_votes_ada": 30000,
+      "no_votes_ada": 90000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 38,
+      "raw": {
+        "line": "WeThinkItMatters® 1,000,000 30,000 90,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Investment Group Properties",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 3000000.0,
+      "currency": "USD",
+      "yes_votes_ada": 30000,
+      "no_votes_ada": 100000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 39,
+      "raw": {
+        "line": "Investment Group Properties 3,000,000 30,000 100,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "FORK fund1 $250k FAKE ADA into REAL",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 250000.0,
+      "currency": "USD",
+      "yes_votes_ada": 0,
+      "no_votes_ada": 70000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 40,
+      "raw": {
+        "line": "FORK fund1 $250k FAKE ADA into REAL 250,000 0 70,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Stakepool governance & Incubation",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 250000.0,
+      "currency": "USD",
+      "yes_votes_ada": 0,
+      "no_votes_ada": 70000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 41,
+      "raw": {
+        "line": "Stakepool governance & Incubation 250,000 0 70,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Cardano Governance Multiverse",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 0.0,
+      "currency": "USD",
+      "yes_votes_ada": 0,
+      "no_votes_ada": 70000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 42,
+      "raw": {
+        "line": "Cardano Governance Multiverse 0 0 70,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "House of ADA & Senate of Cardanians",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 2000000.0,
+      "currency": "USD",
+      "yes_votes_ada": 0,
+      "no_votes_ada": 80000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 43,
+      "raw": {
+        "line": "House of ADA & Senate of Cardanians 2,000,000 0 80,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "Music video",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 250000.0,
+      "currency": "USD",
+      "yes_votes_ada": 10000,
+      "no_votes_ada": 90000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 44,
+      "raw": {
+        "line": "Music video 250,000 10,000 90,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    },
+    {
+      "title": "FOX Rewards",
+      "funded": false,
+      "status": "NOT FUNDED",
+      "amount_requested": 250000.0,
+      "currency": "USD",
+      "yes_votes_ada": 10000,
+      "no_votes_ada": 90000,
+      "abstain_votes_ada": null,
+      "vote_result_ada": null,
+      "meets_approval_threshold": null,
+      "overall_score": null,
+      "source_row": 45,
+      "raw": {
+        "line": "FOX Rewards 250,000 10,000 90,000 $ 7,914 NOT FUNDE D",
+        "funds_remaining_usd": "7,914"
+      }
+    }
+  ]
+}

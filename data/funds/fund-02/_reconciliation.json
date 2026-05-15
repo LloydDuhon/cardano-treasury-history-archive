@@ -1,46 +1,35 @@
 {
   "fund": 2,
-  "reconciled_at": "2026-05-14T22:44:38Z",
+  "reconciled_at": "2026-05-15T18:43:28Z",
   "sources": {
     "primary": {
       "label": "lidonation_api",
       "path": "data/funds/fund-02/proposals.json"
     },
     "secondary": {
-      "label": "iohk_voting_results_pdf",
+      "label": "projectcatalyst_io",
       "path": "data/funds/fund-02/_intermediate/iohk_winners.json"
     }
   },
-  "agreement_count": 75,
-  "disagreements": [],
+  "agreement_count": 76,
+  "disagreements": [
+    {
+      "primary_proposal_id": "f02-address-gap-in-spo-education-communication",
+      "matched_secondary_title": "Address Gap in SPO Education/Comms",
+      "primary_funding_status": "approved",
+      "secondary_funded_flag": false,
+      "verdict": "secondary_wins",
+      "note": "Auto-applied per ADR-2026-05-13. Human review optional."
+    }
+  ],
   "unmatched_in_primary": [
     {
-      "title": "Address Gap in SPO Education...",
-      "funded_flag": false,
-      "note": "Present in IOG PDF, no title match in Lidonation."
-    },
-    {
-      "title": "Japan Cardano Governance Assoc...",
+      "title": "Japan Cardano Governance Association-Meetings & Communities & Podcasts",
       "funded_flag": true,
-      "note": "Present in IOG PDF, no title match in Lidonation."
-    },
-    {
-      "title": "Cardano Social & Economic Ecosys...",
-      "funded_flag": false,
       "note": "Present in IOG PDF, no title match in Lidonation."
     }
   ],
   "unmatched_in_secondary": [
-    {
-      "primary_proposal_id": "f02-address-gap-in-spo-education-communication",
-      "title": "Address Gap in SPO Education/Comms",
-      "primary_funding_status": "approved"
-    },
-    {
-      "primary_proposal_id": "f02-cardano-social-economic-ecosystem-f2",
-      "title": "Cardano Social & Economic Ecosystem",
-      "primary_funding_status": "not_approved"
-    },
     {
       "primary_proposal_id": "f02-japan-cardano-governance-association",
       "title": "Japan Cardano Governance Association-Meetings & Communities",

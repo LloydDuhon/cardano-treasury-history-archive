@@ -27,9 +27,22 @@ See [ADR-2026-05-13 Implementation Notes](../../docs/adr/ADR-2026-05-13-source-s
   `https://projectcatalyst.io/funds/N`. NN is the fund number, zero-padded.
 - `projectcatalyst_io/funds-NN.summary.json` - distilled summary extracted
   from the `__NEXT_DATA__` blob (fund name, counts, votingResultsUrl).
+- `projectcatalyst_io/results-NN.html.gz` - raw HTML capture of
+  `https://projectcatalyst.io/funds/N/voting-results`. These pages are the
+  current official discovery point for Catalyst voting-results CSV links.
+- `projectcatalyst_io/results-NN.summary.json` - distilled voting-results page
+  metadata with the linked Google Sheets URL and the derived unauthenticated
+  `gviz` CSV URL.
+- `iohk-results/fund-NN.csv` - official result CSV payload fetched from the
+  Google Sheets link on the Project Catalyst voting-results page. Cached for
+  F2-F14 as of 2026-05-15. F2-F13 parse into normalized intermediates; F14's
+  default export currently contains formula/reference rows and still needs the
+  correct result tab/export identified.
 - `iohk-pdfs/fund-NN.pdf` - canonical IOG/CF voting-results PDF artifacts that
-  are currently accessible. The interim snapshot has F2 and F10 only; missing
+  are currently accessible. The interim snapshot has F1, F2, and F10; missing
   artifacts are tracked in `docs/IOG_RESULTS_ACCESS_TRACKER.md`.
+- `iohk-pdfs/fund-01.source.json` - provenance metadata for the staff-provided
+  Fund 1 voting-results PDF copied from Downloads on 2026-05-15.
 - `koios_governance/treasury-withdrawal-proposals.json` - raw Koios
   `proposal_list` capture filtered to `TreasuryWithdrawals` governance actions.
   This is normalized into `data/historical/cardano-treasury-withdrawals/`.
