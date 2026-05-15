@@ -1,0 +1,19 @@
+{
+  "budget_2025_proposals": 194,
+  "budget_2025_snapshot": "data/_raw/intersect_budget_2025/reconciliation.json",
+  "budget_2025_snapshot_fetched_at": "2026-05-15T12:27:22Z",
+  "catalyst_history_records": 591,
+  "current_proposals": 69,
+  "current_snapshot": "data/_raw/hydra_voting/cardano-budget-2026.json",
+  "current_snapshot_fetched_at": "2026-05-15T12:07:25Z",
+  "current_unique_proposers": 51,
+  "generated_at": "2026-05-15T12:34:57Z",
+  "history_records": 591,
+  "identity_bridge_2025_proposers": 15,
+  "identity_bridge_2025_records": 120,
+  "proposers_with_prior_history": 15,
+  "similarity_min_threshold": 0.18,
+  "similarity_per_proposal_limit": 5,
+  "similarity_records": 18,
+  "treasury_fund_1_history_records": 0
+}
