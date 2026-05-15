@@ -120,8 +120,10 @@ Parse the cached official artifacts into per-fund intermediates:
 python -m scripts.parse_projectcatalyst_results
 ```
 
-This writes `../data/funds/fund-XX/_intermediate/iohk_winners.json` for F1-F13.
-F14 is skipped until the correct result tab/export is identified.
+This writes `../data/funds/fund-XX/_intermediate/iohk_winners.json` for F1-F14.
+Fund 14 is a multi-tab Google Sheet; the parser combines the challenge tabs,
+`Sponsored by leftovers`, and `Withdrawn` instead of using the broken
+`gid=0` template export.
 
 Derive Fund 1 from the staff-provided PDF when Wayback snapshots are absent:
 

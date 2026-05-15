@@ -22,6 +22,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from parsers.projectcatalyst_results import (
+    parse_csv_result_files,
     parse_csv_results,
     parse_fund_one_pdf,
     write_intermediate,
@@ -30,6 +31,14 @@ from parsers.projectcatalyst_results import (
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_DATA_ROOT = REPO_ROOT / "data"
 DEFAULT_FUNDS: tuple[int, ...] = tuple(range(1, 15))
+FUND_14_CSV_TABS: tuple[tuple[str, str | None], ...] = (
+    ("fund-14-cardano-use-cases-partners-products.csv", None),
+    ("fund-14-cardano-use-cases-concept.csv", None),
+    ("fund-14-cardano-open-developers.csv", None),
+    ("fund-14-cardano-open-ecosystem.csv", None),
+    ("fund-14-sponsored-by-leftovers.csv", None),
+    ("fund-14-withdrawn.csv", "WITHDRAWN"),
+)
 
 
 def _utcnow_iso() -> str:
@@ -60,6 +69,32 @@ def parse_fund(fund: int, data_root: Path) -> tuple[int, int] | None:
             source_label="iohk_voting_results_pdf",
             source_url=None,
             provenance_path="data/_raw/iohk-pdfs/fund-01.pdf",
+            parsed_at=parsed_at,
+        )
+        print(f"  f{fund}: {summary.rows_matched} rows, {summary.funded_count} funded")
+        return summary.rows_matched, summary.funded_count
+
+    if fund == 14:
+        tab_paths = [
+            (data_root / "_raw" / "iohk-results" / filename, default_status)
+            for filename, default_status in FUND_14_CSV_TABS
+        ]
+        missing = [path for path, _ in tab_paths if not path.exists()]
+        if missing:
+            print(f"  f{fund}: SKIP (missing tab CSVs: {', '.join(str(p) for p in missing)})")
+            return None
+        rows, summary = parse_csv_result_files(tab_paths)
+        source_url = _summary_url(
+            data_root / "_raw" / "projectcatalyst_io" / f"results-{fund:02d}.summary.json"
+        )
+        write_intermediate(
+            rows,
+            summary,
+            fund=fund,
+            data_root=data_root,
+            source_label="projectcatalyst_io",
+            source_url=source_url,
+            provenance_path="data/_raw/iohk-results/fund-14-*.csv",
             parsed_at=parsed_at,
         )
         print(f"  f{fund}: {summary.rows_matched} rows, {summary.funded_count} funded")

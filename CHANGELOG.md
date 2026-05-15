@@ -19,11 +19,13 @@ and SemVer for pipeline code.
   `/funds/{N}/voting-results` and Google Sheets `gviz` CSV download support.
 - Added `etl/parsers/projectcatalyst_results.py` and
   `etl/scripts/parse_projectcatalyst_results.py` to parse the Fund 1 PDF and
-  official F2-F13 CSVs into `_intermediate/iohk_winners.json`.
+  official F2-F14 CSVs into `_intermediate/iohk_winners.json`.
 - Regenerated Fund 1 canonical proposal records from the staff-provided PDF
   and applied three official CSV-backed funding-status corrections in F2, F4,
-  and F8. F14 remains cached but not parsed because the default export contains
-  formula/reference rows.
+  and F8.
+- Fixed Fund 14 import by fetching the real multi-tab Google Sheet exports
+  instead of the broken template export. Fund 14 now reconciles cleanly and
+  records 9 `leftover` winners from the `Sponsored by leftovers` tab.
 
 ### Added (TF2 static viewer)
 - `site/` - static Treasury Fund 2 history explorer with graph, ledger, flow,

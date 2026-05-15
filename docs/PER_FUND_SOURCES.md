@@ -33,7 +33,7 @@ This document records, for each Catalyst fund, which upstream source we treat as
 | F11  | `LIDO` + `PCIO`     | `PCIO_CSV`  | **`MILE`** | |
 | F12  | `LIDO` + `PCIO`     | `PCIO_CSV`  | **`MILE`** | |
 | F13  | `LIDO` + `PCIO`     | `PCIO_CSV`  | **`MILE`** | |
-| F14  | `LIDO` (Catalyst Voices gateway deferred) | `PCIO_CSV` cached, parser blocked | **`MILE`** (in-flight) | Cached CSV export currently contains formula/reference rows; needs correct tab/export before reconciliation. |
+| F14  | `LIDO` (Catalyst Voices gateway deferred) | `PCIO_CSV` multi-tab | **`MILE`** (in-flight) | Default template export is broken; importer uses challenge tabs plus Sponsored by leftovers and Withdrawn. |
 | F15  | `LIDO`              | TBD (voting may be in progress) | `MILE` | Schema complete, completion data accruing. |
 
 ## Current Phase 2 Access Status
@@ -49,18 +49,17 @@ Current state:
   `data/_raw/iohk-results/`.
 - F1 voting-results PDF has been added under `data/_raw/iohk-pdfs/fund-01.pdf`
   and now drives `data/funds/fund-01/proposals.json`.
-- F2-F13 CSVs parse into `_intermediate/iohk_winners.json` and reconciliation
+- F2-F14 CSVs parse into `_intermediate/iohk_winners.json` and reconciliation
   sidecars. Three funding-status disagreements have been applied per policy:
   F2 `Address Gap in SPO Education/Comms`, F4 `NFT-DAO NFT metadata standards`,
   and F8 `RootsWallet beta - Backup/Recovery`.
-- F14 is cached but not reconciled because the default CSV export contains
-  formula/reference rows rather than proposal result rows.
+- F14 uses challenge-specific CSV tabs and now reconciles with 1,283 agreements,
+  0 disagreements, and 9 `leftover` winners from `Sponsored by leftovers`.
 - The older F2 and F10 PDFs remain cached as legacy artifacts, but CSVs are now
-  the preferred source for F2-F13 result reconciliation.
+  the preferred source for F2-F14 result reconciliation.
 
 The final full snapshot should not claim complete IOG/CF reconciliation until
-F14 has a parseable result export and the F7-F9 workbooks have been reviewed
-for any additional required tabs.
+the F7-F9 workbooks have been reviewed for any additional required tabs.
 
 ## Reconciliation policy
 

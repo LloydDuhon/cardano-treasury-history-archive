@@ -12,6 +12,7 @@ import respx
 
 from fetchers.projectcatalyst_funds import (
     BASE_URL,
+    FUND_14_RESULT_TABS,
     FundFetcherConfig,
     FundPageClient,
     NextDataError,
@@ -25,6 +26,7 @@ from fetchers.projectcatalyst_funds import (
     fetch_voting_results_page,
     gdrive_direct_url,
     google_sheet_csv_url,
+    google_sheet_csv_url_for_gid,
 )
 
 FIXTURE_HTML = Path(__file__).resolve().parent / "fixtures" / "funds-2.html.gz"
@@ -93,6 +95,13 @@ def test_google_sheet_csv_url_defaults_to_gid_zero() -> None:
     url = "https://docs.google.com/spreadsheets/d/abc_123/edit"
     assert google_sheet_csv_url(url) == (
         "https://docs.google.com/spreadsheets/d/abc_123/gviz/tq?tqx=out:csv&gid=0"
+    )
+
+
+def test_google_sheet_csv_url_for_gid() -> None:
+    url = "https://docs.google.com/spreadsheets/d/abc_123/edit"
+    assert google_sheet_csv_url_for_gid(url, "42") == (
+        "https://docs.google.com/spreadsheets/d/abc_123/gviz/tq?tqx=out:csv&gid=42"
     )
 
 
@@ -272,3 +281,28 @@ def test_fetch_fund_csv_fetches_page_and_csv(tmp_path: Path) -> None:
 
     assert summary["csv_path"].endswith("data/_raw/iohk-results/fund-02.csv")
     assert (tmp_path / "data" / "_raw" / "iohk-results" / "fund-02.csv").exists()
+
+
+@respx.mock
+def test_fetch_fund_csv_fetches_fund14_multi_tab_csvs(tmp_path: Path) -> None:
+    sheet_url = "https://docs.google.com/spreadsheets/d/abc_123"
+    html = f"""
+    <html>
+      <a href="{sheet_url}">CSV file here</a>
+    </html>
+    """.encode()
+    respx.get(f"{BASE_URL}/funds/14/voting-results").mock(
+        return_value=httpx.Response(200, content=html)
+    )
+    for gid, _filename in FUND_14_RESULT_TABS:
+        csv_url = f"https://docs.google.com/spreadsheets/d/abc_123/gviz/tq?tqx=out:csv&gid={gid}"
+        respx.get(csv_url).mock(
+            return_value=httpx.Response(200, content=b"Proposal,Status\nExample,FUNDED\n")
+        )
+
+    with _make_client(tmp_path) as client:
+        summary = fetch_fund_csv(14, output_root=tmp_path / "data", client=client)
+
+    assert len(summary["csv_paths"]) == len(FUND_14_RESULT_TABS)
+    for _gid, filename in FUND_14_RESULT_TABS:
+        assert (tmp_path / "data" / "_raw" / "iohk-results" / filename).exists()

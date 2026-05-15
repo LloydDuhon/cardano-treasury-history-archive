@@ -15,9 +15,8 @@ Per-field overrides live in each record's optional `field_confidence` object.
 ## What this dataset is good for
 
 - Counting proposals per fund, per challenge, per proposer
-- Identifying funded vs not-funded outcomes from Lidonation v1 for Funds 2–15.
-  Official Project Catalyst voting-results CSVs are now cached for F2-F14, but
-  CSV parser/reconciliation integration is still pending.
+- Identifying funded vs not-funded outcomes from official Project Catalyst
+  voting-results artifacts for Funds 1-14, with Lidonation v1 coverage for F15.
 - Tracking milestone completion for Funds 10–15
 - Analyzing proposer behavior across funds (with caveats about duplicate identity — see below)
 - Reviewing AI summaries, scores, and votes where Lidonation has them
@@ -30,10 +29,10 @@ Per-field overrides live in each record's optional `field_confidence` object.
 - **On-chain voting-power analysis.** Deferred to a future sibling repository. CIP-15/36 registrations are not in this schema.
 - **Real-time data.** Snapshots are taken on a monthly cadence; expect lag of up to ~30 days for in-flight funds.
 - **Catalyst Voices native data.** Until `api.projectcatalyst.io/api/v1/health/ready` returns 200, F14+ data comes from Lidonation's mirror, not the upstream system of record.
-- **Final Project Catalyst voting-results reconciliation.** The interim dataset
-  includes Lidonation v1 funding outcomes for F2-F15. Official Project Catalyst
-  CSV artifacts for F2-F14 are cached, but they are not yet normalized into the
-  canonical dataset. See `docs/IOG_RESULTS_ACCESS_TRACKER.md`.
+- **Final Project Catalyst voting-results reconciliation.** F1-F14 result
+  artifacts are integrated. F7-F9 still need workbook-tab review before we call
+  those partial result exports complete. F15 does not yet have final voting
+  results. See `docs/IOG_RESULTS_ACCESS_TRACKER.md`.
 
 ## Known systematic limitations
 
@@ -44,11 +43,11 @@ Milestone Module data for F9-F14, but it is not the final "full snapshot"
 because Phase 2 voting-results reconciliation is incomplete.
 
 Current validated counts from the interim run:
-- `all_proposals.json`: 11,528 records
+- `all_proposals.json`: 11,573 records
 - `all_proposers.json`: 9,818 records
 - `all_milestones.json`: 5,039 records
 - 15 fund directories present
-- Schema validation: 37 files across 15 funds
+- Schema validation: 48 files across 15 funds
 
 The Lidonation API changed from the legacy `/api/*` surface to the documented
 `/api/v1/*` surface. The old endpoint returned only eight funds in the captured
@@ -71,11 +70,12 @@ those CSV-linked Google Sheets are cached for F2-F14 under
 `data/_raw/iohk-results/`.
 
 The CSV/PDF parser writes reviewed intermediates under each fund's
-`_intermediate/iohk_winners.json`. F2-F13 reconciliation sidecars have been
+`_intermediate/iohk_winners.json`. F2-F14 reconciliation sidecars have been
 generated from those intermediates, and three official-result disagreements
-have been applied to canonical records: one each in F2, F4, and F8. F14 is
-cached but not parsed yet because the default exported sheet currently contains
-formula/reference rows rather than result rows.
+have been applied to canonical records: one each in F2, F4, and F8. Fund 14
+uses challenge-specific worksheet exports rather than the broken `gid=0`
+template export; its 1,283 imported result rows reconcile cleanly, including 9
+`leftover` winners from the `Sponsored by leftovers` tab.
 
 ### Funds 2–5 completion data
 There was no canonical close-out tracker for these funds. The IOG-published count of "Completed" proposals exists in aggregate (e.g., F2 reports 9 of 11 completed), but per-proposal evidence is scattered across:

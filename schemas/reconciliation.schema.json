@@ -84,6 +84,8 @@
             ]
           },
           "secondary_funded_flag": { "type": "boolean" },
+          "secondary_status": { "type": ["string", "null"] },
+          "secondary_source_file": { "type": ["string", "null"] },
           "verdict": {
             "type": "string",
             "enum": ["secondary_wins", "needs_human_review"],

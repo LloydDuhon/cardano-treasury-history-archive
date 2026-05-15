@@ -127,7 +127,7 @@ def reconcile_fund(
         if s_rec is None:
             continue
         matched_secondary_keys.add(key)
-        primary_funded = p_rec.get("funding_status") == "approved"
+        primary_funded = p_rec.get("funding_status") in {"approved", "leftover"}
         secondary_funded = bool(s_rec.get("funded"))
         if primary_funded == secondary_funded:
             agreement_count += 1
@@ -138,6 +138,8 @@ def reconcile_fund(
                 "matched_secondary_title": s_rec.get("title"),
                 "primary_funding_status": p_rec.get("funding_status", "unknown"),
                 "secondary_funded_flag": secondary_funded,
+                "secondary_status": s_rec.get("status"),
+                "secondary_source_file": s_rec.get("source_file"),
                 "verdict": "secondary_wins",
                 "note": "Auto-applied per ADR-2026-05-13. Human review optional.",
             }

@@ -35,9 +35,9 @@ See [ADR-2026-05-13 Implementation Notes](../../docs/adr/ADR-2026-05-13-source-s
   `gviz` CSV URL.
 - `iohk-results/fund-NN.csv` - official result CSV payload fetched from the
   Google Sheets link on the Project Catalyst voting-results page. Cached for
-  F2-F14 as of 2026-05-15. F2-F13 parse into normalized intermediates; F14's
-  default export currently contains formula/reference rows and still needs the
-  correct result tab/export identified.
+  F2-F14 as of 2026-05-15. F14's default `fund-14.csv` is the broken template
+  export; the real Fund 14 source files are the sibling
+  `fund-14-<tab-name>.csv` challenge, leftovers, and withdrawn exports.
 - `iohk-pdfs/fund-NN.pdf` - canonical IOG/CF voting-results PDF artifacts that
   are currently accessible. The interim snapshot has F1, F2, and F10; missing
   artifacts are tracked in `docs/IOG_RESULTS_ACCESS_TRACKER.md`.

@@ -62,7 +62,13 @@ def _apply_disagreement(
     if verdict != "secondary_wins":
         return False
     secondary_funded = bool(disagreement.get("secondary_funded_flag"))
-    new_status = "approved" if secondary_funded else "not_approved"
+    secondary_source_file = str(disagreement.get("secondary_source_file") or "")
+    if secondary_funded and "sponsored-by-leftovers" in secondary_source_file:
+        new_status = "leftover"
+    elif secondary_funded:
+        new_status = "approved"
+    else:
+        new_status = "not_approved"
     prior_status = proposal.get("funding_status", "unknown")
     proposal["funding_status"] = new_status
 

@@ -35841,10 +35841,12 @@
     "external_ids": {
       "lidonation_uuid": "ea8c073f-fd98-4b30-ad8b-965174f66460"
     },
-    "field_confidence": null,
+    "field_confidence": {
+      "funding_status": "high"
+    },
     "fund": 14,
     "funded_at": "2026-01-20T22:10:44.000000Z",
-    "funding_status": "over_budget",
+    "funding_status": "leftover",
     "is_opensource": true,
     "links": {
       "catalyst_voices_url": null,
@@ -35857,7 +35859,7 @@
     },
     "milestone_count": null,
     "no_votes": null,
-    "notes": null,
+    "notes": "RECONCILIATION 2026-05-15T20:21:05Z: funding_status changed from 'over_budget' (Lidonation) to 'leftover' (projectcatalyst_io).",
     "problem": "When dev spin up custom env for testing, they usually begin from the genesis block and often do so without a dependable blockchain explorer to monitor or inspect the network state",
     "project_status": "in_progress",
     "proposal_id": "f14-cexplorer-mini-cardano-explorer-for-not-only-local-usage-f14",
@@ -35893,6 +35895,15 @@
         "provenance_path": "data/_raw/lidonation/page-0031.json.gz",
         "source": "lidonation_api",
         "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      },
+      {
+        "fetched_at": "2026-05-15T20:21:05Z",
+        "fields_provided": [
+          "funding_status"
+        ],
+        "provenance_path": "data/funds/fund-14/_intermediate/iohk_winners.json",
+        "source": "projectcatalyst_io",
+        "url": null
       }
     ],
     "summary": null,
@@ -58364,10 +58375,12 @@
     "external_ids": {
       "lidonation_uuid": "cd580534-1998-49a5-b338-a29af542f865"
     },
-    "field_confidence": null,
+    "field_confidence": {
+      "funding_status": "high"
+    },
     "fund": 14,
     "funded_at": "2026-01-20T22:10:46.000000Z",
-    "funding_status": "over_budget",
+    "funding_status": "leftover",
     "is_opensource": false,
     "links": {
       "catalyst_voices_url": null,
@@ -58380,7 +58393,7 @@
     },
     "milestone_count": null,
     "no_votes": null,
-    "notes": null,
+    "notes": "RECONCILIATION 2026-05-15T20:21:05Z: funding_status changed from 'over_budget' (Lidonation) to 'leftover' (projectcatalyst_io).",
     "problem": "Fujitsu and Anifie are tackling fandoms’ need to maintain and grow enthusiasm. Funded by the Japanese government, we address this need for athletes, artists, and brands across multiple communities.",
     "project_status": "in_progress",
     "proposal_id": "f14-japanese-government-funded-ai-chat-platform-with-fujitsu-f14",
@@ -58416,6 +58429,15 @@
         "provenance_path": "data/_raw/lidonation/page-0019.json.gz",
         "source": "lidonation_api",
         "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      },
+      {
+        "fetched_at": "2026-05-15T20:21:05Z",
+        "fields_provided": [
+          "funding_status"
+        ],
+        "provenance_path": "data/funds/fund-14/_intermediate/iohk_winners.json",
+        "source": "projectcatalyst_io",
+        "url": null
       }
     ],
     "summary": null,
@@ -61011,10 +61033,12 @@
     "external_ids": {
       "lidonation_uuid": "df169399-f31e-4b4f-8efc-f1a11d2c3f3a"
     },
-    "field_confidence": null,
+    "field_confidence": {
+      "funding_status": "high"
+    },
     "fund": 14,
     "funded_at": "2026-01-20T22:10:47.000000Z",
-    "funding_status": "over_budget",
+    "funding_status": "leftover",
     "is_opensource": true,
     "links": {
       "catalyst_voices_url": null,
@@ -61027,7 +61051,7 @@
     },
     "milestone_count": null,
     "no_votes": null,
-    "notes": null,
+    "notes": "RECONCILIATION 2026-05-15T20:21:05Z: funding_status changed from 'over_budget' (Lidonation) to 'leftover' (projectcatalyst_io).",
     "problem": "ADA holders cannot delegate to DReps using Ledger Live, limiting participation in Cardano’s on-chain governance for Ledger wallet users.",
     "project_status": "in_progress",
     "proposal_id": "f14-ledger-live-drep-delegation-support-f14",
@@ -61063,6 +61087,15 @@
         "provenance_path": "data/_raw/lidonation/page-0016.json.gz",
         "source": "lidonation_api",
         "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      },
+      {
+        "fetched_at": "2026-05-15T20:21:05Z",
+        "fields_provided": [
+          "funding_status"
+        ],
+        "provenance_path": "data/funds/fund-14/_intermediate/iohk_winners.json",
+        "source": "projectcatalyst_io",
+        "url": null
       }
     ],
     "summary": null,
@@ -67452,10 +67485,12 @@
     "external_ids": {
       "lidonation_uuid": "b68c3883-d9e5-49b3-af02-5e0228040a84"
     },
-    "field_confidence": null,
+    "field_confidence": {
+      "funding_status": "high"
+    },
     "fund": 14,
     "funded_at": "2026-01-20T22:10:49.000000Z",
-    "funding_status": "over_budget",
+    "funding_status": "leftover",
     "is_opensource": true,
     "links": {
       "catalyst_voices_url": null,
@@ -67468,7 +67503,7 @@
     },
     "milestone_count": null,
     "no_votes": null,
-    "notes": null,
+    "notes": "RECONCILIATION 2026-05-15T20:21:05Z: funding_status changed from 'over_budget' (Lidonation) to 'leftover' (projectcatalyst_io).",
     "problem": "Hydra is ready for mainnet, and now dApp developers and wallets need browser tools to test and build efficiently.",
     "project_status": "in_progress",
     "proposal_id": "f14-no-witness-hydra-manager-f14",
@@ -67505,6 +67540,15 @@
         "provenance_path": "data/_raw/lidonation/page-0019.json.gz",
         "source": "lidonation_api",
         "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      },
+      {
+        "fetched_at": "2026-05-15T20:21:05Z",
+        "fields_provided": [
+          "funding_status"
+        ],
+        "provenance_path": "data/funds/fund-14/_intermediate/iohk_winners.json",
+        "source": "projectcatalyst_io",
+        "url": null
       }
     ],
     "summary": null,
@@ -69133,10 +69177,12 @@
     "external_ids": {
       "lidonation_uuid": "a9c28f3a-1cf4-4d76-b5ca-d17b5c98c209"
     },
-    "field_confidence": null,
+    "field_confidence": {
+      "funding_status": "high"
+    },
     "fund": 14,
     "funded_at": "2026-01-20T22:10:51.000000Z",
-    "funding_status": "over_budget",
+    "funding_status": "leftover",
     "is_opensource": false,
     "links": {
       "catalyst_voices_url": null,
@@ -69149,7 +69195,7 @@
     },
     "milestone_count": null,
     "no_votes": null,
-    "notes": null,
+    "notes": "RECONCILIATION 2026-05-15T20:21:05Z: funding_status changed from 'over_budget' (Lidonation) to 'leftover' (projectcatalyst_io).",
     "problem": "Cardano lacks a unified, standardized analytics platform. Fragmented data sources conceal ecosystem activity and limit comparability, hindering institutional adoption and investor insight.",
     "project_status": "in_progress",
     "proposal_id": "f14-onchain-analytics-for-the-cardano-ecosystem-f14",
@@ -69185,6 +69231,15 @@
         "provenance_path": "data/_raw/lidonation/page-0020.json.gz",
         "source": "lidonation_api",
         "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      },
+      {
+        "fetched_at": "2026-05-15T20:21:05Z",
+        "fields_provided": [
+          "funding_status"
+        ],
+        "provenance_path": "data/funds/fund-14/_intermediate/iohk_winners.json",
+        "source": "projectcatalyst_io",
+        "url": null
       }
     ],
     "summary": null,
@@ -75493,10 +75548,12 @@
     "external_ids": {
       "lidonation_uuid": "ed5790a4-0d3a-419d-bf8b-8baa5a9ad55e"
     },
-    "field_confidence": null,
+    "field_confidence": {
+      "funding_status": "high"
+    },
     "fund": 14,
     "funded_at": "2026-01-20T22:10:53.000000Z",
-    "funding_status": "over_budget",
+    "funding_status": "leftover",
     "is_opensource": true,
     "links": {
       "catalyst_voices_url": null,
@@ -75509,7 +75566,7 @@
     },
     "milestone_count": null,
     "no_votes": null,
-    "notes": null,
+    "notes": "RECONCILIATION 2026-05-15T20:21:05Z: funding_status changed from 'over_budget' (Lidonation) to 'leftover' (projectcatalyst_io).",
     "problem": "Rapid DEX’s funded prototype proved batcher-less pools cut fees, speed trades, and boost decentralization. Mainnet launch needs extra features for UX, efficiency, and sustainability.",
     "project_status": "in_progress",
     "proposal_id": "f14-rapid-dex-mainnet-ready-batcher-free-advanced-features-f14",
@@ -75545,6 +75602,15 @@
         "provenance_path": "data/_raw/lidonation/page-0019.json.gz",
         "source": "lidonation_api",
         "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      },
+      {
+        "fetched_at": "2026-05-15T20:21:05Z",
+        "fields_provided": [
+          "funding_status"
+        ],
+        "provenance_path": "data/funds/fund-14/_intermediate/iohk_winners.json",
+        "source": "projectcatalyst_io",
+        "url": null
       }
     ],
     "summary": null,
@@ -77907,10 +77973,12 @@
     "external_ids": {
       "lidonation_uuid": "a99fc7a2-5e33-4140-9c02-c77fb6675de8"
     },
-    "field_confidence": null,
+    "field_confidence": {
+      "funding_status": "high"
+    },
     "fund": 14,
     "funded_at": "2026-01-20T22:10:55.000000Z",
-    "funding_status": "over_budget",
+    "funding_status": "leftover",
     "is_opensource": true,
     "links": {
       "catalyst_voices_url": null,
@@ -77923,7 +77991,7 @@
     },
     "milestone_count": null,
     "no_votes": null,
-    "notes": null,
+    "notes": "RECONCILIATION 2026-05-15T20:21:05Z: funding_status changed from 'over_budget' (Lidonation) to 'leftover' (projectcatalyst_io).",
     "problem": ".NET developers cannot natively parse or evaluate UPLC. Without heavy FFI bridges to Rust or Haskell, 7-8M C# developers are blocked from building on Cardano. ",
     "project_status": "in_progress",
     "proposal_id": "f14-saib-chrysalisplutuscore-parser-cek-engine-for-net-f14",
@@ -77959,6 +78027,15 @@
         "provenance_path": "data/_raw/lidonation/page-0018.json.gz",
         "source": "lidonation_api",
         "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      },
+      {
+        "fetched_at": "2026-05-15T20:21:05Z",
+        "fields_provided": [
+          "funding_status"
+        ],
+        "provenance_path": "data/funds/fund-14/_intermediate/iohk_winners.json",
+        "source": "projectcatalyst_io",
+        "url": null
       }
     ],
     "summary": null,
@@ -78345,10 +78422,12 @@
     "external_ids": {
       "lidonation_uuid": "8ee43ebf-3a3e-43ec-a53e-9ae8554f623d"
     },
-    "field_confidence": null,
+    "field_confidence": {
+      "funding_status": "high"
+    },
     "fund": 14,
     "funded_at": "2026-01-20T22:10:57.000000Z",
-    "funding_status": "over_budget",
+    "funding_status": "leftover",
     "is_opensource": true,
     "links": {
       "catalyst_voices_url": null,
@@ -78361,7 +78440,7 @@
     },
     "milestone_count": null,
     "no_votes": null,
-    "notes": null,
+    "notes": "RECONCILIATION 2026-05-15T20:21:05Z: funding_status changed from 'over_budget' (Lidonation) to 'leftover' (projectcatalyst_io).",
     "problem": "Enterprises using SAP have no secure, standardized way to connect with the Cardano blockchain, limiting adoption for supply chain, finance, and ESG use cases.",
     "project_status": "in_progress",
     "proposal_id": "f14-sap-cardano-odata-v4-api-with-cap-sap-cardano-sdk-f14",
@@ -78397,6 +78476,15 @@
         "provenance_path": "data/_raw/lidonation/page-0027.json.gz",
         "source": "lidonation_api",
         "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      },
+      {
+        "fetched_at": "2026-05-15T20:21:05Z",
+        "fields_provided": [
+          "funding_status"
+        ],
+        "provenance_path": "data/funds/fund-14/_intermediate/iohk_winners.json",
+        "source": "projectcatalyst_io",
+        "url": null
       }
     ],
     "summary": null,
@@ -82583,10 +82671,12 @@
     "external_ids": {
       "lidonation_uuid": "23524040-a186-4ead-be96-7ee190b51899"
     },
-    "field_confidence": null,
+    "field_confidence": {
+      "funding_status": "high"
+    },
     "fund": 14,
     "funded_at": "2026-01-20T22:10:59.000000Z",
-    "funding_status": "over_budget",
+    "funding_status": "leftover",
     "is_opensource": false,
     "links": {
       "catalyst_voices_url": null,
@@ -82599,7 +82689,7 @@
     },
     "milestone_count": null,
     "no_votes": null,
-    "notes": null,
+    "notes": "RECONCILIATION 2026-05-15T20:21:05Z: funding_status changed from 'over_budget' (Lidonation) to 'leftover' (projectcatalyst_io).",
     "problem": "Cardano does not have USDT, the world’s most used stablecoin. This blocks billions in liquidity, deters users, and limits Cardano’s ability to compete in the global crypto economy",
     "project_status": "in_progress",
     "proposal_id": "f14-stable-cardano-fast-and-feeless-usdt-interopability-f14",
@@ -82635,6 +82725,15 @@
         "provenance_path": "data/_raw/lidonation/page-0028.json.gz",
         "source": "lidonation_api",
         "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      },
+      {
+        "fetched_at": "2026-05-15T20:21:05Z",
+        "fields_provided": [
+          "funding_status"
+        ],
+        "provenance_path": "data/funds/fund-14/_intermediate/iohk_winners.json",
+        "source": "projectcatalyst_io",
+        "url": null
       }
     ],
     "summary": null,

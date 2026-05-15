@@ -1,0 +1,19 @@
+{
+  "fund": 14,
+  "reconciled_at": "2026-05-15T20:21:12Z",
+  "sources": {
+    "primary": {
+      "label": "lidonation_api",
+      "path": "data/funds/fund-14/proposals.json"
+    },
+    "secondary": {
+      "label": "projectcatalyst_io",
+      "path": "data/funds/fund-14/_intermediate/iohk_winners.json"
+    }
+  },
+  "agreement_count": 1283,
+  "disagreements": [],
+  "unmatched_in_primary": [],
+  "unmatched_in_secondary": [],
+  "notes": null
+}

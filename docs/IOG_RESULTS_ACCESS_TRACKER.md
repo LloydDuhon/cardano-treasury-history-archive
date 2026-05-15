@@ -45,12 +45,10 @@ source files and still need a parser path before running reconciliation.
 | F11 | `https://projectcatalyst.io/funds/11/voting-results` -> Google Sheet `18mDkdQn8fufBr7Ab9oSlV14UvBTMoUHeS43KAJiYPgQ`, gid `896673639` | CSV cached and parsed; 312 rows / 78 funded; no status disagreements. | `data/_raw/iohk-results/fund-11.csv` |
 | F12 | `https://projectcatalyst.io/funds/12/voting-results` -> Google Sheet `1Wq1XdPCJuiBDjDECSrpm7RvIfpNMEHitsbveqVaPWnk`, gid `837754658` | CSV cached and parsed; 189 rows / 63 funded; no status disagreements. | `data/_raw/iohk-results/fund-12.csv` |
 | F13 | `https://projectcatalyst.io/funds/13/voting-results` -> Google Sheet `1Jesjo5hoLvBJfWF4E6_516urm_lfvtSW0fhkZhCMUmQ`, gid `1185817058` | CSV cached and parsed; 357 rows / 53 funded; no status disagreements. | `data/_raw/iohk-results/fund-13.csv` |
-| F14 | `https://projectcatalyst.io/funds/14/voting-results` -> Google Sheet `1C_zftHxwGN__vxFscZosv_qynnhOd-zJl_bMezs7joo`, default gid `0` | CSV cached, but parser gets 0 result rows because the export contains formula/reference rows; identify correct tab/export before reconciliation. | `data/_raw/iohk-results/fund-14.csv` |
+| F14 | `https://projectcatalyst.io/funds/14/voting-results` -> Google Sheet `1C_zftHxwGN__vxFscZosv_qynnhOd-zJl_bMezs7joo`; result tabs `161104218`, `689513427`, `1185817058`, `362975940`, `961791716`, `791046878` | Multi-tab CSVs cached and parsed; 1,283 unique rows / 131 funded-or-leftover outcomes; reconciles with 0 disagreements. Default gid `0` is retained only as the broken template export. | `data/_raw/iohk-results/fund-14-*.csv` |
 
 ## Remaining Engineering Work
 
-- Identify the correct F14 tab/export path; the currently cached default export
-  is not parseable result data.
 - For F7-F9, inspect the linked workbooks for additional tabs/gids before
   treating the cached parsed rows as complete.
 - Add a newer-layout PDF parser for F10 only if we still need PDF parity after

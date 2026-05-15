@@ -138,6 +138,32 @@ def test_apply_flips_funding_status_when_secondary_wins(
     assert not errors, [(list(e.absolute_path), e.message) for e in errors]
 
 
+def test_apply_marks_leftover_when_sponsored_by_leftovers_wins(tmp_path: Path) -> None:
+    data_root = _stage(
+        tmp_path,
+        14,
+        [_make_proposal("f14-x", funding_status="over_budget")],
+        [
+            {
+                "primary_proposal_id": "f14-x",
+                "matched_secondary_title": "Test proposal",
+                "primary_funding_status": "over_budget",
+                "secondary_funded_flag": True,
+                "secondary_status": "FUNDED",
+                "secondary_source_file": "fund-14-sponsored-by-leftovers.csv",
+                "verdict": "secondary_wins",
+                "note": None,
+            }
+        ],
+    )
+
+    counters = apply_fund(data_root=data_root, fund=14)
+
+    assert counters["applied"] == 1
+    updated = json.loads((data_root / "funds" / "fund-14" / "proposals.json").read_text())
+    assert updated[0]["funding_status"] == "leftover"
+
+
 def test_apply_is_idempotent(tmp_path: Path) -> None:
     data_root = _stage(
         tmp_path,

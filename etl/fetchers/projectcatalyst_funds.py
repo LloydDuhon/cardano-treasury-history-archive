@@ -73,6 +73,14 @@ DEFAULT_DATA_ROOT = REPO_ROOT / "data"
 # Funds for which a voting-results artifact is expected. Fund 15 is active as
 # of 2026-05-15, so it does not yet have final voting results.
 KNOWN_FUNDS_WITH_RESULTS: tuple[int, ...] = (2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14)
+FUND_14_RESULT_TABS: tuple[tuple[str, str], ...] = (
+    ("161104218", "fund-14-cardano-use-cases-partners-products.csv"),
+    ("689513427", "fund-14-cardano-use-cases-concept.csv"),
+    ("1185817058", "fund-14-cardano-open-developers.csv"),
+    ("362975940", "fund-14-cardano-open-ecosystem.csv"),
+    ("961791716", "fund-14-sponsored-by-leftovers.csv"),
+    ("791046878", "fund-14-withdrawn.csv"),
+)
 
 # Google Drive file URL pattern: https://drive.google.com/file/d/<ID>/view
 _GDRIVE_FILE_RE = re.compile(r"drive\.google\.com/file/d/([A-Za-z0-9_\-]+)")
@@ -281,6 +289,15 @@ def google_sheet_csv_url(sheet_url: str) -> str | None:
     return f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&gid={gid}"
 
 
+def google_sheet_csv_url_for_gid(sheet_url: str, gid: str) -> str | None:
+    """Return the gviz CSV URL for a specific worksheet gid in a public sheet."""
+    m = _GSHEET_RE.search(sheet_url)
+    if not m:
+        return None
+    sheet_id = m.group(1)
+    return f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&gid={gid}"
+
+
 def extract_voting_results_sheet_url(html: bytes | str) -> str | None:
     """Return the first Google Sheets link from a voting-results page."""
     text = html.decode("utf-8", errors="replace") if isinstance(html, bytes) else html
@@ -346,6 +363,10 @@ def _pdf_path(data_root: Path, fund: int) -> Path:
 
 def _csv_path(data_root: Path, fund: int) -> Path:
     return data_root / "_raw" / "iohk-results" / f"fund-{fund:02d}.csv"
+
+
+def _csv_named_path(data_root: Path, filename: str) -> Path:
+    return data_root / "_raw" / "iohk-results" / filename
 
 
 def _ensure_dir(p: Path) -> None:
@@ -608,7 +629,24 @@ def download_voting_results_csv(
     """Download the official voting-results CSV for one fund."""
     cfg = FundFetcherConfig.from_env()
     root = output_root if output_root is not None else cfg.data_root
-    csv_path = _csv_path(root, fund)
+    return _download_csv_to_path(
+        fund,
+        csv_url,
+        _csv_path(root, fund),
+        force=force,
+        client=client,
+    )
+
+
+def _download_csv_to_path(
+    fund: int,
+    csv_url: str,
+    csv_path: Path,
+    *,
+    force: bool = False,
+    client: FundPageClient | None = None,
+) -> Path:
+    cfg = FundFetcherConfig.from_env()
     if csv_path.exists() and not force:
         log.info("csv.cached", extra={"fund": fund, "path": str(csv_path)})
         return csv_path
@@ -632,6 +670,38 @@ def download_voting_results_csv(
     return csv_path
 
 
+def download_fund14_tab_csvs(
+    sheet_url: str,
+    *,
+    output_root: Path | None = None,
+    force: bool = False,
+    client: FundPageClient | None = None,
+) -> list[Path]:
+    """Download the real multi-tab Fund 14 result CSVs.
+
+    The default gid=0 export is the workbook template and contains formula
+    errors. Fund 14's result data lives in challenge-specific tabs plus the
+    sponsored-by-leftovers and withdrawn tabs.
+    """
+    cfg = FundFetcherConfig.from_env()
+    root = output_root if output_root is not None else cfg.data_root
+    paths: list[Path] = []
+    for gid, filename in FUND_14_RESULT_TABS:
+        csv_url = google_sheet_csv_url_for_gid(sheet_url, gid)
+        if csv_url is None:
+            continue
+        paths.append(
+            _download_csv_to_path(
+                14,
+                csv_url,
+                _csv_named_path(root, filename),
+                force=force,
+                client=client,
+            )
+        )
+    return paths
+
+
 def fetch_fund_csv(
     fund: int,
     *,
@@ -649,6 +719,15 @@ def fetch_fund_csv(
     csv_url = summary.get("csv_url")
     if not csv_url:
         log.info("csv.skipped.no_url", extra={"fund": fund})
+        return summary
+    if fund == 14 and summary.get("sheet_url"):
+        csv_paths = download_fund14_tab_csvs(
+            str(summary["sheet_url"]),
+            output_root=output_root,
+            force=force,
+            client=client,
+        )
+        summary["csv_paths"] = [str(path) for path in csv_paths]
         return summary
     csv_path = download_voting_results_csv(
         fund,
@@ -774,6 +853,7 @@ __all__ = [
     "NextDataError",
     "download_voting_results_pdf",
     "download_voting_results_csv",
+    "download_fund14_tab_csvs",
     "extract_fund_summary",
     "extract_next_data",
     "extract_voting_results_sheet_url",
@@ -783,5 +863,6 @@ __all__ = [
     "fetch_voting_results_page",
     "gdrive_direct_url",
     "google_sheet_csv_url",
+    "google_sheet_csv_url_for_gid",
     "main",
 ]

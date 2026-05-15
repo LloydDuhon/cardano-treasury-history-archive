@@ -34,6 +34,7 @@ class CatalystResultRow(TypedDict, total=False):
     meets_approval_threshold: bool | None
     overall_score: float | None
     source_row: int
+    source_file: str
     raw: dict[str, str]
 
 
@@ -120,13 +121,17 @@ def _requested_field(row: dict[str, str]) -> tuple[float | None, str | None]:
     return None, None
 
 
-def iter_csv_rows(csv_path: Path) -> Iterator[CatalystResultRow]:
+def iter_csv_rows(
+    csv_path: Path,
+    *,
+    default_status: str | None = None,
+) -> Iterator[CatalystResultRow]:
     """Yield parsed rows from a cached official Catalyst CSV."""
     with csv_path.open(encoding="utf-8-sig", newline="") as fh:
         reader = csv.DictReader(fh)
         for row_index, row in enumerate(reader, start=2):
             title = _value(row, "Proposal")
-            status = _value(row, "Status", "STATUS")
+            status = _value(row, "Status", "STATUS") or (default_status or "")
             if not title or not status or status == "#REF!":
                 continue
             amount_requested, currency = _requested_field(row)
@@ -143,14 +148,64 @@ def iter_csv_rows(csv_path: Path) -> Iterator[CatalystResultRow]:
                 "meets_approval_threshold": _bool_yes(_value(row, "Meets approval threshold")),
                 "overall_score": _money_or_number(_value(row, "Overall score")),
                 "source_row": row_index,
+                "source_file": csv_path.name,
                 "raw": dict(row),
             }
             yield result_row
 
 
-def parse_csv_results(csv_path: Path) -> tuple[list[CatalystResultRow], CatalystResultSummary]:
+def parse_csv_results(
+    csv_path: Path,
+    *,
+    default_status: str | None = None,
+) -> tuple[list[CatalystResultRow], CatalystResultSummary]:
     """Parse a cached official Catalyst CSV into normalized result rows."""
-    rows = list(iter_csv_rows(csv_path))
+    rows = list(iter_csv_rows(csv_path, default_status=default_status))
+    summary = CatalystResultSummary(
+        rows_matched=len(rows),
+        funded_count=sum(1 for row in rows if row["funded"]),
+        source_kind="projectcatalyst_voting_results_csv",
+    )
+    return rows, summary
+
+
+def _result_priority(row: CatalystResultRow) -> tuple[int, int]:
+    """Rank duplicate rows from a multi-tab result workbook.
+
+    Fund 14's `Sponsored by leftovers` tab repeats proposals from their primary
+    challenge tab. A `FUNDED` leftovers row is the final official result and
+    should override the earlier over-budget row. Non-funded leftovers rows are
+    explanatory and should not replace the primary challenge result.
+    """
+    source_file = row.get("source_file", "")
+    if row["funded"] and "sponsored-by-leftovers" in source_file:
+        return (2, 0)
+    if "sponsored-by-leftovers" in source_file:
+        return (0, 0)
+    if row.get("status") == "WITHDRAWN":
+        return (1, 0)
+    return (1, 1)
+
+
+def parse_csv_result_files(
+    csv_paths: Iterable[Path | tuple[Path, str | None]],
+) -> tuple[list[CatalystResultRow], CatalystResultSummary]:
+    """Parse and merge multiple CSV tabs from a single official result workbook."""
+    by_title: dict[str, CatalystResultRow] = {}
+    for item in csv_paths:
+        if isinstance(item, tuple):
+            csv_path, default_status = item
+        else:
+            csv_path, default_status = item, None
+        for row in iter_csv_rows(csv_path, default_status=default_status):
+            title = row["title"]
+            existing = by_title.get(title)
+            if existing is None or _result_priority(row) > _result_priority(existing):
+                by_title[title] = row
+    rows = sorted(
+        by_title.values(),
+        key=lambda row: (row.get("source_file", ""), row["source_row"]),
+    )
     summary = CatalystResultSummary(
         rows_matched=len(rows),
         funded_count=sum(1 for row in rows if row["funded"]),
@@ -198,6 +253,7 @@ def iter_fund_one_pdf_rows(pdf_path: Path) -> Iterator[CatalystResultRow]:
                     "meets_approval_threshold": None,
                     "overall_score": None,
                     "source_row": source_row,
+                    "source_file": pdf_path.name,
                     "raw": {
                         "line": line,
                         "funds_remaining_usd": m.group("remaining"),
@@ -258,6 +314,7 @@ __all__ = [
     "CatalystResultSummary",
     "iter_csv_rows",
     "iter_fund_one_pdf_rows",
+    "parse_csv_result_files",
     "parse_csv_results",
     "parse_fund_one_pdf",
     "write_intermediate",
