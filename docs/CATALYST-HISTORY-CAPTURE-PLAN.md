@@ -2,7 +2,7 @@
 
 **Author:** Lloyd Duhon (with Claude research)
 **Date:** 2026-05-13
-**Status:** Draft for review — no code written yet
+**Status:** Interim implementation in progress
 **Owner:** Lloyd
 **Scope:** Capture proposer, proposal, win/loss, and completion data for every Project Catalyst fund (Fund 1 → Fund 15), as a GitHub-resident research dataset.
 
@@ -14,9 +14,9 @@ Project Catalyst data is **fragmented** across at least eight sources spanning f
 
 | Source | What it gives us | Status |
 |---|---|---|
-| **Lidonation Catalyst Explorer API** (`catalystexplorer.com/api/*`) | 11,385 proposals, F2–F15, rich fields incl. proposer, votes, funding status, AI summary. Apache-2.0 codebase. **No auth.** | **Working. Primary source for F2–F15 proposer/proposal data.** |
+| **Lidonation Catalyst Explorer API** (`catalystexplorer.com/api/v1/*`) | 11,528 proposals, F2–F15, rich fields incl. proposer/team, votes, funding status, AI summary. Apache-2.0 codebase. **No auth.** | **Working. Primary source for F2–F15 proposer/proposal data.** |
 | `projectcatalyst.io/funds/{N}/voting-results` | Canonical IOG winner artifacts for F2–F13 (PDFs on `static.iohk.io` / Google Drive) plus per-fund counts | **Working. Primary source for authoritative win/loss.** |
-| `milestones.projectcatalyst.io` | Authoritative milestone-level completion data, F10–F15 | **Live; HTML scrape only — no public API.** |
+| Milestone Module Supabase REST | Authoritative milestone-level completion data, F9–F14 in the current sweep | **Working with public client-side anon key captured from the module.** |
 | `cardano-foundation/catalyst-voices` | Future system of record, Fund 14+; signed-document model | **API design exists; public deployed gateway returns HTTP 500 today.** Defer. |
 | Lidonation legacy API (`lidonation.com/api/catalyst-explorer/*`) | Older REST surface | **Broken** (UUID-vs-bigint mismatch). Schema reference only. |
 | `cardano.ideascale.com` | F1–F9 proposal pages (original source) | SPA, REST API gated. **Wayback CDX scrape is the only practical path. Required for F1.** |
@@ -189,19 +189,21 @@ Design principles honored:
 - **Soft outreach:** email Lidonation introducing the project + proposing attribution + asking about rate limit guidance. (They explicitly call the API "free to the entire community" — but courtesy buys goodwill and possibly a higher rate-limit token.)
 
 **Phase 1 — Lidonation ingestion (weeks 1–2)** — **biggest single ROI**
-- Implement `fetchers/lidonation_api.py` (DONE 2026-05-13).
+- Implement `fetchers/lidonation_api.py` (legacy endpoint implemented 2026-05-13;
+  migrated to documented v1 endpoint 2026-05-14).
 - Polite client: 1.5 req/sec default, exponential backoff on 429/5xx, identifiable `User-Agent: catalyst-history-archive/0.1 (+https://github.com/lloydduhon/catalyst-history-archive)`.
-- Endpoints initially consumed: `/api/proposals` (475 pages × 24), `/api/fund-titles`. Other endpoints (`/api/campaigns`, `/api/ideascale-profiles`, `/api/catalyst-profiles`, `/api/groups`, `/api/tags`, `/api/reviews`) deferred until first sweep is ingested and validated.
-- Cache raw page JSON CENTRALLY at `data/_raw/lidonation/page-NNNN.json.gz` (the server-side fund filter is broken; pages mix funds — see ADR-2026-05-13 Implementation Notes).
+- Endpoints consumed after Darlington pointed us to the current docs:
+  `/api/v1/funds` and `/api/v1/proposals?page=&per_page=60&include=campaign,fund,team`.
+- Cache raw page JSON CENTRALLY at `data/_raw/lidonation/page-NNNN.json.gz`.
 - Phase 1 normalizer (`unify_proposals.py`) demultiplexes the cache into per-fund `proposals.json`. Per-fund `proposers.csv` and consolidated CSVs are Phase 6.
-- **Result:** F2–F15 proposer/proposal data populated to ~95% completeness for the proposal entity once the full sweep runs.
+- **Current result:** F2-F15 proposer/proposal data populated from 193 v1 pages, 11,528 proposal records, zero no-fund skips.
 
-**Phase 2 — Cross-verify winners with IOG voting-results (week 2, DONE 2026-05-13)**
+**Phase 2 — Cross-verify winners with IOG voting-results (week 2, PARTIAL)**
 - `fetchers/projectcatalyst_funds.py` — scrapes `/funds/N` HTML for embedded `__NEXT_DATA__` JSON (canonical counts + `votingResultsUrl`), then downloads the linked PDF. Handles three URL patterns: `static.iohk.io` direct (F2), Google Drive `/file/d/{id}/view` → `/uc?export=download&id={id}` (F3–F9), inline `projectcatalyst.io` (F10+).
 - `parsers/iohk_pdf.py` — pdfplumber row parser. Validated against F2 (78 rows / 11 funded — matches canonical counts).
 - `normalizers/reconcile_winners.py` — DIFF-ONLY SIDECAR. Writes `data/funds/fund-XX/_reconciliation.json` with agreements, disagreements, unmatched primary, unmatched secondary. Does NOT modify `proposals.json` — corrections deferred to Phase 6.
 - `schemas/reconciliation.schema.json` — defines the diff record, validated by `validate_against_schema.py`.
-- First-run smoke target: Fund 2 only. F3–F13 follow once F2 reconciliation is confirmed clean.
+- Current status: F2 is downloaded and parsed. F10 is downloaded but needs a newer-layout parser. F3-F9 are blocked by Drive/redirect access controls from CLI. F11-F13 are Google Sheets returning 401 on CSV export from CLI. See `docs/IOG_RESULTS_ACCESS_TRACKER.md`.
 
 **Phase 3 — Milestone capture for F10+ (week 3)**
 - Implement `fetchers/milestones_scraper.py`.

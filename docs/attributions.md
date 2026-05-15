@@ -8,8 +8,8 @@ This dataset is derived from multiple upstream sources. Per the CC-BY-4.0 licens
 
 - Operator: **Lidonation Foundation Inc.**
 - Code: https://github.com/lidonation/catalystexplorer (Apache-2.0)
-- API: `https://www.catalystexplorer.com/api/*` — no auth required for read endpoints
-- Coverage: Funds 2 through 15, ~11,385 proposals at time of survey
+- API: `https://www.catalystexplorer.com/api/v1/*` — no auth required for read endpoints
+- Coverage: Funds 2 through 15, 11,528 proposals in the 2026-05-14 interim sweep
 - License posture: Lidonation has consistently described the Catalyst Explorer API as "free to the entire community."
 
 Lidonation's work is the single largest enabler of this archive. The Catalyst Explorer project was itself funded through Project Catalyst (Fund 9 onward), so attribution flows in both directions — much of the underlying labor was already paid for by the community via the same program this archive documents.

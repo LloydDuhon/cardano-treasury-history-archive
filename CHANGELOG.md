@@ -8,6 +8,47 @@ and SemVer for pipeline code.
 
 ## [Unreleased]
 
+### Changed (Interim 2026-05-15)
+- Migrated the Lidonation fetcher from the legacy `/api/*` surface to the
+  documented `/api/v1/*` API after the Catalyst Explorer maintainer pointed us
+  at the current docs. The interim sweep now covers F2-F15 with 11,528 proposal
+  records and zero no-fund skips.
+- Added v1 `team` proposer normalization and proposal-ID collision preservation
+  for duplicate slugs.
+- Added Google Drive confirm-link/form handling to the voting-results downloader.
+  Several historical artifacts remain permission blocked, so the final IOG/CF
+  reconciliation is tracked separately in `docs/IOG_RESULTS_ACCESS_TRACKER.md`.
+- Chunked Milestone Module Supabase `signoffs` fetches to avoid oversized
+  `in.(...)` filters.
+- Current validation gate: 86 tests, mypy clean, ruff clean, schema validation
+  clean for the interim generated snapshot.
+
+### Added (Docs)
+- `docs/IOG_RESULTS_ACCESS_TRACKER.md` documents the missing IOG/CF artifacts,
+  their source URLs, expected local filenames, and remaining parser work.
+
+### Added (Phase 6 - Cross-source consolidation)
+- `etl/normalizers/apply_reconciliations.py` - idempotent applier of
+  per-fund `_reconciliation.json` into canonical `proposals.json`.
+  Per ADR-2026-05-13: when verdict=secondary_wins, funding_status is
+  updated to the IOG-PDF value, the original Lidonation value is
+  preserved verbatim in `notes`, and a new `sources[]` entry with
+  source=`iohk_voting_results_pdf` and fields_provided=["funding_status"]
+  records the override. Re-runs are no-ops.
+- `etl/normalizers/dedupe_proposers.py` - cross-fund proposer dedupe.
+  Exact-ID merge on `lidonation_profile_uuid` collapses references
+  across funds; fuzzy display-name matches populate
+  `duplicate_candidates[]` mutually on both records (never silent
+  merge). Walks raw Lidonation cache to recover display names. Emits
+  per-fund `proposers.json` matching the proposer schema.
+- `etl/normalizers/consolidate.py` - emits `data/consolidated/`:
+  `all_proposals.{csv,json}`, `all_proposers.{csv,json}`,
+  `all_milestones.{csv,json}`, plus an auto-generated `schema.md`
+  describing CSV columns. CSV is intentionally narrow (~25 columns);
+  full schema fidelity preserved in JSON.
+- 17 new tests across 3 modules; suite total 84.
+- Pinned: pandas 2.2.3 (transitive numpy 2.1.3).
+
 ### Added (Phase 4 - Fund 1 Wayback recovery)
 - `etl/fetchers/ideascale_wayback.py` - REWRITTEN. Two-stage fetcher:
   Wayback CDX query for `cardano.ideascale.com/a/dtd/*` in the F1
@@ -95,7 +136,6 @@ and SemVer for pipeline code.
   ETL component implemented in Phase 0).
 
 ### Not yet implemented
-- Fetchers (Phase 1+).
-- Normalizers (Phase 6).
 - GitHub Actions monthly refresh workflow (Phase 7).
-- Any captured data under `data/`.
+- Final IOG/CF voting-results reconciliation for F3-F13 pending source access
+  and parser support.

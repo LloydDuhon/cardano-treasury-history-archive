@@ -115,8 +115,63 @@ def test_download_voting_results_pdf_static_iohk(tmp_path: Path) -> None:
 
 
 @respx.mock
+def test_download_voting_results_pdf_follows_gdrive_confirm_href(tmp_path: Path) -> None:
+    pdf_bytes = b"%PDF-1.7\n" + b"\x00" * 100
+    url = "https://drive.google.com/file/d/abcdef/view"
+    direct = "https://drive.google.com/uc?export=download&id=abcdef"
+    confirm = "https://drive.google.com/uc?export=download&confirm=t&id=abcdef"
+    respx.get(direct).mock(
+        return_value=httpx.Response(
+            200,
+            content=(
+                b'<html><a href="/uc?export=download&amp;confirm=t&amp;id=abcdef">'
+                b"download</a></html>"
+            ),
+        )
+    )
+    respx.get(confirm).mock(return_value=httpx.Response(200, content=pdf_bytes))
+
+    with _make_client(tmp_path) as client:
+        path = download_voting_results_pdf(3, url, output_root=tmp_path / "data", client=client)
+
+    assert path.exists()
+    assert path.read_bytes() == pdf_bytes
+
+
+@respx.mock
+def test_download_voting_results_pdf_follows_gdrive_confirm_form(tmp_path: Path) -> None:
+    pdf_bytes = b"%PDF-1.7\n" + b"\x00" * 100
+    url = "https://drive.google.com/file/d/abcdef/view"
+    direct = "https://drive.google.com/uc?export=download&id=abcdef"
+    confirm = (
+        "https://drive.usercontent.google.com/download"
+        "?id=abcdef&export=download&confirm=t&uuid=123"
+    )
+    respx.get(direct).mock(
+        return_value=httpx.Response(
+            200,
+            content=(
+                b'<html><form action="https://drive.usercontent.google.com/download">'
+                b'<input name="id" value="abcdef">'
+                b'<input name="export" value="download">'
+                b'<input name="confirm" value="t">'
+                b'<input name="uuid" value="123">'
+                b"</form></html>"
+            ),
+        )
+    )
+    respx.get(confirm).mock(return_value=httpx.Response(200, content=pdf_bytes))
+
+    with _make_client(tmp_path) as client:
+        path = download_voting_results_pdf(3, url, output_root=tmp_path / "data", client=client)
+
+    assert path.exists()
+    assert path.read_bytes() == pdf_bytes
+
+
+@respx.mock
 def test_download_voting_results_pdf_rejects_non_pdf(tmp_path: Path) -> None:
-    """Google Drive confirm-pages return HTML; we must refuse it."""
+    """Google Drive hard-block pages without confirm controls are rejected."""
     url = "https://drive.google.com/file/d/abcdef/view"
     direct = "https://drive.google.com/uc?export=download&id=abcdef"
     respx.get(direct).mock(

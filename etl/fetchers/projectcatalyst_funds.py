@@ -33,8 +33,11 @@ import re
 import sys
 import time
 from dataclasses import dataclass
+from html import unescape
+from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
+from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 
 import httpx
 from tenacity import (
@@ -63,6 +66,38 @@ KNOWN_FUNDS_WITH_RESULTS: tuple[int, ...] = (2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
 
 # Google Drive file URL pattern: https://drive.google.com/file/d/<ID>/view
 _GDRIVE_FILE_RE = re.compile(r"drive\.google\.com/file/d/([A-Za-z0-9_\-]+)")
+
+
+class _DriveConfirmParser(HTMLParser):
+    """Extract Google Drive confirm-download links/forms from interstitial HTML."""
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.hrefs: list[str] = []
+        self.forms: list[tuple[str, list[tuple[str, str]]]] = []
+        self._current_form_action: str | None = None
+        self._current_form_inputs: list[tuple[str, str]] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        attr_map = {k.lower(): v for k, v in attrs if v is not None}
+        if tag == "a" and attr_map.get("href"):
+            self.hrefs.append(attr_map["href"])
+            return
+        if tag == "form" and attr_map.get("action"):
+            self._current_form_action = attr_map["action"]
+            self._current_form_inputs = []
+            return
+        if tag == "input" and self._current_form_action:
+            name = attr_map.get("name")
+            value = attr_map.get("value", "")
+            if name:
+                self._current_form_inputs.append((name, value))
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "form" and self._current_form_action:
+            self.forms.append((self._current_form_action, self._current_form_inputs.copy()))
+            self._current_form_action = None
+            self._current_form_inputs = []
 
 
 def _configure_logging() -> logging.Logger:
@@ -200,6 +235,36 @@ def gdrive_direct_url(view_url: str) -> str | None:
     return f"https://drive.google.com/uc?export=download&id={file_id}"
 
 
+def _with_query_params(url: str, params: list[tuple[str, str]]) -> str:
+    parsed = urlparse(url)
+    query = parse_qsl(parsed.query, keep_blank_values=True)
+    query.extend(params)
+    return urlunparse(parsed._replace(query=urlencode(query)))
+
+
+def _extract_gdrive_confirm_url(html: bytes, *, base_url: str) -> str | None:
+    """Return the next Drive download URL from an HTML confirm interstitial."""
+    text = html.decode("utf-8", errors="replace")
+    parser = _DriveConfirmParser()
+    parser.feed(text)
+
+    for href in parser.hrefs:
+        candidate = urljoin(base_url, unescape(href))
+        parsed = urlparse(candidate)
+        query = dict(parse_qsl(parsed.query, keep_blank_values=True))
+        if "confirm" in query:
+            return candidate
+
+    for action, inputs in parser.forms:
+        candidate = urljoin(base_url, unescape(action))
+        host = urlparse(candidate).netloc
+        if "drive.google.com" not in host and "drive.usercontent.google.com" not in host:
+            continue
+        return _with_query_params(candidate, inputs)
+
+    return None
+
+
 # --------------------------------------------------------------------------- #
 # Cache layout
 # --------------------------------------------------------------------------- #
@@ -276,6 +341,38 @@ class FundPageClient:
             raise RuntimeError(f"upstream {resp.status_code} on {url}")
         resp.raise_for_status()
         return resp.content
+
+    @retry(
+        retry=retry_if_exception_type((httpx.HTTPError, RuntimeError)),
+        wait=wait_exponential(multiplier=1.5, min=1, max=30),
+        stop=stop_after_attempt(5),
+        reraise=True,
+        before_sleep=_retry_log,
+    )
+    def get_gdrive_pdf_bytes(self, url: str) -> bytes:
+        """GET a Google Drive PDF, following confirm-token interstitials."""
+        self._throttle.wait()
+        resp = self._client.get(url)
+        if resp.status_code == 429 or resp.status_code >= 500:
+            raise RuntimeError(f"upstream {resp.status_code} on {url}")
+        resp.raise_for_status()
+        if resp.content.startswith(b"%PDF"):
+            return resp.content
+
+        confirm_url = _extract_gdrive_confirm_url(resp.content, base_url=str(resp.url))
+        if not confirm_url:
+            preview = resp.content[:200].decode("utf-8", errors="replace")
+            raise RuntimeError(
+                f"Google Drive did not expose a confirm URL " f"(first 200 bytes: {preview!r})"
+            )
+
+        log.info("pdf.gdrive.confirm", extra={"url": confirm_url})
+        self._throttle.wait()
+        confirm_resp = self._client.get(confirm_url)
+        if confirm_resp.status_code == 429 or confirm_resp.status_code >= 500:
+            raise RuntimeError(f"upstream {confirm_resp.status_code} on {confirm_url}")
+        confirm_resp.raise_for_status()
+        return confirm_resp.content
 
 
 # --------------------------------------------------------------------------- #
@@ -371,9 +468,8 @@ def download_voting_results_pdf(
     owns = client is None
     cli = client or FundPageClient(cfg)
     try:
-        payload = cli.get_bytes(url)
+        payload = cli.get_gdrive_pdf_bytes(url) if gd else cli.get_bytes(url)
         if not payload.startswith(b"%PDF"):
-            # Google Drive sometimes returns an HTML confirm page for >100MB files.
             preview = payload[:200].decode("utf-8", errors="replace")
             raise RuntimeError(f"fund {fund}: response is not a PDF (first 200 bytes: {preview!r})")
         _atomic_write(pdf_path, payload)

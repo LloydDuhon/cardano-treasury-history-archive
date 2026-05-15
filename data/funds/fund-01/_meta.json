@@ -1,0 +1,15 @@
+{
+  "fund": 1,
+  "normalized_at": "2026-05-14T22:49:04Z",
+  "record_count": 0,
+  "sources_used": [
+    "ideascale_wayback"
+  ],
+  "phase": "phase-4",
+  "phase_notes": "Fund 1 was the Catalyst pilot. No formal voting outcome existed; funding_status is 'unknown' for every record. Titles and proposers are best-effort recovery from Internet Archive snapshots. Records carry confidence: low. There is no canonical complete list - expect 10-20% records to be missing or have incomplete fields.",
+  "coverage_warnings": [
+    "Vote counts and ask amounts are usually null (not in archived HTML).",
+    "Proposer name may be 'anonymous' when the archived page hid it.",
+    "Description may include Wayback Machine UI fragments if snapshot is wrapped."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "fund": 2,
+  "normalized_at": "2026-05-14T22:41:13Z",
+  "record_count": 79,
+  "sources_used": [
+    "lidonation_api"
+  ],
+  "phase": "phase-1",
+  "phase_notes": "Phase 1 ingestion from Lidonation /api/v1/proposals only. Cross-source reconciliation against IOG voting-results PDFs is deferred to Phase 2; milestone data to Phase 3; proposer-entity dedup to Phase 6.",
+  "coverage_warnings": [
+    "Vote counts are raw lovelace for older funds; units may vary by fund.",
+    "Currency may be USD or ADA depending on fund."
+  ]
+}

@@ -142,13 +142,35 @@ def _mint_proposer_id_basis(user: dict[str, Any]) -> str:
     return str(user.get("id") or user.get("name") or "unknown")
 
 
+def _dedupe_proposal_id(proposal_id: str, rec: dict[str, Any], seen: set[str]) -> str:
+    """Preserve records whose slugs collide by suffixing the Lidonation UUID."""
+    if proposal_id not in seen:
+        return proposal_id
+    suffix = slugify(str(rec.get("id") or ""))[:8] or str(len(seen) + 1)
+    candidate = f"{proposal_id}-{suffix}"
+    n = 2
+    while candidate in seen:
+        candidate = f"{proposal_id}-{suffix}-{n}"
+        n += 1
+    return candidate
+
+
 def iter_pages(raw_dir: Path) -> Iterator[tuple[Path, dict[str, Any]]]:
     """Yield (path, parsed-page) for each cached lidonation page."""
     if not raw_dir.exists():
         return
+    max_page: int | None = None
     for p in sorted(raw_dir.glob("page-*.json.gz")):
+        match = re.search(r"page-(\d+)\.json\.gz$", p.name)
+        page_number = int(match.group(1)) if match else None
+        if max_page is not None and page_number is not None and page_number > max_page:
+            continue
         with gzip.open(p, "rb") as fh:
-            yield p, json.loads(fh.read())
+            page = json.loads(fh.read())
+        meta = page.get("meta") if isinstance(page.get("meta"), dict) else {}
+        if max_page is None and meta.get("last_page"):
+            max_page = int(meta["last_page"])
+        yield p, page
 
 
 def normalize_record(
@@ -168,7 +190,7 @@ def normalize_record(
     slug = rec.get("slug")
     proposal_id = _mint_proposal_id(fund_number, slug, fallback=str(rec.get("id", "unknown")))
 
-    users = rec.get("users") or []
+    users = rec.get("users") or rec.get("team") or []
     proposer_ids = [
         f"p-lido-{u.get('id') or _mint_proposer_id_basis(u)}" for u in users if isinstance(u, dict)
     ] or [f"p-lido-anonymous-f{fund_number:02d}-{slug or rec.get('id', 'unknown')}"]
@@ -227,7 +249,7 @@ def normalize_record(
         "sources": [
             {
                 "source": ctx.source_label,
-                "url": "https://www.catalystexplorer.com/api/proposals",
+                "url": "https://www.catalystexplorer.com/api/v1/proposals",
                 "fetched_at": ctx.fetched_at,
                 "provenance_path": page_relpath,
                 "fields_provided": [
@@ -275,7 +297,7 @@ def write_fund(
         "sources_used": [ctx.source_label],
         "phase": "phase-1",
         "phase_notes": (
-            "Phase 1 ingestion from Lidonation /api/proposals only. Cross-source "
+            "Phase 1 ingestion from Lidonation /api/v1/proposals only. Cross-source "
             "reconciliation against IOG voting-results PDFs is deferred to Phase 2; "
             "milestone data to Phase 3; proposer-entity dedup to Phase 6."
         ),
@@ -329,8 +351,9 @@ def unify(
             norm = normalize_record(rec, fund_number, page_relpath, ctx)
             if norm is None:
                 continue
-            if norm["proposal_id"] in seen_ids[fund_number]:
-                continue
+            norm["proposal_id"] = _dedupe_proposal_id(
+                str(norm["proposal_id"]), rec, seen_ids[fund_number]
+            )
             seen_ids[fund_number].add(norm["proposal_id"])
             by_fund[fund_number].append(norm)
 
