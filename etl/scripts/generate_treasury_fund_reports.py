@@ -1138,9 +1138,7 @@ def generate_reports(
     budget_2025_fetched_at, budget_2025_proposals = _load_budget_2025(budget_2025_snapshot)
     catalyst_proposals = _read_json_records(data_root / "consolidated" / "all_proposals.json")
     catalyst_proposers = _read_json_records(data_root / "consolidated" / "all_proposers.json")
-    catalyst_milestones = _read_json_records(
-        data_root / "consolidated" / "all_milestones.json"
-    )
+    catalyst_milestones = _read_json_records(data_root / "consolidated" / "all_milestones.json")
     tf1_root = data_root / "historical" / "treasury-fund-01"
     tf1_projects = _read_json_records(tf1_root / "projects.json")
     tf1_vendors = _read_json_records(tf1_root / "vendors.json")
