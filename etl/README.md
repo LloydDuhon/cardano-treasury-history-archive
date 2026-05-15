@@ -215,3 +215,18 @@ Outputs land in `data/consolidated/`:
 `apply_reconciliations.py` is idempotent (re-runs detect the IOG-PDF
 override marker in `sources[]` and skip already-applied changes), so it's
 safe to wire into a scheduled refresh.
+
+## Treasury Fund 2 Static Viewer
+
+The static viewer under `../site/` is generated from the current Hydra Voting
+snapshot and the Treasury Fund 2 report CSVs:
+
+```bash
+cd etl
+python -m scripts.generate_treasury_fund_reports
+python scripts/generate_treasury_dashboard_data.py --repo-root .. --out ../site
+```
+
+The viewer payloads are `site/data.js` and `site/data.json`. The GitHub Pages
+workflow publishes the `site/` directory directly; no frontend build step is
+required.
