@@ -1,6 +1,6 @@
 # Report 1: Treasury Fund 2 Proposer Funding History
 
-Generated: 2026-05-15T13:12:14Z
+Generated: 2026-05-15T14:40:15Z
 Current Budget Process snapshot: 2026-05-15T12:07:25Z
 
 Scope: the 69 live proposals from the Cardano Budget Process 2026 API. Prior history is matched against Project Catalyst and Treasury Fund 1.
@@ -15,7 +15,7 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 - Unique proposer names analyzed: 51
 - Proposers with matched prior history: 17
 - Catalyst prior funding records: 591
-- Treasury Fund 1 prior funding records: 6
+- Treasury Fund 1 prior funding records: 16
 
 ## Proposer Details
 
@@ -136,7 +136,7 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 
 #### Treasury Fund 1: Rainfire DAO - Cardano Builder DAO 
 
-- Match: Cardano Builder DAO via 2025 reconciliation (high, 0.96) (high, 1.00)
+- Match: Cardano Builder DAO via 2025 reconciliation (high, 1.00) (high, 1.00)
 - Amount: 12,000,000.00 ADA
 - Status: withdrawn; funding status: contracted
 - Ongoing: no
@@ -256,7 +256,7 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 
 #### Treasury Fund 1: Cooperativa de Trabajo Eryx - ZK Bridge
 
-- Match: eryx.co via 2025 reconciliation (high, 0.96) (high, 1.00)
+- Match: eryx.co via 2025 reconciliation (high, 1.00) (high, 1.00)
 - Amount: 700,000.00 ADA
 - Status: active; funding status: contracted
 - Ongoing: yes
@@ -346,7 +346,7 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 
 #### Treasury Fund 1: Intersect MBO - A member-based organization for the Cardano ecosystem
 
-- Match: IntersectMBO via 2025 reconciliation (medium, 0.82) (high, 1.00)
+- Match: IntersectMBO via 2025 reconciliation (high, 0.95) (high, 1.00)
 - Amount: 15,750,000.00 ADA
 - Status: paused; funding status: contracted
 - Ongoing: yes
@@ -406,10 +406,10 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 
 - Current proposal: MLabs - Cardano Tx Library: JavaScript/TypeScript Interface, Koios Backend, Hard Fork Maintenance
 - Current requested budget: 3,169,463.00 ADA
-- Matched prior records: 360
-- Matched ADA-denominated total: 85,519,647.00 ADA
-- Ongoing prior projects/contracts: 36
-- Records with documented non-delivery signals: 0
+- Matched prior records: 369
+- Matched ADA-denominated total: 89,057,025.00 ADA
+- Ongoing prior projects/contracts: 45
+- Records with documented non-delivery signals: 9
 
 #### Project Catalyst: MLabs DDAO
 
@@ -4010,15 +4010,105 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 - Failed/non-delivery signal: No documented non-delivery signal in dataset.
 - Final documented outputs: No final output captured in interim dataset.
 - Source: https://www.catalystexplorer.com/en/proposals/mlabs-cardano-racers-team-up-for-hydra-powered-gaming-f14
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
 
 ### MLabs LTD
 
 - Current proposal: MLabs - Cardano.nix: 2026 Maintenance, Operator Tooling, and Dijkstra Readiness
 - Current requested budget: 1,144,433.00 ADA
-- Matched prior records: 360
-- Matched ADA-denominated total: 85,519,647.00 ADA
-- Ongoing prior projects/contracts: 36
-- Records with documented non-delivery signals: 0
+- Matched prior records: 369
+- Matched ADA-denominated total: 89,057,025.00 ADA
+- Ongoing prior projects/contracts: 45
+- Records with documented non-delivery signals: 9
 
 #### Project Catalyst: MLabs DDAO
 
@@ -7619,15 +7709,105 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 - Failed/non-delivery signal: No documented non-delivery signal in dataset.
 - Final documented outputs: No final output captured in interim dataset.
 - Source: https://www.catalystexplorer.com/en/proposals/mlabs-cardano-racers-team-up-for-hydra-powered-gaming-f14
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
 
 ### MLabs LTD
 
 - Current proposal: MLabs - Grumplestiltskin 2: Pasta Curve Builtins and Kimchi PLookup Proof-of-Concept
 - Current requested budget: 1,144,433.00 ADA
-- Matched prior records: 360
-- Matched ADA-denominated total: 85,519,647.00 ADA
-- Ongoing prior projects/contracts: 36
-- Records with documented non-delivery signals: 0
+- Matched prior records: 369
+- Matched ADA-denominated total: 89,057,025.00 ADA
+- Ongoing prior projects/contracts: 45
+- Records with documented non-delivery signals: 9
 
 #### Project Catalyst: MLabs DDAO
 
@@ -11228,15 +11408,105 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 - Failed/non-delivery signal: No documented non-delivery signal in dataset.
 - Final documented outputs: No final output captured in interim dataset.
 - Source: https://www.catalystexplorer.com/en/proposals/mlabs-cardano-racers-team-up-for-hydra-powered-gaming-f14
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
 
 ### MLabs LTD
 
 - Current proposal: MLabs - TrueInventory: An accessible blockchain inventory for videogame developers
 - Current requested budget: 2,850,783.00 ADA
-- Matched prior records: 360
-- Matched ADA-denominated total: 85,519,647.00 ADA
-- Ongoing prior projects/contracts: 36
-- Records with documented non-delivery signals: 0
+- Matched prior records: 369
+- Matched ADA-denominated total: 89,057,025.00 ADA
+- Ongoing prior projects/contracts: 45
+- Records with documented non-delivery signals: 9
 
 #### Project Catalyst: MLabs DDAO
 
@@ -14837,15 +15107,105 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 - Failed/non-delivery signal: No documented non-delivery signal in dataset.
 - Final documented outputs: No final output captured in interim dataset.
 - Source: https://www.catalystexplorer.com/en/proposals/mlabs-cardano-racers-team-up-for-hydra-powered-gaming-f14
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
 
 ### MLabs LTD
 
 - Current proposal: MLabs Core Tool Maintenance & Enhancement: Plutarch and Ply
 - Current requested budget: 1,144,433.00 ADA
-- Matched prior records: 360
-- Matched ADA-denominated total: 85,519,647.00 ADA
-- Ongoing prior projects/contracts: 36
-- Records with documented non-delivery signals: 0
+- Matched prior records: 369
+- Matched ADA-denominated total: 89,057,025.00 ADA
+- Ongoing prior projects/contracts: 45
+- Records with documented non-delivery signals: 9
 
 #### Project Catalyst: MLabs DDAO
 
@@ -18446,15 +18806,105 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 - Failed/non-delivery signal: No documented non-delivery signal in dataset.
 - Final documented outputs: No final output captured in interim dataset.
 - Source: https://www.catalystexplorer.com/en/proposals/mlabs-cardano-racers-team-up-for-hydra-powered-gaming-f14
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
 
 ### MLabs LTD
 
 - Current proposal: MLabs: Better arrays for everyone
 - Current requested budget: 1,378,470.00 ADA
-- Matched prior records: 360
-- Matched ADA-denominated total: 85,519,647.00 ADA
-- Ongoing prior projects/contracts: 36
-- Records with documented non-delivery signals: 0
+- Matched prior records: 369
+- Matched ADA-denominated total: 89,057,025.00 ADA
+- Ongoing prior projects/contracts: 45
+- Records with documented non-delivery signals: 9
 
 #### Project Catalyst: MLabs DDAO
 
@@ -22055,15 +22505,105 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 - Failed/non-delivery signal: No documented non-delivery signal in dataset.
 - Final documented outputs: No final output captured in interim dataset.
 - Source: https://www.catalystexplorer.com/en/proposals/mlabs-cardano-racers-team-up-for-hydra-powered-gaming-f14
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
 
 ### MLabs LTD
 
 - Current proposal: MLabs: Encrypted Programmable Tokens with TFHE
 - Current requested budget: 1,343,564.00 ADA
-- Matched prior records: 360
-- Matched ADA-denominated total: 85,519,647.00 ADA
-- Ongoing prior projects/contracts: 36
-- Records with documented non-delivery signals: 0
+- Matched prior records: 369
+- Matched ADA-denominated total: 89,057,025.00 ADA
+- Ongoing prior projects/contracts: 45
+- Records with documented non-delivery signals: 9
 
 #### Project Catalyst: MLabs DDAO
 
@@ -25664,15 +26204,105 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 - Failed/non-delivery signal: No documented non-delivery signal in dataset.
 - Final documented outputs: No final output captured in interim dataset.
 - Source: https://www.catalystexplorer.com/en/proposals/mlabs-cardano-racers-team-up-for-hydra-powered-gaming-f14
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
 
 ### MLabs LTD
 
 - Current proposal: MLabs: Open-Sourcing FeesaSwap as Live Fee Abstraction Infrastructure on Cardano
 - Current requested budget: 686,660.00 ADA
-- Matched prior records: 360
-- Matched ADA-denominated total: 85,519,647.00 ADA
-- Ongoing prior projects/contracts: 36
-- Records with documented non-delivery signals: 0
+- Matched prior records: 369
+- Matched ADA-denominated total: 89,057,025.00 ADA
+- Ongoing prior projects/contracts: 45
+- Records with documented non-delivery signals: 9
 
 #### Project Catalyst: MLabs DDAO
 
@@ -29273,15 +29903,105 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 - Failed/non-delivery signal: No documented non-delivery signal in dataset.
 - Final documented outputs: No final output captured in interim dataset.
 - Source: https://www.catalystexplorer.com/en/proposals/mlabs-cardano-racers-team-up-for-hydra-powered-gaming-f14
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
 
 ### MLabs LTD
 
 - Current proposal: MLabs: Post-quantum signature verification support
 - Current requested budget: 4,005,516.00 ADA
-- Matched prior records: 360
-- Matched ADA-denominated total: 85,519,647.00 ADA
-- Ongoing prior projects/contracts: 36
-- Records with documented non-delivery signals: 0
+- Matched prior records: 369
+- Matched ADA-denominated total: 89,057,025.00 ADA
+- Ongoing prior projects/contracts: 45
+- Records with documented non-delivery signals: 9
 
 #### Project Catalyst: MLabs DDAO
 
@@ -32882,15 +33602,105 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 - Failed/non-delivery signal: No documented non-delivery signal in dataset.
 - Final documented outputs: No final output captured in interim dataset.
 - Source: https://www.catalystexplorer.com/en/proposals/mlabs-cardano-racers-team-up-for-hydra-powered-gaming-f14
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
 
 ### MLabsLTD
 
 - Current proposal: MLabs - Covenant 2: Cross-Language Support and Developer Experience
 - Current requested budget: 1,461,441.00 ADA
-- Matched prior records: 40
-- Matched ADA-denominated total: 9,502,183.00 ADA
-- Ongoing prior projects/contracts: 4
-- Records with documented non-delivery signals: 0
+- Matched prior records: 41
+- Matched ADA-denominated total: 9,895,225.00 ADA
+- Ongoing prior projects/contracts: 5
+- Records with documented non-delivery signals: 1
 
 #### Project Catalyst: MLabs DDAO
 
@@ -33291,6 +34101,16 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 - Failed/non-delivery signal: No documented non-delivery signal in dataset.
 - Final documented outputs: No final output captured in interim dataset.
 - Source: https://www.catalystexplorer.com/en/proposals/mlabs-cardano-racers-team-up-for-hydra-powered-gaming-f14
+
+#### Treasury Fund 1: MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves
+
+- Match: MLabs Ltd via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 393,042.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 31477.0, "Paused": 171946.0, "Withdrawn": 189619.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25
 
 ### NMA Venture Capital GmbH
 

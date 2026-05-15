@@ -1,6 +1,6 @@
 # Treasury Fund 1 To 2025 Ekklesia Reconciliation
 
-Generated: 2026-05-15T13:12:15Z
+Generated: 2026-05-15T14:40:15Z
 2025 Budget Reconciliation snapshot: 2026-05-15T12:27:22Z
 
 Purpose: reconcile Treasury Fund 1 contract records from the Sundae Treasury site against the original 2025 Ekklesia budget-process proposal records. This supplies human-readable owner identity evidence for TF1 contracts whose treasury vendor field is only a payment address.
@@ -11,9 +11,9 @@ Matching uses proposal-title similarity, requested/contracted ADA amount similar
 
 - TF1 projects analyzed: 43
 - TF1 projects with 2025 Ekklesia candidate rows: 43
-- High-confidence reconciliations: 31
-- Medium-confidence reconciliations: 2
-- Low-confidence reconciliations: 10
+- High-confidence reconciliations: 36
+- Medium-confidence reconciliations: 0
+- Low-confidence reconciliations: 7
 
 ## Reconciliations
 
@@ -75,8 +75,8 @@ Matching uses proposal-title similarity, requested/contracted ADA amount similar
 - TF1 contracted amount: 4,000,000.00 ADA
 - Ekklesia proposal: Expanding Stablecoin / Cardano Native Asset Support / Fiat Ramps
 - Ekklesia requested amount: 4,000,000.00 ADA
-- Match: high (0.96)
-- Basis: title=0.95; amount=1.00; owner=0.15
+- Match: high (1.00)
+- Basis: title=1.00; amount=1.00; owner=0.15
 - Company: Anzens Inc.
 - Group: not captured
 - Domain: www.anzens.com
@@ -109,8 +109,8 @@ Matching uses proposal-title similarity, requested/contracted ADA amount similar
 - TF1 contracted amount: 6,000,000.00 ADA
 - Ekklesia proposal: Cardano Summit 2025 and regional tech events
 - Ekklesia requested amount: 6,000,000.00 ADA
-- Match: high (0.96)
-- Basis: title=0.95; amount=1.00; owner=0.10
+- Match: high (1.00)
+- Basis: title=1.00; amount=1.00; owner=0.10
 - Company: Cardano Foundation
 - Group: not captured
 - Domain: www.cardanofoundation.org
@@ -126,8 +126,8 @@ Matching uses proposal-title similarity, requested/contracted ADA amount similar
 - TF1 contracted amount: 6,000,000.00 ADA
 - Ekklesia proposal: Unveiling the First  Unified Global Events  Marketing Strategy  for Cardano
 - Ekklesia requested amount: 6,000,000.00 ADA
-- Match: high (0.96)
-- Basis: title=0.95; amount=1.00; owner=0.10
+- Match: high (1.00)
+- Basis: title=1.00; amount=1.00; owner=0.10
 - Company: Cardano Foundation
 - Group: not captured
 - Domain: www.cardanofoundation.org
@@ -141,17 +141,17 @@ Matching uses proposal-title similarity, requested/contracted ADA amount similar
 - TF1 vendor label: addr1q8q7jyap76l0d5gqj8naw5t49yu3f0h7qkzsps9z0gfjcu25uj747vu83mvg3fuh6ttdgwshjwtcne6esrpct2uzmnuqdqd82j
 - TF1 status: paused
 - TF1 contracted amount: 64,300,000.00 ADA
-- Ekklesia proposal: Blockfrost Platform community budget proposal
-- Ekklesia requested amount: 1,300,000.00 ADA
-- Match: low (0.48)
-- Basis: title=0.48; amount=0.02; owner=0.10
-- Company: IOG Singapore Pte Ltd
+- Ekklesia proposal: Catalyst 2025 Proposal by Input Output: Advancing Decentralised Community Innovation Funding & Infrastructure
+- Ekklesia requested amount: 69,459,000.00 ADA
+- Match: high (0.95)
+- Basis: title=0.95; amount=0.92; owner=0.13
+- Company: Input Output
 - Group: not captured
-- Domain: blockfrost.io
-- Social handles: marek.mahut@iohk.io
+- Domain: iohk.io
+- Social handles: X: @InputOutputHK @Catalyst\_onX @krissbaird
 - Public champion: not captured
 - Threshold reached: true
-- Source: https://2025budget.intersectmbo.org/ballots/680d1b63565577986442d123/proposals/680d1b63565577986442d14a
+- Source: https://2025budget.intersectmbo.org/ballots/680d1b63565577986442d123/proposals/680d1b63565577986442d244
 
 ### Cooperativa de Trabajo Eryx - ZK Bridge
 
@@ -160,8 +160,8 @@ Matching uses proposal-title similarity, requested/contracted ADA amount similar
 - TF1 contracted amount: 700,000.00 ADA
 - Ekklesia proposal: ZK Bridge
 - Ekklesia requested amount: 700,000.00 ADA
-- Match: high (0.96)
-- Basis: title=0.95; amount=1.00; owner=0.10
+- Match: high (1.00)
+- Basis: title=1.00; amount=1.00; owner=0.10
 - Company: Eryx Cooperativa
 - Group: not captured
 - Domain: eryx.co
@@ -177,8 +177,8 @@ Matching uses proposal-title similarity, requested/contracted ADA amount similar
 - TF1 contracted amount: 3,126,000.00 ADA
 - Ekklesia proposal: Ecosystem Exchange Listing and Market Making service pool
 - Ekklesia requested amount: 3,126,000.00 ADA
-- Match: medium (0.81)
-- Basis: title=0.75; amount=1.00; owner=0.11
+- Match: high (0.89)
+- Basis: title=0.86; amount=1.00; owner=0.11
 - Company: Flowdesk
 - Group: not captured
 - Domain: https://www.flowdesk.co/
@@ -194,8 +194,8 @@ Matching uses proposal-title similarity, requested/contracted ADA amount similar
 - TF1 contracted amount: 600,000.00 ADA
 - Ekklesia proposal: Complete Web3 developer stack to make Cardano the smart contract layer for Bitcoin
 - Ekklesia requested amount: 600,000.00 ADA
-- Match: low (0.61)
-- Basis: title=0.48; amount=1.00; owner=0.11
+- Match: high (0.96)
+- Basis: title=0.95; amount=1.00; owner=0.11
 - Company: Maestro
 - Group: not captured
 - Domain: https://www.gomaestro.org/
@@ -330,8 +330,8 @@ Matching uses proposal-title similarity, requested/contracted ADA amount similar
 - TF1 contracted amount: 15,750,000.00 ADA
 - Ekklesia proposal: A member-based organization for the Cardano ecosystem: Intersect
 - Ekklesia requested amount: 20,000,000.00 ADA
-- Match: medium (0.82)
-- Basis: title=0.82; amount=0.80; owner=0.16
+- Match: high (0.95)
+- Basis: title=0.95; amount=0.80; owner=0.16
 - Company: IntersectMBO
 - Group: not captured
 - Domain: intersectmbo.org
@@ -415,8 +415,8 @@ Matching uses proposal-title similarity, requested/contracted ADA amount similar
 - TF1 contracted amount: 657,692.00 ADA
 - Ekklesia proposal: Scalus - DApps Development Platform
 - Ekklesia requested amount: 657,692.00 ADA
-- Match: high (0.96)
-- Basis: title=0.95; amount=1.00; owner=0.16
+- Match: high (1.00)
+- Basis: title=1.00; amount=1.00; owner=0.16
 - Company: Lantr
 - Group: not captured
 - Domain: lantr.io
@@ -432,8 +432,8 @@ Matching uses proposal-title similarity, requested/contracted ADA amount similar
 - TF1 contracted amount: 130,903.00 ADA
 - Ekklesia proposal: Lucid Evolution Maintenance
 - Ekklesia requested amount: 130,903.00 ADA
-- Match: high (0.96)
-- Basis: title=0.95; amount=1.00; owner=0.12
+- Match: high (1.00)
+- Basis: title=1.00; amount=1.00; owner=0.12
 - Company: Anastasia Labs
 - Group: not captured
 - Domain: https://www.anastasialabs.com/
@@ -466,8 +466,8 @@ Matching uses proposal-title similarity, requested/contracted ADA amount similar
 - TF1 contracted amount: 393,042.00 ADA
 - Ekklesia proposal: MLabs Research towards Tooling for Elliptical Curves - GrumpleStiltSkin
 - Ekklesia requested amount: 104,347.00 ADA
-- Match: low (0.62)
-- Basis: title=0.62; amount=0.27; owner=0.10
+- Match: high (0.95)
+- Basis: title=0.95; amount=0.27; owner=0.10
 - Company: MLabs Ltd
 - Group: not captured
 - Domain: mlabs.city
@@ -483,8 +483,8 @@ Matching uses proposal-title similarity, requested/contracted ADA amount similar
 - TF1 contracted amount: 605,000.00 ADA
 - Ekklesia proposal: A free Native Asset CDN for Cardano Developers
 - Ekklesia requested amount: 605,000.00 ADA
-- Match: high (0.96)
-- Basis: title=0.95; amount=1.00; owner=0.21
+- Match: high (1.00)
+- Basis: title=1.00; amount=1.00; owner=0.21
 - Company: NFTCDN LTD
 - Group: not captured
 - Domain: nftcdn.io
@@ -498,17 +498,17 @@ Matching uses proposal-title similarity, requested/contracted ADA amount similar
 - TF1 vendor label: addr1q9kpwrdezpmyxn0g87fcdrnp7spqaauyqy3kx6aq5jj3926z8sjcfkfh9jhkskg9x72wfg86yt23me9j6dejjgwkycvs3gy7pn
 - TF1 status: paused
 - TF1 contracted amount: 1,010,000.00 ADA
-- Ekklesia proposal: Amplify Cardano: Community-Led Events Fund by Rare Network
-- Ekklesia requested amount: 1,000,000.00 ADA
-- Match: low (0.49)
-- Basis: title=0.33; amount=1.00; owner=0.11
-- Company: Rare Network
-- Group: not captured
-- Domain: rarenetwork.io
-- Social handles: https://x.com/rareevo & https://x.com/rarenetworkweb3
-- Public champion: Submission lead listed above
+- Ekklesia proposal: Membership and Community Committee (MCC) - Global University Education Program
+- Ekklesia requested amount: 783,333.00 ADA
+- Match: low (0.54)
+- Basis: title=0.46; amount=0.80; owner=0.12
+- Company: not captured
+- Group: MCC
+- Domain: not captured
+- Social handles: membership-and-community-committee@intersectmbo.org
+- Public champion: not captured
 - Threshold reached: false
-- Source: https://2025budget.intersectmbo.org/ballots/680d1b63565577986442d123/proposals/680d1b63565577986442d180
+- Source: https://2025budget.intersectmbo.org/ballots/680d1b63565577986442d123/proposals/680d1b63565577986442d1fe
 
 ### OpShin - Python Smart Contracts for Cardano
 
@@ -534,8 +534,8 @@ Matching uses proposal-title similarity, requested/contracted ADA amount similar
 - TF1 contracted amount: 3,975,000.00 ADA
 - Ekklesia proposal: Expanding Stablecoin / Cardano Native Asset Support / Fiat Ramps
 - Ekklesia requested amount: 4,000,000.00 ADA
-- Match: low (0.53)
-- Basis: title=0.38; amount=1.00; owner=0.11
+- Match: low (0.54)
+- Basis: title=0.39; amount=1.00; owner=0.11
 - Company: Anzens Inc.
 - Group: not captured
 - Domain: www.anzens.com
@@ -619,8 +619,8 @@ Matching uses proposal-title similarity, requested/contracted ADA amount similar
 - TF1 contracted amount: 12,000,000.00 ADA
 - Ekklesia proposal: Cardano Builder DAO
 - Ekklesia requested amount: 12,000,000.00 ADA
-- Match: high (0.96)
-- Basis: title=0.95; amount=1.00; owner=0.10
+- Match: high (1.00)
+- Basis: title=1.00; amount=1.00; owner=0.10
 - Company: not captured
 - Group: Cardano Builder DAO
 - Domain: not captured
@@ -636,8 +636,8 @@ Matching uses proposal-title similarity, requested/contracted ADA amount similar
 - TF1 contracted amount: 5,000,000.00 ADA
 - Ekklesia proposal: Cardano Summit 2025 and regional tech events
 - Ekklesia requested amount: 6,000,000.00 ADA
-- Match: low (0.48)
-- Basis: title=0.38; amount=0.80; owner=0.14
+- Match: low (0.53)
+- Basis: title=0.44; amount=0.80; owner=0.14
 - Company: Cardano Foundation
 - Group: not captured
 - Domain: www.cardanofoundation.org
@@ -653,8 +653,8 @@ Matching uses proposal-title similarity, requested/contracted ADA amount similar
 - TF1 contracted amount: 889,500.00 ADA
 - Ekklesia proposal: Cardano Ecosystem Pavilions at Exhibitions
 - Ekklesia requested amount: 1,119,333.00 ADA
-- Match: high (0.95)
-- Basis: title=0.95; amount=0.80; owner=0.18
+- Match: high (1.00)
+- Basis: title=1.00; amount=0.80; owner=0.18
 - Company: Supplyoneers FZ-LLC
 - Group: not captured
 - Domain: discovercardano.com
@@ -670,8 +670,8 @@ Matching uses proposal-title similarity, requested/contracted ADA amount similar
 - TF1 contracted amount: 583,000.00 ADA
 - Ekklesia proposal: Eternl Maintenance
 - Ekklesia requested amount: 583,000.00 ADA
-- Match: high (0.96)
-- Basis: title=0.95; amount=1.00; owner=0.11
+- Match: high (1.00)
+- Basis: title=1.00; amount=1.00; owner=0.11
 - Company: Tastenkunst GmbH
 - Group: not captured
 - Domain: https://eternl.io
@@ -685,17 +685,17 @@ Matching uses proposal-title similarity, requested/contracted ADA amount similar
 - TF1 vendor label: addr1q94dne7wfqvsf724gx2dycgpmzfz43psgtrmc6ksst442eswc8fz3e6r6s7xjca8eh7hjflq06sfqcxc0uz63evz03cs9xjqzs
 - TF1 status: paused
 - TF1 contracted amount: 662,742.00 ADA
-- Ekklesia proposal: Tokenised Real-World Assets on Cardano
-- Ekklesia requested amount: 3,840,000.00 ADA
-- Match: low (0.45)
-- Basis: title=0.45; amount=0.17; owner=0.11
-- Company: OpenEden Digital Limited
+- Ekklesia proposal: UTxO Alliance Support
+- Ekklesia requested amount: 133,334.00 ADA
+- Match: low (0.47)
+- Basis: title=0.47; amount=0.20; owner=0.13
+- Company: Wolfram Blockchain Labs
 - Group: not captured
-- Domain: openeden.com
-- Social handles: https://x.com/OpenEden_X
-- Public champion: not captured
+- Domain: https://www.wolframblockchainlabs.com/
+- Social handles: https://github.com/WolframBlockchainLabs
+- Public champion: Beneficiary listed above
 - Threshold reached: false
-- Source: https://2025budget.intersectmbo.org/ballots/680d1b63565577986442d123/proposals/680d1b63565577986442d206
+- Source: https://2025budget.intersectmbo.org/ballots/680d1b63565577986442d123/proposals/680d1b63565577986442d246
 
 ### VacuumLabs - Hardware Wallets Maintenance & Ledger App Rewrite
 

@@ -20,6 +20,7 @@ The primary working reports are in `reports/treasury-fund-2/`:
 - `scope-similarity.md` / `.csv` answers: for each Treasury Fund 2 proposal, what funded and completed Catalyst or Treasury Fund 1 projects appear similar in scope, with similarity score and confidence.
 - `identity-bridge-2025.md` / `.csv` links current Treasury Fund 2 proposer names to 2025 Budget Process proposer/owner metadata.
 - `tf1-ekklesia-reconciliation.md` / `.csv` reconciles Treasury Fund 1 contract records from the Sundae Treasury site against the original 2025 Ekklesia budget-process proposal records.
+- `onchain-treasury-reconciliation.md` / `.csv` reconciles on-chain Cardano `TreasuryWithdrawals` actions against Treasury Fund 1 so overlapping amounts are visible and not double-counted.
 - `_summary.json` records the current snapshot timestamps and generated row counts.
 
 ## Confidence
