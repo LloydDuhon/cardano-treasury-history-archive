@@ -30,6 +30,9 @@ See [ADR-2026-05-13 Implementation Notes](../../docs/adr/ADR-2026-05-13-source-s
 - `iohk-pdfs/fund-NN.pdf` - canonical IOG/CF voting-results PDF artifacts that
   are currently accessible. The interim snapshot has F2 and F10 only; missing
   artifacts are tracked in `docs/IOG_RESULTS_ACCESS_TRACKER.md`.
+- `koios_governance/treasury-withdrawal-proposals.json` - raw Koios
+  `proposal_list` capture filtered to `TreasuryWithdrawals` governance actions.
+  This is normalized into `data/historical/cardano-treasury-withdrawals/`.
 - `sundae_treasury/treasury-fund-01-projects.json` - raw GraphQL capture from
   `https://api.treasury.sundae.fi/graphql` for the `Intersect Treasury
   Contracts 1` instance. This is normalized into
@@ -48,6 +51,7 @@ upstream:
 cd etl
 python -m normalizers.unify_proposals          # all funds
 python -m normalizers.unify_proposals --fund 10 # only F10
+python -m normalizers.onchain_treasury_withdrawals # on-chain treasury actions
 python -m normalizers.sundae_treasury          # Treasury Fund 1 history
 ```
 
