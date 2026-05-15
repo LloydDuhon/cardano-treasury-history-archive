@@ -1,0 +1,20 @@
+{
+  "api_url": "https://api.treasury.sundae.fi/graphql",
+  "dataset": "treasury-fund-01",
+  "description": "Historical funding dataset from the Sundae Treasury public GraphQL API. Use alongside Catalyst history when reporting whether current proposers have prior Catalyst or Treasury Fund 1 funding history.",
+  "fetched_at": "2026-05-15T11:49:50Z",
+  "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+  "instance_label": "Intersect Treasury Contracts 1",
+  "milestone_count": 360,
+  "normalized_at": "2026-05-15T11:50:04Z",
+  "notes": [
+    "total_contract_ada is the sum of milestone values exposed by the treasury contract.",
+    "amount_by_milestone_status_ada preserves whether milestones are Withdrawn, Paused, Active, or Matured.",
+    "Reports should distinguish contracted/allocated funding from Matured milestone amounts."
+  ],
+  "project_count": 43,
+  "raw_provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+  "source_url": "https://treasury.sundae.fi",
+  "title": "Treasury Fund 1 - Intersect Treasury Contracts 1",
+  "vendor_count": 34
+}

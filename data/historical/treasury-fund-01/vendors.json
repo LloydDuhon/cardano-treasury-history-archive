@@ -1,0 +1,829 @@
+[
+  {
+    "confidence": "high",
+    "display_name": "addr1q84naykw9dnu8znm7dej9fd3rhgajwray3r68ares8t294zd3qgc7sm9sg36suavqwgedx3q2s6nz9jp54xwg3drr9wsmrvged",
+    "normalized_name": "addr1q84naykw9dnu8znm7dej9fd3rhgajwray3r68ares8t294zd3qgc7sm9sg36suavqwgedx3q2s6nz9jp54xwg3drr9wsmrvged",
+    "project_ids": [
+      "EC-0017-25"
+    ],
+    "project_status_counts": {
+      "active": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 700000.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1q84naykw9dnu8znm7dej9fd3rhgajwray3r68ares8t294zd3qgc7sm-2b303e3736"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1q86nycg8kryrkvskcdktvsup3gdmwnlk6z376rml5qfvccda0gvtkuuq7ypygj4ztfrvvemch6hd8ua42ccywcxkt4gqtznf6s",
+    "normalized_name": "addr1q86nycg8kryrkvskcdktvsup3gdmwnlk6z376rml5qfvccda0gvtkuuq7ypygj4ztfrvvemch6hd8ua42ccywcxkt4gqtznf6s",
+    "project_ids": [
+      "EC-0022-25,EC-0015-25,ER-0005-25"
+    ],
+    "project_status_counts": {
+      "paused": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 393042.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1q86nycg8kryrkvskcdktvsup3gdmwnlk6z376rml5qfvccda0gvtkuu-7f73f37eb3"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1q8hy6hpgvgxzkpy5dhpjl4sgp4e007s5a2qddcrn9g4v0f280705mn54gt7qvve3jmwykq8shht0kk4464caf2e732nq05zszr",
+    "normalized_name": "addr1q8hy6hpgvgxzkpy5dhpjl4sgp4e007s5a2qddcrn9g4v0f280705mn54gt7qvve3jmwykq8shht0kk4464caf2e732nq05zszr",
+    "project_ids": [
+      "EC-0020-25"
+    ],
+    "project_status_counts": {
+      "active": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 657692.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1q8hy6hpgvgxzkpy5dhpjl4sgp4e007s5a2qddcrn9g4v0f280705mn5-b7e0ab7ab8"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1q8jwgfgsykah9kawn7ve7lam7wrey4jery5yrn5xfuc23vhd332ffcu6l2jmzc22fym9szkejlt3cszkf53kd425gq6saxvzdt",
+    "normalized_name": "addr1q8jwgfgsykah9kawn7ve7lam7wrey4jery5yrn5xfuc23vhd332ffcu6l2jmzc22fym9szkejlt3cszkf53kd425gq6saxvzdt",
+    "project_ids": [
+      "EC-0019-25"
+    ],
+    "project_status_counts": {
+      "active": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 99600.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1q8jwgfgsykah9kawn7ve7lam7wrey4jery5yrn5xfuc23vhd332ffcu-db8a858f60"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1q8kmt82cgxnv4dapm8926uz50t58cy4vg0mdmcv3mdmq7e489jcdt3fvg0zfvywehy0vzvvxyzgsfkjwcnhsq62ay2fq5c6lpc",
+    "normalized_name": "addr1q8kmt82cgxnv4dapm8926uz50t58cy4vg0mdmcv3mdmq7e489jcdt3fvg0zfvywehy0vzvvxyzgsfkjwcnhsq62ay2fq5c6lpc",
+    "project_ids": [
+      "ER-0004b-25",
+      "ER-0004a-25"
+    ],
+    "project_status_counts": {
+      "paused": 1,
+      "withdrawn": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 430000.0,
+    "total_projects": 2,
+    "vendor_id": "tf1-vendor-addr1q8kmt82cgxnv4dapm8926uz50t58cy4vg0mdmcv3mdmq7e489jcdt3f-4864eed564"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1q8phtw2jlcwfxg8mhusvy7wuzxechtam5ehg4xqc7s8ut4r2lnqksm9q37dmlpjuyf2vp3qlarg5nrx56peqqwmme3gs9vp2d3",
+    "normalized_name": "addr1q8phtw2jlcwfxg8mhusvy7wuzxechtam5ehg4xqc7s8ut4r2lnqksm9q37dmlpjuyf2vp3qlarg5nrx56peqqwmme3gs9vp2d3",
+    "project_ids": [
+      "EC-0009-25"
+    ],
+    "project_status_counts": {
+      "active": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 1161000.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1q8phtw2jlcwfxg8mhusvy7wuzxechtam5ehg4xqc7s8ut4r2lnqksm9-fc4ae974b0"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1q8q7jyap76l0d5gqj8naw5t49yu3f0h7qkzsps9z0gfjcu25uj747vu83mvg3fuh6ttdgwshjwtcne6esrpct2uzmnuqdqd82j",
+    "normalized_name": "addr1q8q7jyap76l0d5gqj8naw5t49yu3f0h7qkzsps9z0gfjcu25uj747vu83mvg3fuh6ttdgwshjwtcne6esrpct2uzmnuqdqd82j",
+    "project_ids": [
+      "EMI-0001a-25"
+    ],
+    "project_status_counts": {
+      "paused": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 64300000.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1q8q7jyap76l0d5gqj8naw5t49yu3f0h7qkzsps9z0gfjcu25uj747vu-95a6c61748"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1q8rjaatvmmakqz3jek68uvlwjs4c9ckqfnl404a3yjrnrnlaepuyxvahzd69cnrvm4ssk6wj3ucy3sgtvyfxccp8mn5sfxt6e2",
+    "normalized_name": "addr1q8rjaatvmmakqz3jek68uvlwjs4c9ckqfnl404a3yjrnrnlaepuyxvahzd69cnrvm4ssk6wj3ucy3sgtvyfxccp8mn5sfxt6e2",
+    "project_ids": [
+      "EX-000-01"
+    ],
+    "project_status_counts": {
+      "complete": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 10.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1q8rjaatvmmakqz3jek68uvlwjs4c9ckqfnl404a3yjrnrnlaepuyxva-635d74b7c7"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1q92q9yv2yfvcf55tqeyeyysnspzfujyyt4htg2y5y449mzs5vszfuaa53gyets7sdty2ynrrtssv0t8qy009q4efsfrst57f7j",
+    "normalized_name": "addr1q92q9yv2yfvcf55tqeyeyysnspzfujyyt4htg2y5y449mzs5vszfuaa53gyets7sdty2ynrrtssv0t8qy009q4efsfrst57f7j",
+    "project_ids": [
+      "EC-0023-25"
+    ],
+    "project_status_counts": {
+      "active": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 605000.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1q92q9yv2yfvcf55tqeyeyysnspzfujyyt4htg2y5y449mzs5vszfuaa-f993834b3c"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1q94dne7wfqvsf724gx2dycgpmzfz43psgtrmc6ksst442eswc8fz3e6r6s7xjca8eh7hjflq06sfqcxc0uz63evz03cs9xjqzs",
+    "normalized_name": "addr1q94dne7wfqvsf724gx2dycgpmzfz43psgtrmc6ksst442eswc8fz3e6r6s7xjca8eh7hjflq06sfqcxc0uz63evz03cs9xjqzs",
+    "project_ids": [
+      "EC-0006-25,EC-0007-25,EC-0010-25"
+    ],
+    "project_status_counts": {
+      "paused": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 662742.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1q94dne7wfqvsf724gx2dycgpmzfz43psgtrmc6ksst442eswc8fz3e6-bd00c2325c"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1q9a80rmurvk388224szqxtdfn723yt2hmh2f3z7gkw2srczevw9gj6c93r2900smfyks6dyqayvra7hhectfuh35lhqqex327p",
+    "normalized_name": "addr1q9a80rmurvk388224szqxtdfn723yt2hmh2f3z7gkw2srczevw9gj6c93r2900smfyks6dyqayvra7hhectfuh35lhqqex327p",
+    "project_ids": [
+      "EC-0014-25"
+    ],
+    "project_status_counts": {
+      "paused": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 578571.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1q9a80rmurvk388224szqxtdfn723yt2hmh2f3z7gkw2srczevw9gj6c-114cd8e371"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1q9c0wgxuygu6plh23kmxkl0wewypmgrewe706g8q0y5psdz32x5hqy5y2v0mt7hgsd2mpm3cwqwhzevrh6sn04gfg5nsj6r0a3",
+    "normalized_name": "addr1q9c0wgxuygu6plh23kmxkl0wewypmgrewe706g8q0y5psdz32x5hqy5y2v0mt7hgsd2mpm3cwqwhzevrh6sn04gfg5nsj6r0a3",
+    "project_ids": [
+      "EC-0011-25 EC-0005-25"
+    ],
+    "project_status_counts": {
+      "paused": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 724800.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1q9c0wgxuygu6plh23kmxkl0wewypmgrewe706g8q0y5psdz32x5hqy5-8d1b6c14ee"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1q9gcxfl9fe9ulluvtc2sxj6xux7jfa49zzq4aheyywqm0k3gudvqrjyfk4nqpvscu2ggqg67x9e0dk5l5p4s6msvkpys6qv4v6",
+    "normalized_name": "addr1q9gcxfl9fe9ulluvtc2sxj6xux7jfa49zzq4aheyywqm0k3gudvqrjyfk4nqpvscu2ggqg67x9e0dk5l5p4s6msvkpys6qv4v6",
+    "project_ids": [
+      "EMI-0010-25"
+    ],
+    "project_status_counts": {
+      "withdrawn": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 5000000.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1q9gcxfl9fe9ulluvtc2sxj6xux7jfa49zzq4aheyywqm0k3gudvqrjy-77742889c9"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1q9knu3thwqfnwly0ggfn0fen5ac50v0smvjgrlxkskkrxgv9srwtryv28yxsrv4x5agruavj3dykhyperms8smxhqt4saqm9v6",
+    "normalized_name": "addr1q9knu3thwqfnwly0ggfn0fen5ac50v0smvjgrlxkskkrxgv9srwtryv28yxsrv4x5agruavj3dykhyperms8smxhqt4saqm9v6",
+    "project_ids": [
+      "EMI-0007-25"
+    ],
+    "project_status_counts": {
+      "mixed": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 889500.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1q9knu3thwqfnwly0ggfn0fen5ac50v0smvjgrlxkskkrxgv9srwtryv-b8f3537854"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1q9kpwrdezpmyxn0g87fcdrnp7spqaauyqy3kx6aq5jj3926z8sjcfkfh9jhkskg9x72wfg86yt23me9j6dejjgwkycvs3gy7pn",
+    "normalized_name": "addr1q9kpwrdezpmyxn0g87fcdrnp7spqaauyqy3kx6aq5jj3926z8sjcfkfh9jhkskg9x72wfg86yt23me9j6dejjgwkycvs3gy7pn",
+    "project_ids": [
+      "EC-0013(6,10,4)-25",
+      "EC-0013(1,2,7)-25"
+    ],
+    "project_status_counts": {
+      "paused": 2
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 4985000.0,
+    "total_projects": 2,
+    "vendor_id": "tf1-vendor-addr1q9kpwrdezpmyxn0g87fcdrnp7spqaauyqy3kx6aq5jj3926z8sjcfkf-968a4f5f5e"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1q9qk3n36gv5pclrym2dhedv9hqs2dchkt0nf36tscap3paaf7ma3972u24k8d0ejjgakphc9yp6zsxc2q0nsjmuvcmxsly0a5a",
+    "normalized_name": "addr1q9qk3n36gv5pclrym2dhedv9hqs2dchkt0nf36tscap3paaf7ma3972u24k8d0ejjgakphc9yp6zsxc2q0nsjmuvcmxsly0a5a",
+    "project_ids": [
+      "EG-0002-25"
+    ],
+    "project_status_counts": {
+      "paused": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 15750000.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1q9qk3n36gv5pclrym2dhedv9hqs2dchkt0nf36tscap3paaf7ma3972-d57e034eac"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1q9rsaat50djvcxc3sh6uapzt6ktmqm5kaufw3vr8wg4qy5hst733xv48tak2k433cj864u762cjrtcz6dk3x6e2nawgsssa7nv",
+    "normalized_name": "addr1q9rsaat50djvcxc3sh6uapzt6ktmqm5kaufw3vr8wg4qy5hst733xv48tak2k433cj864u762cjrtcz6dk3x6e2nawgsssa7nv",
+    "project_ids": [
+      "EC-0008-25",
+      "EC-0001-25"
+    ],
+    "project_status_counts": {
+      "paused": 2
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 2292999.0,
+    "total_projects": 2,
+    "vendor_id": "tf1-vendor-addr1q9rsaat50djvcxc3sh6uapzt6ktmqm5kaufw3vr8wg4qy5hst733xv4-88581a614c"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1q9sz5kw40pmnkcmmfvssm5fy2vzkk7l0wu5szv25nnffkqnkc35qyrgnqu8tl96u5eejytgvtsqatr2ms6hrxhdzq4pslvp2rm",
+    "normalized_name": "addr1q9sz5kw40pmnkcmmfvssm5fy2vzkk7l0wu5szv25nnffkqnkc35qyrgnqu8tl96u5eejytgvtsqatr2ms6hrxhdzq4pslvp2rm",
+    "project_ids": [
+      "EC-0021-25"
+    ],
+    "project_status_counts": {
+      "withdrawn": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 266667.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1q9sz5kw40pmnkcmmfvssm5fy2vzkk7l0wu5szv25nnffkqnkc35qyrg-745f0c94e4"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1q9yv22yvu6krccqg3rsx3th4lgd0ar8gjx4zsp2avjk32vucm6spkj57ajfcu23pskrlvys3t99v3ej553h2eh9r86csg5a07e",
+    "normalized_name": "addr1q9yv22yvu6krccqg3rsx3th4lgd0ar8gjx4zsp2avjk32vucm6spkj57ajfcu23pskrlvys3t99v3ej553h2eh9r86csg5a07e",
+    "project_ids": [
+      "EMI-0009-25"
+    ],
+    "project_status_counts": {
+      "paused": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 4000000.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1q9yv22yvu6krccqg3rsx3th4lgd0ar8gjx4zsp2avjk32vucm6spkj5-374c8a3557"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1qxkty7fvrjcswfpj0pf2ergrlpc8xtzmersscg4ghqyezsg77rkpz23uwdfe2e4au6m2heqmk7gersd6560dljc9s8eqr6r3v3",
+    "normalized_name": "addr1qxkty7fvrjcswfpj0pf2ergrlpc8xtzmersscg4ghqyezsg77rkpz23uwdfe2e4au6m2heqmk7gersd6560dljc9s8eqr6r3v3",
+    "project_ids": [
+      "EMI-0003-25",
+      "EMI-0002-25"
+    ],
+    "project_status_counts": {
+      "withdrawn": 2
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 12000000.0,
+    "total_projects": 2,
+    "vendor_id": "tf1-vendor-addr1qxkty7fvrjcswfpj0pf2ergrlpc8xtzmersscg4ghqyezsg77rkpz23-82c08be1a3"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1qxnuhkxz0mgh0vx6jg9zg4qp9pg27ckm6uv622fsxtghap3sruuxr0ev6mn5907qz4wl4s6qvsygmvrdc5qzwq0mlrwsannve8",
+    "normalized_name": "addr1qxnuhkxz0mgh0vx6jg9zg4qp9pg27ckm6uv622fsxtghap3sruuxr0ev6mn5907qz4wl4s6qvsygmvrdc5qzwq0mlrwsannve8",
+    "project_ids": [
+      "EMI-0004-25"
+    ],
+    "project_status_counts": {
+      "withdrawn": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 12000000.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1qxnuhkxz0mgh0vx6jg9zg4qp9pg27ckm6uv622fsxtghap3sruuxr0e-c470790411"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1qxve6vc0c53jxyvk9k92ek3h5jyg8pwrq5hyqp4rafcws7jvalcz772r2rk0ytnvc5mfrxq6rq9vkwzsymq45a33utwqxy3cv8",
+    "normalized_name": "addr1qxve6vc0c53jxyvk9k92ek3h5jyg8pwrq5hyqp4rafcws7jvalcz772r2rk0ytnvc5mfrxq6rq9vkwzsymq45a33utwqxy3cv8",
+    "project_ids": [
+      "EMI-0006a-25&EMI-0006b-25"
+    ],
+    "project_status_counts": {
+      "paused": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 3126000.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1qxve6vc0c53jxyvk9k92ek3h5jyg8pwrq5hyqp4rafcws7jvalcz772-ca9b63b019"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1qy236l8zxnyvvm7uaxtvp87k36a045h8em0y82clams4wfuwpj9clsvsf85cd4xc59zjztr5zwpummwckmzr2myjwjnsrv508n",
+    "normalized_name": "addr1qy236l8zxnyvvm7uaxtvp87k36a045h8em0y82clams4wfuwpj9clsvsf85cd4xc59zjztr5zwpummwckmzr2myjwjnsrv508n",
+    "project_ids": [
+      "ER-0002-25"
+    ],
+    "project_status_counts": {
+      "paused": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 199911.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1qy236l8zxnyvvm7uaxtvp87k36a045h8em0y82clams4wfuwpj9clsv-62383363f7"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1qyekd5cyq73usa5czjjgpn8esawy59evvdhnwt52jlaepmnmzs4pv8t3hz0t3edydewp50m66e402jqxfzjke5xse8pqk5zmd8",
+    "normalized_name": "addr1qyekd5cyq73usa5czjjgpn8esawy59evvdhnwt52jlaepmnmzs4pv8t3hz0t3edydewp50m66e402jqxfzjke5xse8pqk5zmd8",
+    "project_ids": [
+      "EC-0018-25"
+    ],
+    "project_status_counts": {
+      "paused": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 583000.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1qyekd5cyq73usa5czjjgpn8esawy59evvdhnwt52jlaepmnmzs4pv8t-5f8928ba6d"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1qyjk85v68tmpy9afm8l3k536sa98ktna5hknxlq3sdl2daall4ts4vx7py55p4whtyr3d3s5rgw7rdztv7jzqg4am7squssllz",
+    "normalized_name": "addr1qyjk85v68tmpy9afm8l3k536sa98ktna5hknxlq3sdl2daall4ts4vx7py55p4whtyr3d3s5rgw7rdztv7jzqg4am7squssllz",
+    "project_ids": [
+      "EG-0001-25-02",
+      "EG-0001-25"
+    ],
+    "project_status_counts": {
+      "active": 2
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 212000.0,
+    "total_projects": 2,
+    "vendor_id": "tf1-vendor-addr1qyjk85v68tmpy9afm8l3k536sa98ktna5hknxlq3sdl2daall4ts4vx-99c8bfbd4b"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1qyn28fkuh5qwxrvl69u38j74nntcphr7hsktw563yc9l4aj9qmnf27m74mhyrs6hkfh4pgmsgv39eypdcufq6g4t6mssgdvca8",
+    "normalized_name": "addr1qyn28fkuh5qwxrvl69u38j74nntcphr7hsktw563yc9l4aj9qmnf27m74mhyrs6hkfh4pgmsgv39eypdcufq6g4t6mssgdvca8",
+    "project_ids": [
+      "EC-0012-25"
+    ],
+    "project_status_counts": {
+      "withdrawn": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 600000.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1qyn28fkuh5qwxrvl69u38j74nntcphr7hsktw563yc9l4aj9qmnf27m-dd568fe820"
+  },
+  {
+    "confidence": "high",
+    "display_name": "addr1qyu57x0c9sjutfstgq22gurl2dwyyvvsr7mwlh4qulxghv24ffmv8lur8q65ecu59klc8njlsr0v9cdeefctmlx23aqsxjpdex",
+    "normalized_name": "addr1qyu57x0c9sjutfstgq22gurl2dwyyvvsr7mwlh4qulxghv24ffmv8lur8q65ecu59klc8njlsr0v9cdeefctmlx23aqsxjpdex",
+    "project_ids": [
+      "ER-0003-25"
+    ],
+    "project_status_counts": {
+      "active": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 314800.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-addr1qyu57x0c9sjutfstgq22gurl2dwyyvvsr7mwlh4qulxghv24ffmv8lu-a7c1f81bd1"
+  },
+  {
+    "confidence": "high",
+    "display_name": "Allowlist",
+    "normalized_name": "allowlist",
+    "project_ids": [
+      "EX-000-02"
+    ],
+    "project_status_counts": {
+      "withdrawn": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 10.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-allowlist-4ec30e9d85"
+  },
+  {
+    "confidence": "high",
+    "display_name": "Input Output Engineering",
+    "normalized_name": "input output engineering",
+    "project_ids": [
+      "UTXO-EC-0002-25-04",
+      "UTXO-EC-0002-25-03",
+      "UTXO-EC-0002-25-02"
+    ],
+    "project_status_counts": {
+      "paused": 3
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 15228311.0,
+    "total_projects": 3,
+    "vendor_id": "tf1-vendor-input-output-engineering-ab306c571c"
+  },
+  {
+    "confidence": "high",
+    "display_name": "Input Output Engineering Core Development Proposal (1of6)",
+    "normalized_name": "input output engineering core development proposal (1of6)",
+    "project_ids": [
+      "UTXO-EC-0002-25-01"
+    ],
+    "project_status_counts": {
+      "paused": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 24200280.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-input-output-engineering-core-development-proposal-1of6-70bceb4fda"
+  },
+  {
+    "confidence": "high",
+    "display_name": "Input Output Engineering Core Development Proposal (5of6)",
+    "normalized_name": "input output engineering core development proposal (5of6)",
+    "project_ids": [
+      "UTXO-EC-0002-25-05"
+    ],
+    "project_status_counts": {
+      "paused": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 11492000.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-input-output-engineering-core-development-proposal-5of6-ca9e803363"
+  },
+  {
+    "confidence": "high",
+    "display_name": "Input Output Engineering Core Development Proposal (6of6)",
+    "normalized_name": "input output engineering core development proposal (6of6)",
+    "project_ids": [
+      "UTXO-EC-0002-25-06"
+    ],
+    "project_status_counts": {
+      "paused": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 33664800.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-input-output-engineering-core-development-proposal-6of6-b640d0bbfe"
+  },
+  {
+    "confidence": "high",
+    "display_name": "IOG",
+    "normalized_name": "iog",
+    "project_ids": [
+      "UTXO-EMI-0001-25",
+      "UTXO-EG-0003-25",
+      "UTXO-EC-0003-25"
+    ],
+    "project_status_counts": {
+      "active": 1,
+      "paused": 2
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 7051780.0,
+    "total_projects": 3,
+    "vendor_id": "tf1-vendor-iog-d055aabd02"
+  },
+  {
+    "confidence": "high",
+    "display_name": "IOR",
+    "normalized_name": "ior",
+    "project_ids": [
+      "UTXO-ER-0001-25"
+    ],
+    "project_status_counts": {
+      "withdrawn": 1
+    },
+    "source_instance": "treasury-fund-01",
+    "source_system": "sundae_treasury",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "total_contract_ada": 26840000.0,
+    "total_projects": 1,
+    "vendor_id": "tf1-vendor-ior-92432fbe54"
+  }
+]

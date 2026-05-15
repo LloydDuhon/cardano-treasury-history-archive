@@ -30,6 +30,10 @@ See [ADR-2026-05-13 Implementation Notes](../../docs/adr/ADR-2026-05-13-source-s
 - `iohk-pdfs/fund-NN.pdf` - canonical IOG/CF voting-results PDF artifacts that
   are currently accessible. The interim snapshot has F2 and F10 only; missing
   artifacts are tracked in `docs/IOG_RESULTS_ACCESS_TRACKER.md`.
+- `sundae_treasury/treasury-fund-01-projects.json` - raw GraphQL capture from
+  `https://api.treasury.sundae.fi/graphql` for the `Intersect Treasury
+  Contracts 1` instance. This is normalized into
+  `data/historical/treasury-fund-01/` for proposer-history reports.
 
 The Milestone Module's raw captures live PER-FUND (not in this central
 `_raw/`) because the Supabase queries naturally scope by fund_id:
@@ -44,6 +48,7 @@ upstream:
 cd etl
 python -m normalizers.unify_proposals          # all funds
 python -m normalizers.unify_proposals --fund 10 # only F10
+python -m normalizers.sundae_treasury          # Treasury Fund 1 history
 ```
 
 ## Provenance integrity
