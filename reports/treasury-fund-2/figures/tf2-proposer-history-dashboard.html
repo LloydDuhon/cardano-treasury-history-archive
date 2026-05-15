@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TF2 proposer history -- visualization dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --ink: #111;
+    --muted: #555;
+    --bg: #fff;
+    --line: #e5e5e5;
+    --accent: #1F4F8F;
+    --warn: #E8A23E;
+    --danger: #B23A48;
+  }
+  body {
+    margin: 0;
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+      Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 32px 24px 64px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 16px; margin-bottom: 32px; }
+  h1 { font-size: 22px; margin: 0 0 6px; font-weight: 600; }
+  .sub { color: var(--muted); font-size: 14px; }
+  .meta { font-size: 12px; color: var(--muted); margin-top: 8px; }
+  h2 { font-size: 16px; margin: 40px 0 8px; font-weight: 600; }
+  h2 .count { color: var(--muted); font-weight: 400; }
+  p { line-height: 1.55; font-size: 14px; color: #222; }
+  .grid-kpi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 16px 0 24px;
+  }
+  .kpi {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 14px 16px;
+    background: #fafafa;
+  }
+  .kpi .label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+  }
+  .kpi .value { font-size: 22px; font-weight: 600; margin-top: 4px; color: var(--ink); }
+  figure { margin: 0 0 24px; }
+  figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: white;
+  }
+  figcaption { font-size: 12px; color: var(--muted); margin-top: 6px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 8px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { background: #fafafa; font-weight: 600; color: #333; cursor: pointer; user-select: none; }
+  th .arrow { color: #bbb; font-size: 10px; }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .controls { display: flex; gap: 12px; align-items: center; margin: 12px 0; }
+  .controls input[type=search] {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    font-size: 13px;
+  }
+  .note {
+    background: #fff8e6;
+    border-left: 3px solid var(--warn);
+    padding: 10px 14px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #6a4a10;
+    margin: 18px 0;
+  }
+  footer {
+    margin-top: 48px;
+    font-size: 12px;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+    padding-top: 16px;
+  }
+  a { color: var(--accent); }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 12px;
+    background: #f4f4f4;
+    padding: 1px 5px;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Treasury Fund 2 proposer history</h1>
+  <div class="sub">
+    What returning TF2 proposers have delivered with prior treasury funds
+    &mdash; and which TF2 proposers have never previously taken treasury funds.
+  </div>
+  <div class="meta">
+    Snapshot generated 2026-05-15 15:56 UTC &middot;
+    Hydra Voting snapshot 2026-05-15T12:07:25Z &middot;
+    Archive:
+    <a
+      href="https://github.com/LloydDuhon/cardano-treasury-history-archive"
+      target="_blank"
+      rel="noopener"
+    >cardano-treasury-history-archive</a>
+  </div>
+</header>
+
+<section>
+  <div class="grid-kpi">
+    <div class="kpi">
+      <div class="label">TF2 proposals</div>
+      <div class="value">69</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Unique TF2 proposers</div>
+      <div class="value">51</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Returning (with prior funding)</div>
+      <div class="value">17</div>
+    </div>
+    <div class="kpi">
+      <div class="label">First-time proposers</div>
+      <div class="value">34</div>
+    </div>
+  </div>
+  <p>
+    The Cardano treasury history archive joins each of the 69 current TF2 proposals to historical
+    records from Project Catalyst (funds 1&ndash;15) and Treasury Fund 1, then cross-checks against
+    on-chain <code>TreasuryWithdrawals</code> governance actions. 17 of the 51
+    unique TF2 proposers appear in that historical dataset; the remaining 34 have no
+    prior treasury record under any of the three sources. None of the 34 first-time
+    proposers were reclassified after the on-chain cross-check.
+  </p>
+  <div class="note">
+    <strong>Methodology and confidence.</strong> Catalyst rows are matched at "proposer mentioned
+    in proposal text" (medium confidence); TF1 rows are matched at the contract level (high
+    confidence). 122 of 607 historical rows are USD-denominated (early Catalyst funds) and have no
+    ADA value, so ADA totals understate activity. "MLabs LTD" and "MLabsLTD" are merged for
+    display. This is a provenance-first research view, not a final audit opinion.
+  </div>
+</section>
+
+<section>
+  <h2>
+    1. Prior treasury ADA by returning proposer
+    <span class="count">&mdash; stacked by historical project status</span>
+  </h2>
+  <figure>
+    <img
+      src="01-prior-ada-by-proposer.png"
+      alt="Prior treasury ADA per returning TF2 proposer by completion status"
+    >
+    <figcaption>
+      Bars are total ADA across all prior Catalyst and TF1 records. Stack
+      segments show how that ADA splits across completion status.
+    </figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>2. Count of prior funded proposals <span class="count">&mdash; stacked by status</span></h2>
+  <figure>
+    <img
+      src="02-prior-proposal-count-by-proposer.png"
+      alt="Prior proposal counts per returning TF2 proposer by status"
+    >
+    <figcaption>
+      Count view balances the ADA view. Proposers with many small-grant Catalyst
+      records appear here even where their ADA totals are modest.
+    </figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>
+    3. Overall delivery status mix
+    <span class="count">&mdash; across all prior work of the 17 returners</span>
+  </h2>
+  <figure>
+    <img
+      src="03-status-mix-overall.png"
+      alt="Project-count mix and ADA-weighted mix of historical status"
+    >
+    <figcaption>
+      Left: project count. Right: ADA weight. Status comes from the upstream
+      source data (Catalyst and TF1 milestone module / contract status).
+    </figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>
+    4. First-time TF2 proposers
+    <span class="count">&mdash; 34 proposers with no prior treasury funding</span>
+  </h2>
+  <figure>
+    <img
+      src="04-first-time-tf2-proposers.png"
+      alt="TF2 ask amounts for first-time proposers"
+    >
+    <figcaption>
+      Each bar is the proposer's total TF2 ask (sum of their proposals'
+      <code>totalBudget</code> from the Hydra Voting snapshot).
+    </figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>5. Per-proposer detail table</h2>
+  <div class="controls">
+    <input type="search" id="q" placeholder="Filter by proposer name...">
+  </div>
+  <table id="t">
+    <thead>
+      <tr>
+        <th data-key="proposer">Proposer</th>
+        <th data-key="total_ada" class="num">Total prior ADA</th>
+        <th data-key="n_records" class="num">Records</th>
+        <th data-key="n_complete" class="num">Complete</th>
+        <th data-key="n_in_progress" class="num">In progress</th>
+        <th data-key="n_paused" class="num">Paused</th>
+        <th data-key="n_withdrawn" class="num">Withdrawn</th>
+        <th data-key="n_risk_flagged" class="num">Flagged</th>
+      </tr>
+    </thead>
+    <tbody><tr data-name="MLabs LTD" data-proposer="MLabs LTD" data-total_ada="98952250.0" data-n_records="410" data-n_complete="360" data-n_in_progress="40" data-n_paused="10" data-n_withdrawn="0" data-n_risk_flagged="10"><td>MLabs LTD</td><td class="num">98,952,250</td><td class="num">410</td><td class="num">360</td><td class="num">40</td><td class="num">10</td><td class="num">0</td><td class="num">10</td></tr>
+<tr data-name="TxPipe" data-proposer="TxPipe" data-total_ada="21567274.8" data-n_records="150" data-n_complete="72" data-n_in_progress="78" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>TxPipe</td><td class="num">21,567,275</td><td class="num">150</td><td class="num">72</td><td class="num">78</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+<tr data-name="IntersectMBO" data-proposer="IntersectMBO" data-total_ada="15887428.0" data-n_records="2" data-n_complete="0" data-n_in_progress="1" data-n_paused="1" data-n_withdrawn="0" data-n_risk_flagged="1"><td>IntersectMBO</td><td class="num">15,887,428</td><td class="num">2</td><td class="num">0</td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr data-name="Cardano Builder DAO" data-proposer="Cardano Builder DAO" data-total_ada="12000000.0" data-n_records="1" data-n_complete="0" data-n_in_progress="0" data-n_paused="0" data-n_withdrawn="1" data-n_risk_flagged="1"><td>Cardano Builder DAO</td><td class="num">12,000,000</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td class="num">1</td></tr>
+<tr data-name="zkFold" data-proposer="zkFold" data-total_ada="4016000.0" data-n_records="11" data-n_complete="6" data-n_in_progress="4" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>zkFold</td><td class="num">4,016,000</td><td class="num">11</td><td class="num">6</td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+<tr data-name="Rare Network (Rare Evo) & SCRIB3" data-proposer="Rare Network (Rare Evo) & SCRIB3" data-total_ada="1915400.0" data-n_records="10" data-n_complete="8" data-n_in_progress="2" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>Rare Network (Rare Evo) & SCRIB3</td><td class="num">1,915,400</td><td class="num">10</td><td class="num">8</td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+<tr data-name="Serviceplan Group" data-proposer="Serviceplan Group" data-total_ada="1840000.0" data-n_records="2" data-n_complete="1" data-n_in_progress="1" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>Serviceplan Group</td><td class="num">1,840,000</td><td class="num">2</td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+<tr data-name="Eryx" data-proposer="Eryx" data-total_ada="1104000.0" data-n_records="4" data-n_complete="2" data-n_in_progress="1" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>Eryx</td><td class="num">1,104,000</td><td class="num">4</td><td class="num">2</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+<tr data-name="Techstars" data-proposer="Techstars" data-total_ada="1079000.0" data-n_records="1" data-n_complete="0" data-n_in_progress="1" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>Techstars</td><td class="num">1,079,000</td><td class="num">1</td><td class="num">0</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+<tr data-name="VacuumLabs" data-proposer="VacuumLabs" data-total_ada="838400.0" data-n_records="3" data-n_complete="1" data-n_in_progress="1" data-n_paused="1" data-n_withdrawn="0" data-n_risk_flagged="1"><td>VacuumLabs</td><td class="num">838,400</td><td class="num">3</td><td class="num">1</td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr data-name="2 Lovelaces & Lido Nation" data-proposer="2 Lovelaces & Lido Nation" data-total_ada="527199.99" data-n_records="6" data-n_complete="2" data-n_in_progress="4" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>2 Lovelaces & Lido Nation</td><td class="num">527,200</td><td class="num">6</td><td class="num">2</td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+<tr data-name="DeltaDeFi" data-proposer="DeltaDeFi" data-total_ada="500000.0" data-n_records="2" data-n_complete="2" data-n_in_progress="0" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>DeltaDeFi</td><td class="num">500,000</td><td class="num">2</td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+<tr data-name="Indigo Foundation" data-proposer="Indigo Foundation" data-total_ada="450000.0" data-n_records="1" data-n_complete="1" data-n_in_progress="0" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>Indigo Foundation</td><td class="num">450,000</td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+<tr data-name="WingRiders Ltd." data-proposer="WingRiders Ltd." data-total_ada="185000.0" data-n_records="1" data-n_complete="1" data-n_in_progress="0" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>WingRiders Ltd.</td><td class="num">185,000</td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+<tr data-name="BLOXBEAN" data-proposer="BLOXBEAN" data-total_ada="99600.0" data-n_records="1" data-n_complete="0" data-n_in_progress="0" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>BLOXBEAN</td><td class="num">99,600</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+<tr data-name="Prisma" data-proposer="Prisma" data-total_ada="32400.0" data-n_records="2" data-n_complete="0" data-n_in_progress="2" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>Prisma</td><td class="num">32,400</td><td class="num">2</td><td class="num">0</td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr></tbody>
+  </table>
+</section>
+
+<section>
+  <h2>6. First-time proposer detail</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Proposer</th>
+        <th class="num">TF2 ask (ADA)</th>
+        <th class="num">TF2 proposals</th>
+      </tr>
+    </thead>
+    <tbody><tr><td>BRIDGE FUND</td><td class="num">65,405,000</td><td class="num">1</td></tr>
+<tr><td>ChainPort (by DcentraLab)</td><td class="num">30,570,400</td><td class="num">1</td></tr>
+<tr><td>Ensurable Systems Ltd</td><td class="num">21,040,966</td><td class="num">2</td></tr>
+<tr><td>Wormhole Foundation</td><td class="num">20,600,000</td><td class="num">1</td></tr>
+<tr><td>Innovation & Growth DAO</td><td class="num">14,304,640</td><td class="num">1</td></tr>
+<tr><td>NMA Venture Capital GmbH</td><td class="num">6,200,600</td><td class="num">1</td></tr>
+<tr><td>Cardano Tooling DAO LLC</td><td class="num">6,180,000</td><td class="num">1</td></tr>
+<tr><td>Ledger Technologies SAS</td><td class="num">5,613,500</td><td class="num">3</td></tr>
+<tr><td>Magenta Labs</td><td class="num">5,450,000</td><td class="num">2</td></tr>
+<tr><td>Open Source Committee (Intersect)</td><td class="num">4,601,000</td><td class="num">1</td></tr>
+<tr><td>Anvil Development Agency, Inc.</td><td class="num">4,372,865</td><td class="num">1</td></tr>
+<tr><td>Wirex Limited</td><td class="num">3,961,538</td><td class="num">1</td></tr>
+<tr><td>Teragone Factory</td><td class="num">3,739,559</td><td class="num">1</td></tr>
+<tr><td>Dano Finance</td><td class="num">3,399,000</td><td class="num">1</td></tr>
+<tr><td>Voltaire Swarm</td><td class="num">2,664,095</td><td class="num">1</td></tr>
+<tr><td>Libertum</td><td class="num">2,193,900</td><td class="num">1</td></tr>
+<tr><td>Justice Conder</td><td class="num">1,874,600</td><td class="num">1</td></tr>
+<tr><td>No.Witness Labs</td><td class="num">1,853,996</td><td class="num">2</td></tr>
+<tr><td>Simon Thompson</td><td class="num">1,802,500</td><td class="num">1</td></tr>
+<tr><td>Cardano Content Creator Consortium (C4)</td><td class="num">1,524,400</td><td class="num">1</td></tr>
+<tr><td>Yoram Ben Zvi</td><td class="num">1,519,250</td><td class="num">1</td></tr>
+<tr><td>AxellaCoin</td><td class="num">1,390,508</td><td class="num">1</td></tr>
+<tr><td>Voltaire Swarm OÜ</td><td class="num">1,350,330</td><td class="num">1</td></tr>
+<tr><td>Jose Velazquez</td><td class="num">1,339,000</td><td class="num">1</td></tr>
+<tr><td>Houdiniswap</td><td class="num">1,311,190</td><td class="num">1</td></tr>
+<tr><td>IntersectCPC</td><td class="num">1,240,000</td><td class="num">1</td></tr>
+<tr><td>Intersect Technical Steering Committee</td><td class="num">1,193,000</td><td class="num">1</td></tr>
+<tr><td>Se7en Labs</td><td class="num">1,112,400</td><td class="num">1</td></tr>
+<tr><td>Wada Global</td><td class="num">989,901</td><td class="num">1</td></tr>
+<tr><td>Five Binaries</td><td class="num">952,750</td><td class="num">1</td></tr>
+<tr><td>STORM Partners</td><td class="num">929,699</td><td class="num">1</td></tr>
+<tr><td>David Tacuri</td><td class="num">653,947</td><td class="num">1</td></tr>
+<tr><td>IntersectCBC</td><td class="num">600,000</td><td class="num">1</td></tr>
+<tr><td>Intersect Civics Committee</td><td class="num">442,900</td><td class="num">1</td></tr></tbody>
+  </table>
+</section>
+
+<footer>
+  Generated by <code>etl/scripts/generate_treasury_fund_figures.py</code> &middot;
+  Data CC-BY-4.0, code MIT (see archive licenses) &middot;
+  Refresh by re-running the upstream report generator, then this script.
+</footer>
+
+</div>
+
+<script>
+(function() {
+  var q = document.getElementById('q');
+  var rows = Array.prototype.slice.call(document.querySelectorAll('#t tbody tr'));
+  q.addEventListener('input', function() {
+    var v = q.value.trim().toLowerCase();
+    rows.forEach(function(r) {
+      r.style.display = r.dataset.name.toLowerCase().indexOf(v) === -1 ? 'none' : '';
+    });
+  });
+  var headers = document.querySelectorAll('#t thead th');
+  var lastKey = null; var asc = false;
+  headers.forEach(function(h) {
+    h.addEventListener('click', function() {
+      var key = h.dataset.key;
+      asc = (key === lastKey) ? !asc : false;
+      lastKey = key;
+      var sorted = rows.slice().sort(function(a, b) {
+        var av = a.dataset[key], bv = b.dataset[key];
+        var an = parseFloat(av), bn = parseFloat(bv);
+        if (!isNaN(an) && !isNaN(bn)) { return asc ? an - bn : bn - an; }
+        return asc ? String(av).localeCompare(String(bv)) : String(bv).localeCompare(String(av));
+      });
+      var tbody = document.querySelector('#t tbody');
+      sorted.forEach(function(r) { tbody.appendChild(r); });
+    });
+  });
+})();
+</script>
+</body>
+</html>

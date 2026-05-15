@@ -10,6 +10,7 @@ An open archive of Cardano funding history across Project Catalyst, Treasury Fun
 - **Cardano on-chain treasury withdrawals:** Koios governance-action data for `TreasuryWithdrawals` under `data/historical/cardano-treasury-withdrawals/`.
 - **Treasury Fund 2 current snapshot:** raw 2026 Cardano Budget Process data from Hydra Voting under `data/_raw/hydra_voting/`.
 - **Generated reports:** Treasury Fund 2 proposer-history, proposal-similarity, 2025 identity bridge, and TF1-to-2025 reconciliation outputs under `reports/treasury-fund-2/`.
+- **Static explorer:** a browser-based Treasury Fund 2 history viewer under `site/`.
 - **ETL and validation:** Python fetchers, normalizers, report generation, and schemas under `etl/` and `schemas/`.
 
 ## Current Reports
@@ -22,6 +23,11 @@ The primary working reports are in `reports/treasury-fund-2/`:
 - `tf1-ekklesia-reconciliation.md` / `.csv` reconciles Treasury Fund 1 contract records from the Sundae Treasury site against the original 2025 Ekklesia budget-process proposal records.
 - `onchain-treasury-reconciliation.md` / `.csv` reconciles on-chain Cardano `TreasuryWithdrawals` actions against Treasury Fund 1 so overlapping amounts are visible and not double-counted.
 - `_summary.json` records the current snapshot timestamps and generated row counts.
+
+The static viewer in `site/` gives a browser interface over the same current
+Treasury Fund 2 data and matched historical records. It can be served locally
+with `python3 -m http.server` from the `site/` directory or published with the
+included GitHub Pages workflow.
 
 ## Confidence
 
@@ -55,6 +61,7 @@ See `etl/README.md` for environment setup. The Treasury Fund 2 reports are gener
 ```bash
 cd etl
 python -m scripts.generate_treasury_fund_reports
+python scripts/generate_treasury_dashboard_data.py --repo-root .. --out ../site
 ```
 
 Refresh raw snapshots before relying on the reports for publication, because the Hydra Voting and budget-process sites can change.

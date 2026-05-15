@@ -8,6 +8,27 @@ and SemVer for pipeline code.
 
 ## [Unreleased]
 
+### Added (TF2 static viewer)
+- `site/` - static Treasury Fund 2 history explorer with graph, ledger, flow,
+  proposal detail, and proposer detail views over the current archive data.
+- `etl/scripts/generate_treasury_dashboard_data.py` - regenerates
+  `site/data.js` and `site/data.json` from the Hydra Voting snapshot and TF2
+  report CSVs.
+- `.github/workflows/pages.yml` - publishes `site/` to GitHub Pages.
+
+### Added (TF2 figures)
+- `etl/scripts/generate_treasury_fund_figures.py` - reproducible figure
+  generator for the Treasury Fund 2 proposer-history reports. Writes four
+  PNGs, a self-contained HTML dashboard, and an underlying
+  `figures-data.csv` to `reports/treasury-fund-2/figures/`. Initial
+  audience: Cardano Budget Committee at Intersect; intended to circulate
+  to the broader Cardano audience after approval.
+- `reports/treasury-fund-2/figures/README.md` - methodology, sources,
+  caveats, and "known issues" log (notably the MLabs LTD / MLabsLTD
+  entity-resolution duplicate, which is merged at the display layer
+  only).
+- Pinned `matplotlib==3.10.8` for the figure generator.
+
 ### Changed (Interim 2026-05-15)
 - Migrated the Lidonation fetcher from the legacy `/api/*` surface to the
   documented `/api/v1/*` API after the Catalyst Explorer maintainer pointed us

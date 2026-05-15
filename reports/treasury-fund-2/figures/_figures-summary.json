@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-05-15T15:56:20+00:00",
+  "source_summary": "reports/treasury-fund-2/_summary.json",
+  "tf2_proposals": 69,
+  "tf2_unique_proposers": 51,
+  "proposers_with_prior_history_per_archive": 17,
+  "returning_proposers_after_alias_merge": 16,
+  "first_time_proposers_all_sources": 34,
+  "first_time_proposers_catalyst_tf1_only": 34,
+  "onchain_only_matches": [],
+  "entity_resolution_merges": {
+    "MLabsLTD": "MLabs LTD"
+  },
+  "caveats": [
+    "20% of historical rows (122 / 607) are USD-denominated; ADA totals exclude these.",
+    "Catalyst rows use medium-confidence proposer-text matching.",
+    "On-chain rows overlapping TF1 are not double-counted per archive guidance."
+  ]
+}
