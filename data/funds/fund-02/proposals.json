@@ -1,0 +1,5790 @@
+[
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 981319.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "6c4c45c3-8b4e-4347-85b7-b4f9d12e9653"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/a-smart-market-toolkit-for-cardano-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://t.me/Smart_Market_for_NFTs"
+    },
+    "milestone_count": null,
+    "no_votes": 128623080.0,
+    "notes": null,
+    "problem": "A killer application, specific to Cardano is needed to drive wide-scale adoption",
+    "project_status": "unfunded",
+    "proposal_id": "f02-a-smart-market-toolkit-for-cardano-f2",
+    "proposer_ids": [
+      "p-lido-9c4d93c2-173b-4295-972d-b1d06ebb8487",
+      "p-lido-d24f963b-cf06-49e5-bea1-191e3dfbaad8"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "a-smart-market-toolkit-for-cardano-f2",
+    "solution": "Construct a toolkit for building Smart Markets, the killer dApps on Cardano. You can then trade any mix of assets tokenized as NFTs",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "A Smart Market Toolkit for Cardano",
+    "yes_votes": 88712904.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 100000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "6452e914-8e19-4f58-afa5-00acfdda2e4e"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/a-song-for-cardano-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://www.twitch.tv/anewformofmusic"
+    },
+    "milestone_count": null,
+    "no_votes": 83466202.0,
+    "notes": null,
+    "problem": "Raising Awareness Of A Cause Is Always Hard In The Short Term But A Focused Community Song Could Spread The Word Like Wildfire .",
+    "project_status": "unfunded",
+    "proposal_id": "f02-a-song-for-cardano-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-a-song-for-cardano-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "a-song-for-cardano-f2",
+    "solution": "A SONG FOR CARDANO Will Spread The Word Of Cardano Like Wildfire With Its Original Community Based Song Approach And Catchy Visual Lyrics\r\n🎻",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "A SONG FOR CARDANO",
+    "yes_votes": 4274314.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 270600.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "12c59c55-3446-41f2-9cc2-870c90cdc07c"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "unknown",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/abcd-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": null,
+    "notes": null,
+    "problem": "Opportunities for young African devs to learn at an elite level and get them everything they need to make their ideas and projects a reality",
+    "project_status": "unfunded",
+    "proposal_id": "f02-abcd-f2",
+    "proposer_ids": [
+      "p-lido-55c9fcb5-5834-47f8-a0e6-933ac3635af7",
+      "p-lido-a2264f11-b068-44a2-abcb-cf5e3b4caec9",
+      "p-lido-c8523df5-bc8a-45f4-83a7-1d4fd805d4f3",
+      "p-lido-c5505555-9bd5-46e6-b4f3-6f951b8aceaf"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "abcd-f2",
+    "solution": "African Developer Training (then Expertise) Centre specializing in the development,of core Cardano blockchain technologies and applications. Team of ambassadors who co-founded PoA in 2019.\r\nPoA runs in the ITN since December 2019 and was \"Pioneer\" in the F&F Haskell TestNet.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "ABCD",
+    "yes_votes": null
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 120000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "b0b234b5-bd87-448d-84a3-d55024b673ba"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/ada-in-3055-+-bitcoin-atms-globally-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://boinnex.com"
+    },
+    "milestone_count": null,
+    "no_votes": 57703399.0,
+    "notes": null,
+    "problem": "You cannot currently buy Cardano ADA from any Bitcoin ATMs. Boinnex owns and operates a network of Bitcoin ATMs and wants to add Ada support",
+    "project_status": "unfunded",
+    "proposal_id": "f02-ada-in-3055-bitcoin-atms-globally-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-ada-in-3055-+-bitcoin-atms-globally-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "ada-in-3055-+-bitcoin-atms-globally-f2",
+    "solution": "We will integrate ADA into the General Bytes Bitcoin ATM software. We will do this by developing an extension for ADA in the software.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "ADA in 3055+ Bitcoin ATMs Globally!",
+    "yes_votes": 70041757.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 136000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "30800c8d-945b-4055-b229-d422af9affc0"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "unknown",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/ada-makerspace-podcast-series-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://adamaker.space"
+    },
+    "milestone_count": null,
+    "no_votes": 77697602.0,
+    "notes": null,
+    "problem": "There are no new videos to help people learn how to build Smart Contracts that are up to date on using the Plutus and Marlowe Playgrounds",
+    "project_status": "unfunded",
+    "proposal_id": "f02-ada-makerspace-podcast-series-f2",
+    "proposer_ids": [
+      "p-lido-a9b6b629-4e42-4fc3-8925-232d48dff9e5"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "ada-makerspace-podcast-series-f2",
+    "solution": "One hour lessons anyone can watch for free that cover different aspects of using Haskell and the Playgrounds to build things on Cardano",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "ADA MakerSpace Podcast Series",
+    "yes_votes": 79232840.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 10700.0,
+    "amount_requested": 10700.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "f36bad68-177a-47c0-a8f5-81c541096898"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": "2021-01-21T11:00:00.000000Z",
+    "funding_status": "approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/address-gap-in-spo-education-communication",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "Address Gap in SPO Education/Comms"
+    },
+    "milestone_count": null,
+    "no_votes": null,
+    "notes": null,
+    "problem": "A significant gap exists with the availability of critical, concise and thorough educational content targeting Cardano stake pool operators",
+    "project_status": "complete",
+    "proposal_id": "f02-address-gap-in-spo-education-communication",
+    "proposer_ids": [
+      "p-lido-c4a8ad77-905c-4853-a6b5-1c8d59aedee1",
+      "p-lido-1b85dc42-810b-4b9d-bcca-39ea28b40ad5"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "address-gap-in-spo-education-communication",
+    "solution": "Create high value content targeting SPOs and establish communication channels bridges to enable effective dissemination and feedback to CF",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0192.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Address Gap in SPO Education/Comms",
+    "yes_votes": null
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 70000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "1cf88da4-f218-45ac-a9f6-e37511df309a"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/advertising-cardano-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://www.astra-pool.com"
+    },
+    "milestone_count": null,
+    "no_votes": 62157063.0,
+    "notes": null,
+    "problem": "The best materials promoting Cardano are very often hidden within long presentations; remaining unseen to a wider audience.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-advertising-cardano-f2",
+    "proposer_ids": [
+      "p-lido-f49b9436-ef4c-488b-8b70-023000ac25bf"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "advertising-cardano-f2",
+    "solution": "I love finding these gems and turning them into short, inspirational, accessible videos that can be shared on YouTube and other platforms.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Advertising Cardano",
+    "yes_votes": 56168020.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 75000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "918859d1-4b88-4a69-a360-8333f19c26e4"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/an-ultra-efficient-blockchain-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 66152047.0,
+    "notes": null,
+    "problem": "Many developers and entrepreneurs build on proof-of-work blockchains that are using massive amount of energy.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-an-ultra-efficient-blockchain-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-an-ultra-efficient-blockchain-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "an-ultra-efficient-blockchain-f2",
+    "solution": "We want to create a short animation telling the story of why an ultra efficient blockchain matters to humanity, the planet and the future.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "An ultra efficient blockchain",
+    "yes_votes": 9899514.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 650000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "965b6949-11b0-4b61-9680-6f8da0c71b57"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/artdapp-powered-by-cardano-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 82218351.0,
+    "notes": null,
+    "problem": "An estimated 40% of investment grade art in circulation if fake or fraudulent.\r\n\r\n\r\n\r\nGlobal Art Market is $70 billion annual industry.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-artdapp-powered-by-cardano-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-artdapp-powered-by-cardano-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "artdapp-powered-by-cardano-f2",
+    "solution": "Authentication via uninterrupted provenance chain combined with identity and digital image recognition should be the industry standard.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "ArtDapp - Powered by Cardano",
+    "yes_votes": 10669950.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 300000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "b77a3922-c1bc-41bb-80a7-0d38dbb7a19e"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/beef-chain-for-medical-devices-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 68164495.0,
+    "notes": null,
+    "problem": "Healthcare costs are SKYrocketing making access to healthcare difficult for many. This should and can be changed asap.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-beef-chain-for-medical-devices-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-beef-chain-for-medical-devices-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "beef-chain-for-medical-devices-f2",
+    "solution": "Blockchain for Medical Devices, tracking,traceability,inventory management,patient safety,Innovation,supply chain mngmnt,investment opps",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "'Beef chain' for Medical Devices",
+    "yes_votes": 9775492.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 500000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "d27257f3-c703-42d4-8f1d-454f38dc3787"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/cardano-and-fp-in-malawi-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://github.com/thistent"
+    },
+    "milestone_count": null,
+    "no_votes": 75768550.0,
+    "notes": null,
+    "problem": "Malawi is a poor nation with a large young population. Heavy reliance on foreign aid. Need for more innovative thinking. Not many exports.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-cardano-and-fp-in-malawi-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-cardano-and-fp-in-malawi-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "cardano-and-fp-in-malawi-f2",
+    "solution": "My plan is to teach functional programming in Malawi, give people access to a global market, and ignite tech culture at a grassroots level.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Cardano and FP in Malawi",
+    "yes_votes": 9779069.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 500000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "ac0250a3-3167-434d-a79e-b1bbcf99290e"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/cardano-community-council (CCC)-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 78153396.0,
+    "notes": null,
+    "problem": "Community driven initiatives & priorities can't rely on the CF, yet decentralised groups lack the focus a structured organisation provides.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-cardano-community-council-ccc-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-cardano-community-council (CCC)-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "cardano-community-council (CCC)-f2",
+    "solution": "The CCC will be a transparent elected group formed to coordinate community driven adoption initiatives & actions through targeted committees",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Cardano Community Council (CCC)",
+    "yes_votes": 3393808.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 30000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "f96d16e8-1d8e-435c-ad59-e39a977145f5"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/cardano-content-factory-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 61410687.0,
+    "notes": null,
+    "problem": "Content Creatr = popular proposals\r\n\r\n\r\n\r\nProposal overwhelm drowns-out tech builds.\r\n\r\n\r\n\r\nPods & Dapps compete needlesly",
+    "project_status": "unfunded",
+    "proposal_id": "f02-cardano-content-factory-f2",
+    "proposer_ids": [
+      "p-lido-1c5c9a6e-f70d-4668-b1e5-a28ff3c483e8"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "cardano-content-factory-f2",
+    "solution": "Optimize content funding with a low risk, KPI-driven Guild.\r\n\r\n\r\n\r\nAuditing organization-> value-engineer content best practices, funding, output.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Cardano Content Factory",
+    "yes_votes": 42232324.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 32100.0,
+    "amount_requested": 32100.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "e911b21e-9d4c-4f22-8ad3-b665398b861a"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": "2021-01-21T11:00:00.000000Z",
+    "funding_status": "approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/cardano-for-mobile-dapp-developers-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://tesseract.one"
+    },
+    "milestone_count": null,
+    "no_votes": 40751492.0,
+    "notes": null,
+    "problem": "While mobile wallets are pretty common, mobile dApps in the AppStores are still extremely rare due to the scarcity of developer tools.",
+    "project_status": "in_progress",
+    "proposal_id": "f02-cardano-for-mobile-dapp-developers-f2",
+    "proposer_ids": [
+      "p-lido-15266858-728c-4ce1-915b-0df8b59be48f",
+      "p-lido-2695b965-3d70-4081-b6dc-36d71ff0569c"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "cardano-for-mobile-dapp-developers-f2",
+    "solution": "Turn mobile platforms into first-class citizens of dApps world:\r\n\r\n- Mobile SDKs  \r\n\r\n- Mobile-first dApp experience  \r\n\r\n- AppStores compatibility",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0192.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Cardano for Mobile dApp Developers",
+    "yes_votes": 248525934.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 888888.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "569d285e-82b9-4bd2-868c-45591413412e"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/cardano-hub-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 91091078.0,
+    "notes": null,
+    "problem": "The existence of Cardano Hub will help community building, ADA adoption, involvement of developers and entrepreneurs into Cardano ecosystem",
+    "project_status": "unfunded",
+    "proposal_id": "f02-cardano-hub-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-cardano-hub-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "cardano-hub-f2",
+    "solution": "Cardano Hub - your key to the future. Hub will include meetup space, co-working, library, media, cafe, bookstore, startup accelerator, etc.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Cardano Hub",
+    "yes_votes": 9798264.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 60120.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "459a6d7f-e752-43fd-923d-ecaa8a181e63"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/cardano -in-spanish-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 54860011.0,
+    "notes": null,
+    "problem": "Lack of Spanish content for the Cardano Project",
+    "project_status": "unfunded",
+    "proposal_id": "f02-cardano-in-spanish-f2",
+    "proposer_ids": [
+      "p-lido-74b3423e-eead-4c5b-8242-d2526fc81072"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "cardano -in-spanish-f2",
+    "solution": "Provide video materials educating and keeping Hispanic community informed about the Cardano project",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Cardano in Spanish",
+    "yes_votes": 35144470.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 94000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "16a0bcb6-e742-4e67-adef-1dd958ea924b"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/cardano-media-projects-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 60149907.0,
+    "notes": null,
+    "problem": "There is a problem with media in general, and with crypto-media in particular. A lot of fake news, biases, lack of research, etc.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-cardano-media-projects-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-cardano-media-projects-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "cardano-media-projects-f2",
+    "solution": "Create and distribute content - video programs, and then text versions based on them.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Cardano Media Projects",
+    "yes_votes": 6609478.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 92714.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "a1e9d746-dfdc-41b2-b978-e0617c4dbb2a"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/cardano-mobile-app-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 54085525.0,
+    "notes": null,
+    "problem": "Developers and Business need a communication platform that delivers what they need for adoption.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-cardano-mobile-app-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-cardano-mobile-app-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "cardano-mobile-app-f2",
+    "solution": "Cardano Mobile will consolidate the information being provided from various sources into one place and inform developers and business.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Cardano Mobile App",
+    "yes_votes": 29774105.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 145000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "e2527884-bf4c-4ab2-bfe4-b4cda80d2a5b"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "unknown",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/cardano-podcast-in-spanish-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 67432395.0,
+    "notes": null,
+    "problem": "In 2020 LATAM registered the most cryptocurrency users in the world with a mere limited English proficiency (EPI) of 50.34% on average.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-cardano-podcast-in-spanish-f2",
+    "proposer_ids": [
+      "p-lido-039e76b0-9329-475c-8eea-686d0351783a",
+      "p-lido-76b5caec-0e5a-4d68-be94-5ed489cfb2cf"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "cardano-podcast-in-spanish-f2",
+    "solution": "Create a comprehensive podcast in Spanish to expose Cardano to new audiences in order to incentivise the use blockchain technology in LATAM.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Cardano Podcast in Spanish",
+    "yes_votes": 37550109.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 340000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "906cfd2a-02d8-425d-bbc5-d27473299b5a"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/cardano-social-&-economic-ecosystem-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://github.com/goldkey0070"
+    },
+    "milestone_count": null,
+    "no_votes": 71678852.0,
+    "notes": null,
+    "problem": "There is no social platform to buy and sell items using ADA",
+    "project_status": "unfunded",
+    "proposal_id": "f02-cardano-social-economic-ecosystem-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-cardano-social-&-economic-ecosystem-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "cardano-social-&-economic-ecosystem-f2",
+    "solution": "Create a social network with a mix of the old AOL chat rooms and Facebook with a market to buy and sell items with ADA",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Cardano Social & Economic Ecosystem",
+    "yes_votes": 3383147.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 122000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "2267ef64-7739-4f30-8383-11476bcbbbce"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/cardano-stake-pool-library-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 58769272.0,
+    "notes": null,
+    "problem": "Choosing a pool to stake your ADA to is confusing and there is no way to understand what each operator stands for without visiting each site",
+    "project_status": "unfunded",
+    "proposal_id": "f02-cardano-stake-pool-library-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-cardano-stake-pool-library-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "cardano-stake-pool-library-f2",
+    "solution": "The Cardano Stake Pool Library will offer summaries, category filtering etc to enable a better way to choose a pool that suits your values",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Cardano Stake Pool Library",
+    "yes_votes": 14732437.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 28355.0,
+    "amount_requested": 28355.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "668ebd5e-17bf-44e7-93d9-c46536609207"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": "2021-01-21T11:00:00.000000Z",
+    "funding_status": "approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/cardano-starter-kits-apis-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://workshopmaybe.com/learn/cardano-starter-kits"
+    },
+    "milestone_count": null,
+    "no_votes": 37093303.0,
+    "notes": null,
+    "problem": "High entry barriers for community members ready to contribute diverse experience and talents toward mainstream adoption of Cardano.",
+    "project_status": "complete",
+    "proposal_id": "f02-cardano-starter-kits-apis-f2",
+    "proposer_ids": [
+      "p-lido-3ed21f2d-1aba-43f2-b323-88968a8e8b30"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "cardano-starter-kits-apis-f2",
+    "solution": "Free, open source APIs & Project-Based Learning resources that empower people from different backgrounds to drive adoption of Cardano.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0193.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Cardano Starter Kits + APIs",
+    "yes_votes": 240361992.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 100000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "5c904504-fc44-4177-b10f-490c112e413e"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "unknown",
+    "is_opensource": true,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/cardano-swift-sdk-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://github.com/kxpone/cardano-swift"
+    },
+    "milestone_count": null,
+    "no_votes": 45257828.0,
+    "notes": null,
+    "problem": "There are no open source Swift SDKs for interacting with the Cardano blockchain from Apple OS infrastructure.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-cardano-swift-sdk-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-cardano-swift-sdk-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "cardano-swift-sdk-f2",
+    "solution": "Cardano Swift SDK is an open source solution for interacting with the Cardano blockchain using Swift and ObjectiveC",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Cardano Swift SDK",
+    "yes_votes": 64605459.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 200000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "97dc3c16-3c78-4976-a000-e6a773d6d63b"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/cast-onboarding-7-billion + 🗺-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 65668519.0,
+    "notes": null,
+    "problem": "youtube / podcasts are inefficient and unsustainable. 🤔",
+    "project_status": "unfunded",
+    "proposal_id": "f02-cast-onboarding-7-billion-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-cast-onboarding-7-billion + 🗺-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "cast-onboarding-7-billion + 🗺-f2",
+    "solution": "the contextually curated, collaborative and conversational #cryptocurrency content C₳ST. 😌",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "C₳ST Onboarding… 7 Billion + 🗺",
+    "yes_votes": 7386131.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 140000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "fa37ac81-4c97-4bb2-b55a-e9a1671b7920"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "unknown",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/cntools-spo-tools-and-services-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://github.com/cardano-community/guild-operators"
+    },
+    "milestone_count": null,
+    "no_votes": 52582144.0,
+    "notes": null,
+    "problem": "An unhealthy network with reduced performance due to stake pool issues could discourage onboarding and developers from building on Cardano.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-cntools-spo-tools-and-services-f2",
+    "proposer_ids": [
+      "p-lido-cb21a81d-78be-4423-99a6-d37284b1d0dc",
+      "p-lido-0b407fbc-65c9-4355-a62b-16b0440bcd71"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "cntools-spo-tools-and-services-f2",
+    "solution": "Tools and services to help SPOs setup/manage stake pools reduces the risk of wrongly configured pools that cause chain density degradation.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "CNTools - SPO tools and services",
+    "yes_votes": 61211959.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 535.0,
+    "amount_requested": 5000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "98ed5370-013b-4f65-90a0-3e827114b5ad"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": "2021-01-11T11:00:00.000000Z",
+    "funding_status": "approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/create-message-signing-standard-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://github.com/cardano-foundation/CIPs/pull/27"
+    },
+    "milestone_count": null,
+    "no_votes": 9109435.0,
+    "notes": null,
+    "problem": "Prove reserves, identity, delegating to a pool and more.",
+    "project_status": "complete",
+    "proposal_id": "f02-create-message-signing-standard-f2",
+    "proposer_ids": [
+      "p-lido-9ff46ffc-cc50-4e0e-be46-0f6217b1c38a"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "create-message-signing-standard-f2",
+    "solution": "",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0192.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Create message signing standard",
+    "yes_votes": 359354404.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 500000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "d0a6a85a-948b-4d75-b81c-5f3bc76c8239"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/credmark-credit-score-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://credmark.com"
+    },
+    "milestone_count": null,
+    "no_votes": 71258050.0,
+    "notes": null,
+    "problem": "No financial system can exist without credit. Credit cannot be extended without credit data. Crypto credit doesn't exist.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-credmark-credit-score-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-credmark-credit-score-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "credmark-credit-score-f2",
+    "solution": "Credmark uses crypto credit events to produce credit data for blockchain addresses. This provides credit for both DeFi and CeFi products.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Credmark Credit Score",
+    "yes_votes": 11527280.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 276644.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "d7c1f86c-c56f-4fda-b344-e3056fbf8fe7"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/decentralised-funding - report-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://icoresearchgroup.com"
+    },
+    "milestone_count": null,
+    "no_votes": 68869546.0,
+    "notes": null,
+    "problem": "Decentralised funding is a highly complicated system/process and we still need to figure out how to make it all work.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-decentralised-funding-report-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-decentralised-funding - report-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "decentralised-funding - report-f2",
+    "solution": "We were involved in a similar project before which worked very well and we can write out a report to learn from it.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Decentralised Funding - Report",
+    "yes_votes": 4982126.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 225000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "eac3def1-7769-4144-9fea-b286ad76c72b"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "unknown",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/decentralized-cloud-platform-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://discord.gg/97MwdEa"
+    },
+    "milestone_count": null,
+    "no_votes": 58133803.0,
+    "notes": null,
+    "problem": "IT Infrastructure services are becoming hyper-consolidated over the past 10 years since the word \"cloud\" entered the common vocabulary.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-decentralized-cloud-platform-f2",
+    "proposer_ids": [
+      "p-lido-029c1027-9fec-415a-8ee8-e223d5fe8665",
+      "p-lido-a6ddcc77-8f22-42f2-a107-4e5529b4aa32",
+      "p-lido-a69d4bef-1bcd-4024-90fa-e945df0a5645"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "decentralized-cloud-platform-f2",
+    "solution": "dCloud using DLT technology and Cardano will empower everyone, individuals and large enterprises alike to provide cloud services.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Decentralized Cloud Platform",
+    "yes_votes": 73854152.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 600000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "1e40b8d4-fef8-41a0-bb11-682012efe60e"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/decentralized-multiplayer-rpg-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 75556451.0,
+    "notes": null,
+    "problem": "The Cardano blockchain is not widely adopted and there needs to be leading examples of how to apply decentralized Apps on it.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-decentralized-multiplayer-rpg-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-decentralized-multiplayer-rpg-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "decentralized-multiplayer-rpg-f2",
+    "solution": "We propose a simple turn-based multiplayer RPG whose game rules and assets are governed entirely by blockchain metadata.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Decentralized Multiplayer RPG",
+    "yes_votes": 26643865.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 500000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "065845c4-b82c-403a-8a98-d1b65668164c"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/decentralized-support-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 81181104.0,
+    "notes": null,
+    "problem": "End user get scammed too often does not have a place to solve daily issues, most of people die not have the knowledge to solve wallet issues",
+    "project_status": "unfunded",
+    "proposal_id": "f02-decentralized-support-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-decentralized-support-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "decentralized-support-f2",
+    "solution": "A decentralize platform that bring together expert people willing to help and users needing that help",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Decentralized support",
+    "yes_votes": 3111446.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 250000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "5ff1a631-eba8-41be-aead-969c88acd7f8"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/defi-hackathon-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 54790002.0,
+    "notes": null,
+    "problem": "Ethereum has developed an ecosystem in the DeFi space, and their business models are choking on the Gas cost. Need them on Cardano.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-defi-hackathon-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-defi-hackathon-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "defi-hackathon-f2",
+    "solution": "Developers, Project Managers, UI designers, graphic designers team together to solve a variety of DeFi building block type challenges.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Defi Hackathon",
+    "yes_votes": 24024420.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 25000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "b004da12-9aae-4497-9a6e-5f6852095bdd"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/develop-the-kevm-&iele-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 48270075.0,
+    "notes": null,
+    "problem": "The move from Solidity to Plutus is a barrier to entry for many developers interested in Cardano. How do we facilitate the transition?",
+    "project_status": "unfunded",
+    "proposal_id": "f02-develop-the-kevm-iele-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-develop-the-kevm-&iele-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "develop-the-kevm-&iele-f2",
+    "solution": "Allocate treasury funds to revitalize development of the KEVM and IELE frameworks.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Develop the KEVM & IELE",
+    "yes_votes": 23557564.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 100000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "be1455ec-00ea-4150-9546-cf6999419ba9"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/developer-acquisition-campaign-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 66349479.0,
+    "notes": null,
+    "problem": "Marketing alone may not reach all potential developers, direct cold contacting is an effective way to broaden reach.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-developer-acquisition-campaign-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-developer-acquisition-campaign-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "developer-acquisition-campaign-f2",
+    "solution": "Lead a small team of sales professionals to pitch Cardano to potential developers, focusing on dev awareness and on-boarding.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Developer Acquisition Campaign",
+    "yes_votes": 100000.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 10000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "438902ef-4ca4-475b-b960-3232a591a1bd"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/easy-remittance-payments-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 73321680.0,
+    "notes": null,
+    "problem": "Easy to use, transparent fees, affordable remittance payments anywhere in the world. From 1 currency to another.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-easy-remittance-payments-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-easy-remittance-payments-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "easy-remittance-payments-f2",
+    "solution": "Tie fiat $ to an ADAstablecoin. Users can recieve/send $ on chain and draw the equivalent from the fiat pools sets up around the world.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Easy remittance payments",
+    "yes_votes": 7815875.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 24990.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "23253af2-0842-4e1e-b640-29d6e78cfada"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/education-and-information-sharing-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 60245341.0,
+    "notes": null,
+    "problem": "We need to find more Cardanians to help grow this network.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-education-and-information-sharing-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-education-and-information-sharing-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "education-and-information-sharing-f2",
+    "solution": "I want to make Educational and informational videos. I want to share all the news about Cardano to the world. Cardanomint is the way.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Education and Information sharing",
+    "yes_votes": 8671503.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 350000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "e1ed2b57-5ccd-4333-8b56-126a3a8a32b0"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/encouraging-wider-ada-distribution-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://quid.li"
+    },
+    "milestone_count": null,
+    "no_votes": 70856171.0,
+    "notes": null,
+    "problem": "Organizations that offer incentives boost productivity by at least 45%. Distributed teams are disadvantaged due to localization challenges.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-encouraging-wider-ada-distribution-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-encouraging-wider-ada-distribution-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "encouraging-wider-ada-distribution-f2",
+    "solution": "Teams use our cross-chain interface to buy/deposit, manage, and share crypto assets across internal sub-wallets assigned to team members.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Encouraging Wider ADA Distribution",
+    "yes_votes": 5523411.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 350000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "3fe380f9-3ab2-4cf6-91db-aea2c99c1af3"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/encouraging-wider-ada-distribution-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://quid.li"
+    },
+    "milestone_count": null,
+    "no_votes": 70856171.0,
+    "notes": null,
+    "problem": "Organizations that offer incentives boost productivity by at least 45%. Distributed teams are disadvantaged due to localization challenges.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-encouraging-wider-ada-distribution-f2-3fe380f9",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-encouraging-wider-ada-distribution-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "encouraging-wider-ada-distribution-f2",
+    "solution": "Teams use our cross-chain interface to buy/deposit, manage, and share crypto assets across internal sub-wallets assigned to team members.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Encouraging Wider ADA Distribution",
+    "yes_votes": 5523411.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 354812.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "758b3d95-8e5a-4222-a243-3a8a98b7111f"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/envlp-a-wallet-with-plug-ins-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 64012393.0,
+    "notes": null,
+    "problem": "Official cardano wallets are limited in the features and usefulness they provide. Our wallet will support plugins with functions people need",
+    "project_status": "unfunded",
+    "proposal_id": "f02-envlp-a-wallet-with-plug-ins-f2",
+    "proposer_ids": [
+      "p-lido-f284f9e0-637a-4dc9-a308-e2fc58c47d12"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "envlp-a-wallet-with-plug-ins-f2",
+    "solution": "To create a wallet with support for plug-ins developed and maintained by the community. Need a feature? Install a plug-in or create one.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "ENVLP - a wallet with plug-ins",
+    "yes_votes": 56481575.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 54999.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "b63e06fc-4b75-4be0-afdd-1db0b69a29f3"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "unknown",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/erp-platform-for-business-economics-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": null,
+    "notes": null,
+    "problem": "A lot of companies use legacy ERP systems.\r\n\r\n\r\n\r\nIntegration and automation take time per company.\r\n\r\n\r\n\r\nERP systems are costly to maintain",
+    "project_status": "unfunded",
+    "proposal_id": "f02-erp-platform-for-business-economics-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-erp-platform-for-business-economics-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "erp-platform-for-business-economics-f2",
+    "solution": "Open-Source ERP platform for dapps that leverage Cardano products and architecture.\r\n\r\n\r\n\r\nThe platform is governed by stakeholders.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "ERP Platform for Business Economics",
+    "yes_votes": null
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 260000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "b96d9717-67bb-4307-a1a7-4984c39545ea"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/errc-smart-contracts-converter-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 61593562.0,
+    "notes": null,
+    "problem": "Together with Tatum we want to build a standardized converter from Ethereum-based ERC-* smart contracts to the Cardano-based smart contracts",
+    "project_status": "unfunded",
+    "proposal_id": "f02-errc-smart-contracts-converter-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-errc-smart-contracts-converter-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "errc-smart-contracts-converter-f2",
+    "solution": "Presently, there is no tool in the Cardano ecosystem, which will enable a smooth and fast transition from EVM based blockchains and SC.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "ERC-* smart contracts conventer",
+    "yes_votes": 29526800.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 50000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "8da5aeac-6f80-422e-af81-b5266ee4299c"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": true,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/ethereum-to/from-cardano-bridge-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 54595563.0,
+    "notes": null,
+    "problem": "To bridge between legacy chains to new ones is what is desired\r\n\r\n\r\n\r\nThe lack of an existing bridge to Cardano from Ethereum is the problem",
+    "project_status": "unfunded",
+    "proposal_id": "f02-ethereum-to-from-cardano-bridge-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-ethereum-to/from-cardano-bridge-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "ethereum-to/from-cardano-bridge-f2",
+    "solution": "Creating a router between functioning smart contracts on separate chains, allowing a router to communicate between them securely.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Ethereum to/from Cardano Bridge",
+    "yes_votes": 14961024.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 250000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "7bfdbefc-700c-452e-8b3e-aab8a6fe61d4"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/fandom-auction-and-sales-platform-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://www.TheDealersDen.com"
+    },
+    "milestone_count": null,
+    "no_votes": 63440953.0,
+    "notes": null,
+    "problem": "We would like to completely rebuild our sales platform with a focus on security, stability, and interactivity with the Cardano blockchain.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-fandom-auction-and-sales-platform-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-fandom-auction-and-sales-platform-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "fandom-auction-and-sales-platform-f2",
+    "solution": "Fund2 can assist us in acquiring the necessary resources to hire professionals to code our new platform and write smart contracts.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Fandom Auction and Sales Platform",
+    "yes_votes": 16757591.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 12345.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "81578464-5676-4019-91eb-e1d44428f7ee"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/form-a-haskell-group-on-gitcoin.",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 57552654.0,
+    "notes": null,
+    "problem": "We need to capitalize on Goguen, but our network is in its infancy, we need coordination w/ external s-contract devs to deploy use cases.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-form-a-haskell-group-on-gitcoin",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-form-a-haskell-group-on-gitcoin."
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "form-a-haskell-group-on-gitcoin.",
+    "solution": "I am looking to onboard Gitcoin as an environment with grants and preexisting network to catalyze the commission of proposals for dapps.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Form a Haskell group on Gitcoin.",
+    "yes_votes": 30599655.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 122250.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "07e010ed-3b11-4f5a-b4da-01f973f799d2"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/fox-gifts-&-fund-raising-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 64381330.0,
+    "notes": null,
+    "problem": "GoFundMe & JustGiving are fund raising sites - the processing fee is controversial. A low cost system that stakes funds would be better",
+    "project_status": "unfunded",
+    "proposal_id": "f02-fox-gifts-fund-raising-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-fox-gifts-&-fund-raising-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "fox-gifts-&-fund-raising-f2",
+    "solution": "Collaboration with Stakepool owners to create a better solution to raising funds for personal events such as funerals, low income projects",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "FOX Gifts & Fund Raising",
+    "yes_votes": 5066126.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 105700.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "49bdd4b1-1945-4288-a59b-92f24c72638f"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/fox-rewards-fitness-&-mental-health-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "http://www.foxrewards.co.uk"
+    },
+    "milestone_count": null,
+    "no_votes": 69232752.0,
+    "notes": null,
+    "problem": "Through a \"proof-of-self-work\" gamification system I want to reward people of all abilities to improve Fitness, Mental Health & Mindfulness",
+    "project_status": "unfunded",
+    "proposal_id": "f02-fox-rewards-fitness-mental-health-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-fox-rewards-fitness-&-mental-health-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "fox-rewards-fitness-&-mental-health-f2",
+    "solution": "Helping to improve mental fitness through a family/self-funded project to try and change lives forever",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "FOX Rewards Fitness & Mental Health",
+    "yes_votes": 5713331.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 77514.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "1ff67132-d5c4-4756-9e57-7ce9fa6cbde5"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "over_budget",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/free-commerce-sell-online-with-ada-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://github.com/uniVocity"
+    },
+    "milestone_count": null,
+    "no_votes": 67038472.0,
+    "notes": null,
+    "problem": "Enabling stores to sell goods and services for ADA requires intermediaries who have control over your money and charge fees and commissions.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-free-commerce-sell-online-with-ada-f2",
+    "proposer_ids": [
+      "p-lido-363300d6-19de-45a9-8452-1773a7a91538"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "free-commerce-sell-online-with-ada-f2",
+    "solution": "To build opensource, intermediary and commission free payment integrations for Shopify stores. ADA flows directly from buyer to seller.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0193.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Free-Commerce: sell online with ADA",
+    "yes_votes": 103377949.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 100000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "29a61e86-76f6-4695-b832-20952f8ad474"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/funding-of-cardanojournal.com-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://cardanians.io/en"
+    },
+    "milestone_count": null,
+    "no_votes": 62831497.0,
+    "notes": null,
+    "problem": "Funding for the cardanojournal.com project. It is an experiment regarding the rewarding of the community for content creation.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-funding-of-cardanojournal-com-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-funding-of-cardanojournal.com-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "funding-of-cardanojournal.com-f2",
+    "solution": "We would like to pay the chief-editor and the authors of the content.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Funding of Cardanojournal.com",
+    "yes_votes": 11278376.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 250000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "8d81f872-9e8c-431e-af8c-0ecb206c311e"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "unknown",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/further-development-of-ADApools.org-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://adapools.org"
+    },
+    "milestone_count": null,
+    "no_votes": 75757999.0,
+    "notes": null,
+    "problem": "Further development of ADApools to satisfy users, operators and devs needs and be inline with the Cardano roadmap.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-further-development-of-adapools-org-f2",
+    "proposer_ids": [
+      "p-lido-5774f3ed-ef8c-41be-a4d1-e07de1cdfca8",
+      "p-lido-b7426205-4425-4250-9181-be932efb4bbf"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "further-development-of-ADApools.org-f2",
+    "solution": "Adapools.org is probably the most visited tool that helps delegators from the ITN.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Further development of ADApools.org",
+    "yes_votes": 98452379.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 19469.0,
+    "amount_requested": 19469.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "34c21fbf-3433-41e7-8608-7d5974c6a5c9"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": "2022-05-07T11:00:00.000000Z",
+    "funding_status": "approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/haskell-plutus-marlowed-education-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": null,
+    "notes": null,
+    "problem": "We want to ensure easy entry for incoming developers and entrepreneurs, yet there is little educational content for Haskell/Plutus/Marlowe.",
+    "project_status": "complete",
+    "proposal_id": "f02-haskell-plutus-marlowed-education-f2",
+    "proposer_ids": [
+      "p-lido-cb21a81d-78be-4423-99a6-d37284b1d0dc"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "haskell-plutus-marlowed-education-f2",
+    "solution": "I want to create educational content that conveys complex information in a structured way supplemented with examples that inspire new ideas.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0193.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Haskell/Plutus/Marlowe Education",
+    "yes_votes": null
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 250000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "369fd739-b387-40e0-a46f-9b420488ba0c"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/incentivized-knowledge-sharing-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://www.payma.co"
+    },
+    "milestone_count": null,
+    "no_votes": 62953616.0,
+    "notes": null,
+    "problem": "Interesting people get overloaded with comments on social media. Important and urgent questions often don't get the deserved attention.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-incentivized-knowledge-sharing-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-incentivized-knowledge-sharing-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "incentivized-knowledge-sharing-f2",
+    "solution": "Ask anything and attach a small crypto donative in ADA to boost your visibility. A smart contract guarantees an answer or your money back.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Incentivized knowledge sharing",
+    "yes_votes": 10182505.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 38000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "5dc119b7-e43a-4de1-8e3b-a7fdec3982a5"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/independent-token-incentive-blogs-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 69795455.0,
+    "notes": null,
+    "problem": "It's should be easier for public to publish news / blog articles and on top of that to get proper amount of attention from the audience.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-independent-token-incentive-blogs-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-independent-token-incentive-blogs-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "independent-token-incentive-blogs-f2",
+    "solution": "I would like to build an app for both readers and writers, where a reader has a motivation to spend app tokens on articles he reads.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Independent token-incentive blogs",
+    "yes_votes": 5654960.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 200000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "fa208b90-8a46-41ae-b769-bfdd4aa45057"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/index-dapps-&-smart-contracts-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 57900136.0,
+    "notes": null,
+    "problem": "Consolidate & review by centralising a software repository to reduce the Development & Deployment Cycles for novice & intermediate Devs.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-index-dapps-smart-contracts-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-index-dapps-&-smart-contracts-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "index-dapps-&-smart-contracts-f2",
+    "solution": "Create a Website & Social Media Channel to Index & Review Dapps & Open Source Smart Contracts for reuse as Templates by third Parties.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Index Dapps & Smart Contracts",
+    "yes_votes": 9357772.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 8025.0,
+    "amount_requested": 8025.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "76a451b5-c71f-4efc-9776-a90d43c875cf"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": "2021-01-21T11:00:00.000000Z",
+    "funding_status": "approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/iot-utility-dapp-sign-tx-arduino-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://adosia.com"
+    },
+    "milestone_count": null,
+    "no_votes": 35272777.0,
+    "notes": null,
+    "problem": "There is no simple method to sign embedded Cardano transactions in C. We can engage developers by building an Arduino compatible library",
+    "project_status": "complete",
+    "proposal_id": "f02-iot-utility-dapp-sign-tx-arduino-f2",
+    "proposer_ids": [
+      "p-lido-c4a8ad77-905c-4853-a6b5-1c8d59aedee1"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "iot-utility-dapp-sign-tx-arduino-f2",
+    "solution": "Create an Arduino IDE compatible C library to sign local Cardano transactions - enable immediate applications for embedded & IoT pre-Goguen",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0193.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "IoT Utility Dapp - Sign Tx Arduino",
+    "yes_votes": 146396639.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 374.0,
+    "amount_requested": 374.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "c7c76821-96bd-441d-9cab-6262982102aa"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": "2021-01-21T11:00:00.000000Z",
+    "funding_status": "approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/japan-cardano-governance-association",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://docs.google.com/document/d/1GR7aQVQCH59stqi3gthd7I6mMFFBGH-G6bW1UhnyRo8/edit?usp=sharing"
+    },
+    "milestone_count": null,
+    "no_votes": 63287628.0,
+    "notes": null,
+    "problem": "理想[プレセール95％販売先日本の投票者アドバイザー+提案へのコメントたくさんあるべき]→現実[日本ADAホルダーアンケートで162人中、アドバイザー予定者0人、62％投票自体が理解不能と回答。日本語ガバナンスコミュニティやファンド1コメントなし、Google翻訳表示で難読]",
+    "project_status": "complete",
+    "proposal_id": "f02-japan-cardano-governance-association",
+    "proposer_ids": [
+      "p-lido-8e1daf7f-2279-40f9-bffa-e0b70dac97c5"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "japan-cardano-governance-association",
+    "solution": "手段[1ファンド1以上オンライン/オフラインミートアップ開催、週1以上ガバナンスポッドキャスト、毎日ガバナンス特化コミュニティ運営]→ゴール[ファンド5：参加率50％超、アドバイザ3人超、日本人議論参加数1提案あたり3人超]",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0192.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Japan Cardano Governance Association-Meetings & Communities",
+    "yes_votes": 78567015.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 162500.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "96cc4074-f84d-496e-83cb-0154593c5740"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/kaizen-crypto-cardano-podcast-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 82158158.0,
+    "notes": null,
+    "problem": "Developers that bring value to Cardano need a way to explain their ideas. We need a platform to stay updated with Goguen, Voltaire, etc.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-kaizen-crypto-cardano-podcast-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-kaizen-crypto-cardano-podcast-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "kaizen-crypto-cardano-podcast-f2",
+    "solution": "Create content that promotes discussion. The community can demo their projects & ideas to a wider audience. Grow awareness and adoption.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Kaizen Crypto Cardano Podcast",
+    "yes_votes": 54944811.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 41195.0,
+    "amount_requested": 41195.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "249cfdbc-6aa5-4a10-8870-b5c02e53caa6"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": "2021-01-20T11:00:00.000000Z",
+    "funding_status": "approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/liqwid-cardano-defi-lending-markets-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://liqwid-finance.medium.com/"
+    },
+    "milestone_count": null,
+    "no_votes": 25930111.0,
+    "notes": null,
+    "problem": "Instant borrow/lending markets are too expensive (cost, time, default risk) and users have no ability to monetize their credit/data.",
+    "project_status": "complete",
+    "proposal_id": "f02-liqwid-cardano-defi-lending-markets-f2",
+    "proposer_ids": [
+      "p-lido-4023626a-18f6-4840-8027-eea6e14e91db"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "liqwid-cardano-defi-lending-markets-f2",
+    "solution": "Open source DeFi lending app; automated liquidity pools so users can be the bank and govern the protocol with incentives to bootstrap credit",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0193.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Liqwid:Cardano DeFi Lending Markets",
+    "yes_votes": 357174587.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 12919.0,
+    "amount_requested": 12919.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "81d0278c-9023-4c6c-9425-801bee80ef2d"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": "2021-01-21T11:00:00.000000Z",
+    "funding_status": "approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/lovelace-academy-marlowe-plutus-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 44649302.0,
+    "notes": null,
+    "problem": "Attract, inspire and educate builders and visionaries to build on top of Cardano's game-changing Smart Contracts & Native Assets Platform",
+    "project_status": "complete",
+    "proposal_id": "f02-lovelace-academy-marlowe-plutus-f2",
+    "proposer_ids": [
+      "p-lido-4ada72bb-6977-46d4-a1c3-46eacd41867f",
+      "p-lido-81063e97-7d79-463f-8b6d-2a9ccb9707ba",
+      "p-lido-2980261c-24bb-436b-b657-5a8887bb795b"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "lovelace-academy-marlowe-plutus-f2",
+    "solution": "Cardano's Smarter Contracts Series: Marlowe and Plutus + GitHub Tutorials  \r\n\r\n\r\nMaking Sense of Cardano Series: Using Cardano in the real-world",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0193.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Lovelace Academy Marlowe Plutus",
+    "yes_votes": 218452730.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 2000000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "e1fa8d75-f2d4-4c0b-a151-bd950ac56db1"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/Make-ada-brand-world-recognised-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 171261093.0,
+    "notes": null,
+    "problem": "My idea is to sponsor an international Football team to make the ada logo/brand recognizable like the Btc logo .",
+    "project_status": "unfunded",
+    "proposal_id": "f02-make-ada-brand-world-recognised-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-Make-ada-brand-world-recognised-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "Make-ada-brand-world-recognised-f2",
+    "solution": "We will be solving the problem of main stream recognition and credibility.\r\n\r\n\r\n\r\nFootball is the most popular sport in the world.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Make Ada brand world recognised.",
+    "yes_votes": 5342523.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 10700.0,
+    "amount_requested": 10700.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "9335c739-de2a-474d-86af-a661514d798c"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": "2021-01-21T11:00:00.000000Z",
+    "funding_status": "approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/ouroboros-over-rina-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 40575358.0,
+    "notes": null,
+    "problem": "As transactions increase on the Cardano network, every node cannot relay every message utilizing the current TCP/IP architecture.",
+    "project_status": "complete",
+    "proposal_id": "f02-ouroboros-over-rina-f2",
+    "proposer_ids": [
+      "p-lido-ff11ce19-0ada-4258-a0ac-79e731fa1804"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "ouroboros-over-rina-f2",
+    "solution": "Deploy a proof of concept stake pool and relay solution of Ouroborus over RINA using Ethernet/WDM at two sites in Tokyo, Japan.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0193.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Ouroboros over RINA",
+    "yes_votes": 70414346.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 14263.0,
+    "amount_requested": 14263.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "96450756-aa5a-465c-afd4-e49739937900"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": "2021-01-12T11:00:00.000000Z",
+    "funding_status": "approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/pet-registry-dapp-pay-api-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://adaverse.com"
+    },
+    "milestone_count": null,
+    "no_votes": 46133912.0,
+    "notes": null,
+    "problem": "Devs are inspired by successful apps and the tools needed to build them, by creating both we inspire and accelerate devs and their solutions",
+    "project_status": "in_progress",
+    "proposal_id": "f02-pet-registry-dapp-pay-api-f2",
+    "proposer_ids": [
+      "p-lido-3dc786c7-65e3-4f2c-a82c-ced56335f16a"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "pet-registry-dapp-pay-api-f2",
+    "solution": "₳Pay API helps devs accept ADA payments on websites. Pet Registry dApp, built on ₳Pay, services a global audience in a cheaper, better way.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0193.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Pet Registry dApp + ₳Pay API",
+    "yes_votes": 145666495.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": 22470.0,
+    "amount_requested": 22470.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "e238e5c0-fc13-427a-bc6f-01bd9af6b465"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": "2021-01-21T11:00:00.000000Z",
+    "funding_status": "approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/pooltool-platform-upgrade-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://pooltool.io/"
+    },
+    "milestone_count": null,
+    "no_votes": 68747816.0,
+    "notes": null,
+    "problem": "Cost-based ranking methods could lead to handful of low-cost operators dominating the Cardano network, reducing infrastructure diversity.",
+    "project_status": "complete",
+    "proposal_id": "f02-pooltool-platform-upgrade-f2",
+    "proposer_ids": [
+      "p-lido-51103211-3f0d-46c3-b84c-023c260bf7b3",
+      "p-lido-db686bb5-d55e-4b45-8652-a8edcdc28b83",
+      "p-lido-c093565c-f09e-4902-89fd-fd7f22cc22c9"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "pooltool-platform-upgrade-f2",
+    "solution": "Cost-based ranking methods could lead to handful of low-cost operators dominating the Cardano network, reducing infrastructure diversity.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0001.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "PoolTool Platform Upgrade",
+    "yes_votes": 98330986.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 145000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "3fd88ee0-85b1-4c8c-8baa-e16b82da7798"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/slot-leader-podcast-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 69956766.0,
+    "notes": null,
+    "problem": "Business and finance professionals control large amounts of developer/financial resources, but have a tainted view of the blockchain space.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-slot-leader-podcast-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-slot-leader-podcast-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "slot-leader-podcast-f2",
+    "solution": "Slot Leader aims to raise awareness about Cardano among business/finance professionals to consider building financial products on it.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Slot Leader Podcast",
+    "yes_votes": 39068843.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 500000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "c8442d2b-0886-4e43-b801-d05d1a693193"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/small-sat-telescopes-on-ride-share-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 77659400.0,
+    "notes": null,
+    "problem": "Large satellite constellations are wreaking havoc on Astronomy Research, at the same time the benefit to the rural and poor is incalculable.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-small-sat-telescopes-on-ride-share-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-small-sat-telescopes-on-ride-share-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "small-sat-telescopes-on-ride-share-f2",
+    "solution": "Small Sat based Telescopes, built with off the shelf components, launched as ride share on SpaceX rockets.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Small Sat Telescopes on ride share.",
+    "yes_votes": 2566717.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 2500000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "dd78f136-ccde-4587-b150-8d2e87efeaad"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/solar-power-plants-development-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 163383132.0,
+    "notes": null,
+    "problem": "We're still using fossil fuels and not solar power.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-solar-power-plants-development-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-solar-power-plants-development-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "solar-power-plants-development-f2",
+    "solution": "We want to begin utilizing Solar Power Plants, such as Tesla Megapack to introduce solar power to grid infrastructures, starting in Belize.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Solar Power Plants development",
+    "yes_votes": 1888621.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 10000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "98052334-66c4-4040-af7e-dcb89ddc1f39"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/streamlining-cardano-communication-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 7391309.0,
+    "notes": null,
+    "problem": "Currently cardano community provides an enormous amount of content in relation to cardano. We have multiple Outlets of information",
+    "project_status": "unfunded",
+    "proposal_id": "f02-streamlining-cardano-communication-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-streamlining-cardano-communication-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "streamlining-cardano-communication-f2",
+    "solution": "I I proposed creating a central location of information. Within all cardano wallet platforms using a off-chain data aggregation server",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Streamlining Cardano Communication",
+    "yes_votes": 7391309.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 900000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "d304808d-96c9-408a-acd2-d69f96b0277f"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/support-cardanoscan.io-with-funds-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://cardanoscan.io"
+    },
+    "milestone_count": null,
+    "no_votes": 89241855.0,
+    "notes": null,
+    "problem": "Support diversity of tools for the decentralised cardano ecosystem. Cardanoscan explorer is the etherscan of cardano with rich data set.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-support-cardanoscan-io-with-funds-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-support-cardanoscan.io-with-funds-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "support-cardanoscan.io-with-funds-f2",
+    "solution": "Cardanoscan.io is the most feature-rich explorer available for the Cardano blockchain. Support the development of the platform with funding",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Support Cardanoscan.io with Funds",
+    "yes_votes": 19908893.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 150000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "9149624e-7bb7-484e-8ceb-77fa882ac21b"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "unknown",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/the-cardano-aura-podcast-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 97661614.0,
+    "notes": null,
+    "problem": "Talented people in this ecosystem have trouble promoting their websites, dApps, and projects that bring value to the Cardano ecosystem.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-the-cardano-aura-podcast-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-the-cardano-aura-podcast-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "the-cardano-aura-podcast-f2",
+    "solution": "I create a live podcast that promotes long form discussion where people can demo their projects and proposals to a wider audience.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "The Cardano Aura Podcast",
+    "yes_votes": 115438174.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 35000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "926e5bac-d46d-4378-bf32-f3a1ed89b3e7"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/the-pyne-fund-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://pyne.yolasite.com/"
+    },
+    "milestone_count": null,
+    "no_votes": 55450611.0,
+    "notes": null,
+    "problem": "Traditional fundraising methods for Cardano startups, non-profits and social good projects is too cumbersome, opaque and high-risk.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-the-pyne-fund-f2",
+    "proposer_ids": [
+      "p-lido-eb88fff6-5d34-4223-ac38-9021666f20f4",
+      "p-lido-e8661547-16ef-4769-b3db-497288938122"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "the-pyne-fund-f2",
+    "solution": "Stake pools operated for Cardano startups, charities, non-profits and \"social good\" projects.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "THE PYNE FUND",
+    "yes_votes": 10236953.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 100000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "7134892c-9c66-4c74-9016-637ef6794479"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/the-we-are-cardano-podcast-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://wearecardano.io"
+    },
+    "milestone_count": null,
+    "no_votes": 71458140.0,
+    "notes": null,
+    "problem": "The challenge of onboarding the general public is the fact that do not know who or what cardano is. We are just another tech project.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-the-we-are-cardano-podcast-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-the-we-are-cardano-podcast-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "the-we-are-cardano-podcast-f2",
+    "solution": "A video podcast called \"We are Cardano Podcast\" It aims to put human faces to Cardano by speaking to anyone & everyone in the eco system.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "The We are Cardano Podcast",
+    "yes_votes": 12042556.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 150000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "c57e36bb-502c-4b69-badf-c1606ba64487"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/torus: governance-for-open-source-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://github.com/torus-online/torus"
+    },
+    "milestone_count": null,
+    "no_votes": 55150346.0,
+    "notes": null,
+    "problem": "It should be possible to make a living contributing to open-source, but open-source suffers from pervasive instability and lack of funding.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-torus-governance-for-open-source-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-torus: governance-for-open-source-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "torus: governance-for-open-source-f2",
+    "solution": "Create a graphical DApp to manage open source governance, including consensus and funding",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Torus: Governance for Open-Source",
+    "yes_votes": 12445229.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 500000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "839db979-10ed-44ff-b671-e97ec235b3f2"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/trusted-sponsorship-system-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 77361984.0,
+    "notes": null,
+    "problem": "Currently, there are problems with transparency, selection of sponsors, and lack of motivation for supporters to stand on their own feet.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-trusted-sponsorship-system-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-trusted-sponsorship-system-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "trusted-sponsorship-system-f2",
+    "solution": "Develops an automatic sponsorship program when the sponsorship contract is written as a smart contact and meets the criteria for sponsorship",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Trusted Sponsorship System",
+    "yes_votes": 2039832.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 12500.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "991311b3-9df3-4dda-9da0-bf3881b0a14e"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/understand-developers-feelings-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://www.linkedin.com/in/borja-bonet-segui"
+    },
+    "milestone_count": null,
+    "no_votes": 74451084.0,
+    "notes": null,
+    "problem": "Most entrepreneurs/devs wanting to use the blockchain are already doing it, and they will not migrate unless they have the right incentives.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-understand-developers-feelings-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-understand-developers-feelings-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "understand-developers-feelings-f2",
+    "solution": "Assess potential incentives for entrepreneurs/devs to migrate by understanding what they love and hate about their current chain.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Understand developers feelings",
+    "yes_votes": 44284307.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 400000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "e7c523fb-fcf1-4e80-9a04-5c9105a07fab"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/wallet-lottery-to-increase-fin. id-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 72423768.0,
+    "notes": null,
+    "problem": "People without a fin. ID see no reason to join Cardano. Although we see the advantage, they don't see it yet. Wallet lottery paves the way.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-wallet-lottery-to-increase-fin-id-f2",
+    "proposer_ids": [
+      "p-lido-071a1f2e-ff0a-42c4-ae36-d13f91edb49c",
+      "p-lido-16bdd900-e484-44c6-b553-96570ecad87e"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "wallet-lottery-to-increase-fin. id-f2",
+    "solution": "Join Cardano Wallet-Lottery: 5₳ for free, win money, get a financial ID & support charity.\r\n\r\n\r\n\r\nWant more? Become active with Cardano!",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Wallet lottery to increase Fin. ID",
+    "yes_votes": 4422900.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 280000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "c1cb1ad2-8ff4-4b59-ab74-697a3e1f11b7"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/wbp-world's-best-publisher-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 78737920.0,
+    "notes": null,
+    "problem": "Scientific discourse is broken. Most publications are wrong. Publishing companies are obsolete intermediaries and most people are left out.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-wbp-world-s-best-publisher-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-wbp-world's-best-publisher-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "wbp-world's-best-publisher-f2",
+    "solution": "A side chain to store all types of intellectual property in encrypted form.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0033.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "WBP - World's Best Publisher",
+    "yes_votes": 8360977.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 60000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "213ce9fc-e818-42fa-8bdd-b1591ffa4647"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/weblinks-to-stakepools-&-portfolios-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": null
+    },
+    "milestone_count": null,
+    "no_votes": 65706461.0,
+    "notes": null,
+    "problem": "The Cardano ecosystem has no way to generate or send links pointing directly to stake pools or pool lists, either for sharing or delegation.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-weblinks-to-stakepools-portfolios-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-weblinks-to-stakepools-&-portfolios-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "weblinks-to-stakepools-&-portfolios-f2",
+    "solution": "Link pool names & weighted lists of stake pools (portfolios) into Cardano wallets & delegation tools from anywhere on the Internet",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Weblinks to Stakepools & Portfolios",
+    "yes_votes": 13744077.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 297825.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "aaa66f25-1bca-4b55-b51a-3319b678a928"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "unknown",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/west-africa-decentralized-alliance-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://wadalliance.org"
+    },
+    "milestone_count": null,
+    "no_votes": 70342057.0,
+    "notes": null,
+    "problem": "Despite Africa's immense opportunities, West African businesses, devs & governments are unaware of Cardano potential to solve local problems",
+    "project_status": "unfunded",
+    "proposal_id": "f02-west-africa-decentralized-alliance-f2",
+    "proposer_ids": [
+      "p-lido-c6c8c87c-150c-4705-b369-3af1f5d37a43",
+      "p-lido-9d143415-d560-4dd0-b0fd-acd915f88b51",
+      "p-lido-c899aa2f-6d9e-403f-86f0-e04a3782be03",
+      "p-lido-746139b7-f038-4b2b-a8f9-c9580d52c35a",
+      "p-lido-22bb200f-da50-4740-bee1-39c5cca0f25a"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "west-africa-decentralized-alliance-f2",
+    "solution": "Entrench Cardano's cutting edge solutions in the region by engaging & equipping local communities to identify & remove barriers to adoption.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "West Africa Decentralized Alliance",
+    "yes_votes": 84577331.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 160000.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "978990b1-6113-4749-9440-3fcd464f94b4"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": false,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/weThinkItMatters-dapp-development-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://wethinkitmatters.com"
+    },
+    "milestone_count": null,
+    "no_votes": 59625941.0,
+    "notes": null,
+    "problem": "Brands spend over $500Billion a year trying to influence people, while at the same time Millions of people are starving, homeless, & in need",
+    "project_status": "unfunded",
+    "proposal_id": "f02-wethinkitmatters-dapp-development-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-weThinkItMatters-dapp-development-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "weThinkItMatters-dapp-development-f2",
+    "solution": "Cause-Integrated Marketing PaaS leveraging themoney brands spend on advertising to create sustainable funding for causes impacting all of us",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "WeThinkItMatters Dapp Development",
+    "yes_votes": 18659118.0
+  },
+  {
+    "abstain_votes": null,
+    "ai_summary": null,
+    "amount_received": null,
+    "amount_requested": 94999.0,
+    "campaign_id": "61c4dcc6-b46a-465a-bf17-1a22663cc7a8",
+    "challenge": "Fund2 Challenge",
+    "completed_at": null,
+    "confidence": "medium",
+    "currency": "USD",
+    "definition_of_success": null,
+    "external_ids": {
+      "lidonation_uuid": "af82486a-dba2-4bd3-9936-06fbd800eced"
+    },
+    "field_confidence": null,
+    "fund": 2,
+    "funded_at": null,
+    "funding_status": "not_approved",
+    "is_opensource": true,
+    "links": {
+      "catalyst_voices_url": null,
+      "github_repo": null,
+      "ideascale_url": null,
+      "lidonation_url": "https://www.catalystexplorer.com/en/proposals/whi-world-mmorpg-f2",
+      "milestones_url": null,
+      "projectcatalyst_io_url": null,
+      "proposer_website": "https://github.com/whitevo/Whi-World-Data"
+    },
+    "milestone_count": null,
+    "no_votes": 60024621.0,
+    "notes": null,
+    "problem": "There are not enough open-source multiplayer game engines that are easy to pick up and start creating.",
+    "project_status": "unfunded",
+    "proposal_id": "f02-whi-world-mmorpg-f2",
+    "proposer_ids": [
+      "p-lido-anonymous-f02-whi-world-mmorpg-f2"
+    ],
+    "ranking_total": null,
+    "scores": {
+      "alignment": null,
+      "auditability": null,
+      "feasibility": null,
+      "overall": null
+    },
+    "slug": "whi-world-mmorpg-f2",
+    "solution": "Open-source multiplayer game engine. Which everyone can download and configure as they see fit.",
+    "sources": [
+      {
+        "fetched_at": "2026-05-14T22:41:13Z",
+        "fields_provided": [
+          "title",
+          "slug",
+          "funding_status",
+          "project_status",
+          "amount_requested",
+          "amount_received",
+          "yes_votes",
+          "no_votes",
+          "abstain_votes",
+          "scores",
+          "proposer_ids",
+          "links"
+        ],
+        "provenance_path": "data/_raw/lidonation/page-0034.json.gz",
+        "source": "lidonation_api",
+        "url": "https://www.catalystexplorer.com/api/v1/proposals"
+      }
+    ],
+    "summary": null,
+    "tags": [],
+    "title": "Whi World MMORPG",
+    "yes_votes": 9963095.0
+  }
+]

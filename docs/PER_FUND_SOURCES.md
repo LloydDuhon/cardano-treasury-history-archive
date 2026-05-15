@@ -6,7 +6,7 @@ This document records, for each Catalyst fund, which upstream source we treat as
 
 | Code | Source | URL pattern |
 |---|---|---|
-| `LIDO` | Lidonation Catalyst Explorer API | `catalystexplorer.com/api/*` |
+| `LIDO` | Lidonation Catalyst Explorer API | `catalystexplorer.com/api/v1/*` |
 | `PCIO` | projectcatalyst.io fund page | `projectcatalyst.io/funds/{N}` |
 | `IOHK_PDF` | IOG-published voting-results PDF | `static.iohk.io/.../catalyst-voting-results-fund{N}.pdf` or Google Drive |
 | `MILE` | Catalyst Milestone Module | `milestones.projectcatalyst.io/projects/{id}` |
@@ -34,6 +34,22 @@ This document records, for each Catalyst fund, which upstream source we treat as
 | F13  | `LIDO` + `PCIO`     | `PCIO`  | **`MILE`** | |
 | F14  | `LIDO` (Catalyst Voices gateway deferred) | `PCIO` | **`MILE`** (in-flight) | Catalyst Voices is upstream system of record once gateway stabilizes. |
 | F15  | `LIDO`              | TBD (voting may be in progress) | `MILE` | Schema complete, completion data accruing. |
+
+## Current Phase 2 Access Status
+
+The interim snapshot uses Lidonation v1 funding outcomes while waiting for the
+Catalyst team to provide direct access to missing voting-results artifacts.
+Artifact URLs, local filenames, and parser gaps are tracked in
+`docs/IOG_RESULTS_ACCESS_TRACKER.md`.
+
+Current state:
+- F2 voting-results PDF is downloaded and parsed.
+- F10 voting-results PDF is downloaded but needs a newer-layout parser.
+- F3-F9 artifacts are blocked from CLI by Google Drive or redirected access controls.
+- F11-F13 are Google Sheets and need accessible CSV/XLSX exports plus parser support.
+
+The final full snapshot should not claim complete IOG/CF reconciliation until
+those artifacts are ingested and `normalizers.reconcile_winners` has been rerun.
 
 ## Reconciliation policy
 

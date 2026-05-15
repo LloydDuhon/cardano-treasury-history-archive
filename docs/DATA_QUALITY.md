@@ -15,7 +15,8 @@ Per-field overrides live in each record's optional `field_confidence` object.
 ## What this dataset is good for
 
 - Counting proposals per fund, per challenge, per proposer
-- Identifying funded vs not-funded outcomes for Funds 2–15
+- Identifying funded vs not-funded outcomes from Lidonation v1 for Funds 2–15,
+  with IOG/CF voting-results reconciliation still pending for several funds
 - Tracking milestone completion for Funds 10–15
 - Analyzing proposer behavior across funds (with caveats about duplicate identity — see below)
 - Reviewing AI summaries, scores, and votes where Lidonation has them
@@ -28,11 +29,44 @@ Per-field overrides live in each record's optional `field_confidence` object.
 - **On-chain voting-power analysis.** Deferred to a future sibling repository. CIP-15/36 registrations are not in this schema.
 - **Real-time data.** Snapshots are taken on a monthly cadence; expect lag of up to ~30 days for in-flight funds.
 - **Catalyst Voices native data.** Until `api.projectcatalyst.io/api/v1/health/ready` returns 200, F14+ data comes from Lidonation's mirror, not the upstream system of record.
+- **Final IOG/CF voting-results reconciliation.** The interim dataset includes
+  Lidonation v1 funding outcomes for F2-F15, but the independent IOG/CF
+  voting-results artifacts are not fully available yet. See
+  `docs/IOG_RESULTS_ACCESS_TRACKER.md`.
 
 ## Known systematic limitations
 
+### Interim snapshot status
+The current working snapshot is intentionally interim. It validates against the
+schemas and contains complete Lidonation v1 proposal coverage for F2-F15 plus
+Milestone Module data for F9-F14, but it is not the final "full snapshot"
+because Phase 2 voting-results reconciliation is incomplete.
+
+Current validated counts from the interim run:
+- `all_proposals.json`: 11,528 records
+- `all_proposers.json`: 9,818 records
+- `all_milestones.json`: 5,039 records
+- 15 fund directories present
+- Schema validation: 37 files across 15 funds
+
+The Lidonation API changed from the legacy `/api/*` surface to the documented
+`/api/v1/*` surface. The old endpoint returned only eight funds in the captured
+sweep; `/api/v1/proposals` with `include=campaign,fund,team` returns every
+F2-F15 fund covered by Catalyst Explorer.
+
 ### Fund 1
 ~56 pilot proposals, no funded winners. Recovered from Internet Archive Wayback snapshots of `cardano.ideascale.com`. Coverage may be incomplete. All F1 records carry `confidence: low` by default; some fields may be missing entirely.
+
+The current Wayback CDX query returned an empty result, so the interim generated
+dataset has no recovered Fund 1 proposal records. Fund 1 remains a separate
+low-confidence recovery task.
+
+### IOG/CF voting-results artifacts
+Phase 2 is only partially complete. `fund-02.pdf` is downloaded and parsed.
+`fund-10.pdf` is downloaded, but the current parser returns 0 rows because the
+layout differs from the Fund 2 PDF. F3-F9 Drive/bit.ly artifacts are permission
+blocked from CLI, and F11-F13 Google Sheets exports return 401 from CLI. These
+blocked artifacts are tracked in `docs/IOG_RESULTS_ACCESS_TRACKER.md`.
 
 ### Funds 2–5 completion data
 There was no canonical close-out tracker for these funds. The IOG-published count of "Completed" proposals exists in aggregate (e.g., F2 reports 9 of 11 completed), but per-proposal evidence is scattered across:

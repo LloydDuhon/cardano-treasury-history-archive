@@ -81,6 +81,7 @@ DEFAULT_USER_AGENT = (
 DEFAULT_RPS = 1.0
 DEFAULT_TIMEOUT = httpx.Timeout(connect=10.0, read=60.0, write=10.0, pool=10.0)
 PAGE_SIZE = 1000
+ID_FILTER_CHUNK_SIZE = 250
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_DATA_ROOT = REPO_ROOT / "data"
@@ -270,6 +271,10 @@ def _write_cache(path: Path, rows: list[dict[str, Any]]) -> None:
     _atomic_write_gz(path, json.dumps(rows, ensure_ascii=False).encode("utf-8"))
 
 
+def _chunks(values: list[str], size: int = ID_FILTER_CHUNK_SIZE) -> list[list[str]]:
+    return [values[i : i + size] for i in range(0, len(values), size)]
+
+
 # --------------------------------------------------------------------------- #
 # Public fetch routines
 # --------------------------------------------------------------------------- #
@@ -322,6 +327,23 @@ def fetch_fund(
         counters[table] = len(rows)
         return rows
 
+    def _fetch_signoffs_or_cache(som_ids: list[str]) -> list[dict[str, Any]]:
+        table = "signoffs"
+        cache = _cache_path(root, fund, table)
+        if cache.exists() and not force:
+            cached = _read_cache(cache)
+            assert cached is not None
+            log.info("table.cached", extra={"table": table, "rows": len(cached)})
+            counters[table] = len(cached)
+            return cached
+        rows: list[dict[str, Any]] = []
+        for chunk in _chunks(som_ids):
+            som_filter = f"in.({','.join(chunk)})"
+            rows.extend(cli.fetch_all(table, {"som_id": som_filter}))
+        _write_cache(cache, rows)
+        counters[table] = len(rows)
+        return rows
+
     try:
         # 1. funds (small but useful for the join map)
         _fetch_or_cache("funds", {"id": f"eq.{sb_fund_id}"})
@@ -351,8 +373,7 @@ def fetch_fund(
         # 6. signoffs (joined via som_id)
         som_ids = [str(s["id"]) for s in soms]
         if som_ids:
-            som_filter = f"in.({','.join(som_ids)})"
-            _fetch_or_cache("signoffs", {"som_id": som_filter})
+            _fetch_signoffs_or_cache(som_ids)
         else:
             counters["signoffs"] = 0
     finally:

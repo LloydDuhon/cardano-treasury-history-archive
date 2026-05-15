@@ -1,0 +1,15 @@
+{
+  "fund": 10,
+  "parsed_at": "2026-05-14T22:44:12Z",
+  "source": {
+    "label": "iohk_voting_results_pdf",
+    "url": "https://projectcatalyst.io/fund10-voting-results.pdf",
+    "provenance_path": "data/_raw/iohk-pdfs/fund-10.pdf"
+  },
+  "summary": {
+    "page_count": 69,
+    "rows_matched": 0,
+    "funded_count": 0
+  },
+  "rows": []
+}

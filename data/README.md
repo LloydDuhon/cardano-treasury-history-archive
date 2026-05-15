@@ -1,6 +1,10 @@
 # data/
 
-This directory holds the captured dataset. Currently empty — Phase 0 of the project has only set up the scaffolding.
+This directory holds the captured dataset. The current checked-in data is an
+interim snapshot: Lidonation v1 proposal coverage for F2-F15, Milestone Module
+data for F9-F14, and partial IOG/CF voting-results artifacts. It is not yet the
+first full snapshot because Phase 2 reconciliation is blocked on missing
+voting-results files.
 
 ## Layout
 
@@ -9,7 +13,7 @@ data/
 ├── _raw/                                # centralized raw captures (see _raw/README.md)
 │   └── lidonation/
 │       ├── fund-titles.json             # fund UUID -> title map
-│       └── page-NNNN.json.gz            # one Laravel paginator response per page
+│       └── page-NNNN.json.gz            # one v1 paginator response per page
 ├── funds/
 │   ├── fund-01/
 │   │   ├── proposals.json          # normalized array of proposal records
@@ -27,7 +31,7 @@ data/
 ├── consolidated/
 │   ├── all_proposals.csv           # all funds, unified schema
 │   ├── all_proposers.csv           # deduped proposer entities
-│   ├── all_milestones.csv          # F9+ where available
+│   ├── all_milestones.csv          # F9-F14 where available in interim data
 │   └── schema.md                   # tabular schema explanation
 └── registrations/                  # deferred — on-chain CIP-15/36, future
 ```
@@ -54,4 +58,6 @@ If you want JSON Schema-validated structured data:
 cat data/funds/fund-10/proposals.json | jq '.[] | select(.funding_status == "approved")'
 ```
 
-See `schemas/` for the canonical data model.
+See `schemas/` for the canonical data model. See
+`docs/IOG_RESULTS_ACCESS_TRACKER.md` for the remaining source artifacts needed
+before a final full snapshot release.

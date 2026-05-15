@@ -30,13 +30,14 @@ def _make_client(tmp_path: Path) -> LidonationClient:
         user_agent="test/1.0",
         rps=1000.0,
         data_root=tmp_path / "data",
+        per_page=60,
     )
     return LidonationClient(cfg)
 
 
 @respx.mock
 def test_fetch_fund_titles_caches_atomically(tmp_path: Path, fund_titles_payload: bytes) -> None:
-    respx.get(f"{API_BASE}/fund-titles").mock(
+    respx.get(f"{API_BASE}/v1/funds").mock(
         return_value=httpx.Response(200, content=fund_titles_payload)
     )
     with _make_client(tmp_path) as client:
@@ -54,7 +55,7 @@ def test_fetch_fund_titles_skips_when_cached(tmp_path: Path, fund_titles_payload
     target.parent.mkdir(parents=True)
     target.write_bytes(fund_titles_payload)
 
-    route = respx.get(f"{API_BASE}/fund-titles").mock(
+    route = respx.get(f"{API_BASE}/v1/funds").mock(
         return_value=httpx.Response(200, content=b"SHOULD NOT BE CALLED")
     )
     with _make_client(tmp_path) as client:
@@ -68,10 +69,10 @@ def test_smoke_sweep_first_two_pages(tmp_path: Path, proposals_page_payload: byt
     """A minimal end-to-end sweep that stops at max_pages=2."""
     # Force last_page to be > 2 so we know max_pages is doing the gating.
     page = json.loads(proposals_page_payload)
-    page["last_page"] = 10
+    page["meta"] = {"last_page": 10}
     page_bytes = json.dumps(page).encode()
 
-    respx.get(f"{API_BASE}/proposals").mock(return_value=httpx.Response(200, content=page_bytes))
+    respx.get(f"{API_BASE}/v1/proposals").mock(return_value=httpx.Response(200, content=page_bytes))
 
     with _make_client(tmp_path) as client:
         counters = fetch_all_proposals(
@@ -91,16 +92,16 @@ def test_smoke_sweep_first_two_pages(tmp_path: Path, proposals_page_payload: byt
     # Round-trip the gzip
     with gzip.open(cached[0], "rb") as fh:
         decoded: dict[str, Any] = json.loads(fh.read())
-    assert decoded["last_page"] == 10
+    assert decoded["meta"]["last_page"] == 10
     assert "data" in decoded
 
 
 @respx.mock
 def test_sweep_is_idempotent_with_cache(tmp_path: Path, proposals_page_payload: bytes) -> None:
     page = json.loads(proposals_page_payload)
-    page["last_page"] = 3
+    page["meta"] = {"last_page": 3}
     page_bytes = json.dumps(page).encode()
-    route = respx.get(f"{API_BASE}/proposals").mock(
+    route = respx.get(f"{API_BASE}/v1/proposals").mock(
         return_value=httpx.Response(200, content=page_bytes)
     )
 
@@ -120,7 +121,7 @@ def test_sweep_is_idempotent_with_cache(tmp_path: Path, proposals_page_payload: 
 @respx.mock
 def test_retries_on_500_then_succeeds(tmp_path: Path, fund_titles_payload: bytes) -> None:
     """Polite retry policy must back off on 5xx and ultimately succeed."""
-    route = respx.get(f"{API_BASE}/fund-titles").mock(
+    route = respx.get(f"{API_BASE}/v1/funds").mock(
         side_effect=[
             httpx.Response(500),
             httpx.Response(500),
@@ -135,7 +136,7 @@ def test_retries_on_500_then_succeeds(tmp_path: Path, fund_titles_payload: bytes
 
 @respx.mock
 def test_gives_up_after_repeated_5xx(tmp_path: Path) -> None:
-    respx.get(f"{API_BASE}/fund-titles").mock(return_value=httpx.Response(503))
+    respx.get(f"{API_BASE}/v1/funds").mock(return_value=httpx.Response(503))
     with _make_client(tmp_path) as client, pytest.raises(RuntimeError):
         fetch_fund_titles(output_root=tmp_path / "data", client=client)
 

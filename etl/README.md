@@ -25,13 +25,16 @@ etl/
 │   ├── unify_proposals.py           # Phase 1
 │   ├── reconcile_winners.py         # Phase 2
 │   ├── derive_milestones.py         # Phase 3
-│   └── derive_fund_one.py           # Phase 4
+│   ├── derive_fund_one.py           # Phase 4
+│   ├── apply_reconciliations.py     # Phase 6
+│   ├── dedupe_proposers.py          # Phase 6
+│   └── consolidate.py               # Phase 6
 ├── validators/
 │   └── validate_against_schema.py
-└── tests/                           # 67 tests
+└── tests/                           # 84 tests
 ```
 
-## Current status (Phase 4)
+## Current status (Phase 6)
 
 **Implemented:**
 
@@ -44,9 +47,9 @@ etl/
 - `normalizers/derive_milestones.py` (Phase 3).
 - `normalizers/derive_fund_one.py` (Phase 4, BS4-parsed IdeaScale snapshots).
 - `validators/validate_against_schema.py` covers `proposals`, `proposers`, `milestones`, and `_reconciliation`.
-- **67 unit tests** across the suite.
+- **84 unit tests** across the suite.
 
-**Still stubbed:** none. All four fetchers and four normalizers are real.
+**Still stubbed:** none. All four fetchers and all consolidation normalizers are real.
 
 ## Setup
 
@@ -135,7 +138,7 @@ python -m normalizers.derive_milestones
 
 ```bash
 pip install -r requirements-dev.txt
-python -m pytest                                  # 67 passed
+python -m pytest                                  # 84 passed
 python -m mypy fetchers normalizers parsers validators
 ```
 
@@ -162,3 +165,36 @@ python -m normalizers.derive_fund_one          # emits proposals.json
 
 Expect imperfect recovery. Every record carries `confidence: low` and
 `funding_status: "unknown"` (F1 was the pilot — no formal vote).
+
+## Phase 6 — Consolidation pipeline
+
+Phase 6 is the "fold everything into one canonical surface" step. Run after
+all four data sweeps (Phases 1-4) have run and produced their per-fund
+artifacts.
+
+```bash
+cd etl
+# (assume phases 1-4 cache + per-fund JSON are already in data/funds/)
+
+# 1) Apply IOG-PDF reconciliations (idempotent - safe to re-run)
+python -m normalizers.apply_reconciliations
+
+# 2) Dedupe proposers across all funds
+python -m normalizers.dedupe_proposers
+
+# 3) Emit consolidated CSVs + JSON + schema.md
+python -m normalizers.consolidate
+
+# 4) Final validation gate
+python validators\validate_against_schema.py --strict
+```
+
+Outputs land in `data/consolidated/`:
+- `all_proposals.csv` (~25 columns) + `all_proposals.json` (full fidelity)
+- `all_proposers.csv` + `all_proposers.json`
+- `all_milestones.csv` + `all_milestones.json`
+- `schema.md` (auto-generated column reference)
+
+`apply_reconciliations.py` is idempotent (re-runs detect the IOG-PDF
+override marker in `sources[]` and skip already-applied changes), so it's
+safe to wire into a scheduled refresh.

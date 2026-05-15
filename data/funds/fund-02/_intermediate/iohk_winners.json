@@ -1,0 +1,718 @@
+{
+  "fund": 2,
+  "parsed_at": "2026-05-14T22:43:56Z",
+  "source": {
+    "label": "iohk_voting_results_pdf",
+    "url": "https://static.iohk.io/docs/catalyst/catalyst-voting-results-fund2.pdf",
+    "provenance_path": "data/_raw/iohk-pdfs/fund-02.pdf"
+  },
+  "summary": {
+    "page_count": 5,
+    "rows_matched": 78,
+    "funded_count": 11
+  },
+  "rows": [
+    {
+      "title": "Create message signing standard",
+      "ask_usd": 535.0,
+      "yes_votes_ada": 359354404,
+      "remaining_ada": 9109435,
+      "remaining_usd": 199465.0,
+      "funded": true,
+      "source_page": 2
+    },
+    {
+      "title": "Liqwid:Cardano DeFi Lending Markets",
+      "ask_usd": 41195.0,
+      "yes_votes_ada": 357174587,
+      "remaining_ada": 25930111,
+      "remaining_usd": 158270.0,
+      "funded": true,
+      "source_page": 2
+    },
+    {
+      "title": "Cardano for Mobile dApp Developers",
+      "ask_usd": 32100.0,
+      "yes_votes_ada": 248525934,
+      "remaining_ada": 40751492,
+      "remaining_usd": 97815.0,
+      "funded": true,
+      "source_page": 2
+    },
+    {
+      "title": "Cardano Starter Kits + APIs",
+      "ask_usd": 28355.0,
+      "yes_votes_ada": 240361992,
+      "remaining_ada": 37093303,
+      "remaining_usd": 84896.0,
+      "funded": true,
+      "source_page": 2
+    },
+    {
+      "title": "Lovelace Academy Marlowe Plutus",
+      "ask_usd": 12919.18,
+      "yes_votes_ada": 218452730,
+      "remaining_ada": 44649302,
+      "remaining_usd": 76871.0,
+      "funded": true,
+      "source_page": 2
+    },
+    {
+      "title": "IoT Utility Dapp - Sign Tx Arduino",
+      "ask_usd": 8025.0,
+      "yes_votes_ada": 146396639,
+      "remaining_ada": 35272777,
+      "remaining_usd": 62608.0,
+      "funded": true,
+      "source_page": 2
+    },
+    {
+      "title": "Pet Registry dApp + ₳Pay API",
+      "ask_usd": 14263.21,
+      "yes_votes_ada": 145666495,
+      "remaining_ada": 46133912,
+      "remaining_usd": 43138.0,
+      "funded": true,
+      "source_page": 2
+    },
+    {
+      "title": "Haskell/Plutus/Marlowe Education",
+      "ask_usd": 19469.29,
+      "yes_votes_ada": 94900605,
+      "remaining_ada": 48031981,
+      "remaining_usd": 43138.0,
+      "funded": true,
+      "source_page": 2
+    },
+    {
+      "title": "Free-Commerce: sell online with ADA",
+      "ask_usd": 77514.76,
+      "yes_votes_ada": 103377949,
+      "remaining_ada": 67038472,
+      "remaining_usd": 32438.0,
+      "funded": false,
+      "source_page": 2
+    },
+    {
+      "title": "Ouroboros over RINA",
+      "ask_usd": 10700.0,
+      "yes_votes_ada": 70414346,
+      "remaining_ada": 40575358,
+      "remaining_usd": 9968.0,
+      "funded": true,
+      "source_page": 2
+    },
+    {
+      "title": "PoolTool Platform Upgrade",
+      "ask_usd": 22470.0,
+      "yes_votes_ada": 98330986,
+      "remaining_ada": 68747816,
+      "remaining_usd": 9968.0,
+      "funded": true,
+      "source_page": 2
+    },
+    {
+      "title": "Address Gap in SPO Education...",
+      "ask_usd": 10700.0,
+      "yes_votes_ada": 92256872,
+      "remaining_ada": 63811124,
+      "remaining_usd": 9968.0,
+      "funded": false,
+      "source_page": 2
+    },
+    {
+      "title": "ABCD",
+      "ask_usd": 35845.0,
+      "yes_votes_ada": 86922894,
+      "remaining_ada": 63808723,
+      "remaining_usd": 9968.0,
+      "funded": false,
+      "source_page": 2
+    },
+    {
+      "title": "Further development of ADApools.org",
+      "ask_usd": 26750.0,
+      "yes_votes_ada": 98452379,
+      "remaining_ada": 75757999,
+      "remaining_usd": 9968.0,
+      "funded": false,
+      "source_page": 2
+    },
+    {
+      "title": "Cardano Swift SDK",
+      "ask_usd": 10700.0,
+      "yes_votes_ada": 64605459,
+      "remaining_ada": 45257828,
+      "remaining_usd": 9968.0,
+      "funded": false,
+      "source_page": 2
+    },
+    {
+      "title": "The Cardano Aura Podcast",
+      "ask_usd": 16050.0,
+      "yes_votes_ada": 115438174,
+      "remaining_ada": 97661614,
+      "remaining_usd": 9968.0,
+      "funded": false,
+      "source_page": 2
+    },
+    {
+      "title": "Decentralized Cloud Platform",
+      "ask_usd": 24075.0,
+      "yes_votes_ada": 73854152,
+      "remaining_ada": 58133803,
+      "remaining_usd": 9968.0,
+      "funded": false,
+      "source_page": 2
+    },
+    {
+      "title": "Japan Cardano Governance Assoc...",
+      "ask_usd": 374.5,
+      "yes_votes_ada": 78567015,
+      "remaining_ada": 63287628,
+      "remaining_usd": 9968.0,
+      "funded": true,
+      "source_page": 2
+    },
+    {
+      "title": "West Africa Decentralized Alliance",
+      "ask_usd": 31867.28,
+      "yes_votes_ada": 84577331,
+      "remaining_ada": 70342057,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 2
+    },
+    {
+      "title": "ADA in 3055+ Bitcoin ATMs Globally!",
+      "ask_usd": 12840.0,
+      "yes_votes_ada": 70041757,
+      "remaining_ada": 57703399,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 2
+    },
+    {
+      "title": "CNTools - SPO tools and services",
+      "ask_usd": 14980.0,
+      "yes_votes_ada": 61211959,
+      "remaining_ada": 52582144,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 3
+    },
+    {
+      "title": "ADA MakerSpace Podcast Series",
+      "ask_usd": 14552.0,
+      "yes_votes_ada": 79232840,
+      "remaining_ada": 77697602,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 3
+    },
+    {
+      "title": "Advertising Cardano",
+      "ask_usd": 7490.0,
+      "yes_votes_ada": 56168020,
+      "remaining_ada": 62157063,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 3
+    },
+    {
+      "title": "ENVLP - a wallet with plug-ins",
+      "ask_usd": 37964.88,
+      "yes_votes_ada": 56481575,
+      "remaining_ada": 64012393,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 3
+    },
+    {
+      "title": "Cardano Content Factory",
+      "ask_usd": 3210.0,
+      "yes_votes_ada": 42232324,
+      "remaining_ada": 61410687,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 3
+    },
+    {
+      "title": "Cardano in Spanish",
+      "ask_usd": 6432.84,
+      "yes_votes_ada": 35144470,
+      "remaining_ada": 54860011,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 3
+    },
+    {
+      "title": "Cardano Mobile App",
+      "ask_usd": 9920.4,
+      "yes_votes_ada": 29774105,
+      "remaining_ada": 54085525,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 3
+    },
+    {
+      "title": "Develop the KEVM & IELE",
+      "ask_usd": 2675.0,
+      "yes_votes_ada": 23557564,
+      "remaining_ada": 48270075,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 3
+    },
+    {
+      "title": "Form a Haskell group on Gitcoin.",
+      "ask_usd": 1320.92,
+      "yes_votes_ada": 30599655,
+      "remaining_ada": 57552654,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 3
+    },
+    {
+      "title": "Kaizen Crypto Cardano Podcast",
+      "ask_usd": 17387.5,
+      "yes_votes_ada": 54944811,
+      "remaining_ada": 82158158,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 3
+    },
+    {
+      "title": "Cardano Podcast in Spanish",
+      "ask_usd": 15515.0,
+      "yes_votes_ada": 37550109,
+      "remaining_ada": 67432395,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 3
+    },
+    {
+      "title": "Understand developers' feelings",
+      "ask_usd": 1337.5,
+      "yes_votes_ada": 44284307,
+      "remaining_ada": 74451084,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 3
+    },
+    {
+      "title": "Defi Hackathon",
+      "ask_usd": 26750.0,
+      "yes_votes_ada": 24024420,
+      "remaining_ada": 54790002,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 3
+    },
+    {
+      "title": "Slot Leader Podcast",
+      "ask_usd": 15515.0,
+      "yes_votes_ada": 39068843,
+      "remaining_ada": 69956766,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 3
+    },
+    {
+      "title": "ERC-* smart contracts conventer",
+      "ask_usd": 27820.0,
+      "yes_votes_ada": 29526800,
+      "remaining_ada": 61593562,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 3
+    },
+    {
+      "title": "Ethereum to/from Cardano Bridge",
+      "ask_usd": 5350.0,
+      "yes_votes_ada": 14961024,
+      "remaining_ada": 54595563,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 3
+    },
+    {
+      "title": "A Smart Market Toolkit for Cardano",
+      "ask_usd": 105001.13,
+      "yes_votes_ada": 88712904,
+      "remaining_ada": 128623080,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 3
+    },
+    {
+      "title": "WeThinkItMatters Dapp Development",
+      "ask_usd": 17120.0,
+      "yes_votes_ada": 18659118,
+      "remaining_ada": 59625941,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 3
+    },
+    {
+      "title": "Torus: Governance for Open-Source",
+      "ask_usd": 16050.0,
+      "yes_votes_ada": 12445229,
+      "remaining_ada": 55150346,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 3
+    },
+    {
+      "title": "Cardano Stake Pool Library",
+      "ask_usd": 13054.0,
+      "yes_votes_ada": 14732437,
+      "remaining_ada": 58769272,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 3
+    },
+    {
+      "title": "THE PYNE FUND",
+      "ask_usd": 3745.0,
+      "yes_votes_ada": 10236953,
+      "remaining_ada": 55450611,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 4
+    },
+    {
+      "title": "Fandom Auction and Sales Platform",
+      "ask_usd": 26750.0,
+      "yes_votes_ada": 16757591,
+      "remaining_ada": 63440953,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 4
+    },
+    {
+      "title": "Index Dapps & Smart Contracts",
+      "ask_usd": 21400.0,
+      "yes_votes_ada": 9357772,
+      "remaining_ada": 57900136,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 4
+    },
+    {
+      "title": "ERP Platform for Business Economics",
+      "ask_usd": 5884.89,
+      "yes_votes_ada": 10480523,
+      "remaining_ada": 59342105,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 4
+    },
+    {
+      "title": "Decentralized Multiplayer RPG",
+      "ask_usd": 64200.0,
+      "yes_votes_ada": 26643865,
+      "remaining_ada": 75556451,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 4
+    },
+    {
+      "title": "Whi World MMORPG",
+      "ask_usd": 10164.89,
+      "yes_votes_ada": 9963095,
+      "remaining_ada": 60024621,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 4
+    },
+    {
+      "title": "Funding of Cardanojournal.com",
+      "ask_usd": 10700.0,
+      "yes_votes_ada": 11278376,
+      "remaining_ada": 62831497,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 4
+    },
+    {
+      "title": "Education and Information sharing",
+      "ask_usd": 2673.93,
+      "yes_votes_ada": 8671503,
+      "remaining_ada": 60245341,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 4
+    },
+    {
+      "title": "Weblinks to Stakepools & Portfolios",
+      "ask_usd": 6420.0,
+      "yes_votes_ada": 13744077,
+      "remaining_ada": 65706461,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 4
+    },
+    {
+      "title": "Incentivized knowledge sharing",
+      "ask_usd": 26750.0,
+      "yes_votes_ada": 10182505,
+      "remaining_ada": 62953616,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 4
+    },
+    {
+      "title": "Developer Acquisition Campaign",
+      "ask_usd": 10700.0,
+      "yes_votes_ada": 13183963,
+      "remaining_ada": 66349479,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 4
+    },
+    {
+      "title": "Cardano Media Projects",
+      "ask_usd": 10058.0,
+      "yes_votes_ada": 6609478,
+      "remaining_ada": 60149907,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 4
+    },
+    {
+      "title": "An ultra efficient blockchain",
+      "ask_usd": 8025.0,
+      "yes_votes_ada": 9899514,
+      "remaining_ada": 66152047,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 4
+    },
+    {
+      "title": "C₳ST Onboarding… 7 Billion +",
+      "ask_usd": 21400.0,
+      "yes_votes_ada": 7386131,
+      "remaining_ada": 65668519,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 4
+    },
+    {
+      "title": "'Beef chain' for Medical Devices",
+      "ask_usd": 32100.0,
+      "yes_votes_ada": 9775492,
+      "remaining_ada": 68164495,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 4
+    },
+    {
+      "title": "FOX Gifts & Fund Raising",
+      "ask_usd": 13080.75,
+      "yes_votes_ada": 5066126,
+      "remaining_ada": 64381330,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 4
+    },
+    {
+      "title": "Streamlining Cardano Communication",
+      "ask_usd": 1070.0,
+      "yes_votes_ada": 7391309,
+      "remaining_ada": 66714312,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 4
+    },
+    {
+      "title": "The We are Cardano Podcast",
+      "ask_usd": 10700.0,
+      "yes_votes_ada": 12042556,
+      "remaining_ada": 71458140,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 4
+    },
+    {
+      "title": "Credmark Credit Score",
+      "ask_usd": 53500.0,
+      "yes_votes_ada": 11527280,
+      "remaining_ada": 71258050,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 4
+    },
+    {
+      "title": "FOX Rewards Fitness & Mental Health",
+      "ask_usd": 11309.9,
+      "yes_votes_ada": 5713331,
+      "remaining_ada": 69232752,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 4
+    },
+    {
+      "title": "Decentralised Funding - Report",
+      "ask_usd": 29600.91,
+      "yes_votes_ada": 4982126,
+      "remaining_ada": 68869546,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 5
+    },
+    {
+      "title": "Independent token-incentive blogs",
+      "ask_usd": 4066.0,
+      "yes_votes_ada": 5654960,
+      "remaining_ada": 69795455,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 5
+    },
+    {
+      "title": "Encouraging Wider ADA Distribution",
+      "ask_usd": 37450.0,
+      "yes_votes_ada": 5523411,
+      "remaining_ada": 70856171,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 5
+    },
+    {
+      "title": "Easy remittance payments",
+      "ask_usd": 1070.0,
+      "yes_votes_ada": 7815875,
+      "remaining_ada": 73321680,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 5
+    },
+    {
+      "title": "Cardano and FP in Malawi",
+      "ask_usd": 53500.0,
+      "yes_votes_ada": 9779069,
+      "remaining_ada": 75768550,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 5
+    },
+    {
+      "title": "Wallet lottery to increase Fin. ID",
+      "ask_usd": 42800.0,
+      "yes_votes_ada": 4422900,
+      "remaining_ada": 72423768,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 5
+    },
+    {
+      "title": "Cardano Social & Economic Ecosys...",
+      "ask_usd": 36380.0,
+      "yes_votes_ada": 3383147,
+      "remaining_ada": 71678852,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 5
+    },
+    {
+      "title": "Support Cardanoscan.io with Funds",
+      "ask_usd": 96300.0,
+      "yes_votes_ada": 19908893,
+      "remaining_ada": 89241855,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 5
+    },
+    {
+      "title": "WBP - World's Best Publisher",
+      "ask_usd": 29960.0,
+      "yes_votes_ada": 8360977,
+      "remaining_ada": 78737920,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 5
+    },
+    {
+      "title": "ArtDapp - Powered by Cardano",
+      "ask_usd": 69550.0,
+      "yes_votes_ada": 10669950,
+      "remaining_ada": 82218351,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 5
+    },
+    {
+      "title": "Cardano Community Council (CCC)",
+      "ask_usd": 53500.0,
+      "yes_votes_ada": 3393808,
+      "remaining_ada": 78153396,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 5
+    },
+    {
+      "title": "Small Sat Telescopes on ride share",
+      "ask_usd": 53500.0,
+      "yes_votes_ada": 2566717,
+      "remaining_ada": 77659400,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 5
+    },
+    {
+      "title": "Trusted Sponsorship System",
+      "ask_usd": 53500.0,
+      "yes_votes_ada": 2039832,
+      "remaining_ada": 77361984,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 5
+    },
+    {
+      "title": "Decentralized support",
+      "ask_usd": 53500.0,
+      "yes_votes_ada": 3111446,
+      "remaining_ada": 81181104,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 5
+    },
+    {
+      "title": "A SONG FOR CARDANO",
+      "ask_usd": 10700.0,
+      "yes_votes_ada": 4274314,
+      "remaining_ada": 83466202,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 5
+    },
+    {
+      "title": "Cardano Hub",
+      "ask_usd": 95111.02,
+      "yes_votes_ada": 9798264,
+      "remaining_ada": 91091078,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 5
+    },
+    {
+      "title": "Solar Power Plants development",
+      "ask_usd": 267500.0,
+      "yes_votes_ada": 1888621,
+      "remaining_ada": 163383132,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 5
+    },
+    {
+      "title": "Make Ada brand world recognised.",
+      "ask_usd": 214000.0,
+      "yes_votes_ada": 5342523,
+      "remaining_ada": 171261093,
+      "remaining_usd": 9594.0,
+      "funded": false,
+      "source_page": 5
+    }
+  ]
+}

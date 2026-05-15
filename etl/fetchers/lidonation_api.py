@@ -1,19 +1,20 @@
 """Lidonation Catalyst Explorer API fetcher.
 
-Source:        https://www.catalystexplorer.com/api/*
-Coverage:      Funds 2-15 (~11,385 proposals at survey time)
+Source:        https://www.catalystexplorer.com/api/v1/*
+Coverage:      Funds 2-15 (~11,528 proposals at survey time)
 Auth:          None required
 Rate limit:    Unpublished; we self-throttle via LIDONATION_RPS in .env
 
-Probed live on 2026-05-13. Findings (recorded in ADR-2026-05-13 "Implementation
-notes"):
-  - Server-side fund filter is broken (?f[]={uuid} -> HTTP 500; other variants
-    return 200 but silently ignore the parameter). We must do a flat sweep of
-    /api/proposals and split by fund client-side during normalization.
-  - per_page is rejected; page size is locked at 24.
-  - Total: 11,385 proposals across 475 pages (snapshot 2026-05-13).
+Probed live on 2026-05-14 after Darlington pointed us at the published API
+docs. Findings:
+  - The documented API is /api/v1/*, not the legacy /api/* endpoint.
+  - /api/v1/proposals supports page, per_page (max 60), include, sort, and
+    filter[fund_id]. We still do a flat sweep and split by fund client-side
+    because one central cache is easier to replay and audit.
+  - Total: 11,528 proposals across 193 pages at per_page=60 (snapshot
+    2026-05-14).
   - Each proposal record carries `fund.id` (UUID) and `fund.title` ("Fund 10").
-  - Average page size: ~100 KB JSON, ~7-10 KB gzipped.
+  - Include `campaign,fund,team` to preserve proposer/team data.
 
 This fetcher writes raw page captures to a CENTRAL cache because pages mix
 funds:
@@ -143,6 +144,7 @@ class FetcherConfig:
     contact_email: str = ""
     rps: float = DEFAULT_RPS
     data_root: Path = DEFAULT_DATA_ROOT
+    per_page: int = 60
 
     @classmethod
     def from_env(cls) -> FetcherConfig:
@@ -151,6 +153,7 @@ class FetcherConfig:
             contact_email=os.environ.get("HTTP_CONTACT_EMAIL", ""),
             rps=float(os.environ.get("LIDONATION_RPS", DEFAULT_RPS)),
             data_root=Path(os.environ.get("PROVENANCE_ROOT", str(DEFAULT_DATA_ROOT))),
+            per_page=int(os.environ.get("LIDONATION_PER_PAGE", "60")),
         )
 
 
@@ -227,14 +230,21 @@ class LidonationClient:
         return resp.content
 
     def fetch_fund_titles(self) -> bytes:
-        """Return raw JSON bytes from GET /api/fund-titles."""
-        return self._get("/fund-titles")
+        """Return raw JSON bytes from GET /api/v1/funds."""
+        return self._get("/v1/funds", params={"per_page": 60})
 
     def fetch_proposals_page(self, page: int) -> bytes:
-        """Return raw JSON bytes from GET /api/proposals?p={page}."""
+        """Return raw JSON bytes from GET /api/v1/proposals?page={page}."""
         if page < 1:
             raise ValueError(f"page must be >= 1, got {page}")
-        return self._get("/proposals", params={"p": page})
+        return self._get(
+            "/v1/proposals",
+            params={
+                "page": page,
+                "per_page": min(max(self._cfg.per_page, 1), 60),
+                "include": "campaign,fund,team",
+            },
+        )
 
 
 # --------------------------------------------------------------------------- #
@@ -356,7 +366,8 @@ def fetch_all_proposals(
                 extra={"page": first_page, "bytes": len(first_payload)},
             )
         first_doc = json.loads(first_payload)
-        last_page = int(first_doc.get("last_page", first_page))
+        meta = first_doc.get("meta") if isinstance(first_doc.get("meta"), dict) else {}
+        last_page = int(meta.get("last_page") or first_doc.get("last_page", first_page))
         counters["total_pages_known"] = last_page
 
         end_page = last_page if max_pages is None else min(last_page, start_page + max_pages - 1)
