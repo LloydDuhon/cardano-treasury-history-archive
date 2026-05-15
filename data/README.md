@@ -14,6 +14,8 @@ data/
 │   └── lidonation/
 │       ├── fund-titles.json             # fund UUID -> title map
 │       └── page-NNNN.json.gz            # one v1 paginator response per page
+│   └── sundae_treasury/
+│       └── treasury-fund-01-projects.json # raw Sundae GraphQL capture
 ├── funds/
 │   ├── fund-01/
 │   │   ├── proposals.json          # normalized array of proposal records
@@ -33,8 +35,28 @@ data/
 │   ├── all_proposers.csv           # deduped proposer entities
 │   ├── all_milestones.csv          # F9-F14 where available in interim data
 │   └── schema.md                   # tabular schema explanation
+├── historical/
+│   └── treasury-fund-01/
+│       ├── projects.json           # Sundae Treasury projects/contracts
+│       ├── vendors.json            # report-ready vendor rollups
+│       ├── milestones.json         # milestone payment states
+│       └── _meta.json              # source and normalization metadata
 └── registrations/                  # deferred — on-chain CIP-15/36, future
 ```
+
+## Historical non-Catalyst sources
+
+`data/historical/treasury-fund-01/` is a separate historical funding dataset
+captured from the public Sundae Treasury GraphQL API behind
+`https://treasury.sundae.fi`. It represents the `Intersect Treasury Contracts 1`
+instance, not a Project Catalyst vote. Use it alongside `consolidated/` when
+asking whether a current proposer has prior funding history in either Catalyst
+or Treasury Fund 1.
+
+For reports, join `treasury-fund-01/vendors.json` to current proposers by
+normalized vendor/proposer name and, where present, by stake-address-like vendor
+labels. Treat `total_contract_ada` as contracted/allocated value; milestone
+status fields distinguish `Matured`, `Active`, `Paused`, and `Withdrawn` amounts.
 
 ## How records are written
 

@@ -1,0 +1,1398 @@
+[
+  {
+    "amount_by_milestone_status_ada": {
+      "Withdrawn": 26840000.0
+    },
+    "confidence": "high",
+    "description": "The Supplier will provide a strategic program of research and development designed to realizeCardano Vision and place Cardano at the forefront of blockchain innovation. The services are designed to deliver foundational research and technology validationworkstreams up to SRL5, alongside communication and dissemination activities.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 4,
+    "milestone_status_counts": {
+      "Withdrawn": 4
+    },
+    "other_identifiers": [
+      "ER-0001-25"
+    ],
+    "project_id": "UTXO-ER-0001-25",
+    "source_project_id": "UTXO-ER-0001-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "withdrawn",
+    "title": "IOR - Cardano Vision Work Program 2025",
+    "total_contract_ada": 26840000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/UTXO-ER-0001-25",
+    "vendor_id": "tf1-vendor-ior-92432fbe54",
+    "vendor_label": "IOR"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Paused": 2063600.0,
+      "Withdrawn": 3095400.0
+    },
+    "confidence": "high",
+    "description": "The Supplier will provide design and development services to deliver a comprehensive technical upgrade to the Project Catalyst platform. These services are designed to overhaul both the user experiences and the underlying engine of the system.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 5,
+    "milestone_status_counts": {
+      "Paused": 2,
+      "Withdrawn": 3
+    },
+    "other_identifiers": [
+      "EMI-0001b-25"
+    ],
+    "project_id": "UTXO-EMI-0001-25",
+    "source_project_id": "UTXO-EMI-0001-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "IOG - Advancing Decentralised Community Innovation Funding & Infrastructure",
+    "total_contract_ada": 5159000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/UTXO-EMI-0001-25",
+    "vendor_id": "tf1-vendor-iog-d055aabd02",
+    "vendor_label": "IOG"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 243695.0,
+      "Matured": 121695.0,
+      "Withdrawn": 227390.0
+    },
+    "confidence": "high",
+    "description": "This initiative will establish a robust framework for evaluating and enhancing Cardano's governance system. We will identify and benchmark key governance metrics to assess the health, performance, and overall impact of our decentralized decision-making processes. The resulting 'State of Governance' report will provide a structured evaluation of participation, track vital Key Performance Indicators (KPIs), map the evolving governance ecosystem, and pinpoint specific areas for improvement. ",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 4,
+    "milestone_status_counts": {
+      "Active": 1,
+      "Matured": 1,
+      "Withdrawn": 2
+    },
+    "other_identifiers": [
+      "EC-0003-25"
+    ],
+    "project_id": "UTXO-EG-0003-25",
+    "source_project_id": "UTXO-EG-0003-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "active",
+    "title": "IOG - Beyond Minimum Viable Governance",
+    "total_contract_ada": 592780.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/UTXO-EG-0003-25",
+    "vendor_id": "tf1-vendor-iog-d055aabd02",
+    "vendor_label": "IOG"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Paused": 162500.0,
+      "Withdrawn": 1137500.0
+    },
+    "confidence": "high",
+    "description": "Blockfrost aims to decentralize its Cardano Blockchain API through the Blockfrost Platform and Blockfrost Gateway, enabling a network of Icebreakers operated by SPOs and node operators to process API requests and share revenue. All components are open-sourced to ensure transparency and avoid vendor lock-in.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 8,
+    "milestone_status_counts": {
+      "Paused": 1,
+      "Withdrawn": 7
+    },
+    "other_identifiers": [
+      "EG-0003-25"
+    ],
+    "project_id": "UTXO-EC-0003-25",
+    "source_project_id": "UTXO-EC-0003-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "IOG - Blockfrost Platform Community Budget Proposal",
+    "total_contract_ada": 1300000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/UTXO-EC-0003-25",
+    "vendor_id": "tf1-vendor-iog-d055aabd02",
+    "vendor_label": "IOG"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 5371864.0,
+      "Paused": 8774601.0,
+      "Withdrawn": 19518335.0
+    },
+    "confidence": "high",
+    "description": "The Supplier will provide comprehensive engineering, maintenance, and development services to enhance and secure the Cardano protocol and its core infrastructure. The services are focused on delivering the community-endorsed technical roadmap and maintaining network stability. Projects included within this smart contract instance: Monthly Maintenance, Independent Audits & Security Assurance",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 21,
+    "milestone_status_counts": {
+      "Active": 3,
+      "Paused": 6,
+      "Withdrawn": 12
+    },
+    "other_identifiers": [
+      "EC-0002-25"
+    ],
+    "project_id": "UTXO-EC-0002-25-06",
+    "source_project_id": "UTXO-EC-0002-25-06",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "Input Output Engineering Core Development Proposal (6of6)",
+    "total_contract_ada": 33664800.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/UTXO-EC-0002-25-06",
+    "vendor_id": "tf1-vendor-input-output-engineering-core-development-proposal-6of6-b640d0bbfe",
+    "vendor_label": "Input Output Engineering Core Development Proposal (6of6)"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 4042134.0,
+      "Paused": 4953866.0,
+      "Withdrawn": 2496000.0
+    },
+    "confidence": "high",
+    "description": "The Supplier will provide comprehensive engineering, maintenance, and development services to enhance and secure the Cardano protocol and its core infrastructure. The services are focused on delivering the community-endorsed technical roadmap and maintaining network stability. Projects included within this smart contract instance: Plutus Core, Tiered Pricing Models & Transaction Monitoring System",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 21,
+    "milestone_status_counts": {
+      "Active": 6,
+      "Paused": 9,
+      "Withdrawn": 6
+    },
+    "other_identifiers": [
+      "EC-0002-25"
+    ],
+    "project_id": "UTXO-EC-0002-25-05",
+    "source_project_id": "UTXO-EC-0002-25-05",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "Input Output Engineering Core Development Proposal (5of6)",
+    "total_contract_ada": 11492000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/UTXO-EC-0002-25-05",
+    "vendor_id": "tf1-vendor-input-output-engineering-core-development-proposal-5of6-ca9e803363",
+    "vendor_label": "Input Output Engineering Core Development Proposal (5of6)"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 1442134.0,
+      "Paused": 3695465.0
+    },
+    "confidence": "high",
+    "description": "The proposed adjustments specify new completion dates for milestone 13.4 of Nested Transations Project. These revisions are a direct and necessary consequence of unforeseen technical and external constraints.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 8,
+    "milestone_status_counts": {
+      "Active": 2,
+      "Paused": 6
+    },
+    "other_identifiers": [],
+    "project_id": "UTXO-EC-0002-25-04",
+    "source_project_id": "UTXO-EC-0002-25-04",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "Input Output Engineering Core Development Proposal (4of6)",
+    "total_contract_ada": 5137599.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/UTXO-EC-0002-25-04",
+    "vendor_id": "tf1-vendor-input-output-engineering-ab306c571c",
+    "vendor_label": "Input Output Engineering"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 1984750.0,
+      "Paused": 1780536.0
+    },
+    "confidence": "high",
+    "description": "The proposed adjustments specify new completion dates for each of the milestones 8.5 & 8.7 of Mithril ZK Proofs Project. These revisions are a direct and necessary consequence of unforeseen technical and external constraints.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 8,
+    "milestone_status_counts": {
+      "Active": 3,
+      "Paused": 5
+    },
+    "other_identifiers": [],
+    "project_id": "UTXO-EC-0002-25-03",
+    "source_project_id": "UTXO-EC-0002-25-03",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "Input Output Engineering Core Development Proposal (3of6)",
+    "total_contract_ada": 3765286.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/UTXO-EC-0002-25-03",
+    "vendor_id": "tf1-vendor-input-output-engineering-ab306c571c",
+    "vendor_label": "Input Output Engineering"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 743600.0,
+      "Paused": 1612742.0,
+      "Withdrawn": 3969084.0
+    },
+    "confidence": "high",
+    "description": "Milestone Cancellation: We recommend the cancellation of a workstream and its associated milestones. The rationale is detailed below, and outcome of this cancellation is to release funding from relevant Smart Contract and back to the Treasury.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 14,
+    "milestone_status_counts": {
+      "Active": 1,
+      "Paused": 4,
+      "Withdrawn": 9
+    },
+    "other_identifiers": [],
+    "project_id": "UTXO-EC-0002-25-02",
+    "source_project_id": "UTXO-EC-0002-25-02",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "Input Output Engineering Core Development Proposal (2of6)",
+    "total_contract_ada": 6325426.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/UTXO-EC-0002-25-02",
+    "vendor_id": "tf1-vendor-input-output-engineering-ab306c571c",
+    "vendor_label": "Input Output Engineering"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 7897761.0,
+      "Paused": 2506833.0,
+      "Withdrawn": 13795686.0
+    },
+    "confidence": "high",
+    "description": "The Supplier will provide comprehensive engineering, maintenance, and development services to enhance and secure the Cardano protocol and its core infrastructure. The services are focused on delivering the community-endorsed technical roadmap and maintaining network stability. Projects included within this smart contract instance: Automatic Formal Verification, Property Based Testing Tool, Static Analyzer & Leios",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 16,
+    "milestone_status_counts": {
+      "Active": 6,
+      "Paused": 2,
+      "Withdrawn": 8
+    },
+    "other_identifiers": [
+      "EC-0002-25"
+    ],
+    "project_id": "UTXO-EC-0002-25-01",
+    "source_project_id": "UTXO-EC-0002-25-01",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "Input Output Engineering Core Development Proposal (1of6)",
+    "total_contract_ada": 24200280.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/UTXO-EC-0002-25-01",
+    "vendor_id": "tf1-vendor-input-output-engineering-core-development-proposal-1of6-70bceb4fda",
+    "vendor_label": "Input Output Engineering Core Development Proposal (1of6)"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Withdrawn": 10.0
+    },
+    "confidence": "high",
+    "description": "A test project for Allowlist guarded wallets",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 1,
+    "milestone_status_counts": {
+      "Withdrawn": 1
+    },
+    "other_identifiers": [],
+    "project_id": "EX-000-02",
+    "source_project_id": "EX-000-02",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "withdrawn",
+    "title": "Allowlist Fund Test",
+    "total_contract_ada": 10.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EX-000-02",
+    "vendor_id": "tf1-vendor-allowlist-4ec30e9d85",
+    "vendor_label": "Allowlist"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Matured": 10.0
+    },
+    "confidence": "high",
+    "description": "A test contract on the treasury withdrawal TRSC. 10ada was sent to the TRSC, this will be used to create a PSSC (a vendor contract) and will then be withdrawn by Intersect, this ada is not associated to treasury funds or treasury withdrawal governance actions.\n\nThis is the second attempt at this transaction, as the first expired before receiving all signatures.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 1,
+    "milestone_status_counts": {
+      "Matured": 1
+    },
+    "other_identifiers": [],
+    "project_id": "EX-000-01",
+    "source_project_id": "EX-000-01",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "complete",
+    "title": "PSSC Fund Test 2",
+    "total_contract_ada": 10.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EX-000-01",
+    "vendor_id": "tf1-vendor-addr1q8rjaatvmmakqz3jek68uvlwjs4c9ckqfnl404a3yjrnrnlaepuyxva-635d74b7c7",
+    "vendor_label": "addr1q8rjaatvmmakqz3jek68uvlwjs4c9ckqfnl404a3yjrnrnlaepuyxvahzd69cnrvm4ssk6wj3ucy3sgtvyfxccp8mn5sfxt6e2"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Withdrawn": 80000.0
+    },
+    "confidence": "high",
+    "description": "Milestone 1 of the first consolidated product research effort for Cardano: this project aims to deliver an\ninitial simple process, a strategy to answer and expand the questions documented in the SoW\nand a set of structured research initiatives opportunities to be allocated with funding to\nproduct researchers in Cardano.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 1,
+    "milestone_status_counts": {
+      "Withdrawn": 1
+    },
+    "other_identifiers": [],
+    "project_id": "ER-0004b-25",
+    "source_project_id": "ER-0004b-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "withdrawn",
+    "title": "Product Research (1of2)",
+    "total_contract_ada": 80000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/ER-0004b-25",
+    "vendor_id": "tf1-vendor-addr1q8kmt82cgxnv4dapm8926uz50t58cy4vg0mdmcv3mdmq7e489jcdt3f-4864eed564",
+    "vendor_label": "addr1q8kmt82cgxnv4dapm8926uz50t58cy4vg0mdmcv3mdmq7e489jcdt3fvg0zfvywehy0vzvvxyzgsfkjwcnhsq62ay2fq5c6lpc"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 30000.0,
+      "Paused": 100000.0,
+      "Withdrawn": 220000.0
+    },
+    "confidence": "high",
+    "description": "Local Gatherings: Conduct up to 100 regional local gatherings to collect insights for 2030 cardano vision, 1 local gathering = 1,000 ada\nBusiness Calls: Conduct up to 50 calls with businesses to inform the 2030 cardano vision proposal, 1 business call = 1,000 ada\nWorkshops: Conduct up to 20 workshops run by product experts to directly collect insights to inform the 2030 cardano vision proposal or to review the proposal itself, 1 workshop = 10,000 ada",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 14,
+    "milestone_status_counts": {
+      "Active": 3,
+      "Paused": 7,
+      "Withdrawn": 4
+    },
+    "other_identifiers": [],
+    "project_id": "ER-0004a-25",
+    "source_project_id": "ER-0004a-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "Product Committee - Local Gatherings, Business Calls, Workshops",
+    "total_contract_ada": 350000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/ER-0004a-25",
+    "vendor_id": "tf1-vendor-addr1q8kmt82cgxnv4dapm8926uz50t58cy4vg0mdmcv3mdmq7e489jcdt3f-4864eed564",
+    "vendor_label": "addr1q8kmt82cgxnv4dapm8926uz50t58cy4vg0mdmcv3mdmq7e489jcdt3fvg0zfvywehy0vzvvxyzgsfkjwcnhsq62ay2fq5c6lpc"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 101788.0,
+      "Withdrawn": 213012.0
+    },
+    "confidence": "high",
+    "description": "The PyCardano maintenance project, as outlined in the proposal, is structured as a year-long service level agreement. The core objective is to ensure the library's continuous reliability, compatibility with the evolving Cardano network, and ongoing support for the developer community.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 13,
+    "milestone_status_counts": {
+      "Active": 4,
+      "Withdrawn": 9
+    },
+    "other_identifiers": [],
+    "project_id": "ER-0003-25",
+    "source_project_id": "ER-0003-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "active",
+    "title": "PyCardano - FAIR IO, LLC",
+    "total_contract_ada": 314800.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/ER-0003-25",
+    "vendor_id": "tf1-vendor-addr1qyu57x0c9sjutfstgq22gurl2dwyyvvsr7mwlh4qulxghv24ffmv8lu-a7c1f81bd1",
+    "vendor_label": "addr1qyu57x0c9sjutfstgq22gurl2dwyyvvsr7mwlh4qulxghv24ffmv8lur8q65ecu59klc8njlsr0v9cdeefctmlx23aqsxjpdex"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 64637.89,
+      "Paused": 66637.0,
+      "Withdrawn": 68636.11
+    },
+    "confidence": "high",
+    "description": "OpShin is a toolchain that lets developers construct Cardano smart contracts in Python. The toolchain comprises several projects that aim to facilitate the development of Smart Contracts and dApps on Cardano. They are largely based on Python, or integrate well with it for maximal accessibility. On top of accessibility, OpShin ensures low transaction cost compared to PlutusTx.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 4,
+    "milestone_status_counts": {
+      "Active": 1,
+      "Paused": 1,
+      "Withdrawn": 2
+    },
+    "other_identifiers": [],
+    "project_id": "ER-0002-25",
+    "source_project_id": "ER-0002-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "OpShin - Python Smart Contracts for Cardano",
+    "total_contract_ada": 199911.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/ER-0002-25",
+    "vendor_id": "tf1-vendor-addr1qy236l8zxnyvvm7uaxtvp87k36a045h8em0y82clams4wfuwpj9clsv-62383363f7",
+    "vendor_label": "addr1qy236l8zxnyvvm7uaxtvp87k36a045h8em0y82clams4wfuwpj9clsvsf85cd4xc59zjztr5zwpummwckmzr2myjwjnsrv508n"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Withdrawn": 5000000.0
+    },
+    "confidence": "high",
+    "description": "The SNEK Global Exchange Expansion initiative will execute a targeted listing strategy, using the requested 5M ADA to:\n\u25cf Finalize negotiations and secure multiple top-tier listings on centralized exchanges, retail brokers, and innovative DeFi platforms\n\u25cf Provision liquidity and market making for ADA/SNEK pairs\n\u25cf Cover legal and compliance costs to meet exchange requirements\n\u25cf Fund mandatory coordination and announcement campaigns\n\u25cf Report expenditures and impact transparently to the community",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 1,
+    "milestone_status_counts": {
+      "Withdrawn": 1
+    },
+    "other_identifiers": [],
+    "project_id": "EMI-0010-25",
+    "source_project_id": "EMI-0010-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "withdrawn",
+    "title": "Snek Foundation - \u20b35M Loan for Cardano's Global Listing Expansion ",
+    "total_contract_ada": 5000000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EMI-0010-25",
+    "vendor_id": "tf1-vendor-addr1q9gcxfl9fe9ulluvtc2sxj6xux7jfa49zzq4aheyywqm0k3gudvqrjy-77742889c9",
+    "vendor_label": "addr1q9gcxfl9fe9ulluvtc2sxj6xux7jfa49zzq4aheyywqm0k3gudvqrjyfk4nqpvscu2ggqg67x9e0dk5l5p4s6msvkpys6qv4v6"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 1700000.0,
+      "Paused": 900000.0,
+      "Withdrawn": 1400000.0
+    },
+    "confidence": "high",
+    "description": "1. Driving real-world utility for USDA in cross-border payments, remittances, and enterprise settlements.\n2. Expanding wallet and custodian support for Cardano native assets (including USDA, a Cardano-native stablecoin).\n3. Increasing the availability of Cardano stablecoins and native assets on exchanges and OTC desks.\n4. Building cost-effective fiat on/off-ramps for ada and Cardano native assets in frontier markets.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 6,
+    "milestone_status_counts": {
+      "Active": 2,
+      "Paused": 1,
+      "Withdrawn": 3
+    },
+    "other_identifiers": [],
+    "project_id": "EMI-0009-25",
+    "source_project_id": "EMI-0009-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "Anzens - Expanding Stablecoin / Cardano Native Asset Support / Fiat Ramps",
+    "total_contract_ada": 4000000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EMI-0009-25",
+    "vendor_id": "tf1-vendor-addr1q9yv22yvu6krccqg3rsx3th4lgd0ar8gjx4zsp2avjk32vucm6spkj5-374c8a3557",
+    "vendor_label": "addr1q9yv22yvu6krccqg3rsx3th4lgd0ar8gjx4zsp2avjk32vucm6spkj57ajfcu23pskrlvys3t99v3ej553h2eh9r86csg5a07e"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Matured": 69750.0,
+      "Withdrawn": 819750.0
+    },
+    "confidence": "high",
+    "description": "We will be booking event spaces and organising the bespoke building of Pavilion stands, the funding will massively but not completely subsidise the cost for Projects in the ecosystem to have a presence at 6 exhibitions around the world.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 3,
+    "milestone_status_counts": {
+      "Matured": 1,
+      "Withdrawn": 2
+    },
+    "other_identifiers": [],
+    "project_id": "EMI-0007-25",
+    "source_project_id": "EMI-0007-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "mixed",
+    "title": "Supplyoneers FZ-LLC - Cardano Ecosystem Pavilions at Exhibitions",
+    "total_contract_ada": 889500.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EMI-0007-25",
+    "vendor_id": "tf1-vendor-addr1q9knu3thwqfnwly0ggfn0fen5ac50v0smvjgrlxkskkrxgv9srwtryv-b8f3537854",
+    "vendor_label": "addr1q9knu3thwqfnwly0ggfn0fen5ac50v0smvjgrlxkskkrxgv9srwtryv28yxsrv4x5agruavj3dykhyperms8smxhqt4saqm9v6"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Paused": 2516580.0,
+      "Withdrawn": 609420.0
+    },
+    "confidence": "high",
+    "description": "MMAAS (Market Making as a Service):\nLiquidity Enhancement: Ensure, on a best effort basis, three Cardano Native Tokens (CNTs) achieve deeper liquidity on Centralized Exchanges (CEXs) with a minimum trading volume of $5,000, and maintain price stability within \u00b12%. Additionally, facilitate arbitrage-free token swaps on Decentralized Exchanges (DEXs) to optimize trading efficiency. \nCardano Project Agreements: Secure, on a best effort basis, contracts with three Cardano-based projects, each a $7,000/month retainer for market-making services to support liquidity and price stability.\nEcosystem Exchange Listing:\nTop-Tier Exchange Listings: Aim to list CNTs on leading CEXs as agreed by the Parties to increase visibility, accessibility, and trading volume for Cardano ecosystem tokens.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 11,
+    "milestone_status_counts": {
+      "Paused": 6,
+      "Withdrawn": 5
+    },
+    "other_identifiers": [],
+    "project_id": "EMI-0006a-25&EMI-0006b-25",
+    "source_project_id": "EMI-0006a-25&EMI-0006b-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "Flowdesk - Market Making as a service & Ecosystem Exchange Listing",
+    "total_contract_ada": 3126000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EMI-0006a-25&EMI-0006b-25",
+    "vendor_id": "tf1-vendor-addr1qxve6vc0c53jxyvk9k92ek3h5jyg8pwrq5hyqp4rafcws7jvalcz772-ca9b63b019",
+    "vendor_label": "addr1qxve6vc0c53jxyvk9k92ek3h5jyg8pwrq5hyqp4rafcws7jvalcz772r2rk0ytnvc5mfrxq6rq9vkwzsymq45a33utwqxy3cv8"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Withdrawn": 12000000.0
+    },
+    "confidence": "high",
+    "description": "The Cardano Builder DAO (CB DAO) is a smart contract-enforced, member-governed funding mechanism created to support the application-layer growth of the Cardano ecosystem",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 4,
+    "milestone_status_counts": {
+      "Withdrawn": 4
+    },
+    "other_identifiers": [],
+    "project_id": "EMI-0004-25",
+    "source_project_id": "EMI-0004-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "withdrawn",
+    "title": "Rainfire DAO - Cardano Builder DAO ",
+    "total_contract_ada": 12000000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EMI-0004-25",
+    "vendor_id": "tf1-vendor-addr1qxnuhkxz0mgh0vx6jg9zg4qp9pg27ckm6uv622fsxtghap3sruuxr0e-c470790411",
+    "vendor_label": "addr1qxnuhkxz0mgh0vx6jg9zg4qp9pg27ckm6uv622fsxtghap3sruuxr0ev6mn5907qz4wl4s6qvsygmvrdc5qzwq0mlrwsannve8"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Withdrawn": 6000000.0
+    },
+    "confidence": "high",
+    "description": "To revitalize Cardano's global presence and foster ecosystem growth, we aim to sponsor, host and participate in a dynamic series of events and side events in 2025 and 2026.\nThese events will target diverse audiences, including developers, enterprises, blockchain enthusiasts, and policymakers, to drive engagement, innovation, and adoption.\nExpenses incurred to provide the Services and events are included in the Fee, which may include travel and accommodation.\nEvents will be sponsored, hosted and participated in by CF, Rare Evo and Emurgo.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 2,
+    "milestone_status_counts": {
+      "Withdrawn": 2
+    },
+    "other_identifiers": [],
+    "project_id": "EMI-0003-25",
+    "source_project_id": "EMI-0003-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "withdrawn",
+    "title": "Cardano Foundation - Unveiling the First Unified Global Events Marketing Strategy for Cardano",
+    "total_contract_ada": 6000000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EMI-0003-25",
+    "vendor_id": "tf1-vendor-addr1qxkty7fvrjcswfpj0pf2ergrlpc8xtzmersscg4ghqyezsg77rkpz23-82c08be1a3",
+    "vendor_label": "addr1qxkty7fvrjcswfpj0pf2ergrlpc8xtzmersscg4ghqyezsg77rkpz23uwdfe2e4au6m2heqmk7gersd6560dljc9s8eqr6r3v3"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Withdrawn": 6000000.0
+    },
+    "confidence": "high",
+    "description": "Subject to timely receipt of the Fees, the Supplier shall host a two day flagship Cardano summit and shall contract with various event organizers as listed in the Statement of Work for the organization of regional Cardano events over several months.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 2,
+    "milestone_status_counts": {
+      "Withdrawn": 2
+    },
+    "other_identifiers": [],
+    "project_id": "EMI-0002-25",
+    "source_project_id": "EMI-0002-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "withdrawn",
+    "title": "Cardano Foundation - Cardano Summit 2025 and regional tech events",
+    "total_contract_ada": 6000000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EMI-0002-25",
+    "vendor_id": "tf1-vendor-addr1qxkty7fvrjcswfpj0pf2ergrlpc8xtzmersscg4ghqyezsg77rkpz23-82c08be1a3",
+    "vendor_label": "addr1qxkty7fvrjcswfpj0pf2ergrlpc8xtzmersscg4ghqyezsg77rkpz23uwdfe2e4au6m2heqmk7gersd6560dljc9s8eqr6r3v3"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Paused": 21000000.0,
+      "Withdrawn": 43300000.0
+    },
+    "confidence": "high",
+    "description": "The Supplier will run a grants program known as Project Catalyst, which includes inviting interested parties to submit proposals as part of three funding rounds (Fund 14, Fund 15, and Fund 16). The Supplier, through its appointed administrator, will provide a platform to support the program, manage its operations and carry out all necessary activities to ensure the effective execution of the program\u2014from fund launch through to project reporting.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 4,
+    "milestone_status_counts": {
+      "Paused": 1,
+      "Withdrawn": 3
+    },
+    "other_identifiers": [],
+    "project_id": "EMI-0001a-25",
+    "source_project_id": "EMI-0001a-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "Catalyst FC - Catalyst 2025 Proposal",
+    "total_contract_ada": 64300000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EMI-0001a-25",
+    "vendor_id": "tf1-vendor-addr1q8q7jyap76l0d5gqj8naw5t49yu3f0h7qkzsps9z0gfjcu25uj747vu-95a6c61748",
+    "vendor_label": "addr1q8q7jyap76l0d5gqj8naw5t49yu3f0h7qkzsps9z0gfjcu25uj747vu83mvg3fuh6ttdgwshjwtcne6esrpct2uzmnuqdqd82j"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Paused": 1575000.0,
+      "Withdrawn": 14175000.0
+    },
+    "confidence": "high",
+    "description": "Intersect will: \n1. Execute administrator role for proposals funded by Cardano treasury which requested\nIntersect to act as Administrator\n2. Through our members and committees provide support for Cardano\u2019s on-chain\ngovernance (for ADA Holders, DReps, SPOs and CC members)\n3. Through our members and committees facilitate proposal creation for Cardano Vision,\nRoadmap, and Budget\n4. Steward core infrastructure\na) Maintain and govern the open-source Cardano node repositories, including the Haskell codebases\nb)  Coordinate and release upgrades proposed by ecosystem contributors, ensuring safe deployment, roadmap alignment, and stakeholder readiness\nc) Provide stability and continuity across key engineering practices and upgrade cycles\n5. Provide easy participation via elected Committees and open working groups\na) Professional Coordination and support for 8 committees and 30+ working groups\nb) Provide members tooling to participate\n6. Support the emergence of new institutions like MBOs or DAOs",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 4,
+    "milestone_status_counts": {
+      "Paused": 1,
+      "Withdrawn": 3
+    },
+    "other_identifiers": [],
+    "project_id": "EG-0002-25",
+    "source_project_id": "EG-0002-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "Intersect MBO - A member-based organization for the Cardano ecosystem",
+    "total_contract_ada": 15750000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EG-0002-25",
+    "vendor_id": "tf1-vendor-addr1q9qk3n36gv5pclrym2dhedv9hqs2dchkt0nf36tscap3paaf7ma3972-d57e034eac",
+    "vendor_label": "addr1q9qk3n36gv5pclrym2dhedv9hqs2dchkt0nf36tscap3paaf7ma3972u24k8d0ejjgakphc9yp6zsxc2q0nsjmuvcmxsly0a5a"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 59716.0
+    },
+    "confidence": "high",
+    "description": "We propose to continue development and support of the AdaStat.net Cardano blockchain explorer for the next 24 months. Planned work includes performance optimizations, improvements to UX/UI, and new features related to Cardano\u2019s evolving governance model and on-chain tooling (Smart Contract 1 of 2).",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 7,
+    "milestone_status_counts": {
+      "Active": 7
+    },
+    "other_identifiers": [],
+    "project_id": "EG-0001-25-02",
+    "source_project_id": "EG-0001-25-02",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "active",
+    "title": "AdaStat.net Cardano blockchain explorer (2 of 2)",
+    "total_contract_ada": 59716.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EG-0001-25-02",
+    "vendor_id": "tf1-vendor-addr1qyjk85v68tmpy9afm8l3k536sa98ktna5hknxlq3sdl2daall4ts4vx-99c8bfbd4b",
+    "vendor_label": "addr1qyjk85v68tmpy9afm8l3k536sa98ktna5hknxlq3sdl2daall4ts4vx7py55p4whtyr3d3s5rgw7rdztv7jzqg4am7squssllz"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 79500.0,
+      "Withdrawn": 72784.0
+    },
+    "confidence": "high",
+    "description": "We propose to continue development and support of the AdaStat.net Cardano blockchain explorer for the next 24 months. Planned work includes performance optimizations, improvements to UX/UI, and new features related to Cardano\u2019s evolving governance model and on-chain tooling (Smart Contract 1 of 2).",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 18,
+    "milestone_status_counts": {
+      "Active": 9,
+      "Withdrawn": 9
+    },
+    "other_identifiers": [],
+    "project_id": "EG-0001-25",
+    "source_project_id": "EG-0001-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "active",
+    "title": "AdaStat.net Cardano blockchain explorer (1 of 2)",
+    "total_contract_ada": 152284.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EG-0001-25",
+    "vendor_id": "tf1-vendor-addr1qyjk85v68tmpy9afm8l3k536sa98ktna5hknxlq3sdl2daall4ts4vx-99c8bfbd4b",
+    "vendor_label": "addr1qyjk85v68tmpy9afm8l3k536sa98ktna5hknxlq3sdl2daall4ts4vx7py55p4whtyr3d3s5rgw7rdztv7jzqg4am7squssllz"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 305000.0,
+      "Withdrawn": 300000.0
+    },
+    "confidence": "high",
+    "description": "Propose to deliver a free Native Asset Content Delivery Network (CDN) for Cardano, by making our existing NFTCDN services free to use for anyone building on Cardano. NFTCDN has been operating since 2022 and provides fast, reliable and resilient multimedia and metadata delivery through a globally distributed CDN, enabling projects to display native assets effortlessly.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 8,
+    "milestone_status_counts": {
+      "Active": 4,
+      "Withdrawn": 4
+    },
+    "other_identifiers": [],
+    "project_id": "EC-0023-25",
+    "source_project_id": "EC-0023-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "active",
+    "title": "NFTCDN - A free Native Asset CDN for Cardano Developers",
+    "total_contract_ada": 605000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0023-25",
+    "vendor_id": "tf1-vendor-addr1q92q9yv2yfvcf55tqeyeyysnspzfujyyt4htg2y5y449mzs5vszfuaa-f993834b3c",
+    "vendor_label": "addr1q92q9yv2yfvcf55tqeyeyysnspzfujyyt4htg2y5y449mzs5vszfuaa53gyets7sdty2ynrrtssv0t8qy009q4efsfrst57f7j"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 31477.0,
+      "Paused": 171946.0,
+      "Withdrawn": 189619.0
+    },
+    "confidence": "high",
+    "description": "MLabs LTD will perform the maintenance and enhancement of Cardano.nix, a foundational toolset for building and deploying Cardano infrastructure with Nix.\nMLabs LTD will provide continuous support including maintenance releases, bug fixes, and compatibility updates for Plutarch throughout the 12-month funding period.\nThe Grumplestiltskin project is an applied research effort focused on building experimental Plutarch tooling to support parameterized elliptic curve and Galois field operations, and exploring the feasibility of zero-knowledge proof (ZKP) verification on Cardano.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 16,
+    "milestone_status_counts": {
+      "Active": 2,
+      "Paused": 5,
+      "Withdrawn": 9
+    },
+    "other_identifiers": [],
+    "project_id": "EC-0022-25,EC-0015-25,ER-0005-25",
+    "source_project_id": "EC-0022-25,EC-0015-25,ER-0005-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "MLabs- Core Tool Maintenance: Cardano.nix & Plutarch, Research towards Tooling for Elliptical Curves",
+    "total_contract_ada": 393042.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0022-25,EC-0015-25,ER-0005-25",
+    "vendor_id": "tf1-vendor-addr1q86nycg8kryrkvskcdktvsup3gdmwnlk6z376rml5qfvccda0gvtkuu-7f73f37eb3",
+    "vendor_label": "addr1q86nycg8kryrkvskcdktvsup3gdmwnlk6z376rml5qfvccda0gvtkuuq7ypygj4ztfrvvemch6hd8ua42ccywcxkt4gqtznf6s"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Withdrawn": 266667.0
+    },
+    "confidence": "high",
+    "description": "Cexplorer.io is already live and actively maintained by an experienced team of backend, frontend, and infrastructure developers. This proposal includes funding for ongoing maintenance, including server infrastructure, performance monitoring, bug fixes, and updates aligned with Cardano protocol changes.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 5,
+    "milestone_status_counts": {
+      "Withdrawn": 5
+    },
+    "other_identifiers": [],
+    "project_id": "EC-0021-25",
+    "source_project_id": "EC-0021-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "withdrawn",
+    "title": "Vellum Labs: Developer-Focused Blockchain Explorer for Cardano",
+    "total_contract_ada": 266667.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0021-25",
+    "vendor_id": "tf1-vendor-addr1q9sz5kw40pmnkcmmfvssm5fy2vzkk7l0wu5szv25nnffkqnkc35qyrg-745f0c94e4",
+    "vendor_label": "addr1q9sz5kw40pmnkcmmfvssm5fy2vzkk7l0wu5szv25nnffkqnkc35qyrgnqu8tl96u5eejytgvtsqatr2ms6hrxhdzq4pslvp2rm"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 197307.58000000002,
+      "Withdrawn": 460384.42000000004
+    },
+    "confidence": "high",
+    "description": "Scalus will deliver Scala 3 to the Cardano ecosystem, letting you write smart contracts, build transactions, and application layers - all with the same language and familiar tools.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 6,
+    "milestone_status_counts": {
+      "Active": 2,
+      "Withdrawn": 4
+    },
+    "other_identifiers": [],
+    "project_id": "EC-0020-25",
+    "source_project_id": "EC-0020-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "active",
+    "title": "Lantr - Scalus: DApps Development Platform",
+    "total_contract_ada": 657692.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0020-25",
+    "vendor_id": "tf1-vendor-addr1q8hy6hpgvgxzkpy5dhpjl4sgp4e007s5a2qddcrn9g4v0f280705mn5-b7e0ab7ab8",
+    "vendor_label": "addr1q8hy6hpgvgxzkpy5dhpjl4sgp4e007s5a2qddcrn9g4v0f280705mn54gt7qvve3jmwykq8shht0kk4464caf2e732nq05zszr"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 39840.0,
+      "Withdrawn": 59760.0
+    },
+    "confidence": "high",
+    "description": "BloxBean provides several essential Java libraries and tools for building applications on Cardano. These tools\u2014CCL, Yaci, Yaci Store, and Yaci DevKit. \nUnder this Agreement, funding is allocated to support the addition of one full-time developer for a period of 12 months. The developer will focus on the following areas: Ongoing Maintenance, Feature Enhancements, Documentation and Developer Tools, Community Engagement & Support.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 5,
+    "milestone_status_counts": {
+      "Active": 2,
+      "Withdrawn": 3
+    },
+    "other_identifiers": [],
+    "project_id": "EC-0019-25",
+    "source_project_id": "EC-0019-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "active",
+    "title": "BloxBean Java Tools Maintenance and Enhancement",
+    "total_contract_ada": 99600.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0019-25",
+    "vendor_id": "tf1-vendor-addr1q8jwgfgsykah9kawn7ve7lam7wrey4jery5yrn5xfuc23vhd332ffcu-db8a858f60",
+    "vendor_label": "addr1q8jwgfgsykah9kawn7ve7lam7wrey4jery5yrn5xfuc23vhd332ffcu6l2jmzc22fym9szkejlt3cszkf53kd425gq6saxvzdt"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 139923.0,
+      "Paused": 48583.0,
+      "Withdrawn": 394494.0
+    },
+    "confidence": "high",
+    "description": "Eternl has been a reliable and community-driven Cardano wallet since its launch in 2021 . It offers a secure, feature-rich experience across web, browser extension, iOS, and Android platforms, serving both everyday users and developers. Maintaining Eternl requires \u20ac30,000 per month. \nThis agreement enables Grantee to sustain these operational costs, ensuring Eternl continues to provide reliable access to the Cardano blockchain for the community.\n",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 13,
+    "milestone_status_counts": {
+      "Active": 3,
+      "Paused": 1,
+      "Withdrawn": 9
+    },
+    "other_identifiers": [],
+    "project_id": "EC-0018-25",
+    "source_project_id": "EC-0018-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "Tastenkunst GmbH - Eternl Maintenance",
+    "total_contract_ada": 583000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0018-25",
+    "vendor_id": "tf1-vendor-addr1qyekd5cyq73usa5czjjgpn8esawy59evvdhnwt52jlaepmnmzs4pv8t-5f8928ba6d",
+    "vendor_label": "addr1qyekd5cyq73usa5czjjgpn8esawy59evvdhnwt52jlaepmnmzs4pv8t3hz0t3edydewp50m66e402jqxfzjke5xse8pqk5zmd8"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 243000.0,
+      "Withdrawn": 457000.0
+    },
+    "confidence": "high",
+    "description": "This Grantee will build a ZK bridge for Cardano, which Grantee will deploy on the Cardano testnet. As part of this initiative, Grantee will define a communication protocol for the bridge, provide the full source code of the smart contracts on the Cardano side, and produce comprehensive technical documentation detailing the protocol between Cardano and any other isomorphic blockchain.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 6,
+    "milestone_status_counts": {
+      "Active": 2,
+      "Withdrawn": 4
+    },
+    "other_identifiers": [],
+    "project_id": "EC-0017-25",
+    "source_project_id": "EC-0017-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "active",
+    "title": "Cooperativa de Trabajo Eryx - ZK Bridge",
+    "total_contract_ada": 700000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0017-25",
+    "vendor_id": "tf1-vendor-addr1q84naykw9dnu8znm7dej9fd3rhgajwray3r68ares8t294zd3qgc7sm-2b303e3736",
+    "vendor_label": "addr1q84naykw9dnu8znm7dej9fd3rhgajwray3r68ares8t294zd3qgc7sm9sg36suavqwgedx3q2s6nz9jp54xwg3drr9wsmrvged"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Paused": 95464.17,
+      "Withdrawn": 483106.82999999996
+    },
+    "confidence": "high",
+    "description": "The scope of the project is to create a Cardano data node that can run in the browser. Cardano data node implies a subset of features of a full node, mainly the ability to follow the tip of the chain and update the local ledger state accordingly, while replaying to queries from the end user.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 4,
+    "milestone_status_counts": {
+      "Paused": 1,
+      "Withdrawn": 3
+    },
+    "other_identifiers": [],
+    "project_id": "EC-0014-25",
+    "source_project_id": "EC-0014-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "Harmonic Laboratories: Gerolamo - Cardano Node in typescript",
+    "total_contract_ada": 578571.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0014-25",
+    "vendor_id": "tf1-vendor-addr1q9a80rmurvk388224szqxtdfn723yt2hmh2f3z7gkw2srczevw9gj6c-114cd8e371",
+    "vendor_label": "addr1q9a80rmurvk388224szqxtdfn723yt2hmh2f3z7gkw2srczevw9gj6c93r2900smfyks6dyqayvra7hhectfuh35lhqqex327p"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 52010.0,
+      "Paused": 173990.0,
+      "Withdrawn": 784000.0
+    },
+    "confidence": "high",
+    "description": "The Open Source Committee wishes to adjust Milestones 10.5 and 10.6 as there was agreement to sponsor an event which absorbed most of the available budget for this program. Due to a decreased value of ada, the Open Source Committee elected to select an event with high value for Cardano and welcome feedback to the implementation of the Paid Open Source Model (POSM).",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 17,
+    "milestone_status_counts": {
+      "Active": 3,
+      "Paused": 4,
+      "Withdrawn": 10
+    },
+    "other_identifiers": [],
+    "project_id": "EC-0013(6,10,4)-25",
+    "source_project_id": "EC-0013(6,10,4)-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "Open Source Committee - Developer Advocates Program, Committee Travel Budget, Bug Bounty",
+    "total_contract_ada": 1010000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0013(6,10,4)-25",
+    "vendor_id": "tf1-vendor-addr1q9kpwrdezpmyxn0g87fcdrnp7spqaauyqy3kx6aq5jj3926z8sjcfkf-968a4f5f5e",
+    "vendor_label": "addr1q9kpwrdezpmyxn0g87fcdrnp7spqaauyqy3kx6aq5jj3926z8sjcfkfh9jhkskg9x72wfg86yt23me9j6dejjgwkycvs3gy7pn"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 1235000.0,
+      "Paused": 1900000.0,
+      "Withdrawn": 840000.0
+    },
+    "confidence": "high",
+    "description": "Maintainer Retainer Program - the goal is to enhance the maintainership of 25 core ecosystem projects with 50 individuals (maintainers) \u2018compensated\u2019 (this is half commitment than what was originally submitted in the budget proposal due to Budget delays and matching 1 year commonly-accepted approach).\nTooling Sustainability Program - The goal is to sustain and improve critical Cardano developer tooling by funding scoped maintenance and feature work across multiple projects. Tooling needed for Open Source Office and Open Source Committee delivery of this initiative, as required to achieve budget milestones will also be considered.\nSecurity Incident Management Program - The goal is to establish a responsive, reliable security incident coordination capability for Cardano open source projects by hiring one dedicated support staff and implementing foundational security tooling.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 23,
+    "milestone_status_counts": {
+      "Active": 12,
+      "Paused": 6,
+      "Withdrawn": 5
+    },
+    "other_identifiers": [],
+    "project_id": "EC-0013(1,2,7)-25",
+    "source_project_id": "EC-0013(1,2,7)-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "OSC - Maintainer Retainer, Tooling Sustainability, Security Incident Management Programs",
+    "total_contract_ada": 3975000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0013(1,2,7)-25",
+    "vendor_id": "tf1-vendor-addr1q9kpwrdezpmyxn0g87fcdrnp7spqaauyqy3kx6aq5jj3926z8sjcfkf-968a4f5f5e",
+    "vendor_label": "addr1q9kpwrdezpmyxn0g87fcdrnp7spqaauyqy3kx6aq5jj3926z8sjcfkfh9jhkskg9x72wfg86yt23me9j6dejjgwkycvs3gy7pn"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Withdrawn": 600000.0
+    },
+    "confidence": "high",
+    "description": "Maestro shall deliver a comprehensive infrastructure solution that positions Cardano as Bitcoin\u2019s primary smart contract and DeFi execution layer. Leveraging Maestro\u2019s enterprise-grade UTXO infrastructure platform, this integration will bridge Bitcoin's substantial liquidity and large user base directly into the Cardano ecosystem.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 7,
+    "milestone_status_counts": {
+      "Withdrawn": 7
+    },
+    "other_identifiers": [],
+    "project_id": "EC-0012-25",
+    "source_project_id": "EC-0012-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "withdrawn",
+    "title": "GO MAESTRO INC - Complete Web3 developer stack",
+    "total_contract_ada": 600000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0012-25",
+    "vendor_id": "tf1-vendor-addr1qyn28fkuh5qwxrvl69u38j74nntcphr7hsktw563yc9l4aj9qmnf27m-dd568fe820",
+    "vendor_label": "addr1qyn28fkuh5qwxrvl69u38j74nntcphr7hsktw563yc9l4aj9qmnf27m74mhyrs6hkfh4pgmsgv39eypdcufq6g4t6mssgdvca8"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 70800.0,
+      "Paused": 291600.0,
+      "Withdrawn": 362400.0
+    },
+    "confidence": "high",
+    "description": "Work with Ledger team to design new UI according to the expectations. Implement a new UI into the Cardano Ledger App.\nUpdate Ledger and Trezor firmware and integration libraries with new relevant Cardano features or breaking changes. Update also if there are any breaking changes in Ledger and Trezor core firmware code, testing suites, etc.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 11,
+    "milestone_status_counts": {
+      "Active": 1,
+      "Paused": 5,
+      "Withdrawn": 5
+    },
+    "other_identifiers": [],
+    "project_id": "EC-0011-25 EC-0005-25",
+    "source_project_id": "EC-0011-25 EC-0005-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "VacuumLabs - Hardware Wallets Maintenance & Ledger App Rewrite",
+    "total_contract_ada": 724800.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0011-25 EC-0005-25",
+    "vendor_id": "tf1-vendor-addr1q9c0wgxuygu6plh23kmxkl0wewypmgrewe706g8q0y5psdz32x5hqy5-8d1b6c14ee",
+    "vendor_label": "addr1q9c0wgxuygu6plh23kmxkl0wewypmgrewe706g8q0y5psdz32x5hqy5y2v0mt7hgsd2mpm3cwqwhzevrh6sn04gfg5nsj6r0a3"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 309390.0,
+      "Withdrawn": 851610.0
+    },
+    "confidence": "high",
+    "description": "zkFold will develop and implement ZK rollups on Cardano to scale it efficiently, promoting broader adoption and supporting an ecosystem of decentralized applications and services.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 8,
+    "milestone_status_counts": {
+      "Active": 2,
+      "Withdrawn": 6
+    },
+    "other_identifiers": [],
+    "project_id": "EC-0009-25",
+    "source_project_id": "EC-0009-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "active",
+    "title": "zkFold ZK Rollup",
+    "total_contract_ada": 1161000.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0009-25",
+    "vendor_id": "tf1-vendor-addr1q8phtw2jlcwfxg8mhusvy7wuzxechtam5ehg4xqc7s8ut4r2lnqksm9-fc4ae974b0",
+    "vendor_label": "addr1q8phtw2jlcwfxg8mhusvy7wuzxechtam5ehg4xqc7s8ut4r2lnqksm9q37dmlpjuyf2vp3qlarg5nrx56peqqwmme3gs9vp2d3"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Matured": 1309.03,
+      "Paused": 129593.97
+    },
+    "confidence": "high",
+    "description": "Lucid Evolution is an open-source library designed to simplify and enhance the development of off-chain smart contract interactions on Cardano.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 4,
+    "milestone_status_counts": {
+      "Matured": 1,
+      "Paused": 3
+    },
+    "other_identifiers": [],
+    "project_id": "EC-0008-25",
+    "source_project_id": "EC-0008-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "Midgard Labs - Lucid Evolution Maintenance",
+    "total_contract_ada": 130903.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0008-25",
+    "vendor_id": "tf1-vendor-addr1q9rsaat50djvcxc3sh6uapzt6ktmqm5kaufw3vr8wg4qy5hst733xv4-88581a614c",
+    "vendor_label": "addr1q9rsaat50djvcxc3sh6uapzt6ktmqm5kaufw3vr8wg4qy5hst733xv48tak2k433cj864u762cjrtcz6dk3x6e2nawgsssa7nv"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Active": 159059.58000000002,
+      "Paused": 165687.0,
+      "Withdrawn": 337995.42000000004
+    },
+    "confidence": "high",
+    "description": "- Pallas (github.com/txpipe/pallas), a collection of Rust-native building blocks for the Cardano blockchain ecosystem.\n- UTxO RPC (https://utxorpc.org), an interface specification designed to simplify interactions with UTxO-based blockchains.\n- Dolos (https://dolos.txpipe.io/), a lightweight Cardano data node, designed as a backend for dApps.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 15,
+    "milestone_status_counts": {
+      "Active": 3,
+      "Paused": 3,
+      "Withdrawn": 9
+    },
+    "other_identifiers": [],
+    "project_id": "EC-0006-25,EC-0007-25,EC-0010-25",
+    "source_project_id": "EC-0006-25,EC-0007-25,EC-0010-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "TxPipe - Pallas, UTxO RPC, Dolos",
+    "total_contract_ada": 662742.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0006-25,EC-0007-25,EC-0010-25",
+    "vendor_id": "tf1-vendor-addr1q94dne7wfqvsf724gx2dycgpmzfz43psgtrmc6ksst442eswc8fz3e6-bd00c2325c",
+    "vendor_label": "addr1q94dne7wfqvsf724gx2dycgpmzfz43psgtrmc6ksst442eswc8fz3e6r6s7xjca8eh7hjflq06sfqcxc0uz63evz03cs9xjqzs"
+  },
+  {
+    "amount_by_milestone_status_ada": {
+      "Paused": 2140475.0,
+      "Withdrawn": 21621.0
+    },
+    "confidence": "high",
+    "description": "Midgard is a modular framework for deploying optimistic rollup Layer 2s on the Cardano blockchain, designed to enhance transaction throughput, reduce costs, and enable advanced decentralized applications.",
+    "instance_id": "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619",
+    "instance_label": "Intersect Treasury Contracts 1",
+    "milestone_count": 7,
+    "milestone_status_counts": {
+      "Paused": 6,
+      "Withdrawn": 1
+    },
+    "other_identifiers": [],
+    "project_id": "EC-0001-25",
+    "source_project_id": "EC-0001-25",
+    "sources": [
+      {
+        "fetched_at": "2026-05-15T11:49:50Z",
+        "provenance_path": "data/_raw/sundae_treasury/treasury-fund-01-projects.json",
+        "source": "sundae_treasury_graphql",
+        "url": "https://api.treasury.sundae.fi/graphql"
+      }
+    ],
+    "status": "paused",
+    "title": "Midgard - Optimistic Rollups",
+    "total_contract_ada": 2162096.0,
+    "treasury_url": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0001-25",
+    "vendor_id": "tf1-vendor-addr1q9rsaat50djvcxc3sh6uapzt6ktmqm5kaufw3vr8wg4qy5hst733xv4-88581a614c",
+    "vendor_label": "addr1q9rsaat50djvcxc3sh6uapzt6ktmqm5kaufw3vr8wg4qy5hst733xv48tak2k433cj864u762cjrtcz6dk3x6e2nawgsssa7nv"
+  }
+]
