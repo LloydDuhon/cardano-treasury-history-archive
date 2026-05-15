@@ -7,13 +7,17 @@
   "current_snapshot": "data/_raw/hydra_voting/cardano-budget-2026.json",
   "current_snapshot_fetched_at": "2026-05-15T12:07:25Z",
   "current_unique_proposers": 51,
-  "generated_at": "2026-05-15T12:34:57Z",
-  "history_records": 591,
+  "generated_at": "2026-05-15T13:12:15Z",
+  "history_records": 597,
   "identity_bridge_2025_proposers": 15,
   "identity_bridge_2025_records": 120,
-  "proposers_with_prior_history": 15,
+  "proposers_with_prior_history": 17,
   "similarity_min_threshold": 0.18,
   "similarity_per_proposal_limit": 5,
   "similarity_records": 18,
-  "treasury_fund_1_history_records": 0
+  "tf1_ekklesia_reconciliation_high_confidence": 31,
+  "tf1_ekklesia_reconciliation_low_confidence": 10,
+  "tf1_ekklesia_reconciliation_medium_confidence": 2,
+  "tf1_ekklesia_reconciliation_records": 43,
+  "treasury_fund_1_history_records": 6
 }

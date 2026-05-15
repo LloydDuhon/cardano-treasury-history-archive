@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/lloydduhon/catalyst-history-archive/schemas/proposer.schema.json",
+  "$id": "https://github.com/lloydduhon/cardano-treasury-history-archive/schemas/proposer.schema.json",
   "title": "Catalyst Proposer",
   "description": "A proposer entity (individual or team) referenced by one or more Catalyst proposals. Identity is reconciled across funds via known external IDs; near-duplicates are intentionally NOT auto-merged.",
   "type": "object",

@@ -64,7 +64,8 @@ DEFAULT_TO = "20210131"
 DEFAULT_URL_PATTERN = "cardano.ideascale.com/a/dtd/*"
 
 DEFAULT_USER_AGENT = (
-    "catalyst-history-archive/0.1 " "(+https://github.com/lloydduhon/catalyst-history-archive)"
+    "cardano-treasury-history-archive/0.1 "
+    "(+https://github.com/lloydduhon/cardano-treasury-history-archive)"
 )
 DEFAULT_RPS = 0.5
 DEFAULT_TIMEOUT = httpx.Timeout(connect=15.0, read=60.0, write=10.0, pool=10.0)

@@ -17,6 +17,8 @@ Outputs:
     reports/treasury-fund-2/scope-similarity.csv
     reports/treasury-fund-2/identity-bridge-2025.csv
     reports/treasury-fund-2/identity-bridge-2025.md
+    reports/treasury-fund-2/tf1-ekklesia-reconciliation.csv
+    reports/treasury-fund-2/tf1-ekklesia-reconciliation.md
     reports/treasury-fund-2/_summary.json
 """
 
@@ -166,6 +168,29 @@ class IdentityBridgeRecord:
     source_url: str
 
 
+@dataclass(frozen=True)
+class TF1ReconciliationRecord:
+    tf1_project_id: str
+    tf1_title: str
+    tf1_vendor_label: str
+    tf1_status: str
+    tf1_total_contract_ada: float
+    budget_2025_proposal_id: str
+    budget_2025_title: str
+    budget_2025_cost_ada: float
+    match_score: float
+    match_confidence: str
+    match_basis: str
+    company_name: str
+    group_name: str
+    social_handles: str
+    company_domain: str
+    public_champion: str
+    submitted_on_behalf: str
+    threshold_reached: str
+    source_url: str
+
+
 def _utcnow_iso() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")  # noqa: UP017
 
@@ -248,6 +273,20 @@ def _token_jaccard(left: str, right: str) -> float:
     if not a or not b:
         return 0.0
     return len(a & b) / len(a | b)
+
+
+def _text_similarity(left: str, right: str) -> float:
+    normalized_left = _normalize_name(left)
+    normalized_right = _normalize_name(right)
+    if not normalized_left or not normalized_right:
+        return 0.0
+    seq = SequenceMatcher(None, normalized_left, normalized_right).ratio()
+    containment = 0.0
+    if len(normalized_left) > 8 and normalized_left in normalized_right:
+        containment = 0.95
+    if len(normalized_right) > 8 and normalized_right in normalized_left:
+        containment = 0.95
+    return max(seq, containment, _token_jaccard(left, right))
 
 
 def _meaningful_name_tokens(value: str) -> set[str]:
@@ -496,6 +535,71 @@ def _budget_2025_vote_summary(proposal: dict[str, Any]) -> str:
     return "; ".join(parts)
 
 
+def _tf1_title_variants(project: dict[str, Any]) -> list[str]:
+    title = str(project.get("title") or "")
+    vendor = str(project.get("vendor_label") or "")
+    variants = [title]
+    if vendor and title.casefold().startswith(vendor.casefold()):
+        stripped = re.sub(rf"^{re.escape(vendor)}\s*[-:]\s*", "", title, flags=re.IGNORECASE)
+        if stripped and stripped != title:
+            variants.append(stripped)
+    variants.append(re.sub(r"\(\d+\s*of\s*\d+\)", "", title, flags=re.IGNORECASE))
+    return [variant.strip() for variant in variants if variant.strip()]
+
+
+def _amount_similarity(left: float, right: float) -> float:
+    if left <= 0 or right <= 0:
+        return 0.0
+    ratio = min(left, right) / max(left, right)
+    if ratio >= 0.98:
+        return 1.0
+    if ratio >= 0.90:
+        return 0.92
+    if ratio >= 0.75:
+        return 0.80
+    return ratio
+
+
+def _tf1_budget_2025_score(
+    project: dict[str, Any],
+    budget_2025_proposal: dict[str, Any],
+) -> tuple[float, str]:
+    budget_data = _budget_2025_data(budget_2025_proposal)
+    title = str(budget_2025_proposal.get("name") or budget_data.get("name") or "")
+    title_score = max(
+        (_text_similarity(variant, title) for variant in _tf1_title_variants(project)),
+        default=0.0,
+    )
+    amount_score = _amount_similarity(
+        float(project.get("total_contract_ada") or 0),
+        float(budget_data.get("cost") or 0),
+    )
+    owner_values = _budget_2025_identity_values(budget_2025_proposal)
+    vendor = str(project.get("vendor_label") or "")
+    owner_score = max((_name_score(vendor, value) for value in owner_values), default=0.0)
+    combined = max(title_score, (title_score * 0.75) + (amount_score * 0.25))
+    if owner_score >= 0.92 and title_score >= 0.45:
+        combined = max(
+            combined,
+            (title_score * 0.70) + (owner_score * 0.20) + (amount_score * 0.10),
+        )
+    basis = f"title={title_score:.2f}; amount={amount_score:.2f}; " f"owner={owner_score:.2f}"
+    return combined, basis
+
+
+def _tf1_reconciliation_identity_values(record: TF1ReconciliationRecord) -> list[str]:
+    return [
+        record.tf1_vendor_label,
+        record.company_name,
+        record.group_name,
+        record.social_handles,
+        record.company_domain,
+        record.public_champion,
+        record.budget_2025_title,
+        record.tf1_title,
+    ]
+
+
 def _final_outputs(
     proposal: dict[str, Any],
     milestones_by_proposal: dict[str, list[dict[str, Any]]],
@@ -572,6 +676,48 @@ def _tf1_outputs(
     return "No Matured milestone output captured; see milestone status counts."
 
 
+def _make_tf1_reconciliation(
+    tf1_projects: Sequence[dict[str, Any]],
+    budget_2025_proposals: Sequence[dict[str, Any]],
+) -> list[TF1ReconciliationRecord]:
+    records: list[TF1ReconciliationRecord] = []
+    for project in tf1_projects:
+        scored = [
+            (*_tf1_budget_2025_score(project, proposal), proposal)
+            for proposal in budget_2025_proposals
+        ]
+        if not scored:
+            continue
+        score, basis, proposal = max(scored, key=lambda item: item[0])
+        owner = _budget_2025_owner(proposal)
+        budget_data = _budget_2025_data(proposal)
+        records.append(
+            TF1ReconciliationRecord(
+                tf1_project_id=str(project.get("project_id") or ""),
+                tf1_title=str(project.get("title") or ""),
+                tf1_vendor_label=str(project.get("vendor_label") or ""),
+                tf1_status=str(project.get("status") or ""),
+                tf1_total_contract_ada=float(project.get("total_contract_ada") or 0),
+                budget_2025_proposal_id=str(budget_data.get("id") or proposal.get("_id") or ""),
+                budget_2025_title=str(proposal.get("name") or budget_data.get("name") or ""),
+                budget_2025_cost_ada=float(budget_data.get("cost") or 0),
+                match_score=score,
+                match_confidence=_confidence(score, high=0.86, medium=0.68),
+                match_basis=basis,
+                company_name=str(owner.get("company_name") or ""),
+                group_name=str(owner.get("group_name") or ""),
+                social_handles=str(owner.get("social_handles") or ""),
+                company_domain=str(owner.get("company_domain_name") or ""),
+                public_champion=str(owner.get("proposal_public_champion") or ""),
+                submitted_on_behalf=str(owner.get("submited_on_behalf") or ""),
+                threshold_reached=str(proposal.get("thresholdReached") or False).lower(),
+                source_url=_budget_2025_source_url(proposal),
+            )
+        )
+    records.sort(key=lambda r: (_normalize_name(r.tf1_title), -r.match_score))
+    return records
+
+
 def _make_history(
     current: Sequence[CurrentProposal],
     catalyst_proposals: Sequence[dict[str, Any]],
@@ -580,6 +726,7 @@ def _make_history(
     tf1_projects: Sequence[dict[str, Any]],
     tf1_vendors: Sequence[dict[str, Any]],
     tf1_milestones: Sequence[dict[str, Any]],
+    tf1_reconciliation_records: Sequence[TF1ReconciliationRecord],
 ) -> list[HistoryRecord]:
     proposals_by_proposer: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for proposal in catalyst_proposals:
@@ -594,10 +741,12 @@ def _make_history(
     tf1_milestones_by_project: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for milestone in tf1_milestones:
         tf1_milestones_by_project[str(milestone.get("project_id") or "")].append(milestone)
+    tf1_projects_by_id = {str(project.get("project_id") or ""): project for project in tf1_projects}
 
     records: list[HistoryRecord] = []
     for current_proposal in current:
         seen_catalyst_ids: set[str] = set()
+        seen_tf1_ids: set[str] = set()
         matches = _match_entities(current_proposal.proposer_name, catalyst_proposers, tf1_vendors)
         for match in matches:
             if match.source == "Project Catalyst":
@@ -629,6 +778,7 @@ def _make_history(
                     )
             else:
                 for project in tf1_projects_by_vendor.get(match.entity_id, []):
+                    seen_tf1_ids.add(str(project.get("project_id") or ""))
                     status = str(project.get("status") or "")
                     amount_by_status = project.get("amount_by_milestone_status_ada")
                     flags = "No documented non-delivery signal in dataset."
@@ -657,6 +807,71 @@ def _make_history(
                             source_url=str(project.get("treasury_url") or ""),
                         )
                     )
+        for reconciliation in tf1_reconciliation_records:
+            if reconciliation.match_confidence == "low":
+                continue
+            tf1_project = tf1_projects_by_id.get(reconciliation.tf1_project_id)
+            if not tf1_project or reconciliation.tf1_project_id in seen_tf1_ids:
+                continue
+            low_value_names = {
+                "beneficiary listed above",
+                "submission lead listed above",
+            }
+            identity_values = [
+                value
+                for value in _tf1_reconciliation_identity_values(reconciliation)
+                if value and _normalize_name(value) not in low_value_names
+            ]
+            if not identity_values:
+                continue
+            scored = [
+                (
+                    max(
+                        _name_score(current_proposal.proposer_name, value),
+                        _name_in_text_score(current_proposal.proposer_name, value),
+                    ),
+                    value,
+                )
+                for value in identity_values
+            ]
+            score, match_name = max(scored, key=lambda item: item[0])
+            if score < 0.74:
+                continue
+            if score < 1.0 and not _has_meaningful_name_overlap(
+                current_proposal.proposer_name,
+                match_name,
+            ):
+                continue
+            status = str(tf1_project.get("status") or "")
+            amount_by_status = tf1_project.get("amount_by_milestone_status_ada")
+            flags = "No documented non-delivery signal in dataset."
+            if status in TF1_NEGATIVE_STATUSES:
+                status_amounts = json.dumps(amount_by_status, sort_keys=True)
+                flags = f"treasury_project_status={status}; {status_amounts}"
+            records.append(
+                HistoryRecord(
+                    current_proposal_id=current_proposal.proposal_id,
+                    current_proposer_name=current_proposal.proposer_name,
+                    source="Treasury Fund 1",
+                    match_name=(
+                        f"{match_name} via 2025 reconciliation "
+                        f"({reconciliation.match_confidence}, {reconciliation.match_score:.2f})"
+                    ),
+                    match_score=score,
+                    match_confidence=_confidence(score, high=0.92, medium=0.82),
+                    historical_project_id=reconciliation.tf1_project_id,
+                    historical_title=str(tf1_project.get("title") or ""),
+                    historical_status=status,
+                    funding_status="contracted",
+                    amount_ada=float(tf1_project.get("total_contract_ada") or 0),
+                    amount_original=f"{float(tf1_project.get('total_contract_ada') or 0):,.2f} ADA",
+                    final_outputs=_tf1_outputs(tf1_project, tf1_milestones_by_project),
+                    delivery_flags=flags,
+                    ongoing="yes" if status in TF1_ONGOING_STATUSES else "no",
+                    source_url=str(tf1_project.get("treasury_url") or ""),
+                )
+            )
+            seen_tf1_ids.add(reconciliation.tf1_project_id)
         for proposal in catalyst_proposals:
             if proposal.get("funding_status") not in FUNDED_STATUSES:
                 continue
@@ -868,7 +1083,12 @@ def _make_similarity(
 
 def _write_csv(
     path: Path,
-    rows: Sequence[HistoryRecord] | Sequence[SimilarityRecord] | Sequence[IdentityBridgeRecord],
+    rows: (
+        Sequence[HistoryRecord]
+        | Sequence[SimilarityRecord]
+        | Sequence[IdentityBridgeRecord]
+        | Sequence[TF1ReconciliationRecord]
+    ),
 ) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     if not rows:
@@ -1125,6 +1345,71 @@ def _write_identity_bridge_md(
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
+def _write_tf1_reconciliation_md(
+    path: Path,
+    *,
+    records: Sequence[TF1ReconciliationRecord],
+    tf1_projects: Sequence[dict[str, Any]],
+    budget_2025_fetched_at: str,
+) -> None:
+    reconciled = {record.tf1_project_id for record in records}
+    high = sum(1 for record in records if record.match_confidence == "high")
+    medium = sum(1 for record in records if record.match_confidence == "medium")
+    low = sum(1 for record in records if record.match_confidence == "low")
+    lines = [
+        "# Treasury Fund 1 To 2025 Ekklesia Reconciliation",
+        "",
+        f"Generated: {_utcnow_iso()}",
+        f"2025 Budget Reconciliation snapshot: {budget_2025_fetched_at or 'not available'}",
+        "",
+        "Purpose: reconcile Treasury Fund 1 contract records from the Sundae Treasury "
+        "site against the original 2025 Ekklesia budget-process proposal records. "
+        "This supplies human-readable owner identity evidence for TF1 contracts whose "
+        "treasury vendor field is only a payment address.",
+        "",
+        "Matching uses proposal-title similarity, requested/contracted ADA amount "
+        "similarity, and owner metadata when available. Low-confidence rows are best "
+        "candidates retained for manual review, not asserted identities. A matched "
+        "Ekklesia proposal does not by itself prove milestone payment completion; "
+        "payment state remains the TF1 milestone status from the treasury contract data.",
+        "",
+        "## Summary",
+        "",
+        f"- TF1 projects analyzed: {len(tf1_projects)}",
+        f"- TF1 projects with 2025 Ekklesia candidate rows: {len(reconciled)}",
+        f"- High-confidence reconciliations: {high}",
+        f"- Medium-confidence reconciliations: {medium}",
+        f"- Low-confidence reconciliations: {low}",
+        "",
+        "## Reconciliations",
+        "",
+    ]
+    for record in records:
+        lines.extend(
+            [
+                f"### {record.tf1_title}",
+                "",
+                f"- TF1 vendor label: {record.tf1_vendor_label}",
+                f"- TF1 status: {record.tf1_status}",
+                f"- TF1 contracted amount: {record.tf1_total_contract_ada:,.2f} ADA",
+                f"- Ekklesia proposal: {record.budget_2025_title}",
+                f"- Ekklesia requested amount: {record.budget_2025_cost_ada:,.2f} ADA",
+                f"- Match: {record.match_confidence} ({record.match_score:.2f})",
+                f"- Basis: {record.match_basis}",
+                f"- Company: {record.company_name or 'not captured'}",
+                f"- Group: {record.group_name or 'not captured'}",
+                f"- Domain: {record.company_domain or 'not captured'}",
+                f"- Social handles: {record.social_handles or 'not captured'}",
+                f"- Public champion: {record.public_champion or 'not captured'}",
+                f"- Threshold reached: {record.threshold_reached}",
+                f"- Source: {record.source_url}",
+                "",
+            ]
+        )
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
 def generate_reports(
     *,
     data_root: Path,
@@ -1143,6 +1428,7 @@ def generate_reports(
     tf1_projects = _read_json_records(tf1_root / "projects.json")
     tf1_vendors = _read_json_records(tf1_root / "vendors.json")
     tf1_milestones = _read_json_records(tf1_root / "milestones.json")
+    tf1_reconciliation_records = _make_tf1_reconciliation(tf1_projects, budget_2025_proposals)
 
     history_records = _make_history(
         current,
@@ -1152,6 +1438,7 @@ def generate_reports(
         tf1_projects,
         tf1_vendors,
         tf1_milestones,
+        tf1_reconciliation_records,
     )
     similarity_records = _make_similarity(
         current,
@@ -1168,6 +1455,7 @@ def generate_reports(
     _write_csv(report_root / "proposer-history.csv", history_records)
     _write_csv(report_root / "scope-similarity.csv", similarity_records)
     _write_csv(report_root / "identity-bridge-2025.csv", identity_bridge_records)
+    _write_csv(report_root / "tf1-ekklesia-reconciliation.csv", tf1_reconciliation_records)
     _write_history_md(
         report_root / "proposer-history.md",
         records=history_records,
@@ -1187,6 +1475,12 @@ def generate_reports(
         snapshot_fetched_at=snapshot_fetched_at,
         budget_2025_fetched_at=budget_2025_fetched_at,
     )
+    _write_tf1_reconciliation_md(
+        report_root / "tf1-ekklesia-reconciliation.md",
+        records=tf1_reconciliation_records,
+        tf1_projects=tf1_projects,
+        budget_2025_fetched_at=budget_2025_fetched_at,
+    )
     summary: dict[str, object] = {
         "generated_at": _utcnow_iso(),
         "current_snapshot": str(current_snapshot.relative_to(REPO_ROOT)),
@@ -1198,6 +1492,16 @@ def generate_reports(
         "identity_bridge_2025_records": len(identity_bridge_records),
         "identity_bridge_2025_proposers": len(
             {_normalize_name(r.current_proposer_name) for r in identity_bridge_records}
+        ),
+        "tf1_ekklesia_reconciliation_records": len(tf1_reconciliation_records),
+        "tf1_ekklesia_reconciliation_high_confidence": sum(
+            1 for record in tf1_reconciliation_records if record.match_confidence == "high"
+        ),
+        "tf1_ekklesia_reconciliation_medium_confidence": sum(
+            1 for record in tf1_reconciliation_records if record.match_confidence == "medium"
+        ),
+        "tf1_ekklesia_reconciliation_low_confidence": sum(
+            1 for record in tf1_reconciliation_records if record.match_confidence == "low"
         ),
         "similarity_records": len(similarity_records),
         "similarity_min_threshold": min_similarity,

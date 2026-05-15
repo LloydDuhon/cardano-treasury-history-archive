@@ -30,9 +30,7 @@ from tenacity import (
 
 API_BASE = "https://hydra-voting.intersectmbo.org/api/v0"
 DEFAULT_VOTE_SLUG = "cardano-budget-2026"
-DEFAULT_USER_AGENT = (
-    "catalyst-history-archive/0.1 (+https://github.com/lloydduhon/catalyst-history-archive)"
-)
+DEFAULT_USER_AGENT = "cardano-treasury-history-archive/0.1 (+https://github.com/lloydduhon/cardano-treasury-history-archive)"
 DEFAULT_TIMEOUT = httpx.Timeout(connect=10.0, read=60.0, write=10.0, pool=10.0)
 
 REPO_ROOT = Path(__file__).resolve().parents[2]

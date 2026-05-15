@@ -1,6 +1,6 @@
 # Report 2: Treasury Fund 2 Similarity To Previously Completed Work
 
-Generated: 2026-05-15T12:34:57Z
+Generated: 2026-05-15T13:12:15Z
 Current Budget Process snapshot: 2026-05-15T12:07:25Z
 
 Method: lexical TF-IDF cosine similarity over current proposal title/summary against previously funded and completed Project Catalyst proposals plus completed Treasury Fund 1 projects. Similarity is a screening signal, not proof of duplication.

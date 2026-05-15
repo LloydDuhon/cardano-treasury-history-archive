@@ -57,7 +57,8 @@ from tenacity import (
 
 API_BASE = "https://www.catalystexplorer.com/api"
 DEFAULT_USER_AGENT = (
-    "catalyst-history-archive/0.1 " "(+https://github.com/lloydduhon/catalyst-history-archive)"
+    "cardano-treasury-history-archive/0.1 "
+    "(+https://github.com/lloydduhon/cardano-treasury-history-archive)"
 )
 DEFAULT_RPS = 1.5
 DEFAULT_TIMEOUT = httpx.Timeout(connect=10.0, read=30.0, write=10.0, pool=10.0)

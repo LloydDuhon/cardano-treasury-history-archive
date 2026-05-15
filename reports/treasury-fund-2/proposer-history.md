@@ -1,6 +1,6 @@
 # Report 1: Treasury Fund 2 Proposer Funding History
 
-Generated: 2026-05-15T12:34:57Z
+Generated: 2026-05-15T13:12:14Z
 Current Budget Process snapshot: 2026-05-15T12:07:25Z
 
 Scope: the 69 live proposals from the Cardano Budget Process 2026 API. Prior history is matched against Project Catalyst and Treasury Fund 1.
@@ -13,9 +13,9 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 
 - Current proposals analyzed: 69
 - Unique proposer names analyzed: 51
-- Proposers with matched prior history: 15
+- Proposers with matched prior history: 17
 - Catalyst prior funding records: 591
-- Treasury Fund 1 prior funding records: 0
+- Treasury Fund 1 prior funding records: 6
 
 ## Proposer Details
 
@@ -104,7 +104,20 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 
 - Current proposal: BloxBean Java/JVM Toolchain for Cardano: 2026 Maintenance & New Initiatives
 - Current requested budget: 432,600.00 ADA
-- Prior funded history found: none above matching threshold.
+- Matched prior records: 1
+- Matched ADA-denominated total: 99,600.00 ADA
+- Ongoing prior projects/contracts: 1
+- Records with documented non-delivery signals: 0
+
+#### Treasury Fund 1: BloxBean Java Tools Maintenance and Enhancement
+
+- Match: BLOXBEAN PTE. LTD. via 2025 reconciliation (high, 1.00) (high, 0.92)
+- Amount: 99,600.00 ADA
+- Status: active; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0019-25
 
 ### BRIDGE FUND
 
@@ -116,7 +129,20 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 
 - Current proposal: Cardano Builder DAO
 - Current requested budget: 20,600,000.00 ADA
-- Prior funded history found: none above matching threshold.
+- Matched prior records: 1
+- Matched ADA-denominated total: 12,000,000.00 ADA
+- Ongoing prior projects/contracts: 0
+- Records with documented non-delivery signals: 1
+
+#### Treasury Fund 1: Rainfire DAO - Cardano Builder DAO 
+
+- Match: Cardano Builder DAO via 2025 reconciliation (high, 0.96) (high, 1.00)
+- Amount: 12,000,000.00 ADA
+- Status: withdrawn; funding status: contracted
+- Ongoing: no
+- Failed/non-delivery signal: treasury_project_status=withdrawn; {"Withdrawn": 12000000.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EMI-0004-25
 
 ### Cardano Content Creator Consortium (C4)
 
@@ -193,9 +219,9 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 
 - Current proposal: Eryx: Zero-Knowledge Capabilities
 - Current requested budget: 3,661,033.00 ADA
-- Matched prior records: 3
-- Matched ADA-denominated total: 404,000.00 ADA
-- Ongoing prior projects/contracts: 1
+- Matched prior records: 4
+- Matched ADA-denominated total: 1,104,000.00 ADA
+- Ongoing prior projects/contracts: 2
 - Records with documented non-delivery signals: 0
 
 #### Project Catalyst: Designing an API for ZK-Snark proof verification in Aiken - Eryx
@@ -227,6 +253,16 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 - Failed/non-delivery signal: No documented non-delivery signal in dataset.
 - Final documented outputs: No final output captured in interim dataset.
 - Source: https://www.catalystexplorer.com/en/proposals/zk-login-in-cardano-eryx-f14
+
+#### Treasury Fund 1: Cooperativa de Trabajo Eryx - ZK Bridge
+
+- Match: eryx.co via 2025 reconciliation (high, 0.96) (high, 1.00)
+- Amount: 700,000.00 ADA
+- Status: active; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0017-25
 
 ### Five Binaries
 
@@ -293,10 +329,10 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 
 - Current proposal: Intersect: Governance coordination and technical stewardship for the Cardano ecosystem
 - Current requested budget: 25,400,000.00 ADA
-- Matched prior records: 1
-- Matched ADA-denominated total: 137,428.00 ADA
-- Ongoing prior projects/contracts: 1
-- Records with documented non-delivery signals: 0
+- Matched prior records: 2
+- Matched ADA-denominated total: 15,887,428.00 ADA
+- Ongoing prior projects/contracts: 2
+- Records with documented non-delivery signals: 1
 
 #### Project Catalyst: For the community, by the community: Optimizing the ROI of Catalyst through listening to builders, expert analysis and assessment of Cardano’s Community Grants Fund. Brought to you by Catalyst and Intersect MBO Architects.
 
@@ -307,6 +343,16 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 - Failed/non-delivery signal: No documented non-delivery signal in dataset.
 - Final documented outputs: No final output captured in interim dataset.
 - Source: https://www.catalystexplorer.com/en/proposals/for-the-community-by-the-community-optimizing-the-roi-of-catalyst-through-listening-to-builders-expert-analysis-and-assessment-of-cardanos-community-g-f10
+
+#### Treasury Fund 1: Intersect MBO - A member-based organization for the Cardano ecosystem
+
+- Match: IntersectMBO via 2025 reconciliation (medium, 0.82) (high, 1.00)
+- Amount: 15,750,000.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Paused": 1575000.0, "Withdrawn": 14175000.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EG-0002-25
 
 ### Jose Velazquez
 
@@ -42538,10 +42584,10 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 
 - Current proposal: Hardware Wallet Maintenance 2026
 - Current requested budget: 1,310,960.00 ADA
-- Matched prior records: 2
-- Matched ADA-denominated total: 113,600.00 ADA
-- Ongoing prior projects/contracts: 1
-- Records with documented non-delivery signals: 0
+- Matched prior records: 3
+- Matched ADA-denominated total: 838,400.00 ADA
+- Ongoing prior projects/contracts: 2
+- Records with documented non-delivery signals: 1
 
 #### Project Catalyst: Ledger Live Integration #2
 
@@ -42562,6 +42608,16 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 - Failed/non-delivery signal: No documented non-delivery signal in dataset.
 - Final documented outputs: No final output captured in interim dataset.
 - Source: https://www.catalystexplorer.com/en/proposals/add-more-and-easier-levels-to-cardano-capture-the-flag-ctf-f12
+
+#### Treasury Fund 1: VacuumLabs - Hardware Wallets Maintenance & Ledger App Rewrite
+
+- Match: Vacuumlabs via 2025 reconciliation (high, 0.95) (high, 1.00)
+- Amount: 724,800.00 ADA
+- Status: paused; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: treasury_project_status=paused; {"Active": 70800.0, "Paused": 291600.0, "Withdrawn": 362400.0}
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0011-25 EC-0005-25
 
 ### Voltaire Swarm
 
@@ -42622,9 +42678,9 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 
 - Current proposal: zkFold Open Source Cardano Infrastructure 2026
 - Current requested budget: 1,256,600.00 ADA
-- Matched prior records: 10
-- Matched ADA-denominated total: 2,855,000.00 ADA
-- Ongoing prior projects/contracts: 4
+- Matched prior records: 11
+- Matched ADA-denominated total: 4,016,000.00 ADA
+- Ongoing prior projects/contracts: 5
 - Records with documented non-delivery signals: 0
 
 #### Project Catalyst: ENCOINS x Anastasia Labs: Zero-Knowledge Proof Trustless P2P Fiat-to-Crypto On-Ramp for Cardano
@@ -42726,3 +42782,13 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 - Failed/non-delivery signal: No documented non-delivery signal in dataset.
 - Final documented outputs: No final output captured in interim dataset.
 - Source: https://www.catalystexplorer.com/en/proposals/bifrost-bitcoin-cardano-bridge-secured-by-cardano-spos-f14
+
+#### Treasury Fund 1: zkFold ZK Rollup
+
+- Match: zkFold SA via 2025 reconciliation (high, 1.00) (high, 1.00)
+- Amount: 1,161,000.00 ADA
+- Status: active; funding status: contracted
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No Matured milestone output captured; see milestone status counts.
+- Source: https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EC-0009-25

@@ -3,7 +3,7 @@
 **Date:** 2026-05-13
 **Status:** Proposed
 **Author:** Lloyd Duhon
-**Applies To:** `catalyst-history-archive` repository (personal, `lloydduhon/catalyst-history-archive`)
+**Applies To:** `catalyst-history-archive` repository (personal, `lloydduhon/cardano-treasury-history-archive`)
 
 ---
 
@@ -104,7 +104,7 @@ Default confidence by fund and field family:
 ## Repository Structure (relevant decisions)
 
 - **GitHub is the source of truth.** All data lives in-repo as plain JSON + CSV.
-- **Personal repo:** `lloydduhon/catalyst-history-archive`.
+- **Personal repo:** `lloydduhon/cardano-treasury-history-archive`.
 - **Licensing:** MIT for code (`LICENSE-CODE`), CC-BY-4.0 for data (`LICENSE-DATA`). `CITATION.cff` at root.
 - **Provenance is mandatory.** Raw API/HTML/PDF captures preserved alongside normalized data under `_provenance/` per fund.
 - **No deletion without approval.** Refresh runs open PRs; no auto-merge.

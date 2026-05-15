@@ -1,18 +1,18 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
-title: "catalyst-history-archive: A historical record of Project Catalyst on Cardano"
+title: "cardano-treasury-history-archive: A historical record of Cardano funding"
 abstract: >-
-  An open historical dataset of Project Catalyst proposals, proposers,
-  win/loss outcomes, and completion status from Fund 1 (2020) through
-  the current active fund, normalized across all source systems with
-  provenance preserved and confidence labeled per record.
+  An open historical dataset of Cardano funding records across Project
+  Catalyst, Treasury Fund 1, and Treasury Fund 2 budget-process data,
+  normalized across source systems with provenance preserved and
+  confidence labeled per record.
 authors:
   - family-names: "Duhon"
     given-names: "Lloyd"
     email: "lloydduhon@gmail.com"
 type: dataset
 license: CC-BY-4.0
-repository-code: "https://github.com/lloydduhon/catalyst-history-archive"
+repository-code: "https://github.com/lloydduhon/cardano-treasury-history-archive"
 keywords:
   - cardano
   - project-catalyst

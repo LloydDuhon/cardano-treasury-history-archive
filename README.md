@@ -1,69 +1,76 @@
-# catalyst-history-archive
+# cardano-treasury-history-archive
 
-An open historical record of [Project Catalyst](https://projectcatalyst.io/) on Cardano — proposers, proposals, win/loss, and completion status — captured from Fund 1 (2020) onward.
+An open archive of Cardano funding history across Project Catalyst, Treasury Fund 1, and current Treasury Fund 2 budget-process data. The archive preserves raw source snapshots, normalized datasets, provenance notes, and generated reports for comparing proposer funding history and proposal-scope overlap.
 
-This repository is the source of truth for the dataset. It contains:
+## What Is Here
 
-- **`data/funds/fund-XX/`** — per-fund normalized JSON + CSV, plus raw provenance captures
-- **`data/consolidated/`** — unified CSV/JSON across all funds
-- **`schemas/`** — JSON Schemas defining the canonical data model
-- **`etl/`** — Python pipeline that fetches, normalizes, and validates the data
-- **`docs/`** — ADRs, per-fund source map, data-quality narrative, attributions
+- **Project Catalyst history:** normalized proposal, proposer, milestone, and funding-status data for Catalyst funds captured under `data/funds/` and `data/consolidated/`.
+- **Treasury Fund 1 history:** Sundae Treasury contract, vendor, and milestone data under `data/historical/treasury-fund-01/`.
+- **2025 Budget Reconciliation / Ekklesia data:** raw owner and proposal metadata from `2025budget.intersectmbo.org` under `data/_raw/intersect_budget_2025/`.
+- **Treasury Fund 2 current snapshot:** raw 2026 Cardano Budget Process data from Hydra Voting under `data/_raw/hydra_voting/`.
+- **Generated reports:** Treasury Fund 2 proposer-history, proposal-similarity, 2025 identity bridge, and TF1-to-2025 reconciliation outputs under `reports/treasury-fund-2/`.
+- **ETL and validation:** Python fetchers, normalizers, report generation, and schemas under `etl/` and `schemas/`.
 
-## Status
+## Current Reports
 
-- **Current phase:** Phase 0 (scaffolding). No data has been captured yet.
-- **Next:** Phase 1 — Lidonation Catalyst Explorer API ingestion for Funds 2–15.
-- See [`docs/CATALYST-HISTORY-CAPTURE-PLAN.md`](docs/CATALYST-HISTORY-CAPTURE-PLAN.md) for the full plan.
+The primary working reports are in `reports/treasury-fund-2/`:
 
-## Why this exists
+- `proposer-history.md` / `.csv` answers: for each Treasury Fund 2 proposer, where have they previously received funds in Project Catalyst and/or Treasury Fund 1, how much ADA did they receive, what outputs are documented, and are there delivery-risk signals?
+- `scope-similarity.md` / `.csv` answers: for each Treasury Fund 2 proposal, what funded and completed Catalyst or Treasury Fund 1 projects appear similar in scope, with similarity score and confidence.
+- `identity-bridge-2025.md` / `.csv` links current Treasury Fund 2 proposer names to 2025 Budget Process proposer/owner metadata.
+- `tf1-ekklesia-reconciliation.md` / `.csv` reconciles Treasury Fund 1 contract records from the Sundae Treasury site against the original 2025 Ekklesia budget-process proposal records.
+- `_summary.json` records the current snapshot timestamps and generated row counts.
 
-Catalyst data is fragmented across four technology eras (IdeaScale, Jörmungandr, Catalyst Core, Catalyst Voices) and at least eight sources of varying authoritativeness. No single upstream offers a complete historical record. This repository consolidates what is available, preserves provenance, and labels confidence honestly so researchers can build on it.
+## Confidence
 
-## Data sources and confidence
+This is a provenance-first research dataset, not a final audit opinion. Each report includes confidence labels and source URLs where available.
 
-Every record in this dataset carries a `sources[]` array (with raw artifact paths under `_provenance/`) and a `confidence` rating. Funds 10–15 are high-confidence end-to-end; Funds 2–9 are reliable for proposal core and win/loss but partial for completion; Fund 1 is fragile (recovered from Internet Archive snapshots) and Funds 1–5 completion data is explicitly best-effort.
+Project Catalyst history is useful now for experimentation and broad proposer-history analysis. Completion and closeout evidence is strongest where milestone data exists and weaker for early Catalyst funds that depend on reconstructed or partial sources.
 
-Full attribution and source detail in [`docs/attributions.md`](docs/attributions.md) and the [source-strategy ADR](docs/adr/ADR-2026-05-13-source-strategy.md).
+Treasury Fund 1 contract and milestone status comes from the Sundae Treasury data. The TF1-to-2025 reconciliation adds human-readable owner metadata from the Ekklesia process; high and medium matches are used conservatively in reports, while low-confidence candidates are retained for manual review.
+
+Treasury Fund 2 data is a point-in-time snapshot of the current budget process and should be refreshed before publication or any final decision support.
+
+## Using The Data
+
+You do not need to run the ETL to inspect the archive:
+
+```bash
+git clone https://github.com/lloydduhon/cardano-treasury-history-archive
+cd cardano-treasury-history-archive
+ls data/consolidated/
+ls reports/treasury-fund-2/
+```
+
+JSON Schemas under `schemas/` define the normalized Catalyst data model. Report CSVs are designed for spreadsheet review; Markdown versions are designed for human reading.
+
+## Refreshing Reports
+
+See `etl/README.md` for environment setup. The Treasury Fund 2 reports are generated from the ETL package:
+
+```bash
+cd etl
+python -m scripts.generate_treasury_fund_reports
+```
+
+Refresh raw snapshots before relying on the reports for publication, because the Hydra Voting and budget-process sites can change.
 
 ## Licensing
 
-- **Code** (under `etl/`, workflows, schemas): MIT — see [`LICENSE-CODE`](LICENSE-CODE).
-- **Data** (under `data/`): Creative Commons Attribution 4.0 International (CC-BY-4.0) — see [`LICENSE-DATA`](LICENSE-DATA). Attribution to upstream sources (Lidonation, IOG, Cardano Foundation, IdeaScale, community contributors) is required and documented in `docs/attributions.md`.
+- **Code** under `etl/`, schemas, and workflows: MIT, see `LICENSE-CODE`.
+- **Data** under `data/` and generated report artifacts: CC-BY-4.0, see `LICENSE-DATA`.
 
-If you use this dataset in research or tooling, please cite per [`CITATION.cff`](CITATION.cff).
-
-## Using the data
-
-You don't need to run anything. Just clone and read the CSV/JSON files:
-
-```bash
-git clone https://github.com/lloydduhon/catalyst-history-archive
-cd catalyst-history-archive
-ls data/funds/
-# Or pull just the consolidated dataset:
-cat data/consolidated/all_proposals.csv | head
-```
-
-JSON Schemas under `schemas/` formally define every field.
-
-## Running the ETL pipeline
-
-See [`etl/README.md`](etl/README.md). Not required to use the data — only to refresh it.
+Attribution to upstream sources is required and documented in `docs/attributions.md`.
 
 ## Contributing
 
-Corrections and additions are welcome via PR. See [`CONTRIBUTING.md`](CONTRIBUTING.md). The most valuable contributions right now are:
+Corrections and additions are welcome by PR. The most valuable contributions are:
 
-- Filling in F1–F5 completion data from primary sources
-- Identifying proposer-entity duplicates in `duplicate_candidates`
-- Flagging incorrect win/loss or completion records
+- Primary-source PDF or raw-data validation for Catalyst and budget-process records.
+- Manual review of low-confidence TF1-to-2025 reconciliation candidates.
+- Additional completion, closeout, or delivery-status evidence for historical funded projects.
+- Entity-resolution corrections for proposers operating under multiple names.
 
 ## Acknowledgements
 
-This archive would not exist without prior work by:
-
-- **[Lidonation](https://lidonation.com/)** and Darlington Wleh — the Catalyst Explorer team — for the open API and dataset that powers most of Funds 2–15. Code is Apache-2.0 at [`lidonation/catalystexplorer`](https://github.com/lidonation/catalystexplorer).
-- **IOG / Input Output** for publishing per-fund voting-results PDFs and operating the Milestone Module.
-- **Cardano Foundation** for the [`catalyst-voices`](https://github.com/cardano-foundation/catalyst-voices) program and CIP-15 / CIP-36 standards.
-- **The Cardano community** for the proposals themselves.
+This archive builds on public data and tooling from Lidonation Catalyst Explorer, Project Catalyst, IOG / Input Output, Cardano Foundation, Intersect, Sundae Labs, and the Cardano community.
