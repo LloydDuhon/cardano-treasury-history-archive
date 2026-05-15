@@ -18,7 +18,8 @@ etl/
 │   ├── lidonation_api.py            # Phase 1
 │   ├── projectcatalyst_funds.py     # Phase 2
 │   ├── milestones_scraper.py        # Phase 3 (Supabase REST)
-│   └── ideascale_wayback.py         # Phase 4 (Wayback CDX)
+│   ├── ideascale_wayback.py         # Phase 4 (Wayback CDX)
+│   └── koios_governance.py          # on-chain treasury withdrawals
 ├── parsers/
 │   └── iohk_pdf.py                  # Phase 2
 ├── normalizers/
@@ -28,10 +29,11 @@ etl/
 │   ├── derive_fund_one.py           # Phase 4
 │   ├── apply_reconciliations.py     # Phase 6
 │   ├── dedupe_proposers.py          # Phase 6
-│   └── consolidate.py               # Phase 6
+│   ├── consolidate.py               # Phase 6
+│   └── onchain_treasury_withdrawals.py
 ├── validators/
 │   └── validate_against_schema.py
-└── tests/                           # 84 tests
+└── tests/
 ```
 
 ## Current status (Phase 6)
@@ -42,14 +44,16 @@ etl/
 - `fetchers/projectcatalyst_funds.py` + `parsers/iohk_pdf.py` (Phase 2).
 - `fetchers/milestones_scraper.py` (Phase 3, Supabase REST).
 - `fetchers/ideascale_wayback.py` (Phase 4, Wayback CDX + snapshot fetch).
+- `fetchers/koios_governance.py` for on-chain `TreasuryWithdrawals` actions.
 - `normalizers/unify_proposals.py` (Phase 1).
 - `normalizers/reconcile_winners.py` (Phase 2).
 - `normalizers/derive_milestones.py` (Phase 3).
 - `normalizers/derive_fund_one.py` (Phase 4, BS4-parsed IdeaScale snapshots).
+- `normalizers/onchain_treasury_withdrawals.py`.
 - `validators/validate_against_schema.py` covers `proposals`, `proposers`, `milestones`, and `_reconciliation`.
-- **84 unit tests** across the suite.
+- Unit tests across the suite.
 
-**Still stubbed:** none. All four fetchers and all consolidation normalizers are real.
+**Still stubbed:** none. All fetchers and all consolidation normalizers are real.
 
 ## Setup
 
@@ -138,8 +142,21 @@ python -m normalizers.derive_milestones
 
 ```bash
 pip install -r requirements-dev.txt
-python -m pytest                                  # 84 passed
+python -m pytest
 python -m mypy fetchers normalizers parsers validators
+```
+
+## On-chain Cardano Treasury Withdrawals
+
+Koios exposes Conway-era governance proposals, including `TreasuryWithdrawals`
+actions. These rows are the on-chain treasury withdrawal proposals themselves;
+they can overlap with Treasury Fund 1 and should be reconciled before totals are
+combined.
+
+```bash
+python -m fetchers.koios_governance --force
+python -m normalizers.onchain_treasury_withdrawals
+cat ../data/historical/cardano-treasury-withdrawals/_meta.json
 ```
 
 ## Phase 4 — Fund 1 Wayback recovery

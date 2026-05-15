@@ -14,6 +14,8 @@ data/
 │   └── lidonation/
 │       ├── fund-titles.json             # fund UUID -> title map
 │       └── page-NNNN.json.gz            # one v1 paginator response per page
+│   ├── koios_governance/
+│   │   └── treasury-withdrawal-proposals.json # raw Koios governance actions
 │   └── sundae_treasury/
 │       └── treasury-fund-01-projects.json # raw Sundae GraphQL capture
 ├── funds/
@@ -36,6 +38,9 @@ data/
 │   ├── all_milestones.csv          # F9-F14 where available in interim data
 │   └── schema.md                   # tabular schema explanation
 ├── historical/
+│   ├── cardano-treasury-withdrawals/
+│   │   ├── withdrawals.json         # on-chain TreasuryWithdrawals governance actions
+│   │   └── _meta.json              # source and normalization metadata
 │   └── treasury-fund-01/
 │       ├── projects.json           # Sundae Treasury projects/contracts
 │       ├── vendors.json            # report-ready vendor rollups
@@ -57,6 +62,18 @@ For reports, join `treasury-fund-01/vendors.json` to current proposers by
 normalized vendor/proposer name and, where present, by stake-address-like vendor
 labels. Treat `total_contract_ada` as contracted/allocated value; milestone
 status fields distinguish `Matured`, `Active`, `Paused`, and `Withdrawn` amounts.
+
+`data/historical/cardano-treasury-withdrawals/` is a separate on-chain dataset
+captured from Koios governance proposal data. It contains Conway-era
+`TreasuryWithdrawals` governance actions, including withdrawal stake addresses,
+requested lovelace/ADA amounts, proposal metadata, and ratification/enactment
+status epochs. Treat this as authoritative for the on-chain governance action
+and requested treasury withdrawal amount, not as evidence of downstream vendor
+payment or project delivery.
+
+Some on-chain withdrawals overlap with Treasury Fund 1. Join by proposal title,
+amount, receiving stake address, and governance metadata before adding totals,
+otherwise TF1 can be double-counted.
 
 ## How records are written
 

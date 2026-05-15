@@ -1,0 +1,21 @@
+{
+  "dataset": "cardano-treasury-withdrawals",
+  "fetched_at": "2026-05-15T13:36:32Z",
+  "normalized_at": "2026-05-15T13:36:44Z",
+  "notes": [
+    "Rows are Conway-era on-chain governance actions of type TreasuryWithdrawals.",
+    "This includes withdrawals that may overlap with TF1 and withdrawals outside Intersect budget processes.",
+    "Amounts are requested withdrawal amounts from the governance proposal, not downstream vendor disbursements."
+  ],
+  "raw_provenance_path": "_raw/koios_governance/treasury-withdrawal-proposals.json",
+  "records": 72,
+  "source": "koios_governance_api",
+  "source_url": "https://api.koios.rest/api/v1/proposal_list",
+  "status_counts": {
+    "active": 20,
+    "enacted": 44,
+    "expired": 8
+  },
+  "total_withdrawal_ada": 729639959.0,
+  "total_withdrawal_lovelace": 729639959000000
+}
