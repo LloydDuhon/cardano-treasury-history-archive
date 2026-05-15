@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/lloydduhon/catalyst-history-archive/schemas/proposal.schema.json",
+  "$id": "https://github.com/lloydduhon/cardano-treasury-history-archive/schemas/proposal.schema.json",
   "title": "Catalyst Proposal",
   "description": "A single proposal submitted to Project Catalyst, normalized across all funds (F1-F15) and all source systems (Lidonation, IOG voting-results, Catalyst Voices, IdeaScale/Wayback).",
   "type": "object",

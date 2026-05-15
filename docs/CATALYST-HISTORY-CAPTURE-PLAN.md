@@ -191,7 +191,7 @@ Design principles honored:
 **Phase 1 — Lidonation ingestion (weeks 1–2)** — **biggest single ROI**
 - Implement `fetchers/lidonation_api.py` (legacy endpoint implemented 2026-05-13;
   migrated to documented v1 endpoint 2026-05-14).
-- Polite client: 1.5 req/sec default, exponential backoff on 429/5xx, identifiable `User-Agent: catalyst-history-archive/0.1 (+https://github.com/lloydduhon/catalyst-history-archive)`.
+- Polite client: 1.5 req/sec default, exponential backoff on 429/5xx, identifiable `User-Agent: cardano-treasury-history-archive/0.1 (+https://github.com/lloydduhon/cardano-treasury-history-archive)`.
 - Endpoints consumed after Darlington pointed us to the current docs:
   `/api/v1/funds` and `/api/v1/proposals?page=&per_page=60&include=campaign,fund,team`.
 - Cache raw page JSON CENTRALLY at `data/_raw/lidonation/page-NNNN.json.gz`.
@@ -256,7 +256,7 @@ Design principles honored:
 
 These will shape Phase 0 directly. None block the research summary, but I want your call on each:
 
-1. **Repo home.** Personal `lloydduhon/catalyst-history-archive`, the `mellod` org, or a new neutral org like `cardano-catalyst-archive`?
+1. **Repo home.** Personal `lloydduhon/cardano-treasury-history-archive`, the `mellod` org, or a new neutral org like `cardano-catalyst-archive`?
 2. **License model.** MIT (code) + CC-BY-4.0 (data) is my recommendation. Alternative: CC0 (no attribution required) if you'd prefer the data be maximally reusable.
 3. **Lidonation outreach.** Should I draft an email to Lidonation announcing the project and asking for rate-limit guidance before Phase 1?
 4. **Catalyst Voices.** Should I email the Catalyst engineering team (`contact@projectcatalyst.io`) to ask for a working `cat-gateway` endpoint, or just wait for it to stabilize publicly?

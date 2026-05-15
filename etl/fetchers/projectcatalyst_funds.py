@@ -53,7 +53,8 @@ from fetchers.lidonation_api import JsonLogFormatter
 
 BASE_URL = "https://projectcatalyst.io"
 DEFAULT_USER_AGENT = (
-    "catalyst-history-archive/0.1 " "(+https://github.com/lloydduhon/catalyst-history-archive)"
+    "cardano-treasury-history-archive/0.1 "
+    "(+https://github.com/lloydduhon/cardano-treasury-history-archive)"
 )
 DEFAULT_RPS = 2.0
 DEFAULT_TIMEOUT = httpx.Timeout(connect=10.0, read=60.0, write=10.0, pool=10.0)

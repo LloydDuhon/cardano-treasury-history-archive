@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/lloydduhon/catalyst-history-archive/schemas/milestone.schema.json",
+  "$id": "https://github.com/lloydduhon/cardano-treasury-history-archive/schemas/milestone.schema.json",
   "title": "Catalyst Milestone",
   "description": "A single milestone in a funded Project Catalyst proposal. Authoritative for Fund 10+ (Milestone Module mandatory). Partial coverage for Fund 9 (pilot, large projects). Not applicable for Funds 1-8.",
   "type": "object",

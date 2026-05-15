@@ -31,9 +31,7 @@ from tenacity import (
 
 API_BASE = "https://2025budget.intersectmbo.org/api/v0"
 DEFAULT_BALLOT_NAME = "2025 Cardano Budget Reconciliation"
-DEFAULT_USER_AGENT = (
-    "catalyst-history-archive/0.1 (+https://github.com/lloydduhon/catalyst-history-archive)"
-)
+DEFAULT_USER_AGENT = "cardano-treasury-history-archive/0.1 (+https://github.com/lloydduhon/cardano-treasury-history-archive)"
 DEFAULT_TIMEOUT = httpx.Timeout(connect=10.0, read=60.0, write=10.0, pool=10.0)
 
 REPO_ROOT = Path(__file__).resolve().parents[2]

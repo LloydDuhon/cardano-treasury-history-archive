@@ -76,7 +76,8 @@ DEFAULT_SUPABASE_ANON_KEY = (
     "ecs2bfAZzT0KwdsqrkAMpPWf0K1_pRvV1_4vK1_lCzI"
 )
 DEFAULT_USER_AGENT = (
-    "catalyst-history-archive/0.1 " "(+https://github.com/lloydduhon/catalyst-history-archive)"
+    "cardano-treasury-history-archive/0.1 "
+    "(+https://github.com/lloydduhon/cardano-treasury-history-archive)"
 )
 DEFAULT_RPS = 1.0
 DEFAULT_TIMEOUT = httpx.Timeout(connect=10.0, read=60.0, write=10.0, pool=10.0)

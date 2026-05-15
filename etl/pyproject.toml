@@ -1,7 +1,7 @@
 [project]
 name = "catalyst-history-etl"
 version = "0.1.0"
-description = "ETL pipeline for the catalyst-history-archive dataset"
+description = "ETL pipeline for the Cardano treasury history archive dataset"
 readme = "README.md"
 requires-python = ">=3.12"
 license = { file = "../LICENSE-CODE" }

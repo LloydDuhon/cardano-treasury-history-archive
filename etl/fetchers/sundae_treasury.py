@@ -37,9 +37,7 @@ from tenacity import (
 
 API_BASE = "https://api.treasury.sundae.fi/graphql"
 TREASURY_FUND_1_INSTANCE_ID = "9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619"
-DEFAULT_USER_AGENT = (
-    "catalyst-history-archive/0.1 (+https://github.com/lloydduhon/catalyst-history-archive)"
-)
+DEFAULT_USER_AGENT = "cardano-treasury-history-archive/0.1 (+https://github.com/lloydduhon/cardano-treasury-history-archive)"
 DEFAULT_TIMEOUT = httpx.Timeout(connect=10.0, read=60.0, write=10.0, pool=10.0)
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
