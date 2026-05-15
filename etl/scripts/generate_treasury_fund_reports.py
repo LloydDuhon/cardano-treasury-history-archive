@@ -19,6 +19,8 @@ Outputs:
     reports/treasury-fund-2/identity-bridge-2025.md
     reports/treasury-fund-2/tf1-ekklesia-reconciliation.csv
     reports/treasury-fund-2/tf1-ekklesia-reconciliation.md
+    reports/treasury-fund-2/onchain-treasury-reconciliation.csv
+    reports/treasury-fund-2/onchain-treasury-reconciliation.md
     reports/treasury-fund-2/_summary.json
 """
 
@@ -87,6 +89,35 @@ NAME_STOPWORDS = STOPWORDS | {
     "labs",
     "ltd",
     "network",
+}
+FUNDING_MATCH_STOPWORDS = STOPWORDS | {
+    "ada",
+    "administered",
+    "amount",
+    "budget",
+    "calls",
+    "committee",
+    "fund",
+    "funds",
+    "gatherings",
+    "core",
+    "critical",
+    "enhancement",
+    "intersect",
+    "loan",
+    "local",
+    "maintenance",
+    "requested",
+    "service",
+    "services",
+    "sustaining",
+    "tool",
+    "tooling",
+    "tools",
+    "treasury",
+    "withdraw",
+    "withdrawal",
+    "workshops",
 }
 
 
@@ -191,6 +222,28 @@ class TF1ReconciliationRecord:
     source_url: str
 
 
+@dataclass(frozen=True)
+class OnchainTreasuryReconciliationRecord:
+    onchain_proposal_id: str
+    onchain_title: str
+    onchain_status: str
+    onchain_total_withdrawal_ada: float
+    onchain_withdrawal_count: int
+    proposed_epoch: str
+    enacted_epoch: str
+    meta_url: str
+    tf1_overlap: str
+    tf1_project_ids: str
+    tf1_titles: str
+    tf1_statuses: str
+    tf1_total_contract_ada: float
+    amount_delta_ada: float
+    match_confidence: str
+    match_score: float
+    match_basis: str
+    counting_guidance: str
+
+
 def _utcnow_iso() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")  # noqa: UP017
 
@@ -287,6 +340,40 @@ def _text_similarity(left: str, right: str) -> float:
     if len(normalized_right) > 8 and normalized_right in normalized_left:
         containment = 0.95
     return max(seq, containment, _token_jaccard(left, right))
+
+
+def _funding_match_text(value: str | None) -> str:
+    text = (value or "").casefold()
+    text = text.replace("&", " and ")
+    text = re.sub(r"₳?\s*\d[\d,]*(?:\.\d+)?\s*(?:ada|m)?", " ", text)
+    text = re.sub(r"\b20\d{2}\b", " ", text)
+    text = re.sub(r"\(\s*\d+\s*of\s*\d+\s*\)|\(\s*\d+of\d+\s*\)", " ", text)
+    text = re.sub(
+        r"\b(llc|ltd|limited|gmbh|inc|company|corp|corporation|fz|sa)\b",
+        " ",
+        text,
+    )
+    tokens = re.findall(r"[a-z0-9][a-z0-9-]{1,}", text)
+    return " ".join(
+        token for token in tokens if token not in FUNDING_MATCH_STOPWORDS and len(token) > 2
+    )
+
+
+def _funding_text_similarity(left: str, right: str) -> float:
+    normalized_left = _funding_match_text(left)
+    normalized_right = _funding_match_text(right)
+    if not normalized_left or not normalized_right:
+        return 0.0
+    seq = SequenceMatcher(None, normalized_left, normalized_right).ratio()
+    left_tokens = set(normalized_left.split())
+    right_tokens = set(normalized_right.split())
+    jaccard = len(left_tokens & right_tokens) / len(left_tokens | right_tokens)
+    containment = 0.0
+    if len(normalized_left) >= 5 and normalized_left in normalized_right:
+        containment = 0.95
+    if len(normalized_right) >= 5 and normalized_right in normalized_left:
+        containment = 0.95
+    return max(seq, jaccard, containment)
 
 
 def _meaningful_name_tokens(value: str) -> set[str]:
@@ -543,7 +630,36 @@ def _tf1_title_variants(project: dict[str, Any]) -> list[str]:
         stripped = re.sub(rf"^{re.escape(vendor)}\s*[-:]\s*", "", title, flags=re.IGNORECASE)
         if stripped and stripped != title:
             variants.append(stripped)
-    variants.append(re.sub(r"\(\d+\s*of\s*\d+\)", "", title, flags=re.IGNORECASE))
+
+    comma_part_whitelist = {
+        "dolos",
+        "eternl",
+        "gerolamo",
+        "nftcdn",
+        "opshin",
+        "pallas",
+        "plutarch",
+        "pycardano",
+        "scalus",
+        "zkfold",
+    }
+
+    def add_comma_parts(value: str) -> None:
+        for part in value.split(","):
+            part = part.strip()
+            normalized = _funding_match_text(part)
+            tokens = normalized.split()
+            if len(tokens) >= 2 or normalized in comma_part_whitelist:
+                variants.append(part)
+
+    if " - " in title:
+        right_side = title.split(" - ", 1)[1]
+        variants.append(right_side)
+        add_comma_parts(right_side)
+    add_comma_parts(title)
+    variants.append(
+        re.sub(r"\(\s*\d+\s*of\s*\d+\s*\)|\(\s*\d+of\d+\s*\)", "", title, flags=re.IGNORECASE)
+    )
     return [variant.strip() for variant in variants if variant.strip()]
 
 
@@ -585,6 +701,69 @@ def _tf1_budget_2025_score(
         )
     basis = f"title={title_score:.2f}; amount={amount_score:.2f}; " f"owner={owner_score:.2f}"
     return combined, basis
+
+
+def _onchain_match_parts(withdrawal: dict[str, Any]) -> list[str]:
+    title = str(withdrawal.get("title") or "")
+    abstract = str(withdrawal.get("abstract") or "")
+    rationale = str(withdrawal.get("rationale") or "")
+    motivation = str(withdrawal.get("motivation") or "")
+    bold_titles = re.findall(r"\*\*([^*]{4,180})\*\*", "\n".join([abstract, rationale]))
+    parts = [
+        title,
+        *bold_titles[:6],
+        abstract[:450],
+        rationale[:300],
+        motivation[:250],
+    ]
+    return [part for part in parts if part]
+
+
+def _tf1_onchain_score(
+    project: dict[str, Any],
+    withdrawal: dict[str, Any],
+) -> tuple[float, str, str, float, float]:
+    onchain_parts = _onchain_match_parts(withdrawal)
+    onchain_title = str(withdrawal.get("title") or "")
+    direct_title_score = max(
+        (
+            _funding_text_similarity(variant, onchain_title)
+            for variant in _tf1_title_variants(project)
+        ),
+        default=0.0,
+    )
+    title_score = max(
+        (
+            _funding_text_similarity(variant, part)
+            for variant in _tf1_title_variants(project)
+            for part in onchain_parts
+        ),
+        default=0.0,
+    )
+    amount_score = _amount_similarity(
+        float(project.get("total_contract_ada") or 0),
+        float(withdrawal.get("total_withdrawal_ada") or 0),
+    )
+    onchain_total = float(withdrawal.get("total_withdrawal_ada") or 0)
+    score = max(title_score, (title_score * 0.85) + (amount_score * 0.15))
+    if onchain_total < 1_000:
+        confidence = "low"
+    elif direct_title_score >= 0.86 and amount_score >= 0.03:
+        confidence = "high"
+    elif title_score >= 0.86 and amount_score >= 0.90:
+        confidence = "high"
+    elif title_score >= 0.86 and amount_score >= 0.05:
+        confidence = "high"
+    elif direct_title_score >= 0.55 and amount_score >= 0.20:
+        confidence = "medium"
+    elif title_score >= 0.55 and amount_score >= 0.90:
+        confidence = "medium"
+    else:
+        confidence = "low"
+    basis = (
+        f"title={title_score:.2f}; direct_title={direct_title_score:.2f}; amount={amount_score:.2f}"
+    )
+    return score, confidence, basis, amount_score, direct_title_score
 
 
 def _tf1_reconciliation_identity_values(record: TF1ReconciliationRecord) -> list[str]:
@@ -715,6 +894,98 @@ def _make_tf1_reconciliation(
             )
         )
     records.sort(key=lambda r: (_normalize_name(r.tf1_title), -r.match_score))
+    return records
+
+
+def _make_onchain_treasury_reconciliation(
+    tf1_projects: Sequence[dict[str, Any]],
+    onchain_withdrawals: Sequence[dict[str, Any]],
+) -> list[OnchainTreasuryReconciliationRecord]:
+    matched_by_onchain: dict[str, list[tuple[dict[str, Any], float, str, str]]] = defaultdict(list)
+    possible_tf1_withdrawals = [
+        withdrawal
+        for withdrawal in onchain_withdrawals
+        if int(withdrawal.get("proposed_epoch") or 0) <= 590
+    ]
+    for project in tf1_projects:
+        candidates: list[tuple[float, str, str, float, float, dict[str, Any]]] = []
+        for withdrawal in possible_tf1_withdrawals:
+            score, confidence, basis, amount_score, direct_title_score = _tf1_onchain_score(
+                project, withdrawal
+            )
+            if confidence != "low":
+                candidates.append(
+                    (score, confidence, basis, amount_score, direct_title_score, withdrawal)
+                )
+        if not candidates:
+            continue
+        if any(direct_title_score >= 0.86 for _, _, _, _, direct_title_score, _ in candidates):
+            candidates = [candidate for candidate in candidates if candidate[4] >= 0.86]
+        if any(amount_score >= 0.90 for _, _, _, amount_score, _, _ in candidates):
+            candidates = [candidate for candidate in candidates if candidate[3] >= 0.90]
+        best_score = max(score for score, *_ in candidates)
+        for score, confidence, basis, _, _, withdrawal in candidates:
+            if score < best_score - 0.02:
+                continue
+            onchain_id = str(
+                withdrawal.get("withdrawal_action_id") or withdrawal.get("proposal_id") or ""
+            )
+            matched_by_onchain[onchain_id].append((project, score, confidence, basis))
+
+    records: list[OnchainTreasuryReconciliationRecord] = []
+    for withdrawal in onchain_withdrawals:
+        onchain_id = str(
+            withdrawal.get("withdrawal_action_id") or withdrawal.get("proposal_id") or ""
+        )
+        matches = matched_by_onchain.get(onchain_id, [])
+        if any(confidence == "high" for _, _, confidence, _ in matches):
+            matches = [match for match in matches if match[2] == "high"]
+        tf1_total = sum(float(project.get("total_contract_ada") or 0) for project, *_ in matches)
+        onchain_total = float(withdrawal.get("total_withdrawal_ada") or 0)
+        if matches:
+            confidences = [confidence for _, _, confidence, _ in matches]
+            confidence = "medium" if "medium" in confidences else "high"
+            score = min(score for _, score, _, _ in matches)
+            guidance = (
+                "TF1 overlap: use the on-chain row as the treasury action and TF1 rows for "
+                "contract/milestone detail; do not add these amounts together."
+            )
+        else:
+            confidence = "none"
+            score = 0.0
+            guidance = (
+                "No TF1 overlap found in this archive; treat as an independent on-chain "
+                "treasury withdrawal candidate unless another source reconciles it."
+            )
+        records.append(
+            OnchainTreasuryReconciliationRecord(
+                onchain_proposal_id=str(withdrawal.get("proposal_id") or onchain_id),
+                onchain_title=str(withdrawal.get("title") or ""),
+                onchain_status=str(withdrawal.get("status") or ""),
+                onchain_total_withdrawal_ada=onchain_total,
+                onchain_withdrawal_count=int(withdrawal.get("withdrawal_count") or 0),
+                proposed_epoch=str(withdrawal.get("proposed_epoch") or ""),
+                enacted_epoch=str(withdrawal.get("enacted_epoch") or ""),
+                meta_url=str(withdrawal.get("meta_url") or ""),
+                tf1_overlap="yes" if matches else "no",
+                tf1_project_ids="; ".join(
+                    str(project.get("project_id") or "") for project, *_ in matches
+                ),
+                tf1_titles="; ".join(str(project.get("title") or "") for project, *_ in matches),
+                tf1_statuses="; ".join(str(project.get("status") or "") for project, *_ in matches),
+                tf1_total_contract_ada=tf1_total,
+                amount_delta_ada=onchain_total - tf1_total,
+                match_confidence=confidence,
+                match_score=score,
+                match_basis="; ".join(
+                    f"{project.get('project_id')}: {basis}" for project, _, _, basis in matches
+                ),
+                counting_guidance=guidance,
+            )
+        )
+    records.sort(
+        key=lambda r: (r.tf1_overlap != "yes", r.onchain_status, r.onchain_title.casefold())
+    )
     return records
 
 
@@ -1088,6 +1359,7 @@ def _write_csv(
         | Sequence[SimilarityRecord]
         | Sequence[IdentityBridgeRecord]
         | Sequence[TF1ReconciliationRecord]
+        | Sequence[OnchainTreasuryReconciliationRecord]
     ),
 ) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -1410,6 +1682,92 @@ def _write_tf1_reconciliation_md(
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
+def _write_onchain_treasury_reconciliation_md(
+    path: Path,
+    *,
+    records: Sequence[OnchainTreasuryReconciliationRecord],
+    onchain_fetched_at: str,
+) -> None:
+    overlap = [record for record in records if record.tf1_overlap == "yes"]
+    independent = [record for record in records if record.tf1_overlap == "no"]
+    high = sum(1 for record in overlap if record.match_confidence == "high")
+    medium = sum(1 for record in overlap if record.match_confidence == "medium")
+    matched_tf1_ids = {
+        project_id
+        for record in overlap
+        for project_id in record.tf1_project_ids.split("; ")
+        if project_id
+    }
+    lines = [
+        "# On-chain Treasury Withdrawal Reconciliation",
+        "",
+        f"Generated: {_utcnow_iso()}",
+        f"Koios TreasuryWithdrawals snapshot: {onchain_fetched_at or 'not available'}",
+        "",
+        "Purpose: identify which Cardano on-chain TreasuryWithdrawals governance actions "
+        "overlap with Treasury Fund 1 records, so viewers can use the on-chain source "
+        "without double-counting TF1 contract amounts.",
+        "",
+        "Counting policy: when an on-chain withdrawal overlaps TF1, count the on-chain "
+        "row as the treasury action and use TF1 for contract and milestone details. Do "
+        "not add the TF1 contract amount to the on-chain withdrawal amount. A negative "
+        "amount delta usually means one TF1 contract is split across multiple on-chain "
+        "withdrawal actions.",
+        "",
+        "## Summary",
+        "",
+        f"- On-chain TreasuryWithdrawals analyzed: {len(records)}",
+        f"- On-chain withdrawals with TF1 overlap: {len(overlap)}",
+        f"- On-chain withdrawals without TF1 overlap: {len(independent)}",
+        f"- TF1 projects matched to on-chain withdrawals: {len(matched_tf1_ids)}",
+        f"- High-confidence overlap rows: {high}",
+        f"- Medium-confidence overlap rows: {medium}",
+        "",
+        "## Overlaps With Treasury Fund 1",
+        "",
+    ]
+    for record in overlap:
+        lines.extend(
+            [
+                f"### {record.onchain_title}",
+                "",
+                f"- On-chain status: {record.onchain_status}",
+                f"- On-chain withdrawal amount: {record.onchain_total_withdrawal_ada:,.2f} ADA",
+                f"- On-chain proposal id: {record.onchain_proposal_id}",
+                f"- Proposed/enacted epochs: {record.proposed_epoch or 'not captured'} / "
+                f"{record.enacted_epoch or 'not enacted'}",
+                f"- TF1 project ids: {record.tf1_project_ids}",
+                f"- TF1 titles: {record.tf1_titles}",
+                f"- TF1 statuses: {record.tf1_statuses}",
+                f"- TF1 contract total: {record.tf1_total_contract_ada:,.2f} ADA",
+                f"- Amount delta (on-chain minus TF1): {record.amount_delta_ada:,.2f} ADA",
+                f"- Match: {record.match_confidence} ({record.match_score:.2f})",
+                f"- Basis: {record.match_basis}",
+                f"- Counting guidance: {record.counting_guidance}",
+                f"- Metadata: {record.meta_url or 'not captured'}",
+                "",
+            ]
+        )
+    lines.extend(["## No TF1 Overlap Found", ""])
+    for record in independent:
+        lines.extend(
+            [
+                f"### {record.onchain_title}",
+                "",
+                f"- On-chain status: {record.onchain_status}",
+                f"- On-chain withdrawal amount: {record.onchain_total_withdrawal_ada:,.2f} ADA",
+                f"- On-chain proposal id: {record.onchain_proposal_id}",
+                f"- Proposed/enacted epochs: {record.proposed_epoch or 'not captured'} / "
+                f"{record.enacted_epoch or 'not enacted'}",
+                f"- Counting guidance: {record.counting_guidance}",
+                f"- Metadata: {record.meta_url or 'not captured'}",
+                "",
+            ]
+        )
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
 def generate_reports(
     *,
     data_root: Path,
@@ -1429,6 +1787,13 @@ def generate_reports(
     tf1_vendors = _read_json_records(tf1_root / "vendors.json")
     tf1_milestones = _read_json_records(tf1_root / "milestones.json")
     tf1_reconciliation_records = _make_tf1_reconciliation(tf1_projects, budget_2025_proposals)
+    onchain_root = data_root / "historical" / "cardano-treasury-withdrawals"
+    onchain_withdrawals = _read_json_records(onchain_root / "withdrawals.json")
+    onchain_meta = _read_json_dict(onchain_root / "_meta.json")
+    onchain_reconciliation_records = _make_onchain_treasury_reconciliation(
+        tf1_projects,
+        onchain_withdrawals,
+    )
 
     history_records = _make_history(
         current,
@@ -1456,6 +1821,10 @@ def generate_reports(
     _write_csv(report_root / "scope-similarity.csv", similarity_records)
     _write_csv(report_root / "identity-bridge-2025.csv", identity_bridge_records)
     _write_csv(report_root / "tf1-ekklesia-reconciliation.csv", tf1_reconciliation_records)
+    _write_csv(
+        report_root / "onchain-treasury-reconciliation.csv",
+        onchain_reconciliation_records,
+    )
     _write_history_md(
         report_root / "proposer-history.md",
         records=history_records,
@@ -1481,6 +1850,11 @@ def generate_reports(
         tf1_projects=tf1_projects,
         budget_2025_fetched_at=budget_2025_fetched_at,
     )
+    _write_onchain_treasury_reconciliation_md(
+        report_root / "onchain-treasury-reconciliation.md",
+        records=onchain_reconciliation_records,
+        onchain_fetched_at=str(onchain_meta.get("fetched_at") or ""),
+    )
     summary: dict[str, object] = {
         "generated_at": _utcnow_iso(),
         "current_snapshot": str(current_snapshot.relative_to(REPO_ROOT)),
@@ -1502,6 +1876,22 @@ def generate_reports(
         ),
         "tf1_ekklesia_reconciliation_low_confidence": sum(
             1 for record in tf1_reconciliation_records if record.match_confidence == "low"
+        ),
+        "onchain_treasury_withdrawals": len(onchain_withdrawals),
+        "onchain_treasury_reconciliation_records": len(onchain_reconciliation_records),
+        "onchain_treasury_reconciliation_tf1_overlap_actions": sum(
+            1 for record in onchain_reconciliation_records if record.tf1_overlap == "yes"
+        ),
+        "onchain_treasury_reconciliation_independent_actions": sum(
+            1 for record in onchain_reconciliation_records if record.tf1_overlap == "no"
+        ),
+        "onchain_treasury_reconciliation_tf1_projects": len(
+            {
+                project_id
+                for record in onchain_reconciliation_records
+                for project_id in record.tf1_project_ids.split("; ")
+                if project_id
+            }
         ),
         "similarity_records": len(similarity_records),
         "similarity_min_threshold": min_similarity,
