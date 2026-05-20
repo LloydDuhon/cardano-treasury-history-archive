@@ -664,7 +664,7 @@ def _retrieve_candidates(
         prelim: list[tuple[float, int, float, float]] = []
         current_terms = current_key_terms[current_idx]
         current_token_set = current_tokens[current_idx]
-        for candidate_idx, candidate in enumerate(historical):
+        for candidate_idx, _candidate in enumerate(historical):
             body_similarity = _cosine(
                 current_vectors[current_idx],
                 historical_vectors[candidate_idx],
@@ -936,7 +936,9 @@ def _validate_ai_payload(payload: dict[str, Any]) -> dict[str, Any]:
         "generic_domain",
         "no_match",
     }:
-        payload["overlap_type"] = "no_match" if payload["work_overlap_percent"] == 0 else "adjacent_related"
+        payload["overlap_type"] = (
+            "no_match" if payload["work_overlap_percent"] == 0 else "adjacent_related"
+        )
     if payload["previously_funded_relevance"] not in {
         "none",
         "partial",
@@ -1005,7 +1007,7 @@ def _extract_response_json(payload: dict[str, Any]) -> dict[str, Any]:
 
 
 def _review_candidate_with_openai(
-    client: Any,
+    client: Any,  # noqa: ANN401
     *,
     api_key: str,
     model: str,
@@ -1087,7 +1089,12 @@ class _StdlibHttpClient:
         request_headers = dict(headers or {})
         request_headers.setdefault("Content-Type", "application/json")
         data = None if json is None else __import__("json").dumps(json).encode("utf-8")
-        request = urllib.request.Request(url, data=data, headers=request_headers, method="POST")
+        request = urllib.request.Request(  # noqa: S310
+            url,
+            data=data,
+            headers=request_headers,
+            method="POST",
+        )
         try:
             with urllib.request.urlopen(request, timeout=timeout) as response:  # noqa: S310
                 return _StdlibResponse(response.status, response.read())
@@ -1098,7 +1105,7 @@ class _StdlibHttpClient:
         return None
 
 
-def _new_http_client() -> Any:
+def _new_http_client() -> Any:  # noqa: ANN401
     try:
         import httpx
     except ImportError:
@@ -1107,7 +1114,7 @@ def _new_http_client() -> Any:
 
 
 def _review_candidate_with_ollama(
-    client: Any,
+    client: Any,  # noqa: ANN401
     *,
     base_url: str,
     model: str,
@@ -1367,7 +1374,8 @@ def _write_markdown(
         "",
         f"Generated: {_utcnow_iso()}",
         f"Mode: {mode_label}",
-        f"AI model: {model if not retrieval_only and not existing_ai_only else 'mixed or not used'}",
+        "AI model: "
+        f"{model if not retrieval_only and not existing_ai_only else 'mixed or not used'}",
         f"Retrieval shortlist depth: top {top_k} historical candidates per current proposal",
         "",
         "Purpose: screen the 69 current TF2 proposals for historically similar Catalyst, "
