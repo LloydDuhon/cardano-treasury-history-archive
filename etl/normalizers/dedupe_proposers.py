@@ -112,7 +112,7 @@ def _iter_proposals(data_root: Path) -> Iterator[tuple[int, dict[str, Any]]]:
         prop_path = fund_dir / "proposals.json"
         if not prop_path.exists():
             continue
-        proposals: list[dict[str, Any]] = json.loads(prop_path.read_text())
+        proposals: list[dict[str, Any]] = json.loads(prop_path.read_text(encoding="utf-8"))
         for p in proposals:
             yield fund_n, p
 

@@ -11,11 +11,13 @@ explicit `AI Matched` or `Human Reviewed` provenance.
 
 ```bash
 cd site
+npm ci
+npm run build
 python3 -m http.server 8000
 ```
 
 Open `http://localhost:8000`. The page must be served over HTTP because the
-browser loads the JSX files and `data.js` as separate resources.
+browser fetches `data.json` before loading the compiled application bundle.
 
 ## Refresh Data
 
@@ -27,10 +29,9 @@ python3 etl/scripts/generate_treasury_dashboard_data.py --repo-root . --out site
 
 The generated payloads are:
 
-- `site/data.js` for the browser
-- `site/data.json` for inspection and downstream reuse
+- `site/data.json` for the browser and downstream reuse
 
 ## Deployment
 
-`.github/workflows/pages.yml` publishes the `site/` directory to GitHub Pages
-on pushes to `main` that touch the viewer.
+`.github/workflows/pages.yml` builds `site/bundle.js` with esbuild and publishes
+the `site/` directory to GitHub Pages on pushes to `main` that touch the viewer.

@@ -177,7 +177,11 @@ class SundaeTreasuryClient:
         }
         if config.contact_email:
             headers["From"] = config.contact_email
-        self._client = httpx.Client(headers=headers, timeout=DEFAULT_TIMEOUT, follow_redirects=True)
+        self._client = httpx.Client(
+            headers=headers,
+            timeout=DEFAULT_TIMEOUT,
+            follow_redirects=False,
+        )
 
     def __enter__(self) -> SundaeTreasuryClient:
         return self

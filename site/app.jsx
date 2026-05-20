@@ -218,8 +218,8 @@ function Methodology({ onClose, meta }) {
           <h3>Snapshot</h3>
           <p style={{ fontFamily: "var(--mono)", fontSize: 12 }}>
             Generated: {meta.generated_at}<br />
-            Source: <a href={meta.snapshot_source} target="_blank" rel="noopener">{meta.snapshot_source}</a><br />
-            Archive: <a href="https://github.com/LloydDuhon/cardano-treasury-history-archive" target="_blank" rel="noopener">github.com/LloydDuhon/cardano-treasury-history-archive</a>
+            Source: <ExternalLink href={meta.snapshot_source}>{meta.snapshot_source}</ExternalLink><br />
+            Archive: <ExternalLink href="https://github.com/LloydDuhon/cardano-treasury-history-archive">github.com/LloydDuhon/cardano-treasury-history-archive</ExternalLink>
           </p>
         </div>
       </div>
@@ -302,7 +302,7 @@ function App() {
         </div>
         <div className="meta">
           <span><span className="meta-k">snapshot </span><span className="meta-v">{(DATA.meta.generated_at || "").slice(0,10)}</span></span>
-          <span><span className="meta-k">source </span><a href={DATA.meta.snapshot_source} target="_blank" rel="noopener">hydra-voting</a></span>
+          <span><span className="meta-k">source </span><ExternalLink href={DATA.meta.snapshot_source}>hydra-voting</ExternalLink></span>
         </div>
       </header>
 
@@ -449,7 +449,7 @@ function ProposalDrawer({ id, onClose, onJump, threshold }) {
             <div key={i} className="identity-block" style={{ marginBottom: 12 }}>
               <div className="identity-row"><span className="l">Company</span><span className="v">{b.company_name || "—"}</span></div>
               {b.group_name && <div className="identity-row"><span className="l">Group</span><span className="v">{b.group_name}</span></div>}
-              {b.domain && <div className="identity-row"><span className="l">Domain</span><span className="v"><a href={b.domain} target="_blank" rel="noopener">{b.domain.replace(/^https?:\/\//,'').replace(/\/$/,'')}</a></span></div>}
+              {safeHref(b.domain) && <div className="identity-row"><span className="l">Domain</span><span className="v"><ExternalLink href={b.domain}>{urlLabel(b.domain)}</ExternalLink></span></div>}
               {b.social_handles && <div className="identity-row"><span className="l">Socials</span><span className="v mono">{b.social_handles}</span></div>}
               {b.public_champion && <div className="identity-row"><span className="l">Champion</span><span className="v">{b.public_champion}</span></div>}
               <div className="identity-row"><span className="l">2025 ask</span><span className="v">₳ {fmtAda(b.budget_2025_cost_ada)} · threshold {b.threshold_reached ? "reached" : "not reached"}</span></div>
@@ -487,7 +487,7 @@ function ProposalDrawer({ id, onClose, onJump, threshold }) {
                   {o.overlap_evidence && <div className="evidence">{o.overlap_evidence}</div>}
                   {o.funding_evidence && <div className="evidence muted">{o.funding_evidence}</div>}
                 </div>
-                {o.source_url && <a href={o.source_url} target="_blank" rel="noopener" style={{ fontFamily: "var(--mono)", fontSize: 10.5, color: "var(--cardano)" }}>open ↗</a>}
+                <ExternalLink href={o.source_url} style={{ fontFamily: "var(--mono)", fontSize: 10.5, color: "var(--cardano)" }}>open ↗</ExternalLink>
               </div>
             ))}
           </div>
@@ -510,7 +510,7 @@ function ProposalDrawer({ id, onClose, onJump, threshold }) {
                   </div>
                   <div style={{ fontSize: 11, color: "var(--ink-faint)", marginTop: 3, fontStyle: "italic" }}>{s.rationale}</div>
                 </div>
-                <a href={s.source_url} target="_blank" rel="noopener" style={{ fontFamily: "var(--mono)", fontSize: 10.5, color: "var(--cardano)" }}>open ↗</a>
+                <ExternalLink href={s.source_url} style={{ fontFamily: "var(--mono)", fontSize: 10.5, color: "var(--cardano)" }}>open ↗</ExternalLink>
               </div>
             ))}
           </div>
@@ -617,7 +617,7 @@ function ProposerHistorySection({ name, compact }) {
                 {fundNumber(p.project_id) && <span>· {fundNumber(p.project_id)}</span>}
                 <span className={"status " + statusClass(p.status)}>{statusLabel(p.status)}</span>
                 <span style={{ color: "var(--ink-faint)" }}>· {p.match_confidence} match</span>
-                {p.source_url && <a href={p.source_url} target="_blank" rel="noopener" style={{ marginLeft: 4, color: "var(--cardano)" }}>↗</a>}
+                <ExternalLink href={p.source_url} style={{ marginLeft: 4, color: "var(--cardano)" }}>↗</ExternalLink>
               </div>
             </div>
             <div className="ada">

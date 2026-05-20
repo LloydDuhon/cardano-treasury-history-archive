@@ -177,6 +177,12 @@ python -m fetchers.milestones_scraper
 python -m normalizers.derive_milestones
 ```
 
+The Milestone Module fetcher uses the public Supabase anon key exposed by
+`https://milestones.projectcatalyst.io/env.js`. It is not a private credential.
+If upstream rotates it, set `MILESTONES_SUPABASE_ANON_KEY` for an immediate run
+and then update `DEFAULT_SUPABASE_ANON_KEY` in
+`etl/fetchers/milestones_scraper.py`.
+
 ## Run the test suite
 
 ```bash
@@ -266,6 +272,6 @@ python -m scripts.generate_treasury_fund_reports
 python scripts/generate_treasury_dashboard_data.py --repo-root .. --out ../site
 ```
 
-The viewer payloads are `site/data.js` and `site/data.json`. The GitHub Pages
-workflow publishes the `site/` directory directly; no frontend build step is
-required.
+The viewer payload is `site/data.json`. The GitHub Pages workflow verifies that
+this file is reproducible from the committed raw inputs, builds `site/bundle.js`
+from the checked-in JSX sources, and publishes the resulting static directory.
