@@ -3,6 +3,10 @@
 Static frontend for reviewing current Treasury Fund 2 proposals alongside prior
 Cardano funding records matched by the archive.
 
+The viewer includes graph, ledger, funding-flow, and similarity-findings tabs.
+The similarity-findings tab presents prior-work overlap triage rows with
+explicit `AI Matched` or `Human Reviewed` provenance.
+
 ## Local Preview
 
 ```bash
