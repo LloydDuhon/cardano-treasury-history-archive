@@ -4,11 +4,23 @@ updates:
     directory: "/etl"
     schedule:
       interval: "weekly"
+    groups:
+      etl-runtime:
+        patterns:
+          - "*"
   - package-ecosystem: "npm"
     directory: "/site"
     schedule:
       interval: "weekly"
+    groups:
+      site-build:
+        patterns:
+          - "*"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
+    groups:
+      github-actions:
+        patterns:
+          - "*"

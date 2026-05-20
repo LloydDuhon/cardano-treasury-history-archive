@@ -1,0 +1,39 @@
+name: Source addition
+description: Propose a new upstream source or provenance capture.
+title: "[Source]: "
+labels: ["data", "source"]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Source name and URL
+    validations:
+      required: true
+  - type: textarea
+    id: coverage
+    attributes:
+      label: Coverage
+      description: Which funds, proposals, milestones, or treasury records does this source cover?
+    validations:
+      required: true
+  - type: textarea
+    id: authority
+    attributes:
+      label: Source authority
+      description: Explain why this is primary, official, or otherwise reliable.
+    validations:
+      required: true
+  - type: textarea
+    id: access
+    attributes:
+      label: Access and rate limits
+      description: API docs, scraping constraints, authentication, or politeness concerns.
+    validations:
+      required: false
+  - type: textarea
+    id: integration
+    attributes:
+      label: Proposed integration
+      description: Fetcher, normalizer, schema, report, or documentation changes needed.
+    validations:
+      required: false

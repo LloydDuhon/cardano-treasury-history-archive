@@ -69,6 +69,19 @@ python scripts/generate_treasury_dashboard_data.py --repo-root .. --out ../site
 
 Refresh raw snapshots before relying on the reports for publication, because the Hydra Voting and budget-process sites can change.
 
+For a fuller reproducibility checklist, see `docs/REPRODUCIBILITY.md`.
+
+## Support, Security, And Governance
+
+- Use GitHub issues for data questions, source additions, bug reports, and
+  methodology support. See `SUPPORT.md`.
+- Do not report vulnerabilities in public issues. See `SECURITY.md`.
+- Governance context is via the Budget Committee:
+  https://budgetcommittee.docs.intersectmbo.org/
+- Current maintainer: Lloyd Duhon <lloyd.duhon@intersectmbo.org>. See
+  `MAINTAINERS.md` and `GOVERNANCE.md`.
+- Community participation is governed by `CODE_OF_CONDUCT.md`.
+
 ## Licensing
 
 - **Code** under `etl/`, schemas, and workflows: MIT, see `LICENSE-CODE`.

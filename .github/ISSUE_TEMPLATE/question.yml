@@ -1,0 +1,23 @@
+name: Data question or support
+description: Ask a non-security question about data, reports, methodology, or local use.
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not report vulnerabilities here. See `SECURITY.md` for private security reporting.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What are you trying to understand or do?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Relevant report, proposal id, source URL, command, or screenshot.
+    validations:
+      required: false

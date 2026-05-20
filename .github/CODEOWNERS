@@ -1,0 +1,11 @@
+# Default maintainer review.
+* @LloydDuhon
+
+# Provenance, schema, workflow, and published-site changes are high-trust areas.
+/.github/ @LloydDuhon
+/schemas/ @LloydDuhon
+/etl/ @LloydDuhon
+/data/ @LloydDuhon
+/reports/ @LloydDuhon
+/site/ @LloydDuhon
+/docs/ @LloydDuhon
