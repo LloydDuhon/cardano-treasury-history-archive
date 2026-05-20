@@ -508,11 +508,13 @@ html, body { min-height: 100vh; overflow-x: hidden; }
   flex: 1;
   min-width: 0;
   min-height: 0;
+  height: 100%;
   display: grid;
   grid-template-columns: minmax(360px, 0.95fr) minmax(420px, 1.25fr);
 }
 .findings-list {
   min-width: 0;
+  min-height: 0;
   border-right: 1px solid var(--rule);
   background: var(--paper-soft);
   display: flex;
@@ -543,8 +545,45 @@ html, body { min-height: 100vh; overflow-x: hidden; }
   text-align: right;
   white-space: nowrap;
 }
+.findings-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+}
+.segmented {
+  display: inline-flex;
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  background: var(--paper-soft);
+  overflow: hidden;
+}
+.segmented button {
+  border: 0;
+  border-right: 1px solid var(--rule);
+  background: transparent;
+  color: var(--ink-mute);
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  padding: 5px 8px;
+}
+.segmented button:last-child {
+  border-right: 0;
+}
+.segmented button:hover {
+  color: var(--ink);
+  background: var(--paper);
+}
+.segmented button.active {
+  color: var(--cardano-ink);
+  background: var(--cardano-pale);
+}
 .finding-cards {
-  overflow: auto;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding: 8px 12px 28px;
 }
 .finding-card {
@@ -612,7 +651,7 @@ html, body { min-height: 100vh; overflow-x: hidden; }
 }
 .finding-detail {
   min-width: 0;
-  overflow: auto;
+  overflow: visible;
   background: var(--paper);
   padding: 22px 26px 44px;
 }
@@ -1224,6 +1263,9 @@ html, body { min-height: 100vh; overflow-x: hidden; }
   .findings-note {
     text-align: left;
     white-space: normal;
+  }
+  .findings-controls {
+    align-items: flex-start;
   }
   .finding-detail-grid {
     grid-template-columns: 1fr;
