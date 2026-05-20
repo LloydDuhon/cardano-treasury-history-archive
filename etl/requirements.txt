@@ -2,7 +2,7 @@
 # Per mellod-infra DEVELOPMENT_STANDARDS.md: exact versions in deploy artifact.
 
 # --- Always required ---
-jsonschema==4.23.0
+jsonschema==4.26.0
 referencing==0.35.1
 rpds-py==0.20.0
 
