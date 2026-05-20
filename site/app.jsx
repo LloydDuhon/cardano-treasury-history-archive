@@ -358,6 +358,7 @@ function ProposalDrawer({ id, onClose, onJump, threshold }) {
   const m = tieMetrics(p);
   const bridge = bridgeFor(id);
   const sim = similarityFor(id);
+  const overlap = workOverlapFor(id);
   const peers = DATA.proposerProposals[p.proposer]?.proposalIds || [];
   const hi = m.priorProjects >= threshold || m.peerProposals > 1;
 
@@ -443,6 +444,40 @@ function ProposalDrawer({ id, onClose, onJump, threshold }) {
               <div className="identity-row"><span className="l">Match</span><span className="v mono">{b.match_confidence} · {b.match_score?.toFixed(2)}</span></div>
             </div>
           ))}
+        </div>
+      )}
+
+      {overlap.length > 0 && (
+        <div className="section">
+          <h3>Prior work overlap review <span className="count">{overlap.length}</span></h3>
+          <div className="method-note">
+            Candidate matches are screening results. Rows marked AI Matched require human review before final use.
+          </div>
+          <div className="history-list">
+            {overlap.map((o, i) => (
+              <div key={i} className="history-row overlap-row">
+                <div>
+                  <div className="ht">{o.historical_title}</div>
+                  <div className="hm">
+                    <span className={"src " + sourceKey(o.historical_source)}>{o.historical_source}</span>
+                    {fundNumber(o.historical_project_id) && <span>· {fundNumber(o.historical_project_id)}</span>}
+                    <span className={"status " + statusClass(o.historical_status)}>{statusLabel(o.historical_status)}</span>
+                    <span className={"review-chip " + (o.adjudication_source === "Human Reviewed" ? "human" : "ai")}>{o.adjudication_source}</span>
+                  </div>
+                  <div className="overlap-metrics">
+                    <span className={"confidence " + o.match_confidence}>{o.match_confidence}</span>
+                    <span>{o.work_overlap_percent}% overlap</span>
+                    <span>{o.overlap_type}</span>
+                    <span>funding: {o.previously_funded_relevance}</span>
+                    <span>proposer: {o.same_or_related_proposer}</span>
+                  </div>
+                  {o.overlap_evidence && <div className="evidence">{o.overlap_evidence}</div>}
+                  {o.funding_evidence && <div className="evidence muted">{o.funding_evidence}</div>}
+                </div>
+                {o.source_url && <a href={o.source_url} target="_blank" rel="noopener" style={{ fontFamily: "var(--mono)", fontSize: 10.5, color: "var(--cardano)" }}>open ↗</a>}
+              </div>
+            ))}
+          </div>
         </div>
       )}
 
