@@ -270,9 +270,7 @@ def _strip_markdown_html(value: str) -> str:
 
 def _join_text(parts: Iterable[Any]) -> str:
     values = [
-        _strip_markdown_html(str(part))
-        for part in parts
-        if part is not None and str(part).strip()
+        _strip_markdown_html(str(part)) for part in parts if part is not None and str(part).strip()
     ]
     return "\n".join(values)
 
@@ -760,10 +758,7 @@ def _candidate_key(candidate: CandidateRecord) -> tuple[str, str, str]:
 
 
 def _history_by_key(historical: Sequence[HistoricalWork]) -> dict[tuple[str, str], HistoricalWork]:
-    return {
-        (work.historical_source, work.historical_project_id): work
-        for work in historical
-    }
+    return {(work.historical_source, work.historical_project_id): work for work in historical}
 
 
 def _current_by_id(current: Sequence[CurrentWork]) -> dict[str, CurrentWork]:
@@ -1234,9 +1229,7 @@ def _review_candidates(
                 reviewed_at = ""
             elif key in existing:
                 ai_payload = {
-                    k: existing[key].get(k, "")
-                    for k in NO_AI_REVIEW
-                    if k in existing[key]
+                    k: existing[key].get(k, "") for k in NO_AI_REVIEW if k in existing[key]
                 }
                 ai_model = str(existing[key].get("ai_model") or model)
                 reviewed_at = str(existing[key].get("ai_reviewed_at") or "")
@@ -1501,21 +1494,20 @@ def generate_report(
     candidates = _retrieve_candidates(current, historical, top_k=top_k)
     if current_proposal_id:
         current = [
-            proposal for proposal in current
-            if proposal.current_proposal_id == current_proposal_id
+            proposal for proposal in current if proposal.current_proposal_id == current_proposal_id
         ]
         if not current:
             raise ValueError(f"Unknown current proposal id: {current_proposal_id}")
         candidates = [
-            candidate for candidate in candidates
+            candidate
+            for candidate in candidates
             if candidate.current_proposal_id == current_proposal_id
         ]
     else:
         current = _limit_current(current, limit_current, current_offset)
         current_ids = {proposal.current_proposal_id for proposal in current}
         candidates = [
-            candidate for candidate in candidates
-            if candidate.current_proposal_id in current_ids
+            candidate for candidate in candidates if candidate.current_proposal_id in current_ids
         ]
     report_root.mkdir(parents=True, exist_ok=True)
     candidates_csv = report_root / "work-overlap-review-candidates.csv"
