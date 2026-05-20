@@ -36,9 +36,14 @@ function buildFindingRows(proposals) {
 
 function FindingsView({ proposals, onOpenProposal }) {
   const [selectedKey, setSelectedKey] = useStateFV(null);
-  const rows = useMemoFV(() => buildFindingRows(proposals), [proposals]);
+  const [show, setShow] = useStateFV("all");
+  const allRows = useMemoFV(() => buildFindingRows(proposals), [proposals]);
+  const rows = useMemoFV(
+    () => allRows.filter(row => show === "all" || row.finding.match_confidence === show),
+    [allRows, show]
+  );
   const selected = rows.find(row => row.key === selectedKey) || rows[0] || null;
-  const counts = rows.reduce((acc, row) => {
+  const counts = allRows.reduce((acc, row) => {
     const c = row.finding.match_confidence;
     acc[c] = (acc[c] || 0) + 1;
     return acc;
@@ -51,10 +56,27 @@ function FindingsView({ proposals, onOpenProposal }) {
           <div>
             <div className="findings-title">Similarity findings</div>
             <div className="findings-sub">
-              {rows.length} findings · {counts.high || 0} high · {counts.medium || 0} medium · {counts.low || 0} low
+              {rows.length} shown · {counts.high || 0} high · {counts.medium || 0} medium
             </div>
           </div>
-          <div className="findings-note">AI Matched rows are screening results.</div>
+          <div className="findings-controls">
+            <div className="segmented" aria-label="Finding confidence filter">
+              {[
+                ["high", "High"],
+                ["medium", "Medium"],
+                ["all", "All"]
+              ].map(([value, label]) => (
+                <button
+                  key={value}
+                  className={show === value ? "active" : ""}
+                  onClick={() => setShow(value)}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+            <div className="findings-note">AI Matched rows are screening results.</div>
+          </div>
         </div>
 
         {rows.length === 0 ? (
