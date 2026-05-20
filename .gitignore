@@ -54,6 +54,8 @@ Thumbs.db
 tmp/
 scratch/
 *.tmp
+site/bundle.js
+site/node_modules/
 
 # Notebooks (allow checking in but ignore output/checkpoints)
 .ipynb_checkpoints/

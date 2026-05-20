@@ -76,3 +76,22 @@ jobs:
 
       - name: Validate dataset against schemas
         run: python etl/validators/validate_against_schema.py
+
+  verify-dashboard-data:
+    name: verify dashboard data reproducibility
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: etl/requirements.txt
+
+      - name: Regenerate dashboard data
+        run: python etl/scripts/generate_treasury_dashboard_data.py --repo-root . --out /tmp/treasury-dashboard-data
+
+      - name: Compare committed dashboard data
+        run: diff -u site/data.json /tmp/treasury-dashboard-data/data.json

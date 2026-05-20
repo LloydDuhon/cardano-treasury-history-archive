@@ -146,7 +146,7 @@ class KoiosGovernanceClient:
             base_url=API_BASE,
             headers=headers,
             timeout=DEFAULT_TIMEOUT,
-            follow_redirects=True,
+            follow_redirects=False,
         )
 
     def __enter__(self) -> KoiosGovernanceClient:

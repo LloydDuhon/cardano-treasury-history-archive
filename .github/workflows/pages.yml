@@ -31,6 +31,23 @@ jobs:
         with:
           enablement: true
 
+      - name: Regenerate dashboard data
+        run: python etl/scripts/generate_treasury_dashboard_data.py --repo-root . --out site
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: site/package-lock.json
+
+      - name: Build site bundle
+        working-directory: site
+        run: |
+          npm ci
+          npm run build
+          rm -rf node_modules
+
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:

@@ -180,7 +180,7 @@ function FindingDetail({ row, onOpenProposal }) {
 
       <div className="finding-detail-footer">
         <span>Retrieval rank {f.retrieval_rank} · score {f.retrieval_score?.toFixed?.(3) || "—"}</span>
-        {f.source_url && <a href={f.source_url} target="_blank" rel="noopener">Open source ↗</a>}
+        <ExternalLink href={f.source_url}>Open source ↗</ExternalLink>
       </div>
     </div>
   );

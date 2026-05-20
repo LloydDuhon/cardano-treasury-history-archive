@@ -113,7 +113,7 @@ def _canonicalize_name(name: object) -> str:
 
 
 def load_tf2_proposals(hydra_path: Path) -> pd.DataFrame:
-    payload: dict[str, Any] = json.loads(hydra_path.read_text())
+    payload: dict[str, Any] = json.loads(hydra_path.read_text(encoding="utf-8"))
     rows: list[dict[str, Any]] = []
     for p in payload["proposals_response"]["data"]:
         md = p.get("metaData", {})
@@ -595,7 +595,7 @@ DASHBOARD_TEMPLATE = """<!doctype html>
     <a
       href="https://github.com/LloydDuhon/cardano-treasury-history-archive"
       target="_blank"
-      rel="noopener"
+      rel="noopener noreferrer"
     >cardano-treasury-history-archive</a>
   </div>
 </header>
@@ -846,7 +846,7 @@ def render_dashboard(
         rows_html=build_dashboard_rows_html(summary),
         first_rows_html=build_first_timer_rows_html(first_timers),
     )
-    out_path.write_text(html)
+    out_path.write_text(html, encoding="utf-8")
 
 
 # ---------------------------------------------------------------------------
@@ -858,7 +858,7 @@ def main(repo_root: Path) -> None:
     paths = Paths(repo_root)
     paths.out_dir.mkdir(parents=True, exist_ok=True)
 
-    summary_json: dict[str, Any] = json.loads(paths.summary_json.read_text())
+    summary_json: dict[str, Any] = json.loads(paths.summary_json.read_text(encoding="utf-8"))
     history = load_history(paths.proposer_history_csv)
     tf2 = load_tf2_proposals(paths.hydra_json)
 
@@ -891,7 +891,7 @@ def main(repo_root: Path) -> None:
         summary=summary,
         first_timers=first_timers,
         summary_json=summary_json,
-        hydra_fetched_at=json.loads(paths.hydra_json.read_text())["fetched_at"],
+        hydra_fetched_at=json.loads(paths.hydra_json.read_text(encoding="utf-8"))["fetched_at"],
         out_path=paths.out_dir / "tf2-proposer-history-dashboard.html",
         usd_caveat=usd_caveat,
     )
@@ -921,7 +921,8 @@ def main(repo_root: Path) -> None:
         ],
     }
     (paths.out_dir / "_figures-summary.json").write_text(
-        json.dumps(figures_summary, indent=2) + "\n"
+        json.dumps(figures_summary, indent=2) + "\n",
+        encoding="utf-8",
     )
 
     print(json.dumps(figures_summary, indent=2))

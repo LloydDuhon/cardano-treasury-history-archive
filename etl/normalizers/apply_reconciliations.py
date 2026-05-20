@@ -128,8 +128,8 @@ def apply_fund(
             f"reconciliation present but proposals missing for fund {fund}: {proposals_path}"
         )
 
-    reconciliation: dict[str, Any] = json.loads(reconciliation_path.read_text())
-    proposals: list[dict[str, Any]] = json.loads(proposals_path.read_text())
+    reconciliation: dict[str, Any] = json.loads(reconciliation_path.read_text(encoding="utf-8"))
+    proposals: list[dict[str, Any]] = json.loads(proposals_path.read_text(encoding="utf-8"))
     proposals_by_id: dict[str, dict[str, Any]] = {
         p["proposal_id"]: p for p in proposals if "proposal_id" in p
     }

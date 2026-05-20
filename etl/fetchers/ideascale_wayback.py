@@ -140,7 +140,7 @@ class WaybackClient:
         self._client = httpx.Client(
             headers={"User-Agent": config.user_agent, "Accept": "*/*"},
             timeout=DEFAULT_TIMEOUT,
-            follow_redirects=True,
+            follow_redirects=False,
         )
 
     def __enter__(self) -> WaybackClient:

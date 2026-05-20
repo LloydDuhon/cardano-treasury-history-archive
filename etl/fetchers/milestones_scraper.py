@@ -176,7 +176,7 @@ class MilestonesSupabaseClient:
                 "Accept": "application/json",
             },
             timeout=DEFAULT_TIMEOUT,
-            follow_redirects=True,
+            follow_redirects=False,
         )
 
     def __enter__(self) -> MilestonesSupabaseClient:

@@ -2,6 +2,34 @@
 
 const DATA = window.__TREASURY_DATA;
 
+/* ---------- External links ---------- */
+function safeHref(value) {
+  if (typeof value !== "string") return null;
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+  try {
+    const url = new URL(trimmed, window.location.href);
+    return url.protocol === "http:" || url.protocol === "https:" ? url.href : null;
+  } catch {
+    return null;
+  }
+}
+
+function urlLabel(value) {
+  if (typeof value !== "string") return "";
+  return value.replace(/^https?:\/\//, "").replace(/\/$/, "");
+}
+
+function ExternalLink({ href, children, className, style }) {
+  const safe = safeHref(href);
+  if (!safe) return null;
+  return (
+    <a href={safe} target="_blank" rel="noopener noreferrer" className={className} style={style}>
+      {children}
+    </a>
+  );
+}
+
 /* ---------- Number formatting ---------- */
 function fmtAda(n, opts = {}) {
   if (n == null || isNaN(n)) return "—";
@@ -160,5 +188,6 @@ function fundNumber(pid) {
 
 Object.assign(window, {
   DATA, fmtAda, fmtCount, normName, historyFor, bridgeFor, similarityFor, workOverlapFor,
-  tieMetrics, renderMd, SOURCE, sourceKey, statusClass, statusLabel, fundNumber
+  tieMetrics, renderMd, SOURCE, sourceKey, statusClass, statusLabel, fundNumber,
+  safeHref, urlLabel, ExternalLink
 });

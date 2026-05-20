@@ -231,7 +231,7 @@ def _write_json(path: Path, rows: list[dict[str, Any]]) -> None:
 def _gather(data_root: Path, filename: str) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     for _, path in _iter_fund_files(data_root, filename):
-        rows.extend(json.loads(path.read_text()))
+        rows.extend(json.loads(path.read_text(encoding="utf-8")))
     return rows
 
 

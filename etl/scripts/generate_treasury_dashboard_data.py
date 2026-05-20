@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Build dashboard/data.js from the canonical archive reports.
+Build dashboard data from the canonical archive reports.
 
 This is intended to live in `etl/scripts/` of cardano-treasury-history-archive
 (or be called from the existing `generate_treasury_fund_reports.py` after the
@@ -15,8 +15,7 @@ Reads:
   reports/treasury-fund-2/identity-bridge-2025.csv
 
 Writes:
-  site/data.js                       (window.__TREASURY_DATA = {...};)
-  site/data.json                     (same payload, JSON)
+  site/data.json                     (dashboard payload)
 
 Usage:
   python build_dashboard_data.py [--repo-root .] [--out site]
@@ -49,7 +48,7 @@ def parse_float(x: object) -> float | None:
 
 
 def load_current_proposals(hydra_path: Path) -> tuple[list[JsonRow], str | None, str | None]:
-    raw = json.loads(hydra_path.read_text())
+    raw = json.loads(hydra_path.read_text(encoding="utf-8"))
     out: list[JsonRow] = []
     for p in raw["proposals_response"]["data"]:
         md = p.get("metaData") or {}
@@ -88,7 +87,7 @@ def canonicalize_proposers(proposals: list[JsonRow]) -> None:
 def aggregate_history(history_csv: Path) -> dict[str, JsonRow]:
     """Return {proposer_name: aggregated_history_dict}."""
     by_proposer: defaultdict[str, dict[str, JsonRow]] = defaultdict(dict)
-    with history_csv.open() as f:
+    with history_csv.open(encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for r in reader:
             key = (r["current_proposer_name"] or "").strip()
@@ -143,7 +142,7 @@ def aggregate_history(history_csv: Path) -> dict[str, JsonRow]:
 
 def index_similarity(path: Path) -> dict[str, list[JsonRow]]:
     by_proposal: defaultdict[str, list[JsonRow]] = defaultdict(list)
-    with path.open() as f:
+    with path.open(encoding="utf-8") as f:
         for r in csv.DictReader(f):
             by_proposal[r["current_proposal_id"]].append(
                 {
@@ -181,7 +180,7 @@ def index_work_overlap(path: Path) -> dict[str, list[JsonRow]]:
     by_proposal: defaultdict[str, list[JsonRow]] = defaultdict(list)
     if not path.exists():
         return {}
-    with path.open() as f:
+    with path.open(encoding="utf-8") as f:
         for r in csv.DictReader(f):
             if not include_overlap_row(r):
                 continue
@@ -226,7 +225,7 @@ def index_work_overlap(path: Path) -> dict[str, list[JsonRow]]:
 
 def index_identity_bridge(path: Path) -> dict[str, list[JsonRow]]:
     by_proposal: defaultdict[str, list[JsonRow]] = defaultdict(list)
-    with path.open() as f:
+    with path.open(encoding="utf-8") as f:
         for r in csv.DictReader(f):
             by_proposal[r["current_proposal_id"]].append(
                 {
@@ -249,7 +248,7 @@ def index_identity_bridge(path: Path) -> dict[str, list[JsonRow]]:
 
 def load_tf1_reconciliation(path: Path) -> list[JsonRow]:
     rows: list[JsonRow] = []
-    with path.open() as f:
+    with path.open(encoding="utf-8") as f:
         for r in csv.DictReader(f):
             rows.append(
                 {
@@ -270,7 +269,7 @@ def load_tf1_reconciliation(path: Path) -> list[JsonRow]:
 def load_report_summary(path: Path) -> JsonRow:
     if not path.exists():
         return {}
-    return json.loads(path.read_text())
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def build(repo_root: Path, out_dir: Path) -> None:
@@ -361,9 +360,11 @@ def build(repo_root: Path, out_dir: Path) -> None:
 
     out_dir.mkdir(parents=True, exist_ok=True)
     json_text = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
-    (out_dir / "data.json").write_text(json_text)
-    (out_dir / "data.js").write_text(f"window.__TREASURY_DATA = {json_text};\n")
-    print(f"Wrote {out_dir / 'data.js'} ({len(json_text):,} bytes)")
+    (out_dir / "data.json").write_text(json_text, encoding="utf-8")
+    legacy_data_js = out_dir / "data.js"
+    if legacy_data_js.exists():
+        legacy_data_js.unlink()
+    print(f"Wrote {out_dir / 'data.json'} ({len(json_text):,} bytes)")
 
 
 if __name__ == "__main__":
@@ -373,6 +374,6 @@ if __name__ == "__main__":
         default=".",
         help="Path to cardano-treasury-history-archive root",
     )
-    ap.add_argument("--out", default="site", help="Output directory (data.js + data.json)")
+    ap.add_argument("--out", default="site", help="Output directory (data.json)")
     args = ap.parse_args()
     build(Path(args.repo_root).resolve(), Path(args.out).resolve())
