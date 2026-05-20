@@ -9,6 +9,7 @@ Inputs:
     data/historical/treasury-fund-01/vendors.json
     data/historical/treasury-fund-01/milestones.json
     data/_raw/intersect_budget_2025/reconciliation.json
+    data/_raw/builderdao_taptools/projects.json
 
 Outputs:
     reports/treasury-fund-2/proposer-history.md
@@ -21,6 +22,8 @@ Outputs:
     reports/treasury-fund-2/tf1-ekklesia-reconciliation.md
     reports/treasury-fund-2/onchain-treasury-reconciliation.csv
     reports/treasury-fund-2/onchain-treasury-reconciliation.md
+    reports/treasury-fund-2/builderdao-disbursements.csv
+    reports/treasury-fund-2/builderdao-disbursements.md
     reports/treasury-fund-2/_summary.json
 """
 
@@ -46,6 +49,9 @@ DEFAULT_DATA_ROOT = REPO_ROOT / "data"
 DEFAULT_REPORT_ROOT = REPO_ROOT / "reports" / "treasury-fund-2"
 CURRENT_SNAPSHOT = DEFAULT_DATA_ROOT / "_raw" / "hydra_voting" / "cardano-budget-2026.json"
 BUDGET_2025_SNAPSHOT = DEFAULT_DATA_ROOT / "_raw" / "intersect_budget_2025" / "reconciliation.json"
+BUILDERDAO_SNAPSHOT = DEFAULT_DATA_ROOT / "_raw" / "builderdao_taptools" / "projects.json"
+BUILDERDAO_DASHBOARD_URL = "https://cbdao.taptools.io/"
+BUILDERDAO_PARENT_TF1_PROJECT_ID = "EMI-0004-25"
 
 FUNDED_STATUSES = {"approved", "leftover"}
 ONGOING_PROJECT_STATUSES = {"in_progress"}
@@ -140,6 +146,22 @@ class NameMatch:
     display_name: str
     score: float
     confidence: str
+
+
+# Maintainer-reviewed current-proposer bridges that cannot be inferred from
+# source names alone. Five Binaries is owned by Marek Mahut; Marek's prior
+# Catalyst history is represented in the archive by this LidoNation proposer ID.
+MANUAL_CURRENT_PROPOSER_CATALYST_MATCHES: dict[str, tuple[NameMatch, ...]] = {
+    "five binaries": (
+        NameMatch(
+            source="Project Catalyst",
+            entity_id="p-lido-c269e96b-eb38-4343-a5d7-41e17399505a",
+            display_name="Marek Mahut / Proposer c269e96b (Five Binaries owner)",
+            score=1.0,
+            confidence="high",
+        ),
+    ),
+}
 
 
 @dataclass(frozen=True)
@@ -241,6 +263,23 @@ class OnchainTreasuryReconciliationRecord:
     match_confidence: str
     match_score: float
     match_basis: str
+    counting_guidance: str
+
+
+@dataclass(frozen=True)
+class BuilderDAODisbursementRecord:
+    recipient_name: str
+    project_slug: str
+    round: int
+    funded: str
+    downstream_amount_ada: float
+    parent_tf1_project_id: str
+    parent_tf1_title: str
+    matched_tf2_proposer_names: str
+    metrics_summary: str
+    proposal_url: str
+    website_url: str
+    source_url: str
     counting_guidance: str
 
 
@@ -490,40 +529,59 @@ def _load_budget_2025(snapshot_path: Path) -> tuple[str, list[dict[str, Any]]]:
     return fetched_at, [item for item in proposals if isinstance(item, dict)]
 
 
+def _load_builderdao_projects(snapshot_path: Path) -> list[dict[str, Any]]:
+    if not snapshot_path.exists():
+        return []
+    snapshot = _read_json_dict(snapshot_path)
+    if snapshot.get("error") is True:
+        raise ValueError(f"BuilderDAO snapshot reports error: {snapshot.get('msg')}")
+    projects = snapshot.get("data")
+    if not isinstance(projects, list):
+        raise ValueError("BuilderDAO snapshot missing data list")
+    return [item for item in projects if isinstance(item, dict)]
+
+
 def _match_entities(
     current_name: str,
     catalyst_proposers: Sequence[dict[str, Any]],
     tf1_vendors: Sequence[dict[str, Any]],
 ) -> list[NameMatch]:
-    matches: list[NameMatch] = []
+    matches: list[NameMatch] = list(
+        MANUAL_CURRENT_PROPOSER_CATALYST_MATCHES.get(_normalize_name(current_name), ())
+    )
+    seen = {(match.source, match.entity_id) for match in matches}
     for proposer in catalyst_proposers:
         name = str(proposer.get("display_name") or "")
         if _normalize_name(name) in {"anonymous", "unknown"}:
             continue
         score = _name_score(current_name, name)
-        if score >= 0.74:
+        key = ("Project Catalyst", str(proposer.get("proposer_id") or ""))
+        if score >= 0.74 and key not in seen:
             matches.append(
                 NameMatch(
                     source="Project Catalyst",
-                    entity_id=str(proposer.get("proposer_id") or ""),
+                    entity_id=key[1],
                     display_name=name,
                     score=score,
                     confidence=_confidence(score, high=0.92, medium=0.82),
                 )
             )
+            seen.add(key)
     for vendor in tf1_vendors:
         name = str(vendor.get("display_name") or "")
         score = _name_score(current_name, name)
-        if score >= 0.74:
+        key = ("Treasury Fund 1", str(vendor.get("vendor_id") or ""))
+        if score >= 0.74 and key not in seen:
             matches.append(
                 NameMatch(
                     source="Treasury Fund 1",
-                    entity_id=str(vendor.get("vendor_id") or ""),
+                    entity_id=key[1],
                     display_name=name,
                     score=score,
                     confidence=_confidence(score, high=0.92, medium=0.82),
                 )
             )
+            seen.add(key)
     matches.sort(key=lambda m: (m.score, m.source), reverse=True)
     return matches
 
@@ -855,6 +913,54 @@ def _tf1_outputs(
     return "No Matured milestone output captured; see milestone status counts."
 
 
+def _builderdao_project_id(project: dict[str, Any]) -> str:
+    slug = str(project.get("slug") or "")
+    if slug:
+        return f"builderdao-{slug}"
+    return f"builderdao-{_normalize_name(str(project.get('name') or '')).replace(' ', '-')}"
+
+
+def _builderdao_metrics_summary(project: dict[str, Any], limit: int = 4) -> str:
+    metrics = project.get("metrics")
+    if not isinstance(metrics, list):
+        return "No KPI metrics captured in dashboard snapshot."
+    parts: list[str] = []
+    for metric in metrics:
+        if not isinstance(metric, dict):
+            continue
+        label = str(metric.get("label") or metric.get("key") or "").strip()
+        if not label:
+            continue
+        unit = str(metric.get("unit") or "").strip()
+        value = metric.get("value")
+        goal = metric.get("goal")
+        if value is None and goal is None:
+            continue
+        value_text = f"{value:g}" if isinstance(value, int | float) else str(value)
+        goal_text = f"{goal:g}" if isinstance(goal, int | float) else str(goal)
+        if unit and unit != "int":
+            value_text = f"{value_text} {unit}"
+            goal_text = f"{goal_text} {unit}"
+        parts.append(f"{label}: {value_text} / goal {goal_text}")
+        if len(parts) >= limit:
+            break
+    return "; ".join(parts) if parts else "No KPI metrics captured in dashboard snapshot."
+
+
+def _builderdao_counting_guidance() -> str:
+    return (
+        "Downstream recipient detail only; do not add to treasury totals because the "
+        f"parent TF1/on-chain payment is counted under {BUILDERDAO_PARENT_TF1_PROJECT_ID}."
+    )
+
+
+def _builderdao_match_score(current_name: str, recipient_name: str) -> float:
+    score = _name_score(current_name, recipient_name)
+    if score >= 0.74:
+        return score
+    return 0.0
+
+
 def _make_tf1_reconciliation(
     tf1_projects: Sequence[dict[str, Any]],
     budget_2025_proposals: Sequence[dict[str, Any]],
@@ -989,6 +1095,57 @@ def _make_onchain_treasury_reconciliation(
     return records
 
 
+def _make_builderdao_disbursements(
+    builderdao_projects: Sequence[dict[str, Any]],
+    current: Sequence[CurrentProposal],
+    tf1_projects: Sequence[dict[str, Any]],
+) -> list[BuilderDAODisbursementRecord]:
+    tf1_parent = next(
+        (
+            project
+            for project in tf1_projects
+            if str(project.get("project_id") or "") == BUILDERDAO_PARENT_TF1_PROJECT_ID
+        ),
+        {},
+    )
+    parent_title = str(tf1_parent.get("title") or "Cardano Builder DAO")
+    records: list[BuilderDAODisbursementRecord] = []
+    for project in builderdao_projects:
+        if project.get("isFunded") is not True:
+            continue
+        recipient = str(project.get("name") or "")
+        matched_names = sorted(
+            {
+                proposal.proposer_name
+                for proposal in current
+                if _builderdao_match_score(proposal.proposer_name, recipient) >= 0.74
+                and (
+                    _builderdao_match_score(proposal.proposer_name, recipient) >= 1.0
+                    or _has_meaningful_name_overlap(proposal.proposer_name, recipient)
+                )
+            }
+        )
+        records.append(
+            BuilderDAODisbursementRecord(
+                recipient_name=recipient,
+                project_slug=str(project.get("slug") or ""),
+                round=int(project.get("round") or 0),
+                funded="yes",
+                downstream_amount_ada=float(project.get("fundsRequested") or 0),
+                parent_tf1_project_id=BUILDERDAO_PARENT_TF1_PROJECT_ID,
+                parent_tf1_title=parent_title,
+                matched_tf2_proposer_names="; ".join(matched_names),
+                metrics_summary=_builderdao_metrics_summary(project),
+                proposal_url=str(project.get("proposalURL") or ""),
+                website_url=str(project.get("websiteURL") or ""),
+                source_url=BUILDERDAO_DASHBOARD_URL,
+                counting_guidance=_builderdao_counting_guidance(),
+            )
+        )
+    records.sort(key=lambda r: (r.round, -r.downstream_amount_ada, r.recipient_name.casefold()))
+    return records
+
+
 def _make_history(
     current: Sequence[CurrentProposal],
     catalyst_proposals: Sequence[dict[str, Any]],
@@ -998,6 +1155,7 @@ def _make_history(
     tf1_vendors: Sequence[dict[str, Any]],
     tf1_milestones: Sequence[dict[str, Any]],
     tf1_reconciliation_records: Sequence[TF1ReconciliationRecord],
+    builderdao_projects: Sequence[dict[str, Any]],
 ) -> list[HistoryRecord]:
     proposals_by_proposer: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for proposal in catalyst_proposals:
@@ -1174,6 +1332,46 @@ def _make_history(
                     delivery_flags=_delivery_flags(proposal, milestones_by_proposal),
                     ongoing="yes" if project_status in ONGOING_PROJECT_STATUSES else "no",
                     source_url=_proposal_url(proposal),
+                )
+            )
+        for project in builderdao_projects:
+            if project.get("isFunded") is not True:
+                continue
+            recipient = str(project.get("name") or "")
+            score = _builderdao_match_score(current_proposal.proposer_name, recipient)
+            if score < 0.74:
+                continue
+            if score < 1.0 and not _has_meaningful_name_overlap(
+                current_proposal.proposer_name,
+                recipient,
+            ):
+                continue
+            amount = float(project.get("fundsRequested") or 0)
+            round_number = int(project.get("round") or 0)
+            records.append(
+                HistoryRecord(
+                    current_proposal_id=current_proposal.proposal_id,
+                    current_proposer_name=current_proposal.proposer_name,
+                    source="BuilderDAO downstream disbursement",
+                    match_name=f"{recipient} via BuilderDAO KPI dashboard",
+                    match_score=score,
+                    match_confidence=_confidence(score, high=0.92, medium=0.82),
+                    historical_project_id=_builderdao_project_id(project),
+                    historical_title=f"BuilderDAO Round {round_number}: {recipient}",
+                    historical_status="active",
+                    funding_status="downstream_disbursement",
+                    amount_ada=None,
+                    amount_original=(
+                        f"{amount:,.2f} ADA downstream; non-additive with "
+                        f"{BUILDERDAO_PARENT_TF1_PROJECT_ID}"
+                    ),
+                    final_outputs=(
+                        f"{_builderdao_counting_guidance()} KPI dashboard metrics: "
+                        f"{_builderdao_metrics_summary(project)}"
+                    ),
+                    delivery_flags="No documented non-delivery signal in dataset.",
+                    ongoing="yes",
+                    source_url=BUILDERDAO_DASHBOARD_URL,
                 )
             )
     records.sort(
@@ -1360,6 +1558,7 @@ def _write_csv(
         | Sequence[IdentityBridgeRecord]
         | Sequence[TF1ReconciliationRecord]
         | Sequence[OnchainTreasuryReconciliationRecord]
+        | Sequence[BuilderDAODisbursementRecord]
     ),
 ) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -1387,6 +1586,9 @@ def _summarize_history(
         "history_records": len(records),
         "catalyst_history_records": sum(1 for r in records if r.source == "Project Catalyst"),
         "treasury_fund_1_history_records": sum(1 for r in records if r.source == "Treasury Fund 1"),
+        "builderdao_downstream_history_records": sum(
+            1 for r in records if r.source == "BuilderDAO downstream disbursement"
+        ),
     }
 
 
@@ -1420,6 +1622,11 @@ def _write_history_md(
         "Treasury Fund 1 proposer matches depend on named vendor records; address-only "
         "vendor records are not attributed to current teams.",
         "",
+        "BuilderDAO caveat: BuilderDAO KPI dashboard rows are downstream recipient "
+        "detail for the TF1 Cardano Builder DAO parent contract. They are shown with "
+        "blank `amount_ada` and non-additive labels so TF1/on-chain parent funding is "
+        "not counted twice.",
+        "",
     ]
     summary = _summarize_history(records, current)
     lines.extend(
@@ -1432,6 +1639,8 @@ def _write_history_md(
             f"- Catalyst prior funding records: {summary['catalyst_history_records']}",
             "- Treasury Fund 1 prior funding records: "
             f"{summary['treasury_fund_1_history_records']}",
+            "- BuilderDAO downstream detail records: "
+            f"{summary['builderdao_downstream_history_records']}",
             "",
             "## Proposer Details",
             "",
@@ -1768,17 +1977,69 @@ def _write_onchain_treasury_reconciliation_md(
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
+def _write_builderdao_disbursements_md(
+    path: Path,
+    *,
+    records: Sequence[BuilderDAODisbursementRecord],
+) -> None:
+    total = sum(record.downstream_amount_ada for record in records)
+    matched = [record for record in records if record.matched_tf2_proposer_names]
+    lines = [
+        "# BuilderDAO Downstream Disbursement Detail",
+        "",
+        f"Generated: {_utcnow_iso()}",
+        f"Source dashboard: {BUILDERDAO_DASHBOARD_URL}",
+        "",
+        "Purpose: record BuilderDAO KPI dashboard recipient-level funding detail without "
+        "double-counting the Treasury Fund 1 parent payment to Cardano Builder DAO.",
+        "",
+        "Counting policy: these rows are downstream attribution only. The treasury "
+        f"amount is counted through parent TF1 project {BUILDERDAO_PARENT_TF1_PROJECT_ID}; "
+        "do not add recipient amounts to TF1 or on-chain totals.",
+        "",
+        "## Summary",
+        "",
+        f"- Funded BuilderDAO recipient rows: {len(records)}",
+        f"- Downstream amount shown by dashboard: {total:,.2f} ADA",
+        f"- Recipient rows matching current TF2 proposer names: {len(matched)}",
+        "",
+        "## Disbursements",
+        "",
+    ]
+    for record in records:
+        lines.extend(
+            [
+                f"### Round {record.round}: {record.recipient_name}",
+                "",
+                f"- Downstream amount: {record.downstream_amount_ada:,.2f} ADA",
+                f"- Parent TF1 project: {record.parent_tf1_project_id} - "
+                f"{record.parent_tf1_title}",
+                "- TF2 proposer match: "
+                f"{record.matched_tf2_proposer_names or 'none in current TF2 snapshot'}",
+                f"- KPI metrics: {record.metrics_summary}",
+                f"- Proposal URL: {record.proposal_url or 'not captured'}",
+                f"- Website: {record.website_url or 'not captured'}",
+                f"- Counting guidance: {record.counting_guidance}",
+                "",
+            ]
+        )
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
 def generate_reports(
     *,
     data_root: Path,
     report_root: Path,
     current_snapshot: Path,
     budget_2025_snapshot: Path,
+    builderdao_snapshot: Path,
     per_proposal_limit: int,
     min_similarity: float,
 ) -> dict[str, object]:
     snapshot_fetched_at, current = _load_current(current_snapshot)
     budget_2025_fetched_at, budget_2025_proposals = _load_budget_2025(budget_2025_snapshot)
+    builderdao_projects = _load_builderdao_projects(builderdao_snapshot)
     catalyst_proposals = _read_json_records(data_root / "consolidated" / "all_proposals.json")
     catalyst_proposers = _read_json_records(data_root / "consolidated" / "all_proposers.json")
     catalyst_milestones = _read_json_records(data_root / "consolidated" / "all_milestones.json")
@@ -1794,6 +2055,11 @@ def generate_reports(
         tf1_projects,
         onchain_withdrawals,
     )
+    builderdao_disbursements = _make_builderdao_disbursements(
+        builderdao_projects,
+        current,
+        tf1_projects,
+    )
 
     history_records = _make_history(
         current,
@@ -1804,6 +2070,7 @@ def generate_reports(
         tf1_vendors,
         tf1_milestones,
         tf1_reconciliation_records,
+        builderdao_projects,
     )
     similarity_records = _make_similarity(
         current,
@@ -1825,6 +2092,7 @@ def generate_reports(
         report_root / "onchain-treasury-reconciliation.csv",
         onchain_reconciliation_records,
     )
+    _write_csv(report_root / "builderdao-disbursements.csv", builderdao_disbursements)
     _write_history_md(
         report_root / "proposer-history.md",
         records=history_records,
@@ -1855,6 +2123,10 @@ def generate_reports(
         records=onchain_reconciliation_records,
         onchain_fetched_at=str(onchain_meta.get("fetched_at") or ""),
     )
+    _write_builderdao_disbursements_md(
+        report_root / "builderdao-disbursements.md",
+        records=builderdao_disbursements,
+    )
     summary: dict[str, object] = {
         "generated_at": _utcnow_iso(),
         "current_snapshot": str(current_snapshot.relative_to(REPO_ROOT)),
@@ -1862,6 +2134,14 @@ def generate_reports(
         "budget_2025_snapshot": str(budget_2025_snapshot.relative_to(REPO_ROOT)),
         "budget_2025_snapshot_fetched_at": budget_2025_fetched_at,
         "budget_2025_proposals": len(budget_2025_proposals),
+        "builderdao_snapshot": str(builderdao_snapshot.relative_to(REPO_ROOT)),
+        "builderdao_downstream_disbursements": len(builderdao_disbursements),
+        "builderdao_downstream_total_ada_non_additive": sum(
+            record.downstream_amount_ada for record in builderdao_disbursements
+        ),
+        "builderdao_tf2_matched_recipient_rows": sum(
+            1 for record in builderdao_disbursements if record.matched_tf2_proposer_names
+        ),
         **_summarize_history(history_records, current),
         "identity_bridge_2025_records": len(identity_bridge_records),
         "identity_bridge_2025_proposers": len(
@@ -1907,6 +2187,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--report-root", type=Path, default=DEFAULT_REPORT_ROOT)
     parser.add_argument("--current-snapshot", type=Path, default=CURRENT_SNAPSHOT)
     parser.add_argument("--budget-2025-snapshot", type=Path, default=BUDGET_2025_SNAPSHOT)
+    parser.add_argument("--builderdao-snapshot", type=Path, default=BUILDERDAO_SNAPSHOT)
     parser.add_argument("--per-proposal-limit", type=int, default=5)
     parser.add_argument("--min-similarity", type=float, default=0.18)
     args = parser.parse_args(argv)
@@ -1916,6 +2197,7 @@ def main(argv: list[str] | None = None) -> int:
             report_root=args.report_root,
             current_snapshot=args.current_snapshot,
             budget_2025_snapshot=args.budget_2025_snapshot,
+            builderdao_snapshot=args.builderdao_snapshot,
             per_proposal_limit=args.per_proposal_limit,
             min_similarity=args.min_similarity,
         )

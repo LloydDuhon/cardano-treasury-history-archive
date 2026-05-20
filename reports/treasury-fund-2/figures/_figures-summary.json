@@ -1,19 +1,20 @@
 {
-  "generated_at": "2026-05-15T15:56:20+00:00",
+  "generated_at": "2026-05-20T14:53:08+00:00",
   "source_summary": "reports/treasury-fund-2/_summary.json",
   "tf2_proposals": 69,
   "tf2_unique_proposers": 51,
-  "proposers_with_prior_history_per_archive": 17,
-  "returning_proposers_after_alias_merge": 16,
-  "first_time_proposers_all_sources": 34,
-  "first_time_proposers_catalyst_tf1_only": 34,
+  "proposers_with_prior_history_per_archive": 19,
+  "returning_proposers_after_alias_merge": 18,
+  "first_time_proposers_all_sources": 32,
+  "first_time_proposers_catalyst_tf1_only": 32,
   "onchain_only_matches": [],
   "entity_resolution_merges": {
     "MLabsLTD": "MLabs LTD"
   },
   "caveats": [
-    "20% of historical rows (122 / 607) are USD-denominated; ADA totals exclude these.",
-    "Catalyst rows use medium-confidence proposer-text matching.",
+    "24% of historical rows (154 / 647) are USD-denominated; ADA totals exclude these. 2 BuilderDAO downstream rows are also excluded to avoid double-counting the TF1 parent payment.",
+    "Catalyst rows use direct/manual entity bridges where available; other Catalyst rows use proposer-text matching.",
+    "BuilderDAO downstream rows are non-additive recipient detail and are excluded from ADA totals to avoid double-counting TF1 parent funding.",
     "On-chain rows overlapping TF1 are not double-counted per archive guidance."
   ]
 }

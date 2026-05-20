@@ -1,0 +1,14 @@
+{
+  "dataset": "builderdao-taptools-projects",
+  "description": "BuilderDAO KPI dashboard project/disbursement rows exposed through the TapTools dashboard proxy. Use as downstream recipient detail only; the TF1/on-chain parent payment to BuilderDAO remains the additive treasury amount.",
+  "fetched_at": "2026-05-20T14:47:39Z",
+  "notes": [
+    "fundsRequested is treated as the downstream amount shown by the dashboard.",
+    "Rows are non-additive with Treasury Fund 1 project EMI-0004-25 / Cardano Builder DAO to avoid double-counting the parent treasury payment.",
+    "The API response is captured from https://cbdao.taptools.io/api/proxy with path /projects."
+  ],
+  "project_count": 34,
+  "raw_provenance_path": "data/_raw/builderdao_taptools/projects.json",
+  "source_url": "https://cbdao.taptools.io/",
+  "total_downstream_amount_ada_non_additive": 4892898.0
+}

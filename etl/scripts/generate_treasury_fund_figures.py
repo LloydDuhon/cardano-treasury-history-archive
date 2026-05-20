@@ -18,20 +18,23 @@ Outputs:
 
 The figures answer two questions for the Cardano Budget Committee and the
 broader Cardano audience:
-  1. For the 17 TF2 proposers who have previously received treasury funds
-     (Project Catalyst and/or Treasury Fund 1 according to the archive),
+  1. For the TF2 proposers who have previously received treasury funds
+     (Project Catalyst, Treasury Fund 1, and non-additive BuilderDAO
+     downstream detail according to the archive),
      what have they delivered with that funding so far?
   2. Which TF2 proposers have not received any treasury funds from any
-     source represented in the archive (Catalyst + TF1 + on-chain
-     TreasuryWithdrawals governance actions)?
+     source represented in the archive (Catalyst + TF1 + BuilderDAO
+     downstream detail + on-chain TreasuryWithdrawals governance actions)?
 
 Caveats surfaced in the dashboard:
-  * 20% of historical rows are USD-denominated (early Catalyst funds);
+  * Some historical rows are USD-denominated (early Catalyst funds);
     ADA totals exclude those rows and therefore under-state activity.
-  * The proposer-history join uses medium-confidence "proposer mentioned in
-    proposal text" matching for Catalyst rows, and high-confidence
-    contract-level matching for TF1 rows. This is a research dataset, not
-    an audit opinion.
+  * BuilderDAO downstream rows are excluded from ADA totals to avoid
+    double-counting the TF1 parent payment.
+  * The proposer-history join uses direct/manual Catalyst entity bridges
+    where available, medium-confidence "proposer mentioned in proposal text"
+    matching for other Catalyst rows, and high-confidence contract-level
+    matching for TF1 rows. This is a research dataset, not an audit opinion.
   * "MLabs LTD" and "MLabsLTD" appear separately in the source CSV; we
     treat them as one entity for the figures and note the entity-resolution
     issue for upstream cleanup.
@@ -131,6 +134,7 @@ def load_history(history_path: Path) -> pd.DataFrame:
     df = pd.read_csv(history_path)
     df["proposer_canonical"] = df["current_proposer_name"].apply(_canonicalize_name)
     df["amount_ada"] = pd.to_numeric(df["amount_ada"], errors="coerce")
+    df["is_non_additive_downstream"] = df["source"].eq("BuilderDAO downstream disbursement")
     df["amount_ada_filled"] = df["amount_ada"].fillna(0.0)
     return df
 
@@ -149,7 +153,7 @@ def build_proposer_summary(history: pd.DataFrame) -> pd.DataFrame:
             )
             .sum()
         )
-        usd_only_rows = grp["amount_ada"].isna().sum()
+        usd_only_rows = (grp["amount_ada"].isna() & ~grp["is_non_additive_downstream"]).sum()
         rows.append(
             {
                 "proposer": name,
@@ -239,7 +243,19 @@ def _setup_style() -> None:
     )
 
 
-def plot_ada_by_proposer(summary: pd.DataFrame, out_path: Path) -> None:
+def _usd_caveat(history: pd.DataFrame) -> str:
+    total_rows = int(len(history))
+    usd_rows = int((history["amount_ada"].isna() & ~history["is_non_additive_downstream"]).sum())
+    downstream_rows = int(history["is_non_additive_downstream"].sum())
+    pct = round((usd_rows / total_rows) * 100) if total_rows else 0
+    return (
+        f"{pct}% of historical rows ({usd_rows} / {total_rows}) are USD-denominated; "
+        f"ADA totals exclude these. {downstream_rows} BuilderDAO downstream rows are "
+        "also excluded to avoid double-counting the TF1 parent payment."
+    )
+
+
+def plot_ada_by_proposer(summary: pd.DataFrame, out_path: Path, usd_caveat: str) -> None:
     df = summary.sort_values("total_ada", ascending=True)
     fig, ax = plt.subplots(figsize=(12, 7))
     left = pd.Series([0.0] * len(df), index=df.index)
@@ -260,7 +276,7 @@ def plot_ada_by_proposer(summary: pd.DataFrame, out_path: Path) -> None:
     for idx, total in enumerate(df["total_ada"]):
         ax.text(total * 1.01, idx, _format_ada(total), va="center", fontsize=9, color="#222")
 
-    ax.set_xlabel("Prior treasury ADA received (Catalyst + TF1)")
+    ax.set_xlabel("Additive prior treasury ADA received (Catalyst + TF1)")
     ax.set_title(
         "Returning TF2 proposers: prior treasury ADA, by historical project status",
         loc="left",
@@ -282,7 +298,7 @@ def plot_ada_by_proposer(summary: pd.DataFrame, out_path: Path) -> None:
         0.0,
         -0.10,
         "Source: cardano-treasury-history-archive / proposer-history.csv. "
-        "ADA totals exclude USD-denominated rows (122 of 607 historical records). "
+        f"{usd_caveat} "
         "MLabs LTD and MLabsLTD merged for display.",
         transform=ax.transAxes,
         ha="left",
@@ -439,7 +455,7 @@ def plot_first_time_proposers(first_timers: pd.DataFrame, out_path: Path) -> Non
     ax.set_xlabel("TF2 proposal ask amount (ADA)")
     ax.set_title(
         f"First-time TF2 proposers: {len(df)} proposers with no prior treasury funding "
-        "(Catalyst + TF1 + on-chain)",
+        "(Catalyst + TF1 + BuilderDAO + on-chain)",
         loc="left",
     )
     ax.text(
@@ -605,17 +621,18 @@ DASHBOARD_TEMPLATE = """<!doctype html>
   </div>
   <p>
     The Cardano treasury history archive joins each of the 69 current TF2 proposals to historical
-    records from Project Catalyst (funds 1&ndash;15) and Treasury Fund 1, then cross-checks against
-    on-chain <code>TreasuryWithdrawals</code> governance actions. {returning} of the {tf2_proposers}
+    records from Project Catalyst (funds 1&ndash;15), Treasury Fund 1, and non-additive BuilderDAO
+    downstream detail, then cross-checks against on-chain <code>TreasuryWithdrawals</code>
+    governance actions. {returning} of the {tf2_proposers}
     unique TF2 proposers appear in that historical dataset; the remaining {first_timers} have no
-    prior treasury record under any of the three sources. None of the {first_timers} first-time
+    prior treasury record under any archive source. None of the {first_timers} first-time
     proposers were reclassified after the on-chain cross-check.
   </p>
   <div class="note">
-    <strong>Methodology and confidence.</strong> Catalyst rows are matched at "proposer mentioned
-    in proposal text" (medium confidence); TF1 rows are matched at the contract level (high
-    confidence). 122 of 607 historical rows are USD-denominated (early Catalyst funds) and have no
-    ADA value, so ADA totals understate activity. "MLabs LTD" and "MLabsLTD" are merged for
+    <strong>Methodology and confidence.</strong> Catalyst rows use direct/manual entity bridges
+    where available, plus "proposer mentioned in proposal text" matching for other rows; TF1 rows
+    are matched at the contract level; BuilderDAO rows are downstream detail only. {usd_caveat}
+    "MLabs LTD" and "MLabsLTD" are merged for
     display. This is a provenance-first research view, not a final audit opinion.
   </div>
 </section>
@@ -654,7 +671,7 @@ DASHBOARD_TEMPLATE = """<!doctype html>
 <section>
   <h2>
     3. Overall delivery status mix
-    <span class="count">&mdash; across all prior work of the 17 returners</span>
+    <span class="count">&mdash; across all prior work of the {returning} returners</span>
   </h2>
   <figure>
     <img
@@ -816,6 +833,7 @@ def render_dashboard(
     summary_json: dict[str, Any],
     hydra_fetched_at: str,
     out_path: Path,
+    usd_caveat: str,
 ) -> None:
     html = DASHBOARD_TEMPLATE.format(
         generated_at=datetime.now(UTC).strftime("%Y-%m-%d %H:%M UTC"),
@@ -824,6 +842,7 @@ def render_dashboard(
         tf2_proposers=summary_json["current_unique_proposers"],
         returning=summary_json["proposers_with_prior_history"],
         first_timers=len(first_timers),
+        usd_caveat=usd_caveat,
         rows_html=build_dashboard_rows_html(summary),
         first_rows_html=build_first_timer_rows_html(first_timers),
     )
@@ -855,9 +874,10 @@ def main(repo_root: Path) -> None:
     )
 
     summary = build_proposer_summary(history)
+    usd_caveat = _usd_caveat(history)
 
     _setup_style()
-    plot_ada_by_proposer(summary, paths.out_dir / "01-prior-ada-by-proposer.png")
+    plot_ada_by_proposer(summary, paths.out_dir / "01-prior-ada-by-proposer.png", usd_caveat)
     plot_count_by_proposer(summary, paths.out_dir / "02-prior-proposal-count-by-proposer.png")
     plot_status_mix_overall(summary, paths.out_dir / "03-status-mix-overall.png")
     plot_first_time_proposers(first_timers, paths.out_dir / "04-first-time-tf2-proposers.png")
@@ -873,6 +893,7 @@ def main(repo_root: Path) -> None:
         summary_json=summary_json,
         hydra_fetched_at=json.loads(paths.hydra_json.read_text())["fetched_at"],
         out_path=paths.out_dir / "tf2-proposer-history-dashboard.html",
+        usd_caveat=usd_caveat,
     )
 
     figures_summary: dict[str, Any] = {
@@ -891,8 +912,11 @@ def main(repo_root: Path) -> None:
         "onchain_only_matches": sorted(onchain_only),
         "entity_resolution_merges": NAME_ALIASES,
         "caveats": [
-            "20% of historical rows (122 / 607) are USD-denominated; ADA totals exclude these.",
-            "Catalyst rows use medium-confidence proposer-text matching.",
+            usd_caveat,
+            "Catalyst rows use direct/manual entity bridges where available; "
+            "other Catalyst rows use proposer-text matching.",
+            "BuilderDAO downstream rows are non-additive recipient detail and are "
+            "excluded from ADA totals to avoid double-counting TF1 parent funding.",
             "On-chain rows overlapping TF1 are not double-counted per archive guidance.",
         ],
     }
