@@ -1,0 +1,9 @@
+This repository uses split licensing:
+
+- Code under `etl/`, schemas, workflows, and site source is licensed under MIT.
+  See `LICENSE-CODE`.
+- Data under `data/` and generated report artifacts is licensed under CC-BY-4.0.
+  See `LICENSE-DATA`.
+
+Attribution to upstream sources is required and documented in
+`docs/attributions.md`.

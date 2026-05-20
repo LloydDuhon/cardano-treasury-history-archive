@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability report
+    url: https://github.com/LloydDuhon/cardano-treasury-history-archive/security/advisories/new
+    about: Report vulnerabilities privately. If private reporting is unavailable, see SECURITY.md.
+  - name: Budget Committee documentation
+    url: https://budgetcommittee.docs.intersectmbo.org/
+    about: Learn about the Budget Committee governance context for this archive.

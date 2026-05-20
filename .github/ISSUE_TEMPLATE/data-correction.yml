@@ -1,0 +1,43 @@
+name: Data correction
+description: Propose a correction to a data record, report row, or entity match.
+title: "[Data correction]: "
+labels: ["data", "correction"]
+body:
+  - type: input
+    id: record
+    attributes:
+      label: Affected record or report row
+      description: Proposal id, proposer id, report filename/row, or site URL.
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current value
+      description: What does the archive currently say?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed correction
+      description: What should it say instead?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Primary source evidence
+      description: Provide URLs, document names, archive links, or on-chain references.
+    validations:
+      required: true
+  - type: dropdown
+    id: confidence
+    attributes:
+      label: Suggested confidence
+      options:
+        - high
+        - medium
+        - low
+    validations:
+      required: true

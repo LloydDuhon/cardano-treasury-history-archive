@@ -22,12 +22,18 @@ Thanks for considering a contribution. This repository is the source of truth fo
 
 1. Fork and branch from `main`.
 2. Make changes. Keep PRs focused — one logical change per PR.
-3. Run `ruff check etl/` and `python etl/validators/validate_against_schema.py` locally.
+3. Run the relevant checks locally. For ETL/data changes, start with:
+   `ruff check .`, `ruff format --check .`, `python -m pytest`,
+   `python -m mypy fetchers normalizers validators`, and
+   `python etl/validators/validate_against_schema.py`.
 4. Open the PR with:
    - What changed and why
    - Which records are affected
    - Primary source(s) cited
 5. CI will run linting and schema validation. Wait for review.
+
+Use the issue templates for data corrections, source additions, questions, and
+bug reports. Do not use public issues for vulnerabilities; follow `SECURITY.md`.
 
 ## Code style
 
@@ -41,4 +47,5 @@ Python code follows `mellod-infra/docs/DEVELOPMENT_STANDARDS.md`:
 
 ## Questions
 
-Open a GitHub Discussion (preferred) or file an issue tagged `question`.
+Open an issue using the data question/support template. Security reports must
+follow `SECURITY.md` instead of public issues.
