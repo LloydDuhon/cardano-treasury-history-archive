@@ -66,6 +66,7 @@ function historyFor(proposerName) {
 /* ---------- Identity bridge / TF1 lookups ---------- */
 function bridgeFor(proposalId) { return DATA.identityBridge[proposalId] || []; }
 function similarityFor(proposalId) { return DATA.similarity[proposalId] || []; }
+function workOverlapFor(proposalId) { return DATA.workOverlap?.[proposalId] || []; }
 
 /* ---------- Matched-history metrics ---------- */
 function tieMetrics(proposal) {
@@ -74,6 +75,7 @@ function tieMetrics(proposal) {
   const h = historyFor(proposer);
   const bridge = bridgeFor(proposal.id);
   const sim = similarityFor(proposal.id);
+  const overlap = workOverlapFor(proposal.id);
   return {
     peerProposals: peerProposalIds.length,                /* count of OTHER current proposals from same proposer */
     priorProjects: h?.totalProjects || 0,
@@ -82,6 +84,7 @@ function tieMetrics(proposal) {
     tf1Projects: h?.tf1Projects || 0,
     has2025: bridge.length > 0,
     similarProjects: sim.length,
+    workOverlapMatches: overlap.length,
     withdrawnAda: h?.withdrawnAda || 0,
     pausedAda: h?.pausedAda || 0,
     ongoing: h?.ongoing || 0,
@@ -117,11 +120,15 @@ const SOURCE = {
   current:    { stroke: "var(--src-current)",  fill: "var(--src-current)",  label: "Treasury Fund 2 (current)" },
   catalyst:   { stroke: "var(--src-catalyst)", fill: "var(--src-catalyst)", label: "Project Catalyst (historical)" },
   tf1:        { stroke: "var(--src-tf1)",      fill: "var(--src-tf1)",      label: "Treasury Fund 1 (historical)" },
+  onchain:    { stroke: "var(--src-2025)",     fill: "var(--src-2025)",     label: "On-chain treasury withdrawal" },
+  builderdao: { stroke: "var(--src-current)",  fill: "var(--src-current)",  label: "BuilderDAO downstream disbursement" },
   b2025:      { stroke: "var(--src-2025)",     fill: "var(--src-2025)",     label: "2025 Budget Process (identity)" }
 };
 function sourceKey(src) {
   if (src === "Project Catalyst") return "catalyst";
   if (src === "Treasury Fund 1") return "tf1";
+  if (src === "On-chain TreasuryWithdrawals") return "onchain";
+  if (src === "BuilderDAO downstream disbursement") return "builderdao";
   return "current";
 }
 function statusClass(s) {
@@ -152,6 +159,6 @@ function fundNumber(pid) {
 }
 
 Object.assign(window, {
-  DATA, fmtAda, fmtCount, normName, historyFor, bridgeFor, similarityFor,
+  DATA, fmtAda, fmtCount, normName, historyFor, bridgeFor, similarityFor, workOverlapFor,
   tieMetrics, renderMd, SOURCE, sourceKey, statusClass, statusLabel, fundNumber
 });

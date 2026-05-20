@@ -1,0 +1,32 @@
+{
+  "ai_model_counts": {
+    "manual-console-adjudication": 25,
+    "qwen3.5:4b": 1700
+  },
+  "candidate_pairs": 1725,
+  "confidence_counts": {
+    "high": 56,
+    "low": 769,
+    "medium": 67,
+    "none": 833
+  },
+  "current_proposals": 69,
+  "generated_at": "2026-05-20T18:13:27Z",
+  "historical_candidate_sources": {
+    "BuilderDAO downstream disbursement": 34,
+    "On-chain TreasuryWithdrawals": 72,
+    "Project Catalyst": 11573,
+    "Treasury Fund 1": 43
+  },
+  "historical_candidates": 11722,
+  "mode": "ai_adjudicated",
+  "model": "qwen3.5:4b",
+  "outputs": {
+    "ai_jsonl": "reports/treasury-fund-2/work-overlap-review-ai.jsonl",
+    "candidates_csv": "reports/treasury-fund-2/work-overlap-review-candidates.csv",
+    "review_csv": "reports/treasury-fund-2/work-overlap-review.csv",
+    "review_md": "reports/treasury-fund-2/work-overlap-review.md",
+    "summary_json": "reports/treasury-fund-2/work-overlap-review-summary.json"
+  },
+  "top_k": 25
+}

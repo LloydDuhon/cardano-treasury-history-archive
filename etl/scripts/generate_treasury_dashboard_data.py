@@ -10,6 +10,7 @@ Reads:
   data/_raw/hydra_voting/cardano-budget-2026.json
   reports/treasury-fund-2/proposer-history.csv
   reports/treasury-fund-2/scope-similarity.csv
+  reports/treasury-fund-2/work-overlap-review.csv
   reports/treasury-fund-2/tf1-ekklesia-reconciliation.csv
   reports/treasury-fund-2/identity-bridge-2025.csv
 
@@ -159,6 +160,70 @@ def index_similarity(path: Path) -> dict[str, list[JsonRow]]:
     return dict(by_proposal)
 
 
+def include_overlap_row(row: JsonRow) -> bool:
+    confidence = row["match_confidence"]
+    if confidence in {"high", "medium"}:
+        return True
+    if confidence == "low":
+        return (parse_float(row["work_overlap_percent"]) or 0) >= 35
+    return False
+
+
+def adjudication_label(model: str) -> str:
+    if model == "manual-console-adjudication":
+        return "Human Reviewed"
+    if model:
+        return "AI Matched"
+    return "Not Reviewed"
+
+
+def index_work_overlap(path: Path) -> dict[str, list[JsonRow]]:
+    by_proposal: defaultdict[str, list[JsonRow]] = defaultdict(list)
+    if not path.exists():
+        return {}
+    with path.open() as f:
+        for r in csv.DictReader(f):
+            if not include_overlap_row(r):
+                continue
+            ai_model = r.get("ai_model", "")
+            by_proposal[r["current_proposal_id"]].append(
+                {
+                    "historical_source": r["historical_source"],
+                    "historical_project_id": r["historical_project_id"],
+                    "historical_title": r["historical_title"],
+                    "historical_status": r["historical_status"],
+                    "funding_status": r["funding_status"],
+                    "previously_funded": r["previously_funded"],
+                    "amount_original": r["amount_original"],
+                    "historical_proposer_names": r["historical_proposer_names"],
+                    "retrieval_rank": int(parse_float(r["retrieval_rank"]) or 0),
+                    "retrieval_score": parse_float(r["retrieval_score"]) or 0.0,
+                    "match_confidence": r["match_confidence"],
+                    "work_overlap_percent": int(parse_float(r["work_overlap_percent"]) or 0),
+                    "overlap_type": r["overlap_type"],
+                    "previously_proposed": str(r["previously_proposed"]).lower() == "true",
+                    "previously_funded_relevance": r["previously_funded_relevance"],
+                    "same_or_related_proposer": r["same_or_related_proposer"],
+                    "overlap_evidence": r["overlap_evidence"],
+                    "funding_evidence": r["funding_evidence"],
+                    "relationship_evidence": r["relationship_evidence"],
+                    "review_notes": r["review_notes"],
+                    "ai_model": ai_model,
+                    "adjudication_source": adjudication_label(ai_model),
+                    "source_url": r["source_url"],
+                }
+            )
+    for rows in by_proposal.values():
+        rows.sort(
+            key=lambda row: (
+                {"high": 0, "medium": 1, "low": 2}.get(row["match_confidence"], 9),
+                -row["work_overlap_percent"],
+                row["retrieval_rank"],
+            )
+        )
+    return dict(by_proposal)
+
+
 def index_identity_bridge(path: Path) -> dict[str, list[JsonRow]]:
     by_proposal: defaultdict[str, list[JsonRow]] = defaultdict(list)
     with path.open() as f:
@@ -221,6 +286,9 @@ def build(repo_root: Path, out_dir: Path) -> None:
     similarity = index_similarity(
         repo_root / "reports" / "treasury-fund-2" / "scope-similarity.csv"
     )
+    work_overlap = index_work_overlap(
+        repo_root / "reports" / "treasury-fund-2" / "work-overlap-review.csv"
+    )
     identity_bridge = index_identity_bridge(
         repo_root / "reports" / "treasury-fund-2" / "identity-bridge-2025.csv"
     )
@@ -247,6 +315,19 @@ def build(repo_root: Path, out_dir: Path) -> None:
     )
     multi_proposers = sum(1 for v in proposer_proposals.values() if len(v["proposalIds"]) > 1)
     total_historical_ada = sum(v["totalAda"] for v in proposer_history.values())
+    proposals_with_work_overlap = sum(1 for rows in work_overlap.values() if rows)
+    ai_overlap_matches = sum(
+        1
+        for rows in work_overlap.values()
+        for row in rows
+        if row["adjudication_source"] == "AI Matched"
+    )
+    human_overlap_matches = sum(
+        1
+        for rows in work_overlap.values()
+        for row in rows
+        if row["adjudication_source"] == "Human Reviewed"
+    )
 
     payload = {
         "meta": {
@@ -263,12 +344,17 @@ def build(repo_root: Path, out_dir: Path) -> None:
             "total_requested_ada": total_requested,
             "total_historical_ada": total_historical_ada,
             "multi_proposal_proposers": multi_proposers,
+            "work_overlap_triage_matches": sum(len(rows) for rows in work_overlap.values()),
+            "proposals_with_work_overlap": proposals_with_work_overlap,
+            "ai_work_overlap_matches": ai_overlap_matches,
+            "human_work_overlap_matches": human_overlap_matches,
             "entity_resolution_merges": {"MLabsLTD": "MLabs LTD"},
         },
         "proposals": proposals,
         "proposerHistory": proposer_history,
         "proposerProposals": proposer_proposals,
         "similarity": similarity,
+        "workOverlap": work_overlap,
         "identityBridge": identity_bridge,
         "tf1Reconciliation": tf1_reconciliation,
     }

@@ -76,6 +76,17 @@ For best-effort backfill of low-confidence fields, the following community sourc
 - **Catalyst Swarm GitBook** — https://catalyst-swarm.gitbook.io
 - Various proposer-hosted close-out pages (cited per record)
 
+## AI-assisted review tooling
+
+The Treasury Fund 2 prior-work overlap report uses a staged review process:
+
+- Deterministic Python retrieval ranks historical Catalyst, Treasury Fund 1, on-chain treasury, and BuilderDAO records against each current Treasury Fund 2 proposal.
+- Manual console adjudication rows are human analyst judgments recorded in the review JSONL.
+- Local first-round AI screening rows are draft triage judgments generated on a workstation running Ollama with Qwen 3.5 4B.
+- OpenAI Responses API adjudication, when used, is a separate review stage and should be attributed by model in the generated report metadata.
+
+AI-assisted rows are not final audit findings. They are screening aids for prioritizing human review of candidate overlaps. The generated report records the adjudication source/model counts so downstream readers can separate deterministic retrieval, local model screening, OpenAI adjudication, and manual review.
+
 ## Maintainer
 
 This archive is maintained by **Lloyd Duhon** (lloydduhon@gmail.com). It is a personal open-source project and is not affiliated with Lidonation, IOG, Cardano Foundation, or the Project Catalyst team. Errors are the maintainer's responsibility — corrections welcome via pull request.

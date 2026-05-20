@@ -22,6 +22,7 @@ The primary working reports are in `reports/treasury-fund-2/`:
 - `identity-bridge-2025.md` / `.csv` links current Treasury Fund 2 proposer names to 2025 Budget Process proposer/owner metadata.
 - `tf1-ekklesia-reconciliation.md` / `.csv` reconciles Treasury Fund 1 contract records from the Sundae Treasury site against the original 2025 Ekklesia budget-process proposal records.
 - `onchain-treasury-reconciliation.md` / `.csv` reconciles on-chain Cardano `TreasuryWithdrawals` actions against Treasury Fund 1 so overlapping amounts are visible and not double-counted.
+- `work-overlap-review.md` / `.csv` screens each Treasury Fund 2 proposal against historical Catalyst, Treasury Fund 1, on-chain treasury, and BuilderDAO records. It combines deterministic retrieval with explicitly attributed adjudication rows: manual console review, local first-round AI screening from a workstation running Ollama with Qwen 3.5 4B, and OpenAI Responses API review if used.
 - `_summary.json` records the current snapshot timestamps and generated row counts.
 
 The static viewer in `site/` gives a browser interface over the same current
@@ -32,6 +33,8 @@ included GitHub Pages workflow.
 ## Confidence
 
 This is a provenance-first research dataset, not a final audit opinion. Each report includes confidence labels and source URLs where available.
+
+AI-assisted overlap review is used only as a triage mechanism unless a row is separately human-reviewed. Generated overlap reports record the adjudication source/model counts so local screening, OpenAI adjudication, and manual review can be distinguished.
 
 Project Catalyst history is useful now for experimentation and broad proposer-history analysis. Completion and closeout evidence is strongest where milestone data exists and weaker for early Catalyst funds that depend on reconstructed or partial sources.
 
