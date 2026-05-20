@@ -64,6 +64,10 @@ body {
   display: grid;
   grid-template-rows: auto auto 1fr;
 }
+.app.findings-active {
+  height: 100dvh;
+  overflow: hidden;
+}
 html, body { min-height: 100vh; overflow-x: hidden; }
 
 /* ===== Top bar ===== */
@@ -169,6 +173,9 @@ html, body { min-height: 100vh; overflow-x: hidden; }
   display: grid;
   grid-template-columns: 280px 1fr;
   min-height: 720px;
+}
+.body.findings-mode {
+  min-height: 0;
 }
 .sidebar {
   border-right: 1px solid var(--rule);
@@ -511,6 +518,7 @@ html, body { min-height: 100vh; overflow-x: hidden; }
   height: 100%;
   display: grid;
   grid-template-columns: minmax(360px, 0.95fr) minmax(420px, 1.25fr);
+  overflow: hidden;
 }
 .findings-list {
   min-width: 0;
@@ -519,8 +527,10 @@ html, body { min-height: 100vh; overflow-x: hidden; }
   background: var(--paper-soft);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .findings-toolbar {
+  flex: 0 0 auto;
   padding: 16px 18px 12px;
   border-bottom: 1px solid var(--rule);
   background: var(--paper);
@@ -651,7 +661,8 @@ html, body { min-height: 100vh; overflow-x: hidden; }
 }
 .finding-detail {
   min-width: 0;
-  overflow: visible;
+  min-height: 0;
+  overflow: hidden;
   background: var(--paper);
   padding: 22px 26px 44px;
 }
@@ -1157,6 +1168,10 @@ html, body { min-height: 100vh; overflow-x: hidden; }
 @media (max-width: 860px) {
   html, body { overflow-x: visible; }
   .app { display: block; min-height: 100dvh; }
+  .app.findings-active {
+    height: auto;
+    overflow: visible;
+  }
   .topbar {
     grid-template-columns: 1fr;
     align-items: start;
