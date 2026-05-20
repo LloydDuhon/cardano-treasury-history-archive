@@ -293,7 +293,7 @@ function App() {
   const closeDrawer = useCallback(() => setSelected(null), []);
 
   return (
-    <div className="app">
+    <div className={"app " + (view === "findings" ? "findings-active" : "")}>
       <header className="topbar">
         <div className="brand">
           <div className="eyebrow"><span className="dot"></span> Cardano · Budget Committee briefing</div>
@@ -308,7 +308,7 @@ function App() {
 
       <KpiStrip stats={stats} />
 
-      <div className="body">
+      <div className={"body " + (view === "findings" ? "findings-mode" : "")}>
         <Sidebar filters={filters} setFilters={setFilters} view={view}
                  threshold={t.tieThreshold} setThreshold={v => setTweak("tieThreshold", v)} />
         <div className="main">
