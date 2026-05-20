@@ -4,6 +4,6 @@
 -r requirements.txt
 
 pytest==8.3.3
-respx==0.21.1
-mypy==1.13.0
+respx==0.23.1
+mypy==2.1.0
 ruff==0.6.9
