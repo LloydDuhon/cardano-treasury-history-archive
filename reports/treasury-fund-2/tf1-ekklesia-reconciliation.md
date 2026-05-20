@@ -1,6 +1,6 @@
 # Treasury Fund 1 To 2025 Ekklesia Reconciliation
 
-Generated: 2026-05-15T14:40:15Z
+Generated: 2026-05-20T14:51:30Z
 2025 Budget Reconciliation snapshot: 2026-05-15T12:27:22Z
 
 Purpose: reconcile Treasury Fund 1 contract records from the Sundae Treasury site against the original 2025 Ekklesia budget-process proposal records. This supplies human-readable owner identity evidence for TF1 contracts whose treasury vendor field is only a payment address.

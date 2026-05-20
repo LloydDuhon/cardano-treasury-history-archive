@@ -108,7 +108,7 @@
     &mdash; and which TF2 proposers have never previously taken treasury funds.
   </div>
   <div class="meta">
-    Snapshot generated 2026-05-15 15:56 UTC &middot;
+    Snapshot generated 2026-05-20 14:53 UTC &middot;
     Hydra Voting snapshot 2026-05-15T12:07:25Z &middot;
     Archive:
     <a
@@ -131,26 +131,27 @@
     </div>
     <div class="kpi">
       <div class="label">Returning (with prior funding)</div>
-      <div class="value">17</div>
+      <div class="value">19</div>
     </div>
     <div class="kpi">
       <div class="label">First-time proposers</div>
-      <div class="value">34</div>
+      <div class="value">32</div>
     </div>
   </div>
   <p>
     The Cardano treasury history archive joins each of the 69 current TF2 proposals to historical
-    records from Project Catalyst (funds 1&ndash;15) and Treasury Fund 1, then cross-checks against
-    on-chain <code>TreasuryWithdrawals</code> governance actions. 17 of the 51
-    unique TF2 proposers appear in that historical dataset; the remaining 34 have no
-    prior treasury record under any of the three sources. None of the 34 first-time
+    records from Project Catalyst (funds 1&ndash;15), Treasury Fund 1, and non-additive BuilderDAO
+    downstream detail, then cross-checks against on-chain <code>TreasuryWithdrawals</code>
+    governance actions. 19 of the 51
+    unique TF2 proposers appear in that historical dataset; the remaining 32 have no
+    prior treasury record under any archive source. None of the 32 first-time
     proposers were reclassified after the on-chain cross-check.
   </p>
   <div class="note">
-    <strong>Methodology and confidence.</strong> Catalyst rows are matched at "proposer mentioned
-    in proposal text" (medium confidence); TF1 rows are matched at the contract level (high
-    confidence). 122 of 607 historical rows are USD-denominated (early Catalyst funds) and have no
-    ADA value, so ADA totals understate activity. "MLabs LTD" and "MLabsLTD" are merged for
+    <strong>Methodology and confidence.</strong> Catalyst rows use direct/manual entity bridges
+    where available, plus "proposer mentioned in proposal text" matching for other rows; TF1 rows
+    are matched at the contract level; BuilderDAO rows are downstream detail only. 24% of historical rows (154 / 647) are USD-denominated; ADA totals exclude these. 2 BuilderDAO downstream rows are also excluded to avoid double-counting the TF1 parent payment.
+    "MLabs LTD" and "MLabsLTD" are merged for
     display. This is a provenance-first research view, not a final audit opinion.
   </div>
 </section>
@@ -189,7 +190,7 @@
 <section>
   <h2>
     3. Overall delivery status mix
-    <span class="count">&mdash; across all prior work of the 17 returners</span>
+    <span class="count">&mdash; across all prior work of the 19 returners</span>
   </h2>
   <figure>
     <img
@@ -206,7 +207,7 @@
 <section>
   <h2>
     4. First-time TF2 proposers
-    <span class="count">&mdash; 34 proposers with no prior treasury funding</span>
+    <span class="count">&mdash; 32 proposers with no prior treasury funding</span>
   </h2>
   <figure>
     <img
@@ -251,9 +252,11 @@
 <tr data-name="2 Lovelaces & Lido Nation" data-proposer="2 Lovelaces & Lido Nation" data-total_ada="527199.99" data-n_records="6" data-n_complete="2" data-n_in_progress="4" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>2 Lovelaces & Lido Nation</td><td class="num">527,200</td><td class="num">6</td><td class="num">2</td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
 <tr data-name="DeltaDeFi" data-proposer="DeltaDeFi" data-total_ada="500000.0" data-n_records="2" data-n_complete="2" data-n_in_progress="0" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>DeltaDeFi</td><td class="num">500,000</td><td class="num">2</td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
 <tr data-name="Indigo Foundation" data-proposer="Indigo Foundation" data-total_ada="450000.0" data-n_records="1" data-n_complete="1" data-n_in_progress="0" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>Indigo Foundation</td><td class="num">450,000</td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+<tr data-name="Five Binaries" data-proposer="Five Binaries" data-total_ada="360000.0" data-n_records="38" data-n_complete="18" data-n_in_progress="18" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>Five Binaries</td><td class="num">360,000</td><td class="num">38</td><td class="num">18</td><td class="num">18</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
 <tr data-name="WingRiders Ltd." data-proposer="WingRiders Ltd." data-total_ada="185000.0" data-n_records="1" data-n_complete="1" data-n_in_progress="0" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>WingRiders Ltd.</td><td class="num">185,000</td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
 <tr data-name="BLOXBEAN" data-proposer="BLOXBEAN" data-total_ada="99600.0" data-n_records="1" data-n_complete="0" data-n_in_progress="0" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>BLOXBEAN</td><td class="num">99,600</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
-<tr data-name="Prisma" data-proposer="Prisma" data-total_ada="32400.0" data-n_records="2" data-n_complete="0" data-n_in_progress="2" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>Prisma</td><td class="num">32,400</td><td class="num">2</td><td class="num">0</td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr></tbody>
+<tr data-name="Prisma" data-proposer="Prisma" data-total_ada="32400.0" data-n_records="2" data-n_complete="0" data-n_in_progress="2" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>Prisma</td><td class="num">32,400</td><td class="num">2</td><td class="num">0</td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+<tr data-name="Anvil Development Agency, Inc." data-proposer="Anvil Development Agency, Inc." data-total_ada="0.0" data-n_records="2" data-n_complete="0" data-n_in_progress="0" data-n_paused="0" data-n_withdrawn="0" data-n_risk_flagged="0"><td>Anvil Development Agency, Inc.</td><td class="num">0</td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr></tbody>
   </table>
 </section>
 
@@ -277,7 +280,6 @@
 <tr><td>Ledger Technologies SAS</td><td class="num">5,613,500</td><td class="num">3</td></tr>
 <tr><td>Magenta Labs</td><td class="num">5,450,000</td><td class="num">2</td></tr>
 <tr><td>Open Source Committee (Intersect)</td><td class="num">4,601,000</td><td class="num">1</td></tr>
-<tr><td>Anvil Development Agency, Inc.</td><td class="num">4,372,865</td><td class="num">1</td></tr>
 <tr><td>Wirex Limited</td><td class="num">3,961,538</td><td class="num">1</td></tr>
 <tr><td>Teragone Factory</td><td class="num">3,739,559</td><td class="num">1</td></tr>
 <tr><td>Dano Finance</td><td class="num">3,399,000</td><td class="num">1</td></tr>
@@ -296,7 +298,6 @@
 <tr><td>Intersect Technical Steering Committee</td><td class="num">1,193,000</td><td class="num">1</td></tr>
 <tr><td>Se7en Labs</td><td class="num">1,112,400</td><td class="num">1</td></tr>
 <tr><td>Wada Global</td><td class="num">989,901</td><td class="num">1</td></tr>
-<tr><td>Five Binaries</td><td class="num">952,750</td><td class="num">1</td></tr>
 <tr><td>STORM Partners</td><td class="num">929,699</td><td class="num">1</td></tr>
 <tr><td>David Tacuri</td><td class="num">653,947</td><td class="num">1</td></tr>
 <tr><td>IntersectCBC</td><td class="num">600,000</td><td class="num">1</td></tr>

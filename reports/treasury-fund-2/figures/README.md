@@ -8,11 +8,11 @@ These figures are the visual companion to `proposer-history.md` / `.csv` and
 answer two questions:
 
 1. For each TF2 proposer who has previously received treasury funds (Project
-   Catalyst and/or Treasury Fund 1, per the archive), what have they delivered
-   with that funding so far?
+   Catalyst, Treasury Fund 1, and non-additive BuilderDAO downstream detail,
+   per the archive), what have they delivered with that funding so far?
 2. Which TF2 proposers have *not* received treasury funds from any source
-   represented in the archive (Catalyst + TF1 + on-chain
-   `TreasuryWithdrawals` governance actions)?
+   represented in the archive (Catalyst + TF1 + BuilderDAO downstream detail
+   + on-chain `TreasuryWithdrawals` governance actions)?
 
 ## Audience
 
@@ -26,11 +26,11 @@ after committee review.
 | --- | --- |
 | `01-prior-ada-by-proposer.png` | Horizontal stacked bar: total prior ADA per returning TF2 proposer, segmented by historical project status. |
 | `02-prior-proposal-count-by-proposer.png` | Horizontal stacked bar: count of prior funded proposals per returning TF2 proposer, segmented by status. |
-| `03-status-mix-overall.png` | Twin donut: project-count mix and ADA-weighted mix of historical status across all prior work of the 17 returners. |
-| `04-first-time-tf2-proposers.png` | Horizontal bar: the 34 TF2 proposers with no prior treasury funding, ranked by TF2 ask. |
+| `03-status-mix-overall.png` | Twin donut: project-count mix and ADA-weighted mix of historical status across all prior work of the 18 returners. |
+| `04-first-time-tf2-proposers.png` | Horizontal bar: the 32 TF2 proposers with no prior treasury funding, ranked by TF2 ask. |
 | `tf2-proposer-history-dashboard.html` | Self-contained HTML view combining all four figures, KPIs, a sortable/filterable per-proposer table, and a first-timer table. Open in any browser. |
 | `figures-data.csv` | The cleaned per-proposer summary used to build figures 1-3. One row per canonical proposer with status counts and ADA splits. |
-| `first-time-proposers.csv` | The 34 first-time TF2 proposers with their total TF2 ask (ADA) and proposal count. |
+| `first-time-proposers.csv` | The 32 first-time TF2 proposers with their total TF2 ask (ADA) and proposal count. |
 | `_figures-summary.json` | Generation provenance: timestamps, counts, alias merges, and caveats. |
 
 ## Reconciliation against the archive summary
@@ -41,20 +41,25 @@ The figure generator reconciles against `reports/treasury-fund-2/_summary.json`:
 | --- | --- | --- |
 | TF2 proposals | 69 | 69 |
 | TF2 unique proposers | 51 | 51 |
-| Proposers with prior history | 17 (raw) | 16 (after alias merge) |
-| First-time proposers, Catalyst + TF1 only | not in summary | 34 |
-| First-time proposers, all sources (Catalyst + TF1 + on-chain) | not in summary | 34 |
-| Historical record count | 607 | 607 |
+| Proposers with prior history | 19 (raw) | 18 (after alias merge) |
+| First-time proposers, Catalyst + TF1 + BuilderDAO only | not in summary | 32 |
+| First-time proposers, all sources (Catalyst + TF1 + BuilderDAO + on-chain) | not in summary | 32 |
+| Historical record count | 647 | 647 |
 
 ## Methodology & confidence
 
-- **Catalyst rows (591 records)** are matched at "proposer mentioned in
-  proposal text" - **medium confidence** per the upstream archive.
+- **Catalyst rows (629 records)** use direct/manual entity bridges where
+  available, plus "proposer mentioned in proposal text" matching for other
+  rows.
 - **TF1 rows (16 records)** are matched at the contract level -
   **high confidence**.
+- **BuilderDAO downstream rows (2 current-proposer matches)** come from the
+  BuilderDAO KPI dashboard and are non-additive recipient detail. They are
+  excluded from ADA totals to avoid double-counting the TF1 parent payment to
+  Cardano Builder DAO.
 - **On-chain `TreasuryWithdrawals` rows** are used only to check whether
   any *first-time* candidate appears on-chain that the Catalyst/TF1 join
-  missed. None of the 34 first-time proposers were reclassified by this
+  missed. None of the 32 first-time proposers were reclassified by this
   check, so the "all sources" and "Catalyst + TF1 only" counts coincide.
 - Per `onchain-treasury-reconciliation.md`, on-chain TF1-overlap rows are
   not double-counted with TF1 contract amounts.
@@ -68,12 +73,16 @@ This is a provenance-first research view, not a final audit opinion.
    these as one entity for display, but the source data should be
    de-duplicated upstream. The merge is recorded in `_figures-summary.json`
    under `entity_resolution_merges`.
-2. **USD-denominated rows excluded from ADA totals.** 122 of 607
+2. **USD-denominated rows excluded from ADA totals.** 154 of 647
    historical rows are USD-denominated (early Catalyst funds, before
    ADA-denominated awards became the standard). ADA totals exclude these
    rows, so prior funding totals understate proposer activity. The count
    view (figure 2) includes them.
-3. **Hydra Voting snapshot is point-in-time.** The TF2 proposal data comes
+3. **BuilderDAO downstream rows are non-additive.** The two BuilderDAO rows
+   matching a current proposer are included as prior-history evidence but keep
+   `amount_ada` blank. The dashboard-reported downstream amount is already
+   covered by the TF1 parent contract to Cardano Builder DAO.
+4. **Hydra Voting snapshot is point-in-time.** The TF2 proposal data comes
    from `data/_raw/hydra_voting/cardano-budget-2026.json`; the source can
    change. The snapshot fetch time is recorded in the dashboard header and
    in `_figures-summary.json`.

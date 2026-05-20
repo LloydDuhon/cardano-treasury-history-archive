@@ -1,6 +1,6 @@
 # Report 2: Treasury Fund 2 Similarity To Previously Completed Work
 
-Generated: 2026-05-15T14:40:15Z
+Generated: 2026-05-20T14:51:30Z
 Current Budget Process snapshot: 2026-05-15T12:07:25Z
 
 Method: lexical TF-IDF cosine similarity over current proposal title/summary against previously funded and completed Project Catalyst proposals plus completed Treasury Fund 1 projects. Similarity is a screening signal, not proof of duplication.
@@ -86,7 +86,7 @@ Confidence bands: high >= 0.32, medium >= 0.20, low below 0.20. Rows below the c
 - Requested budget: 1,519,250.00 ADA
 #### Project Catalyst: Business Lead Generation on Cardano
 
-- Similarity: 0.197 (low)
+- Similarity: 0.196 (low)
 - Historical status: complete
 - Rationale: Shared terms: adoption, business, companies, lead, leads, need, network, pilot
 - Source: https://www.catalystexplorer.com/en/proposals/business-lead-generation-on-cardano-f12
@@ -156,7 +156,7 @@ Confidence bands: high >= 0.32, medium >= 0.20, low below 0.20. Rows below the c
 - Requested budget: 3,460,800.00 ADA
 #### Project Catalyst: Ledger Live Integration #2
 
-- Similarity: 0.187 (low)
+- Similarity: 0.186 (low)
 - Historical status: complete
 - Rationale: Shared terms: dapps, integration, ledger, secure
 - Source: https://www.catalystexplorer.com/en/proposals/ledger-live-integration-2-f9

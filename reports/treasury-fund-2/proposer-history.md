@@ -1,6 +1,6 @@
 # Report 1: Treasury Fund 2 Proposer Funding History
 
-Generated: 2026-05-15T14:40:15Z
+Generated: 2026-05-20T14:51:30Z
 Current Budget Process snapshot: 2026-05-15T12:07:25Z
 
 Scope: the 69 live proposals from the Cardano Budget Process 2026 API. Prior history is matched against Project Catalyst and Treasury Fund 1.
@@ -9,13 +9,16 @@ Delivery caveat: `failed/non-delivery signal` means a documented dataset signal 
 
 Matching caveat: Project Catalyst proposer records in the interim archive are often anonymized. This report therefore uses direct proposer entity matches where possible, plus explicitly labeled proposal-text mentions for team names. Treasury Fund 1 proposer matches depend on named vendor records; address-only vendor records are not attributed to current teams.
 
+BuilderDAO caveat: BuilderDAO KPI dashboard rows are downstream recipient detail for the TF1 Cardano Builder DAO parent contract. They are shown with blank `amount_ada` and non-additive labels so TF1/on-chain parent funding is not counted twice.
+
 ## Summary
 
 - Current proposals analyzed: 69
 - Unique proposer names analyzed: 51
-- Proposers with matched prior history: 17
-- Catalyst prior funding records: 591
+- Proposers with matched prior history: 19
+- Catalyst prior funding records: 629
 - Treasury Fund 1 prior funding records: 16
+- BuilderDAO downstream detail records: 2
 
 ## Proposer Details
 
@@ -92,7 +95,30 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 
 - Current proposal: Cardano Enterprise Adoption: Production Ticketing Platform
 - Current requested budget: 4,372,865.00 ADA
-- Prior funded history found: none above matching threshold.
+- Matched prior records: 2
+- Matched ADA-denominated total: 0.00 ADA
+- Ongoing prior projects/contracts: 2
+- Records with documented non-delivery signals: 0
+
+#### BuilderDAO downstream disbursement: BuilderDAO Round 2: Anvil Development Agency
+
+- Match: Anvil Development Agency via BuilderDAO KPI dashboard (high, 1.00)
+- Amount: 85,000.00 ADA downstream; non-additive with EMI-0004-25
+- Status: active; funding status: downstream_disbursement
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: Downstream recipient detail only; do not add to treasury totals because the parent TF1/on-chain payment is counted under EMI-0004-25. KPI dashboard metrics: Monthly Onchain Transactions: 854 / goal 2500; API Keys Issued: 129 / goal 250; Annual Recurring Revenue (ARR): 15000 usd / goal 30000 usd; Monthly Active Users: 110 / goal 200
+- Source: https://cbdao.taptools.io/
+
+#### BuilderDAO downstream disbursement: BuilderDAO Round 1: Anvil
+
+- Match: Anvil via BuilderDAO KPI dashboard (high, 0.92)
+- Amount: 132,500.00 ADA downstream; non-additive with EMI-0004-25
+- Status: active; funding status: downstream_disbursement
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: Downstream recipient detail only; do not add to treasury totals because the parent TF1/on-chain payment is counted under EMI-0004-25. KPI dashboard metrics: Onchain Transactions: 2000 / goal 15000; API Keys Issued: 85 / goal 250; Projects Powered by API: 8 / goal 20; Monthly Active Users: 65 / goal 200
+- Source: https://cbdao.taptools.io/
 
 ### AxellaCoin
 
@@ -268,7 +294,390 @@ Matching caveat: Project Catalyst proposer records in the interim archive are of
 
 - Current proposal: Nula: Cardano's token streaming protocol
 - Current requested budget: 952,750.00 ADA
-- Prior funded history found: none above matching threshold.
+- Matched prior records: 38
+- Matched ADA-denominated total: 360,000.00 ADA
+- Ongoing prior projects/contracts: 18
+- Records with documented non-delivery signals: 0
+
+#### Project Catalyst: Cardano serialization library in Go
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 6,000.00 USD
+- Status: complete; funding status: approved
+- Ongoing: no
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: Marked complete in source data; no closeout artifact captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/cardano-serialization-library-in-go-f3
+
+#### Project Catalyst: Implement CIP12 to Yoroi backends
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 930.00 USD
+- Status: in_progress; funding status: approved
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No final output captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/implement-cip12-to-yoroi-backends-f3
+
+#### Project Catalyst: Metadata oracle node
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 23,000.00 USD
+- Status: complete; funding status: approved
+- Ongoing: no
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: Marked complete in source data; no closeout artifact captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/metadata-oracle-node-f3
+
+#### Project Catalyst: Metadata oracles explorer
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 6,000.00 USD
+- Status: complete; funding status: approved
+- Ongoing: no
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: Marked complete in source data; no closeout artifact captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/metadata-oracles-explorer-f3
+
+#### Project Catalyst: Arduino SDK for Blockfrost API
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 9,000.00 USD
+- Status: unknown; funding status: approved
+- Ongoing: no
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No final output captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/arduino-sdk-for-blockfrost-api
+
+#### Project Catalyst: Elixir SDK for Blockfrost API
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 7,000.00 USD
+- Status: in_progress; funding status: approved
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No final output captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/elixir-sdk-for-blockfrost-api
+
+#### Project Catalyst: Golang SDK for Blockfrost API
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 7,000.00 USD
+- Status: in_progress; funding status: approved
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No final output captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/golang-sdk-for-blockfrost-api
+
+#### Project Catalyst: Haskell SDK for Blockfrost API
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 8,000.00 USD
+- Status: in_progress; funding status: approved
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No final output captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/haskell-sdk-for-blockfrost-api
+
+#### Project Catalyst: Java SDK for Blockfrost API
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 8,000.00 USD
+- Status: in_progress; funding status: approved
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No final output captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/java-sdk-for-blockfrost-api
+
+#### Project Catalyst: JavaScript SDK for Blockfrost API
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 9,500.00 USD
+- Status: in_progress; funding status: approved
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No final output captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/javascript-sdk-for-blockfrost-api
+
+#### Project Catalyst: Kotlin SDK for Blockfrost API
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 9,000.00 USD
+- Status: in_progress; funding status: approved
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No final output captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/kotlin-sdk-for-blockfrost-api
+
+#### Project Catalyst: .NET SDK for Blockfrost API
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 8,300.00 USD
+- Status: unknown; funding status: approved
+- Ongoing: no
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No final output captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/net-sdk-for-blockfrost-api
+
+#### Project Catalyst: Nodeless command line interface
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 14,000.00 USD
+- Status: complete; funding status: approved
+- Ongoing: no
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: Marked complete in source data; no closeout artifact captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/nodeless-command-line-interface
+
+#### Project Catalyst: Python SDK for Blockfrost API
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 9,500.00 USD
+- Status: in_progress; funding status: approved
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No final output captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/python-sdk-for-blockfrost-api
+
+#### Project Catalyst: Ruby SDK for Blockfrost API
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 7,000.00 USD
+- Status: in_progress; funding status: approved
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No final output captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/ruby-sdk-for-blockfrost-api
+
+#### Project Catalyst: Rust SDK for Blockfrost API
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 7,000.00 USD
+- Status: in_progress; funding status: approved
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No final output captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/rust-sdk-for-blockfrost-api
+
+#### Project Catalyst: Scala SDK for Blockfrost API
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 9,500.00 USD
+- Status: in_progress; funding status: approved
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No final output captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/scala-sdk-for-blockfrost-api
+
+#### Project Catalyst: Swift SDK for Blockfrost API
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 9,500.00 USD
+- Status: in_progress; funding status: approved
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No final output captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/swift-sdk-for-blockfrost-api
+
+#### Project Catalyst: Yoroi ⇄ Blockfrost bridge
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 6,500.00 USD
+- Status: complete; funding status: approved
+- Ongoing: no
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: Marked complete in source data; no closeout artifact captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/yoroi-blockfrost-bridge
+
+#### Project Catalyst: C# SDK for Blockfrost API
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 9,000.00 USD
+- Status: in_progress; funding status: approved
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No final output captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/c-sdk-for-blockfrost-api
+
+#### Project Catalyst: Cardano IPFS chronicles
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 10,080.00 USD
+- Status: in_progress; funding status: approved
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No final output captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/cardano-ipfs-chronicles
+
+#### Project Catalyst: Localize Yoroi for Czech market
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 2,500.00 USD
+- Status: in_progress; funding status: approved
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No final output captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/localize-yoroi-for-czech-market
+
+#### Project Catalyst: Localize Yoroi for Slovak market
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 2,500.00 USD
+- Status: in_progress; funding status: approved
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No final output captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/localize-yoroi-for-slovak-market
+
+#### Project Catalyst: Metadata oracle endpoint in Yoroi
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 1,200.00 USD
+- Status: in_progress; funding status: approved
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No final output captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/metadata-oracle-endpoint-in-yoroi
+
+#### Project Catalyst: Websocket link for Blockfrost API
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 18,000.00 USD
+- Status: in_progress; funding status: approved
+- Ongoing: yes
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: No final output captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/websocket-link-for-blockfrost-api
+
+#### Project Catalyst: Dart SDK for Blockfrost API
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 9,400.00 USD
+- Status: complete; funding status: approved
+- Ongoing: no
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: Marked complete in source data; no closeout artifact captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/dart-sdk-for-blockfrost-api
+
+#### Project Catalyst: Cardano games assets for Unity
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 57,000.00 USD
+- Status: complete; funding status: approved
+- Ongoing: no
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: Marked complete in source data; no closeout artifact captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/cardano-games-assets-for-unity-f7
+
+#### Project Catalyst: Open Data Public Notary
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 20,800.00 USD
+- Status: complete; funding status: approved
+- Ongoing: no
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: Marked complete in source data; no closeout artifact captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/open-data-public-notary-f7
+
+#### Project Catalyst: Open-sourcing Blockfrost API
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 119,000.00 USD
+- Status: complete; funding status: approved
+- Ongoing: no
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: Marked complete in source data; no closeout artifact captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/open-sourcing-blockfrost-api-f7
+
+#### Project Catalyst: Cardano IPFS chronicles 2022
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 26,400.00 USD
+- Status: complete; funding status: approved
+- Ongoing: no
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: Marked complete in source data; no closeout artifact captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/cardano-ipfs-chronicles-2022-f8
+
+#### Project Catalyst: Milkomeda for Cardano unity assets
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 13,200.00 USD
+- Status: complete; funding status: approved
+- Ongoing: no
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: Marked complete in source data; no closeout artifact captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/milkomeda-for-cardano-unity-assets-f8
+
+#### Project Catalyst: PHP SDK for Blockfrost.io
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 8,000.00 USD
+- Status: complete; funding status: approved
+- Ongoing: no
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: Marked complete in source data; no closeout artifact captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/php-sdk-for-blockfrostio-f8
+
+#### Project Catalyst: Blockfrost bootstrap
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 35,000.00 ADA
+- Status: complete; funding status: approved
+- Ongoing: no
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: Marked complete in source data; no closeout artifact captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/blockfrost-bootstrap-f10
+
+#### Project Catalyst: Blockfrost SDKs refresh
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 150,000.00 ADA
+- Status: complete; funding status: approved
+- Ongoing: no
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: Marked complete in source data; no closeout artifact captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/blockfrost-sdks-refresh-f10
+
+#### Project Catalyst: Cardano App for Slack
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 35,000.00 ADA
+- Status: complete; funding status: approved
+- Ongoing: no
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: Marked complete in source data; no closeout artifact captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/cardano-app-for-slack-f10
+
+#### Project Catalyst: Crystal SDK for Blockfrost API
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 30,000.00 ADA
+- Status: complete; funding status: approved
+- Ongoing: no
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: Marked complete in source data; no closeout artifact captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/crystal-sdk-for-blockfrost-api-f10
+
+#### Project Catalyst: Erlang SDK for Blockfrost API
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 30,000.00 ADA
+- Status: complete; funding status: approved
+- Ongoing: no
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: Marked complete in source data; no closeout artifact captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/erlang-sdk-for-blockfrost-api-f10
+
+#### Project Catalyst: Tor hidden service for Blockfrost
+
+- Match: Marek Mahut / Proposer c269e96b (Five Binaries owner) (high, 1.00)
+- Amount: 80,000.00 ADA
+- Status: complete; funding status: approved
+- Ongoing: no
+- Failed/non-delivery signal: No documented non-delivery signal in dataset.
+- Final documented outputs: Marked complete in source data; no closeout artifact captured in interim dataset.
+- Source: https://www.catalystexplorer.com/en/proposals/tor-hidden-service-for-blockfrost-f10
 
 ### Houdiniswap
 
