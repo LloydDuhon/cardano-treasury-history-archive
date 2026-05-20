@@ -12,6 +12,7 @@ const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
 const VIEWS = [
   { id: "graph",  label: "Funding graph", hint: "Network" },
   { id: "ledger", label: "Proposal ledger",    hint: "Table"   },
+  { id: "findings", label: "Similarity findings", hint: "Review" },
   { id: "flow",   label: "Funding flow",       hint: "Sankey"  }
 ];
 
@@ -166,6 +167,11 @@ function ViewIcon({ view }) {
   if (view === "ledger") return <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
     <path d="M2 3h10M2 7h10M2 11h10" stroke="currentColor" /><path d="M5 3v8" stroke="currentColor" />
   </svg>;
+  if (view === "findings") return <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+    <path d="M2 2.5h6M2 6.5h10M2 10.5h7" stroke="currentColor" />
+    <circle cx="10.5" cy="2.5" r="1.5" stroke="currentColor" />
+    <path d="M11.6 3.6L13 5" stroke="currentColor" />
+  </svg>;
   return <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
     <path d="M2 4c4 0 4 6 8 6h2" stroke="currentColor" strokeWidth="2" />
     <path d="M2 8c3 0 3 -4 7 -4h3" stroke="currentColor" strokeWidth="1" />
@@ -191,6 +197,7 @@ function Methodology({ onClose, meta }) {
             <li><strong>Prior Project Catalyst funding</strong> matched by proposer name / proposal-text mention.</li>
             <li><strong>Treasury Fund 1 contracts</strong> reconciled against the 2025 Budget Process ekklesia metadata.</li>
             <li><strong>2025 Budget Process identity bridges</strong> — company name, domain, social handles, vote summary.</li>
+            <li><strong>Similarity findings</strong> from the prior-work overlap review. AI Matched rows are screening results and require human review before final use.</li>
           </ul>
 
           <h3>History threshold</h3>
@@ -324,6 +331,12 @@ function App() {
                 proposals={filteredProposals}
                 threshold={t.tieThreshold}
                 selected={selected}
+                onOpenProposal={openProposal}
+              />
+            )}
+            {view === "findings" && (
+              <FindingsView
+                proposals={filteredProposals}
                 onOpenProposal={openProposal}
               />
             )}

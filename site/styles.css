@@ -503,6 +503,248 @@ html, body { min-height: 100vh; overflow-x: hidden; }
 }
 .badge.zero .dot { background: var(--ink-faint); }
 
+/* ===== Findings view ===== */
+.findings-view {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(360px, 0.95fr) minmax(420px, 1.25fr);
+}
+.findings-list {
+  min-width: 0;
+  border-right: 1px solid var(--rule);
+  background: var(--paper-soft);
+  display: flex;
+  flex-direction: column;
+}
+.findings-toolbar {
+  padding: 16px 18px 12px;
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: baseline;
+}
+.findings-title {
+  font-weight: 600;
+  color: var(--ink);
+}
+.findings-sub,
+.findings-note {
+  margin-top: 3px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--ink-mute);
+}
+.findings-note {
+  color: var(--ink-faint);
+  text-align: right;
+  white-space: nowrap;
+}
+.finding-cards {
+  overflow: auto;
+  padding: 8px 12px 28px;
+}
+.finding-card {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 1px solid transparent;
+  border-bottom-color: var(--rule);
+  padding: 11px 10px;
+  cursor: pointer;
+  color: inherit;
+}
+.finding-card:hover {
+  background: var(--paper);
+}
+.finding-card.selected {
+  background: var(--paper);
+  border-color: var(--cardano-soft);
+  box-shadow: inset 2px 0 0 var(--cardano);
+}
+.finding-card-top,
+.finding-meta,
+.finding-score-row,
+.detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+.finding-card-top {
+  margin-bottom: 7px;
+}
+.finding-percent {
+  margin-left: auto;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-mid);
+}
+.finding-current {
+  color: var(--ink);
+  font-weight: 600;
+  line-height: 1.35;
+}
+.finding-history {
+  margin-top: 4px;
+  color: var(--ink-mid);
+  line-height: 1.35;
+}
+.finding-meta {
+  margin-top: 6px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--ink-faint);
+}
+.finding-excerpt {
+  margin-top: 7px;
+  color: var(--ink-mute);
+  font-size: 11.5px;
+  line-height: 1.45;
+}
+.findings-empty {
+  margin: 18px;
+  color: var(--ink-mute);
+  font-size: 13px;
+}
+.finding-detail {
+  min-width: 0;
+  overflow: auto;
+  background: var(--paper);
+  padding: 22px 26px 44px;
+}
+.finding-detail.empty {
+  color: var(--ink-mute);
+  font-size: 13px;
+}
+.finding-detail-head {
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 14px;
+  margin-bottom: 14px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px 18px;
+}
+.finding-detail-head .kind {
+  grid-column: 1 / -1;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--ink-mute);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.finding-detail-head h2 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.25;
+}
+.open-proposal {
+  align-self: start;
+  border: 1px solid var(--rule-strong);
+  background: var(--paper);
+  color: var(--cardano-ink);
+  border-radius: var(--radius);
+  padding: 6px 9px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  cursor: pointer;
+}
+.open-proposal:hover {
+  border-color: var(--cardano-soft);
+  background: var(--cardano-pale);
+}
+.finding-score-row {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-mid);
+}
+.finding-detail-section {
+  margin-bottom: 16px;
+}
+.finding-detail-section h3 {
+  margin: 0 0 6px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  font-weight: 500;
+}
+.finding-detail-section p {
+  margin: 0;
+  color: var(--ink-mid);
+  font-size: 13px;
+  line-height: 1.55;
+}
+.detail-title {
+  color: var(--ink);
+  font-weight: 600;
+  line-height: 1.35;
+}
+.detail-meta {
+  margin-top: 6px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--ink-faint);
+}
+.detail-meta .src {
+  padding: 1px 5px;
+  border-radius: 2px;
+}
+.detail-meta .src.catalyst { color: var(--src-catalyst); background: oklch(0.50 0.14 264 / 0.08); }
+.detail-meta .src.tf1 { color: var(--src-tf1); background: oklch(0.52 0.10 200 / 0.08); }
+.detail-meta .src.onchain { color: var(--src-2025); background: oklch(0.50 0.13 35 / 0.08); }
+.detail-meta .src.builderdao { color: var(--src-current); background: oklch(0.48 0.15 252 / 0.08); }
+.finding-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.finding-detail-grid > div {
+  border: 1px solid var(--rule);
+  background: var(--paper-soft);
+  border-radius: var(--radius);
+  padding: 9px 10px;
+  min-width: 0;
+}
+.finding-detail-grid .l {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.finding-detail-grid .v {
+  margin-top: 4px;
+  color: var(--ink);
+  font-size: 12.5px;
+  overflow-wrap: anywhere;
+}
+.finding-detail-footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 18px;
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--ink-faint);
+}
+.finding-detail-footer a {
+  color: var(--cardano);
+  text-decoration: none;
+  border-bottom: 1px solid var(--cardano-soft);
+  white-space: nowrap;
+}
+
 /* ===== Sankey ===== */
 .flow-stage {
   flex: 1;
@@ -942,6 +1184,20 @@ html, body { min-height: 100vh; overflow-x: hidden; }
   .graph-overlay-tl {
     max-width: min(300px, calc(100vw - 44px));
   }
+  .findings-view {
+    grid-template-columns: 1fr;
+  }
+  .findings-list {
+    border-right: 0;
+    border-bottom: 1px solid var(--rule);
+    max-height: 420px;
+  }
+  .finding-detail {
+    min-height: 520px;
+  }
+  .finding-detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .drawer {
     width: min(100vw, 560px);
   }
@@ -957,5 +1213,19 @@ html, body { min-height: 100vh; overflow-x: hidden; }
   }
   .graph-overlay-tl {
     display: none;
+  }
+  .findings-toolbar,
+  .finding-detail-head,
+  .finding-detail-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .findings-note {
+    text-align: left;
+    white-space: normal;
+  }
+  .finding-detail-grid {
+    grid-template-columns: 1fr;
   }
 }
