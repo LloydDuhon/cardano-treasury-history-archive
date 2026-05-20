@@ -17,10 +17,10 @@ pypdf==5.0.1
 
 # --- Phase 3 (deferred): Milestone Module scraping ---
 # selectolax==0.3.27
-# beautifulsoup4==4.12.3
+# beautifulsoup4==4.14.3
 
 # --- Phase 4: Wayback CDX scrape for Fund 1 ---
-beautifulsoup4==4.12.3
+beautifulsoup4==4.14.3
 soupsieve==2.6
 
 # --- Phase 6: consolidated CSV output ---
