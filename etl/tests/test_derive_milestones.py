@@ -62,6 +62,8 @@ def test_kind_for_url_classification() -> None:
     assert _kind_for_url("https://x.org/doc.pdf") == "pdf"
     assert _kind_for_url("https://youtu.be/abc") == "video"
     assert _kind_for_url("https://docs.google.com/document/d/x") == "demo"
+    assert _kind_for_url("https://github.com.evil.test/org/repo") == "other"
+    assert _kind_for_url("https://docs.google.com.evil.test/document/d/x") == "other"
 
 
 def test_slug_from_proposal_url() -> None:
