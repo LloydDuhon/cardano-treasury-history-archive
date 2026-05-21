@@ -31,6 +31,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlsplit
 
 from slugify import slugify
 
@@ -75,20 +76,27 @@ def _extract_urls(text: str | None) -> list[str]:
     return list(seen)
 
 
+def _host_is(host: str, domain: str) -> bool:
+    return host == domain or host.endswith(f".{domain}")
+
+
 def _kind_for_url(url: str) -> str:
     """Best-effort classification for evidence URLs."""
+    parsed = urlsplit(url)
+    host = (parsed.hostname or "").lower()
+    path = parsed.path.lower()
     lower = url.lower()
-    if "github.com" in lower:
-        return "github_pr" if "/pull/" in lower or "/pr/" in lower else "github_repo"
+    if _host_is(host, "github.com"):
+        return "github_pr" if "/pull/" in path or "/pr/" in path else "github_repo"
     if lower.endswith(".pdf"):
         return "pdf"
-    if any(host in lower for host in ("youtube.com", "youtu.be", "vimeo.com")):
+    if any(_host_is(host, domain) for domain in ("youtube.com", "youtu.be", "vimeo.com")):
         return "video"
-    if "drive.google.com" in lower or "docs.google.com" in lower:
+    if _host_is(host, "drive.google.com") or _host_is(host, "docs.google.com"):
         return "demo"
-    if "/blog/" in lower or lower.endswith((".md", ".rst")):
+    if "/blog/" in path or lower.endswith((".md", ".rst")):
         return "blog_post"
-    if lower.startswith("https://") and "/" not in lower[8:].rstrip("/"):
+    if parsed.scheme == "https" and path.rstrip("/") in {"", "/"}:
         return "website"
     return "other"
 
