@@ -44,7 +44,7 @@ jobs:
       - name: Build site bundle
         working-directory: site
         run: |
-          npm ci
+          npm ci --ignore-scripts
           npm run build
           rm -rf node_modules
 
