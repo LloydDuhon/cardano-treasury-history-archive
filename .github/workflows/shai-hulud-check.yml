@@ -1,0 +1,36 @@
+name: Shai-Hulud Security Check
+
+on:
+  pull_request:
+    paths:
+      - "**/package.json"
+      - "**/package-lock.json"
+      - "**/yarn.lock"
+      - "**/pnpm-lock.yaml"
+      - "**/bun.lockb"
+      - ".github/workflows/shai-hulud-check.yml"
+  push:
+    branches: [main, master]
+    paths:
+      - "**/package.json"
+      - "**/package-lock.json"
+      - "**/yarn.lock"
+      - "**/pnpm-lock.yaml"
+      - "**/bun.lockb"
+      - ".github/workflows/shai-hulud-check.yml"
+  schedule:
+    - cron: "27 9 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: gensecaihq/Shai-Hulud-2.0-Detector@v2
+        with:
+          scan-lockfiles: true
+          fail-on-critical: true
