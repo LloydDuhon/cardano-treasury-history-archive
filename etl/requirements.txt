@@ -13,7 +13,7 @@ python-slugify==8.0.4
 
 # --- Phase 2: PDF parsing for IOG voting-results ---
 pdfplumber==0.11.9
-pypdf==6.11.0
+pypdf==6.12.0
 
 # --- Phase 3 (deferred): Milestone Module scraping ---
 # selectolax==0.3.27
