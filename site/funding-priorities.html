@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A retrospective history of Project Catalyst requests, funding, and documented delivery mapped to Cardano Vision 2030." />
+  <title>Cardano funding priorities — Vision 2030</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="funding-priorities.css" />
+</head>
+<body>
+  <header class="masthead">
+    <a class="wordmark" href="./">Cardano treasury history archive</a>
+    <nav aria-label="Report navigation">
+      <a aria-current="page" href="funding-priorities.html">Funding priorities</a>
+      <a href="./">TF2 explorer</a>
+      <a href="https://github.com/LloydDuhon/cardano-treasury-history-archive">Data and code</a>
+    </nav>
+  </header>
+
+  <main id="report">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Historical allocation study · Project Catalyst F1–F15</p>
+        <h1>What Cardano asked for, funded, and delivered.</h1>
+      </div>
+      <div class="hero-note">
+        <p>Earlier proposals are mapped retrospectively to the five pillars of the draft Cardano Vision 2030 framework. The result is a comparable history of expressed demand, voter-selected priorities, and documented completion.</p>
+        <p class="asof" id="asof">Loading archive snapshot…</p>
+      </div>
+    </section>
+
+    <div id="loading" class="loading" role="status" aria-live="polite">
+      <span></span><span></span><span></span>
+    </div>
+    <div id="error" class="error" hidden>Report data could not be loaded. The downloadable CSV artifacts remain available in the repository.</div>
+
+    <div id="content" hidden>
+      <section class="summary" aria-label="Report summary">
+        <div><span>Archived proposals</span><strong id="proposal-count">—</strong></div>
+        <div><span>Fund cycles</span><strong>15</strong></div>
+        <div><span>Result years</span><strong>2020–2026</strong></div>
+        <div><span>Classification coverage</span><strong id="coverage">—</strong></div>
+      </section>
+
+      <section class="controls" aria-label="Report controls">
+        <div class="control-block">
+          <span class="control-label">Measure</span>
+          <div class="segmented" id="measure-control">
+            <button class="active" data-measure="requested" type="button">Requested</button>
+            <button data-measure="funded" type="button">Funded</button>
+            <button data-measure="delivered" type="button">Delivered</button>
+          </div>
+        </div>
+        <label class="control-block">
+          <span class="control-label">Unit</span>
+          <select id="unit-select">
+            <option value="count">Proposal count</option>
+            <option value="ADA">ADA amount</option>
+            <option value="USD">USD amount</option>
+            <option value="USDM">USDM amount</option>
+          </select>
+        </label>
+        <label class="control-block">
+          <span class="control-label">Time view</span>
+          <select id="dimension-select">
+            <option value="year">By year</option>
+            <option value="fund">By fund</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="visual" aria-labelledby="chart-title">
+        <div class="section-head">
+          <div>
+            <p class="section-index">01 / ALLOCATION HISTORY</p>
+            <h2 id="chart-title">Requested proposals by year</h2>
+          </div>
+          <p id="chart-context">Each bar is one fund-year total, divided by primary Vision 2030 pillar.</p>
+        </div>
+        <div id="legend" class="legend"></div>
+        <div id="chart" class="chart" aria-label="Stacked bar chart"></div>
+        <p id="empty-chart" class="empty" hidden>No records exist for this measure and currency.</p>
+      </section>
+
+      <section class="table-section" aria-labelledby="table-title">
+        <div class="section-head">
+          <div>
+            <p class="section-index">02 / DETAIL</p>
+            <h2 id="table-title">Category ledger</h2>
+          </div>
+          <p>Counts and original-currency amounts are shown together; currencies are never added across denominations.</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Period</th><th>Vision 2030 pillar</th><th>Currency</th><th>Requests</th><th>Requested</th><th>Funded</th><th>Funded amount</th><th>Delivered</th><th>Completed award value</th></tr></thead>
+            <tbody id="detail-rows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="method" aria-labelledby="method-title">
+        <div>
+          <p class="section-index">03 / METHOD</p>
+          <h2 id="method-title">A present-day lens, not a historical claim.</h2>
+        </div>
+        <div class="method-copy">
+          <p>Vision 2030 did not govern the earlier funds. This report assigns one primary pillar per proposal to prevent double counting. Specific challenge names drive high-confidence mappings; open categories use conservative phrase scoring; unresolved cases remain visible as ambiguous.</p>
+          <p><strong>Delivered</strong> means an officially funded proposal whose archived project status is complete. The associated amount is its recorded award value, not audited expenditure. It is documented completion, not an independent impact assessment. Evidence is weakest for Funds 2–5, partial for Funds 6–9, milestone-based from Fund 10 onward, and still accruing for recent funds.</p>
+          <div class="links">
+            <a href="https://github.com/LloydDuhon/cardano-treasury-history-archive/tree/main/reports/funding-priorities-vision-2030">Report artifacts</a>
+            <a href="https://product.cardano.intersectmbo.org/vision/strategy-2030/">Vision 2030 source</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="funding-priorities.js" defer></script>
+</body>
+</html>

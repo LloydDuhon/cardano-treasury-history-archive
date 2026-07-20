@@ -301,6 +301,7 @@ function App() {
           <div className="sub">Explore the 69 current proposals, 51 proposers, and prior Cardano funding records matched by the open archive.</div>
         </div>
         <div className="meta">
+          <span><a href="funding-priorities.html">funding priorities</a></span>
           <span><span className="meta-k">snapshot </span><span className="meta-v">{(DATA.meta.generated_at || "").slice(0,10)}</span></span>
           <span><span className="meta-k">source </span><ExternalLink href={DATA.meta.snapshot_source}>hydra-voting</ExternalLink></span>
         </div>

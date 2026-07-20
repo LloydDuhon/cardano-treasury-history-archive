@@ -1,0 +1,65 @@
+fund,pillar,pillar_name,currency,requested_proposals,requested_amount,funded_proposals,funded_amount,delivered_proposals,delivered_amount
+1,PX,Ambiguous / cross-pillar,USD,45,53056154.0,8,2342511.0,0,0.0
+2,P2,Adoption & Utility,USD,11,2627222.0,3,87558.0,1,41195.0
+2,P4,Community & Ecosystem Growth,USD,10,2301108.0,0,0.0,0,0.0
+2,P5,Ecosystem Sustainability & Resilience,USD,1,140000.0,0,0.0,0,0.0
+2,PX,Ambiguous / cross-pillar,USD,57,14847959.0,8,102847.0,8,102847.0
+3,P2,Adoption & Utility,USD,123,3700704.0,21,399465.0,14,313535.0
+4,P2,Adoption & Utility,USD,175,7375322.0,32,553640.0,12,302500.0
+4,P3,Governance,USD,18,216105.0,5,58469.0,3,52669.0
+4,P4,Community & Ecosystem Growth,USD,37,581321.0,12,110340.0,7,67700.0
+4,PX,Ambiguous / cross-pillar,USD,13,310177.0,1,3000.0,1,3000.0
+5,P2,Adoption & Utility,USD,167,7242265.0,40,1106276.0,21,691266.0
+5,P3,Governance,USD,13,185820.0,6,96320.0,5,91720.0
+5,P4,Community & Ecosystem Growth,USD,64,1972094.0,24,372266.0,21,293366.0
+6,P1,Infrastructure & Research Excellence,USD,9,230884.0,3,49000.0,3,49000.0
+6,P2,Adoption & Utility,USD,394,19604866.0,65,2111345.0,41,1465355.0
+6,P3,Governance,USD,31,453399.0,16,160210.0,12,147610.0
+6,P4,Community & Ecosystem Growth,USD,169,4417693.0,47,617219.0,38,500999.0
+6,P5,Ecosystem Sustainability & Resilience,USD,2,2100.0,2,2100.0,1,1000.0
+6,PX,Ambiguous / cross-pillar,USD,43,987640.0,18,244804.0,16,204804.0
+7,P2,Adoption & Utility,USD,407,16866759.0,110,2842825.0,78,2239618.0
+7,P3,Governance,USD,92,2812619.0,31,807634.0,21,568813.0
+7,P4,Community & Ecosystem Growth,USD,250,7998181.0,89,1665980.0,78,1527614.0
+7,P5,Ecosystem Sustainability & Resilience,USD,52,1383182.0,14,360030.0,8,180388.0
+7,PX,Ambiguous / cross-pillar,USD,67,1952102.0,25,262625.0,22,234625.0
+8,P1,Infrastructure & Research Excellence,USD,95,5813071.0,44,1644274.0,31,1361342.0
+8,P2,Adoption & Utility,USD,552,34131956.0,184,8338610.0,142,6681629.0
+8,P3,Governance,USD,57,1539800.0,27,529211.0,18,425020.0
+8,P4,Community & Ecosystem Growth,USD,276,6167782.0,90,1490339.0,74,1330260.0
+8,PX,Ambiguous / cross-pillar,USD,75,3121871.0,22,387655.0,14,242718.0
+9,P1,Infrastructure & Research Excellence,USD,66,4277170.0,15,769581.0,11,364889.0
+9,P2,Adoption & Utility,USD,648,58452365.0,114,8807198.99,97,8154137.0
+9,P3,Governance,USD,143,6648920.0,35,1577454.0,29,1412765.0
+9,P4,Community & Ecosystem Growth,USD,216,5824439.0,45,832475.0,38,738702.0
+9,PX,Ambiguous / cross-pillar,USD,32,1116726.0,7,0.0,0,0.0
+10,P1,Infrastructure & Research Excellence,ADA,184,54498482.0,28,6821127.0,21,5598148.0
+10,P2,Adoption & Utility,ADA,845,213695036.0,86,19474045.689999998,63,15412126.0
+10,P3,Governance,ADA,148,39587677.0,26,13113561.76,19,10319505.0
+10,P4,Community & Ecosystem Growth,ADA,103,3983799.0,21,655692.0,18,569185.0
+10,P5,Ecosystem Sustainability & Resilience,ADA,87,17183467.0,17,3376587.0,12,2841987.0
+10,PX,Ambiguous / cross-pillar,ADA,97,5451078.0,14,688150.0,12,628150.0
+11,P2,Adoption & Utility,ADA,607,101715917.0,222,31647455.62,151,22525875.0
+11,P3,Governance,ADA,10,2771512.0,6,1894895.39,3,1675000.0
+11,P4,Community & Ecosystem Growth,ADA,138,12137182.0,37,3641526.8200000003,27,2724476.0
+11,PX,Ambiguous / cross-pillar,ADA,165,15843911.0,35,3543211.0,29,3107466.0
+12,P2,Adoption & Utility,ADA,805,144910267.0,180,30113471.459999993,92,14885451.0
+12,P3,Governance,ADA,2,137650.0,1,45000.0,1,45000.0
+12,P4,Community & Ecosystem Growth,ADA,191,13539154.0,35,2313456.01,22,1538881.0
+12,PX,Ambiguous / cross-pillar,ADA,207,13554131.0,30,1923336.4,18,1353708.0
+13,P2,Adoption & Utility,ADA,1131,221321571.0,141,26583714.42,48,11037694.0
+13,P3,Governance,ADA,5,435779.0,2,99436.0,0,0.0
+13,P4,Community & Ecosystem Growth,ADA,275,19466668.0,29,1852565.6,13,1009868.0
+13,PX,Ambiguous / cross-pillar,ADA,228,16462785.0,27,1765424.1300000001,13,982422.0
+14,P2,Adoption & Utility,ADA,850,113401563.0,97,2557589.85,0,0.0
+14,P3,Governance,ADA,5,283754.0,0,0.0,0,0.0
+14,P4,Community & Ecosystem Growth,ADA,206,9332964.0,14,138530.38999999998,0,0.0
+14,P4,Community & Ecosystem Growth,USD,1,60000.0,0,0.0,0,0.0
+14,P5,Ecosystem Sustainability & Resilience,ADA,1,15000.0,0,0.0,0,0.0
+14,PX,Ambiguous / cross-pillar,ADA,220,10347941.0,20,179783.99,0,0.0
+15,P1,Infrastructure & Research Excellence,ADA,1,39820.0,0,0.0,0,0.0
+15,P2,Adoption & Utility,ADA,393,73266720.0,0,0.0,0,0.0
+15,P2,Adoption & Utility,USDM,85,800700.0,0,0.0,0,0.0
+15,P3,Governance,ADA,4,215518.0,0,0.0,0,0.0
+15,P4,Community & Ecosystem Growth,ADA,74,3535722.0,0,0.0,0,0.0
+15,PX,Ambiguous / cross-pillar,ADA,95,4897318.0,0,0.0,0,0.0
