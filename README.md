@@ -10,6 +10,7 @@ An open archive of Cardano funding history across Project Catalyst, Treasury Fun
 - **Cardano on-chain treasury withdrawals:** Koios governance-action data for `TreasuryWithdrawals` under `data/historical/cardano-treasury-withdrawals/`.
 - **Treasury Fund 2 current snapshot:** raw 2026 Cardano Budget Process data from Hydra Voting under `data/_raw/hydra_voting/`.
 - **Generated reports:** Treasury Fund 2 proposer-history, proposal-similarity, 2025 identity bridge, and TF1-to-2025 reconciliation outputs under `reports/treasury-fund-2/`.
+- **Funding-priority history:** Project Catalyst requests, funded outcomes, and documented delivery mapped retrospectively to the five Cardano Vision 2030 pillars under `reports/funding-priorities-vision-2030/`.
 - **Static explorer:** a browser-based Treasury Fund 2 history viewer under `site/`.
 - **ETL and validation:** Python fetchers, normalizers, report generation, and schemas under `etl/` and `schemas/`.
 
@@ -29,6 +30,10 @@ The static viewer in `site/` gives a browser interface over the same current
 Treasury Fund 2 data and matched historical records. It can be served locally
 with `python3 -m http.server` from the `site/` directory or published with the
 included GitHub Pages workflow.
+
+The published funding-priority report is available at
+`site/funding-priorities.html`. Its source CSVs include per-fund, per-year, and
+proposal-level classification audit outputs.
 
 ## Confidence
 
@@ -65,6 +70,7 @@ See `etl/README.md` for environment setup. The Treasury Fund 2 reports are gener
 cd etl
 python -m scripts.generate_treasury_fund_reports
 python scripts/generate_treasury_dashboard_data.py --repo-root .. --out ../site
+python scripts/generate_funding_priorities_report.py --repo-root ..
 ```
 
 Refresh raw snapshots before relying on the reports for publication, because the Hydra Voting and budget-process sites can change.

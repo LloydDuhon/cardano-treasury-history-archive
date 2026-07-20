@@ -34,6 +34,7 @@ cd etl
 python -m scripts.generate_treasury_fund_reports
 cd ..
 python etl/scripts/generate_treasury_dashboard_data.py --repo-root . --out site
+python etl/scripts/generate_funding_priorities_report.py --repo-root .
 ```
 
 The committed `site/data.json` should be reproducible from committed raw inputs

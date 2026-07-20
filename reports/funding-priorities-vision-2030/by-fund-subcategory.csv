@@ -1,0 +1,110 @@
+fund,pillar,pillar_name,currency,requested_proposals,requested_amount,funded_proposals,funded_amount,delivered_proposals,delivered_amount,subcategory
+1,PX,Ambiguous / cross-pillar,USD,45,53056154.0,8,2342511.0,0,0.0,ambiguous-or-cross-pillar
+2,P2,Adoption & Utility,USD,2,51195.0,1,41195.0,1,41195.0,defi-and-payments
+2,P2,Adoption & Utility,USD,3,1200000.0,0,0.0,0,0.0,identity-and-enterprise
+2,P2,Adoption & Utility,USD,6,1376027.0,2,46363.0,0,0.0,products-and-developer-experience
+2,P4,Community & Ecosystem Growth,USD,3,456500.0,0,0.0,0,0.0,communications-and-outreach
+2,P4,Community & Ecosystem Growth,USD,5,1294008.0,0,0.0,0,0.0,community-and-regional-growth
+2,P4,Community & Ecosystem Growth,USD,2,550600.0,0,0.0,0,0.0,education-and-talent
+2,P5,Ecosystem Sustainability & Resilience,USD,1,140000.0,0,0.0,0,0.0,stake-pool-resilience
+2,PX,Ambiguous / cross-pillar,USD,57,14847959.0,8,102847.0,8,102847.0,ambiguous-or-cross-pillar
+3,P2,Adoption & Utility,USD,123,3700704.0,21,399465.0,14,313535.0,products-and-developer-experience
+4,P2,Adoption & Utility,USD,175,7375322.0,32,553640.0,12,302500.0,products-and-developer-experience
+4,P3,Governance,USD,18,216105.0,5,58469.0,3,52669.0,governance-systems
+4,P4,Community & Ecosystem Growth,USD,4,65100.0,2,20700.0,2,20700.0,community-and-regional-growth
+4,P4,Community & Ecosystem Growth,USD,27,430521.0,8,70740.0,5,47000.0,community-and-talent
+4,P4,Community & Ecosystem Growth,USD,6,85700.0,2,18900.0,0,0.0,education-and-talent
+4,PX,Ambiguous / cross-pillar,USD,13,310177.0,1,3000.0,1,3000.0,ambiguous-or-cross-pillar
+5,P2,Adoption & Utility,USD,167,7242265.0,40,1106276.0,21,691266.0,products-and-developer-experience
+5,P3,Governance,USD,13,185820.0,6,96320.0,5,91720.0,governance-systems
+5,P4,Community & Ecosystem Growth,USD,64,1972094.0,24,372266.0,21,293366.0,community-and-talent
+6,P1,Infrastructure & Research Excellence,USD,9,230884.0,3,49000.0,3,49000.0,protocol-and-infrastructure
+6,P2,Adoption & Utility,USD,394,19604866.0,65,2111345.0,41,1465355.0,products-and-developer-experience
+6,P3,Governance,USD,31,453399.0,16,160210.0,12,147610.0,governance-systems
+6,P4,Community & Ecosystem Growth,USD,168,4405693.0,47,617219.0,38,500999.0,community-and-talent
+6,P4,Community & Ecosystem Growth,USD,1,12000.0,0,0.0,0,0.0,education-and-talent
+6,P5,Ecosystem Sustainability & Resilience,USD,2,2100.0,2,2100.0,1,1000.0,stake-pool-resilience
+6,PX,Ambiguous / cross-pillar,USD,43,987640.0,18,244804.0,16,204804.0,ambiguous-or-cross-pillar
+7,P2,Adoption & Utility,USD,3,244980.0,1,4980.0,1,4980.0,defi-and-payments
+7,P2,Adoption & Utility,USD,2,17500.0,1,7500.0,1,7500.0,identity-and-enterprise
+7,P2,Adoption & Utility,USD,402,16604279.0,108,2830345.0,76,2227138.0,products-and-developer-experience
+7,P3,Governance,USD,2,75000.0,0,0.0,0,0.0,governance-participation
+7,P3,Governance,USD,90,2737619.0,31,807634.0,21,568813.0,governance-systems
+7,P4,Community & Ecosystem Growth,USD,4,136200.0,0,0.0,0,0.0,communications-and-outreach
+7,P4,Community & Ecosystem Growth,USD,6,75000.0,2,11500.0,2,11500.0,community-and-regional-growth
+7,P4,Community & Ecosystem Growth,USD,238,7773081.0,86,1649580.0,76,1516114.0,community-and-talent
+7,P4,Community & Ecosystem Growth,USD,2,13900.0,1,4900.0,0,0.0,education-and-talent
+7,P5,Ecosystem Sustainability & Resilience,USD,52,1383182.0,14,360030.0,8,180388.0,stake-pool-resilience
+7,PX,Ambiguous / cross-pillar,USD,67,1952102.0,25,262625.0,22,234625.0,ambiguous-or-cross-pillar
+8,P1,Infrastructure & Research Excellence,USD,95,5813071.0,44,1644274.0,31,1361342.0,protocol-and-infrastructure
+8,P2,Adoption & Utility,USD,2,200000.0,0,0.0,0,0.0,defi-and-payments
+8,P2,Adoption & Utility,USD,550,33931956.0,184,8338610.0,142,6681629.0,products-and-developer-experience
+8,P3,Governance,USD,57,1539800.0,27,529211.0,18,425020.0,governance-systems
+8,P4,Community & Ecosystem Growth,USD,5,124140.0,2,55500.0,2,55500.0,community-and-regional-growth
+8,P4,Community & Ecosystem Growth,USD,265,5876082.0,88,1434839.0,72,1274760.0,community-and-talent
+8,P4,Community & Ecosystem Growth,USD,6,167560.0,0,0.0,0,0.0,education-and-talent
+8,PX,Ambiguous / cross-pillar,USD,75,3121871.0,22,387655.0,14,242718.0,ambiguous-or-cross-pillar
+9,P1,Infrastructure & Research Excellence,USD,66,4277170.0,15,769581.0,11,364889.0,protocol-and-infrastructure
+9,P2,Adoption & Utility,USD,1,14250.0,0,0.0,0,0.0,defi-and-payments
+9,P2,Adoption & Utility,USD,647,58438115.0,114,8807198.99,97,8154137.0,products-and-developer-experience
+9,P3,Governance,USD,143,6648920.0,35,1577454.0,29,1412765.0,governance-systems
+9,P4,Community & Ecosystem Growth,USD,214,5793166.0,43,832475.0,38,738702.0,community-and-talent
+9,P4,Community & Ecosystem Growth,USD,2,31273.0,2,0.0,0,0.0,education-and-talent
+9,PX,Ambiguous / cross-pillar,USD,32,1116726.0,7,0.0,0,0.0,ambiguous-or-cross-pillar
+10,P1,Infrastructure & Research Excellence,ADA,184,54498482.0,28,6821127.0,21,5598148.0,protocol-and-infrastructure
+10,P2,Adoption & Utility,ADA,1,75000.0,0,0.0,0,0.0,defi-and-payments
+10,P2,Adoption & Utility,ADA,1,18000.0,0,0.0,0,0.0,identity-and-enterprise
+10,P2,Adoption & Utility,ADA,843,213602036.0,86,19474045.689999998,63,15412126.0,products-and-developer-experience
+10,P3,Governance,ADA,1,70000.0,0,0.0,0,0.0,governance-participation
+10,P3,Governance,ADA,147,39517677.0,26,13113561.76,19,10319505.0,governance-systems
+10,P4,Community & Ecosystem Growth,ADA,6,342531.0,1,21000.0,1,21000.0,communications-and-outreach
+10,P4,Community & Ecosystem Growth,ADA,18,946563.0,4,185179.0,3,140179.0,community-and-regional-growth
+10,P4,Community & Ecosystem Growth,ADA,63,1992095.0,13,376773.0,11,335266.0,community-and-talent
+10,P4,Community & Ecosystem Growth,ADA,16,702610.0,3,72740.0,3,72740.0,education-and-talent
+10,P5,Ecosystem Sustainability & Resilience,ADA,87,17183467.0,17,3376587.0,12,2841987.0,stake-pool-resilience
+10,PX,Ambiguous / cross-pillar,ADA,97,5451078.0,14,688150.0,12,628150.0,ambiguous-or-cross-pillar
+11,P2,Adoption & Utility,ADA,2,308025.0,1,185000.0,1,185000.0,defi-and-payments
+11,P2,Adoption & Utility,ADA,3,448027.0,2,306027.0,1,178027.0,identity-and-enterprise
+11,P2,Adoption & Utility,ADA,602,100959865.0,219,31156428.62,149,22162848.0,products-and-developer-experience
+11,P3,Governance,ADA,1,85056.0,0,0.0,0,0.0,governance-participation
+11,P3,Governance,ADA,9,2686456.0,6,1894895.39,3,1675000.0,governance-systems
+11,P4,Community & Ecosystem Growth,ADA,22,1836998.0,4,380613.82,1,31475.0,communications-and-outreach
+11,P4,Community & Ecosystem Growth,ADA,59,5869307.0,21,2214089.0,16,1816177.0,community-and-regional-growth
+11,P4,Community & Ecosystem Growth,ADA,57,4430877.0,12,1046824.0,10,876824.0,education-and-talent
+11,PX,Ambiguous / cross-pillar,ADA,165,15843911.0,35,3543211.0,29,3107466.0,ambiguous-or-cross-pillar
+12,P2,Adoption & Utility,ADA,4,291300.0,2,114494.0,1,50000.0,defi-and-payments
+12,P2,Adoption & Utility,ADA,2,112000.0,1,82000.0,1,82000.0,identity-and-enterprise
+12,P2,Adoption & Utility,ADA,799,144506967.0,177,29916977.459999993,90,14753451.0,products-and-developer-experience
+12,P3,Governance,ADA,2,137650.0,1,45000.0,1,45000.0,governance-participation
+12,P4,Community & Ecosystem Growth,ADA,27,1970624.0,6,365916.4,0,0.0,communications-and-outreach
+12,P4,Community & Ecosystem Growth,ADA,84,6307058.0,16,1170915.01,12,874315.0,community-and-regional-growth
+12,P4,Community & Ecosystem Growth,ADA,80,5261472.0,13,776624.6,10,664566.0,education-and-talent
+12,PX,Ambiguous / cross-pillar,ADA,207,13554131.0,30,1923336.4,18,1353708.0,ambiguous-or-cross-pillar
+13,P2,Adoption & Utility,ADA,1,98847.0,1,98847.0,1,98847.0,defi-and-payments
+13,P2,Adoption & Utility,ADA,4,285000.0,0,0.0,0,0.0,identity-and-enterprise
+13,P2,Adoption & Utility,ADA,1126,220937724.0,140,26484867.42,47,10938847.0,products-and-developer-experience
+13,P3,Governance,ADA,5,435779.0,2,99436.0,0,0.0,governance-participation
+13,P4,Community & Ecosystem Growth,ADA,37,2491816.0,3,258847.0,1,98847.0,communications-and-outreach
+13,P4,Community & Ecosystem Growth,ADA,111,7865857.0,12,706939.6,5,375121.0,community-and-regional-growth
+13,P4,Community & Ecosystem Growth,ADA,127,9108995.0,14,886779.0,7,535900.0,education-and-talent
+13,PX,Ambiguous / cross-pillar,ADA,228,16462785.0,27,1765424.1300000001,13,982422.0,ambiguous-or-cross-pillar
+14,P2,Adoption & Utility,ADA,12,603320.0,0,0.0,0,0.0,defi-and-payments
+14,P2,Adoption & Utility,ADA,2,105620.0,0,0.0,0,0.0,identity-and-enterprise
+14,P2,Adoption & Utility,ADA,836,112692623.0,97,2557589.85,0,0.0,products-and-developer-experience
+14,P3,Governance,ADA,5,283754.0,0,0.0,0,0.0,governance-participation
+14,P4,Community & Ecosystem Growth,ADA,19,796910.0,1,8000.0,0,0.0,communications-and-outreach
+14,P4,Community & Ecosystem Growth,ADA,77,3584597.0,6,37599.99,0,0.0,community-and-regional-growth
+14,P4,Community & Ecosystem Growth,USD,1,60000.0,0,0.0,0,0.0,community-and-regional-growth
+14,P4,Community & Ecosystem Growth,ADA,110,4951457.0,7,92930.4,0,0.0,education-and-talent
+14,P5,Ecosystem Sustainability & Resilience,ADA,1,15000.0,0,0.0,0,0.0,stake-pool-resilience
+14,PX,Ambiguous / cross-pillar,ADA,220,10347941.0,20,179783.99,0,0.0,ambiguous-or-cross-pillar
+15,P1,Infrastructure & Research Excellence,ADA,1,39820.0,0,0.0,0,0.0,protocol-and-scaling
+15,P2,Adoption & Utility,ADA,4,219000.0,0,0.0,0,0.0,defi-and-payments
+15,P2,Adoption & Utility,ADA,2,110000.0,0,0.0,0,0.0,identity-and-enterprise
+15,P2,Adoption & Utility,ADA,387,72937720.0,0,0.0,0,0.0,products-and-developer-experience
+15,P2,Adoption & Utility,USDM,85,800700.0,0,0.0,0,0.0,products-and-developer-experience
+15,P3,Governance,ADA,4,215518.0,0,0.0,0,0.0,governance-participation
+15,P4,Community & Ecosystem Growth,ADA,5,195220.0,0,0.0,0,0.0,communications-and-outreach
+15,P4,Community & Ecosystem Growth,ADA,25,1176497.0,0,0.0,0,0.0,community-and-regional-growth
+15,P4,Community & Ecosystem Growth,ADA,44,2164005.0,0,0.0,0,0.0,education-and-talent
+15,PX,Ambiguous / cross-pillar,ADA,95,4897318.0,0,0.0,0,0.0,ambiguous-or-cross-pillar

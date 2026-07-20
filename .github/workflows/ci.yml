@@ -91,7 +91,14 @@ jobs:
           cache-dependency-path: etl/requirements.txt
 
       - name: Regenerate dashboard data
-        run: python etl/scripts/generate_treasury_dashboard_data.py --repo-root . --out /tmp/treasury-dashboard-data
+        run: |
+          python etl/scripts/generate_treasury_dashboard_data.py --repo-root . --out /tmp/treasury-dashboard-data
+          cp site/funding-priorities-data.json /tmp/funding-priorities-data.json
+          cp -a reports/funding-priorities-vision-2030 /tmp/funding-priorities-report
+          python etl/scripts/generate_funding_priorities_report.py --repo-root .
 
       - name: Compare committed dashboard data
-        run: diff -u site/data.json /tmp/treasury-dashboard-data/data.json
+        run: |
+          diff -u site/data.json /tmp/treasury-dashboard-data/data.json
+          diff -u site/funding-priorities-data.json /tmp/funding-priorities-data.json
+          diff -ru reports/funding-priorities-vision-2030 /tmp/funding-priorities-report

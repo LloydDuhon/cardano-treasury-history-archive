@@ -1,0 +1,66 @@
+year,pillar,pillar_name,currency,requested_proposals,requested_amount,funded_proposals,funded_amount,delivered_proposals,delivered_amount,subcategory
+2020,PX,Ambiguous / cross-pillar,USD,45,53056154.0,8,2342511.0,0,0.0,ambiguous-or-cross-pillar
+2021,P1,Infrastructure & Research Excellence,USD,9,230884.0,3,49000.0,3,49000.0,protocol-and-infrastructure
+2021,P2,Adoption & Utility,USD,2,51195.0,1,41195.0,1,41195.0,defi-and-payments
+2021,P2,Adoption & Utility,USD,3,1200000.0,0,0.0,0,0.0,identity-and-enterprise
+2021,P2,Adoption & Utility,USD,865,39299184.0,160,4217089.0,88,2772656.0,products-and-developer-experience
+2021,P3,Governance,USD,62,855324.0,27,314999.0,20,291999.0,governance-systems
+2021,P4,Community & Ecosystem Growth,USD,3,456500.0,0,0.0,0,0.0,communications-and-outreach
+2021,P4,Community & Ecosystem Growth,USD,9,1359108.0,2,20700.0,2,20700.0,community-and-regional-growth
+2021,P4,Community & Ecosystem Growth,USD,259,6808308.0,79,1060225.0,64,841365.0,community-and-talent
+2021,P4,Community & Ecosystem Growth,USD,9,648300.0,2,18900.0,0,0.0,education-and-talent
+2021,P5,Ecosystem Sustainability & Resilience,USD,3,142100.0,2,2100.0,1,1000.0,stake-pool-resilience
+2021,PX,Ambiguous / cross-pillar,USD,113,16145776.0,27,350651.0,25,310651.0,ambiguous-or-cross-pillar
+2022,P1,Infrastructure & Research Excellence,USD,161,10090241.0,59,2413855.0,42,1726231.0,protocol-and-infrastructure
+2022,P2,Adoption & Utility,USD,6,459230.0,1,4980.0,1,4980.0,defi-and-payments
+2022,P2,Adoption & Utility,USD,2,17500.0,1,7500.0,1,7500.0,identity-and-enterprise
+2022,P2,Adoption & Utility,USD,1599,108974350.0,406,19976153.990000002,315,17062904.0,products-and-developer-experience
+2022,P3,Governance,USD,2,75000.0,0,0.0,0,0.0,governance-participation
+2022,P3,Governance,USD,290,10926339.0,93,2914299.0,68,2406598.0,governance-systems
+2022,P4,Community & Ecosystem Growth,USD,4,136200.0,0,0.0,0,0.0,communications-and-outreach
+2022,P4,Community & Ecosystem Growth,USD,11,199140.0,4,67000.0,4,67000.0,community-and-regional-growth
+2022,P4,Community & Ecosystem Growth,USD,717,19442329.0,217,3916894.0,186,3529576.0,community-and-talent
+2022,P4,Community & Ecosystem Growth,USD,10,212733.0,3,4900.0,0,0.0,education-and-talent
+2022,P5,Ecosystem Sustainability & Resilience,USD,52,1383182.0,14,360030.0,8,180388.0,stake-pool-resilience
+2022,PX,Ambiguous / cross-pillar,USD,174,6190699.0,54,650280.0,36,477343.0,ambiguous-or-cross-pillar
+2023,P1,Infrastructure & Research Excellence,ADA,184,54498482.0,28,6821127.0,21,5598148.0,protocol-and-infrastructure
+2023,P2,Adoption & Utility,ADA,1,75000.0,0,0.0,0,0.0,defi-and-payments
+2023,P2,Adoption & Utility,ADA,1,18000.0,0,0.0,0,0.0,identity-and-enterprise
+2023,P2,Adoption & Utility,ADA,843,213602036.0,86,19474045.689999998,63,15412126.0,products-and-developer-experience
+2023,P3,Governance,ADA,1,70000.0,0,0.0,0,0.0,governance-participation
+2023,P3,Governance,ADA,147,39517677.0,26,13113561.76,19,10319505.0,governance-systems
+2023,P4,Community & Ecosystem Growth,ADA,6,342531.0,1,21000.0,1,21000.0,communications-and-outreach
+2023,P4,Community & Ecosystem Growth,ADA,18,946563.0,4,185179.0,3,140179.0,community-and-regional-growth
+2023,P4,Community & Ecosystem Growth,ADA,63,1992095.0,13,376773.0,11,335266.0,community-and-talent
+2023,P4,Community & Ecosystem Growth,ADA,16,702610.0,3,72740.0,3,72740.0,education-and-talent
+2023,P5,Ecosystem Sustainability & Resilience,ADA,87,17183467.0,17,3376587.0,12,2841987.0,stake-pool-resilience
+2023,PX,Ambiguous / cross-pillar,ADA,97,5451078.0,14,688150.0,12,628150.0,ambiguous-or-cross-pillar
+2024,P2,Adoption & Utility,ADA,7,698172.0,4,398341.0,3,333847.0,defi-and-payments
+2024,P2,Adoption & Utility,ADA,9,845027.0,3,388027.0,2,260027.0,identity-and-enterprise
+2024,P2,Adoption & Utility,ADA,2527,466404556.0,536,87558273.5,286,47855146.0,products-and-developer-experience
+2024,P3,Governance,ADA,8,658485.0,3,144436.0,1,45000.0,governance-participation
+2024,P3,Governance,ADA,9,2686456.0,6,1894895.39,3,1675000.0,governance-systems
+2024,P4,Community & Ecosystem Growth,ADA,86,6299438.0,13,1005377.2200000001,2,130322.0,communications-and-outreach
+2024,P4,Community & Ecosystem Growth,ADA,254,20042222.0,49,4091943.61,33,3065613.0,community-and-regional-growth
+2024,P4,Community & Ecosystem Growth,ADA,264,18801344.0,39,2710227.6,27,2077290.0,education-and-talent
+2024,PX,Ambiguous / cross-pillar,ADA,600,45860827.0,92,7231971.53,60,5443596.0,ambiguous-or-cross-pillar
+2025,P2,Adoption & Utility,ADA,12,603320.0,0,0.0,0,0.0,defi-and-payments
+2025,P2,Adoption & Utility,ADA,2,105620.0,0,0.0,0,0.0,identity-and-enterprise
+2025,P2,Adoption & Utility,ADA,836,112692623.0,97,2557589.85,0,0.0,products-and-developer-experience
+2025,P3,Governance,ADA,5,283754.0,0,0.0,0,0.0,governance-participation
+2025,P4,Community & Ecosystem Growth,ADA,19,796910.0,1,8000.0,0,0.0,communications-and-outreach
+2025,P4,Community & Ecosystem Growth,ADA,77,3584597.0,6,37599.99,0,0.0,community-and-regional-growth
+2025,P4,Community & Ecosystem Growth,USD,1,60000.0,0,0.0,0,0.0,community-and-regional-growth
+2025,P4,Community & Ecosystem Growth,ADA,110,4951457.0,7,92930.4,0,0.0,education-and-talent
+2025,P5,Ecosystem Sustainability & Resilience,ADA,1,15000.0,0,0.0,0,0.0,stake-pool-resilience
+2025,PX,Ambiguous / cross-pillar,ADA,220,10347941.0,20,179783.99,0,0.0,ambiguous-or-cross-pillar
+2026,P1,Infrastructure & Research Excellence,ADA,1,39820.0,0,0.0,0,0.0,protocol-and-scaling
+2026,P2,Adoption & Utility,ADA,4,219000.0,0,0.0,0,0.0,defi-and-payments
+2026,P2,Adoption & Utility,ADA,2,110000.0,0,0.0,0,0.0,identity-and-enterprise
+2026,P2,Adoption & Utility,ADA,387,72937720.0,0,0.0,0,0.0,products-and-developer-experience
+2026,P2,Adoption & Utility,USDM,85,800700.0,0,0.0,0,0.0,products-and-developer-experience
+2026,P3,Governance,ADA,4,215518.0,0,0.0,0,0.0,governance-participation
+2026,P4,Community & Ecosystem Growth,ADA,5,195220.0,0,0.0,0,0.0,communications-and-outreach
+2026,P4,Community & Ecosystem Growth,ADA,25,1176497.0,0,0.0,0,0.0,community-and-regional-growth
+2026,P4,Community & Ecosystem Growth,ADA,44,2164005.0,0,0.0,0,0.0,education-and-talent
+2026,PX,Ambiguous / cross-pillar,ADA,95,4897318.0,0,0.0,0,0.0,ambiguous-or-cross-pillar
