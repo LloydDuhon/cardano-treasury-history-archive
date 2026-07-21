@@ -51,6 +51,22 @@ This is a retrospective classification: Vision 2030 did not govern the earlier f
 | 2026 | P4 - Community & Ecosystem Growth | ADA | 74 | ₳3,535,722 | 0 | ₳0 | 0 | ₳0 |
 | 2026 | PX - Ambiguous / cross-pillar | ADA | 95 | ₳4,897,318 | 0 | ₳0 | 0 | ₳0 |
 
+## Hypothetical 2027 allocation
+
+This planning scenario uses a 100 million ADA example. It is not a forecast or approved budget. Historical shares use classified funded-proposal counts from 2021-2025, excluding ambiguous rows.
+
+Set strategic floors of 20% for P1, 10% for P3, and 10% for P5; split the remaining 60% between P2 and P4 in their historical funded-count ratio, then round to whole percentages.
+
+| Pillar | Historical funded share | Proposed share | Example allocation |
+|---|---:|---:|---:|
+| P1 - Infrastructure & Research Excellence | 4.5% | 20% | ₳20,000,000 |
+| P2 - Adoption & Utility | 64.2% | 45% | ₳45,000,000 |
+| P3 - Governance | 7.7% | 10% | ₳10,000,000 |
+| P4 - Community & Ecosystem Growth | 22.0% | 15% | ₳15,000,000 |
+| P5 - Ecosystem Sustainability & Resilience | 1.6% | 10% | ₳10,000,000 |
+
+The floors intentionally prevent historical category design from locking future allocations into persistent underinvestment in infrastructure, governance, and network sustainability. See `2027-subcategory-allocation.csv` for the proposed internal envelopes.
+
 ## Interpretation limits
 
 The classification assigns one primary pillar to prevent double counting. Challenge-based matches are high confidence; broad/open challenges use deterministic proposal-text scoring; unresolved cases remain in `PX`. Delivery evidence is weakest for Funds 2-5, partial for Funds 6-9, milestone-based from Fund 10 onward, and still accruing for recent funds. Fund 15 has no final funding results in this snapshot.

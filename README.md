@@ -33,7 +33,8 @@ included GitHub Pages workflow.
 
 The published funding-priority report is available at
 `site/funding-priorities.html`. Its source CSVs include per-fund, per-year, and
-proposal-level classification audit outputs.
+proposal-level classification audit outputs, plus a clearly labeled hypothetical
+2027 allocation scenario.
 
 ## Confidence
 

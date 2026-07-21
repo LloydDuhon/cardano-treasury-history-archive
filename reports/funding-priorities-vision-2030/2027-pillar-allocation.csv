@@ -1,0 +1,6 @@
+pillar,pillar_name,historical_funded_proposals,historical_funded_share_percent,allocation_percent,example_allocation_ada,rationale
+P1,Infrastructure & Research Excellence,90,4.5,20,20000000.0,Strategic floor for the framework's technical foundation.
+P2,Adoption & Utility,1295,64.2,45,45000000.0,"Largest envelope, preserving the dominant historical demand signal."
+P3,Governance,155,7.7,10,10000000.0,Strategic floor for accessible governance and accountable treasury cycles.
+P4,Community & Ecosystem Growth,443,22.0,15,15000000.0,Historical demand retained after funding the three strategic floors.
+P5,Ecosystem Sustainability & Resilience,33,1.6,10,10000000.0,Strategic floor for network economics and long-term resilience.

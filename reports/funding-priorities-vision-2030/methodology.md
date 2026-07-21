@@ -67,6 +67,23 @@ rollups are published in `by-fund-subcategory.csv` and
   contemporary USD value or cash actually disbursed on a specific date.
 - A primary-pillar classification simplifies genuinely cross-pillar work.
 
+## Hypothetical 2027 scenario
+
+The 2027 scenario is a planning exercise, not a forecast or approved budget.
+Its comparable baseline is the distribution of classified funded-proposal
+counts from 2021 through 2025. Amounts are not used for the baseline because
+historical funds mix currencies and `amount_received` reflects different
+disbursement stages.
+
+The scenario establishes strategic floors of 20% for Pillar 1, 10% for Pillar
+3, and 10% for Pillar 5. It splits the remaining 60% between Pillars 2 and 4 in
+their historical funded-count ratio, then rounds to whole percentages. This
+produces 20% / 45% / 10% / 15% / 10% across Pillars 1 through 5.
+
+The published ADA amounts assume an illustrative 100 million ADA fund. The
+percentages scale to any total. Subcategory envelopes sum to their parent
+pillar and are planning constraints rather than predictions of proposal demand.
+
 ## Sources
 
 - Cardano 2030 Strategic Framework (draft):

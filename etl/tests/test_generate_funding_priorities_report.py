@@ -1,6 +1,7 @@
 from scripts.generate_funding_priorities_report import (
     aggregate,
     aggregate_subcategories,
+    build_2027_scenario,
     classify,
     is_delivered,
 )
@@ -83,3 +84,22 @@ def test_subcategory_rollup_is_preserved() -> None:
     result = aggregate_subcategories(rows, "fund")
 
     assert result[0]["subcategory"] == "defi-and-payments"
+
+
+def test_2027_scenario_allocates_the_whole_fund() -> None:
+    rows = [
+        {"year": 2024, "pillar": pillar, "funded": True}
+        for pillar in ("P1", "P2", "P3", "P4", "P5", "PX")
+    ]
+
+    scenario = build_2027_scenario(rows)
+
+    assert sum(row["allocation_percent"] for row in scenario["pillars"]) == 100
+    assert sum(row["example_allocation_ada"] for row in scenario["pillars"]) == 100_000_000
+    for pillar in scenario["pillars"]:
+        subcategory_total = sum(
+            row["allocation_percent"]
+            for row in scenario["subcategories"]
+            if row["pillar"] == pillar["pillar"]
+        )
+        assert subcategory_total == pillar["allocation_percent"]
