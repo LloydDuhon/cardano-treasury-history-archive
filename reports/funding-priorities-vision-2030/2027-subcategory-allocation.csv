@@ -1,0 +1,21 @@
+pillar,pillar_name,subcategory,allocation_percent,example_allocation_ada
+P1,Infrastructure & Research Excellence,L1/L2 scalability,7,7000000.0
+P1,Infrastructure & Research Excellence,Security and resilience,5,5000000.0
+P1,Infrastructure & Research Excellence,Interoperability and ZK,5,5000000.0
+P1,Infrastructure & Research Excellence,Research and client diversity,3,3000000.0
+P2,Adoption & Utility,High-value verticals,15,15000000.0
+P2,Adoption & Utility,Developer experience,10,10000000.0
+P2,Adoption & Utility,"Payments, wallets, and UX",8,8000000.0
+P2,Adoption & Utility,Identity and enterprise compliance,7,7000000.0
+P2,Adoption & Utility,Integrations and adoption pilots,5,5000000.0
+P3,Governance,Governance tools and access,4,4000000.0
+P3,Governance,Treasury seasons and accountability,3,3000000.0
+P3,Governance,"Participation, incentives, and research",3,3000000.0
+P4,Community & Ecosystem Growth,Talent and education,5,5000000.0
+P4,Community & Ecosystem Growth,Regional and localized adoption,4,4000000.0
+P4,Community & Ecosystem Growth,Community tooling and events,3,3000000.0
+P4,Community & Ecosystem Growth,Ecosystem narrative and evidence,3,3000000.0
+P5,Ecosystem Sustainability & Resilience,SPO roles and decentralization,4,4000000.0
+P5,Ecosystem Sustainability & Resilience,Treasury and tokenomics,3,3000000.0
+P5,Ecosystem Sustainability & Resilience,Network economics and L2 value return,2,2000000.0
+P5,Ecosystem Sustainability & Resilience,Operational resilience,1,1000000.0

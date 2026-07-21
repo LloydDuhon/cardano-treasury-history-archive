@@ -70,6 +70,27 @@ function renderTable() {
     </tr>`).join("");
 }
 
+function renderScenario() {
+  if (!state.data) return;
+  const scenario = state.data.scenario_2027;
+  const input = document.getElementById("scenario-total");
+  const entered = Number(input.value);
+  const total = Number.isFinite(entered) && entered > 0 ? entered : scenario.example_total;
+  document.getElementById("scenario-method").textContent = scenario.method;
+  document.getElementById("scenario-rows").innerHTML = scenario.pillars.map(row => {
+    const subcategories = scenario.subcategories.filter(item => item.pillar === row.pillar);
+    return `<div class="scenario-row">
+      <div class="scenario-name"><strong>${esc(row.pillar)} · ${esc(row.pillar_name)}</strong><span>${esc(row.rationale)}</span></div>
+      <div>
+        <div class="allocation-track"><span class="allocation-fill" style="width:${row.allocation_percent}%;background:${COLORS[row.pillar]}"></span></div>
+        <div class="scenario-shares"><span>history <strong>${row.historical_funded_share_percent.toFixed(1)}%</strong></span><span>2027 scenario <strong>${row.allocation_percent}%</strong></span></div>
+      </div>
+      <div class="scenario-amount"><strong>${amount(total * row.allocation_percent / 100, "ADA")}</strong><span>illustrative envelope</span></div>
+      <div class="scenario-subcategories">${subcategories.map(item => `<span>${esc(item.subcategory)} · ${item.allocation_percent}%</span>`).join("")}</div>
+    </div>`;
+  }).join("");
+}
+
 function render() { renderChart(); renderTable(); }
 
 document.querySelectorAll("[data-measure]").forEach(button => button.addEventListener("click", () => {
@@ -80,6 +101,7 @@ document.querySelectorAll("[data-measure]").forEach(button => button.addEventLis
 }));
 document.getElementById("unit-select").addEventListener("change", event => { state.unit = event.target.value; renderChart(); });
 document.getElementById("dimension-select").addEventListener("change", event => { state.dimension = event.target.value; render(); });
+document.getElementById("scenario-total").addEventListener("input", renderScenario);
 
 fetch("funding-priorities-data.json")
   .then(response => { if (!response.ok) throw new Error(`HTTP ${response.status}`); return response.json(); })
@@ -91,6 +113,7 @@ fetch("funding-priorities-data.json")
     document.getElementById("coverage").textContent = `${((classified / data.meta.proposal_count) * 100).toFixed(1)}%`;
     renderLegend();
     render();
+    renderScenario();
     document.getElementById("loading").hidden = true;
     document.getElementById("content").hidden = false;
   })

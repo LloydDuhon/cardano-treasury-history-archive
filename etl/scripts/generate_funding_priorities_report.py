@@ -72,6 +72,59 @@ PILLARS: dict[str, Json] = {
     },
 }
 
+SCENARIO_2027: dict[str, Json] = {
+    "P1": {
+        "allocation_percent": 20,
+        "rationale": "Strategic floor for the framework's technical foundation.",
+        "subcategories": {
+            "L1/L2 scalability": 7,
+            "Security and resilience": 5,
+            "Interoperability and ZK": 5,
+            "Research and client diversity": 3,
+        },
+    },
+    "P2": {
+        "allocation_percent": 45,
+        "rationale": "Largest envelope, preserving the dominant historical demand signal.",
+        "subcategories": {
+            "High-value verticals": 15,
+            "Developer experience": 10,
+            "Payments, wallets, and UX": 8,
+            "Identity and enterprise compliance": 7,
+            "Integrations and adoption pilots": 5,
+        },
+    },
+    "P3": {
+        "allocation_percent": 10,
+        "rationale": "Strategic floor for accessible governance and accountable treasury cycles.",
+        "subcategories": {
+            "Governance tools and access": 4,
+            "Treasury seasons and accountability": 3,
+            "Participation, incentives, and research": 3,
+        },
+    },
+    "P4": {
+        "allocation_percent": 15,
+        "rationale": "Historical demand retained after funding the three strategic floors.",
+        "subcategories": {
+            "Talent and education": 5,
+            "Regional and localized adoption": 4,
+            "Community tooling and events": 3,
+            "Ecosystem narrative and evidence": 3,
+        },
+    },
+    "P5": {
+        "allocation_percent": 10,
+        "rationale": "Strategic floor for network economics and long-term resilience.",
+        "subcategories": {
+            "SPO roles and decentralization": 4,
+            "Treasury and tokenomics": 3,
+            "Network economics and L2 value return": 2,
+            "Operational resilience": 1,
+        },
+    },
+}
+
 # Ordered, high-confidence mappings based on the proposal's original challenge.
 CHALLENGE_RULES: list[tuple[str, str, str]] = [
     (
@@ -343,6 +396,61 @@ def aggregate_subcategories(rows: list[Json], dimension: str) -> list[Json]:
     )
 
 
+def build_2027_scenario(rows: list[Json], example_total_ada: float = 100_000_000) -> Json:
+    eligible = [
+        row
+        for row in rows
+        if 2021 <= row["year"] <= 2025 and row["funded"] and row["pillar"] in SCENARIO_2027
+    ]
+    funded_total = len(eligible)
+    funded_counts: dict[str, int] = defaultdict(int)
+    for row in eligible:
+        funded_counts[row["pillar"]] += 1
+
+    pillars: list[Json] = []
+    subcategories: list[Json] = []
+    for pillar, definition in SCENARIO_2027.items():
+        allocation_percent = definition["allocation_percent"]
+        pillars.append(
+            {
+                "pillar": pillar,
+                "pillar_name": PILLARS[pillar]["name"],
+                "historical_funded_proposals": funded_counts[pillar],
+                "historical_funded_share_percent": round(
+                    funded_counts[pillar] / funded_total * 100, 1
+                ),
+                "allocation_percent": allocation_percent,
+                "example_allocation_ada": example_total_ada * allocation_percent / 100,
+                "rationale": definition["rationale"],
+            }
+        )
+        for subcategory, percent in definition["subcategories"].items():
+            subcategories.append(
+                {
+                    "pillar": pillar,
+                    "pillar_name": PILLARS[pillar]["name"],
+                    "subcategory": subcategory,
+                    "allocation_percent": percent,
+                    "example_allocation_ada": example_total_ada * percent / 100,
+                }
+            )
+    return {
+        "label": "Hypothetical 2027 allocation",
+        "currency": "ADA",
+        "example_total": example_total_ada,
+        "baseline_years": "2021-2025",
+        "baseline_measure": "classified funded proposal count",
+        "historical_funded_proposals": funded_total,
+        "method": (
+            "Set strategic floors of 20% for P1, 10% for P3, and 10% for P5; "
+            "split the remaining 60% between P2 and P4 in their historical funded-count "
+            "ratio, then round to whole percentages."
+        ),
+        "pillars": pillars,
+        "subcategories": subcategories,
+    }
+
+
 def write_csv(path: Path, rows: list[Json]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8", newline="") as handle:
@@ -395,6 +503,36 @@ def write_markdown(path: Path, payload: Json) -> None:
             f"| {row['funded_proposals']:,} | {funded_amount} "
             f"| {row['delivered_proposals']:,} | {delivered_amount} |"
         )
+    scenario = payload["scenario_2027"]
+    lines += [
+        "",
+        "## Hypothetical 2027 allocation",
+        "",
+        (
+            "This planning scenario uses a 100 million ADA example. It is not a forecast or "
+            "approved budget. Historical shares use classified funded-proposal counts from "
+            f"{scenario['baseline_years']}, excluding ambiguous rows."
+        ),
+        "",
+        scenario["method"],
+        "",
+        "| Pillar | Historical funded share | Proposed share | Example allocation |",
+        "|---|---:|---:|---:|",
+    ]
+    for row in scenario["pillars"]:
+        lines.append(
+            f"| {row['pillar']} - {row['pillar_name']} "
+            f"| {row['historical_funded_share_percent']:.1f}% "
+            f"| {row['allocation_percent']:.0f}% "
+            f"| {format_amount(row['example_allocation_ada'], 'ADA')} |"
+        )
+    lines += [
+        "",
+        "The floors intentionally prevent historical category design from locking future "
+        "allocations into persistent underinvestment in infrastructure, governance, and "
+        "network sustainability. See `2027-subcategory-allocation.csv` for the proposed "
+        "internal envelopes.",
+    ]
     lines += [
         "",
         "## Interpretation limits",
@@ -463,6 +601,7 @@ def build(repo_root: Path) -> Json:
         "pillars": PILLARS,
         "by_fund": aggregate(classified, "fund"),
         "by_year": aggregate(classified, "year"),
+        "scenario_2027": build_2027_scenario(classified),
     }
     out_dir = repo_root / "reports/funding-priorities-vision-2030"
     write_csv(out_dir / "classification-audit.csv", classified)
@@ -470,6 +609,11 @@ def build(repo_root: Path) -> Json:
     write_csv(out_dir / "by-year.csv", payload["by_year"])
     write_csv(out_dir / "by-fund-subcategory.csv", aggregate_subcategories(classified, "fund"))
     write_csv(out_dir / "by-year-subcategory.csv", aggregate_subcategories(classified, "year"))
+    write_csv(out_dir / "2027-pillar-allocation.csv", payload["scenario_2027"]["pillars"])
+    write_csv(
+        out_dir / "2027-subcategory-allocation.csv",
+        payload["scenario_2027"]["subcategories"],
+    )
     write_markdown(out_dir / "report.md", payload)
     (repo_root / "site/funding-priorities-data.json").write_text(
         json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"

@@ -1244,5 +1244,203 @@
       "delivered_proposals": 0,
       "delivered_amount": 0.0
     }
-  ]
+  ],
+  "scenario_2027": {
+    "label": "Hypothetical 2027 allocation",
+    "currency": "ADA",
+    "example_total": 100000000,
+    "baseline_years": "2021-2025",
+    "baseline_measure": "classified funded proposal count",
+    "historical_funded_proposals": 2016,
+    "method": "Set strategic floors of 20% for P1, 10% for P3, and 10% for P5; split the remaining 60% between P2 and P4 in their historical funded-count ratio, then round to whole percentages.",
+    "pillars": [
+      {
+        "pillar": "P1",
+        "pillar_name": "Infrastructure & Research Excellence",
+        "historical_funded_proposals": 90,
+        "historical_funded_share_percent": 4.5,
+        "allocation_percent": 20,
+        "example_allocation_ada": 20000000.0,
+        "rationale": "Strategic floor for the framework's technical foundation."
+      },
+      {
+        "pillar": "P2",
+        "pillar_name": "Adoption & Utility",
+        "historical_funded_proposals": 1295,
+        "historical_funded_share_percent": 64.2,
+        "allocation_percent": 45,
+        "example_allocation_ada": 45000000.0,
+        "rationale": "Largest envelope, preserving the dominant historical demand signal."
+      },
+      {
+        "pillar": "P3",
+        "pillar_name": "Governance",
+        "historical_funded_proposals": 155,
+        "historical_funded_share_percent": 7.7,
+        "allocation_percent": 10,
+        "example_allocation_ada": 10000000.0,
+        "rationale": "Strategic floor for accessible governance and accountable treasury cycles."
+      },
+      {
+        "pillar": "P4",
+        "pillar_name": "Community & Ecosystem Growth",
+        "historical_funded_proposals": 443,
+        "historical_funded_share_percent": 22.0,
+        "allocation_percent": 15,
+        "example_allocation_ada": 15000000.0,
+        "rationale": "Historical demand retained after funding the three strategic floors."
+      },
+      {
+        "pillar": "P5",
+        "pillar_name": "Ecosystem Sustainability & Resilience",
+        "historical_funded_proposals": 33,
+        "historical_funded_share_percent": 1.6,
+        "allocation_percent": 10,
+        "example_allocation_ada": 10000000.0,
+        "rationale": "Strategic floor for network economics and long-term resilience."
+      }
+    ],
+    "subcategories": [
+      {
+        "pillar": "P1",
+        "pillar_name": "Infrastructure & Research Excellence",
+        "subcategory": "L1/L2 scalability",
+        "allocation_percent": 7,
+        "example_allocation_ada": 7000000.0
+      },
+      {
+        "pillar": "P1",
+        "pillar_name": "Infrastructure & Research Excellence",
+        "subcategory": "Security and resilience",
+        "allocation_percent": 5,
+        "example_allocation_ada": 5000000.0
+      },
+      {
+        "pillar": "P1",
+        "pillar_name": "Infrastructure & Research Excellence",
+        "subcategory": "Interoperability and ZK",
+        "allocation_percent": 5,
+        "example_allocation_ada": 5000000.0
+      },
+      {
+        "pillar": "P1",
+        "pillar_name": "Infrastructure & Research Excellence",
+        "subcategory": "Research and client diversity",
+        "allocation_percent": 3,
+        "example_allocation_ada": 3000000.0
+      },
+      {
+        "pillar": "P2",
+        "pillar_name": "Adoption & Utility",
+        "subcategory": "High-value verticals",
+        "allocation_percent": 15,
+        "example_allocation_ada": 15000000.0
+      },
+      {
+        "pillar": "P2",
+        "pillar_name": "Adoption & Utility",
+        "subcategory": "Developer experience",
+        "allocation_percent": 10,
+        "example_allocation_ada": 10000000.0
+      },
+      {
+        "pillar": "P2",
+        "pillar_name": "Adoption & Utility",
+        "subcategory": "Payments, wallets, and UX",
+        "allocation_percent": 8,
+        "example_allocation_ada": 8000000.0
+      },
+      {
+        "pillar": "P2",
+        "pillar_name": "Adoption & Utility",
+        "subcategory": "Identity and enterprise compliance",
+        "allocation_percent": 7,
+        "example_allocation_ada": 7000000.0
+      },
+      {
+        "pillar": "P2",
+        "pillar_name": "Adoption & Utility",
+        "subcategory": "Integrations and adoption pilots",
+        "allocation_percent": 5,
+        "example_allocation_ada": 5000000.0
+      },
+      {
+        "pillar": "P3",
+        "pillar_name": "Governance",
+        "subcategory": "Governance tools and access",
+        "allocation_percent": 4,
+        "example_allocation_ada": 4000000.0
+      },
+      {
+        "pillar": "P3",
+        "pillar_name": "Governance",
+        "subcategory": "Treasury seasons and accountability",
+        "allocation_percent": 3,
+        "example_allocation_ada": 3000000.0
+      },
+      {
+        "pillar": "P3",
+        "pillar_name": "Governance",
+        "subcategory": "Participation, incentives, and research",
+        "allocation_percent": 3,
+        "example_allocation_ada": 3000000.0
+      },
+      {
+        "pillar": "P4",
+        "pillar_name": "Community & Ecosystem Growth",
+        "subcategory": "Talent and education",
+        "allocation_percent": 5,
+        "example_allocation_ada": 5000000.0
+      },
+      {
+        "pillar": "P4",
+        "pillar_name": "Community & Ecosystem Growth",
+        "subcategory": "Regional and localized adoption",
+        "allocation_percent": 4,
+        "example_allocation_ada": 4000000.0
+      },
+      {
+        "pillar": "P4",
+        "pillar_name": "Community & Ecosystem Growth",
+        "subcategory": "Community tooling and events",
+        "allocation_percent": 3,
+        "example_allocation_ada": 3000000.0
+      },
+      {
+        "pillar": "P4",
+        "pillar_name": "Community & Ecosystem Growth",
+        "subcategory": "Ecosystem narrative and evidence",
+        "allocation_percent": 3,
+        "example_allocation_ada": 3000000.0
+      },
+      {
+        "pillar": "P5",
+        "pillar_name": "Ecosystem Sustainability & Resilience",
+        "subcategory": "SPO roles and decentralization",
+        "allocation_percent": 4,
+        "example_allocation_ada": 4000000.0
+      },
+      {
+        "pillar": "P5",
+        "pillar_name": "Ecosystem Sustainability & Resilience",
+        "subcategory": "Treasury and tokenomics",
+        "allocation_percent": 3,
+        "example_allocation_ada": 3000000.0
+      },
+      {
+        "pillar": "P5",
+        "pillar_name": "Ecosystem Sustainability & Resilience",
+        "subcategory": "Network economics and L2 value return",
+        "allocation_percent": 2,
+        "example_allocation_ada": 2000000.0
+      },
+      {
+        "pillar": "P5",
+        "pillar_name": "Ecosystem Sustainability & Resilience",
+        "subcategory": "Operational resilience",
+        "allocation_percent": 1,
+        "example_allocation_ada": 1000000.0
+      }
+    ]
+  }
 }
