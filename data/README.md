@@ -11,6 +11,8 @@ voting-results files.
 ```
 data/
 ├── _raw/                                # centralized raw captures (see _raw/README.md)
+│   ├── ccdata/
+│   │   └── ada-usd-histoday-all.json    # raw ADA/USD daily market history
 │   └── lidonation/
 │       ├── fund-titles.json             # fund UUID -> title map
 │       └── page-NNNN.json.gz            # one v1 paginator response per page
@@ -38,6 +40,10 @@ data/
 │   ├── all_milestones.csv          # F9-F14 where available in interim data
 │   └── schema.md                   # tabular schema explanation
 ├── historical/
+│   ├── ada-usd-daily/
+│   │   ├── prices.json                  # daily ADA/USD OHLCV market data
+│   │   ├── prices.csv                   # spreadsheet-friendly daily prices
+│   │   └── _meta.json                   # source, coverage, and caveats
 │   ├── cardano-treasury-withdrawals/
 │   │   ├── withdrawals.json         # on-chain TreasuryWithdrawals governance actions
 │   │   └── _meta.json              # source and normalization metadata
@@ -74,6 +80,12 @@ payment or project delivery.
 Some on-chain withdrawals overlap with Treasury Fund 1. Join by proposal title,
 amount, receiving stake address, and governance metadata before adding totals,
 otherwise TF1 can be double-counted.
+
+`data/historical/ada-usd-daily/` is a separate market-price dataset captured
+from CCData/CryptoCompare. It provides daily ADA/USD OHLCV rows for estimating
+ADA equivalents of USD-denominated Catalyst funding records. Treat those values
+as price-based estimates only, not as evidence of actual ADA disbursement
+transactions. See `docs/HISTORICAL_ADA_USD.md`.
 
 ## How records are written
 
