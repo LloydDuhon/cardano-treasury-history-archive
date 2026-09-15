@@ -8,6 +8,7 @@ An open archive of Cardano funding history across Project Catalyst, Treasury Fun
 - **Treasury Fund 1 history:** Sundae Treasury contract, vendor, and milestone data under `data/historical/treasury-fund-01/`.
 - **2025 Budget Reconciliation / Ekklesia data:** raw owner and proposal metadata from `2025budget.intersectmbo.org` under `data/_raw/intersect_budget_2025/`.
 - **Cardano on-chain treasury withdrawals:** Koios governance-action data for `TreasuryWithdrawals` under `data/historical/cardano-treasury-withdrawals/`.
+- **Historical ADA/USD prices:** daily market-price data under `data/historical/ada-usd-daily/` for estimating ADA equivalents of USD-denominated Catalyst records.
 - **Treasury Fund 2 current snapshot:** raw 2026 Cardano Budget Process data from Hydra Voting under `data/_raw/hydra_voting/`.
 - **Generated reports:** Treasury Fund 2 proposer-history, proposal-similarity, 2025 identity bridge, and TF1-to-2025 reconciliation outputs under `reports/treasury-fund-2/`.
 - **Funding-priority history:** Project Catalyst requests, funded outcomes, and documented delivery mapped retrospectively to the five Cardano Vision 2030 pillars under `reports/funding-priorities-vision-2030/`.
@@ -47,6 +48,8 @@ Project Catalyst history is useful now for experimentation and broad proposer-hi
 Treasury Fund 1 contract and milestone status comes from the Sundae Treasury data. The TF1-to-2025 reconciliation adds human-readable owner metadata from the Ekklesia process; high and medium matches are used conservatively in reports, while low-confidence candidates are retained for manual review.
 
 On-chain Cardano treasury withdrawal actions come from Koios `proposal_list` governance data. This source is authoritative for the governance action and requested withdrawal amount, but it is not the same thing as downstream vendor disbursement or project delivery. Some rows overlap with Treasury Fund 1 and should not be double-counted without reconciliation.
+
+Historical ADA/USD prices come from CCData/CryptoCompare daily market data. Use them for documented USD-to-ADA estimates only; they are not proof of actual ADA disbursement transaction amounts. See `docs/HISTORICAL_ADA_USD.md`.
 
 Treasury Fund 2 data is a point-in-time snapshot of the current budget process and should be refreshed before publication or any final decision support.
 

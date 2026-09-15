@@ -45,11 +45,13 @@ etl/
 - `fetchers/milestones_scraper.py` (Phase 3, Supabase REST).
 - `fetchers/ideascale_wayback.py` (Phase 4, Wayback CDX + snapshot fetch).
 - `fetchers/koios_governance.py` for on-chain `TreasuryWithdrawals` actions.
+- `fetchers/ada_usd_daily.py` for historical ADA/USD daily market prices.
 - `normalizers/unify_proposals.py` (Phase 1).
 - `normalizers/reconcile_winners.py` (Phase 2).
 - `normalizers/derive_milestones.py` (Phase 3).
 - `normalizers/derive_fund_one.py` (Phase 4, BS4-parsed IdeaScale snapshots).
 - `normalizers/onchain_treasury_withdrawals.py`.
+- `normalizers/ada_usd_daily.py`.
 - `validators/validate_against_schema.py` covers `proposals`, `proposers`, `milestones`, and `_reconciliation`.
 - Unit tests across the suite.
 
@@ -203,6 +205,24 @@ python -m fetchers.koios_governance --force
 python -m normalizers.onchain_treasury_withdrawals
 cat ../data/historical/cardano-treasury-withdrawals/_meta.json
 ```
+
+## Historical ADA/USD daily price data
+
+CCData/CryptoCompare provides full daily ADA/USD history through its public
+`histoday` endpoint. The raw capture is kept under `data/_raw/ccdata/`, and the
+normalized JSON/CSV outputs live under `data/historical/ada-usd-daily/`.
+
+Use this dataset to estimate ADA equivalents for USD-denominated Catalyst
+records only when the conversion policy date is documented. These estimates are
+not proof of actual ADA disbursement transactions.
+
+```bash
+python -m fetchers.ada_usd_daily --force
+python -m normalizers.ada_usd_daily
+cat ../data/historical/ada-usd-daily/_meta.json
+```
+
+See `docs/HISTORICAL_ADA_USD.md` for source availability and caveats.
 
 ## Phase 4 — Fund 1 Wayback recovery
 

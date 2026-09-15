@@ -17,6 +17,9 @@ See [ADR-2026-05-13 Implementation Notes](../../docs/adr/ADR-2026-05-13-source-s
 
 ## Current contents
 
+- `ccdata/ada-usd-histoday-all.json` - raw CCData/CryptoCompare `histoday`
+  capture for `fsym=ADA`, `tsym=USD`, and `allData=true`. This is normalized
+  into `data/historical/ada-usd-daily/`.
 - `lidonation/fund-titles.json` - raw `/api/v1/funds` response.
 - `lidonation/page-NNNN.json.gz` - one gzipped Laravel-paginator response per
   page of `/api/v1/proposals?page=N&per_page=60&include=campaign,fund,team`.
@@ -64,6 +67,7 @@ upstream:
 cd etl
 python -m normalizers.unify_proposals          # all funds
 python -m normalizers.unify_proposals --fund 10 # only F10
+python -m normalizers.ada_usd_daily       # ADA/USD daily market prices
 python -m normalizers.onchain_treasury_withdrawals # on-chain treasury actions
 python -m normalizers.sundae_treasury          # Treasury Fund 1 history
 ```

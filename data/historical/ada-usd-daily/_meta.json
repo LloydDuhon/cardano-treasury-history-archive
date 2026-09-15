@@ -1,0 +1,29 @@
+{
+  "base_currency": "ADA",
+  "dataset": "ada-usd-daily",
+  "docs_url": "https://min-api.cryptocompare.com/documentation",
+  "dropped_rows": 2633,
+  "fetched_at": "2026-05-15T15:26:27Z",
+  "first_date": "2017-10-01",
+  "last_date": "2026-05-15",
+  "normalized_at": "2026-05-15T15:26:30Z",
+  "notes": [
+    "Daily OHLCV market data for ADA quoted in USD.",
+    "Rows with close_usd <= 0 are excluded from normalized outputs; CCData's allData response includes zero-filled pre-market rows before ADA traded.",
+    "Use close_usd on the selected policy date for reproducible USD-to-ADA estimates.",
+    "This dataset estimates historical ADA equivalents; it does not prove actual disbursement transaction amounts.",
+    "CoinGecko public API full-range access was unavailable during implementation because public requests were limited to the trailing 365 days."
+  ],
+  "price_fields": [
+    "open_usd",
+    "high_usd",
+    "low_usd",
+    "close_usd"
+  ],
+  "quote_currency": "USD",
+  "raw_provenance_path": "_raw/ccdata/ada-usd-histoday-all.json",
+  "raw_rows": 5782,
+  "records": 3149,
+  "source": "ccdata_cryptocompare_histoday",
+  "source_url": "https://min-api.cryptocompare.com/data/v2/histoday"
+}
