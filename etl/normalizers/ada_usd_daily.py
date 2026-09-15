@@ -194,8 +194,8 @@ if __name__ == "__main__":
 
 
 __all__ = [
-    "RAW_PATH",
     "OUTPUT_DIR",
-    "normalize_ada_usd_daily",
+    "RAW_PATH",
     "main",
+    "normalize_ada_usd_daily",
 ]
